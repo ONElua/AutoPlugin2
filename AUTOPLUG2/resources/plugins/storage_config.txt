@@ -1,0 +1,2 @@
+MCD=uma0
+GCD=ux0

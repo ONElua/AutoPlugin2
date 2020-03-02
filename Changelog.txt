@@ -1,0 +1,8 @@
+#AutoPlugin 2 v1.00
+- Update plugins Online
+- Update Languages Online
+- Now you can check yhe readme file online for most of the included plugins
+- Download/Install ITLS-Enso and Battery fixer (vpk)
+- Set a Custom Image (Custom Boot Splash is required)
+- Set a Custom Warning Message (Custom Warning is required)
+- Set Level Transparent (Transparent Impose is required)
