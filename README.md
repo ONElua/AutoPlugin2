@@ -44,7 +44,7 @@ This tool allows you to install/uninstall the following plugins with one click o
 # Optional settings
 - Update plugins Online
 - Update Languages Online
-- Now you can check yhe readme file online for most of the included plugins
+- Now you can check the readme file online for most of the included plugins
 - Download/Install ITLS-Enso and Battery fixer (vpk)
 - Set a Custom Image (Custom Boot Splash is required)
 - Set a Custom Warning Message (Custom Warning is required)
