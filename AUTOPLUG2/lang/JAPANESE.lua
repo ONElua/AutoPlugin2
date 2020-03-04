@@ -128,7 +128,7 @@ JAPANESE["MOUNT_GRW0_FRIENDLY"] =                       "ゲームカードス�
 JAPANESE["SD2VITA_MCD_FRIENDLY"] =                      "純正メモリーカード"
 JAPANESE["SD2VITA_INT_FRIENDLY"] =                      "PSVita2000/PSTVの内部メモリ"
 JAPANESE["SD2VITA_GCD_FRIENDLY"] =                      "SD2VITA"
-JAPANESE["SD2VITA_UMA_FRIENDLY"] =                      "3Gスロットを備えたVita1000のUSBまたはPSVSD"
+JAPANESE["SD2VITA_UMA_FRIENDLY"] =                      "USBポートまたはVita1000 3GのPSVSD"
 
 --plugins online
 JAPANESE["UPDATE_WIFI_LOW"] =                           "Wi-fiの電波が弱い"
