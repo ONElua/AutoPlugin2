@@ -64,12 +64,12 @@ RUSSIAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Помогите улуч�
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обновления переводов"
 RUSSIAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Включить автоообновление: "
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Выбрать язык приложения"
-RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
+RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Выбрать шрифт приложения"
 
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Загрузить новые и обновлённые переводы для AutoPlugin II"
 RUSSIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Включить автоматическое обновление программы (да/нет)"
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Выбрать и применить язык перевода AutoPlugin II"
-RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	 "Allows to change and set font as default for AutoPlugin II"
+RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	   "Выбрать и применить шрифт по умолчанию для AutoPlugin II"
 
 --Install Plugins
 RUSSIAN["LIST_PLUGINS"] =                            "Список плагинов, доступных для установки:"
@@ -86,8 +86,8 @@ RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте ус
 
 RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только на 3.60 и 3.68"
 RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и 3.68"
-RUSSIAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Обнаружен плагин shellsecbat!\n\nInstall shellbat instead and uninstall shellsecbat ?"
-RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\nInstall shellsecbat instead and uninstall shellbat ?"
+RUSSIAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Обнаружен плагин shellsecbat!\n\nУстановить shellbat, удалив shellsecbat?"
+RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\Установить shellsecbat, удалив shellbat?"
 RUSSIAN["INSTALLP_WARNING_REFOOD"] =                 "Для работоспособности плагин reF00D будет установлен в ur0:tai"
 RUSSIAN["INSTALLP_OSK_TITLE"] =                      "Свой текст для Custom Warning"
 RUSSIAN["INSTALLP_OSK_TEXT"] =                       "Введите свой текст в это поле"
@@ -200,12 +200,12 @@ RUSSIAN["NOTHING_TO_TRANSLATE"] =                    "Спасибо за инт
 --Lang Online
 RUSSIAN["MENU_TITLE_LANG_ONLINE"] =                  "Доступные языки"
 RUSSIAN["MENU_TITLE_LANGUAGE"] =                     "Выбрать язык"
-RUSSIAN["MENU_TITLE_FONT"] =                         "Select font"
+RUSSIAN["MENU_TITLE_FONT"] =                         "Выбрать шрифт"
 RUSSIAN["LANGUAGE_RELOAD"] =                         "Язык был успешно изменён"
 RUSSIAN["LANGUAGE_NO_UPDATE"] =                      "Нет обновлённых переводов"
 RUSSIAN["PLUGINS_NO_ONLINE"] =                       "Нет обновлённых плагинов"
 RUSSIAN["LANG_UPDATE"] =                             "ОБНОВЛЕНИЕ"
-RUSSIAN["LANGUAGE_FAILED"] =                         "No languages"
+RUSSIAN["LANGUAGE_FAILED"] =                         "Нет переводов для выбора"
 RUSSIAN["LANG_ONLINE_FAILDB"] =                      "Ошибка чтения базы данных"
 RUSSIAN["LANG_ONLINE_FAIL_CONEXION"] =               "Ошибка подключения"
 RUSSIAN["LANG_FILE_UPDATE"] =                        "Обновлён"
@@ -215,9 +215,9 @@ RUSSIAN["MARK_LANGS"] =                              "Выбрать/отмен�
 RUSSIAN["CLEAN_LANGS"] =                             "Очистить выбор языков"
 
 --Change font
-RUSSIAN["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
-RUSSIAN["FONT_RELOAD"] =                             "The font has been changed"
-RUSSIAN["FONT_DEFAULT"] =                            "System"
+RUSSIAN["FONT_FAILED"] =                             "Отсутствуют шрифты в формате pgf, pvf или ttf в папке ux0:data/AUTOPLUGIN2/font/"
+RUSSIAN["FONT_RELOAD"] =                             "Шрифт успешно изменён"
+RUSSIAN["FONT_DEFAULT"] =                            "Системный (стандартный)"
 
 --Plugins Online
 RUSSIAN["MENU_TITLE_PLUGINS_ONLINE"] =               "Обновления плагинов"
@@ -294,12 +294,12 @@ RUSSIAN["INSTALLP_DESC_SYSCALL6"] =                  "Плагин отключ�
 RUSSIAN["INSTALLP_DESC_MONAURAL"] =                  "Переключение звука в моно режим и выбор баланса каналов стерео (требуется MonauralConfig.vpk)"
 RUSSIAN["INSTALLP_DESC_MUPREMIUM"] =                 "Поддержка фонового воспроизведения музыки одновременно с играми"
 RUSSIAN["INSTALLP_DESC_ACIDDUMPER"] =                "Плагин-помощник поиска идентификаторов ложных (встроенных в игру) DLC"
-RUSSIAN["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+RUSSIAN["INSTALLP_DESC_DEJAVU"] =                    "Плагин позволяет сохранять и загружать снимки состояния системы (содержимого оперативной памяти). При помощи этого появляется возможность сохраняться в играх в тех местах, где это не предусмотрено разработчиком. В теории также доступна временная смена версии прошивки путём создания снимка на одной, а загрузки на другой, но практического тестирования не проводилось."
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
 RUSSIAN["INSTALLP_DESC_NOFINDSPLASH"] =              "Поместите своё изображение в папку ux0:CustomBootsplash/\n(имя файла должно быть splash.png, а его размер 960x544)"
-RUSSIAN["INSTALLP_DESC_SPLASHGH"] =                  "Рамзер изображения должен быть 960x544"
+RUSSIAN["INSTALLP_DESC_SPLASHGH"] =                  "Размер изображения должен быть 960x544"
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - УСПЕХ!!!"
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
