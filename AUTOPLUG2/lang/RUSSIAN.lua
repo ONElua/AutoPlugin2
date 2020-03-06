@@ -69,7 +69,7 @@ RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Выбрать шрифт 
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Загрузить новые и обновлённые переводы для AutoPlugin II"
 RUSSIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Включить автоматическое обновление программы (да/нет)"
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Выбрать и применить язык перевода AutoPlugin II"
-RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	 "Выбрать и применить шрифт по умолчанию для AutoPlugin II"
+RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =          "Выбрать и применить шрифт по умолчанию для AutoPlugin II"
 
 --Install Plugins
 RUSSIAN["LIST_PLUGINS"] =                            "Список плагинов, доступных для установки:"
