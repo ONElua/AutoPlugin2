@@ -69,7 +69,7 @@ RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Выбрать шрифт 
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Загрузить новые и обновлённые переводы для AutoPlugin II"
 RUSSIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Включить автоматическое обновление программы (да/нет)"
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Выбрать и применить язык перевода AutoPlugin II"
-RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	   "Выбрать и применить шрифт по умолчанию для AutoPlugin II"
+RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	 "Выбрать и применить шрифт по умолчанию для AutoPlugin II"
 
 --Install Plugins
 RUSSIAN["LIST_PLUGINS"] =                            "Список плагинов, доступных для установки:"
@@ -87,7 +87,7 @@ RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте ус
 RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только на 3.60 и 3.68"
 RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и 3.68"
 RUSSIAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Обнаружен плагин shellsecbat!\n\nУстановить shellbat, удалив shellsecbat?"
-RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\Установить shellsecbat, удалив shellbat?"
+RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\nУстановить shellsecbat, удалив shellbat?"
 RUSSIAN["INSTALLP_WARNING_REFOOD"] =                 "Для работоспособности плагин reF00D будет установлен в ur0:tai"
 RUSSIAN["INSTALLP_OSK_TITLE"] =                      "Свой текст для Custom Warning"
 RUSSIAN["INSTALLP_OSK_TEXT"] =                       "Введите свой текст в это поле"
