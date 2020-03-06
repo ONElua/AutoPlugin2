@@ -12,7 +12,7 @@ GERMAN["UPDATER_INSTALLING"] =                      "Installieren..."
 GERMAN["UPDATER_ERROR"] =                           "AUTOUPDATE Fehler!!!"
 
 --Options Menu
-GERMAN["MENU_TITLE"] =                              "Autoplugin II"
+GERMAN["MENU_TITLE"] =                              "AutoPlugin II"
 GERMAN["MENU_PSVITA"] =                             "Plugins für PS Vita"
 GERMAN["MENU_PSP"] =                                "Plugins für PSP (Adrenaline)"
 GERMAN["MENU_EXTRAS"] =                             "Extras"
@@ -50,7 +50,7 @@ GERMAN["MENU_EXTRAS_INSTALL_BATTFIX"] =             "batteryFixer vpk herunterla
 GERMAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "'Boot-Splash' Bild festlegen"
 GERMAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "'Custom Warning' Nachricht erstellen"
 GERMAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Transparent Impose festlegen"
-GERMAN["MENU_EXTRAS_TRANSLATE"] =                   "Autoplugin II Übersetzen"
+GERMAN["MENU_EXTRAS_TRANSLATE"] =                   "AutoPlugin II Übersetzen"
 
 GERMAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Ermöglicht die Anpassung der Optionen für PKGj in der config.txt"
 GERMAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Ermöglicht das Festlegen eines eigenen Bildes beim Booten"
@@ -58,16 +58,18 @@ GERMAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Ermöglicht das Festlegen e
 GERMAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Ermöglicht das Festlegen der Transparenzstufe (255 = 0% transparent, 0 = 100% transparent) unter 30 % nicht empfohlen"
 GERMAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Ermöglicht das Herunterladen und Installieren von iTLS-Enso vpk auf der PS Vita (Fügt Enso-fähigen Geräten TLS v1.2 hinzu)"
 GERMAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Ermöglicht das Herunterladen und Installieren von PSP2-batterieFixer vpk auf der PS Vita (Behebt die meisten Probleme mit der Batterie von PSVita)"
-GERMAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Hilf Autoplugin II zu verbessern, indem du in deine Sprache übersetzen!"
+GERMAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Hilf AutoPlugin II zu verbessern, indem du in deine Sprache übersetzen!"
 
 --Options Settings
 GERMAN["MENU_SETTINGS_LANG_ONLINE"] =               "Verfügbare Sprachen herunterladen"
 GERMAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "AutoUpdate aktivieren: "
 GERMAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Sprache ändern"
+GERMAN["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
 
-GERMAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Verfügbare Sprachpakete für Autoplugin II herunterladen"
+GERMAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Verfügbare Sprachpakete für AutoPlugin II herunterladen"
 GERMAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "AutoUpdate aktivieren Ja/Nein"
 GERMAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Standardsprache für AutoPlugin II festlegen"
+GERMAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
 GERMAN["LIST_PLUGINS"] =                            "Plugins, die zur Installation bereit sind:"
@@ -192,16 +194,18 @@ GERMAN["TRANSLATE_YOUR_TITLE"] =                    "Deine: "
 GERMAN["SAVE_TRANSLATIONS"] =                       "Übersetzung speichern"
 GERMAN["EXIT_SAVE_TRANSLATIONS"] =                  "Übersetzung nicht gespeichert. Vor dem verlassen Speichern?"
 GERMAN["TRANSLATION_SAVED_1"] =                     "Deine Übersetzung wurde gespeichert in:"
-GERMAN["TRANSLATION_SAVED_2"] =                     "Lade die Datei zum Autoplugin II GitHub hoch, um sie akzeptieren zu lassen"
+GERMAN["TRANSLATION_SAVED_2"] =                     "Lade die Datei zum AutoPlugin II GitHub hoch, um sie akzeptieren zu lassen"
 GERMAN["NOTHING_TO_TRANSLATE"] =                    "Danke für dein interesse, aber es gibt momentan nichts zu übersetzen!"
 
 --Lang Online
 GERMAN["MENU_TITLE_LANG_ONLINE"] =                  "Verfügbare Sprachen"
 GERMAN["MENU_TITLE_LANGUAGE"] =                     "Sprache wählen"
+GERMAN["MENU_TITLE_FONT"] =                         "Select font"
 GERMAN["LANGUAGE_RELOAD"] =                         "Die Sprache wurde geändert"
 GERMAN["LANGUAGE_NO_UPDATE"] =                      "Keine verfügbaren Sprach Updates vorhanden"
 GERMAN["PLUGINS_NO_ONLINE"] =                       "Keine verfügbaren Plugin Updates vorhanden"
 GERMAN["LANG_UPDATE"] =                             "Aktualisiere"
+GERMAN["LANGUAGE_FAILED"] =                         "No languages"
 GERMAN["LANG_ONLINE_FAILDB"] =                      "Fehler beim dekodieren der Sprachdatenbank"
 GERMAN["LANG_ONLINE_FAIL_CONEXION"] =               "Verbindungsfehler"
 GERMAN["LANG_FILE_UPDATE"] =                        "Aktualisiert"
@@ -209,6 +213,11 @@ GERMAN["LANG_FILE_NEW"] =                           "Neu"
 GERMAN["LANG_INSTALL_ALL"] =                        "Installiere alle Sprachen"
 GERMAN["MARK_LANGS"] =                              "Sprache(n) Markieren / Markierung aufheben"
 GERMAN["CLEAN_LANGS"] =                             "Alle Markierungen entfernen"
+
+--Change font
+GERMAN["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
+GERMAN["FONT_RELOAD"] =                             "The font has been changed"
+GERMAN["FONT_DEFAULT"] =                            "System"
 
 --Plugins Online
 GERMAN["MENU_TITLE_PLUGINS_ONLINE"] =               "Plugins Aktualisierung"
@@ -285,6 +294,7 @@ GERMAN["INSTALLP_DESC_SYSCALL6"] =                  "Ein Tool, das den Syscall 6
 GERMAN["INSTALLP_DESC_MONAURAL"] =                  "Mono Audio und Kanalbalance für Playstation Vita (erfordert MonauralConfig.vpk)"
 GERMAN["INSTALLP_DESC_MUPREMIUM"] =                 "Aktiviert die Wiedergabe von Hintergrundmusik für jedes Spiel oder jede Anwendung."
 GERMAN["INSTALLP_DESC_ACIDDUMPER"] =                "Eine Anwendung, die hilfreich sein kann, um gefälschte DLC´s zu erstellen"
+GERMAN["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 GERMAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Dieses Plugin kann das Bootlogo auf der PSVita / PSTV beim Booten durch ein Bild ersetzen. ENSO erforderlich"
 GERMAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Dein 'Splash-Bild' als eigenes 'Boot-Splash' nutzen?"
@@ -355,7 +365,7 @@ GERMAN["STRING_PSVITA_RESTART"] =                   "Die PS Vita wird neu gestar
 GERMAN["STRING_BACKUP_CONFIGS"] =                   "Erstelle Config_backups.txt"
 GERMAN["STRING_MISSING_CONFIG"] =                   "config.txt wurde nicht gefunden"
 GERMAN["STRING_BACK"] =                             "zurück ins Menü"
-GERMAN["STRING_CLOSE"] =                            "Autoplugin beenden"
+GERMAN["STRING_CLOSE"] =                            "AutoPlugin beenden"
 GERMAN["STRING_INSTALLED"] =                        "wurde installiert"
 GERMAN["STRING_UNINSTALLED"] =                      "wurde deinstalliert"
 GERMAN["STRING_PLEASE_WAIT"] =                      "Bitte warten..."

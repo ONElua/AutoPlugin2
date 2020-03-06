@@ -12,12 +12,12 @@ JAPANESE["UPDATER_INSTALLING"] =                        "インストールし�
 JAPANESE["UPDATER_ERROR"] =                             "自動更新に失敗しました!!!"
 
 --Options Menu
-JAPANESE["MENU_TITLE"] =                                "Autoplugin II"
+JAPANESE["MENU_TITLE"] =                                "AutoPlugin II"
 JAPANESE["MENU_PSVITA"] =                               "PSVita用プラグイン"
 JAPANESE["MENU_PSP"] =                                  "PSP用プラグイン (Adrenaline)"
 JAPANESE["MENU_EXTRAS"] =                               "EXTRAメニュー"
 JAPANESE["MENU_SETTINGS"] =                             "設定"
-JAPANESE["MENU_EXIT"] =                                 "Autoplugin IIの終了"
+JAPANESE["MENU_EXIT"] =                                 "AutoPlugin IIの終了"
 
 --Options PSVITA
 JAPANESE["MENU_PSVITA_TITLE"] =                         "PSVitaプラグイン"
@@ -50,7 +50,7 @@ JAPANESE["MENU_EXTRAS_INSTALL_BATTFIX"] =               "batteryFixer.vpkをダ�
 JAPANESE["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =            "カスタムブートスプラッシュの設定"
 JAPANESE["MENU_EXTRAS_CUSTOM_WARNING"] =                "カスタム警告メッセージの設定"
 JAPANESE["MENU_EXTRAS_TRANSP_IMPOSE"] =                 "クイックメニュー透明化の設定"
-JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "Autoplugin IIの翻訳"
+JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "AutoPlugin IIの翻訳"
 
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
@@ -58,16 +58,18 @@ JAPANESE["MENU_EXTRAS_CUSTOMWARNING_DESC"] =            "ENSOで起動すると�
 JAPANESE["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =             "透明化のレベルを設定できます。（255 = 0％透明、0 = 100％透明） 30未満の値は推奨されません"
 JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =         "VitaにiTLS-Enso.vpkをダウンロードしてインストールできます（Enso対応デバイスにTLS v1.2を追加します）"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =          "PSViaにPSP2-batteryFixer.vpkをダウンロードしてインストールできます（PSVitaのバッテリー関連の問題のほとんどを修正します）"
-JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用する言語に翻訳してAutoplugin IIの改善に協力してください！"
+JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用する言語に翻訳してAutoPlugin IIの改善に協力してください！"
 
 --Options Settings
 JAPANESE["MENU_SETTINGS_LANG_ONLINE"] =                 "利用可能な言語をダウンロードする"
 JAPANESE["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =           "自動更新を有効にする: "
 JAPANESE["MENU_SETTINGS_CHANGE_LANGUAGE"] =             "言語を変更する"
+JAPANESE["MENU_SETTINGS_CHANGE_FONT"] =                 "Change font"
 
-JAPANESE["MENU_SETTINGS_LANG_ONLINE_DESC"] =            "Autoplugin IIの利用可能な言語パックをダウンロードする"
+JAPANESE["MENU_SETTINGS_LANG_ONLINE_DESC"] =            "AutoPlugin IIの利用可能な言語パックをダウンロードする"
 JAPANESE["MENU_SETTINGS_AUTOUPDATE_DESC"] =             "自動更新を有効にする：はい/いいえ"
 JAPANESE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =        "AutoPlugin IIの言語をデフォルトとして変更および設定できます"
+JAPANESE["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
 JAPANESE["LIST_PLUGINS"] =                              "インストールする準備ができているプラグインリスト:"
@@ -192,16 +194,18 @@ JAPANESE["TRANSLATE_YOUR_TITLE"] =                      "Yours: "
 JAPANESE["SAVE_TRANSLATIONS"] =                         "翻訳を保存"
 JAPANESE["EXIT_SAVE_TRANSLATIONS"] =                    "翻訳内容は保存されませんでした。 終了する前に保存しますか？"
 JAPANESE["TRANSLATION_SAVED_1"] =                       "翻訳内容は保存されました:"
-JAPANESE["TRANSLATION_SAVED_2"] =                       "Autoplugin IIのGitHubにこのファイルをアップロードすることを承諾します"
+JAPANESE["TRANSLATION_SAVED_2"] =                       "AutoPlugin IIのGitHubにこのファイルをアップロードすることを承諾します"
 JAPANESE["NOTHING_TO_TRANSLATE"] =                      "ご関心をお寄せいただきありがとうございます。しかし今すぐ翻訳するものはありません！"
 
 --Lang Online
 JAPANESE["MENU_TITLE_LANG_ONLINE"] =                    "利用可能な言語"
 JAPANESE["MENU_TITLE_LANGUAGE"] =                       "言語を選択する"
+JAPANESE["MENU_TITLE_FONT"] =                           "Select font"
 JAPANESE["LANGUAGE_RELOAD"] =                           "言語が変更されました"
 JAPANESE["LANGUAGE_NO_UPDATE"] =                        "利用可能な言語の更新はありません"
 JAPANESE["PLUGINS_NO_ONLINE"] =                         "利用可能なプラグインの更新はありません"
 JAPANESE["LANG_UPDATE"] =                               "更新"
+JAPANESE["LANGUAGE_FAILED"] =                           "No languages"
 JAPANESE["LANG_ONLINE_FAILDB"] =                        "言語データベースのデコードエラー"
 JAPANESE["LANG_ONLINE_FAIL_CONEXION"] =                 "接続エラー"
 JAPANESE["LANG_FILE_UPDATE"] =                          "更新しました"
@@ -209,6 +213,11 @@ JAPANESE["LANG_FILE_NEW"] =                             "新規"
 JAPANESE["LANG_INSTALL_ALL"] =                          "すべての言語をインストールする"
 JAPANESE["MARK_LANGS"] =                                "言語の選択/選択解除"
 JAPANESE["CLEAN_LANGS"] =                               "選択した言語ファイルの内容をクリア"
+
+--Change font
+JAPANESE["FONT_FAILED"] =                               "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
+JAPANESE["FONT_RELOAD"] =                               "The font has been changed"
+JAPANESE["FONT_DEFAULT"] =                              "System"
 
 --Plugins Online
 JAPANESE["MENU_TITLE_PLUGINS_ONLINE"] =                 "プラグインの更新"
@@ -285,6 +294,7 @@ JAPANESE["INSTALLP_DESC_SYSCALL6"] =                    "PSVitaのlv0のsecure_k
 JAPANESE["INSTALLP_DESC_MONAURAL"] =                    "PSVitaのモノラルオーディオと左右のチャンネルバランスを変更する（MonauralConfig.vpkが必要）"
 JAPANESE["INSTALLP_DESC_MUPREMIUM"] =                   "ゲームやアプリケーションでバックグラウンドミュージックの再生を有効にします"
 JAPANESE["INSTALLP_DESC_ACIDDUMPER"] =                  "Application that may be helpful locating fake DLC"
+JAPANESE["INSTALLP_DESC_DEJAVU"] =                      "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"
@@ -355,7 +365,7 @@ JAPANESE["STRING_PSVITA_RESTART"] =                     "PSVitaが再起動し�
 JAPANESE["STRING_BACKUP_CONFIGS"] =                     "Config_backups.txtの作成"
 JAPANESE["STRING_MISSING_CONFIG"] =                     "config.txtがありません"
 JAPANESE["STRING_BACK"] =                               "メニューに戻る"
-JAPANESE["STRING_CLOSE"] =                              "Autoplugin IIを終了"
+JAPANESE["STRING_CLOSE"] =                              "AutoPlugin IIを終了"
 JAPANESE["STRING_INSTALLED"] =                          "インストールされました"
 JAPANESE["STRING_UNINSTALLED"] =                        "アンインストールされました"
 JAPANESE["STRING_PLEASE_WAIT"] =                        "お待ちください..."

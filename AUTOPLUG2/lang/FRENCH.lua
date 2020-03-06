@@ -12,7 +12,7 @@ FRENCH["UPDATER_INSTALLING"] =                      "Installation en cours..."
 FRENCH["UPDATER_ERROR"] =                           "Erreur de la mise à jour!!!"
 
 --Options Menu
-FRENCH["MENU_TITLE"] =                              "Autoplugin II"
+FRENCH["MENU_TITLE"] =                              "AutoPlugin II"
 FRENCH["MENU_PSVITA"] =                             "Plugins Vita"
 FRENCH["MENU_PSP"] =                                "Plugins PSP (Adrenaline)"
 FRENCH["MENU_EXTRAS"] =                             "Menu Extra"
@@ -50,7 +50,7 @@ FRENCH["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Télécharger et installer 
 FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personnalisée au démarrage"
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Mettre en place le plugin TransparentImpose"
-FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire Autoplugin II"
+FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
 
 FRENCH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Permet la personnalisation des options du config.txt pour PKGj"
 FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Permet de définir une image personnalisée au démarrage"
@@ -58,16 +58,18 @@ FRENCH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Vous permet de définir un 
 FRENCH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Vous permet de définir le niveau de transparence (255 = 0% de transparence, 0 = 100% de transparence) ; les valeurs inférieures à 30% ne sont pas recommandées"
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Permet de télécharger et d'installer iTLS-Enso dans votre Vita (ajoute TLS v1.2 aux appareils compatibles Enso)"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Permet de télécharger et d'installer PSP2-batteryFixer dans votre Vita (corrige la plupart des problèmes liés aux batterie de la PSVita)"
-FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer Autoplugin II en le traduisant dans votre langue !"
+FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlugin II en le traduisant dans votre langue !"
 
 --Options Settings
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Télécharger les langues disponibles"
 FRENCH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Activer les mises à jour automatique: "
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Changer de langue"
+FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
 
-FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour Autoplugin II"
+FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Activer les mises à jour automatique Oui/Non"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de changer et de définir la langue par défaut pour l'AutoPlugin II"
+FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés:"
@@ -192,16 +194,18 @@ FRENCH["TRANSLATE_YOUR_TITLE"] =                    "Le votre: "
 FRENCH["SAVE_TRANSLATIONS"] =                       "Enregistrer la traduction"
 FRENCH["EXIT_SAVE_TRANSLATIONS"] =                  "Traduction non enregistré. Enregistrer avant de quitter ?"
 FRENCH["TRANSLATION_SAVED_1"] =                     "Vos traductions ont été enregistrées dans:"
-FRENCH["TRANSLATION_SAVED_2"] =                     "Charger ce fichier sur le GitHub d'Autoplugin II pour qu'il soit accepté."
+FRENCH["TRANSLATION_SAVED_2"] =                     "Charger ce fichier sur le GitHub d'AutoPlugin II pour qu'il soit accepté."
 FRENCH["NOTHING_TO_TRANSLATE"] =                    "Merci de votre intérêt, mais il n'y a rien à traduire pour le moment!"
 
 --Lang Online
 FRENCH["MENU_TITLE_LANG_ONLINE"] =                  "Langues disponibles"
 FRENCH["MENU_TITLE_LANGUAGE"] =                     "Sélectionnez une langue"
+FRENCH["MENU_TITLE_FONT"] =                         "Select font"
 FRENCH["LANGUAGE_RELOAD"] =                         "La langue a été modifiée"
 FRENCH["LANGUAGE_NO_UPDATE"] =                      "Il n'y a pas de mise à jour des langues disponibles"
 FRENCH["PLUGINS_NO_ONLINE"] =                       "Il n'y a pas de mise à jour des plugins disponibles"
 FRENCH["LANG_UPDATE"] =                             "MISE A JOUR"
+FRENCH["LANGUAGE_FAILED"] =                         "No languages"
 FRENCH["LANG_ONLINE_FAILDB"] =                      "Erreur de décodage dans la base de donnée des langues"
 FRENCH["LANG_ONLINE_FAIL_CONEXION"] =               "Erreur de connexion"
 FRENCH["LANG_FILE_UPDATE"] =                        "Mise à jour"
@@ -209,6 +213,11 @@ FRENCH["LANG_FILE_NEW"] =                           "Nouveau"
 FRENCH["LANG_INSTALL_ALL"] =                        "Installer toutes les langues"
 FRENCH["MARK_LANGS"] =                              "Cocher/Décocher"
 FRENCH["CLEAN_LANGS"] =                             "Annuler la sélection"
+
+--Change font
+FRENCH["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
+FRENCH["FONT_RELOAD"] =                             "The font has been changed"
+FRENCH["FONT_DEFAULT"] =                            "System"
 
 --Plugins Online
 FRENCH["MENU_TITLE_PLUGINS_ONLINE"] =               "Mises à jour des plugins"
@@ -285,6 +294,7 @@ FRENCH["INSTALLP_DESC_SYSCALL6"] =                  "Un outil qui corrige le sys
 FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des canaux pour la Playstation Vita (nécessite MonauralConfig.vpk)"
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
+FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher un écran de démarrage personnalisé sur PS Vita/PSTV au démarrage. Nécessite ENSO."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
@@ -355,7 +365,7 @@ FRENCH["STRING_PSVITA_RESTART"] =                   "Votre PSVita va redémarrer
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Création de Config_backups.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
-FRENCH["STRING_CLOSE"] =                            "Quitter Autoplugin II"
+FRENCH["STRING_CLOSE"] =                            "Quitter AutoPlugin II"
 FRENCH["STRING_INSTALLED"] =                        "a été installé"
 FRENCH["STRING_UNINSTALLED"] =                      "a été désinstallé"
 FRENCH["STRING_PLEASE_WAIT"] =                      "Veuillez patienter..."

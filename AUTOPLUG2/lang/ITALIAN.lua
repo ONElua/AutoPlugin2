@@ -12,7 +12,7 @@ ITALIAN["UPDATER_INSTALLING"] =                         "Installazione in corso.
 ITALIAN["UPDATER_ERROR"] =                              "Errore AUTOAGGIORNAMENTO!!!"
 
 --Options Menu
-ITALIAN["MENU_TITLE"] =                                 "Autoplugin II"
+ITALIAN["MENU_TITLE"] =                                 "AutoPlugin II"
 ITALIAN["MENU_PSVITA"] =                                "Plugin per PSVita"
 ITALIAN["MENU_PSP"] =                                   "Plugin per PSP (Adrenaline)"
 ITALIAN["MENU_EXTRAS"] =                                "Extras"
@@ -50,7 +50,7 @@ ITALIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Scarica e Installa batt
 ITALIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Imposta Custom Boot Splash"
 ITALIAN["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Imposta Custom Warning Message"
 ITALIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Modifica Transparent Impose"
-ITALIAN["MENU_EXTRAS_TRANSLATE"] =                      "Tradurre Autoplugin II"
+ITALIAN["MENU_EXTRAS_TRANSLATE"] =                      "Tradurre AutoPlugin II"
 
 ITALIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Consente la personalizzazione del file config.txt per PKGj"
 ITALIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Consente di impostare un'immagine personalizzata all'avvio"
@@ -58,16 +58,18 @@ ITALIAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Consente di impostare u
 ITALIAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Consente di impostare valori di Livello di trasparente (255=0% trasparente, 0=100% trasparente) inferiore a 30 non è raccomandato"
 ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Consente il download e l'installazione di iTLS-Enso vpk su PSVita (aggiunge il TLS v1.2 ai dispositivi abilitati Enso)"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permette di scaricare e installare PSP2-batteryFixer vpk in Vita (risolve la maggior parte dei problemi relativi alla batteria della PSVita)"
-ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare Autoplugin traducendo nella tua lingua!"
+ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare AutoPlugin traducendo nella tua lingua!"
 
 --Options Settings
 ITALIAN["MENU_SETTINGS_LANG_ONLINE"] =                  "Scarica le lingue disponibili"
 ITALIAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =            "Abilita Autoaggiornamento: "
 ITALIAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =              "Cambia linguaggio"
+ITALIAN["MENU_SETTINGS_CHANGE_FONT"] =                  "Change font"
 
-ITALIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Scarica i language pack disponibili per Autoplugin II"
+ITALIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Scarica i language pack disponibili per AutoPlugin II"
 ITALIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =              "Abilita Autoaggiornamento Si/No"
 ITALIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =         "Permette di cambiare e impostare la lingua come predefinita per AutoPlugin II"
+ITALIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
 ITALIAN["LIST_PLUGINS"] =                               "Lista dei plugin che possono essere installati:"
@@ -192,16 +194,18 @@ ITALIAN["TRANSLATE_YOUR_TITLE"] =                       "La tua traduzione: "
 ITALIAN["SAVE_TRANSLATIONS"] =                          "Salva le traduzioni"
 ITALIAN["EXIT_SAVE_TRANSLATIONS"] =                     "Traduzione non salvata. Salvare prima di uscire?"
 ITALIAN["TRANSLATION_SAVED_1"] =                        "Le traduzioni sono state salvate in:"
-ITALIAN["TRANSLATION_SAVED_2"] =                        "Carica questo file sulla pagina GitHub di Autoplugin e crea un pull request per essere accettato."
+ITALIAN["TRANSLATION_SAVED_2"] =                        "Carica questo file sulla pagina GitHub di AutoPlugin e crea un pull request per essere accettato."
 ITALIAN["NOTHING_TO_TRANSLATE"] =                       "Grazie per il vostro interesse, ma non c'è niente da tradurre in questo momento!"
 
 --Lang Online
 ITALIAN["MENU_TITLE_LANG_ONLINE"] =                     "Linguaggi disponibili"
 ITALIAN["MENU_TITLE_LANGUAGE"] =                        "Seleziona un linguaggio"
+ITALIAN["MENU_TITLE_FONT"] =                            "Select font"
 ITALIAN["LANGUAGE_RELOAD"] =                            "La lingua è stata cambiata"
 ITALIAN["LANGUAGE_NO_UPDATE"] =                         "Non ci sono aggiornamenti di lingue disponibili"
 ITALIAN["PLUGINS_NO_ONLINE"] =                          "Non ci sono aggiornamenti disponibili per i plugin"
 ITALIAN["LANG_UPDATE"] =                                "AGGIORNAMENTO"
+ITALIAN["LANGUAGE_FAILED"] =                            "No languages"
 ITALIAN["LANG_ONLINE_FAILDB"] =                         "Errore durante la decodifica di Langdatabase"
 ITALIAN["LANG_ONLINE_FAIL_CONEXION"] =                  "Errore di connessione"
 ITALIAN["LANG_FILE_UPDATE"] =                           "Aggiornato"
@@ -209,6 +213,11 @@ ITALIAN["LANG_FILE_NEW"] =                              "Nuovo"
 ITALIAN["LANG_INSTALL_ALL"] =                           "Installa tutti i linguaggi"
 ITALIAN["MARK_LANGS"] =                                 "Contrassegna / deseleziona i linguaggi"
 ITALIAN["CLEAN_LANGS"] =                                "per pulire i Linguaggi selezionati"
+
+--Change font
+ITALIAN["FONT_FAILED"] =                                "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
+ITALIAN["FONT_RELOAD"] =                                "The font has been changed"
+ITALIAN["FONT_DEFAULT"] =                               "System"
 
 --Plugins Online
 ITALIAN["MENU_TITLE_PLUGINS_ONLINE"] =                  "Aggiornamenti plugin"
@@ -285,6 +294,7 @@ ITALIAN["INSTALLP_DESC_SYSCALL6"] =                     "Un plugin che patcha il
 ITALIAN["INSTALLP_DESC_MONAURAL"] =                     "Audio mono e bilanciamento dei canali per Playstation Vita(richiede MonauralConfig.vpk)"
 ITALIAN["INSTALLP_DESC_MUPREMIUM"] =                    "Abilita la riproduzione di musica in sottofondo per qualsiasi gioco o applicazione."
 ITALIAN["INSTALLP_DESC_ACIDDUMPER"] =                   "Application that may be helpful locating fake DLC"
+ITALIAN["INSTALLP_DESC_DEJAVU"] =                       "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 ITALIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Questo plugin può visualizzare/personalizzare il Boot Splash su PS Vita/PSTV all'avvio. Richiede ENSO"
 ITALIAN["CUSTOMBOOTSPLASH_QUESTION"] =                  "Set this image as Custom Boot Splash ?"
@@ -355,7 +365,7 @@ ITALIAN["STRING_PSVITA_RESTART"] =                      "La tua PSVita sarà ria
 ITALIAN["STRING_BACKUP_CONFIGS"] =                      "Creazione del file Config_backups.txt in corso"
 ITALIAN["STRING_MISSING_CONFIG"] =                      "config.txt MANCANTE"
 ITALIAN["STRING_BACK"] =                                "Ritorna al menu"
-ITALIAN["STRING_CLOSE"] =                               "Esci da Autoplugin"
+ITALIAN["STRING_CLOSE"] =                               "Esci da AutoPlugin"
 ITALIAN["STRING_INSTALLED"] =                           "è stato installato"
 ITALIAN["STRING_UNINSTALLED"] =                         "è stato disinstallato"
 ITALIAN["STRING_PLEASE_WAIT"] =                         "Attendere prego..."

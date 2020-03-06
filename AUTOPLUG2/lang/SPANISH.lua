@@ -4,7 +4,7 @@ SPANISH = {}
 SPANISH["UPDATER_AVAILABLE"] =                          "está disponible."
 SPANISH["UPDATER_QUESTION_UPDATE"] =                    "¿Quieres actualizar la aplicación?"
 SPANISH["UPDATER_DOWNLOADING"] =                        "Descargando Actualización..."
-SPANISH["UPDATER_PERCENT"] =                            "Porcentaje: "
+SPANISH["UPDATER_PERCENT"] =                            "Progreso: "
 SPANISH["UPDATER_SEARCH_UNSAFE_VPK"] =                  "Buscando Archivos Inseguros o Peligrosos!"
 SPANISH["UPDATER_FILE"] =                               "Archivo: "
 SPANISH["UPDATER_UNPACK_VPK"] =                         "Desempaquetando vpk..."
@@ -12,7 +12,7 @@ SPANISH["UPDATER_INSTALLING"] =                         "Instalando..."
 SPANISH["UPDATER_ERROR"] =                              "¡¡¡Error de AUTOUPDATE!!!"
 
 --Options Menu
-SPANISH["MENU_TITLE"] =                                 "Autoplugin II"
+SPANISH["MENU_TITLE"] =                                 "AutoPlugin II"
 SPANISH["MENU_PSVITA"] =                                "Plugins para PS Vita"
 SPANISH["MENU_PSP"] =                                   "Plugins para PSP (Adrenaline)"
 SPANISH["MENU_EXTRAS"] =                                "Extras"
@@ -50,7 +50,7 @@ SPANISH["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Descargar e instalar el
 SPANISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Establecer una imagen Custom Boot Splash"
 SPANISH["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Establecer un mensaje para Custom Warning Message"
 SPANISH["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Establecer Nivel de Transparencia"
-SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce Autoplugin II"
+SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
 
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -58,16 +58,18 @@ SPANISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Permite establecer un m
 SPANISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Permite establecerel Nivel de Transparencia (255 = 0% Transparencia, 0 = 100% Transparencia). No esta recomendado usar valores bajo 30"
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Permite descargar e instalar el vpk de iTLS-Enso en tu PS Vita (Añade TLS v1.2 a los dispositivos con Enso)"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permite descargar e instalar el vpk de PSP2-batteryFixer en tu PS Vita (Corrige la mayoría de los problemas relacionados con la batería de PS Vita)"
-SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar Autoplugin II traduciendo a tu idioma!"
+SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
 SPANISH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =            "Habilitar AutoUpdate: "
 SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE"] =              "Cambiar Idioma"
+SPANISH["MENU_SETTINGS_CHANGE_FONT"] =                  "Cambiar font"
 
-SPANISH["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Descarga paquetes de idiomas disponibles para Autoplugin II"
+SPANISH["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Descarga paquetes de idiomas disponibles para AutoPlugin II"
 SPANISH["MENU_SETTINGS_AUTOUPDATE_DESC"] =              "Habilitar AutoUpdate Si/No"
 SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =         "Permite cambiar y ajustar el idioma por defecto de AutoPlugin II"
+SPANISH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Permite cambiar y setear la font en AutoPlugin II"
 
 --Install Plugins
 SPANISH["LIST_PLUGINS"] =                               "Lista de Plugins listos para instalar:"
@@ -182,7 +184,7 @@ SPANISH["CUSTOMBOOTSPLASH_NOPNG_FOUND"] =               "¡ux0:CustomBootsplash 
 SPANISH["CUSTOMBOOTSPLASH_NOPNG"] =                     "El formato compatible es PNG"
 
 --TransImpose
-SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel para TransparentImpose (Nivel de Transparencia"
+SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --Translate
@@ -192,16 +194,18 @@ SPANISH["TRANSLATE_YOUR_TITLE"] =                       "Tuyo: "
 SPANISH["SAVE_TRANSLATIONS"] =                          "Guardar traducción"
 SPANISH["EXIT_SAVE_TRANSLATIONS"] =                     "Traducción no guardada. ¿Guardar antes de salir?"
 SPANISH["TRANSLATION_SAVED_1"] =                        "Tu traducción fue guardada en:"
-SPANISH["TRANSLATION_SAVED_2"] =                        "Sube este archivo al GitHub de Autoplugin II para ser aceptado."
+SPANISH["TRANSLATION_SAVED_2"] =                        "Sube este archivo al GitHub de AutoPlugin II para ser aceptado."
 SPANISH["NOTHING_TO_TRANSLATE"] =                       "¡Gracias por tu interés, pero actualmente no hay nada que traducir!"
 
 --Lang Online
 SPANISH["MENU_TITLE_LANG_ONLINE"] =                     "Idiomas Disponibles"
 SPANISH["MENU_TITLE_LANGUAGE"] =                        "Seleccionar Idioma"
+SPANISH["MENU_TITLE_FONT"] =                            "Seleccionar font"
 SPANISH["LANGUAGE_RELOAD"] =                            "El idioma ha sido cambiado"
 SPANISH["LANGUAGE_NO_UPDATE"] =                         "No hay actualización de idiomas disponibles"
 SPANISH["PLUGINS_NO_ONLINE"] =                          "No hay actualización de Plugins disponibles"
 SPANISH["LANG_UPDATE"] =                                "ACTUALIZAR"
+SPANISH["LANGUAGE_FAILED"] =                            "No hay idiomas"
 SPANISH["LANG_ONLINE_FAILDB"] =                         "Error al decodificar Langdatabase"
 SPANISH["LANG_ONLINE_FAIL_CONEXION"] =                  "Error en la conexión"
 SPANISH["LANG_FILE_UPDATE"] =                           "Actualizado"
@@ -209,6 +213,11 @@ SPANISH["LANG_FILE_NEW"] =                              "Nuevo"
 SPANISH["LANG_INSTALL_ALL"] =                           "Instalar todos"
 SPANISH["MARK_LANGS"] =                                 "Marcar/Desmarcar Idiomas"
 SPANISH["CLEAN_LANGS"] =                                "Para limpiar los Idiomas seleccionados"
+
+--Change font
+SPANISH["FONT_FAILED"] =                                "No se encontrarón fonts (pgf,pvf,ttf) en ux0:data/AUTOPLUGIN2/font/"
+SPANISH["FONT_RELOAD"] =                                "La font ha sido cambiada"
+SPANISH["FONT_DEFAULT"] =                               "Sistema"
 
 --Plugins Online
 SPANISH["MENU_TITLE_PLUGINS_ONLINE"] =                  "Actualización de Plugins"
@@ -285,6 +294,7 @@ SPANISH["INSTALLP_DESC_SYSCALL6"] =                     "Una herramienta que par
 SPANISH["INSTALLP_DESC_MONAURAL"] =                     "Permite Canal de audio Mono (un parlante o el mismo audio por ambos parlantes) y balance de canales de audio para la PS Vita (requiere tener instalado MonauralConfig.vpk)"
 SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar música de fondo (a través de la app oficial) en cualquier juego o aplicación"
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
+SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -355,7 +365,7 @@ SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciar
 SPANISH["STRING_BACKUP_CONFIGS"] =                      "Creando Config_backups.txt"
 SPANISH["STRING_MISSING_CONFIG"] =                      "Falta config.txt"
 SPANISH["STRING_BACK"] =                                "Para volver al menú"
-SPANISH["STRING_CLOSE"] =                               "Salir de Autoplugin"
+SPANISH["STRING_CLOSE"] =                               "Salir de AutoPlugin"
 SPANISH["STRING_INSTALLED"] =                           "Ha sido instalado"
 SPANISH["STRING_UNINSTALLED"] =                         "Ha sido desinstalado"
 SPANISH["STRING_PLEASE_WAIT"] =                         "Por favor, espera..."

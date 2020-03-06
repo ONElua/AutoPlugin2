@@ -12,7 +12,7 @@ CHINESE_S["UPDATER_INSTALLING"] =                      "正在安装..."
 CHINESE_S["UPDATER_ERROR"] =                           "自动更新出错!!!"
 
 --Options Menu
-CHINESE_S["MENU_TITLE"] =                              "Autoplugin II"
+CHINESE_S["MENU_TITLE"] =                              "AutoPlugin II"
 CHINESE_S["MENU_PSVITA"] =                             "Vita 模式插件"
 CHINESE_S["MENU_PSP"] =                                "PSP(Adrenaline) 模式插件"
 CHINESE_S["MENU_EXTRAS"] =                             "附加功能"
@@ -50,7 +50,7 @@ CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "下载并安装 batteryF
 CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画面"
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
-CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 Autoplugin II"
+CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "允许为 PKGJ 的 config.txt 进行选项自定义"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "允许您设置自定义图片作为开机画面"
@@ -58,16 +58,18 @@ CHINESE_S["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "当使用 ENSO 系统开
 CHINESE_S["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "允许您设置透明度 (255 = 0% 透明度, 0 = 100% 透明度) 不推荐设置透明度参数小于 30"
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "下载并安装 iTLS-Enso vpk 到您的 Vita (为启用 Enso 的设备添加 TLS v1.2 支持)"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-batteryFixer vpk 到您的 Vita (解决大多数 PSVita 的电池相关问题)"
-CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 Autoplugin II!"
+CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 AutoPlugin II!"
 
 --Options Settings
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
 CHINESE_S["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "启用自动更新: "
 CHINESE_S["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "更改语言"
+CHINESE_S["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
 
-CHINESE_S["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "为 Autoplugin II 下载可用语言包"
+CHINESE_S["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "为 AutoPlugin II 下载可用语言包"
 CHINESE_S["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "是否启用自动更新"
 CHINESE_S["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "变更及设置 AutoPlugin II 默认语言"
+CHINESE_S["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	   "Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
 CHINESE_S["LIST_PLUGINS"] =                            "可供安装的插件列表:"
@@ -192,16 +194,18 @@ CHINESE_S["TRANSLATE_YOUR_TITLE"] =                    "您的方案: "
 CHINESE_S["SAVE_TRANSLATIONS"] =                       "保存翻译"
 CHINESE_S["EXIT_SAVE_TRANSLATIONS"] =                  "翻译尚未保存. 是否在退出前保存?"
 CHINESE_S["TRANSLATION_SAVED_1"] =                     "您的翻译文件已保存到:"
-CHINESE_S["TRANSLATION_SAVED_2"] =                     "在 Autoplugin II GitHub 上传此文件以使其被收录."
+CHINESE_S["TRANSLATION_SAVED_2"] =                     "在 AutoPlugin II GitHub 上传此文件以使其被收录."
 CHINESE_S["NOTHING_TO_TRANSLATE"] =                    "感谢您的关注, 但现在没有需要翻译的内容!"
 
 --Lang Online
 CHINESE_S["MENU_TITLE_LANG_ONLINE"] =                  "可用语言"
 CHINESE_S["MENU_TITLE_LANGUAGE"] =                     "选择语言"
+CHINESE_S["MENU_TITLE_FONT"] =                         "Select font"
 CHINESE_S["LANGUAGE_RELOAD"] =                         "语言已更改"
 CHINESE_S["LANGUAGE_NO_UPDATE"] =                      "没有可用的语言文件更新"
 CHINESE_S["PLUGINS_NO_ONLINE"] =                       "没有可用的插件更新"
 CHINESE_S["LANG_UPDATE"] =                             "更新"
+CHINESE_S["LANGUAGE_FAILED"] =                         "No languages"
 CHINESE_S["LANG_ONLINE_FAILDB"] =                      "语言数据库解码出错"
 CHINESE_S["LANG_ONLINE_FAIL_CONEXION"] =               "连接错误"
 CHINESE_S["LANG_FILE_UPDATE"] =                        "已更新"
@@ -209,6 +213,11 @@ CHINESE_S["LANG_FILE_NEW"] =                           "新"
 CHINESE_S["LANG_INSTALL_ALL"] =                        "安装所有语言"
 CHINESE_S["MARK_LANGS"] =                              "标记/取消标记语言"
 CHINESE_S["CLEAN_LANGS"] =                             "清除选中的语言"
+
+--Change font
+CHINESE_S["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
+CHINESE_S["FONT_RELOAD"] =                             "The font has been changed"
+CHINESE_S["FONT_DEFAULT"] =                            "System"
 
 --Plugins Online
 CHINESE_S["MENU_TITLE_PLUGINS_ONLINE"] =               "插件更新"
@@ -285,6 +294,7 @@ CHINESE_S["INSTALLP_DESC_SYSCALL6"] =                  "修补PSV执行级别lv0
 CHINESE_S["INSTALLP_DESC_MONAURAL"] =                  "PSVita 的单声道音频和声道平衡 (依赖 MonauralConfig.vpk)"
 CHINESE_S["INSTALLP_DESC_MUPREMIUM"] =                 "为任何游戏或应用程序启用音乐后台播放."
 CHINESE_S["INSTALLP_DESC_ACIDDUMPER"] =                "可能有助于定位虚假 DLC 的应用程序"
+CHINESE_S["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 需要 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
@@ -355,7 +365,7 @@ CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重�
 CHINESE_S["STRING_BACKUP_CONFIGS"] =                   "正在创建 Config_backups.txt"
 CHINESE_S["STRING_MISSING_CONFIG"] =                   "找不到 config.txt"
 CHINESE_S["STRING_BACK"] =                             "返回主菜单"
-CHINESE_S["STRING_CLOSE"] =                            "退出 Autoplugin"
+CHINESE_S["STRING_CLOSE"] =                            "退出 AutoPlugin"
 CHINESE_S["STRING_INSTALLED"] =                        "已完成安装"
 CHINESE_S["STRING_UNINSTALLED"] =                      "已完成卸载"
 CHINESE_S["STRING_PLEASE_WAIT"] =                      "请稍候..."
