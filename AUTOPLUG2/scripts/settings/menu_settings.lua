@@ -12,6 +12,7 @@
 --Funciones Settings
 dofile("scripts/settings/lang_online.lua")
 dofile("scripts/settings/change_lang.lua")
+dofile("scripts/settings/change_font.lua")
 
 function menu_settings()
 
@@ -36,10 +37,15 @@ function menu_settings()
 		change_lang()
 	end
 
+	local change_font_callback = function ()
+		change_font()
+	end
+
 	local menu = {
 		{ text = LANGUAGE["MENU_SETTINGS_LANG_ONLINE"],			desc = LANGUAGE["MENU_SETTINGS_LANG_ONLINE_DESC"],			funct = lang_online_callback },
 		{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 		{ text = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE"],		desc = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"],		funct = change_lang_callback },
+		{ text = LANGUAGE["MENU_SETTINGS_CHANGE_FONT"],			desc = LANGUAGE["MENU_SETTINGS_CHANGE_FONT_DESC"],			funct = change_font_callback },
 	}
 	local scroll = newScroll(menu,#menu)
 
@@ -50,6 +56,7 @@ function menu_settings()
 			{ text = LANGUAGE["MENU_SETTINGS_LANG_ONLINE"],			desc = LANGUAGE["MENU_SETTINGS_LANG_ONLINE_DESC"],			funct = lang_online_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE"],		desc = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"],		funct = change_lang_callback },
+			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_FONT"],			desc = LANGUAGE["MENU_SETTINGS_CHANGE_FONT_DESC"],			funct = change_font_callback },
 		}
 
 		buttons.read()

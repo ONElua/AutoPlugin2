@@ -44,7 +44,7 @@ This tool allows you to install/uninstall the following plugins with one click o
 # Optional settings
 - Update plugins Online
 - Update Languages Online
-- Now you can check the readme file online for most of the included plugins
+- Now you can check yhe readme file online for most of the included plugins
 - Download/Install ITLS-Enso and Battery fixer (vpk)
 - Set a Custom Image (Custom Boot Splash is required)
 - Set a Custom Warning Message (Custom Warning is required)
@@ -57,6 +57,17 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 1.01 ###
+- Chinese font download path error fixed<br>
+- New option to switch between custom fonts<br>
+- Fix missing config.txt for pkgj (no folder found) and removed line for PSM Games<br>
+- New Languages:<br>
+  Yoti/Aleksandr112 for translation in Russian<br>
+  Chronoss09 for translation in French<br>
+  Schn1ek3 for translation in German<br>
+- Update Spanish by gvaldebenit<br>
+- Update English by Gadgetoid<br>
 
 # Credits:
  Thank you
@@ -98,10 +109,12 @@ This fixes missing non-standard characters, not found at english charset. Those 
 - *([HAM](https://twitter.com/holdandmodify)).*<br>
 - *([BaltazaR4](https://twitter.com/baltazarregala4)).*<br>
 # Translators:
-- HAM/NanospeedGamer for translation in Spanish
+- HAM/NanospeedGamer/gvaldebenit for translation in Spanish
 - Kouchan for translation in Japanese
 - yexun1995 for translation in Chinese
 - theheroGAC for translation in Italian
+- Chronoss09 for translation in French
+- Schn1ek3 for translation in German
 
 ## Donation ##
 In case you want to support the work of the team on the vita, you can always donate for some coffee. Any amount is highly appreciated:

@@ -127,22 +127,38 @@ function change_lang()
 				dofile("plugins/plugins.lua")
 				if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
-				__LANG = tb[scroll.sel].file
-				write_config()
+				if __UPDATE == 0 then
+					_update = LANGUAGE["NO"]
+				else
+					_update = LANGUAGE["YES"]
+				end
+
+				__LANG, fnt = tb[scroll.sel].file, nil
+
+				__FONT = ini.read(__PATH_INI,"FONT","font","")
+				if __FONT != "" then
+					fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+				end
+
+				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
+					if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
+						message_wait(CHINESE_FONT_DOWNLOAD)
+						http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+					end
+					if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
+				end
+
+				if fnt then	font.setdefault(fnt)
+				else __FONT=""
+					font.setdefault()
+				end
+
 				os.delay(150)
 				if back then back:blit(0,0) end
 					message_wait(LANGUAGE["LANGUAGE_RELOAD"])
 				os.delay(1500)
 
-				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
-					if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-						message_wait(CHINESE_FONT_DOWNLOAD)
-						http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN/font/font.pgf")
-					end
-				end
-
-				fnt = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf") or font.load("ux0:data/AUTOPLUGIN2/font/font.pvf") or font.load("ux0:data/AUTOPLUGIN2/font/font.ttf")
-				if fnt then	font.setdefault(fnt) end
+				write_config()
 
 				break
 			end

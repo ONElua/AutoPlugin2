@@ -12,7 +12,7 @@
 	<frame id="frame2">
 		<liveitem>
 			<text valign="bottom" align="left" text-align="left" text-valign="bottom" line-space="3" ellipsis="on">
-				<str color="#ffffff" size="34" bold="on" shadow="on">Autoplugin II</str>
+				<str color="#ffffff" size="34" bold="on" shadow="on">AutoPlugin II</str>
 			</text>
 		</liveitem>
 	</frame>
@@ -20,7 +20,7 @@
 	<frame id="frame3">
 		<liveitem>
 			<text align="left" text-align="left" word-wrap="off" ellipsis="on">
-				<str size="26" color="#ffffff" shadow="on">v1.00</str>
+				<str size="26" color="#ffffff" shadow="on">v1.01</str>
 			</text>
 		</liveitem>
 	</frame>

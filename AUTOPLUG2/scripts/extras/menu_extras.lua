@@ -140,10 +140,13 @@ function menu_extras()
 	tai.load()
 	if tai[__UR0].exist then loc = 2 end
 	local menu = {
-		{ text = LANGUAGE["MENU_EXTRAS_PKGJ_TITLE"],		desc = LANGUAGE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"],	funct = config_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],	funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],	funct = batteryfixer_callback },
 	}
+
+	if game.exists("PKGJ00000") then
+		table.insert(menu, 1, { text = LANGUAGE["MENU_EXTRAS_PKGJ_TITLE"],		desc = LANGUAGE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"],	funct = config_callback } )
+	end
 
 	local idx = tai.find(loc, "KERNEL", "custom_boot_splash.skprx")
 	if idx then

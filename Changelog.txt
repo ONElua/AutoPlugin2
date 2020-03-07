@@ -1,7 +1,19 @@
-#AutoPlugin 2 v1.00
+# v1.01
++ Chinese font download path error fixed.
++ New option to switch between custom fonts
++ Fix missing config.txt for pkgj (no folder found) and removed line for PSM Games
++ New Languages:
+ - Yoti/Aleksandr112 for translation in Russian
+ - Chronoss09 for translation in French
+ - Schn1ek3 for translation in German
+ - Kouchan for translation in Japanese
++ Update Spanish by gvaldebenit
++ Update English_us by Gadgetoid
+
+# v1.00
 - Update plugins Online
 - Update Languages Online
-- Now you can check the readme file online for most of the included plugins
+- Now you can check yhe readme file online for most of the included plugins
 - Download/Install ITLS-Enso and Battery fixer (vpk)
 - Set a Custom Image (Custom Boot Splash is required)
 - Set a Custom Warning Message (Custom Warning is required)

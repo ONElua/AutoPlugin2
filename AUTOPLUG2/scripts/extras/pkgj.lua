@@ -17,19 +17,17 @@ function update_configtxt(path, tb_config, options)
 	--Update Line install_psp_psx_location
 	if line_find_install_location > 0 then tb_config[line_find_install_location] = "install_psp_psx_location "..options[2].status end
 
-	--Remove lines for install_psp_as_pbp & psm_disclaimer_yes_i_read_the_readme ??
-	if line_find_install_as_pbp > line_find_add_psm then
-		if options[1].status == false then table.remove(tb_config,line_find_install_as_pbp) end
-		if options[3].status == false then table.remove(tb_config,line_find_add_psm) end
-	elseif line_find_install_as_pbp < line_find_add_psm then
-		if options[3].status == false then table.remove(tb_config,line_find_add_psm) end
-		if options[1].status == false then table.remove(tb_config,line_find_install_as_pbp) end
+	--Remove lines for psm_disclaimer_yes_i_read_the_readme
+	if line_find_add_psm > 0 then
+		table.remove(tb_config,line_find_add_psm)
 	end
+
+	--Remove lines for install_psp_as_pbp
+	if options[1].status == false then table.remove(tb_config,line_find_install_as_pbp) end
 
 	--Insert new lines
 	if line_find_install_location == 0 then table.insert(tb_config, "install_psp_psx_location "..options[2].status) end
 	if line_find_install_as_pbp == 0 and options[1].status == true then	table.insert(tb_config, "install_psp_as_pbp 1") end
-	if line_find_add_psm == 0 and options[3].status == true then table.insert(tb_config, "psm_disclaimer_yes_i_read_the_readme NoPsmDrm") end
 
 	--Update config.txt
 	local fp = io.open(path, "w+")
@@ -42,15 +40,8 @@ end
 
 function read_config(file, tb_config)
 
-	if not files.exists(file) then
-		if files.exists("ux0:pkgi/config.txt") then
-			file = "ux0:pkgi/config.txt"
-		else
-			files.new("ux0:pkgj/config.txt")
-			file = "ux0:pkgj/config.txt"
-			--return nil
-		end
-	end
+	files.mkdir(files.nofile(file))
+	if not files.exists(file) then files.new(file)	end
 
 	local cont = 0
 	for line in io.lines(file) do
@@ -90,10 +81,6 @@ local psp_psx_location_callback = function (obj)
 	
 end
 
-local add_psm_callback = function (obj)
-	obj.status = not obj.status
-end
-
 function config_pkgj()
 
 	--Clean
@@ -101,7 +88,13 @@ function config_pkgj()
 	mount_install = "ux0:"
 	local tb_config = {}
 
-	local check_config = read_config("ux0:pkgj/config.txt", tb_config)
+	local path_configtxt = "ux0:pkgj/config.txt"
+	if files.exists("ur0:pkgj/config.txt") then path_configtxt = "ur0:pkgj/config.txt"
+	elseif files.exists("ux0:pkgj/config.txt") then path_configtxt = "ux0:pkgj/config.txt"
+	elseif files.exists("ur0:pkgi/config.txt") then path_configtxt = "ur0:pkgi/config.txt"
+	elseif files.exists("ux0:pkgi/config.txt") then path_configtxt = "ux0:pkgi/config.txt" end
+
+	local check_config = read_config(path_configtxt, tb_config)
 	if not check_config then
 		if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
 		message_wait(LANGUAGE["NO_CONFIG_PKGJ"])
@@ -117,14 +110,12 @@ function config_pkgj()
 	local menuext = {
 		{ text = LANGUAGE["PKGJ_TITLE_INSTALL_PBP"],	desc = LANGUAGE["PKGJ_DESC_INSTALL_PBP"],	status = false,		funct = psp_eboot_callback },
 		{ text = LANGUAGE["PKGJ_TITLE_CHANGE_LOC"],		desc = LANGUAGE["PKGJ_DESC_CHANGE_LOC"],	status = "ux0:",	funct = psp_psx_location_callback },
-		{ text = LANGUAGE["PKGJ_TITLE_ADD_PSM"],		desc = LANGUAGE["PKGJ_DESC_ADD_PSM"],		status = false,		funct = add_psm_callback },
 	}
 
 	--UPdate Status
 	if line_find_install_as_pbp > 0 then menuext[1].status = true end
 	if pmount == 0 then menuext[2].pmount = 1 else menuext[2].pmount = pmount end
 	menuext[2].status = PMounts[menuext[2].pmount]
-	if line_find_add_psm > 0 then	menuext[3].status = true end
 
 	local scroll,xscroll = newScroll(menuext,#menuext),5
 	while true do
@@ -141,7 +132,6 @@ function config_pkgj()
 
 			if i == scroll.sel then draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			--if i == scroll.sel then draw.fillrect(3,y-4,952,26,color.green:a(105)) end
 			screen.print(25,y, menuext[i].text)
 
 			if menuext[i].status == true then
@@ -154,6 +144,8 @@ function config_pkgj()
 
 			y+=35
 		end
+
+		screen.print(480, 360, path_configtxt,1.2,color.green,0x0,__ACENTER)
 
 		if screen.textwidth(menuext[scroll.sel].desc) > 925 then
 			xscroll = screen.print(xscroll, 400, menuext[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
@@ -200,8 +192,6 @@ function config_pkgj()
 
 			if buttons.triangle then
 
-				--local vbuff = screen.toimage()
-				--if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
 				if back2 then back2:blit(0,0) end
 					message_wait(LANGUAGE["PKGJ_UPDATING"])
 				os.delay(1500)

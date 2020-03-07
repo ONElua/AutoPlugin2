@@ -46,6 +46,10 @@ function plugins_installation(sel)
 						install = false
 					end
 				end
+			elseif plugins[sel].path:find(string.lower("repatch"),1,true) then
+				tai.del(loc, "KERNEL", "repatch.skprx")
+				tai.del(loc, "KERNEL", "repatch_4.skprx")
+
 			elseif plugins[sel].path == "vitastick.skprx" and not game.exists("VITASTICK") then
 				__file = "vitastick.vpk"
 				game.install("resources/plugins/vitastick.vpk",false)
@@ -212,6 +216,7 @@ function plugins_installation(sel)
 					if henkaku then img2splashbin(henkaku,false) end
 
 				elseif plugins[sel].path == "vitacheat.skprx" then		--Vitacheat 3.65
+
 					files.extract("resources/plugins/vitacheat.zip","ux0:")
 					files.copy("resources/plugins/vitacheat365/vitacheat.suprx","ux0:vitacheat/")
 

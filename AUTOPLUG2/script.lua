@@ -9,6 +9,7 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+dofile("git/shared.lua")
 PLUGINS_PORT = channel.new("PLUGINS_PORT")
 cont_global = atomic.new(0)
 PLUGINS_PORT:push(cont_global)
@@ -43,6 +44,23 @@ __LANG = ini.read(__PATH_INI,"LANGUAGE","lang","")
 if __LANG == "" then __LANG = os.language() end
 dofile("scripts/language.lua")
 
+-- Loading font
+files.mkdir("ux0:data/AUTOPLUGIN2/font/")
+fnt = nil
+__FONT = ini.read(__PATH_INI,"FONT","font","")
+if __FONT != "" then
+	fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+end
+
+if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
+	if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
+		message_wait(CHINESE_FONT_DOWNLOAD)
+		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+	end
+	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
+end
+if fnt then font.setdefault(fnt) end
+
 if os.access() == 0 then
 	if back then back:blit(0,0) end
 	screen.flip()
@@ -52,23 +70,6 @@ end
 
 dofile("scripts/commons.lua")
 dofile("scripts/scroll.lua")
-
--- Loading font
-files.mkdir("ux0:data/AUTOPLUGIN2/font/")
-if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
-	if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-		message_wait(CHINESE_FONT_DOWNLOAD)
-		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
-	end
-end
-
-fnt = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf") or font.load("ux0:data/AUTOPLUGIN2/font/font.pvf") or font.load("ux0:data/AUTOPLUGIN2/font/font.ttf")
-if fnt then	font.setdefault(fnt) end
-
---Updater
-if not game.exists("AUTOPLUG2") then
-	dofile("git/updater.lua")
-end
 
 __UPDATE = tonumber(ini.read(__PATH_INI,"UPDATE","update","1"))
 _update = LANGUAGE["NO"]
