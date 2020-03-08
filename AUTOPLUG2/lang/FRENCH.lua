@@ -64,12 +64,12 @@ FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlu
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Télécharger les langues disponibles"
 FRENCH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Activer les mises à jour automatique: "
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Changer de langue"
-FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
+FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Changer de police d'écriture"
 
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Activer les mises à jour automatique Oui/Non"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de changer et de définir la langue par défaut pour l'AutoPlugin II"
-FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Allows to change and set font as default for AutoPlugin II"
+FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Permet de changer et de définir la police par défaut pour l'AutoPlugin II"
 
 --Install Plugins
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés:"
@@ -200,12 +200,12 @@ FRENCH["NOTHING_TO_TRANSLATE"] =                    "Merci de votre intérêt, m
 --Lang Online
 FRENCH["MENU_TITLE_LANG_ONLINE"] =                  "Langues disponibles"
 FRENCH["MENU_TITLE_LANGUAGE"] =                     "Sélectionnez une langue"
-FRENCH["MENU_TITLE_FONT"] =                         "Select font"
+FRENCH["MENU_TITLE_FONT"] =                         "Choisir la police"
 FRENCH["LANGUAGE_RELOAD"] =                         "La langue a été modifiée"
 FRENCH["LANGUAGE_NO_UPDATE"] =                      "Il n'y a pas de mise à jour des langues disponibles"
 FRENCH["PLUGINS_NO_ONLINE"] =                       "Il n'y a pas de mise à jour des plugins disponibles"
 FRENCH["LANG_UPDATE"] =                             "MISE A JOUR"
-FRENCH["LANGUAGE_FAILED"] =                         "No languages"
+FRENCH["LANGUAGE_FAILED"] =                         "Pas de langues"
 FRENCH["LANG_ONLINE_FAILDB"] =                      "Erreur de décodage dans la base de donnée des langues"
 FRENCH["LANG_ONLINE_FAIL_CONEXION"] =               "Erreur de connexion"
 FRENCH["LANG_FILE_UPDATE"] =                        "Mise à jour"
@@ -215,9 +215,9 @@ FRENCH["MARK_LANGS"] =                              "Cocher/Décocher"
 FRENCH["CLEAN_LANGS"] =                             "Annuler la sélection"
 
 --Change font
-FRENCH["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
-FRENCH["FONT_RELOAD"] =                             "The font has been changed"
-FRENCH["FONT_DEFAULT"] =                            "System"
+FRENCH["FONT_FAILED"] =                             "Polices d'écriture non trouvées (pgf,pvf,ttf) dans ux0:data/AUTOPLUGIN2/font/"
+FRENCH["FONT_RELOAD"] =                             "La police d'écriture a été modifiée"
+FRENCH["FONT_DEFAULT"] =                            "Système"
 
 --Plugins Online
 FRENCH["MENU_TITLE_PLUGINS_ONLINE"] =               "Mises à jour des plugins"
@@ -294,7 +294,7 @@ FRENCH["INSTALLP_DESC_SYSCALL6"] =                  "Un outil qui corrige le sys
 FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des canaux pour la Playstation Vita (nécessite MonauralConfig.vpk)"
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
-FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Permet de faire une sauvegarde instantané dans la RAM à tout moment et de la restaurer par la suite. Il vous permet de sauvegarder dans les jeux où cela n'est officiellement pas possible. Un cas d'utilisation potentiel pour les développeurs de downgrader/mettre à jour temporairement le microprogramme (en RAM) afin de tester les choses (cela n'a pas encore été testé)"
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher un écran de démarrage personnalisé sur PS Vita/PSTV au démarrage. Nécessite ENSO."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
