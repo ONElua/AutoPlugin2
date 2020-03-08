@@ -262,6 +262,7 @@ function autoplugin()
 
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0,0) end
 
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].."  "..toinstall.."/"..#plugins,1,color.white)

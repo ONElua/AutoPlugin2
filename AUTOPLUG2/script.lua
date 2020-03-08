@@ -54,7 +54,7 @@ end
 
 if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 	if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-		message_wait(CHINESE_FONT_DOWNLOAD)
+		message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 	end
 	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
