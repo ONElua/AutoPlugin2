@@ -324,6 +324,7 @@ POLISH["INSTALLP_DESC_QUICKVOLUME"] =               "Zmień głośność w szybk
 POLISH["INSTALLP_DESC_QASCREEN"] =                  "Wtyczka wysokiej jakości zrzutów ekranu dla PS Vita. Odblokowuje natywny zrzut ekranu."
 POLISH["INSTALLP_DESC_NOSHAREDFB"] =                "Pozwala ominąć wspólne problemy z buforowaniem ramki po cyklu zawieszenia-wznowienia dla aplikacji homebrew, które działają w trybie systemowym. Ale używa standardowej implementacji bufora ramki."
 POLISH["INSTALLP_DESC_TRIMPOSE"] =                  "Wtyczka do PS Vita, która sprawia, że nakładka menu (to, które pojawia się po długim naciśnięciu przycisku PS) jest przezroczyste."
+POLISH["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 POLISH["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"

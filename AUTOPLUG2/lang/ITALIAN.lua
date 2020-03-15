@@ -324,6 +324,7 @@ ITALIAN["INSTALLP_DESC_QUICKVOLUME"] =                  "Cambia il volume dal me
 ITALIAN["INSTALLP_DESC_QASCREEN"] =                     "Plugin che permette di effettuare screenshot di alta qualità su PSVita. Sblocca l'implementazione SceShell dello screenshot del QA nativo"
 ITALIAN["INSTALLP_DESC_NOSHAREDFB"] =                   "Consente di aggirare i problemi di framebuffer condivisi dopo il ciclo di sospensione/ripresa per le applicazioni homebrew eseguite in modalità di sistema. ma usa l'implementazione standard di framebuffer."
 ITALIAN["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin per PS Vita che rende trasparente il menu RAPIDO (quello che appare dopo aver premuto a lungo il pulsante PS)."
+ITALIAN["INSTALLP_DESC_QUIETSHOT"] =                    "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 ITALIAN["INSTALLP_DESC_YAMT"] =                         "Ancora un altro plugin(SD2VITA) per PSVita/PSTV (richiede Enso, compatibile SOLO con firmware 3.60 e 3.65)"

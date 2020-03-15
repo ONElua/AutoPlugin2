@@ -324,6 +324,7 @@ FRENCH["INSTALLP_DESC_QUICKVOLUME"] =               "Changez de niveau du volume
 FRENCH["INSTALLP_DESC_QASCREEN"] =                  "Plugin de capture d'écran de haute qualité pour PS Vita. Débloque l'implémentation native de SceShell pour l'assurance qualité."
 FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les problèmes de framebuffer partagé après le cycle de mise en veille-reprise pour les applications et homebrew qui s'exécutent en mode système, mais utilisent une implémentation de framebuffer standard."
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
+FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"

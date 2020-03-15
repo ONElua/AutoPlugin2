@@ -324,6 +324,7 @@ JAPANESE["INSTALLP_DESC_QUICKVOLUME"] =                 "PSTVとPSVita同様に�
 JAPANESE["INSTALLP_DESC_QASCREEN"] =                    "PSVita用の高品質のスクリーンショットプラグイン。 ネイティブQAスクリーンショットSceShell実装のロックを解除します"
 JAPANESE["INSTALLP_DESC_NOSHAREDFB"] =                  "システムモードで実行される自作アプリケーションのサスペンドと再開のサイクル後、共有フレームバッファの問題を回避できます。 ただし、標準のフレームバッファ実装を使用します"
 JAPANESE["INSTALLP_DESC_TRIMPOSE"] =                    "長押しメニュー（PSボタンを長く押した後に表示されるメニュー）を透明にするPSVitaのプラグイン"
+JAPANESE["INSTALLP_DESC_QUIETSHOT"] =                   "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"

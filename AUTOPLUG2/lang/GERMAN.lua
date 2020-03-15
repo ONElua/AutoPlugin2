@@ -324,6 +324,7 @@ GERMAN["INSTALLP_DESC_QUICKVOLUME"] =               "Ändern Sie die Lautstärke
 GERMAN["INSTALLP_DESC_QASCREEN"] =                  "Hochwertiges Screenshot Plugin für PS Vita. Schaltet die native QS-Screenshot 'SceShell' Implementierung frei."
 GERMAN["INSTALLP_DESC_NOSHAREDFB"] =                "Ermöglicht das Umgehen von Problemen mit gemeinsam genutzten Bildspeichern nach dem Anhalten des Wiederaufnahmezyklus für Homebrew Anwendungen, die im Systemmodus ausgeführt werden. Verwenden Sie jedoch die Standard Bildspeicher Implementierung."
 GERMAN["INSTALLP_DESC_TRIMPOSE"] =                  "Ein Plugin für PS Vita, dass das Schnellmenü (das nach langem Drücken der PS-Taste angezeigt wird) transparent macht."
+GERMAN["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 GERMAN["INSTALLP_DESC_YAMT"] =                      "Ein anderes Kernel Plugin um den Speicher einer Partition zu zuweisen, für PSVita/PSTV (Benötigt Enso, NUR mit der Firmware 3.60 und 3.65"

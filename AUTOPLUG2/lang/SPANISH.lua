@@ -324,6 +324,7 @@ SPANISH["INSTALLP_DESC_QUICKVOLUME"] =                  "Permite cambiar el volu
 SPANISH["INSTALLP_DESC_QASCREEN"] =                     "Plugin para screenshots en alta calidad. Habilita las implementaciones del SceShell relacionadas con las QA de screenshots"
 SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los problemas de framebuffer compartido en homebrew que corre en modo sistema, pero ocupa la implementación estandar de framebuffer, despues de un ciclo de suspender-resumir (3.60-3.68)"
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
+SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"

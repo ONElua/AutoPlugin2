@@ -70,6 +70,7 @@ Online_Plugins = {
 { name = "QAscreenshot by GrapheneCt v1.1", path = "QAscreenshot.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QASCREEN"], KEY = "INSTALLP_DESC_QASCREEN", link = "https://raw.githubusercontent.com/GrapheneCt/QAscreenshot/master/README.md", },
 { name = "NoSharedFb v1.0", path = "NoSharedFb.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NOSHAREDFB"], KEY = "INSTALLP_DESC_NOSHAREDFB", link = "https://raw.githubusercontent.com/GrapheneCt/NoSharedFb/master/README.md", },
 { name = "TransparentImpose v1.0 by GrapheneCt", path = "TrImpose.suprx", section = "main", config = "trimpose.txt", configpath = "ur0:data/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TRIMPOSE"], KEY = "INSTALLP_DESC_TRIMPOSE", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
+{ name = "Quietshot v1.0 by cuevavirus", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT", link = "https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md", },
 
 --All
 { name = "PSV-VSH MENU by joel16 v3.4", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx

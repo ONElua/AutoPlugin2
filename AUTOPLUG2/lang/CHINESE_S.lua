@@ -324,6 +324,7 @@ CHINESE_S["INSTALLP_DESC_QUICKVOLUME"] =               "从 PSVita 快捷菜单�
 CHINESE_S["INSTALLP_DESC_QASCREEN"] =                  "适用于 PSVita 的高质量截屏插件.解锁 QA 截屏的本地 SceShell 实现."
 CHINESE_S["INSTALLP_DESC_NOSHAREDFB"] =                "对于在系统模式下运行但使用标准帧缓冲实现的自制应用程序,允许您在挂起恢复周期之后绕过共享的帧缓冲问题的插件."
 CHINESE_S["INSTALLP_DESC_TRIMPOSE"] =                  "PS Vita 插件,用于使强制菜单 (长按 PS 按钮出现的那个) 透明."
+CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款分区重新挂载内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
