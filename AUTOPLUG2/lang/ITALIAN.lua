@@ -64,12 +64,12 @@ ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare Auto
 ITALIAN["MENU_SETTINGS_LANG_ONLINE"] =                  "Scarica le lingue disponibili"
 ITALIAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =            "Abilita Autoaggiornamento: "
 ITALIAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =              "Cambia linguaggio"
-ITALIAN["MENU_SETTINGS_CHANGE_FONT"] =                  "Change font"
+ITALIAN["MENU_SETTINGS_CHANGE_FONT"] =                  "Cambia font"
 
 ITALIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Scarica i language pack disponibili per AutoPlugin II"
 ITALIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =              "Abilita Autoaggiornamento Si/No"
 ITALIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =         "Permette di cambiare e impostare la lingua come predefinita per AutoPlugin II"
-ITALIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Allows to change and set font as default for AutoPlugin II"
+ITALIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	      "Permette di modificare e impostare il carattere predefinito per AutoPlugin II"
 
 --Install Plugins
 ITALIAN["LIST_PLUGINS"] =                               "Lista dei plugin che possono essere installati:"
@@ -200,12 +200,12 @@ ITALIAN["NOTHING_TO_TRANSLATE"] =                       "Grazie per il vostro in
 --Lang Online
 ITALIAN["MENU_TITLE_LANG_ONLINE"] =                     "Linguaggi disponibili"
 ITALIAN["MENU_TITLE_LANGUAGE"] =                        "Seleziona un linguaggio"
-ITALIAN["MENU_TITLE_FONT"] =                            "Select font"
+ITALIAN["MENU_TITLE_FONT"] =                            "Seleziona font"
 ITALIAN["LANGUAGE_RELOAD"] =                            "La lingua è stata cambiata"
 ITALIAN["LANGUAGE_NO_UPDATE"] =                         "Non ci sono aggiornamenti di lingue disponibili"
 ITALIAN["PLUGINS_NO_ONLINE"] =                          "Non ci sono aggiornamenti disponibili per i plugin"
 ITALIAN["LANG_UPDATE"] =                                "AGGIORNAMENTO"
-ITALIAN["LANGUAGE_FAILED"] =                            "No languages"
+ITALIAN["LANGUAGE_FAILED"] =                            "Nessun linguaggio"
 ITALIAN["LANG_ONLINE_FAILDB"] =                         "Errore durante la decodifica di Langdatabase"
 ITALIAN["LANG_ONLINE_FAIL_CONEXION"] =                  "Errore di connessione"
 ITALIAN["LANG_FILE_UPDATE"] =                           "Aggiornato"
@@ -215,9 +215,9 @@ ITALIAN["MARK_LANGS"] =                                 "Contrassegna / deselezi
 ITALIAN["CLEAN_LANGS"] =                                "per pulire i Linguaggi selezionati"
 
 --Change font
-ITALIAN["FONT_FAILED"] =                                "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
-ITALIAN["FONT_RELOAD"] =                                "The font has been changed"
-ITALIAN["FONT_DEFAULT"] =                               "System"
+ITALIAN["FONT_FAILED"] =                                "Nessun font trovato (pgf,pvf,ttf) su ux0:data/AUTOPLUGIN2/font/"
+ITALIAN["FONT_RELOAD"] =                                "Il font è stato cambiato con successo"
+ITALIAN["FONT_DEFAULT"] =                               "Sistema"
 
 --Plugins Online
 ITALIAN["MENU_TITLE_PLUGINS_ONLINE"] =                  "Aggiornamenti plugin"
@@ -324,7 +324,7 @@ ITALIAN["INSTALLP_DESC_QUICKVOLUME"] =                  "Cambia il volume dal me
 ITALIAN["INSTALLP_DESC_QASCREEN"] =                     "Plugin che permette di effettuare screenshot di alta qualità su PSVita. Sblocca l'implementazione SceShell dello screenshot del QA nativo"
 ITALIAN["INSTALLP_DESC_NOSHAREDFB"] =                   "Consente di aggirare i problemi di framebuffer condivisi dopo il ciclo di sospensione/ripresa per le applicazioni homebrew eseguite in modalità di sistema. ma usa l'implementazione standard di framebuffer."
 ITALIAN["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin per PS Vita che rende trasparente il menu RAPIDO (quello che appare dopo aver premuto a lungo il pulsante PS)."
-ITALIAN["INSTALLP_DESC_QUIETSHOT"] =                    "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+ITALIAN["INSTALLP_DESC_QUIETSHOT"] =                    "Silenzia il suono di default quando si scatta uno screenshot, una foto, un video o una foto panoramica. Funziona sia su Playstation Vita che su PlayStation TV."
 
 --ALL
 ITALIAN["INSTALLP_DESC_YAMT"] =                         "Ancora un altro plugin(SD2VITA) per PSVita/PSTV (richiede Enso, compatibile SOLO con firmware 3.60 e 3.65)"
