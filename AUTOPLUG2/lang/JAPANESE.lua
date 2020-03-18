@@ -349,7 +349,7 @@ JAPANESE["INSTALLP_DESC_REMAPSV"] =                     "remaPSVは、PSVitaの�
 JAPANESE["INSTALLP_DESC_FORCELANG"] =                   "アプリケーションの言語をオーバーライドするためのtaiHENプラグイン"
 JAPANESE["INSTALLP_DESC_SHOWINFO"] =                    "実行中のアプリケーションのtitle_id、stitle、app_verを表示するシンプルなプラグイン"
 JAPANESE["INSTALLP_DESC_SHOWINFOFU"] =                  "実行中のアプリケーションのtitle_id、stitle、app_verを表示するシンプルなプラグイン（フルバージョン）"
-JAPANESE["INSTALLP_DESC_MODALVOL"] =                    "このパックはゲームを閉じることなくPSVitaのシステムオーディオボリュームをリアルタイムで制御するアプリケーションで構成されています。SELECT + RIGHT （Volume Control.vpkが必要）"
+JAPANESE["INSTALLP_DESC_TRACKPLUGMOD"] =                "Playtime tracker plugin for PSVITA."
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"

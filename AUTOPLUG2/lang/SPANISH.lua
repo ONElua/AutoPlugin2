@@ -350,6 +350,7 @@ SPANISH["INSTALLP_DESC_FORCELANG"] =                    "Plugin de taiHEN para c
 SPANISH["INSTALLP_DESC_SHOWINFO"] =                     "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente"
 SPANISH["INSTALLP_DESC_SHOWINFOFU"] =                   "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente (Versión completa)"
 SPANISH["INSTALLP_DESC_MODALVOL"] =                     "Este paquete consiste en aplicaciones que permiten controlar el volumen del sistema en tiempo real sin cerrar los juegos en la PS Vita con SELECT+DERECHA (Requiere instalar VolumeControl.vpk)"
+SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Playtime tracker plugin for PSVITA."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"

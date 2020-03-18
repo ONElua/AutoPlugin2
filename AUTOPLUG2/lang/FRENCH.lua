@@ -350,6 +350,7 @@ FRENCH["INSTALLP_DESC_FORCELANG"] =                 "Un plugin taiHEN pour outre
 FRENCH["INSTALLP_DESC_SHOWINFO"] =                  "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours."
 FRENCH["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours.(version complète)"
 FRENCH["INSTALLP_DESC_MODALVOL"] =                  "Ce pack se compose d'applications permettant de contrôler le volume audio du système sur PS vita en temps réel sans fermer les jeux SELECT+RIGHT (Require VolumeControl.vpk)"
+FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
