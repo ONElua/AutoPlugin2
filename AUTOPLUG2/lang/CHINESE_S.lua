@@ -350,7 +350,7 @@ CHINESE_S["INSTALLP_DESC_FORCELANG"] =                 "用于覆盖应用程序
 CHINESE_S["INSTALLP_DESC_SHOWINFO"] =                  "显示正在运行的应用程序的标题,短标题和版本信息的简单插件."
 CHINESE_S["INSTALLP_DESC_SHOWINFOFU"] =                "显示正在运行的应用程序的标题,短标题和版本信息的简单插件.(完整版)"
 CHINESE_S["INSTALLP_DESC_MODALVOL"] =                  "此选项包含了无需关闭游戏即可实时控制 PSVita 系统音量的程序 SELECT+RIGHT (依赖 VolumeControl.vpk)"
-CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
+CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏时间追踪插件."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
