@@ -69,7 +69,7 @@ FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Activer les mises à jour automatique Oui/Non"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de changer et de définir la langue par défaut pour l'AutoPlugin II"
-FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Allows to change and set font as default for AutoPlugin II"
+FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Permet de changer et de définir la police par défaut pour l'AutoPlugin II"
 
 --Install Plugins
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés:"
@@ -80,7 +80,7 @@ FRENCH["LR_SWAP"] =                                 "Permuter entre ux0 et ur0"
 FRENCH["PLUGINS_CUSTOM_PATH"] =                     "Installation personnalisé du plugin" 
 FRENCH["PLUGINS_README_ONLINE"] =                   "Lire le Readme en ligne" 
 FRENCH["PLUGINS_NO_README_ONLINE"] =                "Le Readme n'est pas disponible !!!"
-FRENCH["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
+FRENCH["INSTALLP_QUESTION_VPK"] =                   "doit être téléchargé pour ce plugin!\n\nUne connexion Internet est nécessaire!"
 
 --customWarning
 FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'activer le plugin Custom Warning"
@@ -200,13 +200,13 @@ FRENCH["NOTHING_TO_TRANSLATE"] =                    "Merci de votre intérêt, m
 
 --Lang Online
 FRENCH["MENU_TITLE_LANG_ONLINE"] =                  "Langues disponibles"
-FRENCH["MENU_TITLE_LANGUAGE"] =                     "Sélectionnez une langue"
-FRENCH["MENU_TITLE_FONT"] =                         "Select font"
+FRENCH["MENU_TITLE_LANGUAGE"] =                     "Sélectionner une langue"
+FRENCH["MENU_TITLE_FONT"] =                         "Choisir la police d'écriture"
 FRENCH["LANGUAGE_RELOAD"] =                         "La langue a été modifiée"
 FRENCH["LANGUAGE_NO_UPDATE"] =                      "Il n'y a pas de mise à jour des langues disponibles"
 FRENCH["PLUGINS_NO_ONLINE"] =                       "Il n'y a pas de mise à jour des plugins disponibles"
 FRENCH["LANG_UPDATE"] =                             "MISE A JOUR"
-FRENCH["LANGUAGE_FAILED"] =                         "No languages"
+FRENCH["LANGUAGE_FAILED"] =                         "Pas de langues trouver"
 FRENCH["LANG_ONLINE_FAILDB"] =                      "Erreur de décodage dans la base de donnée des langues"
 FRENCH["LANG_ONLINE_FAIL_CONEXION"] =               "Erreur de connexion"
 FRENCH["LANG_FILE_UPDATE"] =                        "Mise à jour"
@@ -216,9 +216,9 @@ FRENCH["MARK_LANGS"] =                              "Cocher/Décocher"
 FRENCH["CLEAN_LANGS"] =                             "Annuler la sélection"
 
 --Change font
-FRENCH["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
-FRENCH["FONT_RELOAD"] =                             "The font has been changed"
-FRENCH["FONT_DEFAULT"] =                            "System"
+FRENCH["FONT_FAILED"] =                             "Polices d'écriture non trouvées (pgf,pvf,ttf) dans ux0:data/AUTOPLUGIN2/font/"
+FRENCH["FONT_RELOAD"] =                             "La police d'écriture a été modifiée"
+FRENCH["FONT_DEFAULT"] =                            "Système"
 
 --Plugins Online
 FRENCH["MENU_TITLE_PLUGINS_ONLINE"] =               "Mises à jour des plugins"
@@ -295,8 +295,8 @@ FRENCH["INSTALLP_DESC_SYSCALL6"] =                  "Un outil qui corrige le sys
 FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des canaux pour la Playstation Vita (nécessite MonauralConfig.vpk)"
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
-FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
-FRENCH["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Permet de faire une sauvegarde instantané dans la RAM à tout moment et de la restaurer par la suite. Il vous permet de sauvegarder dans les jeux où cela n'est officiellement pas possible. Un cas d'utilisation potentiel pour les développeurs de downgrader/mettre à jour temporairement le microprogramme (en RAM) afin de tester les choses (cela n'a pas encore été testé)"
+FRENCH["INSTALLP_DESC_STAYBRIGHT"] =                "Désactiver l'auto-diminution de l'écran mais conserver l'auto-suspension sur la Playstation Vita."
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher un écran de démarrage personnalisé sur PS Vita/PSTV au démarrage. Nécessite ENSO."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
@@ -324,9 +324,9 @@ FRENCH["INSTALLP_DESC_LOWMEMMODE"] =                "Lancer des applications sys
 FRENCH["INSTALLP_DESC_QUICKPOWER"] =                "Éteindre, redémarrer et mise en veille, tout cela dans le menu rapide. Pour la Playstation Vita et la Playstation TV. Maintenez le bouton 'Power Off' pour redémarrer."
 FRENCH["INSTALLP_DESC_QUICKVOLUME"] =               "Changez de niveau du volume à partir du menu rapide de la Playstation Vita, comme sur la Playstation TV."
 FRENCH["INSTALLP_DESC_QASCREEN"] =                  "Plugin de capture d'écran de haute qualité pour PS Vita. Débloque l'implémentation native de SceShell pour l'assurance qualité."
-FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les problèmes de framebuffer partagé après le cycle de mise en veille-reprise pour les applications et homebrew qui s'exécutent en mode système, mais utilisent une implémentation de framebuffer standard."
+FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les problèmes de framebuffer partagé après le cycle de mise en veille-reprise pour les applications et homebrews qui s'exécutent en mode système, mais utilisent une implémentation de framebuffer standard."
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
-FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -352,7 +352,7 @@ FRENCH["INSTALLP_DESC_FORCELANG"] =                 "Un plugin taiHEN pour outre
 FRENCH["INSTALLP_DESC_SHOWINFO"] =                  "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours."
 FRENCH["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours.(version complète)"
 FRENCH["INSTALLP_DESC_MODALVOL"] =                  "Ce pack se compose d'applications permettant de contrôler le volume audio du système sur PS vita en temps réel sans fermer les jeux SELECT+RIGHT (Require VolumeControl.vpk)"
-FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
+FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Plugin PSVita qui calcule le temps de jeu que vous jouer."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
