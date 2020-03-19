@@ -80,6 +80,7 @@ GERMAN["LR_SWAP"] =                                 "zwischen ux0/ur0 wechseln"
 GERMAN["PLUGINS_CUSTOM_PATH"] =                     "Install in the custom path" 
 GERMAN["PLUGINS_README_ONLINE"] =                   "Readme Online anzeigen" 
 GERMAN["PLUGINS_NO_README_ONLINE"] =                "Readme nicht verfügbar!"
+GERMAN["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 GERMAN["CUSTOMWARNING_MESSAGE"] =                   "Denke daran, das Plugin dür Custom Warning zu aktivieren"
@@ -295,6 +296,7 @@ GERMAN["INSTALLP_DESC_MONAURAL"] =                  "Mono Audio und Kanalbalance
 GERMAN["INSTALLP_DESC_MUPREMIUM"] =                 "Aktiviert die Wiedergabe von Hintergrundmusik für jedes Spiel oder jede Anwendung."
 GERMAN["INSTALLP_DESC_ACIDDUMPER"] =                "Eine Anwendung, die hilfreich sein kann, um gefälschte DLC´s zu erstellen"
 GERMAN["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+GERMAN["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 GERMAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Dieses Plugin kann das Bootlogo auf der PSVita / PSTV beim Booten durch ein Bild ersetzen. ENSO erforderlich"
 GERMAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Dein 'Splash-Bild' als eigenes 'Boot-Splash' nutzen?"

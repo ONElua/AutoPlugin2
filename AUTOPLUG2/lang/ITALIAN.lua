@@ -80,6 +80,7 @@ ITALIAN["LR_SWAP"] =                                    "Per cambiare la partizi
 ITALIAN["PLUGINS_CUSTOM_PATH"] =                        "Installa nel percorso personalizzato"
 ITALIAN["PLUGINS_README_ONLINE"] =                      "Visualizza Readme Online" 
 ITALIAN["PLUGINS_NO_README_ONLINE"] =                   "Readme non disponibile !!!"
+ITALIAN["INSTALLP_QUESTION_VPK"] =                      "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 ITALIAN["CUSTOMWARNING_MESSAGE"] =                      "Ricordati di abilitare il plugin Custom Warning"
@@ -295,6 +296,7 @@ ITALIAN["INSTALLP_DESC_MONAURAL"] =                     "Audio mono e bilanciame
 ITALIAN["INSTALLP_DESC_MUPREMIUM"] =                    "Abilita la riproduzione di musica in sottofondo per qualsiasi gioco o applicazione."
 ITALIAN["INSTALLP_DESC_ACIDDUMPER"] =                   "Applicazione che può essere utile per individuare DLC falsi"
 ITALIAN["INSTALLP_DESC_DEJAVU"] =                       "Consente di creare un'istantanea della RAM in qualsiasi momento e ripristinarla in seguito. Ti consente di salvare nei giochi in cui non è ufficialmente possibile. Un potenziale caso d'uso per gli sviluppatori è il downgrade/aggiornamento temporaneo del firmware (nella RAM) per testare le cose (questo non è stato ancora testato)"
+ITALIAN["INSTALLP_DESC_STAYBRIGHT"] =                   "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 ITALIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Questo plugin può visualizzare/personalizzare il Boot Splash su PS Vita/PSTV all'avvio. Richiede ENSO"
 ITALIAN["CUSTOMBOOTSPLASH_QUESTION"] =                  "Impostare questa immagine come Boot Splash personalizzato ?"

@@ -80,6 +80,7 @@ POLISH["LR_SWAP"] =                                 "Przełącz pomiędzy ux0/ur
 POLISH["PLUGINS_CUSTOM_PATH"] =                     "Zainstaluj w niestandardowej scieżce" 
 POLISH["PLUGINS_README_ONLINE"] =                   "Otwórz Readme Online" 
 POLISH["PLUGINS_NO_README_ONLINE"] =                "Readme jest niedostępne !!!"
+POLISH["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 POLISH["CUSTOMWARNING_MESSAGE"] =                   "Pamiętaj aby włączyć plugin ostrzeżenia o epilepsji"
@@ -295,6 +296,7 @@ POLISH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio i balans kanał�
 POLISH["INSTALLP_DESC_MUPREMIUM"] =                 "Włącza muzykę w tle podczas korzystania z aplikacji i grania w gry."
 POLISH["INSTALLP_DESC_ACIDDUMPER"] =                "Aplikacja, która może być pomocna w zlokalizowaniu fałszywego DLC"
 POLISH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+POLISH["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 POLISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ten plugin pozwala na wyświetlenie własnego ekranu startowego na PS Vita/PSTV. Wymaga ENSO."
 POLISH["CUSTOMBOOTSPLASH_QUESTION"] =               "Czy chcesz ustawić ten obraz, jako obraz startowy ?"

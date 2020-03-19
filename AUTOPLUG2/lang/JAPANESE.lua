@@ -80,6 +80,7 @@ JAPANESE["LR_SWAP"] =                                   "ux0/ur0の切り替え"
 JAPANESE["PLUGINS_CUSTOM_PATH"] =                       "カスタムパスにインストール" 
 JAPANESE["PLUGINS_README_ONLINE"] =                     "オンラインでReadmeを表示" 
 JAPANESE["PLUGINS_NO_README_ONLINE"] =                  "Readmeは利用できません!!!"
+JAPANESE["INSTALLP_QUESTION_VPK"] =                     "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 JAPANESE["CUSTOMWARNING_MESSAGE"] =                     "カスタム警告プラグインを必ず有効にしてください"
@@ -295,6 +296,7 @@ JAPANESE["INSTALLP_DESC_MONAURAL"] =                    "PSVitaのモノラル�
 JAPANESE["INSTALLP_DESC_MUPREMIUM"] =                   "ゲームやアプリケーションでバックグラウンドミュージックの再生を有効にします"
 JAPANESE["INSTALLP_DESC_ACIDDUMPER"] =                  "Application that may be helpful locating fake DLC"
 JAPANESE["INSTALLP_DESC_DEJAVU"] =                      "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+JAPANESE["INSTALLP_DESC_STAYBRIGHT"] =                  "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"

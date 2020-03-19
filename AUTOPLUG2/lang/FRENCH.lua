@@ -80,6 +80,7 @@ FRENCH["LR_SWAP"] =                                 "Permuter entre ux0 et ur0"
 FRENCH["PLUGINS_CUSTOM_PATH"] =                     "Installation personnalisé du plugin" 
 FRENCH["PLUGINS_README_ONLINE"] =                   "Lire le Readme en ligne" 
 FRENCH["PLUGINS_NO_README_ONLINE"] =                "Le Readme n'est pas disponible !!!"
+FRENCH["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'activer le plugin Custom Warning"
@@ -295,6 +296,7 @@ FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des c
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
 FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
+FRENCH["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher un écran de démarrage personnalisé sur PS Vita/PSTV au démarrage. Nécessite ENSO."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"

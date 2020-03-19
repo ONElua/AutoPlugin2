@@ -27,6 +27,16 @@ function plugins_installation(sel)
 				udcd = true
 			end
 
+			if plugins[sel].vpk then
+				__file = files.nopath(plugins[sel].vpk)
+				os.message(__file.." "..LANGUAGE["INSTALLP_QUESTION_VPK"],0)
+				local path2vpk = "ux0:data/AUTOPLUGIN2/vpks/"..__file
+				if http.download(plugins[sel].vpk, path2vpk).success and files.exists(path2vpk) then
+					game.install("ux0:data/AUTOPLUGIN2/vpks/"..__file,false)
+				end
+				__file = ""
+			end
+
 			--Checking plugin Batt (only 1 of them)
 			if plugins[sel].path == "shellbat.suprx" then
 				idx = tai.find(loc, "main", "shellsecbat.suprx")

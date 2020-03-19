@@ -80,6 +80,7 @@ CHINESE_S["LR_SWAP"] =                                 "切换 ux0/ur0"
 CHINESE_S["PLUGINS_CUSTOM_PATH"] =                     "安装到自定义目录" 
 CHINESE_S["PLUGINS_README_ONLINE"] =                   "在线查阅说明文档" 
 CHINESE_S["PLUGINS_NO_README_ONLINE"] =                "说明文档不可用!"
+CHINESE_S["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
 
 --customWarning
 CHINESE_S["CUSTOMWARNING_MESSAGE"] =                   "请记住启用 Custom Warning 插件"
@@ -295,6 +296,7 @@ CHINESE_S["INSTALLP_DESC_MONAURAL"] =                  "PSVita 的单声道音�
 CHINESE_S["INSTALLP_DESC_MUPREMIUM"] =                 "为任何游戏或应用程序启用音乐后台播放."
 CHINESE_S["INSTALLP_DESC_ACIDDUMPER"] =                "可能有助于定位虚假 DLC 的应用程序"
 CHINESE_S["INSTALLP_DESC_DEJAVU"] =                    "使您可以随时为主存建立快照并还原.它允许您在官方不支持存档的游戏中存档.适用于开发人员的潜在用例是(在主存中)临时降级/升级固件以用于测试问题(此功能尚未进行测试). "
+CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 需要 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"

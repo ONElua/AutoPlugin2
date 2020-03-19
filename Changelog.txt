@@ -1,3 +1,6 @@
+# v1.03
++ Added support to install extra applications that require some plugins.
+
 # v1.02
 + Fixed missing string in Chinese and Turkish Systems
 + Fixed buggy vitacheat installation (vitacheat font issue)
