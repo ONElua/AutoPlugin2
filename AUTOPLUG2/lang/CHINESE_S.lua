@@ -80,7 +80,7 @@ CHINESE_S["LR_SWAP"] =                                 "切换 ux0/ur0"
 CHINESE_S["PLUGINS_CUSTOM_PATH"] =                     "安装到自定义目录" 
 CHINESE_S["PLUGINS_README_ONLINE"] =                   "在线查阅说明文档" 
 CHINESE_S["PLUGINS_NO_README_ONLINE"] =                "说明文档不可用!"
-CHINESE_S["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
+CHINESE_S["INSTALLP_QUESTION_VPK"] =                   "需要被下载才能使用此插件!\n\n此过程需要 Wi-Fi 连接"
 
 --customWarning
 CHINESE_S["CUSTOMWARNING_MESSAGE"] =                   "请记住启用 Custom Warning 插件"
@@ -296,7 +296,7 @@ CHINESE_S["INSTALLP_DESC_MONAURAL"] =                  "PSVita 的单声道音�
 CHINESE_S["INSTALLP_DESC_MUPREMIUM"] =                 "为任何游戏或应用程序启用音乐后台播放."
 CHINESE_S["INSTALLP_DESC_ACIDDUMPER"] =                "可能有助于定位虚假 DLC 的应用程序"
 CHINESE_S["INSTALLP_DESC_DEJAVU"] =                    "使您可以随时为主存建立快照并还原.它允许您在官方不支持存档的游戏中存档.适用于开发人员的潜在用例是(在主存中)临时降级/升级固件以用于测试问题(此功能尚未进行测试). "
-CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "在 Playstation Vita 上禁用屏幕自动调光并保留自动待机特性."
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 需要 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
@@ -352,7 +352,7 @@ CHINESE_S["INSTALLP_DESC_FORCELANG"] =                 "用于覆盖应用程序
 CHINESE_S["INSTALLP_DESC_SHOWINFO"] =                  "显示正在运行的应用程序的标题,短标题和版本信息的简单插件."
 CHINESE_S["INSTALLP_DESC_SHOWINFOFU"] =                "显示正在运行的应用程序的标题,短标题和版本信息的简单插件.(完整版)"
 CHINESE_S["INSTALLP_DESC_MODALVOL"] =                  "此选项包含了无需关闭游戏即可实时控制 PSVita 系统音量的程序 SELECT+RIGHT (依赖 VolumeControl.vpk)"
-CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
+CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏时间追踪插件."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
