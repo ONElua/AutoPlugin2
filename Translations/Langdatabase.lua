@@ -3,7 +3,7 @@ Online_Langs = {
 { id =  "ITALIAN",		version = "01.05",		author =  "TheHeroGAC" },
 { id =  "JAPANESE",		version = "01.04",		author =  "Kouchan" },
 { id =  "SPANISH",		version = "01.05",		author =  "gvaldebenit" },
-{ id =  "CHINESE_S",	version = "01.05",		author =  "yexun1995" },
+{ id =  "CHINESE_S",	version = "01.06",		author =  "yexun1995" },
 { id =  "FRENCH",		version = "01.04",		author =  "Chronoss09" },
 { id =  "GERMAN",		version = "01.04",		author =  "Schn1ek3" },
 { id =  "RUSSIAN",		version = "01.04",		author =  "Yoti" },
