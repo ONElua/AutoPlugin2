@@ -5,7 +5,7 @@ ITALIAN["UPDATER_AVAILABLE"] =                          "è adesso disponibile."
 ITALIAN["UPDATER_QUESTION_UPDATE"] =                    "Vuoi aggiornare l'applicazione?"
 ITALIAN["UPDATER_DOWNLOADING"] =                        "Scaricamento Aggiornamento in corso..."
 ITALIAN["UPDATER_PERCENT"] =                            "Percentuale: "
-ITALIAN["UPDATER_SEARCH_UNSAFE_VPK"] =                  "Ricerca di file vpk, non sicuri o pericolosi!"
+ITALIAN["UPDATER_SEARCH_UNSAFE_VPK"] =                  "Ricerca del file vpk in corso...."
 ITALIAN["UPDATER_FILE"] =                               "File: "
 ITALIAN["UPDATER_UNPACK_VPK"] =                         "Scompatto il vpk..."
 ITALIAN["UPDATER_INSTALLING"] =                         "Installazione in corso..."
@@ -80,7 +80,7 @@ ITALIAN["LR_SWAP"] =                                    "Per cambiare la partizi
 ITALIAN["PLUGINS_CUSTOM_PATH"] =                        "Installa nel percorso personalizzato"
 ITALIAN["PLUGINS_README_ONLINE"] =                      "Visualizza Readme Online" 
 ITALIAN["PLUGINS_NO_README_ONLINE"] =                   "Readme non disponibile !!!"
-ITALIAN["INSTALLP_QUESTION_VPK"] =                      "needs to be downloaded for this plugin!\n\nWifi conection is required"
+ITALIAN["INSTALLP_QUESTION_VPK"] =                      "deve essere scaricato per questo plugin!\n\nÈ richiesta la connessione WiFi"
 
 --customWarning
 ITALIAN["CUSTOMWARNING_MESSAGE"] =                      "Ricordati di abilitare il plugin Custom Warning"
@@ -296,7 +296,7 @@ ITALIAN["INSTALLP_DESC_MONAURAL"] =                     "Audio mono e bilanciame
 ITALIAN["INSTALLP_DESC_MUPREMIUM"] =                    "Abilita la riproduzione di musica in sottofondo per qualsiasi gioco o applicazione."
 ITALIAN["INSTALLP_DESC_ACIDDUMPER"] =                   "Applicazione che può essere utile per individuare DLC falsi"
 ITALIAN["INSTALLP_DESC_DEJAVU"] =                       "Consente di creare un'istantanea della RAM in qualsiasi momento e ripristinarla in seguito. Ti consente di salvare nei giochi in cui non è ufficialmente possibile. Un potenziale caso d'uso per gli sviluppatori è il downgrade/aggiornamento temporaneo del firmware (nella RAM) per testare le cose (questo non è stato ancora testato)"
-ITALIAN["INSTALLP_DESC_STAYBRIGHT"] =                   "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+ITALIAN["INSTALLP_DESC_STAYBRIGHT"] =                   "Disattiva l'oscuramento automatico dello schermo mantenendo la sospensione automatica su Playstation Vita."
 
 ITALIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Questo plugin può visualizzare/personalizzare il Boot Splash su PS Vita/PSTV all'avvio. Richiede ENSO"
 ITALIAN["CUSTOMBOOTSPLASH_QUESTION"] =                  "Impostare questa immagine come Boot Splash personalizzato ?"
@@ -352,7 +352,7 @@ ITALIAN["INSTALLP_DESC_FORCELANG"] =                    "Un plugin utile per tai
 ITALIAN["INSTALLP_DESC_SHOWINFO"] =                     "Un semplice plugin che mostra title_id, stitle e app_ver dell'applicazione in esecuzione."
 ITALIAN["INSTALLP_DESC_SHOWINFOFU"] =                   "Un semplice plugin che mostra title_id, stitle e app_ver dell'applicazione in esecuzione(versione completa)"
 ITALIAN["INSTALLP_DESC_MODALVOL"] =                     "Questo pacchetto comprende applicazioni per controllare il volume audio del sistema su PSvita in tempo reale senza chiudere i giochi SELECT+TASTO DESTRO (RICHEDE VolumeControl.vpk)"
-ITALIAN["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Playtime tracker plugin for PSVITA."
+ITALIAN["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Semplice plugin che ti consente di tenere traccia del tempo che passi nei tuoi giochi."
 
 --*NPXS10013
 ITALIAN["INSTALLP_DESC_PS4LINK"] =                      "Questo plugin consente di forzare la configurazione preferita del pulsante di Riproduzione remota"
