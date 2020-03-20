@@ -64,7 +64,7 @@ FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlu
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Télécharger les langues disponibles"
 FRENCH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Activer les mises à jour automatique: "
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Changer de langue"
-FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
+FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Changer de police d'écriture"
 
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Activer les mises à jour automatique Oui/Non"
