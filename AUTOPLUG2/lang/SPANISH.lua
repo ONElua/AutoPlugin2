@@ -270,7 +270,7 @@ SPANISH["INSTALLP_DESC_KUIO"] =                         "Permite a los módulos 
 SPANISH["INSTALLP_DESC_ADRENALINE"] =                   "Permite ejecutar Adrenaline con un solo toque"
 SPANISH["INSTALLP_DESC_DSMOTION"] =                     "Soporte al control de movimiento del DualShock para PlayStation TV"
 SPANISH["INSTALLP_DESC_USBMC"] =                        "Permite usar un almacenamiento USB como tarjeta de memoria en la PS Vita"
-SPANISH["INSTALLP_DESC_ANALOGSENHANCER"] =              "Este Plugin de Kernel permite a los usuario mejorar su experiencia con los controles analógicos de la PS Vita"
+SPANISH["INSTALLP_DESC_ANALOGSENHANCER"] =              "Este Plugin permite configurar la deadzone (cuánto mueves el análogo antes de detectar movimiento) y reescalado de software (reinterpreta las entradas, añadiendo libertad o haciendo los análogos más toscos según se necesite) de los analógicos"
 SPANISH["INSTALLP_DESC_IOPLUS"] =                       "Este Plugin de Kernel de la PS Vita permite más operaciones de I/O en modo usuario"
 SPANISH["INSTALLP_DESC_VITACHEAT"] =                    "Usa Cheats (trucos) en juegos de PS Vita. Solo para 3.65/3.68 (L + DERECHA)"
 SPANISH["INSTALLP_DESC_VITACHEAT2"] =                   "Usa Cheats (trucos) en juegos de PS Vita. Solo para 3.60 (L + DERECHA)"
@@ -295,8 +295,8 @@ SPANISH["INSTALLP_DESC_SYSCALL6"] =                     "Una herramienta que par
 SPANISH["INSTALLP_DESC_MONAURAL"] =                     "Permite Canal de audio Mono (un parlante o el mismo audio por ambos parlantes) y balance de canales de audio para la PS Vita (requiere tener instalado MonauralConfig.vpk)"
 SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar música de fondo (a través de la app oficial) en cualquier juego o aplicación"
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
-SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
-SPANISH["INSTALLP_DESC_STAYBRIGHT"] =                   "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captura de la memoria RAM en cualquier punto y poder restaurarla posteriormente. Te permite hacer un guardado en los juegos, donde no es posible de forma oficial (Basicamente un Guardado Rápido). Una posible aplicación para desarrolladores es para downgradear/actualizar el firmware (en RAM) para probar cosas (No ha sido testeado aún)"
+SPANISH["INSTALLP_DESC_STAYBRIGHT"] =                   "Desactiva la atenuación automática (bajar el brillo) de la pantalla, pero mantiene la función de suspensión automática en  PS Vita"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -326,7 +326,7 @@ SPANISH["INSTALLP_DESC_QUICKVOLUME"] =                  "Permite cambiar el volu
 SPANISH["INSTALLP_DESC_QASCREEN"] =                     "Plugin para screenshots en alta calidad. Habilita las implementaciones del SceShell relacionadas con las QA de screenshots"
 SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los problemas de framebuffer compartido en homebrew que corre en modo sistema, pero ocupa la implementación estandar de framebuffer, despues de un ciclo de suspender-resumir (3.60-3.68)"
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
-SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita and PSTV."
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -352,7 +352,7 @@ SPANISH["INSTALLP_DESC_FORCELANG"] =                    "Plugin de taiHEN para c
 SPANISH["INSTALLP_DESC_SHOWINFO"] =                     "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente"
 SPANISH["INSTALLP_DESC_SHOWINFOFU"] =                   "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente (Versión completa)"
 SPANISH["INSTALLP_DESC_MODALVOL"] =                     "Este paquete consiste en aplicaciones que permiten controlar el volumen del sistema en tiempo real sin cerrar los juegos en la PS Vita con SELECT+DERECHA (Requiere instalar VolumeControl.vpk)"
-SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Playtime tracker plugin for PSVITA."
+SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Plugin para hacer seguimiento de las horas de juego (Muestra el tiempo de juego de las aplicaciones instaladas en PS Vita)"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
