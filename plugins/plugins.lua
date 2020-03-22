@@ -46,6 +46,7 @@ Online_Plugins = {
 { name = "Dumping addcont IDs by cuevavirus v1.0", path = "acid_dumper.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ACIDDUMPER"], KEY = "INSTALLP_DESC_ACIDDUMPER", link = "https://raw.githubusercontent.com/cuevavirus/AddcontIDDumper/master/README.md", },
 { name = "déjàvu: Vita SaveState Plugin by TheOfficialFloW v0.1", path = "dejavu.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DEJAVU"], KEY = "INSTALLP_DESC_DEJAVU", link = "https://raw.githubusercontent.com/TheOfficialFloW/dejavu/master/README.md", },
 { name = "Staybright v1.0 by cuevavirus", path = "staybright.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_STAYBRIGHT"], KEY = "INSTALLP_DESC_STAYBRIGHT", link = "https://raw.githubusercontent.com/cuevavirus/Staybright/master/README.md", },
+{ name = "BetterTrackPlug by fmudanyali v1.0.2", path = "BetterTrackPlug.skprx", section = "KERNEL", version = "0002", desc = LANGUAGE["INSTALLP_DESC_TRACKPLUGMOD"], KEY = "INSTALLP_DESC_TRACKPLUGMOD", link = "https://raw.githubusercontent.com/fmudanyali/BetterTrackPlug/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "BetterTrackPlug.vpk"), },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },
@@ -94,7 +95,6 @@ Online_Plugins = {
 { name = "ShowInfo Lite by Yoti v0.2", path = "ShowInfoLite.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFO"], KEY = "INSTALLP_DESC_SHOWINFO", },
 { name = "ShowInfo Full by Yoti v0.6", path = "ShowInfo.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFOFU"], KEY = "INSTALLP_DESC_SHOWINFOFU", },
 { name = "Volume Control Pack by GrapheneCt v1.0", path = "ModalVol.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MODALVOL"], KEY = "INSTALLP_DESC_MODALVOL", link = "https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md", },
-{ name = "TrackPlug MOD by fmudanyali v1.0", path = "TrackPlug.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TRACKPLUGMOD"], KEY = "INSTALLP_DESC_TRACKPLUGMOD", link = "https://raw.githubusercontent.com/fmudanyali/TrackPlug/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "TrackPlug.vpk"), },
 
 --*NPXS10013
 { name = "vita-ps4linkcontrols r7 by nowrep", path = "ps4linkcontrols.suprx", section = "NPXS10013", version = "0001", desc = LANGUAGE["INSTALLP_DESC_PS4LINK"], KEY = "INSTALLP_DESC_PS4LINK", link = "https://raw.githubusercontent.com/nowrep/vita-ps4linkcontrols/master/README.md", },
