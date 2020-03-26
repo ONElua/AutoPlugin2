@@ -353,6 +353,7 @@ RUSSIAN["INSTALLP_DESC_SHOWINFO"] =                  "Плагин показы�
 RUSSIAN["INSTALLP_DESC_SHOWINFOFU"] =                "Плагин показывает системную информацию о запущенном приложении (подробный вариант)"
 RUSSIAN["INSTALLP_DESC_MODALVOL"] =                  "Подборка из плагина и приложения для регулирования громкости звука, SELECT+RIGHT запускает приложение (требуется VolumeControl.vpk)"
 RUSSIAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Плагин для подсчёта времени, проведённого в различных играх"
+RUSSIAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"

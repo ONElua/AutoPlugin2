@@ -353,6 +353,7 @@ GERMAN["INSTALLP_DESC_SHOWINFO"] =                  "Einfaches Plugin, das title
 GERMAN["INSTALLP_DESC_SHOWINFOFU"] =                "Einfaches Plugin, das title_id, stitle und app_ver der laufenden Anwendung anzeigt.(Vollversion)"
 GERMAN["INSTALLP_DESC_MODALVOL"] =                  "Dieses Paket enthält Anwendungen zur Steuerung der Systemlautstärke auf der PS Vita in Echtzeit, ohne die Spiele schließen zu müssen. SELECT + RECHTS (VolumeControl.vpk erforderlich)"
 GERMAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
+GERMAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."

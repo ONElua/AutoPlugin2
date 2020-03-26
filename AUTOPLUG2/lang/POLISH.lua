@@ -353,6 +353,7 @@ POLISH["INSTALLP_DESC_SHOWINFO"] =                  "Simple plugin that shows ti
 POLISH["INSTALLP_DESC_SHOWINFOFU"] =                "Simple plugin that shows title_id, stitle and app_ver of the running application.(full version)"
 POLISH["INSTALLP_DESC_MODALVOL"] =                  "This pack consits of applications to control system audio volume on PS vita in real time without closing games SELECT+RIGHT (Require VolumeControl.vpk)"
 POLISH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
+POLISH["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 
 --*NPXS10013
 POLISH["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"

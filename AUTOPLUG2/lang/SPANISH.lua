@@ -353,6 +353,7 @@ SPANISH["INSTALLP_DESC_SHOWINFO"] =                     "Un simple Plugin que mu
 SPANISH["INSTALLP_DESC_SHOWINFOFU"] =                   "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente (Versión completa)"
 SPANISH["INSTALLP_DESC_MODALVOL"] =                     "Este paquete consiste en aplicaciones que permiten controlar el volumen del sistema en tiempo real sin cerrar los juegos en la PS Vita con SELECT+DERECHA (Requiere instalar VolumeControl.vpk)"
 SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Plugin para hacer seguimiento de las horas de juego (Muestra el tiempo de juego de las aplicaciones instaladas en PS Vita)"
+SPANISH["INSTALLP_DESC_PSONESCROT"] =                   "Tomar apropiadas capturas de pantalla PNG en juegos PSX (Abrir Ajustes en el menú rapido, Abrir Ajustes Oficial si estás usando adrenaline, seleccionar screenshot)."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
