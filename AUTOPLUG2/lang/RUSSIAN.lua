@@ -80,7 +80,7 @@ RUSSIAN["LR_SWAP"] =                                 "Выбрать разде�
 RUSSIAN["PLUGINS_CUSTOM_PATH"] =                     "Установить в выбранный раздел"
 RUSSIAN["PLUGINS_README_ONLINE"] =                   "Просмотр онлайн справки"
 RUSSIAN["PLUGINS_NO_README_ONLINE"] =                "Справка недоступна!!!"
-RUSSIAN["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
+RUSSIAN["INSTALLP_QUESTION_VPK"] =                   "необходимо установить в дополнение к плагину!\n\nТребуется подключение к Wi-Fi."
 
 --customWarning
 RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте установить плагин Custom Warning"
@@ -353,7 +353,7 @@ RUSSIAN["INSTALLP_DESC_SHOWINFO"] =                  "Плагин показы�
 RUSSIAN["INSTALLP_DESC_SHOWINFOFU"] =                "Плагин показывает системную информацию о запущенном приложении (подробный вариант)"
 RUSSIAN["INSTALLP_DESC_MODALVOL"] =                  "Подборка из плагина и приложения для регулирования громкости звука, SELECT+RIGHT запускает приложение (требуется VolumeControl.vpk)"
 RUSSIAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Плагин для подсчёта времени, проведённого в различных играх"
-RUSSIAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
+RUSSIAN["INSTALLP_DESC_PSONESCROT"] =                "Создание снимков экрана без искажений в формате PNG в PS1 играх (Быстрое меню - Настройки - Снимок экрана)."
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"
