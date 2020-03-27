@@ -353,7 +353,7 @@ CHINESE_S["INSTALLP_DESC_SHOWINFO"] =                  "显示正在运行的应
 CHINESE_S["INSTALLP_DESC_SHOWINFOFU"] =                "显示正在运行的应用程序的标题,短标题和版本信息的简单插件.(完整版)"
 CHINESE_S["INSTALLP_DESC_MODALVOL"] =                  "此选项包含了无需关闭游戏即可实时控制 PSVita 系统音量的程序 SELECT+RIGHT (依赖 VolumeControl.vpk)"
 CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏时间追踪插件."
-CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
+CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "为PS1游戏拍摄PNG格式截屏. [在快捷菜单中打开设置,如果使用 Adrenaline 请打开官方设置,选择截屏(screenshot)]"
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
