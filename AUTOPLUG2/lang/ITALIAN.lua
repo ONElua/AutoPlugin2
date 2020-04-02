@@ -354,6 +354,7 @@ ITALIAN["INSTALLP_DESC_SHOWINFOFU"] =                   "Un semplice plugin che 
 ITALIAN["INSTALLP_DESC_MODALVOL"] =                     "Questo pacchetto comprende applicazioni per controllare il volume audio del sistema su PSvita in tempo reale senza chiudere i giochi SELECT+TASTO DESTRO (RICHEDE VolumeControl.vpk)"
 ITALIAN["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Semplice plugin che ti consente di tenere traccia del tempo che passi nei tuoi giochi."
 ITALIAN["INSTALLP_DESC_PSONESCROT"] =                   "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
+ITALIAN["INSTALLP_DESC_CPUAFFCHANGER"] =                "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 
 --*NPXS10013
 ITALIAN["INSTALLP_DESC_PS4LINK"] =                      "Questo plugin consente di forzare la configurazione preferita del pulsante di Riproduzione remota"

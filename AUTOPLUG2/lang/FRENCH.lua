@@ -354,6 +354,7 @@ FRENCH["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simple qui affiche l
 FRENCH["INSTALLP_DESC_MODALVOL"] =                  "Ce pack se compose d'applications permettant de contrôler le volume audio du système sur PS vita en temps réel sans fermer les jeux SELECT+RIGHT (Require VolumeControl.vpk)"
 FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Plugin PSVita qui calcule le temps de jeu que vous jouer."
 FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
+FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"

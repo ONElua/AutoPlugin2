@@ -354,6 +354,7 @@ RUSSIAN["INSTALLP_DESC_SHOWINFOFU"] =                "Плагин показы�
 RUSSIAN["INSTALLP_DESC_MODALVOL"] =                  "Подборка из плагина и приложения для регулирования громкости звука, SELECT+RIGHT запускает приложение (требуется VolumeControl.vpk)"
 RUSSIAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Плагин для подсчёта времени, проведённого в различных играх"
 RUSSIAN["INSTALLP_DESC_PSONESCROT"] =                "Создание снимков экрана без искажений в формате PNG в PS1 играх (Быстрое меню - Настройки - Снимок экрана)."
+RUSSIAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"

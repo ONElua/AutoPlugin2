@@ -354,6 +354,7 @@ JAPANESE["INSTALLP_DESC_SHOWINFOFU"] =                  "実行中のアプリ�
 JAPANESE["INSTALLP_DESC_MODALVOL"] =                    "This pack consits of applications to control system audio volume on PS vita in real time without closing games SELECT+RIGHT (Require VolumeControl.vpk)"
 JAPANESE["INSTALLP_DESC_TRACKPLUGMOD"] =                "Playtime tracker plugin for PSVITA."
 JAPANESE["INSTALLP_DESC_PSONESCROT"] =                  "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
+JAPANESE["INSTALLP_DESC_CPUAFFCHANGER"] =               "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"
