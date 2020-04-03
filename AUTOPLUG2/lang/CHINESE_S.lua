@@ -355,7 +355,7 @@ CHINESE_S["INSTALLP_DESC_MODALVOL"] =                  "此选项包含了无需
 CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏时间追踪插件."
 CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "为PS1游戏拍摄PNG格式截屏. [在快捷菜单中打开设置,如果使用 Adrenaline 请打开官方设置,选择截屏(screenshot)]"
 CHINESE_S["INSTALLP_DESC_CPUAFFCHANGER"] =             "此插件将 PSVita 系统应用程序的 CPU 亲和力掩码指定为所有用户核心,从而提高程序的性能."
-CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持原生 960x544 HDMI 输出."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
