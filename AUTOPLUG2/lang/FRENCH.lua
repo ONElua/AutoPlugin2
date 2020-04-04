@@ -353,9 +353,9 @@ FRENCH["INSTALLP_DESC_SHOWINFO"] =                  "Plugin simple qui affiche l
 FRENCH["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours.(version complète)"
 FRENCH["INSTALLP_DESC_MODALVOL"] =                  "Ce pack se compose d'applications permettant de contrôler le volume audio du système sur PS vita en temps réel sans fermer les jeux SELECT+RIGHT (Require VolumeControl.vpk)"
 FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Plugin PSVita qui calcule le temps de jeu que vous jouer."
-FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
-FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
-FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Faites des captures d'écran PNG appropriées pour les jeux PS1 (Ouvrez les paramètres dans le menu rapide, Ouvrez les paramètres officiels si vous utilisez l'adrénaline, Sélectionnez la capture d'écran)."
+FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ce plugin modifie le masque d'affinité de l'unité centrale des applications du système PS Vita pour tous les noyaux d'utilisateurs, ce qui augmente leurs performances."
+FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour les PSTV."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
