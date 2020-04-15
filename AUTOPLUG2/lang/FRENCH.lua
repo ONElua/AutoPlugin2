@@ -2,7 +2,7 @@ FRENCH = {}
 
 --Updater
 FRENCH["UPDATER_AVAILABLE"] =                       "est maintenant disponible."
-FRENCH["UPDATER_QUESTION_UPDATE"] =                 "Voulez-vous mettre à jour l'application?"
+FRENCH["UPDATER_QUESTION_UPDATE"] =                 "Voulez-vous mettre à jour l'application ?"
 FRENCH["UPDATER_DOWNLOADING"] =                     "Téléchargement de la mise à jour..."
 FRENCH["UPDATER_PERCENT"] =                         "Chargement: "
 FRENCH["UPDATER_SEARCH_UNSAFE_VPK"] =               "Recherche des fichiers pas sûr et dangereux dans le vpk !"
@@ -28,7 +28,7 @@ FRENCH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurer le plugin de la 
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifiez les mises à jour des plugins"
 
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés de la scène PSVITA"
-FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller un plugin installé facilement et simplement"
+FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller un plugin installé facilement"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la SD2VITA (StorageMgr v3.2 de CelesteBlue)"
 FRENCH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurer le plugin de la SD2VITAA (StorageMgr v3.2 de CelesteBlue)"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouvelle version de mise à jour des plugins"
@@ -40,7 +40,7 @@ FRENCH["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Les plugins RemasteredContr
 FRENCH["MENU_PSP_INSTALL_PLUGINS"] =                "Collection plugins PSP pour Adrenaline"
 
 FRENCH["MENU_PSP_NPDRMFREE_DESC"] =                 "Un plugin PSP/ePSP pour exécuter des contenus NPDRM officiel (PS1/PSP) sans avoir besoin d'une licence .rif ou act.dat valide."
-FRENCH["MENU_PSP_PSPCTRLS_DESC"] =                  "Une collection des patch pour utilisé le second joysticks sur des jeux PSP avec Adrenaline"
+FRENCH["MENU_PSP_PSPCTRLS_DESC"] =                  "Une collection des plugins pour utilisé le second joysticks de la PSvita sur des jeux PSP avec Adrenaline"
 FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Plugins PSP utile a utilisé avec Adrenaline"
 
 --Options Extras
@@ -328,7 +328,7 @@ FRENCH["INSTALLP_DESC_QASCREEN"] =                  "Plugin de capture d'écran 
 FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les problèmes de framebuffer partagé après le cycle de mise en veille-reprise pour les applications et homebrews qui s'exécutent en mode système, mais utilisent une implémentation de framebuffer standard."
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
-FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
+FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -358,7 +358,7 @@ FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Plugin PSVita qui calcule l
 FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Faites des captures d'écran PNG appropriées pour les jeux PS1 (Ouvrez les paramètres dans le menu rapide, Ouvrez les paramètres officiels si vous utilisez l'adrénaline, Sélectionnez la capture d'écran)."
 FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ce plugin modifie le masque d'affinité de l'unité centrale des applications du système PS Vita pour tous les noyaux d'utilisateurs, ce qui augmente leurs performances."
 FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour les PSTV."
-FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
+FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouverture du menu rapide de 2 secondes à 200 millisecondes."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
@@ -367,11 +367,11 @@ FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de
 FRENCH["INSTALLP_DESC_MACSPOOF"] =                  "Un plugin permettant de spoofer votre adresse MAC dans le système d'information"
 
 --*NPXS10036
-FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de Vita seront enregistrées dans un dossier portant le nom du jeu."
+FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la PSVita seront enregistrées dans un dossier portant le nom du jeu."
 
 --Comunes
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
-FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarré pour appliqué les changements"
+FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
