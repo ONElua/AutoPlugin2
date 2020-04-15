@@ -136,9 +136,7 @@ function menu_extras()
 	end
 
 	--Init load configs
-	loc = 1
 	tai.load()
-	if tai[__UR0].exist then loc = 2 end
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],	funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],	funct = batteryfixer_callback },
@@ -148,17 +146,17 @@ function menu_extras()
 		table.insert(menu, 1, { text = LANGUAGE["MENU_EXTRAS_PKGJ_TITLE"],		desc = LANGUAGE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"],	funct = config_callback } )
 	end
 
-	local idx = tai.find(loc, "KERNEL", "custom_boot_splash.skprx")
+	local idx = tai.find("KERNEL", "custom_boot_splash.skprx")
 	if idx then
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CONVERT_BOOTSPLASH"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"],	funct = convertimgsplash_callback } )
 	end
 
-	idx = tai.find(loc, "main", "custom_warning.suprx")
+	idx = tai.find("main", "custom_warning.suprx")
 	if idx then
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CUSTOM_WARNING"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMWARNING_DESC"],	funct = customwarning_callback } )
 	end
 
-	idx = tai.find(loc, "main", "TrImpose.suprx")
+	idx = tai.find("main", "TrImpose.suprx")
 	if idx then
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSP_IMPOSE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSPIMPOSE_DESC"],	funct = customTransImpose_callback } )
 	end

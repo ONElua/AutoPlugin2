@@ -23,20 +23,17 @@ function pluginsmanager()
 
 	--Init load configs
 	tai.load()
-	local partition = 0
-	if tai[__UX0].exist then partition = __UX0
-	elseif tai[__UR0].exist then partition = __UR0
-	end
 
 	local limtpm, scrollp, y1, xscr1 = 8, {}, 70 , 10
+	local ReloadConfig = false
 
 	local section,sel_section = {},1
 	local tmp={}
-	for k,v in pairs(tai[partition].gameid) do
-		--os.message(tostring(tai[partition].gameid[k].section))
-		local scroll_tmp = newScroll( tai[partition].gameid[ k ].prx, limtpm)
+	for k,v in pairs(tai.gameid) do
+		--os.message(tostring(tai.gameid[k].section))
+		local scroll_tmp = newScroll( tai.gameid[ k ].prx, limtpm)
 		if scroll_tmp.maxim > 0 then
-			table.insert(tmp, tai[partition].gameid[k].section)
+			table.insert(tmp, tai.gameid[k].section)
 		end
 	end
 	if #tmp > 1 then table.sort(tmp) end
@@ -55,18 +52,18 @@ function pluginsmanager()
 	end
 
 	for i=1,#section do
-		for j=1,#tai[partition].gameid[ section[i] ].prx do
+		for j=1,#tai.gameid[ section[i] ].prx do
 			for k=1,#tb_cop do
-				if files.nopath(tai[partition].gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
-					tai[partition].gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
+				if files.nopath(tai.gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
+					tai.gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
 				end
 			end
 		end
 	end
 
-	if tai[partition].gameid[ section[sel_section] ] then
-		--os.message(tostring(#tai[partition].gameid[ section[sel_section] ].prx))
-		scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
+	if tai.gameid[ section[sel_section] ] then
+		--os.message(tostring(#tai.gameid[ section[sel_section] ].prx))
+		scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
 	else
 		scrollp = newScroll( {}, limtpm)
 	end
@@ -77,44 +74,41 @@ function pluginsmanager()
 
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
-		if not tai[partition].exist then screen.print(480,270,LANGUAGE["UNINSTALLP_NOCONFIG_FOUND"]..locations[partition],1.3,color.red, 0x0, __ACENTER)
+		if not tai.exist then screen.print(480,270,LANGUAGE["UNINSTALLP_NOCONFIG_FOUND"]..tai_ur0,1.3,color.red, 0x0, __ACENTER)
 		else
 
 			if #section > 0 and scrollp.maxim > 0 then
 				--Partitions
-				local xRoot = 750
-				local w = (960-xRoot)/#locations
-				for i=1, #locations do
-					if partition == i then
-						draw.fillrect(xRoot,0,w,40, color.green:a(90))
-					end
-					screen.print(xRoot+(w/2), 12, locations[i], 1, color.white, color.blue, __ACENTER)
-					xRoot += w
-				end
+				local xRoot = 860
+				local w = (960-xRoot)
+				draw.fillrect(xRoot,0,w,40, color.green:a(90))
+				screen.print(xRoot+(w/2), 12, "ur0:", 1, color.white, color.blue, __ACENTER)
 
 				draw.fillrect(0,40,960,350,color.shine:a(25))
 
-				screen.print(15,20, "*"..section[sel_section],1,color.yellow, 0x0)
+				if section[sel_section] then
+					screen.print(13,20, " ("..scrollp.maxim..")".."  ".."*"..section[sel_section],1,color.yellow, 0x0)
+				end
 
-				if tai[partition].gameid[ section[sel_section] ] then
+				if tai.gameid[ section[sel_section] ] then
 
 					local y = y1
 
 					for i=scrollp.ini, scrollp.lim do
 						if i == scrollp.sel then
 							draw.offsetgradrect(0,y-10,940,35,color.shine:a(75),color.shine:a(135),0x0,0x0,21)
-							if tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].desc then
-								if screen.textwidth(tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].desc) > 925 then
-									xscr1 = screen.print(xscr1, 405, tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].desc,1,color.green, 0x0,__SLEFT,935)
+							if tai.gameid[ section[sel_section] ].prx[scrollp.sel].desc then
+								if screen.textwidth(tai.gameid[ section[sel_section] ].prx[scrollp.sel].desc) > 925 then
+									xscr1 = screen.print(xscr1, 405, tai.gameid[ section[sel_section] ].prx[scrollp.sel].desc,1,color.green, 0x0,__SLEFT,935)
 								else
-									screen.print(480,405,tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].desc,1.0,color.green, 0x0, __ACENTER)
+									screen.print(480,405,tai.gameid[ section[sel_section] ].prx[scrollp.sel].desc,1.0,color.green, 0x0, __ACENTER)
 								end
 							end
 						end
 
-						if not files.exists(tai[partition].gameid[ section[sel_section] ].prx[i].path) then ccolor = color.orange else ccolor = color.white end
+						if not files.exists(tai.gameid[ section[sel_section] ].prx[i].path) then ccolor = color.orange else ccolor = color.white end
 
-						screen.print(20,y, tai[partition].gameid[ section[sel_section] ].prx[i].path,1,ccolor,0x0)
+						screen.print(20,y, tai.gameid[ section[sel_section] ].prx[i].path,1,ccolor,0x0)
 
 						y+=40
 					end
@@ -129,8 +123,6 @@ function pluginsmanager()
 					draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scrollp.maxim-1))*(scrollp.sel-1), 8, pos_height, color.new(0,255,0))
 				end
 
-				--screen.print(480,405,locations[partition].."tai/config.txt",1.3,color.green, 0x0, __ACENTER)
-
 				if buttonskey then buttonskey:blitsprite(5,448,saccept) end
 				screen.print(30,450,LANGUAGE["UNINSTALLP_PLUGIN"],1,color.white,color.black,__ALEFT)
 
@@ -138,14 +130,12 @@ function pluginsmanager()
 				if buttonskey2 then buttonskey2:blitsprite(35,475,1) end
 				screen.print(70,475,LANGUAGE["UNINSTALLP_LEFTRIGHT_SECTION"],1,color.white,color.black,__ALEFT)
 
+				screen.print(950, 435, "("..sel_section.."/"..#section..")",1,color.yellow, 0x0,__ARIGHT)
+
 			else
 				screen.print(480,270,LANGUAGE["UNINSTALLP_EMPTY"],1.3,color.red,0x0,__ACENTER)
 			end
 		end
-
-		if buttonskey2 then buttonskey2:blitsprite(5,498,2) end
-		if buttonskey2 then buttonskey2:blitsprite(35,498,3) end
-		screen.print(70,500,LANGUAGE["LR_SWAP"],1,color.white,color.black,__ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
 		screen.print(35,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
@@ -157,16 +147,26 @@ function pluginsmanager()
 
 		--------------------------	Controls	--------------------------
 		
-		if buttons.cancel then break end
+		if buttons.cancel then
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true end
+			end
+			break
+		end
 
 		--Exit
 		if buttons.start then
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
 			os.exit()
 		end
 
@@ -181,27 +181,26 @@ function pluginsmanager()
 			end
 
 			if buttons.accept then
-				if tai[partition].gameid[ section[sel_section] ] then
+				if tai.gameid[ section[sel_section] ] then
 
-					if os.message(LANGUAGE["UNINSTALLP_QUESTION"].."\n\n"..files.nopath(tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].path:lower()),1) == 1 then
-						table.remove(tai[partition].raw, tai[partition].gameid[section[sel_section]].prx[scrollp.sel].line)
-						local name = files.nopath(tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].path:lower())
+					if os.message(LANGUAGE["UNINSTALLP_QUESTION"].."\n\n"..files.nopath(tai.gameid[ section[sel_section] ].prx[scrollp.sel].path:lower()),1) == 1 then
+						table.remove(tai.raw, tai.gameid[section[sel_section]].prx[scrollp.sel].line)
+						local name = files.nopath(tai.gameid[ section[sel_section] ].prx[scrollp.sel].path:lower())
 
 						--No delete
 						if name != "adrenaline_kernel.skprx" then
-							local subpath = tai[partition].gameid[ section[sel_section] ].prx[scrollp.sel].path
+							local subpath = tai.gameid[ section[sel_section] ].prx[scrollp.sel].path
 							if #subpath > 4 then
 								--os.message("1\n"..subpath)
 							--	files.delete(subpath)
 							end
 						end
 
-						tai.sync(partition)
+						tai.sync()
 						tai.load()
 
 						--Yamt
 						if name == "yamt.suprx" then
-							--os.message("yamt")
 							if files.exists("ur0:tai/boot_config.txt") then
 								local cont = {}
 								for line in io.lines("ur0:tai/boot_config.txt") do
@@ -227,51 +226,102 @@ function pluginsmanager()
 
 						for i=#tb_cop,1,-1 do
 							if name == tb_cop[i].path:lower() then
-								if tb_cop[i].section2 and tai[partition].gameid[ tb_cop[i].section2 ] then
-									del_plugin_tai(partition, tb_cop[i].section2, tb_cop[i].path2)
+								if tb_cop[i].section2 and tai.gameid[ tb_cop[i].section2 ] then
+									del_plugin_tai(tb_cop[i].section2, tb_cop[i].path2)
+									if tb_cop[i].section2 and tb_cop[i].section2 == "KERNEL" then
+										change = true
+									end
 								end
 							end
 							if tb_cop[i].path2 and (name == tb_cop[i].path2:lower()) then
-								if tb_cop[i].section and tai[partition].gameid[ tb_cop[i].section ] then
-									del_plugin_tai(partition, tb_cop[i].section, tb_cop[i].path)
+								if tb_cop[i].section and tai.gameid[ tb_cop[i].section ] then
+									del_plugin_tai(tb_cop[i].section, tb_cop[i].path)
+									if tb_cop[i].section and tb_cop[i].section == "KERNEL" then
+										change = true
+									end
 								end
 							end
 						end
+
+						--Reboot or ReloadConfig
+						if section[sel_section]:upper() == "MAIN" or section[sel_section]:upper() == "KERNEL" or name:upper() == "YAMT.SUPRX" then
+							change = true
+							--os.message("change")
+						else
+							ReloadConfig = true
+							--os.message("Reload")
+						end
+
+						tai.sync()
+						tai.load()
 
 						--update
-						if tai[partition].gameid[ section[sel_section] ] then
-							scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-							if scrollp.maxim <= 0 then
-								for i=1,#section do
-									if section[sel_section] == section[i] then
-										--os.message(section[i])
-										table.remove(section,i)
-										sel_section +=1
-										if sel_section > #section then sel_section = 1 end
-										if tai[partition].gameid[ section[sel_section] ] then
-											scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-										else
-											scrollp = newScroll( {}, limtpm)
-										end
-										break
-									end
-								end
+						if tai.gameid[ section[sel_section] ] then
+							scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
+						else
+							sel_section += 1
+							if sel_section > #section then sel_section = 1 end
+							if tai.gameid[ section[sel_section] ] then
+								scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
+							else
+								scrollp = newScroll( {}, limtpm)
 							end
-						--else
-						--	scrollp = newScroll( {}, limtpm)
 						end
 						
+						if scrollp.maxim <= 0 then
+							for i=1,#section do
+								if section[sel_section] == section[i] then
+									--os.message(section[i])
+									table.remove(section,i)
+									sel_section += 1
+									if sel_section > #section then sel_section = 1 end
+									if tai.gameid[ section[sel_section] ] then
+										scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
+									else
+										scrollp = newScroll( {}, limtpm)
+									end
+									break
+								end
+							end
+						end
+
+						local tmp={}
+						section = {}
+
+						for k,v in pairs(tai.gameid) do
+							--os.message(tostring(tai.gameid[k].section))
+							local scroll_tmp = newScroll( tai.gameid[ k ].prx, limtpm)
+							if scroll_tmp.maxim > 0 then
+								table.insert(tmp, tai.gameid[k].section)
+							end
+						end
+						if #tmp > 1 then table.sort(tmp) end
+
+						--*KERNEL,*main,*ALL...more
+						for i=1,#tmp do
+							if tmp[i]:upper() == "KERNEL" then
+								table.insert(section, 1, tmp[i])
+							elseif tmp[i]:upper() == "MAIN" then
+								table.insert(section, 2, tmp[i])
+							elseif tmp[i]:upper() == "ALL" then
+								table.insert(section, 3, tmp[i])
+							else
+								table.insert(section, tmp[i])
+							end
+						end
+
 						for i=1,#section do
-							for j=1,#tai[partition].gameid[ section[i] ].prx do
-								for k=1,#tb_cop do
-									if files.nopath(tai[partition].gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
-										tai[partition].gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
+							if tai.gameid[ section[i] ] then
+								for j=1,#tai.gameid[ section[i] ].prx do
+									for k=1,#tb_cop do
+										if files.nopath(tai.gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
+											tai.gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
+										end
 									end
 								end
 							end
 						end
 
-						change = true
 						buttons.homepopup(0)
 					end
 				end
@@ -279,50 +329,41 @@ function pluginsmanager()
 
 		end
 
-		if tai[partition].exist then
-			if buttons.released.right then
-				sel_section +=1
+		if tai.exist then
+			if buttons.released.right or buttons.released.left then
+				if buttons.released.right then sel_section += 1 else sel_section -= 1 end
+				
 				if sel_section > #section then sel_section = 1 end
-				if tai[partition].gameid[ section[sel_section] ] then
-					scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-				--else
-				--	scrollp = newScroll( {}, limtpm)
-				end
-			end
-
-			if buttons.released.left then
-				sel_section -=1
 				if sel_section < 1 then	sel_section = #section end
-				if tai[partition].gameid[ section[sel_section] ] then
-					scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-				--else
-				--	scrollp = newScroll( {}, limtpm)
+
+				if tai.gameid[ section[sel_section] ] then
+					scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
 				end
 			end
 		end
 
+		--[[
 		if buttons.released.l or buttons.released.r then
 			if partition == __UX0 then partition = __UR0 else partition = __UX0 end
-			if tai[partition].exist then
+			if tai.exist then
 				sel_section = 1
-				if tai[partition].gameid[ section[sel_section] ] then
-					scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-				--else
-				--	scrollp = newScroll( {}, limtpm)
+				if tai.gameid[ section[sel_section] ] then
+					scrollp = newScroll( tai.gameid[ section[sel_section] ].prx, limtpm)
 				end
 			end
 		end
+		]]
 
 	end
 
 end
 
-function del_plugin_tai(mount, obj1, obj2)
+function del_plugin_tai(obj1, obj2)
 
-	local idx = tai.find(mount, obj1, obj2)
+	local idx = tai.find(obj1, obj2)
 	if idx then
 		if name != "adrenaline_kernel.skprx" then
-			local subpath = tai[mount].gameid[ obj1 ].prx[idx].path
+			local subpath = tai.gameid[ obj1 ].prx[idx].path
 			--delete plugin physical
 			if #subpath > 4 then
 				--os.message("2\n"..subpath)
@@ -331,8 +372,8 @@ function del_plugin_tai(mount, obj1, obj2)
 		end
 	end
 
-	tai.del(mount, obj1, obj2)
-	tai.sync(mount)
+	tai.del(obj1, obj2)
+	tai.sync()
 	tai.load()
 
 end

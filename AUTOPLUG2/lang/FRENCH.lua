@@ -190,7 +190,8 @@ FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de tr
 
 --Translate
 FRENCH["TRANSLATE_ENGLISH_TITLE"] =                 "Anglais : "
-FRENCH["TRANSLATE_CURRENT_TITLE"] =                 "Actuel : "
+FRENCH["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+FRENCH["TRANSLATE_CURRENT_AUTOPLUGIN"] =           "AutoPlugin Language: "
 FRENCH["TRANSLATE_YOUR_TITLE"] =                    "Le votre: "
 FRENCH["SAVE_TRANSLATIONS"] =                       "Enregistrer la traduction"
 FRENCH["EXIT_SAVE_TRANSLATIONS"] =                  "Traduction non enregistré. Enregistrer avant de quitter ?"
@@ -327,6 +328,7 @@ FRENCH["INSTALLP_DESC_QASCREEN"] =                  "Plugin de capture d'écran 
 FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les problèmes de framebuffer partagé après le cycle de mise en veille-reprise pour les applications et homebrews qui s'exécutent en mode système, mais utilisent une implémentation de framebuffer standard."
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
+FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -356,6 +358,7 @@ FRENCH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Plugin PSVita qui calcule l
 FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Faites des captures d'écran PNG appropriées pour les jeux PS1 (Ouvrez les paramètres dans le menu rapide, Ouvrez les paramètres officiels si vous utilisez l'adrénaline, Sélectionnez la capture d'écran)."
 FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ce plugin modifie le masque d'affinité de l'unité centrale des applications du système PS Vita pour tous les noyaux d'utilisateurs, ce qui augmente leurs performances."
 FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour les PSTV."
+FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"

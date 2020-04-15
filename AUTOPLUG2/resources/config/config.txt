@@ -13,6 +13,3 @@ ur0:tai/henkaku.suprx
 *NPXS10016
 # this is for modifying the version string in settings widget
 ur0:tai/henkaku.suprx
-*NPXS10013
-# this is for modifying the version string in settings
-*ALL

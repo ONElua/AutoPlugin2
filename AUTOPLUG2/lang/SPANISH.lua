@@ -190,7 +190,8 @@ SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --Translate
 SPANISH["TRANSLATE_ENGLISH_TITLE"] =                    "Inglés: "
-SPANISH["TRANSLATE_CURRENT_TITLE"] =                    "Actual: "
+SPANISH["TRANSLATE_CURRENT_TITLE"] =                    "Idioma del Sistema: "
+SPANISH["TRANSLATE_CURRENT_AUTOPLUGIN"] =               "Idioma AutoPlugin: "
 SPANISH["TRANSLATE_YOUR_TITLE"] =                       "Tuyo: "
 SPANISH["SAVE_TRANSLATIONS"] =                          "Guardar traducción"
 SPANISH["EXIT_SAVE_TRANSLATIONS"] =                     "Traducción no guardada. ¿Guardar antes de salir?"
@@ -327,6 +328,7 @@ SPANISH["INSTALLP_DESC_QASCREEN"] =                     "Plugin para screenshots
 SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los problemas de framebuffer compartido en homebrew que corre en modo sistema, pero ocupa la implementación estandar de framebuffer, despues de un ciclo de suspender-resumir (3.60-3.68)"
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
 SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita y PSTV."
+SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -356,6 +358,7 @@ SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Plugin para hacer segui
 SPANISH["INSTALLP_DESC_PSONESCROT"] =                   "Tomar capturas de pantalla (.PNG) en juegos PSX de manera apropiada (PS + Start no funciona bien en juegos de PS1) (Abrir Ajustes en el menú rapido, Abrir Ajustes Oficial si estás usando Adrenaline, seleccionar Screenshot)"
 SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la Mascara de Afinidad de la CPU (Un pequeño indicador para ligar los procesos a una CPU específica) de las Aplicaciones de Sistema de PS Vita a todos los Core de Usuarios, lo que permite mejorar su rendimiento"
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
+SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"

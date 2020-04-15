@@ -190,7 +190,8 @@ JAPANESE["TRANSIMPOSE_LEVEL"] =                         "Level Set"
 
 --Translate
 JAPANESE["TRANSLATE_ENGLISH_TITLE"] =                   "英語: "
-JAPANESE["TRANSLATE_CURRENT_TITLE"] =                   "現在: "
+JAPANESE["TRANSLATE_CURRENT_TITLE"] =                   "System Language: "
+JAPANESE["TRANSLATE_CURRENT_AUTOPLUGIN"] =              "AutoPlugin Language: "
 JAPANESE["TRANSLATE_YOUR_TITLE"] =                      "Yours: "
 JAPANESE["SAVE_TRANSLATIONS"] =                         "翻訳を保存"
 JAPANESE["EXIT_SAVE_TRANSLATIONS"] =                    "翻訳内容は保存されませんでした。 終了する前に保存しますか？"
@@ -327,6 +328,7 @@ JAPANESE["INSTALLP_DESC_QASCREEN"] =                    "PSVita用の高品質�
 JAPANESE["INSTALLP_DESC_NOSHAREDFB"] =                  "システムモードで実行される自作アプリケーションのサスペンドと再開のサイクル後、共有フレームバッファの問題を回避できます。 ただし、標準のフレームバッファ実装を使用します"
 JAPANESE["INSTALLP_DESC_TRIMPOSE"] =                    "長押しメニュー（PSボタンを長く押した後に表示されるメニュー）を透明にするPSVitaのプラグイン"
 JAPANESE["INSTALLP_DESC_QUIETSHOT"] =                   "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+JAPANESE["INSTALLP_DESC_FTPEVERYWHERE"] =               "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"
@@ -356,6 +358,7 @@ JAPANESE["INSTALLP_DESC_TRACKPLUGMOD"] =                "Playtime tracker plugin
 JAPANESE["INSTALLP_DESC_PSONESCROT"] =                  "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 JAPANESE["INSTALLP_DESC_CPUAFFCHANGER"] =               "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 JAPANESE["INSTALLP_DESC_SHARPSCALE"] =                  "Native 960x544 HDMI output for PSTV."
+JAPANESE["INSTALLP_DESC_RAPIDMENU"] =                   "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"

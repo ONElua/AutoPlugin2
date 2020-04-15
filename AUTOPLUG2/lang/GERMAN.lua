@@ -190,7 +190,8 @@ GERMAN["TRANSIMPOSE_LEVEL"] =                       "Tranzparenzstufe eingestell
 
 --Translate
 GERMAN["TRANSLATE_ENGLISH_TITLE"] =                 "Englisch: "
-GERMAN["TRANSLATE_CURRENT_TITLE"] =                 "Aktuell: "
+GERMAN["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+GERMAN["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 GERMAN["TRANSLATE_YOUR_TITLE"] =                    "Deine: "
 GERMAN["SAVE_TRANSLATIONS"] =                       "Übersetzung speichern"
 GERMAN["EXIT_SAVE_TRANSLATIONS"] =                  "Übersetzung nicht gespeichert. Vor dem verlassen Speichern?"
@@ -327,6 +328,7 @@ GERMAN["INSTALLP_DESC_QASCREEN"] =                  "Hochwertiges Screenshot Plu
 GERMAN["INSTALLP_DESC_NOSHAREDFB"] =                "Ermöglicht das Umgehen von Problemen mit gemeinsam genutzten Bildspeichern nach dem Anhalten des Wiederaufnahmezyklus für Homebrew Anwendungen, die im Systemmodus ausgeführt werden. Verwenden Sie jedoch die Standard Bildspeicher Implementierung."
 GERMAN["INSTALLP_DESC_TRIMPOSE"] =                  "Ein Plugin für PS Vita, dass das Schnellmenü (das nach langem Drücken der PS-Taste angezeigt wird) transparent macht."
 GERMAN["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+GERMAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 GERMAN["INSTALLP_DESC_YAMT"] =                      "Ein anderes Kernel Plugin um den Speicher einer Partition zu zuweisen, für PSVita/PSTV (Benötigt Enso, NUR mit der Firmware 3.60 und 3.65"
@@ -356,6 +358,7 @@ GERMAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for
 GERMAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 GERMAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 GERMAN["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+GERMAN["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."

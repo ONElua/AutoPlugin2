@@ -190,7 +190,8 @@ ITALIAN["TRANSIMPOSE_LEVEL"] =                          "Modifica livello"
 
 --Translate
 ITALIAN["TRANSLATE_ENGLISH_TITLE"] =                    "Inglese: "
-ITALIAN["TRANSLATE_CURRENT_TITLE"] =                    "Attuale: "
+ITALIAN["TRANSLATE_CURRENT_TITLE"] =                    "System Language: "
+ITALIAN["TRANSLATE_CURRENT_AUTOPLUGIN"] =               "AutoPlugin Language: "
 ITALIAN["TRANSLATE_YOUR_TITLE"] =                       "La tua traduzione: "
 ITALIAN["SAVE_TRANSLATIONS"] =                          "Salva le traduzioni"
 ITALIAN["EXIT_SAVE_TRANSLATIONS"] =                     "Traduzione non salvata. Salvare prima di uscire?"
@@ -327,6 +328,7 @@ ITALIAN["INSTALLP_DESC_QASCREEN"] =                     "Plugin che permette di 
 ITALIAN["INSTALLP_DESC_NOSHAREDFB"] =                   "Consente di aggirare i problemi di framebuffer condivisi dopo il ciclo di sospensione/ripresa per le applicazioni homebrew eseguite in modalità di sistema. ma usa l'implementazione standard di framebuffer."
 ITALIAN["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin per PS Vita che rende trasparente il menu RAPIDO (quello che appare dopo aver premuto a lungo il pulsante PS)."
 ITALIAN["INSTALLP_DESC_QUIETSHOT"] =                    "Silenzia il suono di default quando si scatta uno screenshot, una foto, un video o una foto panoramica. Funziona sia su Playstation Vita che su PlayStation TV."
+ITALIAN["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 ITALIAN["INSTALLP_DESC_YAMT"] =                         "Ancora un altro plugin(SD2VITA) per PSVita/PSTV (richiede Enso, compatibile SOLO con firmware 3.60 e 3.65)"
@@ -356,6 +358,7 @@ ITALIAN["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Semplice plugin che ti 
 ITALIAN["INSTALLP_DESC_PSONESCROT"] =                   "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 ITALIAN["INSTALLP_DESC_CPUAFFCHANGER"] =                "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 ITALIAN["INSTALLP_DESC_SHARPSCALE"] =                   "Native 960x544 HDMI output for PSTV."
+ITALIAN["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 ITALIAN["INSTALLP_DESC_PS4LINK"] =                      "Questo plugin consente di forzare la configurazione preferita del pulsante di Riproduzione remota"

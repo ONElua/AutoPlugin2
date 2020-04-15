@@ -190,7 +190,8 @@ ENGLISH_US["TRANSIMPOSE_LEVEL"] =                       "Level Set"
 
 --Translate
 ENGLISH_US["TRANSLATE_ENGLISH_TITLE"] =                 "English: "
-ENGLISH_US["TRANSLATE_CURRENT_TITLE"] =                 "Current: "
+ENGLISH_US["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+ENGLISH_US["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 ENGLISH_US["TRANSLATE_YOUR_TITLE"] =                    "Yours: "
 ENGLISH_US["SAVE_TRANSLATIONS"] =                       "Save Translations"
 ENGLISH_US["EXIT_SAVE_TRANSLATIONS"] =                  "Translation not saved. Save before exiting?"
@@ -327,6 +328,7 @@ ENGLISH_US["INSTALLP_DESC_QASCREEN"] =                  "High quality screenshot
 ENGLISH_US["INSTALLP_DESC_NOSHAREDFB"] =                "Allows you to bypass shared framebuffer issues after suspend-resume cycle for homebrew applications that run in system mode. but use standard framebuffer implementation."
 ENGLISH_US["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin for PS Vita that makes impose menu (the one that appears after long PS button press) transparent."
 ENGLISH_US["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+ENGLISH_US["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 ENGLISH_US["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
@@ -356,6 +358,7 @@ ENGLISH_US["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin
 ENGLISH_US["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 ENGLISH_US["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 ENGLISH_US["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+ENGLISH_US["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 ENGLISH_US["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"

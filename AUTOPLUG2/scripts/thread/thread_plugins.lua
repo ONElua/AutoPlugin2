@@ -13,13 +13,23 @@ PLUGINS_PORT = channel.new("PLUGINS_PORT")
 cont_global = PLUGINS_PORT:pop()
 cont_plugins = 0
 
+function tableSortSectionAsc(a,b)
+	return (a.section < b.section) or (a.section == b.section and a.name < b.name)
+end
+
 if wlan.isconnected() then
 	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins.lua") then
 		LANGUAGE = {}
 		dofile("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
 		--Plugins!!!
 		dofile("plugins/plugins.lua")
-		if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
+		if #plugins > 0 then
+			if tsort == 1 then
+				table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end)
+			else
+				table.sort(plugins, tableSortSectionAsc)
+			end
+		end
 
 		if #Online_Plugins > 0 then
 			for i=1,#plugins do

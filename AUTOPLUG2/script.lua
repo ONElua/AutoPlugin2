@@ -44,6 +44,9 @@ __LANG = ini.read(__PATH_INI,"LANGUAGE","lang","")
 if __LANG == "" then __LANG = os.language() end
 dofile("scripts/language.lua")
 
+dofile("scripts/commons.lua")
+dofile("scripts/scroll.lua")
+
 -- Loading font
 files.mkdir("ux0:data/AUTOPLUGIN2/font/")
 fnt = nil
@@ -54,7 +57,9 @@ end
 
 if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 	if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-		message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+		if back then back:blit(0,0) end
+			message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+		os.delay(500)
 		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 	end
 	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
@@ -68,9 +73,6 @@ if os.access() == 0 then
 	os.exit()
 end
 
-dofile("scripts/commons.lua")
-dofile("scripts/scroll.lua")
-
 __UPDATE = tonumber(ini.read(__PATH_INI,"UPDATE","update","1"))
 _update = LANGUAGE["NO"]
 if __UPDATE == 1 then
@@ -81,18 +83,18 @@ write_config()
 
 --Copy defect for config.txt
 dofile("scripts/tai.lua")
-if not files.exists(tai_ux0_path) and not files.exists(tai_ur0_path) then files.copy("resources/config/config.txt", "ur0:tai/") end
+
+--Aqui obtener solo ur0:tai/config.txt, eliminar o ignorar ux0:tai/config.txt
+files.delete("ux0:tai/config.txt")
+files.delete("uma0:tai/config")
+if not files.exists(tai_config_ur0_path) then files.copy("resources/config/config.txt", "ur0:tai/") end
 
 --Init load configs
 tai.load()
 
-tai.sync(__UX0, "ux0:tai/config.txt")
-tai.sync(__UR0, "ur0:tai/config.txt")
-
 --Backups
-tai.sync(__UX0, "ux0:tai/config_backup.txt")
-tai.sync(__UR0, "ur0:tai/config_backup.txt")
-
+tai.sync(tai_config_ur0_path)
+tai.sync("ur0:tai/config_backup.txt")
 
 if back then back:blit(0,0) end
 	message_wait(LANGUAGE["STRING_BACKUP_CONFIGS"])

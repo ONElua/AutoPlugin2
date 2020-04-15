@@ -29,30 +29,26 @@ function files.read(path, mode)
 	return data
 end
 
-tai = {
-	{},--ux0 index 1
-	{},--ur0 index 2
-}
+tai = {}
 
-tai_ux0_path = "ux0:tai/config.txt"
-tai_ur0_path = "ur0:tai/config.txt"
+tai_config_ux0_path = "ux0:tai/config.txt"
+tai_config_ur0_path = "ur0:tai/config.txt"
 
 --Internal
-function load_config(path, index)
+function load_config(path)
 	print("Loading taiCfg from %s\n",path)
 
-	tai[index].raw = {}
+	tai.raw = {}
 	for line in io.lines(path) do
 		if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-		table.insert(tai[index].raw, line)
+		table.insert(tai.raw, line)
 	end
-	--tai[index].path = path
 
-	tai.parse(index)
+	tai.parse()
 
-	--tai.debug(index)
-		--tai.repair(index)
-	--tai.debug(index)
+	--tai.debug()
+		tai.repair()
+	--tai.debug()
 
 end
 
@@ -63,57 +59,54 @@ end
 ]]
 function tai.load()
 
-	tai[1].exist,tai[2].exist = false,false
-	tai[1].path,tai[2].path = tai_ux0_path,tai_ur0_path
-
-	if files.exists(tai_ux0_path) and not files.info(tai_ux0_path).directory then
-		load_config(tai_ux0_path,1)
-		tai[1].exist = true
-	end
-
-	
-	if files.exists(tai_ur0_path) and not files.info(tai_ur0_path).directory then
-		load_config(tai_ur0_path,2)
-		tai[2].exist = true
+	tai.path = tai_config_ur0_path
+	tai.exist = false
+	if files.exists(tai_config_ur0_path) and not files.info(tai_config_ur0_path).directory then
+		load_config(tai_config_ur0_path)
+		tai.exist = true
 	end
 
 end
 
 --[[
-	NIL tai.parse(index)
+	NIL tai.parse()
 	When executing this function, the txt is parsed to native arrays and can work by index direct.
 ]]
-function tai.parse(index)
+function tai.parse()
 
-	if tai[index].raw then
+	if tai.raw then
 
-		tai[index].gameid = {}
+		tai.gameid = {}
 
 		local id_sect = nil
-		for i=1, #tai[index].raw do
+		for i=1, #tai.raw do
 
-			local line = tai[index].raw[i]
+			local line = tai.raw[i]:lower()
 
 			if #line > 1 then
 				if line:find("*",1,true) then -- Secction Found.
 					id_sect = line:sub(2)
-					--os.message("id_sect\n"..id_sect)
+					--os.message("id_sect\n"..id_sect.. " "..i)
 					--print("Section found %s\n", id_sect)
-					if not tai[index].gameid[id_sect] then tai[index].gameid[id_sect] = { line = {}, prx = {}, section = id_sect } end
-					table.insert(tai[index].gameid[id_sect].line, i)
+					if not tai.gameid[id_sect] then
+						tai.gameid[id_sect] = { line = {}, prx = {}, section = id_sect }
+					end
+					table.insert(tai.gameid[id_sect].line, i)
 					continue
 				end
 
 				if id_sect and not line:find("#",1,true) then -- Is a path and not a comment.
-					--print("[%s]: %s\n", id_sect, line:lower())
+					--print("[%s]: %s\n", id_sect, line)
 					if not line:find("henkaku.suprx",1,true) then
-						--os.message("line\n"..line:lower())
-						table.insert(tai[index].gameid[id_sect].prx, { path=line:lower(), line=i })
+							--os.message("insert\n"..line.." "..i)
+						table.insert(tai.gameid[id_sect].prx, { path = line, line = i })
 					end
-				end
+				end--id_sect
+
 			end
 
 		end
+
 	end
 
 end
@@ -124,35 +117,35 @@ end
 	concentrating these into a single one, and preserving the first id found in the txt, or if section is void, delete.
 	Useful to repair previous errors in the use of the same.
 ]]
-function tai.repair(index)
+function tai.repair()
 
-	if tai[index].raw and tai[index].gameid then
-		for k,v in pairs(tai[index].gameid) do
+	if tai.raw and tai.gameid then
+		for k,v in pairs(tai.gameid) do
 
 			local len = #v.line
 			if len > 1 then
 
-				tai.delete_sect(index, v) -- Remove all sections of id...
+				tai.delete_sect(v) -- Remove all sections of id...
 
 				-- Reinsert in first pos! :D
-				table.insert(tai[index].raw,v.line[1], "*"..k)
+				table.insert(tai.raw,v.line[1], "*"..k)
 				for a=1, #v.prx do
-					table.insert(tai[index].raw,v.line[1]+a, v.prx[a].path)
+					table.insert(tai.raw,v.line[1]+a, v.prx[a].path)
 				end
-				tai.parse(index)
+				tai.parse()
 
-				return tai.repair(index) -- recursive! :D
+				return tai.repair() -- recursive! :D
 
 			elseif #v.prx < 1 then -- No have any plug?, remove!!!!
 
-				local id = tai[index].gameid[k].section
+				local id = tai.gameid[k].section
 				--os.message(section)
 				if id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
 					--os.message(section)
-					tai.delete_sect(index, v) -- Remove all sections of id...
-					tai.parse(index)
+					tai.delete_sect(v) -- Remove all sections of id...
+					tai.parse()
 
-					return tai.repair(index) -- recursive! :D
+					return tai.repair() -- recursive! :D
 				end
 			end
 
@@ -161,7 +154,7 @@ function tai.repair(index)
 
 end
 
-function tai.delete_sect(index, v) -- Internal use...
+function tai.delete_sect(v) -- Internal use...
 
 	local len = #v.line
 
@@ -169,32 +162,32 @@ function tai.delete_sect(index, v) -- Internal use...
 		for b=#v.prx, 1, -1 do
 			if v.prx[b].line > v.line[a] and not v.prx[b].rv then
 				--print("Line: %d - Removed: %s\n", v.prx[b].line,
-				table.remove(tai[index].raw, v.prx[b].line)--)
+				table.remove(tai.raw, v.prx[b].line)--)
 				v.prx[b].rv = true
 			end
 		end
 
 		--print("Line: %d - Removed: %s\n",v.line[a],
-		table.remove(tai[index].raw, v.line[a])--)
+		table.remove(tai.raw, v.line[a])--)
 
 	end
 
 end
 
 --[[
-	NUMBER tai.find(index, id, path)
+	NUMBER tai.find(id, path)
 	Search a filename in the list of plugin of the id.
 	return nil in case of error, index in success.
 ]]
-function tai.find(index, id, path)
+function tai.find(id, path)
 
-	if not tai[index].gameid[id] then return nil end
+	if not tai.gameid[id] then return nil end
 
 	local fname = files.nopath(path)--name or ""
 	fname = fname:lower()
 
-	for i=1, #tai[index].gameid[id].prx do
-		local x1,x2 = string.find(tai[index].gameid[id].prx[i].path:lower(), fname, 1, true)
+	for i=1, #tai.gameid[id].prx do
+		local x1,x2 = string.find(tai.gameid[id].prx[i].path:lower(), fname, 1, true)
 		if x1 then
 			return i
 		end
@@ -204,39 +197,39 @@ function tai.find(index, id, path)
 end
 
 --[[
-	NUMBER tai.put(index, id, path)
+	NUMBER tai.put(id, path)
 	Add a filename in the list of plugin of the id, if the id no exists, then create a id or if exists id and path then nothing do!
 	return false in case of error, true in success.
 ]]
-function tai.put(index, id, path, pos)
+function tai.put(id, path, pos)
 
-	local idx = tai.find(index, id, path)
+	local idx = tai.find(id, path)
 
 	if idx then -- Nothing to do... :O ?
-		--tai[index].gameid[id].prx[idx].path =
+		--tai.gameid[id].prx[idx].path =
 
-	elseif tai[index].gameid[id] then -- Exists the id then have any prx!
+	elseif tai.gameid[id] then -- Exists the id then have any prx!
 
-		idx = #tai[index].gameid[id].prx
+		idx = #tai.gameid[id].prx
 
 		if pos then
-			table.insert(tai[index].raw, tai[index].gameid[id].line[1]+pos, path)
+			table.insert(tai.raw, tai.gameid[id].line[1]+pos, path)
 		else
 			if idx > 0 then
-				table.insert(tai[index].raw, tai[index].gameid[id].prx[idx].line+1, path)
+				table.insert(tai.raw, tai.gameid[id].prx[idx].line+1, path)
 			else
-				table.insert(tai[index].raw, tai[index].gameid[id].line[1] + 1, path)
+				table.insert(tai.raw, tai.gameid[id].line[1] + 1, path)
 			end
 		end
 
-		tai.parse(index) -- Refresh all ids lines etc..
+		tai.parse() -- Refresh all ids lines etc..
 		--tai.debug()
 		return true
 
 	else -- New ID new path!
-		table.insert(tai[index].raw, "*"..id)
-		table.insert(tai[index].raw, path)
-		tai.parse(index) -- Refresh all ids lines etc..
+		table.insert(tai.raw, "*"..id)
+		table.insert(tai.raw, path)
+		tai.parse() -- Refresh all ids lines etc..
 		--tai.debug()
 		return true
 	end
@@ -250,18 +243,18 @@ end
 	Remove a filename in the list of plugin of the id, if the id no have more prx, its erase!
 	return false in case of error, true in success.
 ]]
-function tai.del(index, id, path)
+function tai.del(id, path)
 
-	local idx = tai.find(index, id, path)
+	local idx = tai.find(id, path)
 
 	if idx then
-		table.remove(tai[index].raw, tai[index].gameid[id].prx[idx].line)
+		table.remove(tai.raw, tai.gameid[id].prx[idx].line)
 
-		if #tai[index].gameid[id].prx == 1 and (id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx!
-			--os.message("tai.del\n"..#tai[index].gameid[id].prx.."\nid "..id)
-			table.remove(tai[index].raw, tai[index].gameid[id].line[1])
+		if #tai.gameid[id].prx == 1 and (id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx!
+			--os.message("tai.del\n"..#tai.gameid[id].prx.."\nid "..id)
+			table.remove(tai.raw, tai.gameid[id].line[1])
 		end
-		tai.parse(index) -- Refresh all ids lines etc..
+		tai.parse() -- Refresh all ids lines etc..
 		--tai.debug()
 		return true
 	end
@@ -274,18 +267,19 @@ end
 	Can send a path to sync or use the default.
 	Synchronize all the changes made so far with the library.
 ]]
-function tai.sync(index, path)
-	if tai[index].raw then
-		files.write(path or tai[index].path, table.concat(tai[index].raw, '\n'))
+function tai.sync(path)
+	if not files.exists("ur0:tai/") then files.mkdir("ur0:tai/") end
+	if tai.raw then
+		files.write(path or tai.path, table.concat(tai.raw, '\n'))
 	end
 end
 
-function tai.debug(index)
+function tai.debug()
 	return nil
 	--[[print("### CONFIG.TXT ##\n")
-	if tai[index].raw then
-		for i=1,#tai[index].raw do
-			print("#%03d: %s\n",i,tai[index].raw[i])
+	if tai.raw then
+		for i=1,#tai.raw do
+			print("#%03d: %s\n",i,tai.raw[i])
 		end
 	end
 	print("##################\n")]]

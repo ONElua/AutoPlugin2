@@ -96,41 +96,33 @@ function install()
 	end
 
 	--No ur0:tai/config.txt
-	if not tai[__UR0].exist then
-
-		if tai[__UX0].exist then files.copy(tai[__UX0].path, "ur0:tai/") --If exist ux0:tai/config.txt copy to ur0:tai
-		else
-			files.copy("resources/config/config.txt", "ur0:tai/")
-		end
-
+	if not tai.exist then
+		files.copy("resources/config/config.txt", "ur0:tai/")
 		--Update configs
 		tai.load()
 	end
 
 	--delete if plugin gamesd.skprx
-	if tai[__UR0].gameid["KERNEL"] then
-		tai.del(__UR0, "KERNEL", "gamesd.skprx")
+	if tai.gameid["KERNEL"] then
+		tai.del("KERNEL", "gamesd.skprx")
 		--Write
-		tai.sync(__UR0)
+		tai.sync()
 	end
 
 	--Update configs
 	tai.load()
 
-	-- Delete ux0:tai/config.txt
-	if tai[__UX0].exist then files.delete(tai[__UX0].path) end
-
-	if files.exists(tai[__UR0].path) then
+	if files.exists(tai.path) then
 
 		--Install plugin to tai folder
-		files.copy(path_plugins.."storagemgr.skprx", "ur0:tai")
-		files.copy(path_plugins.."storage_config.txt", "ur0:tai")
+		files.copy(path_plugins.."storagemgr.skprx", tai_ur0)
+		files.copy(path_plugins.."storage_config.txt", tai_ur0)
 
 		--Insert plugin to Config
-		tai.put(__UR0, "KERNEL", "ur0:tai/storagemgr.skprx", 1)
+		tai.put("KERNEL", "ur0:tai/storagemgr.skprx", 1)
 
 		--Write
-		tai.sync(__UR0)
+		tai.sync()
 
 		change = true
 		buttons.homepopup(0)
@@ -296,7 +288,7 @@ end
 
 function read_storage_config()
 
-	if not files.exists("ur0:tai/storage_config.txt") then files.copy(path_plugins.."storage_config.txt", "ur0:tai") end
+	if not files.exists("ur0:tai/storage_config.txt") then files.copy(path_plugins.."storage_config.txt", tai_ur0) end
 
 	local data = {}
 	for line in io.lines("ur0:tai/storage_config.txt") do
@@ -323,8 +315,8 @@ function parse_mounts(devices, mounts, original)
 end
 
 function sd2vita()
-	if tai[__UR0].exist and tai.find(__UR0, "KERNEL", "storagemgr.skprx") then
-		if not files.exists("ur0:tai/storage_config.txt") then files.copy(path_plugins.."storage_config.txt", "ur0:tai") end
+	if tai.exist and tai.find("KERNEL", "storagemgr.skprx") then
+		if not files.exists("ur0:tai/storage_config.txt") then files.copy(path_plugins.."storage_config.txt", tai_ur0) end
 		configure()
 	else
 		install()

@@ -46,7 +46,7 @@ function change_lang()
 
 	local maxim,y1 = 8,85
 	local scroll = newScroll(tb,maxim)
-	local xscroll = 10
+	local xscroll,xcroll2 = 10,10
 
 	while true do
 		buttons.read()
@@ -73,10 +73,15 @@ function change_lang()
 			local pos_height = math.max(h/scroll.maxim, maxim)
 			draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
-			if screen.textwidth(LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_lang) > 925 then
-				xscroll = screen.print(xscroll, 445, LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_lang, 1, color.white, color.blue, __SLEFT,935)
+			if screen.textwidth(LANGUAGE["TRANSLATE_CURRENT_TITLE"]..tostring(os.language())) > 925 then
+				xcroll2 = screen.print(xcroll2, 445, LANGUAGE["TRANSLATE_CURRENT_TITLE"]..tostring(os.language()), 1, color.white, color.blue, __SLEFT,935)
 			else
-				screen.print(10, 445,LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_lang,1,color.white,color.blue,__ALEFT)
+				screen.print(10, 445,LANGUAGE["TRANSLATE_CURRENT_TITLE"]..tostring(os.language()),1,color.white,color.blue,__ALEFT)
+			end
+			if screen.textwidth(LANGUAGE["TRANSLATE_CURRENT_AUTOPLUGIN"]..current_lang) > 925 then
+				xscroll = screen.print(xscroll, 475, LANGUAGE["TRANSLATE_CURRENT_AUTOPLUGIN"]..current_lang, 1, color.white, color.blue, __SLEFT,935)
+			else
+				screen.print(10, 475,LANGUAGE["TRANSLATE_CURRENT_AUTOPLUGIN"]..current_lang,1,color.white,color.blue,__ALEFT)
 			end
 
 		else
@@ -125,7 +130,13 @@ function change_lang()
 				end
 
 				dofile("plugins/plugins.lua")
-				if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
+				if #plugins > 0 then
+					if tsort == 1 then
+						table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end)
+					else
+						table.sort(plugins, tableSortSectionAsc)
+					end
+				end
 
 				if __UPDATE == 0 then
 					_update = LANGUAGE["NO"]
@@ -142,7 +153,9 @@ function change_lang()
 
 				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 					if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-						message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+						if back then back:blit(0,0) end
+							message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+						os.delay(500)
 						http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 					end
 					if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end

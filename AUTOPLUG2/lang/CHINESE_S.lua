@@ -190,7 +190,8 @@ CHINESE_S["TRANSIMPOSE_LEVEL"] =                       "设置级别"
 
 --Translate
 CHINESE_S["TRANSLATE_ENGLISH_TITLE"] =                 "英文方案: "
-CHINESE_S["TRANSLATE_CURRENT_TITLE"] =                 "当前方案: "
+CHINESE_S["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+CHINESE_S["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 CHINESE_S["TRANSLATE_YOUR_TITLE"] =                    "您的方案: "
 CHINESE_S["SAVE_TRANSLATIONS"] =                       "保存翻译"
 CHINESE_S["EXIT_SAVE_TRANSLATIONS"] =                  "翻译尚未保存. 是否在退出前保存?"
@@ -327,6 +328,7 @@ CHINESE_S["INSTALLP_DESC_QASCREEN"] =                  "适用于 PSVita 的高�
 CHINESE_S["INSTALLP_DESC_NOSHAREDFB"] =                "对于在系统模式下运行但使用标准帧缓冲实现的自制应用程序,允许您在挂起恢复周期之后绕过共享的帧缓冲问题的插件."
 CHINESE_S["INSTALLP_DESC_TRIMPOSE"] =                  "PS Vita 插件,用于使强制菜单 (长按 PS 按钮出现的那个) 透明."
 CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "在截屏,录像,拍照及拍摄全景照时,关闭快门音效.适用于 Playstation Vita 以及 PlayStation TV."
+CHINESE_S["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款分区重新挂载内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
@@ -356,6 +358,7 @@ CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏�
 CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "为PS1游戏拍摄PNG格式截屏. [在快捷菜单中打开设置,如果使用 Adrenaline 请打开官方设置,选择截屏(screenshot)]"
 CHINESE_S["INSTALLP_DESC_CPUAFFCHANGER"] =             "此插件将 PSVita 系统应用程序的 CPU 亲和力掩码指定为所有用户核心,从而提高程序的性能."
 CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持原生 960x544 HDMI 输出."
+CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
