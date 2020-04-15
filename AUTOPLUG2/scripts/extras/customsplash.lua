@@ -48,7 +48,7 @@ function img2splashbin(img,flag)
 				fp:close()
 
 				if copy then
-					files.copy("resources/plugins/custom_boot_splash.skprx", tai_ur0)
+					files.copy("resources/plugins/custom_boot_splash.skprx", locations[loc].."tai/")
 				end
 
 				if flag then
@@ -69,7 +69,13 @@ end
 function customimgsplash()
 
 	--Init load configs
+	loc = 1
 	tai.load()
+	local partition = 0
+	if tai[__UX0].exist then partition = __UX0
+	elseif tai[__UR0].exist then partition,loc = __UR0,2
+	end
+	path_tai = locations[loc].."tai/"
 
 	local png, custom_boot = files.listfiles("ux0:CustomBootsplash/"), {}
 
@@ -158,12 +164,20 @@ function customimgsplash()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 
@@ -174,7 +188,7 @@ function customimgsplash()
 
 			if buttons.accept then
 				if os.message(LANGUAGE["CUSTOMBOOTSPLASH_QUESTION"],1) == 1 then
-					files.copy("resources/plugins/custom_boot_splash.skprx",tai_ur0)
+					files.copy("resources/plugins/custom_boot_splash.skprx",path_tai)
 					if img2splashbin(custom_boot[scroll.sel].img,true) == 1 then
 						if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
 							if back then back:blit(0,0) end
@@ -204,7 +218,7 @@ function customimgsplash()
 					screen.flip()
 					os.delay(1500)
 					if os.message(LANGUAGE["CUSTOMBOOTSPLASH_QUESTION"],1) == 1 then
-						files.copy("resources/plugins/custom_boot_splash.skprx",tai_ur0)
+						files.copy("resources/plugins/custom_boot_splash.skprx",path_tai)
 						tmpimg:reset()
 						if img2splashbin(tmpimg,true) == 1 then
 							if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then

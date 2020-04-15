@@ -83,18 +83,19 @@ write_config()
 
 --Copy defect for config.txt
 dofile("scripts/tai.lua")
-
---Aqui obtener solo ur0:tai/config.txt, eliminar o ignorar ux0:tai/config.txt
-files.delete("ux0:tai/config.txt")
-files.delete("uma0:tai/config")
-if not files.exists(tai_config_ur0_path) then files.copy("resources/config/config.txt", "ur0:tai/") end
+if not files.exists(tai_ux0_path) and not files.exists(tai_ur0_path) then files.copy("resources/config/config.txt", "ur0:tai/") end
 
 --Init load configs
 tai.load()
 
+tai.sync(__UX0, "ux0:tai/config.txt")
+tai.sync(__UR0, "ur0:tai/config.txt")
+
 --Backups
-tai.sync(tai_config_ur0_path)
-tai.sync("ur0:tai/config_backup.txt")
+tai.sync(__UX0, "ux0:tai/config_backup.txt")
+tai.sync(__UR0, "ur0:tai/config_backup.txt")
+
+tai.load()
 
 if back then back:blit(0,0) end
 	message_wait(LANGUAGE["STRING_BACKUP_CONFIGS"])

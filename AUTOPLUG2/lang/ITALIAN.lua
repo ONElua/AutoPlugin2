@@ -51,6 +51,7 @@ ITALIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Imposta Custom Boot Spl
 ITALIAN["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Imposta Custom Warning Message"
 ITALIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Modifica Transparent Impose"
 ITALIAN["MENU_EXTRAS_TRANSLATE"] =                      "Tradurre AutoPlugin II"
+ITALIAN["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
 
 ITALIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Consente la personalizzazione del file config.txt per PKGj"
 ITALIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Consente di impostare un'immagine personalizzata all'avvio"
@@ -59,6 +60,8 @@ ITALIAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Consente di impostare v
 ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Consente il download e l'installazione di iTLS-Enso vpk su PSVita (aggiunge il TLS v1.2 ai dispositivi abilitati Enso)"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permette di scaricare e installare PSP2-batteryFixer vpk in Vita (risolve la maggior parte dei problemi relativi alla batteria della PSVita)"
 ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare AutoPlugin traducendo nella tua lingua!"
+ITALIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "Warning!!! This option wil reset your ur0:tai/config.txt"
+ITALIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 ITALIAN["MENU_SETTINGS_LANG_ONLINE"] =                  "Scarica le lingue disponibili"
@@ -372,6 +375,7 @@ ITALIAN["INSTALLP_DESC_RESCREENY"] =                    "Plugin che permette di 
 --Comunes
 ITALIAN["STRING_UNSAFE_MODE"] =                         "MODALITA' NON SICURA è richiesto per questo Homebrew!"
 ITALIAN["STRING_PSVITA_RESTART"] =                      "La tua PSVita sarà riavviata"
+ITALIAN["STRINGS_CONFIG_SUCCESS"] =		                "Reload taiHEN config.txt"
 ITALIAN["STRING_BACKUP_CONFIGS"] =                      "Creazione del file Config_backups.txt in corso"
 ITALIAN["STRING_MISSING_CONFIG"] =                      "config.txt MANCANTE"
 ITALIAN["STRING_BACK"] =                                "Ritorna al menu"

@@ -51,6 +51,7 @@ SPANISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Establecer una imagen C
 SPANISH["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Establecer un mensaje para Custom Warning Message"
 SPANISH["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Establecer Nivel de Transparencia"
 SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
+SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
 
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -59,6 +60,8 @@ SPANISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Permite establecerel Ni
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Permite descargar e instalar el vpk de iTLS-Enso en tu PS Vita (Añade TLS v1.2 a los dispositivos con Enso)"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permite descargar e instalar el vpk de PSP2-batteryFixer en tu PS Vita (Corrige la mayoría de los problemas relacionados con la batería de PS Vita)"
 SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
+SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "Warning!!! This option wil reset your ur0:tai/config.txt"
+SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
@@ -372,6 +375,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 --Comunes
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
+SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Reload taiHEN config.txt"
 SPANISH["STRING_BACKUP_CONFIGS"] =                      "Creando Config_backups.txt"
 SPANISH["STRING_MISSING_CONFIG"] =                      "Falta config.txt"
 SPANISH["STRING_BACK"] =                                "Para volver al menú"

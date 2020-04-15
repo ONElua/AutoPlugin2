@@ -51,6 +51,7 @@ FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personna
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin TransparentImpose"
 FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
+FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 FRENCH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Permet de configurer le fichier config.txt de PKGj"
 FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Modifier le démarrage de votre console avec une image personnalisée"
@@ -59,6 +60,8 @@ FRENCH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Vous permet de définir le 
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Permet de télécharger et d'installer iTLS-Enso sur votre console, ajoute TLS v1.2 aux consoles compatibles avec Enso (3.60/3.65)"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Permet de télécharger et d'installer PSP2-batteryFixer sur votre console (corrige la plupart des problèmes liés aux batterie de la PSVita)"
 FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlugin II en le traduisant dans votre langue !"
+FRENCH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+FRENCH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Paramètres des langues"
@@ -372,6 +375,7 @@ FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la
 --Comunes
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"

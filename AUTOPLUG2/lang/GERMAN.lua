@@ -51,6 +51,7 @@ GERMAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "'Boot-Splash' Bild festlege
 GERMAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "'Custom Warning' Nachricht erstellen"
 GERMAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Transparent Impose festlegen"
 GERMAN["MENU_EXTRAS_TRANSLATE"] =                   "AutoPlugin II Übersetzen"
+GERMAN["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 GERMAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Ermöglicht die Anpassung der Optionen für PKGj in der config.txt"
 GERMAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Ermöglicht das Festlegen eines eigenen Bildes beim Booten"
@@ -59,6 +60,8 @@ GERMAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Ermöglicht das Festlegen d
 GERMAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Ermöglicht das Herunterladen und Installieren von iTLS-Enso vpk auf der PS Vita (Fügt Enso-fähigen Geräten TLS v1.2 hinzu)"
 GERMAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Ermöglicht das Herunterladen und Installieren von PSP2-batterieFixer vpk auf der PS Vita (Behebt die meisten Probleme mit der Batterie von PSVita)"
 GERMAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Hilf AutoPlugin II zu verbessern, indem du in deine Sprache übersetzen!"
+GERMAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+GERMAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 GERMAN["MENU_SETTINGS_LANG_ONLINE"] =               "Verfügbare Sprachen herunterladen"
@@ -372,6 +375,7 @@ GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden 
 --Comunes
 GERMAN["STRING_UNSAFE_MODE"] =                      "Der Modus 'UNSAFE MODE' ist erforderlich für diese Homebrew!"
 GERMAN["STRING_PSVITA_RESTART"] =                   "Die PS Vita wird neu gestartet"
+GERMAN["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 GERMAN["STRING_BACKUP_CONFIGS"] =                   "Erstelle Config_backups.txt"
 GERMAN["STRING_MISSING_CONFIG"] =                   "config.txt wurde nicht gefunden"
 GERMAN["STRING_BACK"] =                             "zurück ins Menü"

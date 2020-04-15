@@ -51,6 +51,7 @@ ENGLISH_US["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Set custom boot splash"
 ENGLISH_US["MENU_EXTRAS_CUSTOM_WARNING"] =              "Set custom warning message"
 ENGLISH_US["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set transparent impose"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE"] =                   "Translate AutoPlugin II"
+ENGLISH_US["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
@@ -59,6 +60,8 @@ ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transp
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Download and install PSP2-batteryFixer vpk in your Vita (Fixes most of PSVita's battery-related problems)"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin II by translating to your language!"
+ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+ENGLISH_US["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 ENGLISH_US["MENU_SETTINGS_LANG_ONLINE"] =               "Download available languages"
@@ -372,6 +375,7 @@ ENGLISH_US["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will b
 --Comunes
 ENGLISH_US["STRING_UNSAFE_MODE"] =                      "UNSAFE MODE is required for this Homebrew!"
 ENGLISH_US["STRING_PSVITA_RESTART"] =                   "Your PSVita will restart"
+ENGLISH_US["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 ENGLISH_US["STRING_BACKUP_CONFIGS"] =                   "Creating Config_backups.txt"
 ENGLISH_US["STRING_MISSING_CONFIG"] =                   "Missing config.txt"
 ENGLISH_US["STRING_BACK"] =                             "Return to menu"

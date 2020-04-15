@@ -52,13 +52,7 @@ function update_database2(database,tb)
 	end
 	file:close()
 	dofile("plugins/plugins.lua")--Official
-	if #plugins > 0 then
-		if tsort == 1 then
-			table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end)
-		else
-			table.sort(plugins, tableSortSectionAsc)
-		end
-	end
+	if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 end
 
 function plugins_online2()
@@ -196,7 +190,7 @@ function plugins_online2()
 								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path2), path_plugins)
 							end
 
-							if Online_Plugins[j].config and not files.exists(tai_ur0..Online_Plugins[j].config) then
+							if Online_Plugins[j].config and not files.exists(locations[loc].."tai/"..Online_Plugins[j].config) then
 								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].config), path_plugins)
 							end
 
@@ -244,7 +238,7 @@ function plugins_online2()
 				if Online_Plugins[i].path2 then
 					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path2), path_plugins)
 				end
-				if Online_Plugins[i].config and not files.exists(tai_ur0..Online_Plugins[i].config) then
+				if Online_Plugins[i].config and not files.exists(locations[loc].."tai/"..Online_Plugins[i].config) then
 					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].config), path_plugins)
 				end
 
@@ -328,12 +322,20 @@ function plugins_online2()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 

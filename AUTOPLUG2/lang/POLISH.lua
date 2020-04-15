@@ -51,6 +51,7 @@ POLISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Ustaw własny Bootsplash"
 POLISH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Ustaw własną informacje o epilepsji"
 POLISH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set Transparent Impose"
 POLISH["MENU_EXTRAS_TRANSLATE"] =                   "Translate Autoplugin II"
+POLISH["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 POLISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Umożliwia dostosowanie opcji w pliku config.txt dla PKGj"
 POLISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Umożliwia ustawienie własnego ekranu startowego"
@@ -59,6 +60,8 @@ POLISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Allows you to set the Level
 POLISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Umożliwia pobranie i zainstalowanie iTLS-Enso vpk na twojej Vicie (Dodaj TLS v1.2 do urządzenia z Enso)"
 POLISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Umożliwia pobranie i zainstalowanie PSP2-batteryFixer vpk na twojej Vicie (Usówa większość problemów z baterią)"
 POLISH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve Autoplugin II by translating to your language!"
+POLISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+POLISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 POLISH["MENU_SETTINGS_LANG_ONLINE"] =               "Pobierz język"
@@ -372,6 +375,7 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will be sa
 --Comunes
 POLISH["STRING_UNSAFE_MODE"] =                      "NIEBEZPIECZNY TRYB jest wymagany dla tego Homebrew!"
 POLISH["STRING_PSVITA_RESTART"] =                   "Twoja PSVita zostanie uruchomiona ponownie"
+POLISH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 POLISH["STRING_BACKUP_CONFIGS"] =                   "Tworzenie Config_backups.txt"
 POLISH["STRING_MISSING_CONFIG"] =                   "brakuje pliku config.txt"
 POLISH["STRING_BACK"] =                             "Powrót do menu"

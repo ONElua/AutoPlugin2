@@ -98,12 +98,20 @@ function change_lang()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 
@@ -130,13 +138,7 @@ function change_lang()
 				end
 
 				dofile("plugins/plugins.lua")
-				if #plugins > 0 then
-					if tsort == 1 then
-						table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end)
-					else
-						table.sort(plugins, tableSortSectionAsc)
-					end
-				end
+				if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
 				if __UPDATE == 0 then
 					_update = LANGUAGE["NO"]

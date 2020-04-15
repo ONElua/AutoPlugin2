@@ -51,6 +51,7 @@ JAPANESE["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =            "カスタムブート�
 JAPANESE["MENU_EXTRAS_CUSTOM_WARNING"] =                "カスタム警告メッセージの設定"
 JAPANESE["MENU_EXTRAS_TRANSP_IMPOSE"] =                 "クイックメニュー透明化の設定"
 JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "AutoPlugin IIの翻訳"
+JAPANESE["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
 
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
@@ -59,6 +60,8 @@ JAPANESE["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =             "透明化のレベル�
 JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =         "VitaにiTLS-Enso.vpkをダウンロードしてインストールできます（Enso対応デバイスにTLS v1.2を追加します）"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =          "PSViaにPSP2-batteryFixer.vpkをダウンロードしてインストールできます（PSVitaのバッテリー関連の問題のほとんどを修正します）"
 JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用する言語に翻訳してAutoPlugin IIの改善に協力してください！"
+JAPANESE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =     "Warning!!! This option wil reset your ur0:tai/config.txt"
+JAPANESE["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =         "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 JAPANESE["MENU_SETTINGS_LANG_ONLINE"] =                 "利用可能な言語をダウンロードする"
@@ -372,6 +375,7 @@ JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリー�
 --Comunes
 JAPANESE["STRING_UNSAFE_MODE"] =                        "このHomebrewにはUNSAFEモードが必要です！"
 JAPANESE["STRING_PSVITA_RESTART"] =                     "PSVitaが再起動します"
+JAPANESE["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 JAPANESE["STRING_BACKUP_CONFIGS"] =                     "Config_backups.txtの作成"
 JAPANESE["STRING_MISSING_CONFIG"] =                     "config.txtがありません"
 JAPANESE["STRING_BACK"] =                               "メニューに戻る"

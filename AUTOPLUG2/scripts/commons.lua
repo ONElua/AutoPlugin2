@@ -78,10 +78,6 @@ function onExtractFiles(size,written,file,totalsize,totalwritten)
 	return 1
 end
 
-function tableSortSectionAsc(a,b)
-	return (a.section < b.section) or (a.section == b.section and a.name < b.name)
-end
-
 function write_config()
 	ini.write(__PATH_INI,"UPDATE","update",__UPDATE)
 	ini.write(__PATH_INI,"LANGUAGE","lang",__LANG)
@@ -112,8 +108,9 @@ end
 
 --Variables Universales
 path_plugins = "resources/plugins/"
-tai_ux0 = "ux0:tai/"
-tai_ur0 = "ur0:tai/"
+__UX0, __UR0, loc = 1,2,1
+locations = { "ux0:", "ur0:" }
+path_tai = locations[loc].."tai/"
 version = tostring(os.swversion())
 
 --Buttons Assign
