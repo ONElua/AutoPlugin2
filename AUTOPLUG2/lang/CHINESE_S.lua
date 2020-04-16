@@ -51,7 +51,7 @@ CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
 CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
-CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
+CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =             	"重置 ur0 目录的 config.txt"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -60,8 +60,8 @@ CHINESE_S["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "允许您设置透明度
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "下载并安装 iTLS-Enso vpk 到您的 Vita (为启用 Enso 的设备添加 TLS v1.2 支持)"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-batteryFixer vpk 到您的 Vita (解决大多数 PSVita 的电池相关问题)"
 CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 AutoPlugin II!"
-CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
-CHINESE_S["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "警告!!! 此选项将重置 ur0:tai/config.txt"
+CHINESE_S["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 警告!!!\n\n所有已安装的插件将被卸载!!!\n\n您确定要重置 ur0:tai/config.txt?"
 
 --Options Settings
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
@@ -375,7 +375,7 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 --Comunes
 CHINESE_S["STRING_UNSAFE_MODE"] =                      "此程序需要开启不安全模式 (UNSAFE MODE)!"
 CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重启"
-CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "Reload taiHEN config.txt"
+CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "重新载入大变革 config.txt"
 CHINESE_S["STRING_BACKUP_CONFIGS"] =                   "正在创建 Config_backups.txt"
 CHINESE_S["STRING_MISSING_CONFIG"] =                   "找不到 config.txt"
 CHINESE_S["STRING_BACK"] =                             "返回主菜单"
