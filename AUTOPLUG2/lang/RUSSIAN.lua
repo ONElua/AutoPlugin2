@@ -51,7 +51,7 @@ RUSSIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Установить св�
 RUSSIAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "Установить свой загрузочный текст (Warning Message)"
 RUSSIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Настроить прозрачность фона быстрого меню PS Vita"
 RUSSIAN["MENU_EXTRAS_TRANSLATE"] =                   "Перевести AutoPlugin II"
-RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Reset config.txt in ur0"
+RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Сбросить config.txt в разделе ur0"
 
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
@@ -60,8 +60,8 @@ RUSSIAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Позволяет зад�
 RUSSIAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Позволяет загрузить и установить приложение iTLS-Enso, которое добавляет поддержку шифрования TLS 1.2 (нужен enso)"
 RUSSIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Позволяет загрузить и установить приложение PSP2-batteryFixer, рекомендуемое к использованию при проблемах с аккумулятором"
 RUSSIAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Помогите улучшить AutoPlugin II переведя его на свой родной язык!"
-RUSSIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
-RUSSIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+RUSSIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Внимание!!! Эта функция сбросит ваш ur0:tai/config.txt"
+RUSSIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Внимание!!!\n\nВсе установленные плагины будут отключены!!!\n\nВы действительно хотите сбросить ur0:tai/config.txt?"
 
 --Options Settings
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обновления переводов"
@@ -375,7 +375,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Скриншоты буд�
 --Comunes
 RUSSIAN["STRING_UNSAFE_MODE"] =                      "Необходимо разрешить небезопасные приложения в настройках HENkaku!"
 RUSSIAN["STRING_PSVITA_RESTART"] =                   "Система PS Vita будет перезагружена"
-RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "Reload taiHEN config.txt"
+RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "Перезагрузить taiHEN config.txt"
 RUSSIAN["STRING_BACKUP_CONFIGS"] =                   "Создание файла config_backups.txt"
 RUSSIAN["STRING_MISSING_CONFIG"] =                   "Файл config.txt не обнаружен"
 RUSSIAN["STRING_BACK"] =                             "Вернуться назад"
