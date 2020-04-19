@@ -51,6 +51,7 @@ GERMAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "'Boot-Splash' Bild festlege
 GERMAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "'Custom Warning' Nachricht erstellen"
 GERMAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Transparent Impose festlegen"
 GERMAN["MENU_EXTRAS_TRANSLATE"] =                   "AutoPlugin II Übersetzen"
+GERMAN["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 GERMAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Ermöglicht die Anpassung der Optionen für PKGj in der config.txt"
 GERMAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Ermöglicht das Festlegen eines eigenen Bildes beim Booten"
@@ -59,6 +60,8 @@ GERMAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Ermöglicht das Festlegen d
 GERMAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Ermöglicht das Herunterladen und Installieren von iTLS-Enso vpk auf der PS Vita (Fügt Enso-fähigen Geräten TLS v1.2 hinzu)"
 GERMAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Ermöglicht das Herunterladen und Installieren von PSP2-batterieFixer vpk auf der PS Vita (Behebt die meisten Probleme mit der Batterie von PSVita)"
 GERMAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Hilf AutoPlugin II zu verbessern, indem du in deine Sprache übersetzen!"
+GERMAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+GERMAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 GERMAN["MENU_SETTINGS_LANG_ONLINE"] =               "Verfügbare Sprachen herunterladen"
@@ -190,7 +193,8 @@ GERMAN["TRANSIMPOSE_LEVEL"] =                       "Tranzparenzstufe eingestell
 
 --Translate
 GERMAN["TRANSLATE_ENGLISH_TITLE"] =                 "Englisch: "
-GERMAN["TRANSLATE_CURRENT_TITLE"] =                 "Aktuell: "
+GERMAN["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+GERMAN["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 GERMAN["TRANSLATE_YOUR_TITLE"] =                    "Deine: "
 GERMAN["SAVE_TRANSLATIONS"] =                       "Übersetzung speichern"
 GERMAN["EXIT_SAVE_TRANSLATIONS"] =                  "Übersetzung nicht gespeichert. Vor dem verlassen Speichern?"
@@ -327,6 +331,7 @@ GERMAN["INSTALLP_DESC_QASCREEN"] =                  "Hochwertiges Screenshot Plu
 GERMAN["INSTALLP_DESC_NOSHAREDFB"] =                "Ermöglicht das Umgehen von Problemen mit gemeinsam genutzten Bildspeichern nach dem Anhalten des Wiederaufnahmezyklus für Homebrew Anwendungen, die im Systemmodus ausgeführt werden. Verwenden Sie jedoch die Standard Bildspeicher Implementierung."
 GERMAN["INSTALLP_DESC_TRIMPOSE"] =                  "Ein Plugin für PS Vita, dass das Schnellmenü (das nach langem Drücken der PS-Taste angezeigt wird) transparent macht."
 GERMAN["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+GERMAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 GERMAN["INSTALLP_DESC_YAMT"] =                      "Ein anderes Kernel Plugin um den Speicher einer Partition zu zuweisen, für PSVita/PSTV (Benötigt Enso, NUR mit der Firmware 3.60 und 3.65"
@@ -356,6 +361,7 @@ GERMAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for
 GERMAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 GERMAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 GERMAN["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+GERMAN["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."
@@ -369,6 +375,7 @@ GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden 
 --Comunes
 GERMAN["STRING_UNSAFE_MODE"] =                      "Der Modus 'UNSAFE MODE' ist erforderlich für diese Homebrew!"
 GERMAN["STRING_PSVITA_RESTART"] =                   "Die PS Vita wird neu gestartet"
+GERMAN["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 GERMAN["STRING_BACKUP_CONFIGS"] =                   "Erstelle Config_backups.txt"
 GERMAN["STRING_MISSING_CONFIG"] =                   "config.txt wurde nicht gefunden"
 GERMAN["STRING_BACK"] =                             "zurück ins Menü"

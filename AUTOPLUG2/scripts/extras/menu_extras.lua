@@ -135,13 +135,20 @@ function menu_extras()
 		files.delete("ux0:data/AUTOPLUGIN2/vpks/")
 	end
 
+	local resetconfig_callback = function ()
+		if os.message(LANGUAGE["MENU_EXTRAS_QUESTION_RESET_CONFIG"],1) == 1 then
+			files.copy("resources/config/config.txt","ur0:tai/")
+		end
+	end
+
 	--Init load configs
 	loc = 1
 	tai.load()
 	if tai[__UR0].exist then loc = 2 end
 	local menu = {
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],	funct = itls_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],	funct = batteryfixer_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
 	}
 
 	if game.exists("PKGJ00000") then

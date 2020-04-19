@@ -51,6 +51,7 @@ ENGLISH_US["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Set custom boot splash"
 ENGLISH_US["MENU_EXTRAS_CUSTOM_WARNING"] =              "Set custom warning message"
 ENGLISH_US["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set transparent impose"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE"] =                   "Translate AutoPlugin II"
+ENGLISH_US["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
@@ -59,6 +60,8 @@ ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transp
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Download and install PSP2-batteryFixer vpk in your Vita (Fixes most of PSVita's battery-related problems)"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin II by translating to your language!"
+ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+ENGLISH_US["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 ENGLISH_US["MENU_SETTINGS_LANG_ONLINE"] =               "Download available languages"
@@ -190,7 +193,8 @@ ENGLISH_US["TRANSIMPOSE_LEVEL"] =                       "Level Set"
 
 --Translate
 ENGLISH_US["TRANSLATE_ENGLISH_TITLE"] =                 "English: "
-ENGLISH_US["TRANSLATE_CURRENT_TITLE"] =                 "Current: "
+ENGLISH_US["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+ENGLISH_US["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 ENGLISH_US["TRANSLATE_YOUR_TITLE"] =                    "Yours: "
 ENGLISH_US["SAVE_TRANSLATIONS"] =                       "Save Translations"
 ENGLISH_US["EXIT_SAVE_TRANSLATIONS"] =                  "Translation not saved. Save before exiting?"
@@ -327,6 +331,7 @@ ENGLISH_US["INSTALLP_DESC_QASCREEN"] =                  "High quality screenshot
 ENGLISH_US["INSTALLP_DESC_NOSHAREDFB"] =                "Allows you to bypass shared framebuffer issues after suspend-resume cycle for homebrew applications that run in system mode. but use standard framebuffer implementation."
 ENGLISH_US["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin for PS Vita that makes impose menu (the one that appears after long PS button press) transparent."
 ENGLISH_US["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+ENGLISH_US["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 ENGLISH_US["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
@@ -356,6 +361,7 @@ ENGLISH_US["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin
 ENGLISH_US["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 ENGLISH_US["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 ENGLISH_US["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+ENGLISH_US["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 ENGLISH_US["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"
@@ -369,6 +375,7 @@ ENGLISH_US["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will b
 --Comunes
 ENGLISH_US["STRING_UNSAFE_MODE"] =                      "UNSAFE MODE is required for this Homebrew!"
 ENGLISH_US["STRING_PSVITA_RESTART"] =                   "Your PSVita will restart"
+ENGLISH_US["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 ENGLISH_US["STRING_BACKUP_CONFIGS"] =                   "Creating Config_backups.txt"
 ENGLISH_US["STRING_MISSING_CONFIG"] =                   "Missing config.txt"
 ENGLISH_US["STRING_BACK"] =                             "Return to menu"

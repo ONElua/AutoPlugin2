@@ -241,10 +241,21 @@ function plugins_installation(sel)
 					files.extract("resources/plugins/ps4linkcontrols.zip","ux0:")
 				end
 
+				if plugins[sel].section2 and plugins[sel].section2:upper() == "KERNEL" then
+					change = true
+				end
+
+				if plugins[sel].section:upper() == "MAIN" or plugins[sel].section:upper() == "KERNEL" then
+					change = true
+				else
+					ReloadConfig = true
+				end
+
 				if back2 then back2:blit(0,0) end
 					message_wait(plugin_name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
 				os.delay(1500)
-				change = true
+				--change = true
+
 			end
 
 		else
@@ -332,6 +343,13 @@ function autoplugin()
 			screen.print(480, 405, plugins[scr.sel].desc,1,color.green, 0x0,__ACENTER)
 		end
 
+		screen.print(950, 433, plugins[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
+		screen.print(950, 455, plugins[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
+		if plugins[scr.sel].section2 then
+			screen.print(950, 480, plugins[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
+			screen.print(950, 500, plugins[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
+		end
+
 		if tai[__UX0].exist and tai[__UR0].exist then
 			if buttonskey2 then buttonskey2:blitsprite(900,448,2) end
 			if buttonskey2 then buttonskey2:blitsprite(930,448,3) end
@@ -369,12 +387,20 @@ function autoplugin()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 

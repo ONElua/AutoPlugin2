@@ -51,6 +51,7 @@ CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
 CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
+CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =             	"重置 ur0 目录的 config.txt"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -59,6 +60,8 @@ CHINESE_S["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "允许您设置透明度
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "下载并安装 iTLS-Enso vpk 到您的 Vita (为启用 Enso 的设备添加 TLS v1.2 支持)"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-batteryFixer vpk 到您的 Vita (解决大多数 PSVita 的电池相关问题)"
 CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 AutoPlugin II!"
+CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "警告!!! 此选项将重置 ur0:tai/config.txt"
+CHINESE_S["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 警告!!!\n\n所有已安装的插件将被卸载!!!\n\n您确定要重置 ur0:tai/config.txt?"
 
 --Options Settings
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
@@ -113,7 +116,7 @@ CHINESE_S["SD2VITA_CONFIG_CANCEL"] =                   "取消"
 CHINESE_S["SD2VITA_CONFIG_SAVE"] =                     "保存当前配置"
 CHINESE_S["SD2VITA_1_WARNING"] =                       "您必须准备好 sd2vita 设备后才能安装 Storage Manager 插件"
 CHINESE_S["SD2VITA_2_WARNING"] =                       "如果插入了游戏卡,则必须在重启之前将其移除!"
-CHINESE_S["SD2VITA_3_WARNING"] =                       "十分重要: 您的 sd2vita 设备必须已存入一些软件, 您可以从原装记忆卡"
+CHINESE_S["SD2VITA_3_WARNING"] =                       "非常重要: 您的 sd2vita 设备必须已存入一些软件, 您可以从原装记忆卡"
 CHINESE_S["SD2VITA_4_WARNING"] =                       "复制/粘贴必要的软件到储存卡里."
 CHINESE_S["SD2VITA_5_WARNING"] =                       "举例: H-encore, Vitashell/ONEMenu, PKGj, Adrenaline, 等等... "
 CHINESE_S["SD2VITA_GAMECARD_DETECTED"] =               "检测到游戏卡!"
@@ -189,8 +192,9 @@ CHINESE_S["TRANSIMPOSE_OSK_TITLE"] =                   "透明级别"
 CHINESE_S["TRANSIMPOSE_LEVEL"] =                       "设置级别"
 
 --Translate
-CHINESE_S["TRANSLATE_ENGLISH_TITLE"] =                 "英文方案: "
-CHINESE_S["TRANSLATE_CURRENT_TITLE"] =                 "当前方案: "
+CHINESE_S["TRANSLATE_ENGLISH_TITLE"] =                 "英语: "
+CHINESE_S["TRANSLATE_CURRENT_TITLE"] =                 "系统语言: "
+CHINESE_S["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin II 语言: "
 CHINESE_S["TRANSLATE_YOUR_TITLE"] =                    "您的方案: "
 CHINESE_S["SAVE_TRANSLATIONS"] =                       "保存翻译"
 CHINESE_S["EXIT_SAVE_TRANSLATIONS"] =                  "翻译尚未保存. 是否在退出前保存?"
@@ -291,7 +295,7 @@ CHINESE_S["INSTALLP_DESC_DERIN"] =                     "Vita 频率 OSD 屏显�
 CHINESE_S["INSTALLP_DESC_LOLITA"] =                    "将您的 Vita 频率一直设置为最大,并禁用密集型游戏中的限制,例如低亮度和断开 Wi-Fi 连接."
 CHINESE_S["INSTALLP_DESC_LOLITA4"] =                   "将您的 Vita 频率一直设置为 444 mhz 并禁用密集型游戏中的限制,例如低亮度和断开 Wi-Fi 连接."
 CHINESE_S["INSTALLP_DESC_PSVSHELL"] =                  "又一个超频插件 (SELECT + UP 或 SELECT + DOWN 实现在3个 GUI 模式间切换)"
-CHINESE_S["INSTALLP_DESC_SYSCALL6"] =                  "修补PSV执行级别lv0的secure_kernel的系统调用6 (self文件版本检查与废弃检查)"
+CHINESE_S["INSTALLP_DESC_SYSCALL6"] =                  "修补PSV执行级别lv0的secure_kernel的系统调用6 (去除self文件版本校验与废弃校验)"
 CHINESE_S["INSTALLP_DESC_MONAURAL"] =                  "PSVita 的单声道音频和声道平衡 (依赖 MonauralConfig.vpk)"
 CHINESE_S["INSTALLP_DESC_MUPREMIUM"] =                 "为任何游戏或应用程序启用音乐后台播放."
 CHINESE_S["INSTALLP_DESC_ACIDDUMPER"] =                "可能有助于定位虚假 DLC 的应用程序"
@@ -327,6 +331,7 @@ CHINESE_S["INSTALLP_DESC_QASCREEN"] =                  "适用于 PSVita 的高�
 CHINESE_S["INSTALLP_DESC_NOSHAREDFB"] =                "对于在系统模式下运行但使用标准帧缓冲实现的自制应用程序,允许您在挂起恢复周期之后绕过共享的帧缓冲问题的插件."
 CHINESE_S["INSTALLP_DESC_TRIMPOSE"] =                  "PS Vita 插件,用于使强制菜单 (长按 PS 按钮出现的那个) 透明."
 CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "在截屏,录像,拍照及拍摄全景照时,关闭快门音效.适用于 Playstation Vita 以及 PlayStation TV."
+CHINESE_S["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - 始终运行在后台的FTP服务器插件."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款分区重新挂载内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
@@ -355,7 +360,8 @@ CHINESE_S["INSTALLP_DESC_MODALVOL"] =                  "此选项包含了无需
 CHINESE_S["INSTALLP_DESC_TRACKPLUGMOD"] =              "适用于 PSV 的游戏时间追踪插件."
 CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "为PS1游戏拍摄PNG格式截屏. [在快捷菜单中打开设置,如果使用 Adrenaline 请打开官方设置,选择截屏(screenshot)]"
 CHINESE_S["INSTALLP_DESC_CPUAFFCHANGER"] =             "此插件将 PSVita 系统应用程序的 CPU 亲和力掩码指定为所有用户核心,从而提高程序的性能."
-CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持原生 960x544 HDMI 输出."
+CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "将快捷菜单的打开时间从2秒减少到200毫秒."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
@@ -369,6 +375,7 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 --Comunes
 CHINESE_S["STRING_UNSAFE_MODE"] =                      "此程序需要开启不安全模式 (UNSAFE MODE)!"
 CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重启"
+CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "重新载入大变革 config.txt"
 CHINESE_S["STRING_BACKUP_CONFIGS"] =                   "正在创建 Config_backups.txt"
 CHINESE_S["STRING_MISSING_CONFIG"] =                   "找不到 config.txt"
 CHINESE_S["STRING_BACK"] =                             "返回主菜单"

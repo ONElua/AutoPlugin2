@@ -1,3 +1,16 @@
+# v1.05
++ Reverted changes and fix bugs in the v1.04
++ Add option "Reset config.txt in ur0:tai" in the section Extras.
+- Removed Option (Now plugins list can be sorted by: alfabetic or section, by pressing L/R).
+- Removed Option (Now plugins will only be installed to ur0:tai/config.txt)
+
+# v1.04
++ Fixed missing string in Chinese and Turkish Systems (Again)
++ Now plugins will only be installed to ur0:tai/config.txt
++ Added support to Reload config.txt for userland plugins (Only for plugins which not require reboot).
++ Now the section where each plugin would be installed to config.txt is added at plugins list, under plugin description.
++ Now plugins list can be sorted by: alfabetic or section, by pressing L/R.
+
 # v1.03
 + Added support to install extra applications that require some plugins.
 

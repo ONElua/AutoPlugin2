@@ -51,6 +51,7 @@ POLISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Ustaw własny Bootsplash"
 POLISH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Ustaw własną informacje o epilepsji"
 POLISH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set Transparent Impose"
 POLISH["MENU_EXTRAS_TRANSLATE"] =                   "Translate Autoplugin II"
+POLISH["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 
 POLISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Umożliwia dostosowanie opcji w pliku config.txt dla PKGj"
 POLISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Umożliwia ustawienie własnego ekranu startowego"
@@ -59,6 +60,8 @@ POLISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Allows you to set the Level
 POLISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Umożliwia pobranie i zainstalowanie iTLS-Enso vpk na twojej Vicie (Dodaj TLS v1.2 do urządzenia z Enso)"
 POLISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Umożliwia pobranie i zainstalowanie PSP2-batteryFixer vpk na twojej Vicie (Usówa większość problemów z baterią)"
 POLISH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve Autoplugin II by translating to your language!"
+POLISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+POLISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 
 --Options Settings
 POLISH["MENU_SETTINGS_LANG_ONLINE"] =               "Pobierz język"
@@ -190,7 +193,8 @@ POLISH["TRANSIMPOSE_LEVEL"] =                       "Level Set"
 
 --Translate
 POLISH["TRANSLATE_ENGLISH_TITLE"] =                 "Polski: "
-POLISH["TRANSLATE_CURRENT_TITLE"] =                 "Obecny: "
+POLISH["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
+POLISH["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "AutoPlugin Language: "
 POLISH["TRANSLATE_YOUR_TITLE"] =                    "Twoje: "
 POLISH["SAVE_TRANSLATIONS"] =                       "Zapisano tłumaczenie"
 POLISH["EXIT_SAVE_TRANSLATIONS"] =                  "Tłumaczenie nie zapisane, czy napewno chcesz wyjść?"
@@ -327,6 +331,7 @@ POLISH["INSTALLP_DESC_QASCREEN"] =                  "Wtyczka wysokiej jakości z
 POLISH["INSTALLP_DESC_NOSHAREDFB"] =                "Pozwala ominąć wspólne problemy z buforowaniem ramki po cyklu zawieszenia-wznowienia dla aplikacji homebrew, które działają w trybie systemowym. Ale używa standardowej implementacji bufora ramki."
 POLISH["INSTALLP_DESC_TRIMPOSE"] =                  "Wtyczka do PS Vita, która sprawia, że nakładka menu (to, które pojawia się po długim naciśnięciu przycisku PS) jest przezroczyste."
 POLISH["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
+POLISH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
 POLISH["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
@@ -356,6 +361,7 @@ POLISH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for
 POLISH["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
 POLISH["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 POLISH["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
+POLISH["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 
 --*NPXS10013
 POLISH["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"
@@ -369,6 +375,7 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will be sa
 --Comunes
 POLISH["STRING_UNSAFE_MODE"] =                      "NIEBEZPIECZNY TRYB jest wymagany dla tego Homebrew!"
 POLISH["STRING_PSVITA_RESTART"] =                   "Twoja PSVita zostanie uruchomiona ponownie"
+POLISH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 POLISH["STRING_BACKUP_CONFIGS"] =                   "Tworzenie Config_backups.txt"
 POLISH["STRING_MISSING_CONFIG"] =                   "brakuje pliku config.txt"
 POLISH["STRING_BACK"] =                             "Powrót do menu"

@@ -44,6 +44,9 @@ __LANG = ini.read(__PATH_INI,"LANGUAGE","lang","")
 if __LANG == "" then __LANG = os.language() end
 dofile("scripts/language.lua")
 
+dofile("scripts/commons.lua")
+dofile("scripts/scroll.lua")
+
 -- Loading font
 files.mkdir("ux0:data/AUTOPLUGIN2/font/")
 fnt = nil
@@ -54,7 +57,9 @@ end
 
 if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 	if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-		message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+		if back then back:blit(0,0) end
+			message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
+		os.delay(500)
 		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 	end
 	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
@@ -67,9 +72,6 @@ if os.access() == 0 then
 	os.message(LANGUAGE["STRING_UNSAFE_MODE"])
 	os.exit()
 end
-
-dofile("scripts/commons.lua")
-dofile("scripts/scroll.lua")
 
 __UPDATE = tonumber(ini.read(__PATH_INI,"UPDATE","update","1"))
 _update = LANGUAGE["NO"]
@@ -93,6 +95,7 @@ tai.sync(__UR0, "ur0:tai/config.txt")
 tai.sync(__UX0, "ux0:tai/config_backup.txt")
 tai.sync(__UR0, "ur0:tai/config_backup.txt")
 
+tai.load()
 
 if back then back:blit(0,0) end
 	message_wait(LANGUAGE["STRING_BACKUP_CONFIGS"])

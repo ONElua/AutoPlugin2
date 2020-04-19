@@ -322,12 +322,20 @@ function plugins_online2()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 

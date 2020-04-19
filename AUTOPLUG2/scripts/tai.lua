@@ -51,7 +51,7 @@ function load_config(path, index)
 	tai.parse(index)
 
 	--tai.debug(index)
-		--tai.repair(index)
+		tai.repair(index)
 	--tai.debug(index)
 
 end

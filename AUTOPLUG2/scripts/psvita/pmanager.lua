@@ -94,7 +94,9 @@ function pluginsmanager()
 
 				draw.fillrect(0,40,960,350,color.shine:a(25))
 
-				screen.print(15,20, "*"..section[sel_section],1,color.yellow, 0x0)
+				if section[sel_section] then
+					screen.print(13,20, " ("..scrollp.maxim..")".."  ".."*"..section[sel_section],1,color.yellow, 0x0)
+				end
 
 				if tai[partition].gameid[ section[sel_section] ] then
 
@@ -129,14 +131,14 @@ function pluginsmanager()
 					draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scrollp.maxim-1))*(scrollp.sel-1), 8, pos_height, color.new(0,255,0))
 				end
 
-				--screen.print(480,405,locations[partition].."tai/config.txt",1.3,color.green, 0x0, __ACENTER)
-
 				if buttonskey then buttonskey:blitsprite(5,448,saccept) end
 				screen.print(30,450,LANGUAGE["UNINSTALLP_PLUGIN"],1,color.white,color.black,__ALEFT)
 
 				if buttonskey2 then buttonskey2:blitsprite(5,475,0) end
 				if buttonskey2 then buttonskey2:blitsprite(35,475,1) end
 				screen.print(70,475,LANGUAGE["UNINSTALLP_LEFTRIGHT_SECTION"],1,color.white,color.black,__ALEFT)
+
+				screen.print(950, 435, "("..sel_section.."/"..#section..")",1,color.yellow, 0x0,__ARIGHT)
 
 			else
 				screen.print(480,270,LANGUAGE["UNINSTALLP_EMPTY"],1.3,color.red,0x0,__ACENTER)
@@ -161,12 +163,20 @@ function pluginsmanager()
 
 		--Exit
 		if buttons.start then
+			if change then ReloadConfig = false end
+			if ReloadConfig then
+				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
+			end
+
 			if change then
 				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 				os.delay(250)
 				buttons.homepopup(1)
 				power.restart()
 			end
+
+			os.delay(250)
+			buttons.homepopup(1)
 			os.exit()
 		end
 
@@ -229,50 +239,120 @@ function pluginsmanager()
 							if name == tb_cop[i].path:lower() then
 								if tb_cop[i].section2 and tai[partition].gameid[ tb_cop[i].section2 ] then
 									del_plugin_tai(partition, tb_cop[i].section2, tb_cop[i].path2)
+									if tb_cop[i].section2 then
+										if tb_cop[i].section2:upper() == "MAIN" or tb_cop[i].section2:upper() == "KERNEL" then
+											change = true
+										end
+									end
 								end
 							end
 							if tb_cop[i].path2 and (name == tb_cop[i].path2:lower()) then
 								if tb_cop[i].section and tai[partition].gameid[ tb_cop[i].section ] then
 									del_plugin_tai(partition, tb_cop[i].section, tb_cop[i].path)
+									if tb_cop[i].section then
+										if tb_cop[i].section:upper() == "MAIN" or tb_cop[i].section:upper() == "KERNEL" then
+											change = true
+										end
+									end
 								end
 							end
 						end
+
+						--Reboot or ReloadConfig
+						if section[sel_section]:upper() == "MAIN" or section[sel_section]:upper() == "KERNEL" or name:upper() == "YAMT.SUPRX" then
+							change = true
+							--os.message("change")
+						else
+							ReloadConfig = true
+							--os.message("Reload")
+						end
+
+						--Debug
+						--if tai[partition].gameid[ section[sel_section] ] then
+						--	os.message(#tai[partition].gameid[section[sel_section]].prx.."\nsection "..section[sel_section])
+						--end
+
+						if tai[partition].gameid[ section[sel_section] ] then
+							if #tai[partition].gameid[section[sel_section]].prx < 1 and
+								(section[sel_section]:upper() != "KERNEL" and section[sel_section]:upper() != "MAIN" and
+									section[sel_section]:upper() != "ALL" and section[sel_section]:upper() != "NPXS10015"
+										and section[sel_section]:upper() != "NPXS10016") then -- remove section if not have nothing more prx!
+								table.remove(tai[partition].raw, tai[partition].gameid[section[sel_section]].line[1])
+							end
+						end
+
+						tai.sync(partition)
+						tai.load()
 
 						--update
 						if tai[partition].gameid[ section[sel_section] ] then
 							scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-							if scrollp.maxim <= 0 then
-								for i=1,#section do
-									if section[sel_section] == section[i] then
-										--os.message(section[i])
-										table.remove(section,i)
-										sel_section +=1
-										if sel_section > #section then sel_section = 1 end
-										if tai[partition].gameid[ section[sel_section] ] then
-											scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
-										else
-											scrollp = newScroll( {}, limtpm)
-										end
-										break
-									end
-								end
+						else
+							sel_section += 1
+							if sel_section > #section then sel_section = 1 end
+							if tai[partition].gameid[ section[sel_section] ] then
+								scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
+							else
+								scrollp = newScroll( {}, limtpm)
 							end
-						--else
-						--	scrollp = newScroll( {}, limtpm)
 						end
 						
+						if scrollp.maxim <= 0 then
+							for i=1,#section do
+								if section[sel_section] == section[i] then
+									--os.message(section[i])
+									table.remove(section,i)
+									sel_section += 1
+									if sel_section > #section then sel_section = 1 end
+									if tai[partition].gameid[ section[sel_section] ] then
+										scrollp = newScroll( tai[partition].gameid[ section[sel_section] ].prx, limtpm)
+									else
+										scrollp = newScroll( {}, limtpm)
+									end
+									break
+								end
+							end
+						end
+
+						local tmp={}
+						section = {}
+
+						for k,v in pairs(tai[partition].gameid) do
+							--os.message(tostring(tai[partition].gameid[k].section))
+							local scroll_tmp = newScroll( tai[partition].gameid[ k ].prx, limtpm)
+							if scroll_tmp.maxim > 0 then
+								table.insert(tmp, tai[partition].gameid[k].section)
+							end
+						end
+						if #tmp > 1 then table.sort(tmp) end
+
+						--*KERNEL,*main,*ALL...more
+						for i=1,#tmp do
+							if tmp[i]:upper() == "KERNEL" then
+								table.insert(section, 1, tmp[i])
+							elseif tmp[i]:upper() == "MAIN" then
+								table.insert(section, 2, tmp[i])
+							elseif tmp[i]:upper() == "ALL" then
+								table.insert(section, 3, tmp[i])
+							else
+								table.insert(section, tmp[i])
+							end
+						end
+
 						for i=1,#section do
-							for j=1,#tai[partition].gameid[ section[i] ].prx do
-								for k=1,#tb_cop do
-									if files.nopath(tai[partition].gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
-										tai[partition].gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
+							if tai[partition].gameid[ section[i] ] then
+								for j=1,#tai[partition].gameid[ section[i] ].prx do
+									for k=1,#tb_cop do
+										if files.nopath(tai[partition].gameid[ section[i] ].prx[j].path:lower()) == tb_cop[k].path:lower() then
+											tai[partition].gameid[ section[i] ].prx[j].desc = tb_cop[k].desc
+										end
 									end
 								end
 							end
 						end
 
-						change = true
 						buttons.homepopup(0)
+
 					end
 				end
 			end
