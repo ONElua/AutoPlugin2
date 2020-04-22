@@ -56,12 +56,12 @@ POLISH["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 POLISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Umożliwia dostosowanie opcji w pliku config.txt dla PKGj"
 POLISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Umożliwia ustawienie własnego ekranu startowego"
 POLISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Pozwala ustawić własny komunikat o epilepsji, podczas odpalania konsoli z Enso"
-POLISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Allows you to set the Level of Transparent (255 = 0% Transparent, 0 = 100% Transparent) values below 30 ae not recommended"
+POLISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Pozwala ustawić poziom przezroczystości (255 = 0% przezroczystości, 0 = 100% przezroczystości) wartości poniżej 30 ae nie jest zalecana"
 POLISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Umożliwia pobranie i zainstalowanie iTLS-Enso vpk na twojej Vicie (Dodaj TLS v1.2 do urządzenia z Enso)"
 POLISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Umożliwia pobranie i zainstalowanie PSP2-batteryFixer vpk na twojej Vicie (Usówa większość problemów z baterią)"
-POLISH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve Autoplugin II by translating to your language!"
-POLISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
-POLISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+POLISH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Pomóż ulepszyć Autoplugin II, tłumacząc na swój język!"
+POLISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Uwaga!!! ta opcja pozwala zresetować plik config w ur0:tai/config.txt"
+POLISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                Uwaga !!! \ n \ nWszystkie zainstalowane wtyczki zostaną odinstalowane !!! \ n \ nCzy na pewno chcesz zresetować ur0: tai / config.txt? "
 
 --Options Settings
 POLISH["MENU_SETTINGS_LANG_ONLINE"] =               "Pobierz język"
@@ -83,7 +83,7 @@ POLISH["LR_SWAP"] =                                 "Przełącz pomiędzy ux0/ur
 POLISH["PLUGINS_CUSTOM_PATH"] =                     "Zainstaluj w niestandardowej scieżce" 
 POLISH["PLUGINS_README_ONLINE"] =                   "Otwórz Readme Online" 
 POLISH["PLUGINS_NO_README_ONLINE"] =                "Readme jest niedostępne !!!"
-POLISH["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
+POLISH["INSTALLP_QUESTION_VPK"] =                   "Należy pobrać plugin!\n\n Połączenie Wi-Fi jest wymagane"
 
 --customWarning
 POLISH["CUSTOMWARNING_MESSAGE"] =                   "Pamiętaj aby włączyć plugin ostrzeżenia o epilepsji"
@@ -251,7 +251,7 @@ POLISH["TURKISH"] =                                 "TURECKI"
 
 --descriptions plugins
 --StorageMgr
-POLISH["INSTALLP_DESC_SD2VITA"] =                   "Kernel plugin that automatically mounts/redirects any storage device to any mount points you want (SD2VITA)"
+POLISH["INSTALLP_DESC_SD2VITA"] =                   "Plugin kernela, który automatycznie montuje / przekierowuje dowolne urządzenie pamięci do dowolnych punktów montowania (SD2VITA)"
 
 --KERNEL
 POLISH["INSTALLP_DESC_NONPDRM"] =                   "Pozwala ominąć zabezpieczenie DRM na dowolnej Vicie"
@@ -299,8 +299,8 @@ POLISH["INSTALLP_DESC_SYSCALL6"] =                  "Narzędzie do łatania sysc
 POLISH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio i balans kanałów dla Playstation Vita (Potrzebny MonauralConfig.vpk)"
 POLISH["INSTALLP_DESC_MUPREMIUM"] =                 "Włącza muzykę w tle podczas korzystania z aplikacji i grania w gry."
 POLISH["INSTALLP_DESC_ACIDDUMPER"] =                "Aplikacja, która może być pomocna w zlokalizowaniu fałszywego DLC"
-POLISH["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
-POLISH["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+POLISH["INSTALLP_DESC_DEJAVU"] =                    "Umożliwia wykonanie migawki pamięci RAM w dowolnym momencie, a następnie przywrócenie jej. Umożliwia zapisywanie w grach, w których oficjalnie nie jest to możliwe. Potencjalnym przypadkiem użycia dla programistów jest tymczasowe obniżenie / zaktualizowanie oprogramowania układowego (w pamięci RAM) w celu przetestowania rzeczy (nie zostało to jeszcze przetestowane)"
+POLISH["INSTALLP_DESC_STAYBRIGHT"] =                "Wyłącz automatyczne przyciemnianie ekranu, ale zachowaj automatyczne zawieszanie na Playstation Vita."
 
 POLISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ten plugin pozwala na wyświetlenie własnego ekranu startowego na PS Vita/PSTV. Wymaga ENSO."
 POLISH["CUSTOMBOOTSPLASH_QUESTION"] =               "Czy chcesz ustawić ten obraz, jako obraz startowy ?"
@@ -334,43 +334,43 @@ POLISH["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound 
 POLISH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 
 --ALL
-POLISH["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
+POLISH["INSTALLP_DESC_YAMT"] =                      "Jeszcze jeden plugin kernela montowania/odmontowania dla PSVita/PSTV (Wymagane Enso, Kompatybilne TYLKO z oprogramowaniem 3.60 i 3.65"
 POLISH["INSTALLP_DESC_ITLSENSO"] =                  "Dodaj TLS v1.2 do urządzeń z Enso"
 POLISH["INSTALLP_DESC_KUIO"] =                      "Kuio to lekki plugin kernela dla TaiHen, który pozwala modułom użytkownika na dostęp do ux0: dane do podstawowych operacji we / wy"
 POLISH["INSTALLP_DESC_VSHMENU"] =                   "Wtyczka taiHEN menu VSH do gier PS VITA i homebrews (L+R+START or L+R+SELECT do otwarcia VHS menu)"
 POLISH["INSTALLP_DESC_VITAGRAFIX"] =                "Wtyczka umożliwiająca zmianę rozdzielczości i liczby klatek na sekundę w grach PS Vita"
 POLISH["INSTALLP_DESC_OVERCLOCK"] =                 "Prosta wtyczka do podkręcania procesora dla taiHEN (SELECT + UP uruchamia menu. SELECT + DOWN zamyka menu)"
-POLISH["INSTALLP_DESC_FRAMECOUNTER"] =              "This is a little plugin that works as an FPS counter. It will show an FPS counter on the top left side of your screen."
-POLISH["INSTALLP_DESC_VGI"] =                       "A simple taihen plugin that prints useful information about PS Vita games. (SELECT + L Open/Close VGi menu in your game)"
-POLISH["INSTALLP_DESC_FUCKPSSE"] =                  "A plugin to decrypt PSM games"
-POLISH["INSTALLP_DESC_PSMPATCH"] =                  "Allows you to modify PSM Games, and also can be used to load PSM Homebrew."
-POLISH["INSTALLP_DESC_TROPHAX"] =                   "Universal trophy unlocker for PSVITA. (in game START + SELECT enable plugin, L+R unlock all or L+START unlock a specific trophy, L+UP or L+DOWN to make your selection then L+CIRCLE to unlock)"
-POLISH["INSTALLP_DESC_TURBOPAD"] =                  "This plugin allows you to enable RapidFire on whatever button. (START + TRIANGLE Open config menu)"
-POLISH["INSTALLP_DESC_RESCALER"] =                  "This plugin replaces the original rescaler for PSVITA with a new one allowing games running at non-native resolution to get graphics improvements thanks to filtering with shaders. (Hold START 2secs Locks/Unlocks mode/bilinear mode changing, Hold L 4secs Changes current rescaling mode, Hold R 4secs Enables/Disables bilinear filtering)"
-POLISH["INSTALLP_DESC_INFINITENET"] =               "taiHEN plugin that prevents games from disabling net features"
-POLISH["INSTALLP_DESC_FREEPSM"] =                   "Enables Debug PSM InAppPurchases in retail PSM Runtime"
-POLISH["INSTALLP_DESC_MAKEPSM"] =                   "Modifications to the PSM Developer applications"
-POLISH["INSTALLP_DESC_WDNR"] =                      "Rear touchpad disabler for PSVITA."
-POLISH["INSTALLP_DESC_WDNF"] =                      "Disable front touchscreen."
-POLISH["INSTALLP_DESC_REMAPSV"] =                   "remaPSV is a remap plugin allowing you to remap every single button of your PSVita and to map touch and reartouch zones to extra buttons (START + SQUARE)"
-POLISH["INSTALLP_DESC_FORCELANG"] =                 "A taiHEN plugin for overriding an application's language"
-POLISH["INSTALLP_DESC_SHOWINFO"] =                  "Simple plugin that shows title_id, stitle and app_ver of the running application."
-POLISH["INSTALLP_DESC_SHOWINFOFU"] =                "Simple plugin that shows title_id, stitle and app_ver of the running application.(full version)"
-POLISH["INSTALLP_DESC_MODALVOL"] =                  "This pack consits of applications to control system audio volume on PS vita in real time without closing games SELECT+RIGHT (Require VolumeControl.vpk)"
-POLISH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Playtime tracker plugin for PSVITA."
-POLISH["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots for PS1 games (Open settings in the quick menu, Open official settings if using adrenaline, Select screenshot)."
-POLISH["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
-POLISH["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
-POLISH["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
+POLISH["INSTALLP_DESC_FRAMECOUNTER"] =              "Jest to mały plugin, który dodaje licznik FPS w lewym górnym rogu ekranu"
+POLISH["INSTALLP_DESC_VGI"] =                       "Prosta wtyczka Taihen, która pokazuje proste informacje na temat gier PSVita. (SELECT + L Otwórz/zamknij VGi menu w grze)"
+POLISH["INSTALLP_DESC_FUCKPSSE"] =                  "Plugin do modyfikowania gier PSM"
+POLISH["INSTALLP_DESC_PSMPATCH"] =                  "Umożliwia modyfikowanie gier PSM, a także może być używany do ładowania PSM Homebrew."
+POLISH["INSTALLP_DESC_TROPHAX"] =                   "Odblokowywanie trofeów dla PS Vita (Wciśnij w grze START + SELECT aby właczyć plugin, L+R aby odblokować wszytsko, lub L+START aby odblokować konkretne trofea, L+UP lub L+DOWN aby zaznaczyć, L+CIRCLE aby odblokować)"
+POLISH["INSTALLP_DESC_TURBOPAD"] =                  "Ta wtyczka pozwala włączyć RapidFire na dowolnym przycisku. (START + TRIANGLE Otwiera config menu)"
+POLISH["INSTALLP_DESC_RESCALER"] =                  "Ta wtyczka zastępuje oryginalny rescaler PSVITA nowym, umożliwiając grom działającym w innej niż macierzysta rozdzielczość, uzyskanie ulepszeń graficznych dzięki filtrowaniu za pomocą shaderów. (Przytrzymaj START 2 sek. Blokuje / Odblokowuje tryb / zmiana trybu dwuliniowego, Przytrzymaj L 4 sek. Zmienia aktualny tryb przeskalowania, Przytrzymaj R 4 sek. Włącza / wyłącza filtrowanie dwuliniowe)"
+POLISH["INSTALLP_DESC_INFINITENET"] =               "Wtyczka taiHEN, która zapobiega wyłączaniu przez gry funkcji sieciowych"
+POLISH["INSTALLP_DESC_FREEPSM"] =                   "Umożliwia debugowanie PSM InAppPurchases w detalicznym środowisku uruchomieniowym PSM"
+POLISH["INSTALLP_DESC_MAKEPSM"] =                   "Modyfikacje aplikacji PSM Developer"
+POLISH["INSTALLP_DESC_WDNR"] =                      "Wyłącza tylni panel dotykowy w PSVITA."
+POLISH["INSTALLP_DESC_WDNF"] =                      "Wyłącza panel dotykowy na ekranie OLED/LCD"
+POLISH["INSTALLP_DESC_REMAPSV"] =                   "remaPSV to wtyczka umożliwiająca ponowne mapowanie, która umożliwia zmianę mapowania każdego przycisku PSVita oraz mapowanie stref dotykowych i ponownego mapowania na dodatkowe przyciski(START + KWADRAT)"
+POLISH["INSTALLP_DESC_FORCELANG"] =                 "Wtyczka taiHEN do zastępowania języka aplikacji"
+POLISH["INSTALLP_DESC_SHOWINFO"] =                  "Prosta wtyczka, która pokazuje title_id, stitle i app_ver działającej aplikacji."
+POLISH["INSTALLP_DESC_SHOWINFOFU"] =                "Prosta wtyczka, która pokazuje title_id, stitle i app_ver działającej aplikacji. (Pełna wersja)"
+POLISH["INSTALLP_DESC_MODALVOL"] =                  "Ten pakiet zawiera aplikacje do kontrolowania głośności systemu audio w systemie PS vita w czasie rzeczywistym bez zamykania gier. SELECT + PRAWO (Wymagaj Volumecontrol.Vpk)"
+POLISH["INSTALLP_DESC_TRACKPLUGMOD"] =              "Wtyczka do śledzenia czasu gry dla PSVITA."
+POLISH["INSTALLP_DESC_PSONESCROT"] =                "Wykonuj zrzuty ekranu PNG dla gier PS1 (Otwórz ustawienia w szybkim menu, Otwórz oficjalne ustawienia, jeśli używasz Adrenaline, Wybierz zrzut ekranu)."
+POLISH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ta wtyczka, pozwala aplikacjom na działanie na wszytskich 4 rdzeniach CPU co zwiększa wydajność w grach"
+POLISH["INSTALLP_DESC_SHARPSCALE"] =                "Natywna rodzielczość HDMI 960x544 na wyjściu dla PSTV."
+POLISH["INSTALLP_DESC_RAPIDMENU"] =                 "Skróć czas otwierania szybkiego menu z 2 sekund do 200 milisekund."
 
 --*NPXS10013
-POLISH["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"
+POLISH["INSTALLP_DESC_PS4LINK"] =                   "Wtyczka taiHEN, która pozwala wymusić preferowaną konfigurację przycisku gry zdalnej"
 
 --*NPXS10015 AND --*NPXS10016
-POLISH["INSTALLP_DESC_MACSPOOF"] =                  "A plugin to spoof your MAC address in the System Information"
+POLISH["INSTALLP_DESC_MACSPOOF"] =                  "Wtyczka do fałszowania adresu MAC w informacjach o systemie"
 
 --*NPXS10036
-POLISH["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will be saved into a folder named after the game."
+POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną zapisane w folderze nazwanym po grze."
 
 --Comunes
 POLISH["STRING_UNSAFE_MODE"] =                      "NIEBEZPIECZNY TRYB jest wymagany dla tego Homebrew!"
