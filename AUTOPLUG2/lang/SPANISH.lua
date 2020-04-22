@@ -51,7 +51,7 @@ SPANISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Establecer una imagen C
 SPANISH["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Establecer un mensaje para Custom Warning Message"
 SPANISH["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Establecer Nivel de Transparencia"
 SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
-SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
+SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Resetear el archivo config.txt en ur0"
 
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -60,8 +60,8 @@ SPANISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Permite establecerel Ni
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Permite descargar e instalar el vpk de iTLS-Enso en tu PS Vita (Añade TLS v1.2 a los dispositivos con Enso)"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permite descargar e instalar el vpk de PSP2-batteryFixer en tu PS Vita (Corrige la mayoría de los problemas relacionados con la batería de PS Vita)"
 SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
-SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "Warning!!! This option wil reset your ur0:tai/config.txt"
-SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "¡¡¡Cuidado!!! Esta opción reseteará el archivo ur0:tai/config.txt"
+SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 ¡¡¡Cuidado!!!\n\n¡¡¡Todos los Plugins instalados serán DESINSTALADOS!!!\n\n¿Estás seguro que deseas resetear el archivo ur0:tai/config.txt?"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
@@ -331,7 +331,7 @@ SPANISH["INSTALLP_DESC_QASCREEN"] =                     "Plugin para screenshots
 SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los problemas de framebuffer compartido en homebrew que corre en modo sistema, pero ocupa la implementación estandar de framebuffer, despues de un ciclo de suspender-resumir (3.60-3.68)"
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
 SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita y PSTV."
-SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Always running background FTP server plugin."
+SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin que corre siempre en segundo plano un servidor FTP"
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -361,7 +361,7 @@ SPANISH["INSTALLP_DESC_TRACKPLUGMOD"] =                 "Plugin para hacer segui
 SPANISH["INSTALLP_DESC_PSONESCROT"] =                   "Tomar capturas de pantalla (.PNG) en juegos PSX de manera apropiada (PS + Start no funciona bien en juegos de PS1) (Abrir Ajustes en el menú rapido, Abrir Ajustes Oficial si estás usando Adrenaline, seleccionar Screenshot)"
 SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la Mascara de Afinidad de la CPU (Un pequeño indicador para ligar los procesos a una CPU específica) de las Aplicaciones de Sistema de PS Vita a todos los Core de Usuarios, lo que permite mejorar su rendimiento"
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
-SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce quick menu open time from 2 seconds to 200 milliseconds."
+SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
@@ -375,7 +375,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 --Comunes
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
-SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Reload taiHEN config.txt"
+SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Recarga el config.txt de taiHEN "
 SPANISH["STRING_BACKUP_CONFIGS"] =                      "Creando Config_backups.txt"
 SPANISH["STRING_MISSING_CONFIG"] =                      "Falta config.txt"
 SPANISH["STRING_BACK"] =                                "Para volver al menú"
