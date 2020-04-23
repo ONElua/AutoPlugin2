@@ -12,18 +12,18 @@
 function plugins_installation(sel)
 
 	if plugins[sel].path:find("udcd_uvc",1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
-	elseif plugins[sel].path == "reF00D.skprx" and loc == __UX0 then os.message(LANGUAGE["INSTALLP_WARNING_REFOOD"])
+	--elseif plugins[sel].path == "reF00D.skprx" then os.message(LANGUAGE["INSTALLP_WARNING_REFOOD"])
 	elseif plugins[sel].path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	else
 
 		local idx = nil
-		if files.exists(tai[loc].path) then
+		if files.exists(tai.path) then
 
 			local install,udcd = true,false
 
-			idx = tai.find(loc, "KERNEL", "udcd_uvc.skprx")
+			idx = tai.find("KERNEL", "udcd_uvc.skprx")
 			if idx then
-				tai.del(loc, "KERNEL", "udcd_uvc.skprx")
+				tai.del("KERNEL", "udcd_uvc.skprx")
 				udcd = true
 			end
 
@@ -39,26 +39,26 @@ function plugins_installation(sel)
 
 			--Checking plugin Batt (only 1 of them)
 			if plugins[sel].path == "shellbat.suprx" then
-				idx = tai.find(loc, "main", "shellsecbat.suprx")
+				idx = tai.find("main", "shellsecbat.suprx")
 				if idx then
 					if os.message(LANGUAGE["INSTALLP_QUESTION_SHELLSECBAT"],1) == 1 then
-						tai.del(loc, "main", "shellsecbat.suprx")
+						tai.del("main", "shellsecbat.suprx")
 					else
 						install = false
 					end
 				end
 			elseif plugins[sel].path == "shellsecbat.suprx" then
-				idx = tai.find(loc, "main", "shellbat.suprx")
+				idx = tai.find("main", "shellbat.suprx")
 				if idx then
 					if os.message(LANGUAGE["INSTALLP_QUESTION_SHELLBAT"],1) == 1 then
-						tai.del(loc, "main", "shellbat.suprx")
+						tai.del("main", "shellbat.suprx")
 					else
 						install = false
 					end
 				end
 			elseif plugins[sel].path:find(string.lower("repatch"),1,true) then
-				tai.del(loc, "KERNEL", "repatch.skprx")
-				tai.del(loc, "KERNEL", "repatch_4.skprx")
+				tai.del("KERNEL", "repatch.skprx")
+				tai.del("KERNEL", "repatch_4.skprx")
 
 			elseif plugins[sel].path == "vitastick.skprx" and not game.exists("VITASTICK") then
 				__file = "vitastick.vpk"
@@ -130,11 +130,11 @@ function plugins_installation(sel)
 				if plugins[sel].config then
 					if plugins[sel].config == "custom_warning.txt" then
 					
-						if not files.exists(locations[loc].."tai/"..plugins[sel].config) then
+						if not files.exists("ur0:/tai/"..plugins[sel].config) then
 							local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
 							if not text or (string.len(text)<=0) then text = "" end--os.nick() end
 
-							local fp = io.open(locations[loc].."tai/"..plugins[sel].config, "wb")
+							local fp = io.open("ur0:/tai/"..plugins[sel].config, "wb")
 							if fp then
 								fp:write(string.char(0xFF)..string.char(0xFE))
 								fp:write(os.toucs2(text))
@@ -145,7 +145,7 @@ function plugins_installation(sel)
 						if plugins[sel].configpath then
 							files.copy(path_plugins..plugins[sel].config, plugins[sel].configpath)
 						else
-							files.copy(path_plugins..plugins[sel].config, locations[loc].."tai/")
+							files.copy(path_plugins..plugins[sel].config, "ur0:/tai/")
 						end
 					end
 				end
@@ -158,13 +158,13 @@ function plugins_installation(sel)
 				idx = nil
 
 				if plugins[sel].section2 then
-					idx = tai.find(loc, plugins[sel].section2, path_tai..plugins[sel].path2)
-					if idx then tai.del(loc, plugins[sel].section2, path_tai..plugins[sel].path2) end
-					tai.put(loc, plugins[sel].section2, path_tai..plugins[sel].path2)
+					idx = tai.find(plugins[sel].section2, path_tai..plugins[sel].path2)
+					if idx then tai.del(plugins[sel].section2, path_tai..plugins[sel].path2) end
+					tai.put(plugins[sel].section2, path_tai..plugins[sel].path2)
 				end
 
-				idx = tai.find(loc, plugins[sel].section, pathline_in_config)
-				if idx then tai.del(loc, plugins[sel].section,  pathline_in_config) end
+				idx = tai.find(plugins[sel].section, pathline_in_config)
+				if idx then tai.del(plugins[sel].section,  pathline_in_config) end
 
 				
 				local plugin_name = plugins[sel].name
@@ -172,52 +172,49 @@ function plugins_installation(sel)
 				if plugins[sel].path:find("udcd_uvc_",1,true) then
 					--os.message("offs")
 					if hw.model() == "Vita Fat" then
-						tai.put(loc, plugins[sel].section,  path_tai.."udcd_uvc_oled_off.skprx")
+						tai.put(plugins[sel].section,  path_tai.."udcd_uvc_oled_off.skprx")
 						plugin_name = "udcd_uvc_oled"
 					else
-						tai.put(loc, plugins[sel].section,  path_tai.."udcd_uvc_lcd_off.skprx")
+						tai.put(plugins[sel].section,  path_tai.."udcd_uvc_lcd_off.skprx")
 						plugin_name = "udcd_uvc_lcd"
 					end
 				else
 
 					if plugins[sel].path:lower() == "custom_boot_splash.skprx" or (udcd or plugins[sel].path:lower() == "udcd_uvc.skprx") then
 						--os.message("1")
-						tai.put(loc, plugins[sel].section,  pathline_in_config)
+						tai.put(plugins[sel].section,  pathline_in_config)
 						if udcd or plugins[sel].path:lower() == "udcd_uvc.skprx" then
 							--os.message("udcd_uvc.skprx")
-							tai.put(loc, "KERNEL",  path_tai.."udcd_uvc.skprx")
-							tai.del(loc, "KERNEL", "udcd_uvc_oled_off.skprx")
-							tai.del(loc, "KERNEL", "udcd_uvc_lcd_off.skprx")
+							tai.put("KERNEL",  path_tai.."udcd_uvc.skprx")
+							tai.del("KERNEL", "udcd_uvc_oled_off.skprx")
+							tai.del("KERNEL", "udcd_uvc_lcd_off.skprx")
 						end
 
 					else
 						if plugins[sel].path:find("udcd_uvc_",1,true) then
 							if hw.model() == "Vita Fat" then
 								--os.message("udcd_uvc_oled   2")
-								tai.put(loc, plugins[sel].section,  path_tai.."udcd_uvc_oled_off.skprx")
+								tai.put(plugins[sel].section,  path_tai.."udcd_uvc_oled_off.skprx")
 								plugin_name = "udcd_uvc_oled"
-								tai.del(loc, "KERNEL", "udcd_uvc.skprx")
+								tai.del("KERNEL", "udcd_uvc.skprx")
 							else
 								--os.message("udcd_uvc_lcd   2")
-								tai.put(loc, plugins[sel].section,  path_tai.."udcd_uvc_lcd_off.skprx")
+								tai.put(plugins[sel].section,  path_tai.."udcd_uvc_lcd_off.skprx")
 								plugin_name = "udcd_uvc_lcd"
-								tai.del(loc, "KERNEL", "udcd_uvc.skprx")
+								tai.del("KERNEL", "udcd_uvc.skprx")
 							end
 						else
 							if (plugins[sel].path == "vitacheat.skprx") then --3.65
-								tai.del(loc, "KERNEL", "vitacheat360.skprx")
+								tai.del("KERNEL", "vitacheat360.skprx")
 							elseif (plugins[sel].path == "vitacheat360.skprx") then
-								tai.del(loc, "KERNEL", "vitacheat.skprx")
+								tai.del("KERNEL", "vitacheat.skprx")
 							end
 							--os.message("2")
-							tai.put(loc, plugins[sel].section,  pathline_in_config)
+							tai.put(plugins[sel].section,  pathline_in_config)
 						end
 
 					end
 				end
-
-				--Write
-				tai.sync(loc)
 
 				--Extra
 				if plugins[sel].path == "vsh.suprx" then files.delete("ur0:/data:/vsh/")
@@ -266,15 +263,7 @@ function plugins_installation(sel)
 end
 
 function autoplugin()
-
-	--Init load configs
-	loc = 1
-	tai.load()
-	local partition = 0
-	if tai[__UX0].exist then partition = __UX0
-	elseif tai[__UR0].exist then partition,loc = __UR0,2
-	end
-	path_tai = locations[loc].."tai/"
+	path_tai = "ur0:/tai/"
 
 	local limit = 9
 	local scr = newScroll(plugins,limit)
@@ -288,16 +277,8 @@ function autoplugin()
 
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].."  "..toinstall.."/"..#plugins,1,color.white)
 
-		--Partitions
-		local xRoot = 750
-		local w = (960-xRoot)/#locations
-		for i=1, #locations do
-			if loc == i then
-				draw.fillrect(xRoot,0,w,47, color.green:a(90))
-			end
-			screen.print(xRoot+(w/2), 12, locations[i], 1, color.white, color.blue, __ACENTER)
-			xRoot += w
-		end
+		--Partition
+		screen.print(950, 12, "ur0:/", 1, color.white, color.blue, __ARIGHT)
 
 		--List of Plugins
 		local y = 64
@@ -305,9 +286,9 @@ function autoplugin()
 
 			if i == scr.sel then draw.offsetgradrect(3,y-9,944,31,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			idx = tai.find(partition,plugins[i].section,plugins[i].path)
+			idx = tai.find(plugins[i].section,plugins[i].path)
 			if idx != nil then
-				if files.exists(tai[partition].gameid[ plugins[i].section ].prx[idx].path) then
+				if files.exists(tai.gameid[ plugins[i].section ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
 				else
 					if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
@@ -350,12 +331,6 @@ function autoplugin()
 			screen.print(950, 500, plugins[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
 		end
 
-		if tai[__UX0].exist and tai[__UR0].exist then
-			if buttonskey2 then buttonskey2:blitsprite(900,448,2) end
-			if buttonskey2 then buttonskey2:blitsprite(930,448,3) end
-			screen.print(895,450,LANGUAGE["LR_SWAP"],1,color.white,color.black,__ARIGHT)
-		end
-
 		if buttonskey then buttonskey:blitsprite(10,448,__SQUARE) end
 		screen.print(45,450,LANGUAGE["MARK_PLUGINS"],1,color.white,color.black, __ALEFT)
 
@@ -387,6 +362,9 @@ function autoplugin()
 
 		--Exit
 		if buttons.start then
+			if change or ReloadConfig then 
+				tai.sync() --Write
+			end
 			if change then ReloadConfig = false end
 			if ReloadConfig then
 				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
@@ -412,12 +390,6 @@ function autoplugin()
 			end
 			if buttons.down or buttons.analogly > 60 then
 				if scr:down() then xscr1 = 10 end
-			end
-
-			if buttons.released.l or buttons.released.r then
-				if tai[__UX0].exist and tai[__UR0].exist then
-					if loc == __UX0 then loc = __UR0 else loc = __UX0 end
-				end
 			end
 
 			--Install selected plugins
