@@ -85,7 +85,7 @@ function tai.load(path, mix_path)
 		"ur0:tai/henkaku.suprx",
 		}
 		tai.parse()
-		-- TO-DO: Escribir el default y cargarlo igual, o solo cargarlo por soft y cuando se haga sync se repara?! :P
+		tai.sync()
 		print("Error loading taiCfg from %s, use default\n", tai.path)
 	end
 	local other_txt = mix_path or tai.mix_path
@@ -123,8 +123,9 @@ function tai.parse(data, blend)
 		for i=1, len do
 			local line = raw[i]
 			if not line then continue end
-			if #line == 0 and raw[i+1] and raw[i+1]:find(":",1,true) then
+			if #line == 0 and raw[i+1] and (raw[i+1]:find(":",1,true) or #raw[i+1] == 0) then
 				table.remove(raw, i) -- We remove empty lines if continue plugs in the same section only.
+				--print("remove ln empty "..i.."\n")
 			end
 			if line:find("*",1,true) then -- Secction Found.
 				id_sect = line:sub(2)
@@ -140,7 +141,7 @@ function tai.parse(data, blend)
 				continue
 			end
 
-			if id_sect and not line:find("#",1,true) then -- Is a path and not a comment. TODO and line:find(":",1,true) afect delete_sect method.
+			if id_sect and not line:find("#",1,true) and line:find(":",1,true) then -- Is a path and not a comment. TODO  afect delete_sect method.
 				if not nr[id_sect][line:lower()] then
 					nr[id_sect][line:lower()] = true;
 					print(string.format("[%s]: %s", id_sect, line:lower()))
@@ -148,7 +149,7 @@ function tai.parse(data, blend)
 					if blend then tai.put(id_sect, line:lower()) end
 				else
 					print(string.format("Repeated [%s]: %s", id_sect, line:lower()))
-					print(i)
+					--print(i)
 					table.remove(raw, i)
 					--len -= 1
 				end
