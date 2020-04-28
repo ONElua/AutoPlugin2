@@ -12,7 +12,8 @@
 function pluginsmanager()
 	local sections = {"KERNEL", "main", "ALL"}
 	local plugs = {}
-	
+	local bridge_s = {}
+	local bridge_n = {}
 	local tb_cop = {}
 	update_translations(plugins, tb_cop)
 
@@ -32,9 +33,16 @@ function pluginsmanager()
 
 	for y=1, #sections do
 		if not plugs[sections[y]] then plugs[sections[y]] = {} end -- empty
+		if not bridge_s[sections[y]] then bridge_s[sections[y]] = {} end -- empty
 		for x=1, #plugs[sections[y]] do
+			plugs[sections[y]][x].section = sections[y]
 			plugs[sections[y]][x].exists = files.exists(plugs[sections[y]][x].path)
 			plugs[sections[y]][x].file = files.nopath(plugs[sections[y]][x].path:lower())
+			bridge_s[sections[y]][plugs[sections[y]][x].file] = {s = sections[y], i = x}
+			if not bridge_n[plugs[sections[y]][x].file] then bridge_n[plugs[sections[y]][x].file] = {c = 1} end
+			bridge_n[plugs[sections[y]][x].file].c += 1
+			bridge_n[plugs[sections[y]][x].file][sections[y]] = x
+			--print(string.format("A [%s]: %s|%d", plugs[sections[y]][x].file, sections[y], x))
 			for k=1, #tb_cop do
 				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
 					plugs[sections[y]][x].bridge = tb_cop[k]
@@ -141,11 +149,6 @@ function pluginsmanager()
 			
 			if buttons.accept and not plugs[sections[over]][scroll.sel].is_sys then
 				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
-					tai.del(sections[over], plugs[sections[over]][scroll.sel].path)
-					ReloadConfig = true
-					if sections[over]:lower() == "main" or sections[over]:lower() == "kernel" then
-						change = true
-					end
 					-- Special Process
 					if plugs[sections[over]][scroll.sel].file == "yamt.suprx" then --Yamt
 						change = true
@@ -164,17 +167,45 @@ function pluginsmanager()
 						end
 					end
 					
+					local section1 = sections[over]
+					local path1 = files.nopath(plugs[sections[over]][scroll.sel].path:lower())
+					local section2 = ""
+					local path2 = ""
 					if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
+						section1 = plugs[sections[over]][scroll.sel].bridge.section
+						path1 = plugs[sections[over]][scroll.sel].bridge.path
 						if plugs[sections[over]][scroll.sel].bridge.section2 then
-							tai.del(plugs[sections[over]][scroll.sel].bridge.section2, plugs[sections[over]][scroll.sel].bridge.path2)
-							if plugs[sections[over]][scroll.sel].bridge.section2:lower() == "main" or plugs[sections[over]][scroll.sel].bridge.section2:lower() == "kernel" then
-								change = true
-							end
+							section2 = plugs[sections[over]][scroll.sel].bridge.section2
+							path2 = plugs[sections[over]][scroll.sel].bridge.path2
 						end
 					end
+									
+					local idx = bridge_n[path1][section1];
+					--print(string.format("E [%s]: %s|%d", path1, section1, idx))
+					--print(plugs[section1][idx].path)
+					tai.del(section1, plugs[section1][idx].path)
+					table.remove(plugs[section1], idx)
+					bridge_n[path1][section1] = nil
+					--bridge_n[path1].c -= 1
+					if bridge_n[path2] and bridge_n[path2][section2] then
+						idx = bridge_n[path2][section2];
+						--print(string.format("D [%s]: %s|%d", path2, section2, idx))
+						--print(plugs[section2][idx].path)
+						tai.del(section2, plugs[section2][idx].path)
+						table.remove(plugs[section2], idx)
+						bridge_n[path2][section2] = nil
+						--bridge_n[path2].c -= 1
+					end
 					
-					for i=#tb_cop,1,-1 do -- Search and remove any another primary of the selected, This old method of Gdljjrod was only carried, I really think something else is missing.
-						if tb_cop[i].path2 and (plugs[sections[over]][scroll.sel].file == tb_cop[i].path2:lower()) then
+					ReloadConfig = true
+					change = change or section1:lower() == "main" or section1:lower() == "kernel" or section2:lower() == "main" or section2:lower() == "kernel"
+					--local need_second = {}
+					--for i=#tb_cop, 1, -1 do
+					--	if 
+					--end
+					-- Remove this and check if other plug require second plug and no remove then, or show dialog of can't/wish remove.
+					--[[for i=#tb_cop,1,-1 do -- Search and remove any another primary of the selected, This old method of Gdljjrod was only carried, I really think something else is missing.
+						if tb_cop[i].path2 and (plugs[sections[over] ][scroll.sel].file == tb_cop[i].path2:lower()) then
 							if tb_cop[i].section then
 								tai.del(tb_cop[i].section, tb_cop[i].path)
 								if tb_cop[i].section:lower() == "main" or tb_cop[i].section:lower() == "kernel" then
@@ -182,9 +213,12 @@ function pluginsmanager()
 								end
 							end
 						end
-					end
-					--
-					table.remove(plugs[sections[over]], scroll.sel)
+					end]]
+					--[[if bridge_n[plugs[sections[over] ][scroll.sel].file] and bridge_n[plugs[sections[over] ][scroll.sel].file].c > 0 then
+						bridge_n[plugs[sections[over] ][scroll.sel].file].c -= 1
+						print(string.format("C [%s]: %s|%d", plugs[sections[over] ][scroll.sel].file, plugs[sections[over] ][scroll.sel].section, bridge_n[plugs[sections[over] ][scroll.sel].file][plugs[sections[over] ][scroll.sel].section]))
+						table.remove(plugs[plugs[sections[over] ][scroll.sel].section], bridge_n[plugs[sections[over] ][scroll.sel].file][plugs[sections[over] ][scroll.sel].section])
+					end]]
 					scroll = newScroll(plugs[sections[over]], maxv);
 					buttons.homepopup(0)
 					-- delete prx files?
