@@ -57,7 +57,7 @@ function tai.load(path, mix_path)
 	tai.raw = {}
 	tai.path = path or __TAI_PATH_UR0
 	if files.exists(tai.path) and not files.info(tai.path).directory then
-		print(string.format("Loading taiCfg from %s", tai.path))
+		--print(string.format("Loading taiCfg from %s", tai.path))
 		for line in io.lines(tai.path) do
 			if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
 			table.insert(tai.raw, line)
@@ -86,7 +86,7 @@ function tai.load(path, mix_path)
 		}
 		tai.parse()
 		tai.sync()
-		print("Error loading taiCfg from %s, use default\n", tai.path)
+		--print("Error loading taiCfg from %s, use default\n", tai.path)
 	end
 	local other_txt = mix_path or tai.mix_path
 	local ismix = false;
@@ -134,7 +134,7 @@ function tai.parse(data, blend)
 				elseif id_sect:lower() == "all" then raw[i] = "*ALL" end
 				line = raw[i]
 				id_sect = line:sub(2)
-				print(string.format("Section found %s", id_sect))
+				--print(string.format("Section found %s", id_sect))
 				-- TO-DO: add support to section´s with ! is a section will be no load by taihen, but how to handle with tai?
 				if not game_id[id_sect] then game_id[id_sect] = { line = {}, prx = {}, section = id_sect }; nr[id_sect] = {} end
 				table.insert(game_id[id_sect].line, i)
@@ -144,11 +144,11 @@ function tai.parse(data, blend)
 			if id_sect and not line:find("#",1,true) and line:find(":",1,true) then -- Is a path and not a comment. TODO  afect delete_sect method.
 				if not nr[id_sect][line:lower()] then
 					nr[id_sect][line:lower()] = true;
-					print(string.format("[%s]: %s", id_sect, line:lower()))
+					--print(string.format("[%s]: %s", id_sect, line:lower()))
 					table.insert(game_id[id_sect].prx, { path=line:lower(), line=i, is_sys = line:find("henkaku.suprx",1,true)}) -- skip in your app if the subtable have is_sys, example if list[i].is_sys
 					if blend then tai.put(id_sect, line:lower()) end
 				else
-					print(string.format("Repeated [%s]: %s", id_sect, line:lower()))
+					--print(string.format("Repeated [%s]: %s", id_sect, line:lower()))
 					--print(i)
 					table.remove(raw, i)
 					--len -= 1
@@ -194,7 +194,7 @@ function tai.repair()
 
 			elseif #v.prx < 1 then -- No have any plug?, remove!!!!
 				local id = tai.gameid[k].section
-				print(string.format("Delete no plug: %s | hold: %s\n", tostring(section), tostring(id == "KERNEL" and id == "main" and id == "ALL" and id == "NPXS10015" and id == "NPXS10016")))
+				--print(string.format("Delete no plug: %s | hold: %s\n", tostring(section), tostring(id == "KERNEL" and id == "main" and id == "ALL" and id == "NPXS10015" and id == "NPXS10016")))
 				if id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
 					tai.delete_sect(v) -- Remove all sections of id...
 					tai.parse()
@@ -216,13 +216,13 @@ function tai.delete_sect(v) -- Internal use...
 	for a=len, 1, -1 do
 		for b=#v.prx, 1, -1 do
 			if v.prx[b].line > v.line[a] and not v.prx[b].rv then
-				print(string.format("ILine: %d - Removed: %s\n", v.prx[b].line, tai.raw[v.prx[b].line]))
+				--print(string.format("ILine: %d - Removed: %s\n", v.prx[b].line, tai.raw[v.prx[b].line]))
 				table.remove(tai.raw, v.prx[b].line)--)
 				v.prx[b].rv = true
 			end
 		end
 
-		print(string.format("OLine: %d - Removed: %s\n",v.line[a], tai.raw[v.line[a]]))
+		--print(string.format("OLine: %d - Removed: %s\n",v.line[a], tai.raw[v.line[a]]))
 		table.remove(tai.raw, v.line[a])--)
 
 	end

@@ -9,6 +9,17 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+function searchPlugByPath(p, sect, path)
+	--print(string.format("SPP [%s]: %s|%d", (sect or "NOTHING"), (path or "unkpath"), (idx or 999)))
+	if not p or not sect or not p[sect] then return nil end
+	for i=1, #p[sect] do
+		if path == files.nopath(p[sect][i].path:lower()) then
+			return i;
+		end
+	end
+	return nil
+end
+
 function pluginsmanager()
 	local sections = {"KERNEL", "main", "ALL"}
 	local plugs = {}
@@ -20,7 +31,7 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "Kuio by Rinnegatamante", path = "kuio.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_KUIO"] } )
 	table.insert(tb_cop, { name = "MiniVitaTV by TheOfficialFloW vbeta0.2", path = "minivitatv.skprx", section = "KERNEL",  path2 = "ds3.skprx", section2 = "KERNEL" })
 	table.insert(tb_cop, { name = "iTLS-Enso by SKGleba", path = "itls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_ITLSENSO"] })
-	table.insert(tb_cop, { name = "Yamt-Vita by SKGleba", path = "yamt.suprx", section = "*NPXS100015", desc = LANGUAGE["INSTALLP_DESC_YAMT"] })
+	table.insert(tb_cop, { name = "Yamt-Vita by SKGleba", path = "yamt.suprx", section = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_YAMT"] })
 	table.insert(tb_cop, { name = "StorageMgr CelesteBlue", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SD2VITA"] })
 
 	for k,v in pairs(tai.gameid) do
@@ -173,52 +184,67 @@ function pluginsmanager()
 					local path2 = ""
 					if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
 						section1 = plugs[sections[over]][scroll.sel].bridge.section
-						path1 = plugs[sections[over]][scroll.sel].bridge.path
+						path1 = plugs[sections[over]][scroll.sel].bridge.path:lower()
 						if plugs[sections[over]][scroll.sel].bridge.section2 then
 							section2 = plugs[sections[over]][scroll.sel].bridge.section2
-							path2 = plugs[sections[over]][scroll.sel].bridge.path2
+							path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
 						end
 					end
-									
-					local idx = bridge_n[path1][section1];
-					--print(string.format("E [%s]: %s|%d", path1, section1, idx))
-					--print(plugs[section1][idx].path)
-					tai.del(section1, plugs[section1][idx].path)
-					table.remove(plugs[section1], idx)
-					bridge_n[path1][section1] = nil
-					--bridge_n[path1].c -= 1
-					if bridge_n[path2] and bridge_n[path2][section2] then
-						idx = bridge_n[path2][section2];
-						--print(string.format("D [%s]: %s|%d", path2, section2, idx))
-						--print(plugs[section2][idx].path)
-						tai.del(section2, plugs[section2][idx].path)
-						table.remove(plugs[section2], idx)
-						bridge_n[path2][section2] = nil
-						--bridge_n[path2].c -= 1
+					local idx = searchPlugByPath(plugs, section1, path1);
+					if idx then
+						--print(string.format("E [%s]: %s|%d", path1, section1, (idx or 300)))
+						--print(plugs[section1][idx].path)
+						tai.del(section1, plugs[section1][idx].path)
+						table.remove(plugs[section1], idx)
+						bridge_n[path1][section1] = nil
 					end
-					
 					ReloadConfig = true
 					change = change or section1:lower() == "main" or section1:lower() == "kernel" or section2:lower() == "main" or section2:lower() == "kernel"
-					--local need_second = {}
-					--for i=#tb_cop, 1, -1 do
-					--	if 
-					--end
-					-- Remove this and check if other plug require second plug and no remove then, or show dialog of can't/wish remove.
-					--[[for i=#tb_cop,1,-1 do -- Search and remove any another primary of the selected, This old method of Gdljjrod was only carried, I really think something else is missing.
-						if tb_cop[i].path2 and (plugs[sections[over] ][scroll.sel].file == tb_cop[i].path2:lower()) then
-							if tb_cop[i].section then
-								tai.del(tb_cop[i].section, tb_cop[i].path)
-								if tb_cop[i].section:lower() == "main" or tb_cop[i].section:lower() == "kernel" then
-									change = true
+					local need_second = {}
+					local msg_need = {}
+					for i=1, #tb_cop do
+						if tb_cop[i].path2 and tb_cop[i].path2:lower() == path2 and bridge_n[tb_cop[i].path2:lower()] and bridge_n[tb_cop[i].path2:lower()][tb_cop[i].section2] and bridge_n[tb_cop[i].path:lower()] and bridge_n[tb_cop[i].path:lower()][tb_cop[i].section] then
+							table.insert(need_second, tb_cop[i])
+							table.insert(msg_need, tb_cop[i].path)
+						end
+					end
+					if #need_second > 0 then
+						if os.dialog("Los plugs:\n"..(table.concat(msg_need, '\n')).."\nrequieren el plug "..(path2)..", remover igual y borrar todos los plugs que dependen?", "Question", __DIALOG_MODE_OK_CANCEL, __ACENTER) then
+							for i=1, #need_second do
+								local _path = need_second[i].path or ""
+								local _section = need_second[i].section or ""
+								local _path2 = need_second[i].path2 or ""
+								local _section2 = need_second[i].path or ""
+								_path = _path:lower()
+								_path2 = _path2:lower()
+								if bridge_n[_path] and bridge_n[_path][_section] then
+									local idx1 = searchPlugByPath(plugs, _section, _path);
+									if idx1 then
+										tai.del(_section, plugs[_section][idx1].path)
+										table.remove(plugs[_section], idx1)
+										bridge_n[_path][_section] = nil
+									end
+								end
+								if bridge_n[_path2] and bridge_n[_path2][_section2] then
+									local idx2 = searchPlugByPath(plugs, _section2, _path2);
+									if idx2 then
+										tai.del(_section2, plugs[_section2][idx2].path)
+										table.remove(plugs[_section2], idx2)
+										bridge_n[_path2][_section2] = nil
+									end
 								end
 							end
 						end
-					end]]
-					--[[if bridge_n[plugs[sections[over] ][scroll.sel].file] and bridge_n[plugs[sections[over] ][scroll.sel].file].c > 0 then
-						bridge_n[plugs[sections[over] ][scroll.sel].file].c -= 1
-						print(string.format("C [%s]: %s|%d", plugs[sections[over] ][scroll.sel].file, plugs[sections[over] ][scroll.sel].section, bridge_n[plugs[sections[over] ][scroll.sel].file][plugs[sections[over] ][scroll.sel].section]))
-						table.remove(plugs[plugs[sections[over] ][scroll.sel].section], bridge_n[plugs[sections[over] ][scroll.sel].file][plugs[sections[over] ][scroll.sel].section])
-					end]]
+					else
+						if bridge_n[path2] and bridge_n[path2][section2] then
+							local idx3 = searchPlugByPath(plugs, section2, path2);
+							if idx3 then
+								tai.del(section2, plugs[section2][idx3].path)
+								table.remove(plugs[section2], idx3)
+								bridge_n[path2][section2] = nil
+							end
+						end
+					end
 					scroll = newScroll(plugs[sections[over]], maxv);
 					buttons.homepopup(0)
 					-- delete prx files?
@@ -226,27 +252,19 @@ function pluginsmanager()
 			end
 			
 		end
-		
 		if buttons.cancel then 
 			if change or ReloadConfig then 
-				if os.dialog("You wish return and lost all changes?", "Abort", __DIALOG_MODE_OK_CANCEL, __ACENTER) then -- Experimental
-					tai.load()
+				if os.dialog("You wish return and save all changes?", "Save Changes", __DIALOG_MODE_OK_CANCEL, __ACENTER) then -- Experimental
+					if change or ReloadConfig then tai.sync() end
+					if not change and ReloadConfig then os.taicfgreload() end
 					change = false
 					ReloadConfig = false
 					buttons.homepopup(1)
 					break;
 				else  -- Experimental! xD
-					if change or ReloadConfig then tai.sync() end
-					if not change and ReloadConfig then
-						if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-					end
-					if change then
-						os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-						os.delay(250)
-						buttons.homepopup(1)
-						power.restart()
-					end
-					os.delay(250)
+					tai.load() -- Lost all changes in all sections of APII.
+					change = false
+					ReloadConfig = false
 					buttons.homepopup(1)
 					break;
 				end
