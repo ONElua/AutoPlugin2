@@ -20,6 +20,6 @@ psp_plugins = {
 { name = "SplinterCell Remastered",			path = "splintercell_remastered.prx",	version = "0001", desc = LANGUAGE["SPLINTER_REMASTERED_DESC"], KEY = "SPLINTER_REMASTERED_DESC", },
 { name = "Tomb Raider Remastered",			path = "tombraider_remastered.prx", 	version = "0001", desc = LANGUAGE["TOMBRAIDER_REMASTERED_DESC"], KEY = "TOMBRAIDER_REMASTERED_DESC", },
 { name = "Warriors Remastered",				path = "warriors_remastered.prx", 		version = "0001", desc = LANGUAGE["WARRIORS_REMASTERED_DESC"], KEY = "WARRIORS_REMASTERED_DESC", },
-{ name = "Tony Hawk Remastered",			path = "warriors_remastered.prx", 		version = "0001", desc = LANGUAGE["TONYHAWKS_REMASTERED_DESC"], KEY = "TONYHAWKS_REMASTERED_DESC", },
+{ name = "Tony Hawk Remastered",			path = "tonyhawk_remastered.prx", 		version = "0001", desc = LANGUAGE["TONYHAWKS_REMASTERED_DESC"], KEY = "TONYHAWKS_REMASTERED_DESC", },
 
 }
