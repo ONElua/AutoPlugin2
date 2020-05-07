@@ -190,7 +190,7 @@ function plugins_online2()
 								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path2), path_plugins)
 							end
 
-							if Online_Plugins[j].config and not files.exists(locations[loc].."tai/"..Online_Plugins[j].config) then
+							if Online_Plugins[j].config and not files.exists("ur0:/tai/"..Online_Plugins[j].config) then
 								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].config), path_plugins)
 							end
 
@@ -238,7 +238,7 @@ function plugins_online2()
 				if Online_Plugins[i].path2 then
 					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path2), path_plugins)
 				end
-				if Online_Plugins[i].config and not files.exists(locations[loc].."tai/"..Online_Plugins[i].config) then
+				if Online_Plugins[i].config and not files.exists("ur0:/tai/"..Online_Plugins[i].config) then
 					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].config), path_plugins)
 				end
 

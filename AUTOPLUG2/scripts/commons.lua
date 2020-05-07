@@ -108,9 +108,7 @@ end
 
 --Variables Universales
 path_plugins = "resources/plugins/"
-__UX0, __UR0, loc = 1,2,1
-locations = { "ux0:", "ur0:" }
-path_tai = locations[loc].."tai/"
+path_tai = "ur0:/tai/"
 version = tostring(os.swversion())
 
 --Buttons Assign

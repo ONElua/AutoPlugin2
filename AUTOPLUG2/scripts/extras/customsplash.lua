@@ -48,7 +48,7 @@ function img2splashbin(img,flag)
 				fp:close()
 
 				if copy then
-					files.copy("resources/plugins/custom_boot_splash.skprx", locations[loc].."tai/")
+					files.copy("resources/plugins/custom_boot_splash.skprx", "ur0:/tai/")
 				end
 
 				if flag then
@@ -67,15 +67,7 @@ function img2splashbin(img,flag)
 end
 
 function customimgsplash()
-
-	--Init load configs
-	loc = 1
-	tai.load()
-	local partition = 0
-	if tai[__UX0].exist then partition = __UX0
-	elseif tai[__UR0].exist then partition,loc = __UR0,2
-	end
-	path_tai = locations[loc].."tai/"
+	path_tai = "ur0:/tai/"
 
 	local png, custom_boot = files.listfiles("ux0:CustomBootsplash/"), {}
 
@@ -90,7 +82,7 @@ function customimgsplash()
 	end
 	table.insert(custom_boot, { name = "henkaku.png", path = "imgs/boot_splash.png" })
 
-	table.sort(custom_boot,function(a,b) return string.lower(a.name)<string.lower(b.name) end)
+	table.sort(custom_boot, function(a,b) return string.lower(a.name)<string.lower(b.name) end)
 
 	for i=1,#custom_boot do
 		custom_boot[i].img = image.load(custom_boot[i].path)
@@ -101,7 +93,7 @@ function customimgsplash()
 	end
 
 	local limit = 10
-	local scroll = newScroll(custom_boot,limit)
+	local scroll = newScroll(custom_boot, limit)
 
 	local install = false
 	while true do

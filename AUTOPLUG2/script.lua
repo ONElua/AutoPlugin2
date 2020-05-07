@@ -81,25 +81,8 @@ if __UPDATE == 1 then
 end
 write_config()
 
---Copy defect for config.txt
 dofile("scripts/tai.lua")
-if not files.exists(tai_ux0_path) and not files.exists(tai_ur0_path) then files.copy("resources/config/config.txt", "ur0:tai/") end
-
---Init load configs
 tai.load()
-
-tai.sync(__UX0, "ux0:tai/config.txt")
-tai.sync(__UR0, "ur0:tai/config.txt")
-
---Backups
-tai.sync(__UX0, "ux0:tai/config_backup.txt")
-tai.sync(__UR0, "ur0:tai/config_backup.txt")
-
-tai.load()
-
-if back then back:blit(0,0) end
-	message_wait(LANGUAGE["STRING_BACKUP_CONFIGS"])
-os.delay(1500)
 
 dofile("scripts/psvita/menu_psvita.lua")
 dofile("scripts/psp/menu_psp.lua")
