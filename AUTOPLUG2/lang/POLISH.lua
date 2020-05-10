@@ -169,7 +169,7 @@ POLISH["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Re
 POLISH["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
 POLISH["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
 POLISH["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
-POLISH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
+POLISH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for Tony Hawks Project 8"
 
 --psp plugins
 POLISH["PLUGINS_PSP_TITLE"] =                       "Dostępne pluginy PSP (Adrenaline)"

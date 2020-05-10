@@ -169,7 +169,7 @@ GERMAN["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Re
 GERMAN["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
 GERMAN["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
 GERMAN["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
-GERMAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
+GERMAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for Tony Hawks Project 8"
 
 --psp plugins
 GERMAN["PLUGINS_PSP_TITLE"] =                       "Verfügbare PSP plugins (Adrenaline)"

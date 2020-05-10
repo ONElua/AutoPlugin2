@@ -169,7 +169,7 @@ ITALIAN["RESISTANCE_REMASTERED_DESC"] =                 "Dual Analogs Enabler fo
 ITALIAN["SPLINTER_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Splinter Cell: Essentials"
 ITALIAN["TOMBRAIDER_REMASTERED_DESC"] =                 "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
 ITALIAN["WARRIORS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for The Warriors"
-ITALIAN["TONYHAWKS_REMASTERED_DESC"] =                  "Dual Analogs Enabler dor Tony Hawks Project 8"
+ITALIAN["TONYHAWKS_REMASTERED_DESC"] =                  "Dual Analogs Enabler for Tony Hawks Project 8"
 
 --psp plugins
 ITALIAN["PLUGINS_PSP_TITLE"] =                          "Plugin PSP disponibili (Adrenaline)"

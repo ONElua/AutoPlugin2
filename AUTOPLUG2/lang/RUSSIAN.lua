@@ -169,7 +169,7 @@ RUSSIAN["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for R
 RUSSIAN["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
 RUSSIAN["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
 RUSSIAN["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
-RUSSIAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
+RUSSIAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for Tony Hawks Project 8"
 
 --psp plugins
 RUSSIAN["PLUGINS_PSP_TITLE"] =                       "Доступные PSP плагины (для Adrenaline)"

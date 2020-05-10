@@ -169,7 +169,7 @@ FRENCH["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Re
 FRENCH["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
 FRENCH["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
 FRENCH["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
-FRENCH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
+FRENCH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for Tony Hawks Project 8"
 
 --psp plugins
 FRENCH["PLUGINS_PSP_TITLE"] =                       "Liste de plugins PSP disponible"
