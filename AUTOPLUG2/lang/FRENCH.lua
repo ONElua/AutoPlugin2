@@ -105,6 +105,10 @@ FRENCH["UNINSTALLP_PLUGIN"] =                       "Désinstaller le plugin"
 FRENCH["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Changer de partition"
 FRENCH["UNINSTALLP_QUESTION"] =                     "\n\nSouhaitez-vous désinstallé le plugin :"
 FRENCH["UNINSTALLP_EMPTY"] =                        "-= Pas de plugin installé =-"
+FRENCH["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
+FRENCH["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
+FRENCH["UNINSTALLP_QUESTION_NEED"] =                "You want to uninstall them too?"
+FRENCH["UNINSTALLP_SYSTEM_PLUGIN"] =                "Must have plugin, can not unistall!"
 
 --install sd2vita
 FRENCH["MENU_TITLE_SD2VITA"] =                      "Mise en place du plugin Storage Manager pour la SD2VITA"
@@ -151,11 +155,21 @@ FRENCH["NPDRMFREE_VSH_UPDATED"] =                   "vsh.txt mise à jour"
 FRENCH["NPDRMFREE_GAME_UPDATED"] =                  "game.txt mise à jour"
 FRENCH["NPDRMFREE_INSTALL"] =                       "Installer le plugin"
 
---pspctrls
+--pspctrls (Remastered Controls)
 FRENCH["PSPCTRLS_TITLE"] =                          "Plugins compatible avec le second joysticks PSP pour Adrenaline"
 FRENCH["PSPCTRLS_GAME_UPDATED"] =                   "game.txt mise à jour"
 FRENCH["PSPCTRLS_DESC_ALL"] =                       "Utilise le second joystick pour contrôlé la caméra du jeu"
 FRENCH["PSPCTRLS_LR_SWAP"] =                        "Changer de partition"
+FRENCH["GTA_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+FRENCH["GTAV2_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+FRENCH["KHBBS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
+FRENCH["METALGEARSOLID_REMASTERED_DESC"] =          "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
+FRENCH["PRINCEOFPERSIA_REMASTERED_DESC"] =          "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+FRENCH["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Resistance Retribution"
+FRENCH["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
+FRENCH["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
+FRENCH["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
+FRENCH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
 
 --psp plugins
 FRENCH["PLUGINS_PSP_TITLE"] =                       "Liste de plugins PSP disponible"
@@ -373,6 +387,8 @@ FRENCH["INSTALLP_DESC_MACSPOOF"] =                  "Un plugin permettant de spo
 FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la PSVita seront enregistrées dans un dossier portant le nom du jeu."
 
 --Comunes
+FRENCH["MISSING_PLUGIN"] =                          "The plugin is missing!"
+FRENCH["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
 FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

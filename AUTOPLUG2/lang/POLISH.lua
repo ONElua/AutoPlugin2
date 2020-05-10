@@ -105,6 +105,10 @@ POLISH["UNINSTALLP_PLUGIN"] =                       "Aby odinstalować plugin"
 POLISH["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Przełącz sekcje"
 POLISH["UNINSTALLP_QUESTION"] =                     "Na pewno chcesz ondinstalować ?"
 POLISH["UNINSTALLP_EMPTY"] =                        "PUSTO !!!"
+POLISH["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
+POLISH["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
+POLISH["UNINSTALLP_QUESTION_NEED"] =                "You want to uninstall them too?"
+POLISH["UNINSTALLP_SYSTEM_PLUGIN"] =                "Must have plugin, can not unistall!"
 
 --install sd2vita
 POLISH["MENU_TITLE_SD2VITA"] =                      "Zainstaluj plugin Storage Manager dla SD2VITA"
@@ -151,11 +155,21 @@ POLISH["NPDRMFREE_VSH_UPDATED"] =                   "Zaktualizowano vsh.txt"
 POLISH["NPDRMFREE_GAME_UPDATED"] =                  "Zaktualizowano game.txt"
 POLISH["NPDRMFREE_INSTALL"] =                       "Instalacja pluginu npdrm"
 
---pspctrls
+--pspctrls (Remastered Controls)
 POLISH["PSPCTRLS_TITLE"] =                          "Odnowiona wtyczka do sterowania od TheOfficialFloW (Adrenaline)"
 POLISH["PSPCTRLS_GAME_UPDATED"] =                   "Zaktualizowano game.txt"
 POLISH["PSPCTRLS_DESC_ALL"] =                       "Włączono dwa analogi"
 POLISH["PSPCTRLS_LR_SWAP"] =                        "Zamiana partycji"
+POLISH["GTA_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+POLISH["GTAV2_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+POLISH["KHBBS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
+POLISH["METALGEARSOLID_REMASTERED_DESC"] =          "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
+POLISH["PRINCEOFPERSIA_REMASTERED_DESC"] =          "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+POLISH["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Resistance Retribution"
+POLISH["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
+POLISH["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
+POLISH["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
+POLISH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
 
 --psp plugins
 POLISH["PLUGINS_PSP_TITLE"] =                       "Dostępne pluginy PSP (Adrenaline)"
@@ -373,6 +387,8 @@ POLISH["INSTALLP_DESC_MACSPOOF"] =                  "Wtyczka do fałszowania adr
 POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną zapisane w folderze nazwanym po grze."
 
 --Comunes
+POLISH["MISSING_PLUGIN"] =                          "The plugin is missing!"
+POLISH["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 POLISH["STRING_UNSAFE_MODE"] =                      "NIEBEZPIECZNY TRYB jest wymagany dla tego Homebrew!"
 POLISH["STRING_PSVITA_RESTART"] =                   "Twoja PSVita zostanie uruchomiona ponownie"
 POLISH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

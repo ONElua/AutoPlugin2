@@ -104,7 +104,7 @@ function install()
 	end
 
 	--delete if plugin gamesd.skprx
-	tai.del("KERNEL", "gamesd.skprx")
+	tai.del("KERNEL", "ur0:tai/gamesd.skprx")
 
 	if files.exists(tai.path) then
 

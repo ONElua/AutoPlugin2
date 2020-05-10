@@ -105,6 +105,10 @@ JAPANESE["UNINSTALLP_PLUGIN"] =                         "プラグインをア�
 JAPANESE["UNINSTALLP_LEFTRIGHT_SECTION"] =              "セクションを切り替えます"
 JAPANESE["UNINSTALLP_QUESTION"] =                       "本当にアンインストールしますか？"
 JAPANESE["UNINSTALLP_EMPTY"] =                          "アンインストールできるものがありません!!!"
+JAPANESE["UNINSTALLP_NO_PLUGINS"] =                     "No Plugins in this section"
+JAPANESE["UNINSTALLP_PLUGINS_NEED"] =                   "is required for functionality of following plugins"
+JAPANESE["UNINSTALLP_QUESTION_NEED"] =                  "You want to uninstall them too?"
+JAPANESE["UNINSTALLP_SYSTEM_PLUGIN"] =                  "Must have plugin, can not unistall!"
 
 --install sd2vita
 JAPANESE["MENU_TITLE_SD2VITA"] =                        "SD2VITAのStorage Managerプラグインをインストールします"
@@ -151,11 +155,21 @@ JAPANESE["NPDRMFREE_VSH_UPDATED"] =                     "vsh.txtが更新され�
 JAPANESE["NPDRMFREE_GAME_UPDATED"] =                    "game.txtが更新されました"
 JAPANESE["NPDRMFREE_INSTALL"] =                         "npdrm freeプラグインをインストールします"
 
---pspctrls
+--pspctrls (Remastered Controls)
 JAPANESE["PSPCTRLS_TITLE"] =                            "drenaline用リマスターコントロールプラグイン (by TheOfficialFloW)"
 JAPANESE["PSPCTRLS_GAME_UPDATED"] =                     "game.txtが更新されました"
 JAPANESE["PSPCTRLS_DESC_ALL"] =                         "Dual Analogs Enabler"
 JAPANESE["PSPCTRLS_LR_SWAP"] =                          "パーティションを切り替える"
+JAPANESE["GTA_REMASTERED_DESC"] =                       "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+JAPANESE["GTAV2_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+JAPANESE["KHBBS_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
+JAPANESE["METALGEARSOLID_REMASTERED_DESC"] =            "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
+JAPANESE["PRINCEOFPERSIA_REMASTERED_DESC"] =            "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+JAPANESE["RESISTANCE_REMASTERED_DESC"] =                "Dual Analogs Enabler for Resistance Retribution"
+JAPANESE["SPLINTER_REMASTERED_DESC"] =                  "Dual Analogs Enabler for Splinter Cell: Essentials"
+JAPANESE["TOMBRAIDER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
+JAPANESE["WARRIORS_REMASTERED_DESC"] =                  "Dual Analogs Enabler for The Warriors"
+JAPANESE["TONYHAWKS_REMASTERED_DESC"] =                 "Dual Analogs Enabler dor Tony Hawks Project 8"
 
 --psp plugins
 JAPANESE["PLUGINS_PSP_TITLE"] =                         "利用可能なPSPプラグイン (Adrenaline)"
@@ -373,6 +387,8 @@ JAPANESE["INSTALLP_DESC_MACSPOOF"] =                    "システム情報でMA
 JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリーンショットはゲーム名の付いたフォルダーに保存されます。"
 
 --Comunes
+JAPANESE["MISSING_PLUGIN"] =                            "The plugin is missing!"
+JAPANESE["REPAIR_CONFIG_TXT"] =                         "Henkaku plugins fixed in tai/config.txt"
 JAPANESE["STRING_UNSAFE_MODE"] =                        "このHomebrewにはUNSAFEモードが必要です！"
 JAPANESE["STRING_PSVITA_RESTART"] =                     "PSVitaが再起動します"
 JAPANESE["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

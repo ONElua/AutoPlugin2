@@ -105,6 +105,10 @@ RUSSIAN["UNINSTALLP_PLUGIN"] =                       "Удалить плаги�
 RUSSIAN["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Выбрать секцию"
 RUSSIAN["UNINSTALLP_QUESTION"] =                     "Вы действительно хотите удалить?"
 RUSSIAN["UNINSTALLP_EMPTY"] =                        "НИЧЕГО НЕТ!!!"
+RUSSIAN["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
+RUSSIAN["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
+RUSSIAN["UNINSTALLP_QUESTION_NEED"] =                "You want to uninstall them too?"
+RUSSIAN["UNINSTALLP_SYSTEM_PLUGIN"] =                "Must have plugin, can not unistall!"
 
 --install sd2vita
 RUSSIAN["MENU_TITLE_SD2VITA"] =                      "Установить плагин Storage Manager для SD2VITA"
@@ -151,11 +155,21 @@ RUSSIAN["NPDRMFREE_VSH_UPDATED"] =                   "Файл vsh.txt обно�
 RUSSIAN["NPDRMFREE_GAME_UPDATED"] =                  "Файл game.txt обновлён"
 RUSSIAN["NPDRMFREE_INSTALL"] =                       "Установить плагин npdrm_free"
 
---pspctrls
+--pspctrls (Remastered Controls)
 RUSSIAN["PSPCTRLS_TITLE"] =                          "Плагины Remastered Controls от TheOfficialFloW (для Adrenaline)"
 RUSSIAN["PSPCTRLS_GAME_UPDATED"] =                   "Файл game.txt обновлён"
 RUSSIAN["PSPCTRLS_DESC_ALL"] =                       "Поддержка второго аналогового стика"
 RUSSIAN["PSPCTRLS_LR_SWAP"] =                        "Выбрать раздел"
+RUSSIAN["GTA_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+RUSSIAN["GTAV2_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+RUSSIAN["KHBBS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
+RUSSIAN["METALGEARSOLID_REMASTERED_DESC"] =          "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
+RUSSIAN["PRINCEOFPERSIA_REMASTERED_DESC"] =          "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+RUSSIAN["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Resistance Retribution"
+RUSSIAN["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
+RUSSIAN["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
+RUSSIAN["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
+RUSSIAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
 
 --psp plugins
 RUSSIAN["PLUGINS_PSP_TITLE"] =                       "Доступные PSP плагины (для Adrenaline)"
@@ -373,6 +387,8 @@ RUSSIAN["INSTALLP_DESC_MACSPOOF"] =                  "Подмена текст�
 RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Скриншоты будут сохраняться в папки, совпающие с именем приложения"
 
 --Comunes
+RUSSIAN["MISSING_PLUGIN"] =                          "The plugin is missing!"
+RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 RUSSIAN["STRING_UNSAFE_MODE"] =                      "Необходимо разрешить небезопасные приложения в настройках HENkaku!"
 RUSSIAN["STRING_PSVITA_RESTART"] =                   "Система PS Vita будет перезагружена"
 RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "Перезагрузить taiHEN config.txt"

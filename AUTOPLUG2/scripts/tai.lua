@@ -99,7 +99,7 @@ function tai.load(path, mix_path)
 			end
 			tai.parse(ux_raw, true)
 			tai.debug()
-			files.rename(other_txt[i], "disable_config.txt") -- o borrar?
+			files.delete(other_txt[i]) -- Delete 4 ever :D
 			ismix = true
 		end
 	end
@@ -198,10 +198,8 @@ function tai.repair()
 				if id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
 					tai.delete_sect(v) -- Remove all sections of id...
 					tai.parse()
+					return tai.repair() -- recursive! :D
 				end
-
-				return tai.repair() -- recursive! :D
-
 			end
 
 		end--for

@@ -105,6 +105,10 @@ CHINESE_S["UNINSTALLP_PLUGIN"] =                       "卸载插件"
 CHINESE_S["UNINSTALLP_LEFTRIGHT_SECTION"] =            "切换选项"
 CHINESE_S["UNINSTALLP_QUESTION"] =                     "确定要卸载吗?"
 CHINESE_S["UNINSTALLP_EMPTY"] =                        "空白!"
+CHINESE_S["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
+CHINESE_S["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
+CHINESE_S["UNINSTALLP_QUESTION_NEED"] =                "You want to uninstall them too?"
+CHINESE_S["UNINSTALLP_SYSTEM_PLUGIN"] =                "Must have plugin, can not unistall!"
 
 --install sd2vita
 CHINESE_S["MENU_TITLE_SD2VITA"] =                      "为 SD2VITA 设备安装 Storage Manager 插件"
@@ -151,11 +155,21 @@ CHINESE_S["NPDRMFREE_VSH_UPDATED"] =                   "vsh.txt 已更新"
 CHINESE_S["NPDRMFREE_GAME_UPDATED"] =                  "game.txt 已更新"
 CHINESE_S["NPDRMFREE_INSTALL"] =                       "安装 npdrm free 插件"
 
---pspctrls
+--pspctrls (Remastered Controls)
 CHINESE_S["PSPCTRLS_TITLE"] =                          "Remastered Controls 插件 [由 TheOfficialFloW(Adrenaline) 开发]"
 CHINESE_S["PSPCTRLS_GAME_UPDATED"] =                   "game.txt 已更新"
 CHINESE_S["PSPCTRLS_DESC_ALL"] =                       "双摇杆启用器"
 CHINESE_S["PSPCTRLS_LR_SWAP"] =                        "切换分区"
+CHINESE_S["GTA_REMASTERED_DESC"] =                     "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+CHINESE_S["GTAV2_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Grand Theft Auto: Liberty City Stories and Grand Theft Auto: Vice City Stories"
+CHINESE_S["KHBBS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
+CHINESE_S["METALGEARSOLID_REMASTERED_DESC"] =          "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
+CHINESE_S["PRINCEOFPERSIA_REMASTERED_DESC"] =          "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+CHINESE_S["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Resistance Retribution"
+CHINESE_S["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
+CHINESE_S["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
+CHINESE_S["WARRIORS_REMASTERED_DESC"] =                "Dual Analogs Enabler for The Warriors"
+CHINESE_S["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler dor Tony Hawks Project 8"
 
 --psp plugins
 CHINESE_S["PLUGINS_PSP_TITLE"] =                       "可供使用的 PSP(Adrenaline) 插件"
@@ -373,6 +387,8 @@ CHINESE_S["INSTALLP_DESC_MACSPOOF"] =                  "用于欺骗系统信息
 CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在以游戏命名的文件夹里."
 
 --Comunes
+CHINESE_S["MISSING_PLUGIN"] =                          "The plugin is missing!"
+CHINESE_S["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 CHINESE_S["STRING_UNSAFE_MODE"] =                      "此程序需要开启不安全模式 (UNSAFE MODE)!"
 CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重启"
 CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "重新载入大变革 config.txt"
