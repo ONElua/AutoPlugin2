@@ -1,3 +1,13 @@
+# v1.06
+- Lib tai updated.
+- Reimplemented the new tai library in all parts of the application.
+- Re-implemented plugin manager.
+- Added support to update plugins of PSP.
+- Now the plugins will be installed in ur0 only.
+- If you have a config.txt in some other partition, this will be unified with ur0.
+- If you have a config.txt with any fault, such as an error of lowercase and capital letters or lack of parts of the system or absence of it, it will be repaired / written.
+
+
 # v1.05
 + Reverted changes and fix bugs in the v1.04
 + Add option "Reset config.txt in ur0:tai" in the section Extras.

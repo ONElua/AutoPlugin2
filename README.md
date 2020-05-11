@@ -58,6 +58,15 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.06 ###
+- Lib tai updated.
+- Reimplemented the new tai library in all parts of the application.
+- Re-implemented plugin manager.
+- Added support to update plugins of PSP.
+- Now the plugins will be installed in ur0 only.
+- If you have a config.txt in some other partition, this will be unified with ur0.
+- If you have a config.txt with any fault, such as an error of lowercase and capital letters or lack of parts of the system or absence of it, it will be repaired / written.
+
 ### Changelog 1.03 ###
 + Added support to install extra applications that require some plugins<br>
 
