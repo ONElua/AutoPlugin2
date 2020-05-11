@@ -278,7 +278,8 @@ function autoplugin()
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].."  "..toinstall.."/"..#plugins,1,color.white)
 
 		--Partition
-		screen.print(950, 12, "ur0:/", 1, color.white, color.blue, __ARIGHT)
+		draw.fillrect(860,0,100,40, color.green:a(90))
+		screen.print(930, 12, "ur0:", 1, color.white, color.blue, __ARIGHT)
 
 		--List of Plugins
 		local y = 64
@@ -318,10 +319,12 @@ function autoplugin()
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scr.maxim-1))*(scr.sel-1), 8, pos_height, color.new(0,255,0))
 		--end
 
-		if screen.textwidth(plugins[scr.sel].desc) > 925 then
-			xscr1 = screen.print(xscr1, 405, plugins[scr.sel].desc,1,color.green, 0x0,__SLEFT,935)
-		else
-			screen.print(480, 405, plugins[scr.sel].desc,1,color.green, 0x0,__ACENTER)
+		if plugins[scr.sel].desc then
+			if screen.textwidth(plugins[scr.sel].desc) > 925 then
+				xscr1 = screen.print(xscr1, 405, plugins[scr.sel].desc,1,color.green, 0x0,__SLEFT,935)
+			else
+				screen.print(480, 405, plugins[scr.sel].desc,1,color.green, 0x0,__ACENTER)
+			end
 		end
 
 		screen.print(950, 433, plugins[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
@@ -349,7 +352,7 @@ function autoplugin()
 		screen.flip()
 
 		--------------------------	Controls	--------------------------
-
+		--if buttons.select then error("USB") end
 		if buttons.released.cancel then
 			--Clean
 			for i=1,scr.maxim do
@@ -362,24 +365,7 @@ function autoplugin()
 
 		--Exit
 		if buttons.start then
-			if change or ReloadConfig then 
-				tai.sync() --Write
-			end
-			if change then ReloadConfig = false end
-			if ReloadConfig then
-				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-			end
-
-			if change then
-				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(250)
-				buttons.homepopup(1)
-				power.restart()
-			end
-
-			os.delay(250)
-			buttons.homepopup(1)
-			os.exit()
+			exit_bye_bye()
 		end
 
 		if scr.maxim > 0 then

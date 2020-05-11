@@ -325,7 +325,26 @@ function tai.sync(path)
 		tai.put("main", "ur0:tai/henkaku.suprx", 1)
 		tai.put("NPXS10015", "ur0:tai/henkaku.suprx", 1)
 		tai.put("NPXS10016", "ur0:tai/henkaku.suprx", 1)
+		tai.del("KERNEL", "ur0:tai/henkaku.suprx")
 		
+		local force_path = {
+		"ur0:tai/repatch_4.skprx",
+		"ur0:tai/repatch.skprx",
+		"ur0:tai/0syscall6.skprx",
+		"ur0:tai/reF00D.skprx",
+		"ur0:tai/nonpdrm.skprx",
+		"ur0:tai/gamesd.skprx",
+		"ur0:tai/storagemgr.skprx"
+		}
+		local force_state = {}
+		for i=1, #force_path do
+			force_state[i] = tai.del("KERNEL", force_path[i])
+		end
+		for i=1, #force_path do
+			if force_state[i] then
+				tai.put("KERNEL", force_path[i], 1)
+			end
+		end
 		files.write(path or tai.path, table.concat(tai.raw, '\n'))
 	end
 end

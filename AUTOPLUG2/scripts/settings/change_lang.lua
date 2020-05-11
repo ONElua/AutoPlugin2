@@ -98,21 +98,7 @@ function change_lang()
 
 		--Exit
 		if buttons.start then
-			if change then ReloadConfig = false end
-			if ReloadConfig then
-				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-			end
-
-			if change then
-				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(250)
-				buttons.homepopup(1)
-				power.restart()
-			end
-
-			os.delay(250)
-			buttons.homepopup(1)
-			os.exit()
+			exit_bye_bye()
 		end
 
 		--Ctrls
@@ -172,6 +158,10 @@ function change_lang()
 				if back then back:blit(0,0) end
 					message_wait(LANGUAGE["LANGUAGE_RELOAD"])
 				os.delay(1500)
+
+
+				--Pendiente update para plugins PSP
+				dofile("plugins/plugins_psp.lua")
 
 				write_config()
 

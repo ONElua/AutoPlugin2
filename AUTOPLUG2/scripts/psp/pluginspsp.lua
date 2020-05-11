@@ -89,16 +89,6 @@ end
 function pluginsPSP()
 
 	local selector,limit = 1,8
-	local pluginsP = {
-
-		{	showname = "CXMB", name="cxmb.prx", path = "cxmb/", desc = LANGUAGE["CXMB_DESC"], txt = "vsh.txt", },
-		{	showname = "GTA Native Resolution Patch v0.2", name = "gta_native.prx",	path = "seplugins/", desc = LANGUAGE["GTA_PATCH_DESC"], txt = "game.txt", },
-		{	showname = "Camera Patch Lite", name = "camera_patch_lite.prx",	path = "seplugins/", desc = LANGUAGE["CAMERA_PATCH_DESC"], txt = "game.txt", config = "camera_patch_lite.ini" },
-		{	showname = "Lang Swapper", name = "LangSwapper.prx",	path = "seplugins/", desc = LANGUAGE["LANGSWAPPER_DESC"], txt = "game.txt", },
-		{	showname = "Category lite", name = "category_lite.prx",	path = "seplugins/", desc = LANGUAGE["CATEGORYLITE_DESC"], txt = "vsh.txt", },
-		{	showname = "Kingdom Hearts: Birth By Sleep/Final Mix UNDUB", name = "bbsfmUndub.prx",	path = "seplugins/", desc = LANGUAGE["KHBBS_UNDUB_DESC"], txt = "game.txt", },
-
-	}
 	if #pluginsP < limit then limit = #pluginsP end
 	local scroll = newScroll(pluginsP, limit)
 	local xscroll = 10
@@ -113,6 +103,8 @@ function pluginsPSP()
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["PLUGINS_PSP_TITLE"],1.2,color.white,0x0,__ACENTER)
+
+		screen.print(13, 65, " ("..scroll.maxim..")", 1, color.yellow, 0x0)
 
 		--Partitions
 		local xRoot = 700
@@ -132,7 +124,7 @@ function pluginsPSP()
 			if i == scroll.sel then draw.offsetgradrect(15,y-10,945,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
 			if pluginsP[i].inst then ccolor = color.green else ccolor = color.white end
-			screen.print(25,y, pluginsP[i].showname,1,ccolor,0x0)
+			screen.print(25,y, pluginsP[i].name,1,ccolor,0x0)
 			screen.print(950,y, "( "..pluginsP[i].txt.." )",1,ccolor,0x0,__ARIGHT)
 
 			y+=35
@@ -144,10 +136,12 @@ function pluginsPSP()
 		local pos_height = math.max(h/scroll.maxim, limit)
 		draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
-		if screen.textwidth(pluginsP[scroll.sel].desc) > 925 then
-			xscroll = screen.print(xscroll, 400, pluginsP[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
-		else
-			screen.print(480, 400, pluginsP[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
+		if pluginsP[scroll.sel].desc then
+			if screen.textwidth(pluginsP[scroll.sel].desc) > 925 then
+				xscroll = screen.print(xscroll, 400, pluginsP[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
+			else
+				screen.print(480, 400, pluginsP[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
+			end
 		end
 
 		if buttonskey2 then buttonskey2:blitsprite(900,448,2) end
@@ -173,7 +167,7 @@ function pluginsPSP()
 
 		--------------------------	Controls	--------------------------
 
-		if buttons.released.cancel then break end
+		if buttons.cancel then break end
 
 		--L/R
 		if buttons.released.l or buttons.released.r then
@@ -184,21 +178,7 @@ function pluginsPSP()
 
 		--Exit
 		if buttons.start then
-			if change then ReloadConfig = false end
-			if ReloadConfig then
-				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-			end
-
-			if change then
-				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(250)
-				buttons.homepopup(1)
-				power.restart()
-			end
-
-			os.delay(250)
-			buttons.homepopup(1)
-			os.exit()
+			exit_bye_bye()
 		end
 
 		if scroll.maxim > 0 then
@@ -214,6 +194,7 @@ function pluginsPSP()
 
 			if buttons.accept then
 
+				files.mkdir(PMounts[selector].."pspemu/seplugins/")
 				if not files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
 					files.new(PMounts[selector].."pspemu/seplugins/vsh.txt")
 				end
@@ -227,7 +208,7 @@ function pluginsPSP()
 					if pluginsP[i].inst then
 						add_psp_plugin(PMounts[selector], pluginsP[i])
 						if back2 then back2:blit(0,0) end
-							message_wait(pluginsP[i].showname.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+							message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
 						os.delay(750)
 					end
 				end
@@ -252,23 +233,23 @@ function pluginsPSP()
 
 			--del plugins
 			if buttons.triangle then
+				if os.dialog("\n\n"..LANGUAGE["UNINSTALLP_QUESTION"], LANGUAGE["MENU_PSP"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
+					pluginsP[scroll.sel].inst = true
 
-				pluginsP[scroll.sel].inst = true
-
-				for i=1,scroll.maxim do
-					if pluginsP[i].inst then
-						if files.exists(PMounts[selector].."pspemu/seplugins/"..pluginsP[i].txt) then
-							del_psp_plugin(PMounts[selector], pluginsP[i])
-							if back2 then back2:blit(0,0) end
-								message_wait(pluginsP[i].showname.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
-							os.delay(750)
+					for i=1,scroll.maxim do
+						if pluginsP[i].inst then
+							if files.exists(PMounts[selector].."pspemu/seplugins/"..pluginsP[i].txt) then
+								del_psp_plugin(PMounts[selector], pluginsP[i])
+								if back2 then back2:blit(0,0) end
+									message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
+								os.delay(750)
+							end
 						end
-					end					
+					end
+					for i=1,scroll.maxim do
+						pluginsP[i].inst = false
+					end
 				end
-				for i=1,scroll.maxim do
-					pluginsP[i].inst = false
-				end
-
 			end
 
 		end

@@ -85,19 +85,7 @@ end
 function psp_ctrls()
 
 	local selector,limit = 1,8
-	local psp_plugins = {
 
-		--PSP game.txt
-		{ name = "Grand Theft Auto Remastered",		path = "gta_remastered.prx" },
-		{ name = "Grand Theft Auto Remastered V2",	path = "gta_remastered_v2.prx" },
-		{ name = "Kingdom Hearts Remastered",		path = "khbbs_remastered.prx" },
-		{ name = "Metal Gear Solid Remastered",		path = "mgs_remastered.prx" },
-		{ name = "Prince Of Persia Remastered",		path = "pop_remastered.prx" },
-		{ name = "Resistance Remastered",			path = "resistance_remastered.prx" },
-		{ name = "SplinterCell Remastered",			path = "splintercell_remastered.prx" },
-		{ name = "Tomb Raider Remastered",			path = "tombraider_remastered.prx" },
-		{ name = "Warriors Remastered",				path = "warriors_remastered.prx" },
-	}
 	if #psp_plugins < limit then limit = #psp_plugins end
 	local scroll = newScroll(psp_plugins, limit)
 	local xscroll = 10
@@ -112,6 +100,8 @@ function psp_ctrls()
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["PSPCTRLS_TITLE"],1.2,color.white,0x0,__ACENTER)
+
+		screen.print(13, 65, " ("..scroll.maxim..")", 1, color.yellow, 0x0)
 
 		--Partitions
 		local xRoot = 700
@@ -142,10 +132,12 @@ function psp_ctrls()
 		local pos_height = math.max(h/scroll.maxim, limit)
 		draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
-		if screen.textwidth(LANGUAGE["PSPCTRLS_DESC_ALL"]) > 925 then
-			xscroll = screen.print(xscroll, 400, LANGUAGE["PSPCTRLS_DESC_ALL"],1,color.white,color.blue,__SLEFT,935)
-		else
-			screen.print(480, 400, LANGUAGE["PSPCTRLS_DESC_ALL"],1,color.white,color.blue,__ACENTER)
+		if psp_plugins[scroll.sel].desc then
+			if screen.textwidth(psp_plugins[scroll.sel].desc) > 925 then
+				xscroll = screen.print(xscroll, 400, psp_plugins[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
+			else
+				screen.print(480, 400, psp_plugins[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
+			end
 		end
 
 		if buttonskey2 then buttonskey2:blitsprite(900,448,2) end
@@ -171,7 +163,7 @@ function psp_ctrls()
 
 		--------------------------	Controls	--------------------------
 
-		if buttons.released.cancel then break end
+		if buttons.cancel then break end
 
 		--L/R
 		if buttons.released.l or buttons.released.r then
@@ -182,21 +174,7 @@ function psp_ctrls()
 
 		--Exit
 		if buttons.start then
-			if change then ReloadConfig = false end
-			if ReloadConfig then
-				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-			end
-
-			if change then
-				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(250)
-				buttons.homepopup(1)
-				power.restart()
-			end
-
-			os.delay(250)
-			buttons.homepopup(1)
-			os.exit()
+			exit_bye_bye()
 		end
 
 		if scroll.maxim > 0 then
@@ -212,6 +190,7 @@ function psp_ctrls()
 
 			if buttons.accept then
 
+				files.mkdir(PMounts[selector].."pspemu/seplugins/")
 				if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
 					files.new(PMounts[selector].."pspemu/seplugins/game.txt")
 				end
@@ -250,28 +229,34 @@ function psp_ctrls()
 				end
 			end
 
+
+
+			--Pendiente README para Remastered Plugins for PSP
+			--link = "https://github.com/TheOfficialFloW/RemasteredControls/raw/master/README.md",
+
 			--del plugins
 			if buttons.triangle then
+				if os.dialog("\n\n"..LANGUAGE["UNINSTALLP_QUESTION"], LANGUAGE["MENU_PSP"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
+					psp_plugins[scroll.sel].inst = true
 
-				psp_plugins[scroll.sel].inst = true
-
-				for i=1,scroll.maxim do
-					if psp_plugins[i].inst then
-						if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-							delete_psp_plugin(PMounts[selector], psp_plugins[i])
-							if back2 then back2:blit(0,0) end
-								message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
-							os.delay(750)
+					for i=1,scroll.maxim do
+						if psp_plugins[i].inst then
+							if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+								delete_psp_plugin(PMounts[selector], psp_plugins[i])
+								if back2 then back2:blit(0,0) end
+									message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
+								os.delay(750)
+							end
 						end
-					end					
-				end
-				for i=1,scroll.maxim do
-					psp_plugins[i].inst = false
-				end
+					end
+					for i=1,scroll.maxim do
+						psp_plugins[i].inst = false
+					end
 
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
-				os.delay(1500)
+					if back2 then back2:blit(0,0) end
+						message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
+					os.delay(1500)
+				end
 			end
 
 		end

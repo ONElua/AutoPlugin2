@@ -75,17 +75,21 @@ function pluginsmanager()
 		if back2 then back2:blit(0,0) end
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
-		screen.print(950, 12, "ur0:/", 1, color.white, color.blue, __ARIGHT)
+		draw.fillrect(870,0,90,40, color.green:a(90))
+		screen.print(900, 12, "ur0:", 1, color.white, color.blue, __ALEFT)
 
-		--draw.fillrect(0,40,960,350,color.shine:a(25))
-
-		screen.print(13, 20, string.format("*%s", tostring(sections[over])), 1, color.yellow, 0x0)
+		screen.print(13, 20, " ("..scroll.maxim..")".."  "..string.format("*%s", tostring(sections[over])), 1, color.yellow, 0x0)
 		
 		if scroll.maxim > 0 then
 			local y = yi
 			for i = scroll.ini, scroll.lim do
 				if i == scroll.sel then
 					draw.offsetgradrect(0, y-10, 940, 35, color.shine:a(75), color.shine:a(135), 0x0, 0x0, 21)
+
+					if plugs[sections[over]][i].is_sys then
+						screen.print(480, 405, LANGUAGE["UNINSTALLP_SYSTEM_PLUGIN"], 1.0, color.yellow, 0x0, __ACENTER)
+					end
+
 					if plugs[sections[over]][i].desc then
 						if screen.textwidth(plugs[sections[over]][i].desc) > 925 then
 							xscr1 = screen.print(xscr1, 405, plugs[sections[over]][i].desc, 1, color.green, 0x0, __SLEFT, 935)
@@ -93,8 +97,13 @@ function pluginsmanager()
 							screen.print(480, 405, plugs[sections[over]][i].desc, 1.0, color.green, 0x0, __ACENTER)
 						end
 					end
+
+					if not plugs[sections[over]][i].exists then
+						screen.print(480, 440, LANGUAGE["MISSING_PLUGIN"], 1.0, color.yellow, 0x0, __ACENTER)
+					end
+
 				end
-				if plugs[sections[over]][i].is_sys then ccolor = color.red
+				if plugs[sections[over]][i].is_sys then ccolor = color.yellow
 				elseif not plugs[sections[over]][i].exists then ccolor = color.orange 
 				else ccolor = color.white 
 				end
@@ -102,7 +111,7 @@ function pluginsmanager()
 				y += 40
 			end
 		else
-			screen.print(20, yi, "No Plugs in this section")
+			screen.print(20, yi, LANGUAGE["UNINSTALLP_NO_PLUGINS"] )
 		end
 
 		-- Draw Scroll Bar
@@ -114,19 +123,19 @@ function pluginsmanager()
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 		end
 
-		if scroll.maxim > 0 and not plugs[sections[over]][scroll.sel].is_sys then
-			if buttonskey then buttonskey:blitsprite(5,448,saccept) end
-			screen.print(30,450,LANGUAGE["UNINSTALLP_PLUGIN"],1,color.white,color.black,__ALEFT)
-		end
+		--if scroll.maxim > 0 and not plugs[sections[over]][scroll.sel].is_sys then
+		--	if buttonskey then buttonskey:blitsprite(5,448,saccept) end
+		--	screen.print(30,450,LANGUAGE["UNINSTALLP_PLUGIN"],1,color.white,color.black,__ALEFT)
+		--end
 
-		if buttonskey2 then buttonskey2:blitsprite(5,475,0) end
-		if buttonskey2 then buttonskey2:blitsprite(35,475,1) end
-		screen.print(70,475,LANGUAGE["UNINSTALLP_LEFTRIGHT_SECTION"],1,color.white,color.black,__ALEFT)
+		if buttonskey2 then buttonskey2:blitsprite(5,498,0) end
+		if buttonskey2 then buttonskey2:blitsprite(35,498,1) end
+		screen.print(70,500,LANGUAGE["UNINSTALLP_LEFTRIGHT_SECTION"],1,color.white,color.black,__ALEFT)
 
 		screen.print(950, 435, "("..over.."/"..#sections..")",1,color.yellow, 0x0,__ARIGHT)
 
-		if buttonskey2 then buttonskey:blitsprite(5,498,2) end
-		screen.print(30,500, "Add new plugin",1,color.white,color.black,__ALEFT)
+		--if buttonskey2 then buttonskey:blitsprite(5,498,2) end
+		--screen.print(30,500, "Add new plugin",1,color.white,color.black,__ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(5,523,scancel) end
 		screen.print(35,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
@@ -209,7 +218,8 @@ function pluginsmanager()
 						end
 					end
 					if #need_second > 0 then
-						if os.dialog("Los plugs:\n"..(table.concat(msg_need, '\n')).."\nrequieren el plug "..(path2)..", remover igual y borrar todos los plugs que dependen?", "Question", __DIALOG_MODE_OK_CANCEL, __ACENTER) then
+						if os.dialog(path2.." "..ENGLISH_US["UNINSTALLP_QUESTION_NEED"].."\n"..(table.concat(msg_need, '\n'))..LANGUAGE["UNINSTALLP_PLUGINS_NEED"],
+								LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], __DIALOG_MODE_OK_CANCEL, __ACENTER) then
 							for i=1, #need_second do
 								local _path = need_second[i].path or ""
 								local _section = need_second[i].section or ""
@@ -253,41 +263,13 @@ function pluginsmanager()
 			
 		end
 		if buttons.cancel then 
-			if change or ReloadConfig then 
-				if os.dialog("You wish return and save all changes?", "Save Changes", __DIALOG_MODE_OK_CANCEL, __ACENTER) then -- Experimental
-					if change or ReloadConfig then tai.sync() end
-					if not change and ReloadConfig then os.taicfgreload() end
-					change = false
-					ReloadConfig = false
-					buttons.homepopup(1)
-					break;
-				else  -- Experimental! xD
-					tai.load() -- Lost all changes in all sections of APII.
-					change = false
-					ReloadConfig = false
-					buttons.homepopup(1)
-					break;
-				end
-			else
-				break
-			end
+			break
 		end
 
 		if buttons.start then
-			if change or ReloadConfig then tai.sync() end
-			if not change and ReloadConfig then
-				if os.taicfgreload() != 1 then change = true else os.message(LANGUAGE["STRINGS_CONFIG_SUCCESS"]) end
-			end
-			if change then
-				os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(250)
-				buttons.homepopup(1)
-				power.restart()
-			end
-			os.delay(250)
-			buttons.homepopup(1)
-			os.exit()
+			exit_bye_bye()
 		end
+
 		if buttons.triangle then 
 			--explorer_plugin()
 		end
