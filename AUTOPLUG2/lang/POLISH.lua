@@ -389,6 +389,7 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną
 --Comunes
 POLISH["MISSING_PLUGIN"] =                          "The plugin is missing!"
 POLISH["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
+POLISH["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 POLISH["STRING_UNSAFE_MODE"] =                      "NIEBEZPIECZNY TRYB jest wymagany dla tego Homebrew!"
 POLISH["STRING_PSVITA_RESTART"] =                   "Twoja PSVita zostanie uruchomiona ponownie"
 POLISH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

@@ -389,6 +389,7 @@ GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden 
 --Comunes
 GERMAN["MISSING_PLUGIN"] =                          "The plugin is missing!"
 GERMAN["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
+GERMAN["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 GERMAN["STRING_UNSAFE_MODE"] =                      "Der Modus 'UNSAFE MODE' ist erforderlich für diese Homebrew!"
 GERMAN["STRING_PSVITA_RESTART"] =                   "Die PS Vita wird neu gestartet"
 GERMAN["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

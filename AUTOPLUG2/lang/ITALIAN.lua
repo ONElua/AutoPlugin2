@@ -389,6 +389,7 @@ ITALIAN["INSTALLP_DESC_RESCREENY"] =                    "Plugin che permette di 
 --Comunes
 ITALIAN["MISSING_PLUGIN"] =                             "The plugin is missing!"
 ITALIAN["REPAIR_CONFIG_TXT"] =                          "Henkaku plugins fixed in tai/config.txt"
+ITALIAN["REPAIR_CONFIG_SHARPSCALE"] =                   "Fix Sharpscale config crash!"
 ITALIAN["STRING_UNSAFE_MODE"] =                         "MODALITA' NON SICURA è richiesto per questo Homebrew!"
 ITALIAN["STRING_PSVITA_RESTART"] =                      "La tua PSVita sarà riavviata"
 ITALIAN["STRINGS_CONFIG_SUCCESS"] =		                "Reload taiHEN config.txt"

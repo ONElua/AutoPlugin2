@@ -389,6 +389,7 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 --Comunes
 CHINESE_S["MISSING_PLUGIN"] =                          "找不到插件!"
 CHINESE_S["REPAIR_CONFIG_TXT"] =                       "已修复变革插件配置文件 tai/config.txt"
+CHINESE_S["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 CHINESE_S["STRING_UNSAFE_MODE"] =                      "此程序需要开启不安全模式 (UNSAFE MODE)!"
 CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重启"
 CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "重新载入大变革 config.txt"

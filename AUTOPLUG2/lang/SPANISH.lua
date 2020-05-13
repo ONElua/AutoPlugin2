@@ -389,6 +389,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 --Comunes
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"
 SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arreglados en tai/config.txt"
+SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "Fix Sharpscale config crash!"
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
 SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Recarga el config.txt de taiHEN "

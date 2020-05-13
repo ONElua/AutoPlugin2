@@ -195,7 +195,7 @@ function tai.repair()
 			elseif #v.prx < 1 then -- No have any plug?, remove!!!!
 				local id = tai.gameid[k].section
 				--print(string.format("Delete no plug: %s | hold: %s\n", tostring(section), tostring(id == "KERNEL" and id == "main" and id == "ALL" and id == "NPXS10015" and id == "NPXS10016")))
-				if id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
+				if id[1] != "!" and id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
 					tai.delete_sect(v) -- Remove all sections of id...
 					tai.parse()
 					return tai.repair() -- recursive! :D
@@ -289,6 +289,30 @@ function tai.put(id, path, pos)
 
 	return false
 
+end
+
+function tai.putBeforeSection(section, id, path, pos)
+	if tai.gameid[id] then
+		tai.delete_sect(tai.gameid[id])
+		tai.parse()
+	end
+	if tai.gameid[section] then
+		--search
+		local len = #tai.raw
+		for i=1, len do
+			local line = tai.raw[i]
+			if line:sub(2) == section then
+				table.insert(tai.raw, i, path)
+				table.insert(tai.raw, i, id)
+				tai.parse() -- Refresh all ids lines etc..
+				--tai.debug()
+				return true
+			end
+		end
+		return false
+	else
+		return tai.put(id, path, pos)
+	end
 end
 
 --[[

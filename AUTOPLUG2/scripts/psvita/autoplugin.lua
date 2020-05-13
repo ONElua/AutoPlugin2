@@ -37,8 +37,10 @@ function plugins_installation(sel)
 				__file = ""
 			end
 
+			if plugins[sel].path == "sharpscale.skprx" then
+				tai.putBeforeSection("ALL","!AKRK00005","")
 			--Checking plugin Batt (only 1 of them)
-			if plugins[sel].path == "shellbat.suprx" then
+			elseif plugins[sel].path == "shellbat.suprx" then
 				idx = tai.find("main", "shellsecbat.suprx")
 				if idx then
 					if os.message(LANGUAGE["INSTALLP_QUESTION_SHELLSECBAT"],1) == 1 then

@@ -389,6 +389,7 @@ ENGLISH_US["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will b
 --Comunes
 ENGLISH_US["MISSING_PLUGIN"] =                          "The plugin is missing!"
 ENGLISH_US["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
+ENGLISH_US["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 ENGLISH_US["STRING_UNSAFE_MODE"] =                      "UNSAFE MODE is required for this Homebrew!"
 ENGLISH_US["STRING_PSVITA_RESTART"] =                   "Your PSVita will restart"
 ENGLISH_US["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"

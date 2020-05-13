@@ -389,6 +389,7 @@ JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリー�
 --Comunes
 JAPANESE["MISSING_PLUGIN"] =                            "The plugin is missing!"
 JAPANESE["REPAIR_CONFIG_TXT"] =                         "Henkaku plugins fixed in tai/config.txt"
+JAPANESE["REPAIR_CONFIG_SHARPSCALE"] =                  "Fix Sharpscale config crash!"
 JAPANESE["STRING_UNSAFE_MODE"] =                        "このHomebrewにはUNSAFEモードが必要です！"
 JAPANESE["STRING_PSVITA_RESTART"] =                     "PSVitaが再起動します"
 JAPANESE["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
