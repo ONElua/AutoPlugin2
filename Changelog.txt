@@ -1,3 +1,6 @@
+# v1.07
+- Minnor fix sharpscale install.
+
 # v1.06
 - Lib tai updated.
 - Reimplemented the new tai library in all parts of the application.
