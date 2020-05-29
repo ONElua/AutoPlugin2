@@ -389,7 +389,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Скриншоты буд�
 --Comunes
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"
 RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, хранящиеся в tai/config.txt"
-RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
+RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"
 RUSSIAN["STRING_UNSAFE_MODE"] =                      "Необходимо разрешить небезопасные приложения в настройках HENkaku!"
 RUSSIAN["STRING_PSVITA_RESTART"] =                   "Система PS Vita будет перезагружена"
 RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "Перезагрузить taiHEN config.txt"
