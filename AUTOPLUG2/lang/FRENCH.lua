@@ -387,9 +387,9 @@ FRENCH["INSTALLP_DESC_MACSPOOF"] =                  "Un plugin permettant de spo
 FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la PSVita seront enregistrées dans un dossier portant le nom du jeu."
 
 --Comunes
-FRENCH["MISSING_PLUGIN"] =                          "The plugin is missing!"
-FRENCH["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
-FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
+FRENCH["MISSING_PLUGIN"] =                          "Le plugin est absent !"
+FRENCH["REPAIR_CONFIG_TXT"] =                       "Correction des plugins Henkaku dans tai/config.txt"
+FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "Correction du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
 FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
