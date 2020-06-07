@@ -1,4 +1,4 @@
-plugins = {
+Online_Plugins = {
 
 --Kernel
 { name = "NoNpDrm by TheOfficialFloW v1.2",	path = "nonpdrm.skprx",	section = "KERNEL",	version = "0001", desc = LANGUAGE["INSTALLP_DESC_NONPDRM"], KEY = "INSTALLP_DESC_NONPDRM", link = "https://raw.githubusercontent.com/TheOfficialFloW/NoNpDrm/master/readme.md", },
