@@ -51,6 +51,7 @@ plugins = {
 { name = "Cpu Affinity Changer by GrapheneCt v2.0", path = "CpuAffinityChanger.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CPUAFFCHANGER"], KEY = "INSTALLP_DESC_CPUAFFCHANGER", link = "https://raw.githubusercontent.com/GrapheneCt/Affinity-Changer/master/README.md", },
 { name = "Sharpscale by cuevavirus v1.3.0", path = "sharpscale.skprx", section = "KERNEL", version = "0004", desc = LANGUAGE["INSTALLP_DESC_SHARPSCALE"], KEY = "INSTALLP_DESC_SHARPSCALE", link = "https://raw.githubusercontent.com/cuevavirus/Sharpscale/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "sharpscale_config.vpk"), },
 { name = "RapidMenu by cuevavirus r1", path = "rapidmenu.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RAPIDMENU"], KEY = "INSTALLP_DESC_RAPIDMENU", link = "https://raw.githubusercontent.com/cuevavirus/Rapidmenu/master/README.md", },
+{ name = "EmergencyMount by teakhanirons V1.0", path = "EmergencyMount.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_EMERGENCY"], KEY = "INSTALLP_DESC_EMERGENCY", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },
@@ -78,6 +79,7 @@ plugins = {
 { name = "TransparentImpose v1.0 by GrapheneCt", path = "TrImpose.suprx", section = "main", config = "trimpose.txt", configpath = "ur0:data/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TRIMPOSE"], KEY = "INSTALLP_DESC_TRIMPOSE", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
 { name = "Quietshot v1.0 by cuevavirus", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT", link = "https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md", },
 { name = "ftpeverywhere v1.0 by teakhanirons", path = "ftpeverywhere.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "NoSleep.vpk"), },
+{ name = "Vita-BootSound v1.0 by teakhanirons", path = "bootsound.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
 
 --All
 { name = "PSV-VSH MENU by joel16 v3.4", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
