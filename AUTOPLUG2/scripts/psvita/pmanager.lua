@@ -21,6 +21,7 @@ function searchPlugByPath(p, sect, path)
 end
 
 function pluginsmanager()
+
 	local sections = {"KERNEL", "main", "ALL"}
 	local plugs = {}
 	local bridge_s = {}
@@ -28,8 +29,14 @@ function pluginsmanager()
 	local tb_cop = {}
 	update_translations(plugins, tb_cop)
 
+	for k = #tb_cop,1,-1 do
+		if tb_cop[k].REMOVE then
+			table.remove(tb_cop,k)
+		end
+	end
+
 	table.insert(tb_cop, { name = "Kuio by Rinnegatamante", path = "kuio.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_KUIO"] } )
-	table.insert(tb_cop, { name = "MiniVitaTV by TheOfficialFloW vbeta0.2", path = "minivitatv.skprx", section = "KERNEL",  path2 = "ds3.skprx", section2 = "KERNEL" })
+	table.insert(tb_cop, { name = "ds3 (Complemento del plugin MiniVita TV)", path = "ds3.skprx", section = "KERNEL", path2 = "minivitatv.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV_DS3"] })
 	table.insert(tb_cop, { name = "iTLS-Enso by SKGleba", path = "itls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_ITLSENSO"] })
 	table.insert(tb_cop, { name = "Yamt-Vita by SKGleba", path = "yamt.suprx", section = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_YAMT"] })
 	table.insert(tb_cop, { name = "StorageMgr CelesteBlue", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SD2VITA"] })
@@ -46,23 +53,29 @@ function pluginsmanager()
 		if not plugs[sections[y]] then plugs[sections[y]] = {} end -- empty
 		if not bridge_s[sections[y]] then bridge_s[sections[y]] = {} end -- empty
 		for x=1, #plugs[sections[y]] do
+
 			plugs[sections[y]][x].section = sections[y]
 			plugs[sections[y]][x].exists = files.exists(plugs[sections[y]][x].path)
 			plugs[sections[y]][x].file = files.nopath(plugs[sections[y]][x].path:lower())
 			bridge_s[sections[y]][plugs[sections[y]][x].file] = {s = sections[y], i = x}
+
 			if not bridge_n[plugs[sections[y]][x].file] then bridge_n[plugs[sections[y]][x].file] = {c = 1} end
+
 			bridge_n[plugs[sections[y]][x].file].c += 1
 			bridge_n[plugs[sections[y]][x].file][sections[y]] = x
 			--print(string.format("A [%s]: %s|%d", plugs[sections[y]][x].file, sections[y], x))
 			for k=1, #tb_cop do
+				os.message("File: "..plugs[sections[y]][x].file.."\n"..tb_cop[k].path:lower())
 				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
 					plugs[sections[y]][x].bridge = tb_cop[k]
 					plugs[sections[y]][x].desc = tb_cop[k].desc
+					--os.message("Bridge: "..plugs[sections[y]][x].bridge.name)
 					break;
 				end
 			end
 		end
 	end
+
 	local maxv = 8
 	local xscr1 = 10
 	local yi = 70
@@ -123,11 +136,6 @@ function pluginsmanager()
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 		end
 
-		--if scroll.maxim > 0 and not plugs[sections[over]][scroll.sel].is_sys then
-		--	if buttonskey then buttonskey:blitsprite(5,448,saccept) end
-		--	screen.print(30,450,LANGUAGE["UNINSTALLP_PLUGIN"],1,color.white,color.black,__ALEFT)
-		--end
-
 		if buttonskey2 then buttonskey2:blitsprite(5,498,0) end
 		if buttonskey2 then buttonskey2:blitsprite(35,498,1) end
 		screen.print(70,500,LANGUAGE["UNINSTALLP_LEFTRIGHT_SECTION"],1,color.white,color.black,__ALEFT)
@@ -169,6 +177,7 @@ function pluginsmanager()
 			
 			if buttons.accept and not plugs[sections[over]][scroll.sel].is_sys then
 				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
+
 					-- Special Process
 					if plugs[sections[over]][scroll.sel].file == "yamt.suprx" then --Yamt
 						change = true
@@ -194,19 +203,31 @@ function pluginsmanager()
 					if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
 						section1 = plugs[sections[over]][scroll.sel].bridge.section
 						path1 = plugs[sections[over]][scroll.sel].bridge.path:lower()
+						--os.message(path1.."\n"..section1)
 						if plugs[sections[over]][scroll.sel].bridge.section2 then
 							section2 = plugs[sections[over]][scroll.sel].bridge.section2
 							path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
+							--os.message(path2.."\n"..section2)
 						end
 					end
+
 					local idx = searchPlugByPath(plugs, section1, path1);
 					if idx then
+						os.message("idx: "..path1.."\n"..section1)
+						--Delete plugin
+						if path1 then
+							--os.message(path1)
+							if path1 != "adrenaline_kernel.skprx" then
+								--files.delete(plugs[section1][idx].path)
+							end
+						end
 						--print(string.format("E [%s]: %s|%d", path1, section1, (idx or 300)))
 						--print(plugs[section1][idx].path)
 						tai.del(section1, plugs[section1][idx].path)
 						table.remove(plugs[section1], idx)
 						bridge_n[path1][section1] = nil
 					end
+
 					ReloadConfig = true
 					change = change or section1:lower() == "main" or section1:lower() == "kernel" or section2:lower() == "main" or section2:lower() == "kernel"
 					local need_second = {}

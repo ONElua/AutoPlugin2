@@ -179,35 +179,36 @@ function npdrm_free()
 
 			--install plugin
 			if buttons.accept then
-				
-				files.copy("resources/pkgj/npdrm_free.prx", PMounts[selector].."pspemu/seplugins/")
-				if files.exists(PMounts[selector].."pspemu/seplugins/npdrm_free.prx") then
+				if not change then buttons.homepopup(0) end
+
+					files.copy("resources/pkgj/npdrm_free.prx", PMounts[selector].."pspemu/seplugins/")
+					if files.exists(PMounts[selector].."pspemu/seplugins/npdrm_free.prx") then
+						if back2 then back2:blit(0,0) end
+							message_wait(LANGUAGE["NPDRMFREE_INSTALLED"])
+						os.delay(1500)
+					end
+
+					--Update vsh.txt
+					if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
+						insert_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt")
+					else
+						files.copy("resources/pkgj/vsh.txt", PMounts[selector].."pspemu/seplugins/")
+					end
 					if back2 then back2:blit(0,0) end
-						message_wait(LANGUAGE["NPDRMFREE_INSTALLED"])
+						message_wait(LANGUAGE["NPDRMFREE_VSH_UPDATED"])
 					os.delay(1500)
-				end
 
-				--Update vsh.txt
-				if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
-					insert_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt")
-				else
-					files.copy("resources/pkgj/vsh.txt", PMounts[selector].."pspemu/seplugins/")
-				end
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["NPDRMFREE_VSH_UPDATED"])
-				os.delay(1500)
-
-				--Update game.txt
-				if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-					insert_plugin(PMounts[selector].."pspemu/seplugins/game.txt")
-							
-				else
-					files.copy("resources/pkgj/game.txt", PMounts[selector].."pspemu/seplugins/")
-				end
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["NPDRMFREE_GAME_UPDATED"])
-				os.delay(1500)
-
+					--Update game.txt
+					if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+						insert_plugin(PMounts[selector].."pspemu/seplugins/game.txt")
+	
+					else
+						files.copy("resources/pkgj/game.txt", PMounts[selector].."pspemu/seplugins/")
+					end
+					if back2 then back2:blit(0,0) end
+						message_wait(LANGUAGE["NPDRMFREE_GAME_UPDATED"])
+					os.delay(1500)
+				if not change then buttons.homepopup(1) end
 			end
 
 			--del plugins

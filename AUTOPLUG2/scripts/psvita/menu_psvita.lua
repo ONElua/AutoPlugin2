@@ -18,6 +18,7 @@ dofile("scripts/psvita/sd2vita.lua")
 dofile("scripts/psvita/pmanager.lua")
 dofile("scripts/psvita/autoplugin.lua")
 dofile("scripts/psvita/plugins_online.lua")
+dofile("scripts/psvita/p4golden.lua")
 
 function menu_ps()
 
@@ -37,6 +38,10 @@ function menu_ps()
 		plugins_online2()
 	end
 
+	local p4_callback = function ()
+		P4Golden_HD()
+	end
+
 	if tai.find("KERNEL", "storagemgr.skprx") then
 		LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"] 		= LANGUAGE["MENU_PSVITA_CONFIGURE_SD2VITA"]
 		LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] 	= LANGUAGE["MENU_PSVITA_CONFIG_SD2VITA_DESC"]
@@ -46,6 +51,7 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
+		{ text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback },
 	}
 	if tonumber(cont_global:get()) == 0 then
 		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
@@ -63,6 +69,7 @@ function menu_ps()
 			{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 			{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 			{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
+			{ text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback },
 		}
 		if tonumber(cont_global:get()) == 0 then
 			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
@@ -94,8 +101,14 @@ function menu_ps()
 		screen.flip()
 
 		--Controls
-		if buttons.up or buttons.analogly < -60 then scroll:up() end
-		if buttons.down or buttons.analogly > 60 then scroll:down() end
+		if buttons.left or buttons.right then xscroll = 10 end
+
+        if buttons.up or buttons.analogly < -60 then
+			if scroll:up() then xscroll = 10 end
+		end
+        if buttons.down or buttons.analogly > 60 then
+			if scroll:down() then xscroll = 10 end
+		end
 
 		if buttons.cancel then break end
 		if buttons.accept then menu[scroll.sel].funct() end

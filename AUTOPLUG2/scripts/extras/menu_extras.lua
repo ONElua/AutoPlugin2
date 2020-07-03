@@ -13,12 +13,15 @@
 dofile("scripts/extras/pkgj.lua")
 dofile("scripts/extras/customsplash.lua")
 dofile("scripts/extras/translate.lua")
+
 files.mkdir("ux0:data/AUTOPLUGIN2/vpks/")
 
 function download_install(url,name)
+
 	if back2 then back2:blit(0,0) end
 		message_wait()
 	os.delay(250)
+
 	files.delete("tmp")
 	local onNetGetFileOld = onNetGetFile
 	onNetGetFile = nil
@@ -56,7 +59,12 @@ function download_install(url,name)
 	else
 		os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
 	end
+
+	--Clean
+	files.delete("ux0:data/AUTOPLUGIN2/vpks/")
+	files.delete("tmp")
 	__file = ""
+
 end
 
 function menu_extras()
@@ -127,12 +135,10 @@ function menu_extras()
 
 	local itls_callback = function ()
 		download_install("https://github.com/SKGleba/iTLS-Enso/releases/latest/", "iTLS-Enso.vpk")
-		files.delete("ux0:data/AUTOPLUGIN2/vpks/")
 	end
 
 	local batteryfixer_callback = function ()
 		download_install("https://github.com/SKGleba/PSP2-batteryFixer/releases/latest/", "batteryFixer.vpk")
-		files.delete("ux0:data/AUTOPLUGIN2/vpks/")
 	end
 
 	local resetconfig_callback = function ()
@@ -141,7 +147,6 @@ function menu_extras()
 			tai.load()
 		end
 	end
-
 
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
@@ -167,8 +172,6 @@ function menu_extras()
 	if idx then
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSP_IMPOSE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSPIMPOSE_DESC"],	funct = customTransImpose_callback } )
 	end
-
-	--table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSLATE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSLATE_DESC"],	funct = translate_callback} )
 
 	local scroll = newScroll(menu,#menu)
 

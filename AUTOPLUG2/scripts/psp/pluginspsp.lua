@@ -194,29 +194,30 @@ function pluginsPSP()
 
 			if buttons.accept then
 
-				files.mkdir(PMounts[selector].."pspemu/seplugins/")
-				if not files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
-					files.new(PMounts[selector].."pspemu/seplugins/vsh.txt")
-				end
-				if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-					files.new(PMounts[selector].."pspemu/seplugins/game.txt")
-				end
-
-				pluginsP[scroll.sel].inst = true
-
-				for i=1, scroll.maxim do
-					if pluginsP[i].inst then
-						add_psp_plugin(PMounts[selector], pluginsP[i])
-						if back2 then back2:blit(0,0) end
-							message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
-						os.delay(750)
+				if not change then buttons.homepopup(0) end
+					files.mkdir(PMounts[selector].."pspemu/seplugins/")
+					if not files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
+						files.new(PMounts[selector].."pspemu/seplugins/vsh.txt")
 					end
-				end
+					if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+						files.new(PMounts[selector].."pspemu/seplugins/game.txt")
+					end
 
-				for i=1,scroll.maxim do
-					pluginsP[i].inst = false
-				end
+					pluginsP[scroll.sel].inst = true
 
+					for i=1, scroll.maxim do
+						if pluginsP[i].inst then
+							add_psp_plugin(PMounts[selector], pluginsP[i])
+							if back2 then back2:blit(0,0) end
+								message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+							os.delay(750)
+						end
+					end
+
+					for i=1,scroll.maxim do
+						pluginsP[i].inst = false
+					end
+				if not change then buttons.homepopup(1) end
 			end
 			
 			--Mark/Unmark

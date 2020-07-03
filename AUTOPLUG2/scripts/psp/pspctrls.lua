@@ -189,31 +189,31 @@ function psp_ctrls()
 			end
 
 			if buttons.accept then
-
-				files.mkdir(PMounts[selector].."pspemu/seplugins/")
-				if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-					files.new(PMounts[selector].."pspemu/seplugins/game.txt")
-				end
-
-				psp_plugins[scroll.sel].inst = true
-
-				for i=1, scroll.maxim do
-					if psp_plugins[i].inst then
-						insert_psp_plugin(PMounts[selector], psp_plugins[i])
-						if back2 then back2:blit(0,0) end
-							message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
-						os.delay(750)
+				if not change then buttons.homepopup(0) end
+					files.mkdir(PMounts[selector].."pspemu/seplugins/")
+					if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+						files.new(PMounts[selector].."pspemu/seplugins/game.txt")
 					end
-				end
 
-				for i=1,scroll.maxim do
-					psp_plugins[i].inst = false
-				end
+					psp_plugins[scroll.sel].inst = true
 
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
-				os.delay(1500)
+					for i=1, scroll.maxim do
+						if psp_plugins[i].inst then
+							insert_psp_plugin(PMounts[selector], psp_plugins[i])
+							if back2 then back2:blit(0,0) end
+								message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+							os.delay(750)
+						end
+					end
 
+					for i=1,scroll.maxim do
+						psp_plugins[i].inst = false
+					end
+
+					if back2 then back2:blit(0,0) end
+						message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
+					os.delay(1500)
+				if not change then buttons.homepopup(1) end
 			end
 			
 			--Mark/Unmark

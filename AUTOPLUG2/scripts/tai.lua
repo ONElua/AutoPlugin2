@@ -326,7 +326,7 @@ function tai.del(id, path)
 
 	if idx then
 		table.remove(tai.raw, tai.gameid[id].prx[idx].line)
-		if #tai.gameid[id].prx == 1 and (id != "KERNEL" or id != "main" or id != "ALL" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx!
+		if #tai.gameid[id].prx == 1 and (id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx!
 			table.remove(tai.raw, tai.gameid[id].line[1])
 		end
 		tai.parse() -- Refresh all ids lines etc..
@@ -352,21 +352,27 @@ function tai.sync(path)
 		tai.del("KERNEL", "ur0:tai/henkaku.suprx")
 		
 		local force_path = {
-		"ur0:tai/repatch_4.skprx",
-		"ur0:tai/repatch.skprx",
-		"ur0:tai/0syscall6.skprx",
-		"ur0:tai/reF00D.skprx",
-		"ur0:tai/nonpdrm.skprx",
-		"ur0:tai/gamesd.skprx",
-		"ur0:tai/storagemgr.skprx"
+		  { path = "ur0:tai/udcd_uvc_lcd_off.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/udcd_uvc_oled_off.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/custom_warning.suprx", section = "main" },
+		  { path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/gamesd.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/storagemgr.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/EmergencyMount.skprx", section = "KERNEL" },
 		}
 		local force_state = {}
 		for i=1, #force_path do
-			force_state[i] = tai.del("KERNEL", force_path[i])
+			force_state[i] = tai.del(force_path[i].section, force_path[i].path)
 		end
 		for i=1, #force_path do
 			if force_state[i] then
-				tai.put("KERNEL", force_path[i], 1)
+				tai.put(force_path[i].section, force_path[i].path, 1)
 			end
 		end
 		files.write(path or tai.path, table.concat(tai.raw, '\n'))

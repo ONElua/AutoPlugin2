@@ -67,7 +67,6 @@ function img2splashbin(img,flag)
 end
 
 function customimgsplash()
-	path_tai = "ur0:/tai/"
 
 	local png, custom_boot = files.listfiles("ux0:CustomBootsplash/"), {}
 

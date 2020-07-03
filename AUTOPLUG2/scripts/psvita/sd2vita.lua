@@ -89,37 +89,32 @@ function install()
 		end
 	end
 
+	change = true
+	buttons.homepopup(0)
+
 	--delete if plugin gamesd.skprx
 	tai.del("KERNEL", "ur0:tai/gamesd.skprx")
 
-	if files.exists(tai.path) then
+	--Install plugin to tai folder
+	files.copy(path_plugins.."storagemgr.skprx", "ur0:tai")
+	files.copy(path_plugins.."storage_config.txt", "ur0:tai")
 
-		--Install plugin to tai folder
-		files.copy(path_plugins.."storagemgr.skprx", "ur0:tai")
-		files.copy(path_plugins.."storage_config.txt", "ur0:tai")
+	--Insert plugin to Config
+	tai.put("KERNEL", "ur0:tai/storagemgr.skprx", 1)
 
-		--Insert plugin to Config
-		tai.put("KERNEL", "ur0:tai/storagemgr.skprx", 1)
+	tai.sync()
 
-		tai.sync()
-
-		change = true
-		buttons.homepopup(0)
-
-		if back2 then back2:blit(0, 0) end
+	if back2 then back2:blit(0, 0) end
 		message_wait(LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"] .. "\n\n" .. LANGUAGE["STRING_INSTALLED"])
-		os.delay(2000)
+	os.delay(2000)
 
-		configure()
+	configure()
 
-		os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-		os.delay(150)
-		buttons.homepopup(1)
-		power.restart()
+	os.message(LANGUAGE["STRING_PSVITA_RESTART"])
+	os.delay(150)
+	buttons.homepopup(1)
+	power.restart()
 
-	else
-		os.message(LANGUAGE["STRING_MISSING_CONFIG"])
-	end
 end
 
 function configure()
