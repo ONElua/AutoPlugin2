@@ -1,0 +1,153 @@
+#
+# Uncharted: Golden Abyss
+#
+[PCSF00001, uncharted.self, 0x65389A26] # [EU 1.03]
+[PCSF00012, uncharted.self, 0x65389A26] # [EU 1.03]
+[PCSA00029, uncharted.self, 0x65389A26] # [US 1.03]
+[PCSD00001, uncharted.self, 0x65389A26] # [ASIA 1.03]
+@IB
+0:0x2155B4 t2_mov(1, 1, 0xE00000 - 7 * 1024 * 1024)
+0:0x22B552 t2_mov(1, 3, 0x1100000 + 7 * 1024 * 1024)
+1:0xE88 uint32(ib_w) . uint32(ib_h)
+0:0x923CC t2_mov(1, 1, ib_h)
+0:0x923D6 t2_mov(1, 3, ib_w)
+0:0x1F033E t2_mov(1, 2, ib_w) . t2_mov(1, 3, ib_h)
+0:0x1F045E t2_mov(1, 2, ib_w) . t2_mov(1, 3, ib_h)
+0:0x210986 t2_mov(1, 1, ib_w) . t2_mov(1, 2, ib_h)
+0:0x2109E8 t2_mov(1, 1, ib_w)
+0:0x2109EE t2_mov(1, 2, ib_h)
+0:0x210A32 t2_mov(1, 1, ib_w)
+0:0x210A38 t2_mov(1, 2, ib_h)
+0:0x210A8C t2_mov(1, 1, ib_w)
+0:0x210A94 t2_mov(1, 2, ib_h)
+0:0x210AF6 t2_mov(1, 1, ib_w)
+0:0x210AFE t2_mov(1, 2, ib_h)
+0:0x210B5E t2_mov(1, 1, ib_w)
+0:0x210B66 t2_mov(1, 2, ib_h)
+0:0x210BD8 t2_mov(1, 1, ib_w)
+0:0x210BE0 t2_mov(1, 2, ib_h)
+0:0x210CAC t2_mov(1, 4, ib_h)
+0:0x210CCC t2_mov(1, 3, ib_w)
+0:0x210D98 t2_mov(1, 3, ib_w * 2)
+0:0x210D2E t2_mov(1, 3, ib_w * 2)
+0:0x210E84 t2_mov(1, 3, ib_w)
+0:0x224D66 t2_mov(1, 10, ib_h)
+0:0x224D6A t2_mov(1, 1, ib_w)
+0:0x224D6E t2_mov(1, 2, ib_h)
+0:0x224DA2 t2_mov(1, 3, ib_w)
+0:0x224E16 t2_mov(1, 1, ib_w) . t2_mov(1, 2, ib_h)
+0:0x224E42 t2_mov(1, 3, ib_w)
+0:0x224E90 t2_mov(1, 1, ib_w)
+0:0x224E9A t2_mov(1, 2, ib_h)
+0:0x224EBA t2_mov(1, 3, ib_w)
+0:0x232798 t2_mov(1, 1, ib_w)
+0:0x2327A0 t2_mov(1, 2, ib_h)
+0:0x232B54 t2_mov(1, 1, ib_h)
+0:0x232B6A t2_mov(1, 3, ib_w)
+0:0x3C7E5A t2_mov(1, 1, ib_h)
+0:0x3C7E64 t2_mov(1, 3, ib_w)
+0:0x3CF310 t2_mov(1, 1, ib_h)
+0:0x3CF31A t2_mov(1, 3, ib_w)
+0:0x3F8A7E t2_mov(1, 1, ib_h)
+0:0x3F8A88 t2_mov(1, 3, ib_w)
+0:0x1F0B26 t3_mov(1, ib_w - 1)
+0:0x1F0B2C t3_mov(1, ib_h - 1)
+0:0x20BB76 t3_mov(1, ib_w - 1)
+0:0x20BB7C t3_mov(1, ib_h - 1)
+0:0x20BFD2 t3_mov(1, ib_w - 1)
+0:0x20BFD8 t3_mov(1, ib_h - 1)
+0:0x20F584 t3_mov(1, ib_w - 1)
+0:0x20F58C t3_mov(1, ib_h - 1)
+0:0x20F9FE t3_mov(1, ib_w - 1)
+0:0x20FA04 t3_mov(1, ib_h - 1)
+0:0x20FF68 t3_mov(1, ib_w - 1)
+0:0x20FF72 t3_mov(1, ib_h - 1)
+0:0x231604 t3_mov(1, ib_w - 1)
+0:0x231614 t3_mov(1, ib_h - 1)
+0:0x230818 t3_mov(0, ib_w - 1)
+0:0x230830 t3_mov(1, ib_h - 1)
+0:0x230B70 t3_mov(0, ib_w - 1)
+0:0x230B88 t3_mov(1, ib_h - 1)
+0:0x230FBA t3_mov(0, ib_w - 1)
+0:0x230FD2 t3_mov(1, ib_h - 1)
+0:0x2314BA t3_mov(0, ib_w - 1)
+0:0x2314DC t3_mov(1, ib_h - 1)
+0:0x23179C t3_mov(0, ib_w - 1)
+0:0x2317BE t3_mov(1, ib_h - 1)
+0:0x2348CE t3_mov(0, ib_w - 1)
+0:0x2348D4 t3_mov(0, ib_h - 1)
+0:0x234BCE t3_mov(0, ib_w - 1)
+0:0x234BD4 t3_mov(0, ib_h - 1)
+0:0x2315E6 t1_mov(2, 0) . t1_movt(2, float(ib_h / -2) >> 16)
+0:0x23160C t1_movt(0, float(ib_w / 2) >> 16)
+0:0x20FF50 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16) . 296C r
+0:0x20FF5E t1_movt(0, float(ib_w / 2) >> 16)
+0:0x20F576 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16) . DAF80050 r
+0:0x20F5A8 t1_movt(1, float(ib_w / 2) >> 16)
+0:0x234BDA t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x234BF0 t1_movt(0, float(ib_w / 2) >> 16)
+0:0x2348DA t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x2348F0 t1_movt(0, float(ib_w / 2) >> 16)
+0:0x231790 t1_mov(1, 0) . t1_movt(1, float(ib_h / -2) >> 16) . 0400 r
+0:0x2317B0 t1_movt(0, float(ib_w / 2) >> 16)
+0:0x2314AE t1_mov(1, 0) . t1_movt(1, float(ib_h / -2) >> 16) . 0400 r
+0:0x2314CE t1_movt(0, float(ib_w / 2) >> 16)
+0:0x230FAA t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x230FC6 t1_movt(1, float(ib_w / 2) >> 16)
+0:0x230B60 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x230B7C t1_movt(1, float(ib_w / 2) >> 16)
+0:0x230808 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x230824 t1_movt(1, float(ib_w / 2) >> 16)
+0:0x20F9E8 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x20F9F6 t1_movt(1, float(ib_w / 2) >> 16)
+0:0x20BFB6 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16) . D7F80080 r
+0:0x20BFCA t1_movt(1, float(ib_w / 2) >> 16)
+0:0x20BB60 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x20BB6E t1_movt(1, float(ib_w / 2) >> 16)
+0:0x1F0B10 t1_mov(0, 0) . t1_movt(0, float(ib_h / -2) >> 16)
+0:0x1F0B1E t1_movt(1, float(ib_w / 2) >> 16)
+0:0x2328A8 t2_mov(1, 3, ib_w / 2)
+0:0x232882 E2F7B4BE r . nop
+0:0x272D32 t2_mov(1, 1, ib_w / 2)
+0:0x272D24 A2F769BC r . nop
+0:0x232684 t2_mov(1, 1, ib_w / 2)
+0:0x23267E E2F7C2BF r . nop
+0:0x23254A t2_mov(1, 1, ib_w / 2)
+0:0x23254E E3F760B8 r
+0:0x210BAE t2_mov(1, 1, ib_w / 2)
+0:0x210BB6 04F032BD r . nop
+0:0x210A16 t2_mov(1, 1, ib_w / 2)
+0:0x210A1C 04F00CBE r
+0:0x210ED8 t2_mov(1, 3, ib_w / 2)
+0:0x210ECC 04F0BABB r
+0:0x20FD9A t3_mov(1, ib_w / 2 - 1)
+0:0x20FDA0 05F056BC r . nop
+0:0x231306 t3_mov(1, ib_w / 2 - 1)
+0:0x23130C E4F7A6B9 r . nop
+0:0x2155EE t2_mov(1, 0, ib_h / 2) . t2_mov(1, 10, 0) . 1DF047B9 r
+0:0x2155FA t2_mov(1, 2, ib_h / 2) . C8F80CA1 5DF092BB r
+0:0x215606 t2_mov(1, 2, ib_h / 2) . C4F89412 1DF039B8 r
+0:0x215612 t2_mov(1, 2, ib_h / 2) . t1_mov(3, 0) . 1CF09BBF r
+0:0x21561E t2_mov(1, 2, ib_h / 2) . CDE90276 FBF7C9BA r
+0:0x215638 t2_mov(1, 2, ib_h / 2) . t1_mov(3, 0) . FBF7EFB9 r
+0:0x215644 t2_mov(1, 4, ib_h / 2) . 3068 FBF741BC r
+0:0x215650 t3_mov(1, ib_h / 2 - 1) . B1EE489A FAF7A5BB r
+0:0x21565C t3_mov(1, ib_h / 2 - 1) . B1EE489A 1BF055BE r
+0:0x2312F0 t1_mov(0, 0) . t1_movt(0, float(ib_h / -4) >> 16)
+0:0x2312FE t1_movt(1, float(ib_w / 4) >> 16)
+0:0x20FD84 t1_mov(0, 0) . t1_movt(0, float(ib_h / -4) >> 16)
+0:0x20FD92 t1_movt(1, float(ib_w / 4) >> 16)
+0:0x2328E8 t2_mov(1, 14, ib_h / 4)
+0:0x2328FA t1_mov(3, ib_w / 4)
+0:0x2326B6 t1_mov(1, ib_w / 4)
+0:0x2326BC t1_mov(2, ib_h / 4)
+0:0x23257E t1_mov(1, ib_w / 4)
+0:0x232582 t1_mov(2, ib_h / 4)
+0:0x23379E t1_mov(1, ib_w / 4 - 1)
+0:0x2337A2 t1_mov(1, ib_h / 4 - 1)
+0:0x2335A4 t1_mov(1, ib_w / 4 - 1)
+0:0x2335A8 t1_mov(1, ib_h / 4 - 1)
+0:0x233788 t1_mov(0, 0) . t1_movt(0, float(ib_h / -8) >> 16)
+0:0x233796 t1_movt(1, float(ib_w / 8) >> 16)
+0:0x23358E t1_mov(0, 0) . t1_movt(0, float(ib_h / -8) >> 16)
+0:0x23359C t1_movt(1, float(ib_w / 8) >> 16)

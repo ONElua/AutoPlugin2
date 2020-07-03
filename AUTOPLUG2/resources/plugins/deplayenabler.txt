@@ -1,0 +1,3 @@
+USE=true
+SD0=uma0:/video/
+UX0=ux0:/video/
