@@ -36,7 +36,7 @@ function pluginsmanager()
 	end
 
 	table.insert(tb_cop, { name = "Kuio by Rinnegatamante", path = "kuio.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_KUIO"] } )
-	table.insert(tb_cop, { name = "ds3 (Complemento del plugin MiniVita TV)", path = "ds3.skprx", section = "KERNEL", path2 = "minivitatv.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV_DS3"] })
+	table.insert(tb_cop, { name = "Ds3 (Plugin required for MiniVitaTV)", path = "ds3.skprx", section = "KERNEL", path2 = "minivitatv.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV_DS3"] })
 	table.insert(tb_cop, { name = "iTLS-Enso by SKGleba", path = "itls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_ITLSENSO"] })
 	table.insert(tb_cop, { name = "Yamt-Vita by SKGleba", path = "yamt.suprx", section = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_YAMT"] })
 	table.insert(tb_cop, { name = "StorageMgr CelesteBlue", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SD2VITA"] })
@@ -65,7 +65,7 @@ function pluginsmanager()
 			bridge_n[plugs[sections[y]][x].file][sections[y]] = x
 			--print(string.format("A [%s]: %s|%d", plugs[sections[y]][x].file, sections[y], x))
 			for k=1, #tb_cop do
-				os.message("File: "..plugs[sections[y]][x].file.."\n"..tb_cop[k].path:lower())
+				--os.message("File: "..plugs[sections[y]][x].file.."\n"..tb_cop[k].path:lower())
 				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
 					plugs[sections[y]][x].bridge = tb_cop[k]
 					plugs[sections[y]][x].desc = tb_cop[k].desc
@@ -213,7 +213,7 @@ function pluginsmanager()
 
 					local idx = searchPlugByPath(plugs, section1, path1);
 					if idx then
-						os.message("idx: "..path1.."\n"..section1)
+						--os.message("idx: "..path1.."\n"..section1)
 						--Delete plugin
 						if path1 then
 							--os.message(path1)

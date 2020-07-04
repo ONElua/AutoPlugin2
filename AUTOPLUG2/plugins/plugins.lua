@@ -19,7 +19,7 @@ plugins = {
 { name = "Adrenaline by TheOfficialFloW (Fix double touch)", path = "adrenaline_kernel.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ADRENALINE"], KEY = "INSTALLP_DESC_ADRENALINE", link = "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md", },
 { name = "DSMotion by OperationNT414C v1.2", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION", link = "https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md", },
 { name = "usbmc by yifanlu v6 (only for PSTV)", path = "usbmc.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_USBMC"], KEY = "INSTALLP_DESC_USBMC", link = "https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md", },
-{ name = "AnalogsEnhancer by Rinnegatamante/Yoti v1.1-ur0", path = "AnalogsEnhancer.skprx", section = "KERNEL", config = "AnaEnCfg.txt", configpath = "ur0:tai/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ANALOGSENHANCER"], KEY = "INSTALLP_DESC_ANALOGSENHANCER", link = "https://raw.githubusercontent.com/Yoti/AnalogsEnhancer/master/README.md", },
+{ name = "AnalogsEnhancer by Rinnegatamante/Yoti v1.1-ur0", path = "AnalogsEnhancer.skprx", section = "KERNEL", config = "AnaEnCfg.txt", version = "0002", desc = LANGUAGE["INSTALLP_DESC_ANALOGSENHANCER"], KEY = "INSTALLP_DESC_ANALOGSENHANCER", link = "https://raw.githubusercontent.com/Yoti/AnalogsEnhancer/master/README.md", },
 { name = "ioplus by dots-tb v0.1", path = "ioplus.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_IOPLUS"], KEY = "INSTALLP_DESC_IOPLUS", link = "", },
 { name = "Vitacheat Z06 BETA FOR 3.65+ by FinalCheat", path = "vitacheat.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITACHEAT"], KEY = "INSTALLP_DESC_VITACHEAT", link = "https://raw.githubusercontent.com/roah/vitacheat/master/README.md", },
 { name = "Vitacheat Z04 BETA FOR 3.60 by FinalCheat", path = "vitacheat360.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITACHEAT2"], KEY = "INSTALLP_DESC_VITACHEAT2", link = "https://raw.githubusercontent.com/roah/vitacheat/master/README.md", },
@@ -49,8 +49,11 @@ plugins = {
 { name = "BetterTrackPlug by fmudanyali v1.0.3", path = "BetterTrackPlug.skprx", section = "KERNEL", version = "0003", desc = LANGUAGE["INSTALLP_DESC_TRACKPLUGMOD"], KEY = "INSTALLP_DESC_TRACKPLUGMOD", link = "https://raw.githubusercontent.com/fmudanyali/BetterTrackPlug/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "BetterTrackPlug.vpk"), },
 { name = "PSOneScrot by cuevavirus v0.1", path = "psonescrot.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_PSONESCROT"], KEY = "INSTALLP_DESC_PSONESCROT", link = "https://raw.githubusercontent.com/cuevavirus/PSOneScrot/master/README.md", },
 { name = "Cpu Affinity Changer by GrapheneCt v2.0", path = "CpuAffinityChanger.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CPUAFFCHANGER"], KEY = "INSTALLP_DESC_CPUAFFCHANGER", link = "https://raw.githubusercontent.com/GrapheneCt/Affinity-Changer/master/README.md", },
-{ name = "Sharpscale by cuevavirus v1.3.0", path = "sharpscale.skprx", section = "KERNEL", version = "0004", desc = LANGUAGE["INSTALLP_DESC_SHARPSCALE"], KEY = "INSTALLP_DESC_SHARPSCALE", link = "https://raw.githubusercontent.com/cuevavirus/Sharpscale/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "sharpscale_config.vpk"), },
+{ name = "Sharpscale by cuevavirus v1.5.0", path = "sharpscale.skprx", section = "KERNEL", version = "0005", desc = LANGUAGE["INSTALLP_DESC_SHARPSCALE"], KEY = "INSTALLP_DESC_SHARPSCALE", link = "https://raw.githubusercontent.com/cuevavirus/Sharpscale/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "sharpscale_config.vpk"), },
 { name = "RapidMenu by cuevavirus r1", path = "rapidmenu.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RAPIDMENU"], KEY = "INSTALLP_DESC_RAPIDMENU", link = "https://raw.githubusercontent.com/cuevavirus/Rapidmenu/master/README.md", },
+{ name = "MiniVitaTV by TheOfficialFloW beta 0.4", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
+{ name = "EmergencyMount by teakhanirons 1.0", path = "EmergencyMount.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_EMERGENCYMOUNT"], KEY = "INSTALLP_DESC_EMERGENCYMOUNT", },
+{ name = "Magic Automatic Fake User Input by Rufis01 1.0", path = "MAFUinput.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },
@@ -78,6 +81,8 @@ plugins = {
 { name = "TransparentImpose v1.0 by GrapheneCt", path = "TrImpose.suprx", section = "main", config = "trimpose.txt", configpath = "ur0:data/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TRIMPOSE"], KEY = "INSTALLP_DESC_TRIMPOSE", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
 { name = "Quietshot v1.0 by cuevavirus", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT", link = "https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md", },
 { name = "ftpeverywhere v1.0 by teakhanirons", path = "ftpeverywhere.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "NoSleep.vpk"), },
+{ name = "TrophyShot v1.0 by FMudanyali", path = "TrophyShot_shell.suprx", section = "main", path2 = "TrophyShot_app.suprx", section2 = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TROPHYSHOT"], KEY = "INSTALLP_DESC_TROPHYSHOT", link = "https://raw.githubusercontent.com/FMudanyali/TrophyShot/master/README.md", },
+{ name = "BootSound v1.0 by teakhanirons", path = "bootsound", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
 
 --All
 { name = "PSV-VSH MENU by joel16 v3.4", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
@@ -100,14 +105,23 @@ plugins = {
 { name = "ShowInfo Lite by Yoti v0.2", path = "ShowInfoLite.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFO"], KEY = "INSTALLP_DESC_SHOWINFO", },
 { name = "ShowInfo Full by Yoti v0.6", path = "ShowInfo.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFOFU"], KEY = "INSTALLP_DESC_SHOWINFOFU", },
 { name = "Volume Control Pack by GrapheneCt v1.0", path = "ModalVol.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MODALVOL"], KEY = "INSTALLP_DESC_MODALVOL", link = "https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md", },
+{ name = "ScoreHax by SilicaAndPina v1.0", path = "ScoreHax.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SCOREHAX"], KEY = "INSTALLP_DESC_SCOREHAX", link = "https://raw.githubusercontent.com/KuromeSan/ScoreHax/master/README.md", },
 
 --*NPXS10013
 { name = "vita-ps4linkcontrols r7 by nowrep", path = "ps4linkcontrols.suprx", section = "NPXS10013", version = "0001", desc = LANGUAGE["INSTALLP_DESC_PS4LINK"], KEY = "INSTALLP_DESC_PS4LINK", link = "https://raw.githubusercontent.com/nowrep/vita-ps4linkcontrols/master/README.md", },
 
 --NPXS10015 and *NPXS10016
 { name = "vita-macspoofer by Freakler", path = "macspoofer.suprx", section = "NPXS10015", path2 = "macspoofer.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MACSPOOF"], KEY = "INSTALLP_DESC_MACSPOOF", link = "https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md", },
+{ name = "Sysident by cuevavirus v1.0", path = "sysident.suprx", section = "NPXS10015", path2 = "sysident.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"], KEY = "INSTALLP_DESC_SYSIDENT", link = "https://raw.githubusercontent.com/cuevavirus/sysident/master/README.md", },
 
 --NPXS10036
 { name = "reScreeny by dots_tb v1.2", path = "reScreeny.suprx", section = "NPXS10036", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RESCREENY"], KEY = "INSTALLP_DESC_RESCREENY", link = "https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md", },
+
+--NPXS10010
+{ name = "DePlayEnabler by alpakeno v1.0", path = "deplayenabler.suprx", section = "NPXS10010", config = "deplayenabler.txt", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DEPLAYENABLER"], KEY = "INSTALLP_DESC_DEPLAYENABLER", link = "https://raw.githubusercontent.com/alpakeno/DePlayEnabler/master/README.md", },
+
+--Especial P4 Golden HD
+{ name = "Persona 4 Golden HD 1920x1080 v1.0.1", path = "p4goldenhd_1920x1080.suprx", version = "0001", desc = LANGUAGE["P4G_1920x1080_DESC"], KEY = "P4G_1920x1080_DESC", REMOVE = true, },
+{ name = "Persona 4 Golden HD 1280x720 v1.0.1",  path = "p4goldenhd_1280x720.suprx",  version = "0001", desc = LANGUAGE["P4G_1280x720_DESC"], KEY = "P4G_1280x720_DESC", REMOVE = true, },
 
 }

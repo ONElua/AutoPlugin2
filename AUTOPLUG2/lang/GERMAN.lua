@@ -33,6 +33,17 @@ GERMAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installiere das SD2VITA Plu
 GERMAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Konfiguriere das SD2VITA Plugin (StorageMgr v3.2 by CelesteBlue)"
 GERMAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Nach aktualisierten Plugins suchen"
 
+--P4 Golden HD
+GERMAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
+GERMAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
+GERMAN["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
+GERMAN["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
+GERMAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
+GERMAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden not found"
+GERMAN["INSTALL_P4G_HD"] =                          "Install Patch HD"
+GERMAN["INSTALL_P4G_HD_CHANGE"] =                   "Change GameID"
+GERMAN["INSTALLING_P4G_HD_PATCH"] =                 "Installing P4 Golden Patch HD"
+
 --Options PSP
 GERMAN["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) Plugins"
 GERMAN["MENU_PSP_INSTALL_NPDRMFREE"] =              "Das Plugin 'npdrm free' (von qwikrazor87) installieren"
@@ -84,6 +95,7 @@ GERMAN["PLUGINS_CUSTOM_PATH"] =                     "Install in the custom path"
 GERMAN["PLUGINS_README_ONLINE"] =                   "Readme Online anzeigen" 
 GERMAN["PLUGINS_NO_README_ONLINE"] =                "Readme nicht verfügbar!"
 GERMAN["INSTALLP_QUESTION_VPK"] =                   "needs to be downloaded for this plugin!\n\nWifi conection is required"
+GERMAN["INSTALLP_NO_VPK"] =                         "Fail to downloaded/install!"
 
 --customWarning
 GERMAN["CUSTOMWARNING_MESSAGE"] =                   "Denke daran, das Plugin dür Custom Warning zu aktivieren"
@@ -108,7 +120,7 @@ GERMAN["UNINSTALLP_EMPTY"] =                        "LEER!"
 GERMAN["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
 GERMAN["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
 GERMAN["UNINSTALLP_QUESTION_NEED"] =                "You want to uninstall them too?"
-GERMAN["UNINSTALLP_SYSTEM_PLUGIN"] =                "Must have plugin, can not unistall!"
+GERMAN["UNINSTALLP_SYSTEM_PLUGIN"] =                "Essential plugin, can not uninstall!"
 
 --install sd2vita
 GERMAN["MENU_TITLE_SD2VITA"] =                      "Installiere 'StorageMGR' Plugin für SD2VITA"
@@ -271,6 +283,7 @@ GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den 
 GERMAN["INSTALLP_DESC_NONPDRM"] =                   "Ermöglicht es, den DRM-Schutz bei allen PS Vita Inhalten zu umgehen"
 GERMAN["INSTALLP_DESC_NONPDRMU"] =                  "Ermöglicht es, den DRM-Schutz bei allen PS Vita Inhalten zu umgehen (Inoffizieller MOD)"
 GERMAN["INSTALLP_DESC_MINIVITATV"] =                "Ermöglicht es, lokale Multiplayer-Spiele auf der PS Vita mit bis zu 4 Freunden zu spielen"
+GERMAN["INSTALLP_DESC_MINIVITATV_DS3"] =            "ds3 (Complemento del plugin MiniVita TV)"
 GERMAN["INSTALLP_DESC_NOPSMDRM"] =                  "Ermöglicht es, den DRM-Schutz für PSM-Spielinhalte zu umgehen"
 GERMAN["INSTALLP_DESC_VITABRIGHT"] =                "Ermöglicht es, eine benutzerdefinierte Gamma-Tabelle zu benutzen. Damit kann die Helligkeit über das Maximum, bzw. unter das Minimum eingestellt werden."
 GERMAN["INSTALLP_DESC_NOAVLS"] =                    "Das Plugin deaktiviert AVLS dauerhaft"
@@ -315,6 +328,8 @@ GERMAN["INSTALLP_DESC_MUPREMIUM"] =                 "Aktiviert die Wiedergabe vo
 GERMAN["INSTALLP_DESC_ACIDDUMPER"] =                "Eine Anwendung, die hilfreich sein kann, um gefälschte DLC´s zu erstellen"
 GERMAN["INSTALLP_DESC_DEJAVU"] =                    "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 GERMAN["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+GERMAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
+GERMAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 
 GERMAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Dieses Plugin kann das Bootlogo auf der PSVita / PSTV beim Booten durch ein Bild ersetzen. ENSO erforderlich"
 GERMAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Dein 'Splash-Bild' als eigenes 'Boot-Splash' nutzen?"
@@ -346,6 +361,8 @@ GERMAN["INSTALLP_DESC_NOSHAREDFB"] =                "Ermöglicht das Umgehen von
 GERMAN["INSTALLP_DESC_TRIMPOSE"] =                  "Ein Plugin für PS Vita, dass das Schnellmenü (das nach langem Drücken der PS-Taste angezeigt wird) transparent macht."
 GERMAN["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 GERMAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
+GERMAN["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
+GERMAN["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 
 --ALL
 GERMAN["INSTALLP_DESC_YAMT"] =                      "Ein anderes Kernel Plugin um den Speicher einer Partition zu zuweisen, für PSVita/PSTV (Benötigt Enso, NUR mit der Firmware 3.60 und 3.65"
@@ -376,15 +393,20 @@ GERMAN["INSTALLP_DESC_PSONESCROT"] =                "Take proper PNG screenshots
 GERMAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 GERMAN["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
 GERMAN["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
+GERMAN["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."
 
 --*NPXS10015 AND --*NPXS10016
 GERMAN["INSTALLP_DESC_MACSPOOF"] =                  "Die MAC-Adresse in den Systeminformationen verändern/verstecken (Einstellungen/Sicherheit)"
+GERMAN["INSTALLP_DESC_SYSIDENT"] =                  "Playstation Vita plugin to show system information in the settings app."
 
 --*NPXS10036
 GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden in einem nach dem Spiel benannten Ordner gespeichert."
+
+--*NPXS10010
+GERMAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
 GERMAN["MISSING_PLUGIN"] =                          "The plugin is missing!"

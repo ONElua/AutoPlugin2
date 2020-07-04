@@ -33,6 +33,17 @@ JAPANESE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =          "SD2VITAプラグイン�
 JAPANESE["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =           "SD2VITAプラグインの構成 (StorageMgr v3.2 by CelesteBlue)"
 JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =     "新しく更新されたプラグインの有無を確認します"
 
+--P4 Golden HD
+JAPANESE["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
+JAPANESE["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
+JAPANESE["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
+JAPANESE["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
+JAPANESE["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
+JAPANESE["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden not found"
+JAPANESE["INSTALL_P4G_HD"] =                          "Install Patch HD"
+JAPANESE["INSTALL_P4G_HD_CHANGE"] =                   "Change GameID"
+JAPANESE["INSTALLING_P4G_HD_PATCH"] =                 "Installing P4 Golden Patch HD"
+
 --Options PSP
 JAPANESE["MENU_PSP_TITLE"] =                            "PSP（Adrenaline）プラグイン"
 JAPANESE["MENU_PSP_INSTALL_NPDRMFREE"] =                "npdrm freeプラグインのインストール (by qwikrazor87)"
@@ -75,7 +86,7 @@ JAPANESE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =        "AutoPlugin IIの言語�
 JAPANESE["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Allows to change and set font as default for AutoPlugin II"
 
 --Install Plugins
-JAPANESE["LIST_PLUGINS"] =                              "インストールする準備ができているプラグインリスト:"
+	JAPANESE["LIST_PLUGINS"] =                              "インストールする準備ができているプラグインリスト:"
 JAPANESE["MARK_PLUGINS"] =                              "プラグインの選択/選択解除"
 JAPANESE["CLEAN_PLUGINS"] =                             "選択したプラグインを削除"
 JAPANESE["UNINSTALL_PLUGIN"] =                          "プラグインをアンインストール"
@@ -84,6 +95,7 @@ JAPANESE["PLUGINS_CUSTOM_PATH"] =                       "カスタムパスに�
 JAPANESE["PLUGINS_README_ONLINE"] =                     "オンラインでReadmeを表示" 
 JAPANESE["PLUGINS_NO_README_ONLINE"] =                  "Readmeは利用できません!!!"
 JAPANESE["INSTALLP_QUESTION_VPK"] =                     "needs to be downloaded for this plugin!\n\nWifi conection is required"
+JAPANESE["INSTALLP_NO_VPK"] =                           "Fail to downloaded/install!"
 
 --customWarning
 JAPANESE["CUSTOMWARNING_MESSAGE"] =                     "カスタム警告プラグインを必ず有効にしてください"
@@ -108,7 +120,7 @@ JAPANESE["UNINSTALLP_EMPTY"] =                          "アンインストー�
 JAPANESE["UNINSTALLP_NO_PLUGINS"] =                     "No Plugins in this section"
 JAPANESE["UNINSTALLP_PLUGINS_NEED"] =                   "is required for functionality of following plugins"
 JAPANESE["UNINSTALLP_QUESTION_NEED"] =                  "You want to uninstall them too?"
-JAPANESE["UNINSTALLP_SYSTEM_PLUGIN"] =                  "Must have plugin, can not unistall!"
+JAPANESE["UNINSTALLP_SYSTEM_PLUGIN"] =                  "Essential plugin, can not uninstall!"
 
 --install sd2vita
 JAPANESE["MENU_TITLE_SD2VITA"] =                        "SD2VITAのStorage Managerプラグインをインストールします"
@@ -271,6 +283,7 @@ JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバ�
 JAPANESE["INSTALLP_DESC_NONPDRM"] =                     "PSVitaコンテンツでDRM保護をバイパスできます"
 JAPANESE["INSTALLP_DESC_NONPDRMU"] =                    "PSVitaコンテンツでDRM保護をバイパスできます（非公式MOD）"
 JAPANESE["INSTALLP_DESC_MINIVITATV"] =                  "最大4人とPSVitaでローカルマルチプレイヤーゲームをプレイできます"
+JAPANESE["INSTALLP_DESC_MINIVITATV_DS3"] =              "ds3 (Complemento del plugin MiniVita TV)"
 JAPANESE["INSTALLP_DESC_NOPSMDRM"] =                    "PSMゲームコンテンツでDRM保護をバイパスできます"
 JAPANESE["INSTALLP_DESC_VITABRIGHT"] =                  "カスタムガンマテーブルを使用して、輝度の最小値と最大値を制限を解除することができます"
 JAPANESE["INSTALLP_DESC_NOAVLS"] =                      "AVCSを無効にします"
@@ -315,6 +328,8 @@ JAPANESE["INSTALLP_DESC_MUPREMIUM"] =                   "ゲームやアプリ�
 JAPANESE["INSTALLP_DESC_ACIDDUMPER"] =                  "Application that may be helpful locating fake DLC"
 JAPANESE["INSTALLP_DESC_DEJAVU"] =                      "Allows you to make a snapshot of the RAM at any point and later restore it. It allows you save in games where it is officially not possible. A potential use case for developers is to temporarily downgrade/update the firmware (in RAM) in order test things (this has not been tested yet)"
 JAPANESE["INSTALLP_DESC_STAYBRIGHT"] =                  "Disable screen auto-dimming but retain auto-suspend on the Playstation Vita."
+JAPANESE["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
+JAPANESE["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"
@@ -346,6 +361,8 @@ JAPANESE["INSTALLP_DESC_NOSHAREDFB"] =                  "システムモード�
 JAPANESE["INSTALLP_DESC_TRIMPOSE"] =                    "長押しメニュー（PSボタンを長く押した後に表示されるメニュー）を透明にするPSVitaのプラグイン"
 JAPANESE["INSTALLP_DESC_QUIETSHOT"] =                   "Silences the shutter sound when taking a screenshot, photo, video, or panoramic photo. Works on both the Playstation Vita and PlayStation TV."
 JAPANESE["INSTALLP_DESC_FTPEVERYWHERE"] =               "ftpeverywhere - Always running background FTP server plugin."
+JAPANESE["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
+JAPANESE["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 
 --ALL
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"
@@ -376,15 +393,20 @@ JAPANESE["INSTALLP_DESC_PSONESCROT"] =                  "Take proper PNG screens
 JAPANESE["INSTALLP_DESC_CPUAFFCHANGER"] =               "This plugin changes CPU affinity mask of PS Vita system applications to all user core,which increases their performance."
 JAPANESE["INSTALLP_DESC_SHARPSCALE"] =                  "Native 960x544 HDMI output for PSTV."
 JAPANESE["INSTALLP_DESC_RAPIDMENU"] =                   "Reduce quick menu open time from 2 seconds to 200 milliseconds."
+JAPANESE["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"
 
 --*NPXS10015 AND --*NPXS10016
 JAPANESE["INSTALLP_DESC_MACSPOOF"] =                    "システム情報でMACアドレスを偽装するプラグイン"
+JAPANESE["INSTALLP_DESC_SYSIDENT"] =                    "Playstation Vita plugin to show system information in the settings app."
 
 --*NPXS10036
 JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリーンショットはゲーム名の付いたフォルダーに保存されます。"
+
+--*NPXS10010
+JAPANESE["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
 JAPANESE["MISSING_PLUGIN"] =                            "The plugin is missing!"

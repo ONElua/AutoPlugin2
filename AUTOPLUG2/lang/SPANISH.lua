@@ -33,6 +33,17 @@ SPANISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Instala el Plugin SD2VI
 SPANISH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =            "Configura el Plugin SD2VITA (StorageMgr v3.2 de CelesteBlue)"
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =      "Comprueba si hay alguna actualización para los Plugins"
 
+--P4 Golden HD
+SPANISH["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Persona 4 Golden HD PATCH"
+SPANISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =            "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
+SPANISH["P4G_1920x1080_DESC"] =                         "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
+SPANISH["P4G_1280x720_DESC"] =                          "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
+SPANISH["INSTALL_P4G_HD_TITLE"] =                       "Persona 4 Golden HD by Cuevavirus"
+SPANISH["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden not found"
+SPANISH["INSTALL_P4G_HD"] =                             "Install Patch HD"
+SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Change GameID"
+SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Installing P4 Golden Patch HD"
+
 --Options PSP
 SPANISH["MENU_PSP_TITLE"] =                             "Plugins para PSP (Adrenaline)"
 SPANISH["MENU_PSP_INSTALL_NPDRMFREE"] =                 "Instalar el Plugin NPDRM FREE de qwikrazor87"
@@ -84,6 +95,7 @@ SPANISH["PLUGINS_CUSTOM_PATH"] =                        "Instalar en ruta person
 SPANISH["PLUGINS_README_ONLINE"] =                      "Ver Readme En Linea" 
 SPANISH["PLUGINS_NO_README_ONLINE"] =                   "¡¡¡Readme no disponible!!!"
 SPANISH["INSTALLP_QUESTION_VPK"] =                      "debe descargarse para este plugin!\n\nConexión Wifi requerida."
+SPANISH["INSTALLP_NO_VPK"] =                            "Fail to downloaded/install!"
 
 --customWarning
 SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plugin de Custom Warning"
@@ -271,6 +283,7 @@ SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que mo
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"
 SPANISH["INSTALLP_DESC_NONPDRMU"] =                     "Permite evitar la protección DRM en cualquier contenido de PS Vita(MOD no oficial)"
 SPANISH["INSTALLP_DESC_MINIVITATV"] =                   "Permite jugar multijugador local en tu PS Vita con hasta 4 amigos en juegos compatibles"
+SPANISH["INSTALLP_DESC_MINIVITATV_DS3"] =               "ds3 (Complemento del plugin MiniVita TV)"
 SPANISH["INSTALLP_DESC_NOPSMDRM"] =                     "Permite evitar la protección DRM en el contenido de PSM"
 SPANISH["INSTALLP_DESC_VITABRIGHT"] =                   "Permite usar una tabla de gamma personalizada, y así disminuir el brillo por debajo del mínimo, y aumentarlo por encima del máximo"
 SPANISH["INSTALLP_DESC_NOAVLS"] =                       "Permite desactivar permanentemente AVLS en PS Vitas que no pueden desactivarlas (forzado)"
@@ -315,6 +328,8 @@ SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar músic
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
 SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captura de la memoria RAM en cualquier punto y poder restaurarla posteriormente. Te permite hacer un guardado en los juegos, donde no es posible de forma oficial (Basicamente un Guardado Rápido). Una posible aplicación para desarrolladores es para downgradear/actualizar el firmware (en RAM) para probar cosas (No ha sido testeado aún)"
 SPANISH["INSTALLP_DESC_STAYBRIGHT"] =                   "Desactiva la atenuación automática (bajar el brillo) de la pantalla, pero mantiene la función de suspensión automática en  PS Vita"
+SPANISH["INSTALLP_DESC_EMERGENCYMOUNT"] =               "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
+SPANISH["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -346,6 +361,8 @@ SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los prob
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
 SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita y PSTV."
 SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin que corre siempre en segundo plano un servidor FTP"
+SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
+SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -376,15 +393,20 @@ SPANISH["INSTALLP_DESC_PSONESCROT"] =                   "Tomar capturas de panta
 SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la Mascara de Afinidad de la CPU (Un pequeño indicador para ligar los procesos a una CPU específica) de las Aplicaciones de Sistema de PS Vita a todos los Core de Usuarios, lo que permite mejorar su rendimiento"
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
 SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
+SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "Instant pro at any game!"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
 
 --*NPXS10015 AND --*NPXS10016
 SPANISH["INSTALLP_DESC_MACSPOOF"] =                     "Plugin que permite falsificar la dirección MAC en el menú de Información de Sistema"
+SPANISH["INSTALLP_DESC_SYSIDENT"] =                     "Playstation Vita plugin to show system information in the settings app."
 
 --*NPXS10036
 SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán guardados en una carpeta con el nombre del juego. Útil para mantener organizado tus screenshots"
+
+--*NPXS10010
+SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"

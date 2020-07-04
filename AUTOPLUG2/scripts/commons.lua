@@ -12,11 +12,9 @@ change,ReloadConfig = false,false
 
 function exit_bye_bye()
 
-	tai.sync() --Write
-	--if change or ReloadConfig then 
-	--	tai.sync() --Write
-	--	error("USB")--Debugger
-	--end
+	--tai.sync("ux0:config_test.txt") --Write Test
+	tai.sync() --Write Test
+
 	if change then ReloadConfig = false end
 
 	if ReloadConfig then
@@ -27,6 +25,7 @@ function exit_bye_bye()
 		os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 		os.delay(250)
 		buttons.homepopup(1)
+		--error("USB")--Debugger
 		power.restart()
 	end
 
