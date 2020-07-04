@@ -1,4 +1,4 @@
-Online_pluginsP = {
+pluginsP = {
 
 {	name = "CXMB", name="cxmb.prx", path = "cxmb/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CXMB_DESC"], KEY = "CXMB_DESC", },
 {	name = "GTA Native Resolution Patch v0.2", name = "gta_native.prx",	path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["GTA_PATCH_DESC"], KEY = "GTA_PATCH_DESC", },
@@ -9,7 +9,7 @@ Online_pluginsP = {
 
 }
 
-Online_psp_plugins = {
+psp_plugins = {
 
 { name = "Grand Theft Auto Remastered",		path = "gta_remastered.prx",			version = "0001", desc = LANGUAGE["GTA_REMASTERED_DESC"], KEY = "GTA_REMASTERED_DESC", },
 { name = "Grand Theft Auto Remastered V2",	path = "gta_remastered_v2.prx",			version = "0001", desc = LANGUAGE["GTAV2_REMASTERED_DESC"], KEY = "GTAV2_REMASTERED_DESC", },
