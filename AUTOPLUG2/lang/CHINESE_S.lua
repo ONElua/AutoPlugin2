@@ -34,15 +34,15 @@ CHINESE_S["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "配置 SD2VITA 插件 (S
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "在线检查插件更新"
 
 --P4 Golden HD
-CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
-CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
-CHINESE_S["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
-CHINESE_S["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
-CHINESE_S["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
-CHINESE_S["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden not found"
-CHINESE_S["INSTALL_P4G_HD"] =                          "Install Patch HD"
-CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "Change GameID"
-CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "Installing P4 Golden Patch HD"
+CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD"] =              "女神异闻录4黄金版高清补丁"
+CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "此补丁可将 Vita 和 PSTV 上的女神异闻录4黄金版的3D渲染和帧缓冲分辨率更改为 1920x1080 或 1280x720. (依赖 Sharpscale 插件)"
+CHINESE_S["P4G_1920x1080_DESC"] =                      "1920x1080 分辨率可输出到 HDMI, 或者Vita用户可直接在屏幕上欣赏超采样的图像. (为获得良好的性能,需要超频) 帧率范围介于20到30FPS之间,除图形密集度最高的区域外,所有帧率都为25到30FPS之间."
+CHINESE_S["P4G_1280x720_DESC"] =                       "1280x720 分辨率可输出到 HDMI 或 USB(udcd Xerpi), 或者Vita用户可以直接在屏幕上欣赏超采样的图像. (为获得良好性能，需要超频) 帧率为30FPS."
+CHINESE_S["INSTALL_P4G_HD_TITLE"] =                    "女神异闻录4黄金版高清补丁 作者:Cuevavirus"
+CHINESE_S["NO_P4GOLDEN_GAMES"] =                       "找不到 女神异闻录4黄金版 游戏本体"
+CHINESE_S["INSTALL_P4G_HD"] =                          "安装高清补丁"
+CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
+CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
 
 --Options PSP
 CHINESE_S["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) 插件"
@@ -95,7 +95,7 @@ CHINESE_S["PLUGINS_CUSTOM_PATH"] =                     "安装到自定义目录
 CHINESE_S["PLUGINS_README_ONLINE"] =                   "在线查阅说明文档" 
 CHINESE_S["PLUGINS_NO_README_ONLINE"] =                "说明文档不可用!"
 CHINESE_S["INSTALLP_QUESTION_VPK"] =                   "需要被下载才能使用此插件!\n\n此过程需要 Wi-Fi 连接"
-CHINESE_S["INSTALLP_NO_VPK"] =                         "Fail to downloaded/install!"
+CHINESE_S["INSTALLP_NO_VPK"] =                         "下载或安装失败!"
 
 --customWarning
 CHINESE_S["CUSTOMWARNING_MESSAGE"] =                   "请记住启用 Custom Warning 插件"
@@ -282,8 +282,8 @@ CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设
 --KERNEL
 CHINESE_S["INSTALLP_DESC_NONPDRM"] =                   "绕过任何 PSVita 内容的 DRM 保护机制"
 CHINESE_S["INSTALLP_DESC_NONPDRMU"] =                  "绕过任何 PSVita 内容的 DRM 保护机制 (第三方 MOD)"
-CHINESE_S["INSTALLP_DESC_MINIVITATV"] =                "和最多4位朋友在 PSVita 上玩本地多人游戏"
-CHINESE_S["INSTALLP_DESC_MINIVITATV_DS3"] =            "ds3 (Complemento del plugin MiniVita TV)"
+CHINESE_S["INSTALLP_DESC_MINIVITATV"] =                "伪装设备为 PS TV, 允许连接 DS3/DS4 控制器, 与最多4位朋友在 PSVita 上玩本地多人游戏"
+CHINESE_S["INSTALLP_DESC_MINIVITATV_DS3"] =            "ds3功能包 (MiniVita TV 插件的补充,用于支持 DS3 控制器)"
 CHINESE_S["INSTALLP_DESC_NOPSMDRM"] =                  "绕过 PSM 游戏的 DRM 保护机制"
 CHINESE_S["INSTALLP_DESC_VITABRIGHT"] =                "使您可以使用自定义伽玛值,从而将亮度降低到最小值以下,或者将其增加到最大值以上"
 CHINESE_S["INSTALLP_DESC_NOAVLS"] =                    "为强制开启 AVLS 的机型禁用该功能"
@@ -328,8 +328,8 @@ CHINESE_S["INSTALLP_DESC_MUPREMIUM"] =                 "为任何游戏或应用
 CHINESE_S["INSTALLP_DESC_ACIDDUMPER"] =                "可能有助于定位虚假 DLC 的应用程序"
 CHINESE_S["INSTALLP_DESC_DEJAVU"] =                    "使您可以随时为主存建立快照并还原.它允许您在官方不支持存档的游戏中存档.适用于开发人员的潜在用例是(在主存中)临时降级/升级固件以用于测试问题(此功能尚未进行测试). "
 CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "在 Playstation Vita 上禁用屏幕自动调光并保留自动待机特性."
-CHINESE_S["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
-CHINESE_S["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
+CHINESE_S["INSTALLP_DESC_EMERGENCYMOUNT"] =            "此插件为Vita提供了变砖保护. 只需在启动时按住三角按键,就会出现一个菜单,可用于将分区挂载到USB (与Vitashell挂载分区到USB功能相同). 然后,您可以使用电脑来解决问题."
+CHINESE_S["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I 插件用于记录您在 PSVita 的操作并在需要时进行回放. 捕获内容将被保存为 ur0:/data/MAFU-I/capture.dat"
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
@@ -361,8 +361,8 @@ CHINESE_S["INSTALLP_DESC_NOSHAREDFB"] =                "对于在系统模式下
 CHINESE_S["INSTALLP_DESC_TRIMPOSE"] =                  "PS Vita 插件,用于使强制菜单 (长按 PS 按钮出现的那个) 透明."
 CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "在截屏,录像,拍照及拍摄全景照时,关闭快门音效.适用于 Playstation Vita 以及 PlayStation TV."
 CHINESE_S["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - 始终运行在后台的FTP服务器插件."
-CHINESE_S["INSTALLP_DESC_TROPHYSHOT"] =                "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
-CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+CHINESE_S["INSTALLP_DESC_TROPHYSHOT"] =                "就像在 PS4 中那样,解锁奖杯的同时自动截屏."
+CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动 PS Vita / PS TV 时播放一个 WAV 格式文件作为自定义启动音效."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款用于重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
@@ -393,20 +393,20 @@ CHINESE_S["INSTALLP_DESC_PSONESCROT"] =                "为PS1游戏拍摄PNG格
 CHINESE_S["INSTALLP_DESC_CPUAFFCHANGER"] =             "此插件将 PSVita 系统应用程序的 CPU 亲和力掩码指定为所有用户核心,从而提高程序的性能."
 CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持原生 960x544 HDMI 输出."
 CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "将快捷菜单的打开时间从2秒减少到200毫秒."
-CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.在任何游戏中瞬间变身职业玩家!"
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
 
 --*NPXS10015 AND --*NPXS10016
 CHINESE_S["INSTALLP_DESC_MACSPOOF"] =                  "用于欺骗系统信息中 MAC 地址的插件"
-CHINESE_S["INSTALLP_DESC_SYSIDENT"] =                  "Playstation Vita plugin to show system information in the settings app."
+CHINESE_S["INSTALLP_DESC_SYSIDENT"] =                  "Playstation Vita 插件,用于在设置应用中显示系统信息."
 
 --*NPXS10036
 CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在以游戏命名的文件夹里."
 
 --*NPXS10010
-CHINESE_S["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
+CHINESE_S["INSTALLP_DESC_DEPLAYENABLER"] =             "启用视频调试播放模式,并且能够修改配置文件中 sd0 和 ux0 目录路径."
 
 --Comunes
 CHINESE_S["MISSING_PLUGIN"] =                          "找不到插件!"
