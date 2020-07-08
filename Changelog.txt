@@ -1,3 +1,9 @@
+# v1.08
+++ Add MiniVitaTV by TheOfficialFloW beta 0.4
+++ Add more p lugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.
+++ Add Persona 4 Golden HD plugin (Vita Plugins).
+++ Fix VitaGrafix PatchList.
+
 # v1.07
 - Minnor fix sharpscale install.
 
