@@ -82,7 +82,7 @@ Online_Plugins = {
 { name = "Quietshot v1.0 by cuevavirus", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT", link = "https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md", },
 { name = "ftpeverywhere v1.0 by teakhanirons", path = "ftpeverywhere.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "NoSleep.vpk"), },
 { name = "TrophyShot v1.0 by FMudanyali", path = "TrophyShot_shell.suprx", section = "main", path2 = "TrophyShot_app.suprx", section2 = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TROPHYSHOT"], KEY = "INSTALLP_DESC_TROPHYSHOT", link = "https://raw.githubusercontent.com/FMudanyali/TrophyShot/master/README.md", },
-{ name = "BootSound v1.0 by teakhanirons", path = "bootsound", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
+{ name = "BootSound v1.0 by teakhanirons", path = "bootsound.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
 
 --All
 { name = "PSV-VSH MENU by joel16 v3.4", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
