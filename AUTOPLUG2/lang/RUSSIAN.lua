@@ -34,15 +34,15 @@ RUSSIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Настроить пла�
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Запустить проверку наличия обновлённых версий плагинов"
 
 --P4 Golden HD
-RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
-RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
-RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
-RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
-RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
-RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden not found"
-RUSSIAN["INSTALL_P4G_HD"] =                          "Install Patch HD"
-RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Change GameID"
-RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Installing P4 Golden Patch HD"
+RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD Patch"
+RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцены и кадрового буфера Persona 4 Golden на Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
+RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 может быть как выведено по HDMI, так и на экран Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 20-30 FPS, в большинстве случаев 25-30 FPS (для нормальной производительности требуется разгон)."
+RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
+RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD от Cuevavirus"
+RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden не найдена"
+RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD Patch"
+RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
+RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD Patch"
 
 --Options PSP
 RUSSIAN["MENU_PSP_TITLE"] =                          "Плагины  для PSP (Adrenaline)"
@@ -95,7 +95,7 @@ RUSSIAN["PLUGINS_CUSTOM_PATH"] =                     "Установить в в
 RUSSIAN["PLUGINS_README_ONLINE"] =                   "Просмотр онлайн справки"
 RUSSIAN["PLUGINS_NO_README_ONLINE"] =                "Справка недоступна!!!"
 RUSSIAN["INSTALLP_QUESTION_VPK"] =                   "необходимо установить в дополнение к плагину!\n\nТребуется подключение к Wi-Fi."
-RUSSIAN["INSTALLP_NO_VPK"] =                         "Fail to downloaded/install!"
+RUSSIAN["INSTALLP_NO_VPK"] =                         "Ошибка при загрузке или установке!"
 
 --customWarning
 RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте установить плагин Custom Warning"
@@ -328,8 +328,8 @@ RUSSIAN["INSTALLP_DESC_MUPREMIUM"] =                 "Поддержка фон�
 RUSSIAN["INSTALLP_DESC_ACIDDUMPER"] =                "Плагин-помощник поиска идентификаторов ложных (встроенных в игру) DLC"
 RUSSIAN["INSTALLP_DESC_DEJAVU"] =                    "Плагин позволяет сохранять и загружать снимки состояния системы (содержимого оперативной памяти). При помощи этого появляется возможность сохраняться в играх в тех местах, где это не предусмотрено разработчиком. В теории также доступна временная смена версии прошивки путём создания снимка на одной, а загрузки на другой, но практического тестирования не проводилось."
 RUSSIAN["INSTALLP_DESC_STAYBRIGHT"] =                "Плагин отключает приглушение подсветки экрана PlayStation Vita, не отключая при этом переход в режим ожидания."
-RUSSIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
-RUSSIAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
+RUSSIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Данный плагин предоставляет некий вариант защиты от поломки. Зажмите кнопку ТРЕУГОЛЬНИК при загрузке Vita и вы попадёте в меню выбора устройства для подключения по USB. После чего можете откатить изменения, мешающие загрузке системы."
+RUSSIAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I это плагин, который может записать и воспроизвести последовательность нажатых клавиш. Сама запись будет сохранена в ur0:/data/MAFU-I/capture.dat"
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
@@ -361,8 +361,8 @@ RUSSIAN["INSTALLP_DESC_NOSHAREDFB"] =                "Плагин обходи�
 RUSSIAN["INSTALLP_DESC_TRIMPOSE"] =                  "Плагин позволяет настроить прозрачность фона быстрого меню"
 RUSSIAN["INSTALLP_DESC_QUIETSHOT"] =                 "Плагин отключает звук затвора камеры при создании скриншотов, создании обычного или панорамного снимка, а также записи видео. Поддерживается как PlayStation Vita, так и PlayStation TV."
 RUSSIAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "Плагин добавляет постоянно работающий в фоновом режиме FTP сервер"
-RUSSIAN["INSTALLP_DESC_TROPHYSHOT"] =             	 "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
-RUSSIAN["INSTALLP_DESC_BOOTSOUND"] =             	 "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+RUSSIAN["INSTALLP_DESC_TROPHYSHOT"] =             	 "Автоматическое создание снимка экрана при получении приза - прямо как на PS4."
+RUSSIAN["INSTALLP_DESC_BOOTSOUND"] =             	 "Плагин позволяет воспроизвести звук в формате WAV при включении Vita или PSTV."
 
 --ALL
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
@@ -393,20 +393,20 @@ RUSSIAN["INSTALLP_DESC_PSONESCROT"] =                "Создание сним�
 RUSSIAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "Плагин переносит выполнение системных приложений на все ядра процессора, за счёт чего вырастает скорость запуска и работы"
 RUSSIAN["INSTALLP_DESC_SHARPSCALE"] =                "Вывод родного разрешения 960x544 (в рамке) при выборе 720p и кратного масштабирования (с обрезкой нижних 8 строк) при выборе 1080i для PSTV"
 RUSSIAN["INSTALLP_DESC_RAPIDMENU"] =                 "Ускорение открытия быстрого меню в 10 раз (200 мсек. вместо 2 сек.)"
-RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в любой игре без особого труда!"
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"
 
 --*NPXS10015 AND --*NPXS10016
-RUSSIAN["INSTALLP_DESC_MACSPOOF"] =                  "Подмена текста Wi-Fi MAC адреса в информации о системе в настройках"
-RUSSIAN["INSTALLP_DESC_SYSIDENT"] =                  "Playstation Vita plugin to show system information in the settings app."
+RUSSIAN["INSTALLP_DESC_MACSPOOF"] =                  "Подмена текста Wi-Fi MAC адреса в информации о системе в настройках."
+RUSSIAN["INSTALLP_DESC_SYSIDENT"] =                  "Плагин для отображения расширенной информации о системе в настройках."
 
 --*NPXS10036
-RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Скриншоты будут сохраняться в папки, совпающие с именем приложения"
+RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Скриншоты будут сохраняться в папки, совпающие с именем приложения."
 
 --*NPXS10010
-RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
+RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функция видеоплеера вкупе с возможностью смены устройств при помощи файла настроек."
 
 --Comunes
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"
