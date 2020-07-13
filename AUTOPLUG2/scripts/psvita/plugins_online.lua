@@ -262,7 +262,7 @@ function plugins_online2()
 
 	__file = ""
 	if __flag then
-		if #plugins > 1 then table.sort(plugins ,function (a,b) return string.lower(a.section)<string.lower(b.section) end) end
+		if #plugins > 0 then table.sort(plugins ,function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 		update_database2("plugins/plugins.lua",plugins)
 	end
 
