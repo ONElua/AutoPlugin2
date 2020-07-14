@@ -54,6 +54,7 @@ plugins = {
 { name = "MiniVitaTV by TheOfficialFloW beta 0.4", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
 { name = "EmergencyMount by teakhanirons 1.0", path = "EmergencyMount.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_EMERGENCYMOUNT"], KEY = "INSTALLP_DESC_EMERGENCYMOUNT", },
 { name = "Magic Automatic Fake User Input by Rufis01 1.0", path = "MAFUinput.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
+{ name = "CoreUnlocker80000H by GrapheneCt v1.0", path = "CoreUnlocker80000H.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_COREUNLOCK"], KEY = "INSTALLP_DESC_COREUNLOCK", link = "https://raw.githubusercontent.com/GrapheneCt/CoreUnlocker80000H/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },

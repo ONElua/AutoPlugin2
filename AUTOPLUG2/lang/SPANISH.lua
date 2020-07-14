@@ -330,6 +330,7 @@ SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captu
 SPANISH["INSTALLP_DESC_STAYBRIGHT"] =                   "Desactiva la atenuación automática (bajar el brillo) de la pantalla, pero mantiene la función de suspensión automática en  PS Vita"
 SPANISH["INSTALLP_DESC_EMERGENCYMOUNT"] =               "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
 SPANISH["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
+SPANISH["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"

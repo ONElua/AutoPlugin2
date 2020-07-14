@@ -283,7 +283,7 @@ PORTUGUESE_BR["INSTALLP_DESC_SD2VITA"] =                   "Plugin do kernel que
 PORTUGUESE_BR["INSTALLP_DESC_NONPDRM"] =                   "Ignorar a proteção DRM em qualquer conteúdo do PS Vita"
 PORTUGUESE_BR["INSTALLP_DESC_NONPDRMU"] =                  "Ignorar a proteção DRM em qualquer conteúdo do PS Vita(MOD não oficial)"
 PORTUGUESE_BR["INSTALLP_DESC_MINIVITATV"] =                "Jogue jogos multiplayer locais no seu PS Vita com até 4 amigos"
-PORTUGUESE_BR["INSTALLP_DESC_MINIVITATV_DS3"] =             "Ds3 (Plugin required for MiniVita TV plugin)"
+PORTUGUESE_BR["INSTALLP_DESC_MINIVITATV_DS3"] =            "Ds3 (Plugin required for MiniVita TV plugin)"
 PORTUGUESE_BR["INSTALLP_DESC_NOPSMDRM"] =                  "Ignorar a proteção DRM no conteúdo do jogo PSM"
 PORTUGUESE_BR["INSTALLP_DESC_VITABRIGHT"] =                "Permite usar uma tabela gama personalizada e assim diminuir o brilho abaixo do mínimo e aumentá-lo acima do máximo"
 PORTUGUESE_BR["INSTALLP_DESC_NOAVLS"] =                    "Desativa AVLS em AVLS-Forced vitas"
@@ -330,6 +330,7 @@ PORTUGUESE_BR["INSTALLP_DESC_DEJAVU"] =                    "Permite que você fa
 PORTUGUESE_BR["INSTALLP_DESC_STAYBRIGHT"] =                "Desative o escurecimento automático da tela, mas mantenha a suspensão automática no Playstation Vita."
 PORTUGUESE_BR["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
 PORTUGUESE_BR["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
+PORTUGUESE_BR["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 
 PORTUGUESE_BR["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Este plugin pode exibir o Splash de inicialização no PS Vita/PSTV na inicialização. Requer ENSO."
 PORTUGUESE_BR["CUSTOMBOOTSPLASH_QUESTION"] =               "Definir esta imagem como Splash de inicialização personalizado?"

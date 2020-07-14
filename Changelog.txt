@@ -1,3 +1,7 @@
+# v1.09
+++ Fix Updater Plugins Online
+++ Add missing plugin CoreUnlocker80000H by GrapheneCt
+
 # v1.08
 ++ Add MiniVitaTV by TheOfficialFloW beta 0.4
 ++ Add more p lugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.

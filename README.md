@@ -40,8 +40,6 @@ This tool allows you to install/uninstall the following plugins with one click o
 | [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [teakhanirons](https://github.com/teakhanirons) |
 | [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
 | [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
-| [VitaGrafix](https://github.com/Electry/VitaGrafix)  | [Electry](https://github.com/Electry/VitaGrafix) |
-| [VitaGrafixConfigurator](https://github.com/Kirezar/VitaGrafixConfigurator)  | [Kirezar](https://github.com/Kirezar/VitaGrafixConfigurator) |
 
 # Optional settings
 - Update plugins Online
@@ -59,6 +57,10 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 1.09 ###
+- Fix Updater Plugins Online
+- Add missing plugin CoreUnlocker80000H by GrapheneCt
 
 ### Changelog 1.08 ###
 - Add MiniVitaTV by TheOfficialFloW beta 0.4
@@ -133,8 +135,6 @@ This fixes missing non-standard characters, not found at english charset. Those 
 - chronoss09
 - Yoti
 - teakhanirons
-- Kirezar
-
 # Testers:
 - *([NanospeedGamer](https://twitter.com/NanospeedGamer)).*<br>
 - *([HAM](https://twitter.com/holdandmodify)).*<br>
