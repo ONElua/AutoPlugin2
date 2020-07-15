@@ -330,7 +330,7 @@ CHINESE_S["INSTALLP_DESC_DEJAVU"] =                    "使您可以随时为主
 CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "在 Playstation Vita 上禁用屏幕自动调光并保留自动待机特性."
 CHINESE_S["INSTALLP_DESC_EMERGENCYMOUNT"] =            "此插件为Vita提供了变砖保护. 只需在启动时按住三角按键,就会出现一个菜单,可用于将分区挂载到USB (与Vitashell挂载分区到USB功能相同). 然后,您可以使用电脑来解决问题."
 CHINESE_S["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I 插件用于记录您在 PSVita 的操作并在需要时进行回放. 捕获内容将被保存为 ur0:/data/MAFU-I/capture.dat"
-CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
+CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游戏模式应用程序使用系统保留的CPU内核(CPU3)"
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
