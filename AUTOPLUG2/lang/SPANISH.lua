@@ -385,6 +385,7 @@ SPANISH["INSTALLP_DESC_MAKEPSM"] =                      "Modificaciones a las ap
 SPANISH["INSTALLP_DESC_WDNR"] =                         "Desactivador del táctil trasero para PS Vita"
 SPANISH["INSTALLP_DESC_WDNF"] =                         "Desactivador de la pantalla táctil (pantalla delantera)"
 SPANISH["INSTALLP_DESC_REMAPSV"] =                      "remaPSV es un plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"
+SPANISH["INSTALLP_DESC_REMAPSV2"] =                     "remaPSV es un plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"
 SPANISH["INSTALLP_DESC_FORCELANG"] =                    "Plugin de taiHEN para cambiar el idioma de una aplicación"
 SPANISH["INSTALLP_DESC_SHOWINFO"] =                     "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente"
 SPANISH["INSTALLP_DESC_SHOWINFOFU"] =                   "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente (Versión completa)"

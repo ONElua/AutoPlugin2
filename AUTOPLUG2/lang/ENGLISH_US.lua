@@ -385,6 +385,7 @@ ENGLISH_US["INSTALLP_DESC_MAKEPSM"] =                   "Modifications to the PS
 ENGLISH_US["INSTALLP_DESC_WDNR"] =                      "Rear touchpad disabler for PSVITA."
 ENGLISH_US["INSTALLP_DESC_WDNF"] =                      "Disable front touchscreen."
 ENGLISH_US["INSTALLP_DESC_REMAPSV"] =                   "remaPSV is a remap plugin allowing you to remap every single button of your PSVita and to map touch and reartouch zones to extra buttons (START + SQUARE)"
+ENGLISH_US["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV is a remap plugin allowing you to remap every single button of your PSVita and to map touch and reartouch zones to extra buttons (START + SQUARE)"
 ENGLISH_US["INSTALLP_DESC_FORCELANG"] =                 "A taiHEN plugin for overriding an application's language"
 ENGLISH_US["INSTALLP_DESC_SHOWINFO"] =                  "Simple plugin that shows title_id, stitle and app_ver of the running application."
 ENGLISH_US["INSTALLP_DESC_SHOWINFOFU"] =                "Simple plugin that shows title_id, stitle and app_ver of the running application.(full version)"

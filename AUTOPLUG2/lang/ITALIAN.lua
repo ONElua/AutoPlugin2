@@ -385,6 +385,7 @@ ITALIAN["INSTALLP_DESC_MAKEPSM"] =                      "Modifica le applicazion
 ITALIAN["INSTALLP_DESC_WDNR"] =                         "Disabilita il touchpad posteriore della PSVITA."
 ITALIAN["INSTALLP_DESC_WDNF"] =                         "Disabilita il touchscreen frontale della PSVITA."
 ITALIAN["INSTALLP_DESC_REMAPSV"] =                      "remaPSV è un plugin di rimappatura che ti consente di rimappare ogni singolo pulsante della PSVita e di mappare le zone touch e reartouch come pulsanti extra. (START + QUADRATO)"
+ITALIAN["INSTALLP_DESC_REMAPSV2"] =                     "remaPSV è un plugin di rimappatura che ti consente di rimappare ogni singolo pulsante della PSVita e di mappare le zone touch e reartouch come pulsanti extra. (START + QUADRATO)"
 ITALIAN["INSTALLP_DESC_FORCELANG"] =                    "Un plugin utile per taiHEN per l'override della lingua di un'applicazione"
 ITALIAN["INSTALLP_DESC_SHOWINFO"] =                     "Un semplice plugin che mostra title_id, stitle e app_ver dell'applicazione in esecuzione."
 ITALIAN["INSTALLP_DESC_SHOWINFOFU"] =                   "Un semplice plugin che mostra title_id, stitle e app_ver dell'applicazione in esecuzione(versione completa)"

@@ -385,6 +385,7 @@ JAPANESE["INSTALLP_DESC_MAKEPSM"] =                     "PSM Developerアプリ�
 JAPANESE["INSTALLP_DESC_WDNR"] =                        "PSVitaの背面タッチパッド無効化"
 JAPANESE["INSTALLP_DESC_WDNF"] =                        "PSVitaのフロントタッチスクリーンを無効化"
 JAPANESE["INSTALLP_DESC_REMAPSV"] =                     "remaPSVは、PSVitaのすべてのボタンを再マップし、タッチゾーンとリアタッチゾーンを追加のボタンにマップできるリマッププラグインです（START + □）"
+JAPANESE["INSTALLP_DESC_REMAPSV2"] =                    "remaPSVは、PSVitaのすべてのボタンを再マップし、タッチゾーンとリアタッチゾーンを追加のボタンにマップできるリマッププラグインです（START + □）"
 JAPANESE["INSTALLP_DESC_FORCELANG"] =                   "アプリケーションの言語をオーバーライドするためのtaiHENプラグイン"
 JAPANESE["INSTALLP_DESC_SHOWINFO"] =                    "実行中のアプリケーションのtitle_id、stitle、app_verを表示するシンプルなプラグイン"
 JAPANESE["INSTALLP_DESC_SHOWINFOFU"] =                  "実行中のアプリケーションのtitle_id、stitle、app_verを表示するシンプルなプラグイン（フルバージョン）"

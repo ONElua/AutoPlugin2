@@ -385,6 +385,7 @@ PORTUGUESE_BR["INSTALLP_DESC_MAKEPSM"] =                   "Modificações nas a
 PORTUGUESE_BR["INSTALLP_DESC_WDNR"] =                      "Desativador do touchpad traseiro para PSVITA."
 PORTUGUESE_BR["INSTALLP_DESC_WDNF"] =                      "Desative a tela sensível ao toque frontal."
 PORTUGUESE_BR["INSTALLP_DESC_REMAPSV"] =                   "remaPSV é um plug-in de remapeamento que permite remapear todos os botões do seu PSVita e mapear zonas de toque e de retoque para botões extras (START+SQUARE)"
+PORTUGUESE_BR["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV é um plug-in de remapeamento que permite remapear todos os botões do seu PSVita e mapear zonas de toque e de retoque para botões extras (START+SQUARE)"
 PORTUGUESE_BR["INSTALLP_DESC_FORCELANG"] =                 "Um plugin taiHEN para substituir o idioma de um aplicativo"
 PORTUGUESE_BR["INSTALLP_DESC_SHOWINFO"] =                  "Plug-in simples que mostra title_id, stitle e app_ver do aplicativo em execução."
 PORTUGUESE_BR["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simples que mostra title_id, stitle e app_ver do aplicativo em execução. (Versão completa)"

@@ -385,6 +385,7 @@ FRENCH["INSTALLP_DESC_MAKEPSM"] =                   "Modifications des applicati
 FRENCH["INSTALLP_DESC_WDNR"] =                      "Désactive le pavé tactile arrière pour le PSVITA."
 FRENCH["INSTALLP_DESC_WDNF"] =                      "Désactiver l'écran tactile frontal."
 FRENCH["INSTALLP_DESC_REMAPSV"] =                   "remaPSV est un plugin de remappage qui vous permet de remapper chaque bouton de votre PSVita et de mapper les zones de toucher et de retaper les boutons supplémentaires (START + SQUARE)"
+FRENCH["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV est un plugin de remappage qui vous permet de remapper chaque bouton de votre PSVita et de mapper les zones de toucher et de retaper les boutons supplémentaires (START + SQUARE)"
 FRENCH["INSTALLP_DESC_FORCELANG"] =                 "Un plugin taiHEN pour outrepasser la langue d'une application"
 FRENCH["INSTALLP_DESC_SHOWINFO"] =                  "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours."
 FRENCH["INSTALLP_DESC_SHOWINFOFU"] =                "Plugin simple qui affiche le title_id, le stitle et l'app_ver de l'application en cours.(version complète)"

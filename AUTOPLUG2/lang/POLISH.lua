@@ -385,6 +385,7 @@ POLISH["INSTALLP_DESC_MAKEPSM"] =                   "Modyfikacje aplikacji PSM D
 POLISH["INSTALLP_DESC_WDNR"] =                      "Wyłącza tylni panel dotykowy w PSVITA."
 POLISH["INSTALLP_DESC_WDNF"] =                      "Wyłącza panel dotykowy na ekranie OLED/LCD"
 POLISH["INSTALLP_DESC_REMAPSV"] =                   "remaPSV to wtyczka umożliwiająca ponowne mapowanie, która umożliwia zmianę mapowania każdego przycisku PSVita oraz mapowanie stref dotykowych i ponownego mapowania na dodatkowe przyciski(START + KWADRAT)"
+POLISH["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV to wtyczka umożliwiająca ponowne mapowanie, która umożliwia zmianę mapowania każdego przycisku PSVita oraz mapowanie stref dotykowych i ponownego mapowania na dodatkowe przyciski(START + KWADRAT)"
 POLISH["INSTALLP_DESC_FORCELANG"] =                 "Wtyczka taiHEN do zastępowania języka aplikacji"
 POLISH["INSTALLP_DESC_SHOWINFO"] =                  "Prosta wtyczka, która pokazuje title_id, stitle i app_ver działającej aplikacji."
 POLISH["INSTALLP_DESC_SHOWINFOFU"] =                "Prosta wtyczka, która pokazuje title_id, stitle i app_ver działającej aplikacji. (Pełna wersja)"

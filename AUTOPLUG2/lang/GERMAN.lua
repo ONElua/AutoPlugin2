@@ -385,6 +385,7 @@ GERMAN["INSTALLP_DESC_MAKEPSM"] =                   "Modifikationen an den PSM D
 GERMAN["INSTALLP_DESC_WDNR"] =                      "Deaktiviert hinteres Touchpad der PS Vita."
 GERMAN["INSTALLP_DESC_WDNF"] =                      "Deaktiviert vorderes Touchpad der PS Vita."
 GERMAN["INSTALLP_DESC_REMAPSV"] =                   "remaPSV ist ein Remap-Plugin, mit dem kann jede einzelne Taste der PSVita neu zugeordnet werden und den Touchpad Zonen zusätzliche Tasten zuordnen. (START + VIERECK)"
+GERMAN["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV ist ein Remap-Plugin, mit dem kann jede einzelne Taste der PSVita neu zugeordnet werden und den Touchpad Zonen zusätzliche Tasten zuordnen. (START + VIERECK)"
 GERMAN["INSTALLP_DESC_FORCELANG"] =                 "Ein taiHEN Plugin zum Überschreiben der Sprache einer Anwendung."
 GERMAN["INSTALLP_DESC_SHOWINFO"] =                  "Einfaches Plugin, das title_id, stitle und app_ver der laufenden Anwendung anzeigt."
 GERMAN["INSTALLP_DESC_SHOWINFOFU"] =                "Einfaches Plugin, das title_id, stitle und app_ver der laufenden Anwendung anzeigt.(Vollversion)"

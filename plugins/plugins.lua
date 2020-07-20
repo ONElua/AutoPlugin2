@@ -102,6 +102,7 @@ Online_Plugins = {
 { name = "WDNR by Rinnegatamante v1.0", path = "WDNR.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_WDNR"], KEY = "INSTALLP_DESC_WDNR", },
 { name = "WDNF by EchoDev & Rinnegatamante v1.0", path = "WDNF.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_WDNF"], KEY = "INSTALLP_DESC_WDNF", },
 { name = "remaPSV by Rinnegatamante v1.1", path = "remaPSV.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_REMAPSV"], KEY = "INSTALLP_DESC_REMAPSV", },
+{ name = "remaPSV by MERLev v2.0.1", path = "remaPSV2.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_REMAPSV2"], KEY = "INSTALLP_DESC_REMAPSV2", link = "https://raw.githubusercontent.com/MERLev/remaPSV2/master/README.md", },
 { name = "forcelang by xdanieldzd v0.2U", path = "forcelang.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FORCELANG"], KEY = "INSTALLP_DESC_FORCELANG", link = "https://raw.githubusercontent.com/xdanieldzd/forcelang/master/README.md", },
 { name = "ShowInfo Lite by Yoti v0.2", path = "ShowInfoLite.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFO"], KEY = "INSTALLP_DESC_SHOWINFO", },
 { name = "ShowInfo Full by Yoti v0.6", path = "ShowInfo.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFOFU"], KEY = "INSTALLP_DESC_SHOWINFOFU", },

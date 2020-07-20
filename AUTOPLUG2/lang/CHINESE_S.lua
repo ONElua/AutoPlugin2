@@ -385,6 +385,7 @@ CHINESE_S["INSTALLP_DESC_MAKEPSM"] =                   "修改 PSM 开发者程�
 CHINESE_S["INSTALLP_DESC_WDNR"] =                      "PSVita 后置触摸板禁用工具."
 CHINESE_S["INSTALLP_DESC_WDNF"] =                      "禁用前置触屏."
 CHINESE_S["INSTALLP_DESC_REMAPSV"] =                   "remaPSV 是一个重映射插件,允许您重新映射 PSVita 的每个按钮,并将触屏和后置触摸区域映射为额外的按钮 (START + SQUARE)"
+CHINESE_S["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV 是一个重映射插件,允许您重新映射 PSVita 的每个按钮,并将触屏和后置触摸区域映射为额外的按钮 (START + SQUARE)"
 CHINESE_S["INSTALLP_DESC_FORCELANG"] =                 "用于覆盖应用程序语言设置的大变革插件"
 CHINESE_S["INSTALLP_DESC_SHOWINFO"] =                  "显示正在运行的应用程序的标题,短标题和版本信息的简单插件."
 CHINESE_S["INSTALLP_DESC_SHOWINFOFU"] =                "显示正在运行的应用程序的标题,短标题和版本信息的简单插件.(完整版)"
