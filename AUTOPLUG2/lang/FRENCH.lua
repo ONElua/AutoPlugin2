@@ -34,15 +34,15 @@ FRENCH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurer le plugin de la 
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouvelle version de mise à jour des plugins"
 
 --P4 Golden HD
-FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
-FRENCH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
-FRENCH["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
-FRENCH["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
-FRENCH["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
-FRENCH["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden not found"
-FRENCH["INSTALL_P4G_HD"] =                          "Install Patch HD"
-FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Change GameID"
-FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installing P4 Golden Patch HD"
+FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Patch HD de Persona 4 Golden"
+FRENCH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Ce patch modifie les résolutions de rendu 3D et de framebuffer de Persona 4 Golden sur la Vita et la PSTV à 1920x1080 ou 1280x720. (Nécessite le plugin Sharpscale)"
+FRENCH["P4G_1920x1080_DESC"] =                      "La résolution 1920x1080 peut être transmis en HDMI ou les utilisateurs de Vita peuvent profiter d'une image sur-échantillonnée directement sur l'écran. (L'overclocking est nécessaire pour obtenir de bonnes performances). La fréquence d'images se situe entre 20 et 30 FPS, avec 25-30 FPS dans toutes les zones sauf les plus intensives graphiquement"
+FRENCH["P4G_1280x720_DESC"] =                       "La résolution 1280x720 peut être transmis en HDMI ou USB (udcd Xerpi) ou les utilisateurs de Vita peuvent profiter d'une image sur-échantillonnée directement sur l'écran. (L'overclocking est nécessaire pour de bonnes performances). La fréquence d'images est de 30 FPS"
+FRENCH["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD par Cuevavirus"
+FRENCH["NO_P4GOLDEN_GAMES"] =                       "Jeu Persona 4 Golden non trouvé"
+FRENCH["INSTALL_P4G_HD"] =                          "Installer le patch HD"
+FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
+FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du patch HD"
 
 --Options PSP
 FRENCH["MENU_PSP_TITLE"] =                          "Plugins PSP pour Adrenaline"
@@ -95,7 +95,7 @@ FRENCH["PLUGINS_CUSTOM_PATH"] =                     "Installation personnalisé 
 FRENCH["PLUGINS_README_ONLINE"] =                   "Plus d'info du plugin" 
 FRENCH["PLUGINS_NO_README_ONLINE"] =                "\n\nPas d'info sur le plugin disponible ou connexion internet absent !!!"
 FRENCH["INSTALLP_QUESTION_VPK"] =                   "doit être téléchargé pour ce plugin!\n\nUne connexion internet est requis!"
-FRENCH["INSTALLP_NO_VPK"] =                         "Fail to downloaded/install!"
+FRENCH["INSTALLP_NO_VPK"] =                         "Echec du téléchargement ou de l'installation !"
 
 --customWarning
 FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'activer le plugin Custom Warning"
@@ -211,7 +211,7 @@ FRENCH["CUSTOMBOOTSPLASH_TITLE"] =                  "Custom Boot Splash"
 FRENCH["CUSTOMBOOTSPLASH_CONVERT"] =                "Convertir l'image"
 FRENCH["CUSTOMBOOTSPLASH_IMPORT"] =                 "Importer une image depuis votre Galerie photo"
 FRENCH["CUSTOMBOOTSPLASH_NOPNG_FOUND"] =            "\n\nLe répertoire ux0:CustomBootsplash ne contient aucune image !!! "
-FRENCH["CUSTOMBOOTSPLASH_NOPNG"] =                  "\n\nPas d'image au format PNG compatible trouvé"
+FRENCH["CUSTOMBOOTSPLASH_NOPNG"] =                  "\n\nPas d'image au format PNG compatible trouvée"
 
 --TransImpose
 FRENCH["TRANSIMPOSE_OSK_TITLE"] =                   "Configuration du plugin"
@@ -219,8 +219,8 @@ FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de tr
 
 --Translate
 FRENCH["TRANSLATE_ENGLISH_TITLE"] =                 "Anglais : "
-FRENCH["TRANSLATE_CURRENT_TITLE"] =                 "System Language: "
-FRENCH["TRANSLATE_CURRENT_AUTOPLUGIN"] =           "AutoPlugin Language: "
+FRENCH["TRANSLATE_CURRENT_TITLE"] =                 "Langue du système: "
+FRENCH["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "Langue de l'AutoPlugin: "
 FRENCH["TRANSLATE_YOUR_TITLE"] =                    "Le votre: "
 FRENCH["SAVE_TRANSLATIONS"] =                       "Enregistrer la traduction"
 FRENCH["EXIT_SAVE_TRANSLATIONS"] =                  "Traduction non enregistré. Enregistrer avant de quitter ?"
@@ -328,9 +328,9 @@ FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond 
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
 FRENCH["INSTALLP_DESC_DEJAVU"] =                    "Permet de faire une sauvegarde instantané dans la RAM à tout moment et de la restaurer par la suite. Il vous permet de sauvegarder dans les jeux où cela n'est officiellement pas possible. Un cas d'utilisation potentiel pour les développeurs de downgrader/mettre à jour temporairement le microprogramme (en RAM) afin de tester les choses (cela n'a pas encore été testé)"
 FRENCH["INSTALLP_DESC_STAYBRIGHT"] =                "Désactiver l'auto-diminution de l'écran mais conserver l'auto-suspension sur la Playstation Vita."
-FRENCH["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
-FRENCH["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
-FRENCH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
+FRENCH["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Ce plugin fournit une protection contre un brick de votre PSVita. Il suffit de maintenir la touche triangle au démarrage et un menu vous sera présenté pour monter des partitions (les mêmes que celles de Vitashell plus ur0) sur USB. Vous pouvez ensuite utiliser votre ordinateur pour résoudre le problème."
+FRENCH["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I est un plugin qui vous permet d'enregistrer les données que vous fournissez à votre PSVita et de les lire quand vous en avez besoin. La capture sera enregistrée dans ur0:/data/MAFU-I/capture.dat"
+FRENCH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin pour PS Vita qui permet aux applications en mode jeu d'utiliser le noyau CPU réservé au système (CPU3)"
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher une image personnalisée au démarrage de votre PS Vita/PSTV. Nécessite ENSO installer."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
@@ -362,8 +362,8 @@ FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les pr
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
-FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
-FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	  "Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
+FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	  "Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -395,20 +395,20 @@ FRENCH["INSTALLP_DESC_PSONESCROT"] =                "Faites des captures d'écra
 FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ce plugin modifie le masque d'affinité de l'unité centrale des applications du système PS Vita pour tous les noyaux d'utilisateurs, ce qui augmente leurs performances."
 FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour les PSTV."
 FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouverture du menu rapide de 2 secondes à 200 millisecondes."
-FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantané dans n'importe quel jeu!"
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
 
 --*NPXS10015 AND --*NPXS10016
 FRENCH["INSTALLP_DESC_MACSPOOF"] =                  "Un plugin permettant de spoofer votre adresse MAC dans le système d'information"
-FRENCH["INSTALLP_DESC_SYSIDENT"] =                  "Playstation Vita plugin to show system information in the settings app."
+FRENCH["INSTALLP_DESC_SYSIDENT"] =                  "Plugin Playstation Vita pour afficher des informations sur le système dans les Paramètres de la console."
 
 --*NPXS10036
 FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la PSVita seront enregistrées dans un dossier portant le nom du jeu."
 
 --*NPXS10010
-FRENCH["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
+FRENCH["INSTALLP_DESC_DEPLAYENABLER"] =             "Activer le mode de lecture de débogage vidéo avec la possibilité de modifier le chemin d'accès aux dossiers sd0 et ux0 à partir du fichier de configuration."
 
 --Comunes
 FRENCH["MISSING_PLUGIN"] =                          "Le plugin est absent !"
@@ -416,7 +416,7 @@ FRENCH["REPAIR_CONFIG_TXT"] =                       "Correction des plugins Henk
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "Correction du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
-FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		              "Reload taiHEN config.txt"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
