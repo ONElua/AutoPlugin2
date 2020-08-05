@@ -35,9 +35,9 @@ PORTUGUESE_BR["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Verificar online se 
 
 --P4 Golden HD
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
-PORTUGUESE_BR["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
-PORTUGUESE_BR["P4G_1920x1080_DESC"] =                      "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
-PORTUGUESE_BR["P4G_1280x720_DESC"] =                       "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
+PORTUGUESE_BR["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Este patch altera as resoluções de renderização 3D e buffer de quadros do Persona 4 Golden no Vita e PSTV para 1920x1080 ou 1280x720. (Requer plugin Sharpscale)"
+PORTUGUESE_BR["P4G_1920x1080_DESC"] =                      "1920x1080 pode ser transmitido por HDMI ou o usuário do Vita pode desfrutar de uma imagem superamostrada diretamente na tela (overclock é necessário para um bom desempenho). A taxa de quadros varia entre 20 a 30 FPS, com 25 a 30 FPS em todas as áreas, exceto as mais intensas em termos gráficos"
+PORTUGUESE_BR["P4G_1280x720_DESC"] =                       "1280x720 pode ser enviado por HDMI ou USB (udcd Xerpi). Os usuários do Vita podem desfrutar de uma imagem superamostrada diretamente na tela (overclock é necessário para um bom desempenho). A taxa de quadros é de 30 FPS"
 PORTUGUESE_BR["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD by Cuevavirus"
 PORTUGUESE_BR["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden não encontrado"
 PORTUGUESE_BR["INSTALL_P4G_HD"] =                          "Instalar Patch HD"
