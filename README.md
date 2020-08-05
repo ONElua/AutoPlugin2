@@ -146,6 +146,7 @@ This fixes missing non-standard characters, not found at english charset. Those 
 - theheroGAC for translation in Italian
 - Chronoss09 for translation in French
 - Schn1ek3 for translation in German
+- allanaln2009 for translation in Portuguese (PT-BR)
 
 ## Donation ##
 In case you want to support the work of the team on the vita, you can always donate for some coffee. Any amount is highly appreciated:
