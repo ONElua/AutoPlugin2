@@ -8,5 +8,5 @@ Langs = {
 { id =  "GERMAN",		version = "01.17",		author =  "Schn1ek3" },
 { id =  "RUSSIAN",		version = "01.26",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.17",		author =  "Gameplay World's" },
-{ id =  "PORTUGUESE_BR",version = "01.03",		author =  "allanaln2009" },
+{ id =  "PORTUGUESE_BR",version = "01.04",		author =  "allanaln2009" },
 }
