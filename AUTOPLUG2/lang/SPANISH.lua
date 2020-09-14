@@ -34,15 +34,15 @@ SPANISH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =            "Configura el Plugin SD2
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =      "Comprueba si hay alguna actualización para los Plugins"
 
 --P4 Golden HD
-SPANISH["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Persona 4 Golden HD PATCH"
-SPANISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =            "This patch changes the 3D render and framebuffer resolutions of Persona 4 Golden on the Vita and PSTV to 1920x1080 or 1280x720. (Require Sharpscale plugin)"
-SPANISH["P4G_1920x1080_DESC"] =                         "1920x1080 can be output to HDMI or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate ranges between 20-30 FPS, with 25-30 FPS in all but the most graphically intensive areas"
-SPANISH["P4G_1280x720_DESC"] =                          "1280x720 can be output to HDMI or USB (udcd Xerpi) or Vita users can enjoy a supersampled image directly on the screen. (Overclocking is required for good performance) framerate is 30 FPS"
+SPANISH["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Parche para Persona 4 Golden HD"
+SPANISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =            "Este parche cambia el Render 3D y la resolución del Framebuffer de Persona 4 Golden en PS Vita y PSTV a 1920x1080 o 1280x720 (Requiere el Plugin Sharpscale)"
+SPANISH["P4G_1920x1080_DESC"] =                         "1920x1080 puede ser mostrado en HDMI, o los usuarios de PS Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla. (Se requiere Overclocking para un buen rendimiento. Los Framerate fluctuan entre 20-30 FPS, con 25-30 FPS en general excepto en las áreas gráficamente más exigentes)"
+SPANISH["P4G_1280x720_DESC"] =                          "1280x720 puede ser mostrado en HDMI o USB (udcd Xerpi), o o los usuarios de PS Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla. (Se requiere Overclocking para un buen rendimiento. Corre a 30 FPS)"
 SPANISH["INSTALL_P4G_HD_TITLE"] =                       "Persona 4 Golden HD by Cuevavirus"
-SPANISH["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden not found"
-SPANISH["INSTALL_P4G_HD"] =                             "Install Patch HD"
-SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Change GameID"
-SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Installing P4 Golden Patch HD"
+SPANISH["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden no se ha encontrado"
+SPANISH["INSTALL_P4G_HD"] =                             "Instalar Parche HD"
+SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Cambiar GameID"
+SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de P4 Golden"
 
 --Options PSP
 SPANISH["MENU_PSP_TITLE"] =                             "Plugins para PSP (Adrenaline)"
@@ -63,7 +63,7 @@ SPANISH["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Establecer un mensaje p
 SPANISH["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Establecer Nivel de Transparencia"
 SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
 SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Resetear el archivo config.txt en ur0"
-SPANISH["MENU_EXTRAS_QUICKMENU_PLUS"] =                 "Configuration for QuickMenu Plus"
+SPANISH["MENU_EXTRAS_QUICKMENU_PLUS"] =                 "Configuraciones para QuickMenu Plus"
 
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -74,7 +74,7 @@ SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permite descargar e ins
 SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "¡¡¡Cuidado!!! Esta opción reseteará el archivo ur0:tai/config.txt"
 SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 ¡¡¡Cuidado!!!\n\n¡¡¡Todos los Plugins instalados serán DESINSTALADOS!!!\n\n¿Estás seguro que deseas resetear el archivo ur0:tai/config.txt?"
-SPANISH["MENU_EXTRAS_QUICKMENU_DESC"] =                 "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
+SPANISH["MENU_EXTRAS_QUICKMENU_DESC"] =                 "Opción para configurar el Botón de Encendido, tiempo de apertura más rápido para Quick Menu(menú que sale al mantener presionado el botón PS) y estilo personalizado del fondo del menú"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
@@ -97,7 +97,7 @@ SPANISH["PLUGINS_CUSTOM_PATH"] =                        "Instalar en ruta person
 SPANISH["PLUGINS_README_ONLINE"] =                      "Ver Readme En Linea" 
 SPANISH["PLUGINS_NO_README_ONLINE"] =                   "¡¡¡Readme no disponible!!!"
 SPANISH["INSTALLP_QUESTION_VPK"] =                      "debe descargarse para este plugin!\n\nConexión Wifi requerida."
-SPANISH["INSTALLP_NO_VPK"] =                            "Fail to downloaded/install!"
+SPANISH["INSTALLP_NO_VPK"] =                            "¡Fallo al Descargar/Instalar!"
 
 --customWarning
 SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plugin de Custom Warning"
@@ -123,7 +123,7 @@ SPANISH["UNINSTALLP_EMPTY"] =                           "¡¡¡ Vacio !!!"
 SPANISH["UNINSTALLP_NO_PLUGINS"] =                      "No hay Plugins en esta sección"
 SPANISH["UNINSTALLP_PLUGINS_NEED"] =                    "es necesario para la funcionalidad de los siguientes Plugins"
 SPANISH["UNINSTALLP_QUESTION_NEED"] =                   "¿Quieres desinstalarlos también?"
-SPANISH["UNINSTALLP_SYSTEM_PLUGIN"] =                   "¡Plugin necesario, no se puede desinstalar!"
+SPANISH["UNINSTALLP_SYSTEM_PLUGIN"] =                   "¡Plugin Escencial (necesario), no se puede desinstalar!"
 
 --install sd2vita
 SPANISH["MENU_TITLE_SD2VITA"] =                         "Instala el plugin Storage Manager para usar una SD2VITA"
@@ -194,7 +194,7 @@ SPANISH["CXMB_DESC"] =                                  "CXMB permite usar temas
 SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu de los juegos y la herramienta de datos guardados para juegos con idioma distinto (de otra región) al establecido en tu PSP "
 SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus juegos, emuladores, homebrews, en su propia carpeta bajo el Directorio de Juegos"
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
-SPANISH["GE_PATCH_DESC"] =                              "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
+SPANISH["GE_PATCH_DESC"] =                              " Este es un Plugin experimental para Adrenaline v6.9 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
 
 --config pkgj
 SPANISH["MENU_INSTALL_CONFIG"] =                        "Instala config.txt para PKGj v0.51+"
@@ -222,20 +222,20 @@ SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --QuickMenu Plus
-SPANISH["QUICKMENU_MENU_TIME"] =                		"Button Push time"
-SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Standby Button"
-SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "BackGround Style"
-SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
-SPANISH["QUICKMENU_MENU_STANDBYRESTART_DESC"] =         "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
-SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =        "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
-SPANISH["QUICKMENU_MENU_UPDATE_CONFIG"] =               "Update Config for QuickMenu Plus"
-SPANISH["QUICKMENU_MENU_UPDATING"] =                    "Updating Config QuickMenu Plus!\n\nPlease Wait..."
-SPANISH["QUICKMENU_OSK_TITLE_TIME"] =                   "Time in microseconds"
-SPANISH["QUICKMENU_STANDBYRESTART_ENABLE"] =            "Restart & Power Off"
-SPANISH["QUICKMENU_STANDBYRESTART_DISABLE"] =           "Suspend & Power Off・Restart"
+SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para manterner presionado el botón"
+SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Botón de Modo Reposo"
+SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "Estilo del Background (fondo)"
+SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Ajusta el tiempo de presion del botón PS para abrir el Quick Menu. El tiempo esta en microsegundos. Por ejemplo, coloca 250000 para 250 milisegundos (0,25 segundos). Por defecto el tiempo es de 500 milisegundos"
+SPANISH["QUICKMENU_MENU_STANDBYRESTART_DESC"] =         "Ajusta el botón de Reposo para funcionar como botón de Reinicio. Coloca en el archivo 1 para habilitar 'Reiniciar y Apagar', o 0 para deshabilitar 'Suspender y Apagar-Reiniciar'. Cuando este ajuste está deshabilitado, mantén presionado el botón de 'Apagar-Reiniciar' para Reiniciar, y aprétalo para Apagar. Por defecto está habilitado en PS Vita y deshabilitado en PSTV"
+SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =        "Ajusta el estilo del Fondo del Menú. Coloca en el archivo 0 para el estilo original, 1 para estilo traslúcido y 2 para estilo Negro. Por defecto es traslúcido. Estilo The default is translucent. El estilo Negro puede reducir el consumo de batería de los modelos con pantalla OLED. El efecto de gradiente (degradado) fue removido en todos los estilos"
+SPANISH["QUICKMENU_MENU_UPDATE_CONFIG"] =               "Actualiza las configuraciones para QuickMenu Plus"
+SPANISH["QUICKMENU_MENU_UPDATING"] =                    "¡Actualizando las configuraciones de QuickMenu Plus!\n\nPor favor espera..."
+SPANISH["QUICKMENU_OSK_TITLE_TIME"] =                   "Tiempo en microsegundos"
+SPANISH["QUICKMENU_STANDBYRESTART_ENABLE"] =            "Reiniciar y Apagar"
+SPANISH["QUICKMENU_STANDBYRESTART_DISABLE"] =           "Suspender y Apagar-Reiniciar"
 SPANISH["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =         "Original"
-SPANISH["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =      "Translucent"
-SPANISH["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =            "Black"
+SPANISH["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =      "Traslúcido"
+SPANISH["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =            "Negro"
 
 --Translate
 SPANISH["TRANSLATE_ENGLISH_TITLE"] =                    "Inglés: "
@@ -303,7 +303,7 @@ SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que mo
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"
 SPANISH["INSTALLP_DESC_NONPDRMU"] =                     "Permite evitar la protección DRM en cualquier contenido de PS Vita(MOD no oficial)"
 SPANISH["INSTALLP_DESC_MINIVITATV"] =                   "Permite jugar multijugador local en tu PS Vita con hasta 4 amigos en juegos compatibles"
-SPANISH["INSTALLP_DESC_MINIVITATV_DS3"] =               "Ds3 (Plugin required for MiniVita TV plugin)"
+SPANISH["INSTALLP_DESC_MINIVITATV_DS3"] =               "DS3 (Plugin requerido para el Plugin MiniVita TV)"
 SPANISH["INSTALLP_DESC_NOPSMDRM"] =                     "Permite evitar la protección DRM en el contenido de PSM"
 SPANISH["INSTALLP_DESC_VITABRIGHT"] =                   "Permite usar una tabla de gamma personalizada, y así disminuir el brillo por debajo del mínimo, y aumentarlo por encima del máximo"
 SPANISH["INSTALLP_DESC_NOAVLS"] =                       "Permite desactivar permanentemente AVLS en PS Vitas que no pueden desactivarlas (forzado)"
@@ -318,7 +318,7 @@ SPANISH["INSTALLP_DESC_UDCDUVCL"] =                     "(Version para Vitas LED
 SPANISH["INSTALLP_DESC_VIIMOTE"] =                      "Controla tu PS Vita con un WiiMote"
 SPANISH["INSTALLP_DESC_VITASTICK"] =                    "Permite usar la PS Vita como un mando de juego por USB  (Requiere vitastick.vpk)"
 SPANISH["INSTALLP_DESC_KUIO"] =                         "Permite a los módulos de usuario acceder a ux0:data para operaciones de I/O básicas. Puede ser necesario para ciertos Plugins específicos"
-SPANISH["INSTALLP_DESC_ADRENALINE"] =                   "Permite ejecutar Adrenaline con un solo toque. Nota: Adrenaline en su última versión debe estar instalado"
+SPANISH["INSTALLP_DESC_ADRENALINE"] =                   "Permite ejecutar Adrenaline con un solo toque. Nota: Debe estar instalada la última version de Adrenaline"
 SPANISH["INSTALLP_DESC_DSMOTION"] =                     "Soporte al control de movimiento del DualShock para PlayStation TV"
 SPANISH["INSTALLP_DESC_USBMC"] =                        "Permite usar un almacenamiento USB como tarjeta de memoria en la PS Vita"
 SPANISH["INSTALLP_DESC_ANALOGSENHANCER"] =              "Este Plugin permite configurar la deadzone (cuánto mueves el análogo antes de detectar movimiento) y reescalado de software (reinterpreta las entradas, añadiendo libertad o haciendo los análogos más toscos según se necesite) de los analógicos"
@@ -348,10 +348,10 @@ SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar músic
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
 SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captura de la memoria RAM en cualquier punto y poder restaurarla posteriormente. Te permite hacer un guardado en los juegos, donde no es posible de forma oficial (Basicamente un Guardado Rápido). Una posible aplicación para desarrolladores es para downgradear/actualizar el firmware (en RAM) para probar cosas (No ha sido testeado aún)"
 SPANISH["INSTALLP_DESC_STAYBRIGHT"] =                   "Desactiva la atenuación automática (bajar el brillo) de la pantalla, pero mantiene la función de suspensión automática en  PS Vita"
-SPANISH["INSTALLP_DESC_EMERGENCYMOUNT"] =               "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
-SPANISH["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
-SPANISH["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
-SPANISH["INSTALLP_DESC_DS4TOUCH"] =                     "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+SPANISH["INSTALLP_DESC_EMERGENCYMOUNT"] =               "Este Plugin provee proteccion antibricks para PS Vita. Simplemente mantén presionado el botón triangulo en el arranque y se mostrará un menú para montar particiones (las mismas mostradas en Vitashell + ur0) a través de USB. Entonces una vez hecho, puedes usar tu computadora para resolver el problema (como copiar archivos, eliminar, etc.)"
+SPANISH["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I es un Plugin que te permite grabar los inputs(botones presionados) ingresados a PS Vita y volver a reproducirlos cuando lo requieras. La captura se guardará en ur0:/data/MAFU-I/capture.dat"
+SPANISH["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin para PS Vita que permite a las aplicaciones de juego a usar los Nucleos de CPU reservados para el uso de las aplicaciones de sistema (CPU3)"
+SPANISH["INSTALLP_DESC_DS4TOUCH"] =                     "Añade soporte para el touchpad del DualShock4 (como ds4vita) a las PSTV y PS Vita con el Plugin MiniVitaTV"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -383,9 +383,9 @@ SPANISH["INSTALLP_DESC_NOSHAREDFB"] =                   "Permite evitar los prob
 SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que hace al al menú rápido (el que aparece al mantener presionado el botón PS) transparente"
 SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita y PSTV."
 SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin que corre siempre en segundo plano un servidor FTP"
-SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
-SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
-SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
+SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un screenshot cada vez que desbloquees un trofeo"
+SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
+SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añadir nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -407,7 +407,7 @@ SPANISH["INSTALLP_DESC_MAKEPSM"] =                      "Modificaciones a las ap
 SPANISH["INSTALLP_DESC_WDNR"] =                         "Desactivador del táctil trasero para PS Vita"
 SPANISH["INSTALLP_DESC_WDNF"] =                         "Desactivador de la pantalla táctil (pantalla delantera)"
 SPANISH["INSTALLP_DESC_REMAPSV"] =                      "remaPSV es un plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"
-SPANISH["INSTALLP_DESC_REMAPSV2"] =                     "remaPSV es un plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"
+SPANISH["INSTALLP_DESC_REMAPSV2"] =                     "Version mejorada de remaPSV. remaPSV es un plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"
 SPANISH["INSTALLP_DESC_FORCELANG"] =                    "Plugin de taiHEN para cambiar el idioma de una aplicación"
 SPANISH["INSTALLP_DESC_SHOWINFO"] =                     "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente"
 SPANISH["INSTALLP_DESC_SHOWINFOFU"] =                   "Un simple Plugin que muestra información como title_id, stitle y app_ver de la aplicación corriendo actualmente (Versión completa)"
@@ -417,25 +417,25 @@ SPANISH["INSTALLP_DESC_PSONESCROT"] =                   "Tomar capturas de panta
 SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la Mascara de Afinidad de la CPU (Un pequeño indicador para ligar los procesos a una CPU específica) de las Aplicaciones de Sistema de PS Vita a todos los Core de Usuarios, lo que permite mejorar su rendimiento"
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
 SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
-SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "Instant pro at any game!"
+SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
 
 --*NPXS10015 AND --*NPXS10016
 SPANISH["INSTALLP_DESC_MACSPOOF"] =                     "Plugin que permite falsificar la dirección MAC en el menú de Información de Sistema"
-SPANISH["INSTALLP_DESC_SYSIDENT"] =                     "Playstation Vita plugin to show system information in the settings app."
+SPANISH["INSTALLP_DESC_SYSIDENT"] =                     "Plugin de PS Vita que muestra Información del Sistema en la aplicación de Ajustes"
 
 --*NPXS10036
 SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán guardados en una carpeta con el nombre del juego. Útil para mantener organizado tus screenshots"
 
 --*NPXS10010
-SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
+SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Habilita el modo debug de Reproducción de Videos, permitiendo cambiar la ruta entre sd0 y ux0 desde el archivo de configuraciones"
 
 --Comunes
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"
 SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arreglados en tai/config.txt"
-SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "Fix Sharpscale config crash!"
+SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "¡Arregla las configuraciones que hacen crashear a Sharpscale!"
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
 SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Recarga el config.txt de taiHEN "
