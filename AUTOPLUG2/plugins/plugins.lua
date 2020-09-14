@@ -33,7 +33,6 @@ plugins = {
 { name = "reF00D by FAPS Team v1.0", path = "reF00D.skprx", section = "KERNEL", config = "keys.bin", version = "0001", desc = LANGUAGE["INSTALLP_DESC_REFOOD"], KEY = "INSTALLP_DESC_REFOOD", link = "https://raw.githubusercontent.com/dots-tb/reF00D/master/README.md", },
 { name = "noled by reprep v1.1", path = "noled.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NOLED"], KEY = "INSTALLP_DESC_NOLED", link = "https://raw.githubusercontent.com/rereprep/noled/master/README.md", },
 { name = "nosleep by NamelessGhoul0 v1.1", path = "nosleep.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NOSLEEP"], KEY = "INSTALLP_DESC_NOSLEEP", link = "https://raw.githubusercontent.com/NamelessGhoul0/nosleep/master/README.md", },
---{ name = "PSP2-batteryFixer by SKGleba v1.1", path = "bicr.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_BATFIX"], KEY = "INSTALLP_DESC_BATFIX", link = "https://raw.githubusercontent.com/SKGleba/PSP2-batteryFixer/master/README.md", },
 { name = "VideoDebug by SilicaAndPina v1.0", path = "videoDebug.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VIDEODBG"], KEY = "INSTALLP_DESC_VIDEODBG", link = "https://bitbucket.org/SilicaAndPina/videodebug/raw/1444ddb25bfd5208bc4c388c9ce97f0239a8a851/README.md", },
 { name = "NoPowerLimits by Electry v1.1", path = "NoPowerLimits.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NOPOWERL"], KEY = "INSTALLP_DESC_NOPOWERL", link = "https://raw.githubusercontent.com/Electry/NoPowerLimitsVita/master/README.md", },
 { name = "DerInClocKS by teakhanirons v1.0", path = "derinclocks.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DERIN"], KEY = "INSTALLP_DESC_DERIN", },
@@ -55,6 +54,7 @@ plugins = {
 { name = "EmergencyMount by teakhanirons 1.0", path = "EmergencyMount.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_EMERGENCYMOUNT"], KEY = "INSTALLP_DESC_EMERGENCYMOUNT", },
 { name = "Magic Automatic Fake User Input by Rufis01 1.0", path = "MAFUinput.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "CoreUnlocker80000H by GrapheneCt v1.0", path = "CoreUnlocker80000H.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_COREUNLOCK"], KEY = "INSTALLP_DESC_COREUNLOCK", link = "https://raw.githubusercontent.com/GrapheneCt/CoreUnlocker80000H/master/README.md", },
+{ name = "ds4touch by MERLev v1.0", path = "ds4touch.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"], KEY = "INSTALLP_DESC_DS4TOUCH", link = "https://raw.githubusercontent.com/MERLev/ds4touch/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },
@@ -72,7 +72,7 @@ plugins = {
 { name = "reSkype by SilicaAndPina v1.0", path = "reSkype.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RESKYPE"], KEY = "INSTALLP_DESC_RESKYPE", link = "https://bitbucket.org/SilicaAndPina/reskype/raw/35453046e269d6e903798354a51ee15cd090e48e/README.md", },
 { name = "Autoboot by Rinnegatamante v1.2 (only for 3.60/3.65)", path = "AutoBoot.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_AUTOBOOT"], KEY = "INSTALLP_DESC_AUTOBOOT", },
 { name = "Vitacompanion by devnoname120 v1.00", path = "vitacompanion.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITACOMPA"], KEY = "INSTALLP_DESC_VITACOMPA", link = "https://raw.githubusercontent.com/devnoname120/vitacompanion/master/README.md", },
-{ name = "volume_profile by cuevavirus v2.1.0", path = "jav.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VOLUPROF"], KEY = "INSTALLP_DESC_VOLUPROF", link = "https://raw.githubusercontent.com/cuevavirus/jav/master/README.md", },
+{ name = "volume_profile by cuevavirus v2.2.0", path = "jav.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_VOLUPROF"], KEY = "INSTALLP_DESC_VOLUPROF", link = "https://raw.githubusercontent.com/cuevavirus/jav/master/README.md", },
 { name = "DolcePolce by SilicaAndPina v1.0", path = "DolcePolce.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DOLCEPOLCE"], KEY = "INSTALLP_DESC_DOLCEPOLCE", link = "https://bitbucket.org/SilicaAndPina/dolcepolce/raw/4399a37276fcaae5b252998ac219a5cc6c1a23d4/README.md",  },
 { name = "LowMemMode by GrapheneCt v1.2", path = "LowMemMode.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_LOWMEMMODE"], KEY = "INSTALLP_DESC_LOWMEMMODE", link = "https://raw.githubusercontent.com/GrapheneCt/LowMemMode/master/README.md", },
 { name = "Quick Power by cuevavirus v1.1.0", path = "quick_power.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKPOWER"], KEY = "INSTALLP_DESC_QUICKPOWER", link = "https://raw.githubusercontent.com/cuevavirus/QuickPower/master/README.md", },
@@ -84,6 +84,7 @@ plugins = {
 { name = "ftpeverywhere v1.0 by teakhanirons", path = "ftpeverywhere.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "NoSleep.vpk"), },
 { name = "TrophyShot v1.0 by FMudanyali", path = "TrophyShot_shell.suprx", section = "main", path2 = "TrophyShot_app.suprx", section2 = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TROPHYSHOT"], KEY = "INSTALLP_DESC_TROPHYSHOT", link = "https://raw.githubusercontent.com/FMudanyali/TrophyShot/master/README.md", },
 { name = "BootSound v1.0 by teakhanirons", path = "bootsound.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
+{ name = "Quick Menu Plus v2.0.0 by cuevavirus", path = "quickmenuplus.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKMENU"], KEY = "INSTALLP_DESC_QUICKMENU", link = "https://git.shotatoshounenwachigau.moe/vita/quickmenuplus/plain/CHANGELOG.md", },
 
 --All
 { name = "PSV-VSH MENU by joel16 v3.4", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
@@ -114,7 +115,7 @@ plugins = {
 
 --NPXS10015 and *NPXS10016
 { name = "vita-macspoofer by Freakler", path = "macspoofer.suprx", section = "NPXS10015", path2 = "macspoofer.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MACSPOOF"], KEY = "INSTALLP_DESC_MACSPOOF", link = "https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md", },
-{ name = "Sysident by cuevavirus v1.0", path = "sysident.suprx", section = "NPXS10015", path2 = "sysident.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"], KEY = "INSTALLP_DESC_SYSIDENT", link = "https://raw.githubusercontent.com/cuevavirus/sysident/master/README.md", },
+{ name = "Sysident by cuevavirus v1.1", path = "sysident.suprx", section = "NPXS10015", path2 = "sysident.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"], KEY = "INSTALLP_DESC_SYSIDENT", link = "https://raw.githubusercontent.com/cuevavirus/sysident/master/README.md", },
 
 --NPXS10036
 { name = "reScreeny by dots_tb v1.2", path = "reScreeny.suprx", section = "NPXS10036", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RESCREENY"], KEY = "INSTALLP_DESC_RESCREENY", link = "https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md", },

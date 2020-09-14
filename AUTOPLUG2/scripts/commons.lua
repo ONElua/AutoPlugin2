@@ -8,11 +8,17 @@
 	Designed By Gdljjrod & DevDavisNunez.
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
+
+SYMBOL_SQUARE	= string.char(0xe2)..string.char(0x96)..string.char(0xa1)
+SYMBOL_TRIANGLE	= string.char(0xe2)..string.char(0x96)..string.char(0xb3)
+SYMBOL_CROSS	= string.char(0xe2)..string.char(0x95)..string.char(0xb3)
+SYMBOL_CIRCLE	= string.char(0xe2)..string.char(0x97)..string.char(0x8b)
+
 change,ReloadConfig = false,false
 
 function exit_bye_bye()
 
-	--tai.sync("ux0:config_test.txt") --Write Test
+	--tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
 	tai.sync() --Write Test
 
 	if change then ReloadConfig = false end
@@ -25,7 +31,7 @@ function exit_bye_bye()
 		os.message(LANGUAGE["STRING_PSVITA_RESTART"])
 		os.delay(250)
 		buttons.homepopup(1)
-		--error("USB")--Debugger
+		--error("USB")--Debugger			----------------------------------------------
 		power.restart()
 	end
 
@@ -151,6 +157,7 @@ function check_mounts ()
 		if files.exists(partitions[i]) then
 			local device_info = os.devinfo(partitions[i])
 			if device_info then
+				files.mkdir(partitions[i].."pspemu/seplugins/")
 				table.insert(PMounts,partitions[i])
 			end
 		end

@@ -63,6 +63,7 @@ ITALIAN["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Imposta Custom Warning 
 ITALIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Modifica Transparent Impose"
 ITALIAN["MENU_EXTRAS_TRANSLATE"] =                      "Traduci AutoPlugin II"
 ITALIAN["MENU_EXTRAS_RESET_CONFIG"] =             	    "Resetta il file config.txt in ur0"
+ITALIAN["MENU_EXTRAS_QUICKMENU_PLUS"] =                 "Configuration for QuickMenu Plus"
 
 ITALIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Consente la personalizzazione del file config.txt per PKGj"
 ITALIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Consente di impostare un'immagine personalizzata all'avvio"
@@ -73,6 +74,7 @@ ITALIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permette di scaricare e
 ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare AutoPlugin traducendo nella tua lingua!"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "Attenzione!!! Questa opzione ripristinerà il tuo ur0:tai/config.txt"
 ITALIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 Attenzione!!!\n\nTutti i plugin installati verranno disinstallati!!!\n\nSei sicuro di voler ripristinare ur0:tai/config.txt?"
+ITALIAN["MENU_EXTRAS_QUICKMENU_DESC"] =                 "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
 
 --Options Settings
 ITALIAN["MENU_SETTINGS_LANG_ONLINE"] =                  "Scarica le lingue disponibili"
@@ -89,7 +91,7 @@ ITALIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Permette di modificare e 
 ITALIAN["LIST_PLUGINS"] =                               "Lista dei plugin che possono essere installati:"
 ITALIAN["MARK_PLUGINS"] =                               "Per selezionare il/i plugin da installare"
 ITALIAN["CLEAN_PLUGINS"] =                              "Per cancellare tutti i plugin selezionati"
-ITALIAN["UNINSTALL_PLUGIN"] =                           "Disinstallare i plugin"
+ITALIAN["UNINSTALL_PLUGIN"] =                           "Disable the plugin(s)"
 ITALIAN["LR_SWAP"] =                                    "Per cambiare la partizione ux0/ur0"
 ITALIAN["PLUGINS_CUSTOM_PATH"] =                        "Installa nel percorso personalizzato"
 ITALIAN["PLUGINS_README_ONLINE"] =                      "Visualizza Readme Online" 
@@ -115,7 +117,8 @@ ITALIAN["UNINSTALLP_TITLE"] =                           "Plugins Manager"
 ITALIAN["UNINSTALLP_NOCONFIG_FOUND"] =                  "Nessun file config.txt trovato su: "
 ITALIAN["UNINSTALLP_PLUGIN"] =                          "Per disinstallare i plugin"
 ITALIAN["UNINSTALLP_LEFTRIGHT_SECTION"] =               "Per cambiare sezione"
-ITALIAN["UNINSTALLP_QUESTION"] =                        "Desideri davvero disinstallare ?"
+ITALIAN["UNINSTALLP_QUESTION"] =                        "Are you sure you want to disable?"
+ITALIAN["UNINSTALLP_DISABLE"] =                         "has been disabled"
 ITALIAN["UNINSTALLP_EMPTY"] =                           "VUOTO !!!"
 ITALIAN["UNINSTALLP_NO_PLUGINS"] =                      "Nessun Plugin in questa sezione"
 ITALIAN["UNINSTALLP_PLUGINS_NEED"] =                    "è richiesto per la funzionalità dei seguenti plugin"
@@ -191,6 +194,7 @@ ITALIAN["CXMB_DESC"] =                                  "CXMB consente agli uten
 ITALIAN["LANGSWAPPER_DESC"] =                           "Imposta il menu principale dei giochi e l'utilità di salvataggio dei dati nella lingua in cui è impostata la tua PSP nei giochi con lingue diverse della regione"
 ITALIAN["CATEGORYLITE_DESC"] =                          "Organizza tutti i vostri giochi, emulatori, Homebrew in cartelle sotto la cartella giochi"
 ITALIAN["KHBBS_UNDUB_DESC"] =                           "Versione UNDUB(Audio in giapponese) per il gioco Kingdom Hearts: Birth By Sleep/Final Mix"
+ITALIAN["GE_PATCH_DESC"] =                              "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config pkgj
 ITALIAN["MENU_INSTALL_CONFIG"] =                        "Installa il file config.txt per PKGJ v0.53+"
@@ -216,6 +220,22 @@ ITALIAN["CUSTOMBOOTSPLASH_NOPNG"] =                     "Formato Compatibile PNG
 --TransImpose
 ITALIAN["TRANSIMPOSE_OSK_TITLE"] =                      "Livello per TransparentImpose"
 ITALIAN["TRANSIMPOSE_LEVEL"] =                          "Modifica livello"
+
+--QuickMenu Plus
+ITALIAN["QUICKMENU_MENU_TIME"] =                		"Button Push time"
+ITALIAN["QUICKMENU_MENU_STANDBYRESTART"] =              "Standby Button"
+ITALIAN["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "BackGround Style"
+ITALIAN["QUICKMENU_MENU_TIME_DESC"] =                   "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+ITALIAN["QUICKMENU_MENU_STANDBYRESTART_DESC"] =         "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+ITALIAN["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =        "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+ITALIAN["QUICKMENU_MENU_UPDATE_CONFIG"] =               "Update Config for QuickMenu Plus"
+ITALIAN["QUICKMENU_MENU_UPDATING"] =                    "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+ITALIAN["QUICKMENU_OSK_TITLE_TIME"] =                   "Time in microseconds"
+ITALIAN["QUICKMENU_STANDBYRESTART_ENABLE"] =            "Restart & Power Off"
+ITALIAN["QUICKMENU_STANDBYRESTART_DISABLE"] =           "Suspend & Power Off・Restart"
+ITALIAN["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =         "Original"
+ITALIAN["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =      "Translucent"
+ITALIAN["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =            "Black"
 
 --Translate
 ITALIAN["TRANSLATE_ENGLISH_TITLE"] =                    "Inglese: "
@@ -298,7 +318,7 @@ ITALIAN["INSTALLP_DESC_UDCDUVCL"] =                     "(LCD SOLO) Consente di 
 ITALIAN["INSTALLP_DESC_VIIMOTE"] =                      "Controlla la tua PSVita utilizzando un WiiMote"
 ITALIAN["INSTALLP_DESC_VITASTICK"] =                    "La PSVita diventa come un controller di gioco USB  (RICHIEDE il vpk vitastick.vpk)"
 ITALIAN["INSTALLP_DESC_KUIO"] =                         "Consente ai moduli utente di accedere a ux0:datA per operazioni di I/O di base. Potrebbe essere necessario per determinati plugin specifici"
-ITALIAN["INSTALLP_DESC_ADRENALINE"] =                   "Ti permette di eseguire Adrenaline con un solo tocco"
+ITALIAN["INSTALLP_DESC_ADRENALINE"] =                   "Ti permette di eseguire Adrenaline con un solo tocco. Note: Adrenaline´s latest version must be installed"
 ITALIAN["INSTALLP_DESC_DSMOTION"] =                     "Supporto DualShock motion control per PlayStation TV"
 ITALIAN["INSTALLP_DESC_USBMC"] =                        "Trasforma la memoria USB come scheda di memoria PSVita"
 ITALIAN["INSTALLP_DESC_ANALOGSENHANCER"] =              "Questo piccolo plugin del kernel consente agli utenti di migliorare la propria esperienza con gli analogici PSVITA"
@@ -331,6 +351,7 @@ ITALIAN["INSTALLP_DESC_STAYBRIGHT"] =                   "Disattiva l'oscuramento
 ITALIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =               "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
 ITALIAN["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 ITALIAN["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
+ITALIAN["INSTALLP_DESC_DS4TOUCH"] =                     "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 ITALIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Questo plugin può visualizzare/personalizzare il Boot Splash su PS Vita/PSTV all'avvio. Richiede ENSO"
 ITALIAN["CUSTOMBOOTSPLASH_QUESTION"] =                  "Impostare questa immagine come Boot Splash personalizzato ?"
@@ -364,6 +385,7 @@ ITALIAN["INSTALLP_DESC_QUIETSHOT"] =                    "Silenzia il suono di de
 ITALIAN["INSTALLP_DESC_FTPEVERYWHERE"] =                "Questo plugin abilita perennemente il FTP in background.Utilizzarlo con shellsecbat MOD."
 ITALIAN["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 ITALIAN["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+ITALIAN["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 ITALIAN["INSTALLP_DESC_YAMT"] =                         "Ancora un altro plugin(SD2VITA) per PSVita/PSTV (richiede Enso, compatibile SOLO con firmware 3.60 e 3.65)"

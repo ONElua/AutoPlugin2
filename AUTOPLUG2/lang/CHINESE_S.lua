@@ -63,6 +63,7 @@ CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
 CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
 CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =             	"重置 ur0 目录的 config.txt"
+CHINESE_S["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -73,6 +74,7 @@ CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-bat
 CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 AutoPlugin II!"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "警告!!! 此选项将重置 ur0:tai/config.txt"
 CHINESE_S["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 警告!!!\n\n所有已安装的插件将被卸载!!!\n\n您确定要重置 ur0:tai/config.txt?"
+CHINESE_S["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
 
 --Options Settings
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
@@ -89,7 +91,7 @@ CHINESE_S["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	   "变更及设置 AutoPlug
 CHINESE_S["LIST_PLUGINS"] =                            "可供安装的插件列表:"
 CHINESE_S["MARK_PLUGINS"] =                            "标记/取消标记插件"
 CHINESE_S["CLEAN_PLUGINS"] =                           "清除选中的插件"
-CHINESE_S["UNINSTALL_PLUGIN"] =                        "卸载插件"
+CHINESE_S["UNINSTALL_PLUGIN"] =                        "Disable the plugin(s)"
 CHINESE_S["LR_SWAP"] =                                 "切换 ux0/ur0"
 CHINESE_S["PLUGINS_CUSTOM_PATH"] =                     "安装到自定义目录" 
 CHINESE_S["PLUGINS_README_ONLINE"] =                   "在线查阅说明文档" 
@@ -115,7 +117,8 @@ CHINESE_S["UNINSTALLP_TITLE"] =                        "插件管理器"
 CHINESE_S["UNINSTALLP_NOCONFIG_FOUND"] =               "在这里找不到 config.txt 文件: "
 CHINESE_S["UNINSTALLP_PLUGIN"] =                       "卸载插件"
 CHINESE_S["UNINSTALLP_LEFTRIGHT_SECTION"] =            "切换选项"
-CHINESE_S["UNINSTALLP_QUESTION"] =                     "确定要卸载吗?"
+CHINESE_S["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
+CHINESE_S["UNINSTALLP_DISABLE"] =                      "has been disabled"
 CHINESE_S["UNINSTALLP_EMPTY"] =                        "空白!"
 CHINESE_S["UNINSTALLP_NO_PLUGINS"] =                   "此部分没有插件"
 CHINESE_S["UNINSTALLP_PLUGINS_NEED"] =                 "被如下插件依赖以实现功能"
@@ -191,6 +194,7 @@ CHINESE_S["CXMB_DESC"] =                               "CXMB 允许用户在 PSP
 CHINESE_S["LANGSWAPPER_DESC"] =                        "此插件用于设置游戏主菜单和存档语言为您的系统语言,适用于具备不同区域语言的游戏"
 CHINESE_S["CATEGORYLITE_DESC"] =                       "将所有游戏,模拟器,自制软件组织到游戏目录下它们自己的文件夹中"
 CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降生/最终Mix 游戏的 Undub (日语配音) 版本"
+CHINESE_S["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config pkgj
 CHINESE_S["MENU_INSTALL_CONFIG"] =                     "为 PKGj v0.45+ 安装 config.txt"
@@ -216,6 +220,22 @@ CHINESE_S["CUSTOMBOOTSPLASH_NOPNG"] =                  "只兼容 PNG 格式"
 --TransImpose
 CHINESE_S["TRANSIMPOSE_OSK_TITLE"] =                   "透明级别"
 CHINESE_S["TRANSIMPOSE_LEVEL"] =                       "设置级别"
+
+--QuickMenu Plus
+CHINESE_S["QUICKMENU_MENU_TIME"] =                	   "Button Push time"
+CHINESE_S["QUICKMENU_MENU_STANDBYRESTART"] =           "Standby Button"
+CHINESE_S["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "BackGround Style"
+CHINESE_S["QUICKMENU_MENU_TIME_DESC"] =                "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+CHINESE_S["QUICKMENU_MENU_STANDBYRESTART_DESC"] =      "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+CHINESE_S["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =     "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+CHINESE_S["QUICKMENU_MENU_UPDATE_CONFIG"] =            "Update Config for QuickMenu Plus"
+CHINESE_S["QUICKMENU_MENU_UPDATING"] =                 "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+CHINESE_S["QUICKMENU_OSK_TITLE_TIME"] =                "Time in microseconds"
+CHINESE_S["QUICKMENU_STANDBYRESTART_ENABLE"] =         "Restart & Power Off"
+CHINESE_S["QUICKMENU_STANDBYRESTART_DISABLE"] =        "Suspend & Power Off・Restart"
+CHINESE_S["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =      "Original"
+CHINESE_S["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =   "Translucent"
+CHINESE_S["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "Black"
 
 --Translate
 CHINESE_S["TRANSLATE_ENGLISH_TITLE"] =                 "英语: "
@@ -298,7 +318,7 @@ CHINESE_S["INSTALLP_DESC_UDCDUVCL"] =                  "(仅限 LCD) 相对于�
 CHINESE_S["INSTALLP_DESC_VIIMOTE"] =                   "使用 WiiMote 控制你的 Vita"
 CHINESE_S["INSTALLP_DESC_VITASTICK"] =                 "将 PSVita 作为 USB 游戏控制器 (依赖 vitastick.vpk)"
 CHINESE_S["INSTALLP_DESC_KUIO"] =                      "允许用户模块访问 ux0:data 目录进行基本的 I/O 操作.某些特定插件需要调用它"
-CHINESE_S["INSTALLP_DESC_ADRENALINE"] =                "让您只需轻轻一按即可运行肾上腺素"
+CHINESE_S["INSTALLP_DESC_ADRENALINE"] =                "让您只需轻轻一按即可运行肾上腺素 Note: Adrenaline´s latest version must be installed"
 CHINESE_S["INSTALLP_DESC_DSMOTION"] =                  "为 PlayStation TV 提供 DualShock 控制器支持"
 CHINESE_S["INSTALLP_DESC_USBMC"] =                     "将 USB 存储设备设置为 Vita 记忆卡"
 CHINESE_S["INSTALLP_DESC_ANALOGSENHANCER"] =           "允许您配置摇杆死区或启用模拟输入的软件缩放"
@@ -331,6 +351,7 @@ CHINESE_S["INSTALLP_DESC_STAYBRIGHT"] =                "在 Playstation Vita 上
 CHINESE_S["INSTALLP_DESC_EMERGENCYMOUNT"] =            "此插件为Vita提供了变砖保护. 只需在启动时按住三角按键,就会出现一个菜单,可用于将分区挂载到USB (与Vitashell挂载分区到USB功能相同). 然后,您可以使用电脑来解决问题."
 CHINESE_S["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I 插件用于记录您在 PSVita 的操作并在需要时进行回放. 捕获内容将被保存为 ur0:/data/MAFU-I/capture.dat"
 CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游戏模式应用程序使用系统保留的CPU内核(CPU3)"
+CHINESE_S["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
@@ -364,6 +385,7 @@ CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "在截屏,录像,拍照�
 CHINESE_S["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - 始终运行在后台的FTP服务器插件."
 CHINESE_S["INSTALLP_DESC_TROPHYSHOT"] =                "就像在 PS4 中那样,解锁奖杯的同时自动截屏."
 CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动 PS Vita / PS TV 时播放一个 WAV 格式文件作为自定义启动音效."
+CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款用于重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"

@@ -9,10 +9,41 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-function insert_psp_plugin(device,obj)
+function read_configs_pspctrls(tb,tb2)
 
-	--install plugin
-	files.copy("resources/plugins_psp/controls_psp/"..obj.path, device.."pspemu/seplugins/")
+	for i=1, #PMounts do
+
+		if files.exists(PMounts[i].."pspemu/seplugins/game.txt") then
+			--game.txt
+			for line in io.lines(PMounts[i].."pspemu/seplugins/game.txt") do
+
+				if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
+
+				pathp,status = line:match("(.+) (.+)")
+				if pathp then
+					
+					for j=1,#tb do
+
+						if pathp:lower() == "ms0:/seplugins/"..tb[j].path:lower() then
+
+							if files.exists(PMounts[i].."pspemu/seplugins/"..tb[j].path:lower()) then
+								tb2[PMounts[i]..tb[j].path:lower()] = tonumber(status) or 0
+								break
+							end
+						end
+					end
+
+				end
+
+			end
+		end
+
+
+	end
+
+end
+
+function insert_disable_psp_plugin(device,obj,install)
 
 	--add vsh.txt & game.txt
 	local nlinea, cont, _find, file_txt = 0,0,false, {}
@@ -34,43 +65,13 @@ function insert_psp_plugin(device,obj)
 
 	end
 
-	if _find then
-		file_txt[nlinea] = find_obj.." 1"
-	else
-		table.insert(file_txt, find_obj.." 1")
-	end
-
-	local fp = io.open(device.."pspemu/seplugins/game.txt", "w+")
-	for s,t in pairs(file_txt) do
-		fp:write(string.format('%s\n', tostring(t)))
-	end
-	fp:close()
-
-end
-
-function delete_psp_plugin(device,obj)
-
-	--del vsh.txt & game.txt
-	local nlinea, cont, _find, file_txt = 0,0,false, {}
-	local find_obj = "ms0:/seplugins/"..obj.path
-
-	for line in io.lines(device.."pspemu/seplugins/game.txt") do
-		cont += 1
-		if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-		table.insert(file_txt,line)
-
-		pathp,status = line:match("(.+) (.+)")
-
-		if pathp then
-			if pathp:lower() == find_obj:lower() then
-				_find = true
-				nlinea = cont
-			end
+	if install == 1 then
+		if _find then
+			file_txt[nlinea] = find_obj.." 1"
+		else
+			table.insert(file_txt, find_obj.." 1")
 		end
-
-	end
-
-	if _find then
+	else
 		file_txt[nlinea] = find_obj.." 0"
 	end
 
@@ -84,8 +85,10 @@ end
 
 function psp_ctrls()
 
-	local selector,limit = 1,8
+	local plugins_status={}
+	read_configs_pspctrls(psp_plugins,plugins_status)
 
+	local selector,limit = 1,8
 	if #psp_plugins < limit then limit = #psp_plugins end
 	local scroll = newScroll(psp_plugins, limit)
 	local xscroll = 10
@@ -96,6 +99,8 @@ function psp_ctrls()
 
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
@@ -122,6 +127,14 @@ function psp_ctrls()
 
 			if psp_plugins[i].inst then ccolor = color.green else ccolor = color.white end
 			screen.print(25,y, psp_plugins[i].name,1,ccolor,0x0)
+
+			if plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] then
+				if plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 1 then
+					if dotg then dotg:blit(925,y-1) end
+			elseif plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 0 then
+				if doty then doty:blit(925,y-1) end
+				end
+			end
 
 			y+=35
 		end
@@ -189,31 +202,34 @@ function psp_ctrls()
 			end
 
 			if buttons.accept then
-				if not change then buttons.homepopup(0) end
-					files.mkdir(PMounts[selector].."pspemu/seplugins/")
-					if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-						files.new(PMounts[selector].."pspemu/seplugins/game.txt")
-					end
 
-					psp_plugins[scroll.sel].inst = true
+				if not files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+					files.new(PMounts[selector].."pspemu/seplugins/game.txt")
+				end
 
-					for i=1, scroll.maxim do
-						if psp_plugins[i].inst then
-							insert_psp_plugin(PMounts[selector], psp_plugins[i])
+				psp_plugins[scroll.sel].inst = true
+
+				for i=1, scroll.maxim do
+					if psp_plugins[i].inst then
+
+						--install plugin
+						files.copy("resources/plugins_psp/controls_psp/"..psp_plugins[i].path, PMounts[selector].."pspemu/seplugins/")
+
+						if plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 0 or not plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] then
+							insert_disable_psp_plugin(PMounts[selector], psp_plugins[i],1)
+							plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] = 1
+
 							if back2 then back2:blit(0,0) end
 								message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
 							os.delay(750)
 						end
 					end
+				end
 
-					for i=1,scroll.maxim do
-						psp_plugins[i].inst = false
-					end
+				for i=1,scroll.maxim do
+					psp_plugins[i].inst = false
+				end
 
-					if back2 then back2:blit(0,0) end
-						message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
-					os.delay(1500)
-				if not change then buttons.homepopup(1) end
 			end
 			
 			--Mark/Unmark
@@ -230,33 +246,31 @@ function psp_ctrls()
 			end
 
 
-
 			--Pendiente README para Remastered Plugins for PSP
 			--link = "https://github.com/TheOfficialFloW/RemasteredControls/raw/master/README.md",
 
-			--del plugins
+			--disable plugins
 			if buttons.triangle then
-				if os.dialog("\n\n"..LANGUAGE["UNINSTALLP_QUESTION"], LANGUAGE["MENU_PSP"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
-					psp_plugins[scroll.sel].inst = true
 
-					for i=1,scroll.maxim do
-						if psp_plugins[i].inst then
-							if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-								delete_psp_plugin(PMounts[selector], psp_plugins[i])
-								if back2 then back2:blit(0,0) end
-									message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
-								os.delay(750)
-							end
+				psp_plugins[scroll.sel].inst = true
+
+				for i=1,scroll.maxim do
+					if psp_plugins[i].inst then
+						if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") and plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 1 then
+							insert_disable_psp_plugin(PMounts[selector], psp_plugins[i],0)
+							plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] = 0
+
+							if back2 then back2:blit(0,0) end
+								message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
+							os.delay(750)
 						end
 					end
-					for i=1,scroll.maxim do
-						psp_plugins[i].inst = false
-					end
-
-					if back2 then back2:blit(0,0) end
-						message_wait(LANGUAGE["PSPCTRLS_GAME_UPDATED"])
-					os.delay(1500)
 				end
+
+				for i=1,scroll.maxim do
+					psp_plugins[i].inst = false
+				end
+				
 			end
 
 		end

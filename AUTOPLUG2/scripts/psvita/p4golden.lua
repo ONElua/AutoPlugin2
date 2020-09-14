@@ -101,8 +101,6 @@ function P4Golden_HD()
 
 		--------------------------	Controls	--------------------------
 
-		--if buttons.select then error("USB") end
-
 		if buttons.released.cancel then break end
 
 		--Exit

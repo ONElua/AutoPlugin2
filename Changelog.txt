@@ -1,11 +1,19 @@
+# v1.10
+++ Added Ge patch plugin from TheOfficialFloW in PSP plugins for Adrenaline section
+++ Added plugins from CBPS: QuickMenu Plus
+++ Update Sysident v1.1
+++ Added ds4touch from MERLev
+++ Added the new option Configuration for QuicMenu Plus to Extras section
+++ Added green dot to enabled psp plugins and yellow for disabled
+
 # v1.09
 ++ Fix Updater Plugins Online
-++ Add missing plugin CoreUnlocker80000H by GrapheneCt
+++ Added missing plugin CoreUnlocker80000H by GrapheneCt
 
 # v1.08
-++ Add MiniVitaTV by TheOfficialFloW beta 0.4
-++ Add more p lugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.
-++ Add Persona 4 Golden HD plugin (Vita Plugins).
+++ Added MiniVitaTV by TheOfficialFloW beta 0.4
+++ Added more plugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.
+++ Added Persona 4 Golden HD plugin (Vita Plugins).
 ++ Fix VitaGrafix PatchList.
 
 # v1.07
@@ -23,7 +31,7 @@
 
 # v1.05
 + Reverted changes and fix bugs in the v1.04
-+ Add option "Reset config.txt in ur0:tai" in the section Extras.
++ Added option "Reset config.txt in ur0:tai" in the section Extras.
 - Removed Option (Now plugins list can be sorted by: alfabetic or section, by pressing L/R).
 - Removed Option (Now plugins will only be installed to ur0:tai/config.txt)
 

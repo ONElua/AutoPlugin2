@@ -120,6 +120,8 @@ function config_pkgj()
 	local scroll,xscroll = newScroll(menuext,#menuext),5
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)

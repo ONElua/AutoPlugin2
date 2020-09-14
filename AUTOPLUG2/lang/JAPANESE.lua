@@ -63,6 +63,7 @@ JAPANESE["MENU_EXTRAS_CUSTOM_WARNING"] =                "カスタム警告メ�
 JAPANESE["MENU_EXTRAS_TRANSP_IMPOSE"] =                 "クイックメニュー透明化の設定"
 JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "AutoPlugin IIの翻訳"
 JAPANESE["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
+JAPANESE["MENU_EXTRAS_QUICKMENU_PLUS"] =                "Configuration for QuickMenu Plus"
 
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
@@ -73,6 +74,7 @@ JAPANESE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =          "PSViaにPSP2-batteryFix
 JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用する言語に翻訳してAutoPlugin IIの改善に協力してください！"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =     "Warning!!! This option wil reset your ur0:tai/config.txt"
 JAPANESE["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =         "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+JAPANESE["MENU_EXTRAS_QUICKMENU_DESC"] =                "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
 
 --Options Settings
 JAPANESE["MENU_SETTINGS_LANG_ONLINE"] =                 "利用可能な言語をダウンロードする"
@@ -89,7 +91,7 @@ JAPANESE["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Allows to change and set
 JAPANESE["LIST_PLUGINS"] =                              "インストールする準備ができているプラグインリスト:"
 JAPANESE["MARK_PLUGINS"] =                              "プラグインの選択/選択解除"
 JAPANESE["CLEAN_PLUGINS"] =                             "選択したプラグインを削除"
-JAPANESE["UNINSTALL_PLUGIN"] =                          "プラグインをアンインストール"
+JAPANESE["UNINSTALL_PLUGIN"] =                          "Disable the plugin(s)"
 JAPANESE["LR_SWAP"] =                                   "ux0/ur0の切り替え"
 JAPANESE["PLUGINS_CUSTOM_PATH"] =                       "カスタムパスにインストール" 
 JAPANESE["PLUGINS_README_ONLINE"] =                     "オンラインでReadmeを表示" 
@@ -115,7 +117,8 @@ JAPANESE["UNINSTALLP_TITLE"] =                          "Plugins Manager"
 JAPANESE["UNINSTALLP_NOCONFIG_FOUND"] =                 "config.txtが見つかりません: "
 JAPANESE["UNINSTALLP_PLUGIN"] =                         "プラグインをアンインストールします"
 JAPANESE["UNINSTALLP_LEFTRIGHT_SECTION"] =              "セクションを切り替えます"
-JAPANESE["UNINSTALLP_QUESTION"] =                       "本当にアンインストールしますか？"
+JAPANESE["UNINSTALLP_QUESTION"] =                       "Are you sure you want to disable?"
+JAPANESE["UNINSTALLP_DISABLE"] =                        "has been disabled"
 JAPANESE["UNINSTALLP_EMPTY"] =                          "アンインストールできるものがありません!!!"
 JAPANESE["UNINSTALLP_NO_PLUGINS"] =                     "No Plugins in this section"
 JAPANESE["UNINSTALLP_PLUGINS_NEED"] =                   "is required for functionality of following plugins"
@@ -191,6 +194,7 @@ JAPANESE["CXMB_DESC"] =                                 "CXMBを使用すると�
 JAPANESE["LANGSWAPPER_DESC"] =                          "ゲームのホームメニューと、異なる言語（別の地域）のゲームのセーブデータツールをPSPで設定したものに設定します。"
 JAPANESE["CATEGORYLITE_DESC"] =                         "すべてのゲーム、エミュレーター、Homebrewをゲームディレクトリ直下の独自のフォルダーに整理します"
 JAPANESE["KHBBS_UNDUB_DESC"] =                          "ゲーム「キングダムハーツ：バースバイスリープ/ファイナルミックス」のUNDUBバージョン（日本語の音声）"
+JAPANESE["GE_PATCH_DESC"] =                             "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config pkgj
 JAPANESE["MENU_INSTALL_CONFIG"] =                       "PKGJ v0.45以上のconfig.txtをインストールします"
@@ -216,6 +220,22 @@ JAPANESE["CUSTOMBOOTSPLASH_NOPNG"] =                    "互換性のある形�
 --TransImpose
 JAPANESE["TRANSIMPOSE_OSK_TITLE"] =                     "透明度のレベル"
 JAPANESE["TRANSIMPOSE_LEVEL"] =                         "Level Set"
+
+--QuickMenu Plus
+JAPANESE["QUICKMENU_MENU_TIME"] =                	    "Button Push time"
+JAPANESE["QUICKMENU_MENU_STANDBYRESTART"] =             "Standby Button"
+JAPANESE["QUICKMENU_MENU_BACKGROUNDSTYLE"] =            "BackGround Style"
+JAPANESE["QUICKMENU_MENU_TIME_DESC"] =                  "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+JAPANESE["QUICKMENU_MENU_STANDBYRESTART_DESC"] =        "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+JAPANESE["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =       "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+JAPANESE["QUICKMENU_MENU_UPDATE_CONFIG"] =              "Update Config for QuickMenu Plus"
+JAPANESE["QUICKMENU_MENU_UPDATING"] =                   "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+JAPANESE["QUICKMENU_OSK_TITLE_TIME"] =                  "Time in microseconds"
+JAPANESE["QUICKMENU_STANDBYRESTART_ENABLE"] =           "Restart & Power Off"
+JAPANESE["QUICKMENU_STANDBYRESTART_DISABLE"] =          "Suspend & Power Off・Restart"
+JAPANESE["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =        "Original"
+JAPANESE["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =     "Translucent"
+JAPANESE["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =           "Black"
 
 --Translate
 JAPANESE["TRANSLATE_ENGLISH_TITLE"] =                   "英語: "
@@ -298,7 +318,7 @@ JAPANESE["INSTALLP_DESC_UDCDUVCL"] =                    "（LCDのみ）USB経�
 JAPANESE["INSTALLP_DESC_VIIMOTE"] =                     "WiiMoteでPSVitaを制御する"
 JAPANESE["INSTALLP_DESC_VITASTICK"] =                   "PSVitaをUSBゲームコントローラーとして使用できます（vitastick.vpkが必要です）"
 JAPANESE["INSTALLP_DESC_KUIO"] =                        "ユーザーモジュールが基本的なI/O操作のために「ux0：data」にアクセスできるようにします。 特定のプラグインが必要な場合があります"
-JAPANESE["INSTALLP_DESC_ADRENALINE"] =                  "ワンタッチでアドレナリンを実行できます"
+JAPANESE["INSTALLP_DESC_ADRENALINE"] =                  "ワンタッチでアドレナリンを実行できます. Note: Adrenaline´s latest version must be installed"
 JAPANESE["INSTALLP_DESC_DSMOTION"] =                    "PlayStation TVのDualShockモーションコントロールのサポート"
 JAPANESE["INSTALLP_DESC_USBMC"] =                       "PSVitaでUSBストレージをメモリカードとして使用する"
 JAPANESE["INSTALLP_DESC_ANALOGSENHANCER"] =             "このカーネルプラグインにより、ユーザーはPSVitaのアナログコントロールのエクスペリエンスを向上させることができます"
@@ -331,6 +351,7 @@ JAPANESE["INSTALLP_DESC_STAYBRIGHT"] =                  "Disable screen auto-dim
 JAPANESE["INSTALLP_DESC_EMERGENCYMOUNT"] =              "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
 JAPANESE["INSTALLP_DESC_MAFUINPUT"] =                   "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 JAPANESE["INSTALLP_DESC_COREUNLOCK"] =                  "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
+JAPANESE["INSTALLP_DESC_DS4TOUCH"] =                    "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"
@@ -364,6 +385,7 @@ JAPANESE["INSTALLP_DESC_QUIETSHOT"] =                   "Silences the shutter so
 JAPANESE["INSTALLP_DESC_FTPEVERYWHERE"] =               "ftpeverywhere - Always running background FTP server plugin."
 JAPANESE["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 JAPANESE["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"

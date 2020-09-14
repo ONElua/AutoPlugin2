@@ -63,16 +63,18 @@ ENGLISH_US["MENU_EXTRAS_CUSTOM_WARNING"] =              "Set custom warning mess
 ENGLISH_US["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set transparent impose"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE"] =                   "Translate AutoPlugin II"
 ENGLISH_US["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
+ENGLISH_US["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
 ENGLISH_US["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Set a custom warning message (instead of the epilepsy warning) when you boot with ENSO"
-ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transparent (255 = 0% Transparent, 0 = 100% Transparent) values below 30 are not recommended"
+ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transparency (255 = 0% Transparency, 0 = 100% Transparency) values below 30 are not recommended"
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Download and install PSP2-batteryFixer vpk in your Vita (Fixes most of PSVita's battery-related problems)"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin II by translating to your language!"
-ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
+ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option will reset your ur0:tai/config.txt"
 ENGLISH_US["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
+ENGLISH_US["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu opening time and Custom background styles"
 
 --Options Settings
 ENGLISH_US["MENU_SETTINGS_LANG_ONLINE"] =               "Download available languages"
@@ -89,7 +91,7 @@ ENGLISH_US["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Allows to change and set f
 ENGLISH_US["LIST_PLUGINS"] =                            "List of plugins ready to install:"
 ENGLISH_US["MARK_PLUGINS"] =                            "Mark/unmark plugin(s)"
 ENGLISH_US["CLEAN_PLUGINS"] =                           "Clean selected plugins"
-ENGLISH_US["UNINSTALL_PLUGIN"] =                        "Uninstall the plugin(s)"
+ENGLISH_US["UNINSTALL_PLUGIN"] =                        "Disable the plugin(s)"
 ENGLISH_US["LR_SWAP"] =                                 "Swap ux0/ur0"
 ENGLISH_US["PLUGINS_CUSTOM_PATH"] =                     "Install in the custom path" 
 ENGLISH_US["PLUGINS_README_ONLINE"] =                   "View readme online" 
@@ -115,7 +117,8 @@ ENGLISH_US["UNINSTALLP_TITLE"] =                        "Plugins manager"
 ENGLISH_US["UNINSTALLP_NOCONFIG_FOUND"] =               "No config.txt found at: "
 ENGLISH_US["UNINSTALLP_PLUGIN"] =                       "To uninstall plugin"
 ENGLISH_US["UNINSTALLP_LEFTRIGHT_SECTION"] =            "To switch section"
-ENGLISH_US["UNINSTALLP_QUESTION"] =                     "Are you sure you want to uninstall?"
+ENGLISH_US["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
+ENGLISH_US["UNINSTALLP_DISABLE"] =                      "has been disabled"
 ENGLISH_US["UNINSTALLP_EMPTY"] =                        "Empty!"
 ENGLISH_US["UNINSTALLP_NO_PLUGINS"] =                   "No Plugins in this section"
 ENGLISH_US["UNINSTALLP_PLUGINS_NEED"] =                 "is required for functionality of following plugins"
@@ -191,6 +194,7 @@ ENGLISH_US["CXMB_DESC"] =                               "CXMB allows users to us
 ENGLISH_US["LANGSWAPPER_DESC"] =                        "It sets games home menu and the save data utility to the language your PSP is set to on games with different region language"
 ENGLISH_US["CATEGORYLITE_DESC"] =                       "Organize all your games, emulators, homebrews, games, into their own folders under the Games Directory"
 ENGLISH_US["KHBBS_UNDUB_DESC"] =                        "UNDUB version (Audio in Japanese) for the game Kingdom Hearts: Birth By Sleep/Final Mix"
+ENGLISH_US["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config pkgj
 ENGLISH_US["MENU_INSTALL_CONFIG"] =                     "Install config.txt for PKGj v0.45+"
@@ -216,6 +220,22 @@ ENGLISH_US["CUSTOMBOOTSPLASH_NOPNG"] =                  "Format Compatible PNG"
 --TransImpose
 ENGLISH_US["TRANSIMPOSE_OSK_TITLE"] =                   "Level for TransparentImpose"
 ENGLISH_US["TRANSIMPOSE_LEVEL"] =                       "Level Set"
+
+--QuickMenu Plus
+ENGLISH_US["QUICKMENU_MENU_TIME"] =                		"Button Push time"
+ENGLISH_US["QUICKMENU_MENU_STANDBYRESTART"] =           "Standby Button"
+ENGLISH_US["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "BackGround Style"
+ENGLISH_US["QUICKMENU_MENU_TIME_DESC"] =                "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+ENGLISH_US["QUICKMENU_MENU_STANDBYRESTART_DESC"] =      "Sets the standby button to function as a restart button. Toggle from 'Restart & Power Off' to  'Suspend & Power Off/Restart', when last option is chosen, hold the 'Power Off/Restart' button to restart, and single press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+ENGLISH_US["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =     "Sets the background style. Toggle between black, translucent or original. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+ENGLISH_US["QUICKMENU_MENU_UPDATE_CONFIG"] =            "Update Config for QuickMenu Plus"
+ENGLISH_US["QUICKMENU_MENU_UPDATING"] =                 "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+ENGLISH_US["QUICKMENU_OSK_TITLE_TIME"] =                "Time in microseconds"
+ENGLISH_US["QUICKMENU_STANDBYRESTART_ENABLE"] =         "Restart & Power Off"
+ENGLISH_US["QUICKMENU_STANDBYRESTART_DISABLE"] =        "Suspend & Power Off・Restart"
+ENGLISH_US["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =      "Original"
+ENGLISH_US["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =   "Translucent"
+ENGLISH_US["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "Black"
 
 --Translate
 ENGLISH_US["TRANSLATE_ENGLISH_TITLE"] =                 "English: "
@@ -298,7 +318,7 @@ ENGLISH_US["INSTALLP_DESC_UDCDUVCL"] =                  "(LCD only) Stream your 
 ENGLISH_US["INSTALLP_DESC_VIIMOTE"] =                   "Control your Vita with a WiiMote"
 ENGLISH_US["INSTALLP_DESC_VITASTICK"] =                 "PSVita as a USB game controller (Require vitastick.vpk)"
 ENGLISH_US["INSTALLP_DESC_KUIO"] =                      "Allows user modules to access ux0:data for basic I/O operations. May be necessary for certain specific plugins"
-ENGLISH_US["INSTALLP_DESC_ADRENALINE"] =                "Allows you to run adrenaline with a single touch"
+ENGLISH_US["INSTALLP_DESC_ADRENALINE"] =                "Allows you to run adrenaline with a single touch. Note: Adrenaline´s latest version must be installed"
 ENGLISH_US["INSTALLP_DESC_DSMOTION"] =                  "DualShock motion control support for PlayStation TV"
 ENGLISH_US["INSTALLP_DESC_USBMC"] =                     "USB storage as Vita memory card"
 ENGLISH_US["INSTALLP_DESC_ANALOGSENHANCER"] =           "Allows you to configure a deadzone or enable software rescaling of analog inputs"
@@ -331,6 +351,7 @@ ENGLISH_US["INSTALLP_DESC_STAYBRIGHT"] =                "Disable screen auto-dim
 ENGLISH_US["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a brick protection for Vita. Simply hold triangle on boot and you will be presented with a menu to mount partitions (the same ones as Vitashell plus ur0) over USB. You can then use your computer to resolve the issue."
 ENGLISH_US["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 ENGLISH_US["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
+ENGLISH_US["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 ENGLISH_US["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "This plugin can display Boot Splash on PS Vita/PSTV at boot. Requires ENSO."
 ENGLISH_US["CUSTOMBOOTSPLASH_QUESTION"] =               "Set this image as Custom Boot Splash ?"
@@ -364,6 +385,7 @@ ENGLISH_US["INSTALLP_DESC_QUIETSHOT"] =                 "Silences the shutter so
 ENGLISH_US["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always running background FTP server plugin."
 ENGLISH_US["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 ENGLISH_US["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
+ENGLISH_US["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 ENGLISH_US["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"

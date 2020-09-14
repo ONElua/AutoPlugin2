@@ -63,6 +63,7 @@ RUSSIAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "Установить св�
 RUSSIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Настроить прозрачность фона быстрого меню PS Vita"
 RUSSIAN["MENU_EXTRAS_TRANSLATE"] =                   "Перевести AutoPlugin II"
 RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Сбросить config.txt в разделе ur0"
+RUSSIAN["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
@@ -73,6 +74,7 @@ RUSSIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Позволяет заг�
 RUSSIAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Помогите улучшить AutoPlugin II переведя его на свой родной язык!"
 RUSSIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Внимание!!! Эта функция сбросит ваш ur0:tai/config.txt"
 RUSSIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Внимание!!!\n\nВсе установленные плагины будут отключены!!!\n\nВы действительно хотите сбросить ur0:tai/config.txt?"
+RUSSIAN["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
 
 --Options Settings
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обновления переводов"
@@ -89,7 +91,7 @@ RUSSIAN["MENU_SETTINGS_CHANGE_FONT_DESC"] =          "Выбрать и прим
 RUSSIAN["LIST_PLUGINS"] =                            "Список плагинов, доступных для установки:"
 RUSSIAN["MARK_PLUGINS"] =                            "Выбрать/отменить плагин(ы)"
 RUSSIAN["CLEAN_PLUGINS"] =                           "Очистить выбор плагинов"
-RUSSIAN["UNINSTALL_PLUGIN"] =                        "Удалить выбранные плагин(ы)"
+RUSSIAN["UNINSTALL_PLUGIN"] =                        "Disable the plugin(s)"
 RUSSIAN["LR_SWAP"] =                                 "Выбрать раздел ux0 или ur0"
 RUSSIAN["PLUGINS_CUSTOM_PATH"] =                     "Установить в выбранный раздел"
 RUSSIAN["PLUGINS_README_ONLINE"] =                   "Просмотр онлайн справки"
@@ -115,7 +117,8 @@ RUSSIAN["UNINSTALLP_TITLE"] =                        "Менеджер плаг�
 RUSSIAN["UNINSTALLP_NOCONFIG_FOUND"] =               "Файл config.txt не найден в разделе "
 RUSSIAN["UNINSTALLP_PLUGIN"] =                       "Удалить плагин"
 RUSSIAN["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Выбрать секцию"
-RUSSIAN["UNINSTALLP_QUESTION"] =                     "Вы действительно хотите удалить?"
+RUSSIAN["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
+RUSSIAN["UNINSTALLP_DISABLE"] =                      "has been disabled"
 RUSSIAN["UNINSTALLP_EMPTY"] =                        "НИЧЕГО НЕТ!!!"
 RUSSIAN["UNINSTALLP_NO_PLUGINS"] =                   "В данной секции нет плагинов"
 RUSSIAN["UNINSTALLP_PLUGINS_NEED"] =                 "требуется для работоспособности следующих плагинов"
@@ -191,6 +194,7 @@ RUSSIAN["CXMB_DESC"] =                               "CXMB позволяет и
 RUSSIAN["LANGSWAPPER_DESC"] =                        "Изменяет язык диалогов сохранения и выхода из игры на текущий, выбранный в настройках"
 RUSSIAN["CATEGORYLITE_DESC"] =                       "Распределите ваши игры, эмуляторы и прочие программы по категориям в меню Игры"
 RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (японскую озвучку) для игры Kingdom Hearts: Birth By Sleep/Final Mix"
+RUSSIAN["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config PKGj
 RUSSIAN["MENU_INSTALL_CONFIG"] =                     "Установить config.txt для PKGj v0.45+"
@@ -216,6 +220,22 @@ RUSSIAN["CUSTOMBOOTSPLASH_NOPNG"] =                  "Поддерживаютс
 --TransImpose
 RUSSIAN["TRANSIMPOSE_OSK_TITLE"] =                   "Уровень прозрачности для TransparentImpose"
 RUSSIAN["TRANSIMPOSE_LEVEL"] =                       "Применить уровень"
+
+--QuickMenu Plus
+RUSSIAN["QUICKMENU_MENU_TIME"] =                	 "Button Push time"
+RUSSIAN["QUICKMENU_MENU_STANDBYRESTART"] =           "Standby Button"
+RUSSIAN["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "BackGround Style"
+RUSSIAN["QUICKMENU_MENU_TIME_DESC"] =                "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+RUSSIAN["QUICKMENU_MENU_STANDBYRESTART_DESC"] =      "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+RUSSIAN["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =     "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+RUSSIAN["QUICKMENU_MENU_UPDATE_CONFIG"] =            "Update Config for QuickMenu Plus"
+RUSSIAN["QUICKMENU_MENU_UPDATING"] =                 "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+RUSSIAN["QUICKMENU_OSK_TITLE_TIME"] =                "Time in microseconds"
+RUSSIAN["QUICKMENU_STANDBYRESTART_ENABLE"] =         "Restart & Power Off"
+RUSSIAN["QUICKMENU_STANDBYRESTART_DISABLE"] =        "Suspend & Power Off・Restart"
+RUSSIAN["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =      "Original"
+RUSSIAN["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =   "Translucent"
+RUSSIAN["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "Black"
 
 --Translate
 RUSSIAN["TRANSLATE_ENGLISH_TITLE"] =                 "Английский: "
@@ -298,7 +318,7 @@ RUSSIAN["INSTALLP_DESC_UDCDUVCL"] =                  "(Только для LCD �
 RUSSIAN["INSTALLP_DESC_VIIMOTE"] =                   "Управляйте вашей PS Vita при помощи WiiMote"
 RUSSIAN["INSTALLP_DESC_VITASTICK"] =                 "Превратите PS Vita в USB контроллер (необходим vitastick.vpk)"
 RUSSIAN["INSTALLP_DESC_KUIO"] =                      "Позволяет пользовательским плагинам выполнять операции чтения и записи в файлы и папки (плагин-компаньон для других плагинов)"
-RUSSIAN["INSTALLP_DESC_ADRENALINE"] =                "Позволяет пропустить первый холостой запуск Adrenaline после включения системы"
+RUSSIAN["INSTALLP_DESC_ADRENALINE"] =                "Позволяет пропустить первый холостой запуск Adrenaline после включения системы. Note: Adrenaline´s latest version must be installed"
 RUSSIAN["INSTALLP_DESC_DSMOTION"] =                  "Добавляет функции управления движением PS Vita на PSTV (при использовании DualShock)"
 RUSSIAN["INSTALLP_DESC_USBMC"] =                     "Используйте USB накопитель вместо карты памяти"
 RUSSIAN["INSTALLP_DESC_ANALOGSENHANCER"] =           "Тонкая настройка аналоговых стиков PS Vita"
@@ -331,6 +351,7 @@ RUSSIAN["INSTALLP_DESC_STAYBRIGHT"] =                "Плагин отключ�
 RUSSIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Данный плагин предоставляет некий вариант защиты от поломки. Зажмите кнопку ТРЕУГОЛЬНИК при загрузке Vita и вы попадёте в меню выбора устройства для подключения по USB. После чего можете откатить изменения, мешающие загрузке системы."
 RUSSIAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I это плагин, который может записать и воспроизвести последовательность нажатых клавиш. Сама запись будет сохранена в ur0:/data/MAFU-I/capture.dat"
 RUSSIAN["INSTALLP_DESC_COREUNLOCK"] =                "Плагин даёт возможность использовать системное (четвёртое) ядро процессора в играх и пользовательских приложениях"
+RUSSIAN["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
@@ -364,6 +385,7 @@ RUSSIAN["INSTALLP_DESC_QUIETSHOT"] =                 "Плагин отключ�
 RUSSIAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "Плагин добавляет постоянно работающий в фоновом режиме FTP сервер"
 RUSSIAN["INSTALLP_DESC_TROPHYSHOT"] =             	 "Автоматическое создание снимка экрана при получении приза - прямо как на PS4."
 RUSSIAN["INSTALLP_DESC_BOOTSOUND"] =             	 "Плагин позволяет воспроизвести звук в формате WAV при включении Vita или PSTV."
+RUSSIAN["INSTALLP_DESC_QUICKMENU"] =             	 "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"

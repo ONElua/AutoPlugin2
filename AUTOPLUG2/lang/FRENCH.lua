@@ -62,7 +62,8 @@ FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personna
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin TransparentImpose"
 FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
-FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	  "Réinitialiser config.txt dans ur0"
+FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	"Réinitialiser config.txt dans ur0"
+FRENCH["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 
 FRENCH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Permet de configurer le fichier config.txt de PKGj"
 FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Modifier le démarrage de votre console avec une image personnalisée"
@@ -73,6 +74,7 @@ FRENCH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Permet de télécharger et 
 FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlugin II en le traduisant dans votre langue !"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Attention !!! Cette option va réinitialiser votre ur0:tai/config.txt"
 FRENCH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Attention!!!\nTous les plugins installés seront désinstallés!!!\n\nÊtes-vous sûr de vouloir réinitialiser votre fichier config.txt ?"
+FRENCH["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
 
 --Options Settings
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Paramètres des langues"
@@ -89,7 +91,7 @@ FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Permet de changer la police d'
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés :"
 FRENCH["MARK_PLUGINS"] =                            "Cocher/Décocher"
 FRENCH["CLEAN_PLUGINS"] =                           "Annuler la sélection"
-FRENCH["UNINSTALL_PLUGIN"] =                        "Désinstaller le plugin"
+FRENCH["UNINSTALL_PLUGIN"] =                        "Disable the plugin(s)"
 FRENCH["LR_SWAP"] =                                 "Permuter entre ux0 et ur0"
 FRENCH["PLUGINS_CUSTOM_PATH"] =                     "Installation personnalisé du plugin" 
 FRENCH["PLUGINS_README_ONLINE"] =                   "Plus d'info du plugin" 
@@ -115,7 +117,8 @@ FRENCH["UNINSTALLP_TITLE"] =                        "Plugins Manager"
 FRENCH["UNINSTALLP_NOCONFIG_FOUND"] =               "Config.txt introuvable dans : "
 FRENCH["UNINSTALLP_PLUGIN"] =                       "Désinstaller le plugin"
 FRENCH["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Changer de partition"
-FRENCH["UNINSTALLP_QUESTION"] =                     "\n\nSouhaitez-vous désinstallé le plugin :"
+FRENCH["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
+FRENCH["UNINSTALLP_DISABLE"] =                      "has been disabled"
 FRENCH["UNINSTALLP_EMPTY"] =                        "-= Pas de plugin installé =-"
 FRENCH["UNINSTALLP_NO_PLUGINS"] =                   "Pas de plugins dans cette section"
 FRENCH["UNINSTALLP_PLUGINS_NEED"] =                 "est nécessaire pour la fonctionnalité des plugins suivants"
@@ -191,6 +194,7 @@ FRENCH["CXMB_DESC"] =                               "CXMB permet aux utilisateur
 FRENCH["LANGSWAPPER_DESC"] =                        "Il définit le menu d'accueil des jeux et utilitaire de sauvegarde des données dans la langue de votre console sur les jeux dont la langue de la région est différente"
 FRENCH["CATEGORYLITE_DESC"] =                       "Organisez tous vos jeux, émulateurs, homebrews, jeux, dans leur propre dossier sous le répertoire JEUX"
 FRENCH["KHBBS_UNDUB_DESC"] =                        "Version UNDUB (Audio en Japonais) pour le jeu Kingdom Hearts: Birth By Sleep/Final Mix"
+FRENCH["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
 
 --config pkgj
 FRENCH["MENU_INSTALL_CONFIG"] =                     "Config.txt du PKGJ v0.45+"
@@ -216,6 +220,22 @@ FRENCH["CUSTOMBOOTSPLASH_NOPNG"] =                  "\n\nPas d'image au format P
 --TransImpose
 FRENCH["TRANSIMPOSE_OSK_TITLE"] =                   "Configuration du plugin"
 FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de transparence en cours..."
+
+--QuickMenu Plus
+FRENCH["QUICKMENU_MENU_TIME"] =                		"Button Push time"
+FRENCH["QUICKMENU_MENU_STANDBYRESTART"] =           "Standby Button"
+FRENCH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "BackGround Style"
+FRENCH["QUICKMENU_MENU_TIME_DESC"] =                "Sets the Quick Menu PS button push time. Time in microseconds. For example, put 250000 for 250 milliseconds. The default time is 500 milliseconds"
+FRENCH["QUICKMENU_MENU_STANDBYRESTART_DESC"] =      "Sets the standby button to function as a restart button. Put in the file 1 to enable: 'Restart & Power Off', or 0 to disable: 'Suspend & Power Off・Restart', When this setting is disabled, hold the 'Power Off・Restart' button to restart, and press to power off. The default is enabled on the Vita, and disabled on the PSTV."
+FRENCH["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =     "Sets the background style. Put in the file 0 for original, 1 for translucent and 2 for black. The default is translucent. Black can reduce power consumption for OLED screens. The gradient effect is removed in all styles"
+FRENCH["QUICKMENU_MENU_UPDATE_CONFIG"] =            "Update Config for QuickMenu Plus"
+FRENCH["QUICKMENU_MENU_UPDATING"] =                 "Updating Config QuickMenu Plus!\n\nPlease Wait..."
+FRENCH["QUICKMENU_OSK_TITLE_TIME"] =                "Time in microseconds"
+FRENCH["QUICKMENU_STANDBYRESTART_ENABLE"] =         "Restart & Power Off"
+FRENCH["QUICKMENU_STANDBYRESTART_DISABLE"] =        "Suspend & Power Off・Restart"
+FRENCH["QUICKMENU_BACKGROUNDSTYLE_ORIGINAL"] =      "Original"
+FRENCH["QUICKMENU_BACKGROUNDSTYLE_TRANSLUCENT"] =   "Translucent"
+FRENCH["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "Black"
 
 --Translate
 FRENCH["TRANSLATE_ENGLISH_TITLE"] =                 "Anglais : "
@@ -298,7 +318,7 @@ FRENCH["INSTALLP_DESC_UDCDUVCL"] =                  "(LCD uniquement) Vous perme
 FRENCH["INSTALLP_DESC_VIIMOTE"] =                   "Contrôlez votre PSVita avec une WiiMote"
 FRENCH["INSTALLP_DESC_VITASTICK"] =                 "PSVita comme contrôleur de jeu USB (Nécessite vitastick.vpk)"
 FRENCH["INSTALLP_DESC_KUIO"] =                      "Permet aux modules utilisateurs d'accéder aux données ux0:data pour les opérations d'E/S. Peut être nécessaire pour certains plugins spécifiques"
-FRENCH["INSTALLP_DESC_ADRENALINE"] =                "Permet de désactiver le double lancement d'Adrénaline"
+FRENCH["INSTALLP_DESC_ADRENALINE"] =                "Permet de désactiver le double lancement d'Adrénaline. Note: Adrenaline´s latest version must be installed"
 FRENCH["INSTALLP_DESC_DSMOTION"] =                  "Support du contrôle de mouvement DualShock pour la PlayStation TV"
 FRENCH["INSTALLP_DESC_USBMC"] =                     "Stockage USB sous forme de carte mémoire Vita"
 FRENCH["INSTALLP_DESC_ANALOGSENHANCER"] =           "Ce petit plugin Kernel permet aux utilisateurs d'améliorer leur expérience avec les analogues de PSVITA"
@@ -331,6 +351,7 @@ FRENCH["INSTALLP_DESC_STAYBRIGHT"] =                "Désactiver l'auto-diminuti
 FRENCH["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Ce plugin fournit une protection contre un brick de votre PSVita. Il suffit de maintenir la touche triangle au démarrage et un menu vous sera présenté pour monter des partitions (les mêmes que celles de Vitashell plus ur0) sur USB. Vous pouvez ensuite utiliser votre ordinateur pour résoudre le problème."
 FRENCH["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I est un plugin qui vous permet d'enregistrer les données que vous fournissez à votre PSVita et de les lire quand vous en avez besoin. La capture sera enregistrée dans ur0:/data/MAFU-I/capture.dat"
 FRENCH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin pour PS Vita qui permet aux applications en mode jeu d'utiliser le noyau CPU réservé au système (CPU3)"
+FRENCH["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher une image personnalisée au démarrage de votre PS Vita/PSTV. Nécessite ENSO installer."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
@@ -362,8 +383,9 @@ FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les pr
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
-FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	  "Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
-FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	  "Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
+FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
+FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
+FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -416,7 +438,7 @@ FRENCH["REPAIR_CONFIG_TXT"] =                       "Correction des plugins Henk
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "Correction du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
-FRENCH["STRINGS_CONFIG_SUCCESS"] =		              "Reload taiHEN config.txt"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"

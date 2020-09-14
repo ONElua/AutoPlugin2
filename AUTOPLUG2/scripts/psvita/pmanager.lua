@@ -40,6 +40,8 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "iTLS-Enso by SKGleba", path = "itls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_ITLSENSO"] })
 	table.insert(tb_cop, { name = "Yamt-Vita by SKGleba", path = "yamt.suprx", section = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_YAMT"] })
 	table.insert(tb_cop, { name = "StorageMgr CelesteBlue", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SD2VITA"] })
+	table.insert(tb_cop, { name = "Sysident by cuevavirus", path = "sysident.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"] })
+	table.insert(tb_cop, { name = "Ds4touch by MERLev", path = "ds4touch.skprx", section = "KERNEL", path2 = "ds4touch.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"] })
 
 	for k,v in pairs(tai.gameid) do
 		if k:lower() != "kernel" and k:lower() != "main" and k:lower() != "all" then
@@ -58,6 +60,7 @@ function pluginsmanager()
 			plugs[sections[y]][x].exists = files.exists(plugs[sections[y]][x].path)
 			plugs[sections[y]][x].file = files.nopath(plugs[sections[y]][x].path:lower())
 			bridge_s[sections[y]][plugs[sections[y]][x].file] = {s = sections[y], i = x}
+			--os.message(plugs[sections[y]][x].file)
 
 			if not bridge_n[plugs[sections[y]][x].file] then bridge_n[plugs[sections[y]][x].file] = {c = 1} end
 
@@ -178,7 +181,7 @@ function pluginsmanager()
 			if buttons.accept and not plugs[sections[over]][scroll.sel].is_sys then
 				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
 
-					-- Special Process
+					-- Special for Yamt
 					if plugs[sections[over]][scroll.sel].file == "yamt.suprx" then --Yamt
 						change = true
 						if files.exists("ur0:tai/boot_config.txt") then
@@ -195,7 +198,36 @@ function pluginsmanager()
 							files.write("ur0:tai/boot_config.txt", table.concat(cont, '\n'))
 						end
 					end
-					
+
+					-- Special for Sysdent
+					if plugs[sections[over]][scroll.sel].file == "sysident.suprx" then
+						local idx4 = searchPlugByPath(plugs, "KERNEL", "sysident.skprx")
+						if idx4 then
+							--os.message("ESPECIAL")
+							tai.del("KERNEL", plugs["KERNEL"][idx4].path)
+							table.remove(plugs["KERNEL"], idx4)
+							bridge_n["sysident.skprx"]["KERNEL"] = nil
+							change = true
+						end
+					elseif plugs[sections[over]][scroll.sel].file == "sysident.skprx" then
+						local idx4 = searchPlugByPath(plugs, "NPXS10015", "sysident.suprx")
+						if idx4 then
+							--os.message("ESPECIAL 2")
+							tai.del("NPXS10015", plugs["NPXS10015"][idx4].path)
+							table.remove(plugs["NPXS10015"], idx4)
+							bridge_n["sysident.suprx"]["NPXS10015"] = nil
+							change = true
+						end
+						local idx5 = searchPlugByPath(plugs, "NPXS10016", "sysident.suprx")
+						if idx5 then
+							--os.message("ESPECIAL 3")
+							tai.del("NPXS10016", plugs["NPXS10016"][idx5].path)
+							table.remove(plugs["NPXS10016"], idx5)
+							bridge_n["sysident.skprx"]["NPXS10016"] = nil
+							change = true
+						end
+					end
+
 					local section1 = sections[over]
 					local path1 = files.nopath(plugs[sections[over]][scroll.sel].path:lower())
 					local section2 = ""
@@ -203,11 +235,11 @@ function pluginsmanager()
 					if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
 						section1 = plugs[sections[over]][scroll.sel].bridge.section
 						path1 = plugs[sections[over]][scroll.sel].bridge.path:lower()
-						--os.message(path1.."\n"..section1)
+						--os.message("bridge: "..path1.."\n"..section1)
 						if plugs[sections[over]][scroll.sel].bridge.section2 then
 							section2 = plugs[sections[over]][scroll.sel].bridge.section2
 							path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
-							--os.message(path2.."\n"..section2)
+							--os.message("bridge2: "..path2.."\n"..section2)
 						end
 					end
 
@@ -230,14 +262,17 @@ function pluginsmanager()
 
 					ReloadConfig = true
 					change = change or section1:lower() == "main" or section1:lower() == "kernel" or section2:lower() == "main" or section2:lower() == "kernel"
+
 					local need_second = {}
 					local msg_need = {}
 					for i=1, #tb_cop do
 						if tb_cop[i].path2 and tb_cop[i].path2:lower() == path2 and bridge_n[tb_cop[i].path2:lower()] and bridge_n[tb_cop[i].path2:lower()][tb_cop[i].section2] and bridge_n[tb_cop[i].path:lower()] and bridge_n[tb_cop[i].path:lower()][tb_cop[i].section] then
+							--os.message("need_second "..tb_cop[i].path,1)
 							table.insert(need_second, tb_cop[i])
 							table.insert(msg_need, tb_cop[i].path)
 						end
 					end
+
 					if #need_second > 0 then
 						if os.dialog(path2.." "..ENGLISH_US["UNINSTALLP_QUESTION_NEED"].."\n"..(table.concat(msg_need, '\n'))..LANGUAGE["UNINSTALLP_PLUGINS_NEED"],
 								LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], __DIALOG_MODE_OK_CANCEL, __ACENTER) then
@@ -249,7 +284,8 @@ function pluginsmanager()
 								_path = _path:lower()
 								_path2 = _path2:lower()
 								if bridge_n[_path] and bridge_n[_path][_section] then
-									local idx1 = searchPlugByPath(plugs, _section, _path);
+									--os.message("_path: ".._path.."\n".._section)
+									local idx1 = searchPlugByPath(plugs, _section, _path)
 									if idx1 then
 										tai.del(_section, plugs[_section][idx1].path)
 										table.remove(plugs[_section], idx1)
@@ -257,7 +293,8 @@ function pluginsmanager()
 									end
 								end
 								if bridge_n[_path2] and bridge_n[_path2][_section2] then
-									local idx2 = searchPlugByPath(plugs, _section2, _path2);
+									--os.message("_path2: ".._path2.."\n".._section2)
+									local idx2 = searchPlugByPath(plugs, _section2, _path2)
 									if idx2 then
 										tai.del(_section2, plugs[_section2][idx2].path)
 										table.remove(plugs[_section2], idx2)
@@ -268,7 +305,8 @@ function pluginsmanager()
 						end
 					else
 						if bridge_n[path2] and bridge_n[path2][section2] then
-							local idx3 = searchPlugByPath(plugs, section2, path2);
+							--os.message("idx3: "..path2.."\n"..section2)
+							local idx3 = searchPlugByPath(plugs, section2, path2)
 							if idx3 then
 								tai.del(section2, plugs[section2][idx3].path)
 								table.remove(plugs[section2], idx3)
@@ -276,6 +314,7 @@ function pluginsmanager()
 							end
 						end
 					end
+
 					scroll = newScroll(plugs[sections[over]], maxv);
 					buttons.homepopup(0)
 					-- delete prx files?

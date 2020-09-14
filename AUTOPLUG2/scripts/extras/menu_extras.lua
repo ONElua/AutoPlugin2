@@ -10,6 +10,7 @@
 ]]
 
 --Funciones EXTRAS
+dofile("scripts/extras/quickmenu.lua")
 dofile("scripts/extras/pkgj.lua")
 dofile("scripts/extras/customsplash.lua")
 dofile("scripts/extras/translate.lua")
@@ -17,10 +18,6 @@ dofile("scripts/extras/translate.lua")
 files.mkdir("ux0:data/AUTOPLUGIN2/vpks/")
 
 function download_install(url,name)
-
-	if back2 then back2:blit(0,0) end
-		message_wait()
-	os.delay(250)
 
 	files.delete("tmp")
 	local onNetGetFileOld = onNetGetFile
@@ -70,10 +67,6 @@ end
 function menu_extras()
 
 	local convertimgsplash_callback = function ()
-		if back then back:blit(0,0) end
-			message_wait()
-		os.delay(150)
-
 		customimgsplash()
 	end
 
@@ -82,6 +75,7 @@ function menu_extras()
 	end
 
 	local customwarning_callback = function ()
+
 		local pathCW = "ur0:tai/"
 		if files.exists("ux0:tai/custom_warning.txt") then pathCW = "ux0:tai/" end
 
@@ -110,6 +104,7 @@ function menu_extras()
 	--end
 	
 	local customTransImpose_callback = function ()
+
 		local text = osk.init(LANGUAGE["TRANSIMPOSE_OSK_TITLE"], 125, 3, __OSK_TYPE_NUMBER, __OSK_MODE_TEXT)
 		if not text then return end
 
@@ -131,6 +126,10 @@ function menu_extras()
 			end
 
 		end
+	end
+
+	local customQuickMenu_callback = function ()
+		config_quickmenu()
 	end
 
 	local itls_callback = function ()
@@ -173,6 +172,11 @@ function menu_extras()
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSP_IMPOSE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSPIMPOSE_DESC"],	funct = customTransImpose_callback } )
 	end
 
+	idx = tai.find("main", "quickmenuplus.suprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],	desc = LANGUAGE["MENU_EXTRAS_QUICKMENU_DESC"],	funct = customQuickMenu_callback } )
+	end
+
 	local scroll = newScroll(menu,#menu)
 
 	local xscroll = 10
@@ -185,7 +189,7 @@ function menu_extras()
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.2,color.white,0x0,__ACENTER)
 
-        local y = 145
+        local y = 130
         for i=scroll.ini, scroll.lim do
             if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
             screen.print(480,y,menu[i].text,1.2,color.white, 0x0, __ACENTER)
@@ -211,7 +215,14 @@ function menu_extras()
 		end
 
 		if buttons.cancel then break end
-        if buttons.accept then menu[scroll.sel].funct() end
+        if buttons.accept then
+
+			if back then back:blit(0,0) end
+				message_wait()
+			os.delay(150)
+
+			menu[scroll.sel].funct()
+		end
 
     end
 

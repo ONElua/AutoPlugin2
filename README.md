@@ -40,6 +40,7 @@ This tool allows you to install/uninstall the following plugins with one click o
 | [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [teakhanirons](https://github.com/teakhanirons) |
 | [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
 | [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
+| [ds4touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
 
 # Optional settings
 - Update plugins Online
@@ -58,14 +59,22 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.10 ###
+- Added Ge patch plugin from TheOfficialFloW in PSP plugins for Adrenaline section
+- Added plugins from CBPS: QuickMenu Plus
+- Update Sysident v1.1
+- Added ds4touch from MERLev
+- Added the new option Configuration for QuicMenu Plus to Extras section
+- Added green dot to enabled psp plugins and yellow for disabled
+
 ### Changelog 1.09 ###
 - Fix Updater Plugins Online
-- Add missing plugin CoreUnlocker80000H by GrapheneCt
+- Added missing plugin CoreUnlocker80000H by GrapheneCt
 
 ### Changelog 1.08 ###
-- Add MiniVitaTV by TheOfficialFloW beta 0.4
-- Add more p lugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.
-- Add Persona 4 Golden HD plugin (Vita Plugins).
+- Added MiniVitaTV by TheOfficialFloW beta 0.4
+- Added more p lugins from CBPS: EmergencyMount, MAFUinput, TrophyShot, BootSound, ScoreHax, Sysident, DePlayEnabler.
+- Added Persona 4 Golden HD plugin (Vita Plugins).
 - Fix VitaGrafix PatchList.
 
 ### Changelog 1.07 ###
@@ -135,6 +144,7 @@ This fixes missing non-standard characters, not found at english charset. Those 
 - chronoss09
 - Yoti
 - teakhanirons
+- MERLev
 # Testers:
 - *([NanospeedGamer](https://twitter.com/NanospeedGamer)).*<br>
 - *([HAM](https://twitter.com/holdandmodify)).*<br>

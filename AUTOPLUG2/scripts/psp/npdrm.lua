@@ -9,44 +9,69 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-function insert_plugin(path)
+function read_configs_npdrm(tb,tb2)
 
-	local nlinea, cont, _find, file_txt = 0,0,false, {}
-	local find_obj = "ms0:/seplugins/npdrm_free.prx"
+	for i=1, #PMounts do
 
-	for line in io.lines(path) do
-		cont += 1
-		if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-		table.insert(file_txt,line)
+		if files.exists(PMounts[i].."pspemu/seplugins/vsh.txt") then
 
-		pathp,status = line:match("(.+) (.+)")
+			--vsh.txt
+			for line in io.lines(PMounts[i].."pspemu/seplugins/vsh.txt") do
 
-		if pathp then
-			if pathp:lower() == find_obj:lower() then
-				_find = true
-				nlinea = cont
+				if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
+
+				pathp,status = line:match("(.+) (.+)")
+				if pathp then
+					
+					for j=1,#tb do
+
+						if pathp:lower() == "ms0:/seplugins/"..tb[j].path:lower() then
+
+							if files.exists(PMounts[i].."pspemu/seplugins/"..tb[j].path:lower()) then
+								tb2["vsh"..PMounts[i]..tb[j].path:lower()] = tonumber(status) or 0
+								break
+							end
+						end
+					end
+
+				end
+
 			end
 		end
 
-	end
 
-	if _find then
-		file_txt[nlinea] = find_obj.." 1"
-	else
-		table.insert(file_txt, find_obj.." 1")
-	end
+		if files.exists(PMounts[i].."pspemu/seplugins/game.txt") then
+			--game.txt
+			for line in io.lines(PMounts[i].."pspemu/seplugins/game.txt") do
 
-	local fp = io.open(path, "w+")
-	for s,t in pairs(file_txt) do
-		fp:write(string.format('%s\n', tostring(t)))
+				if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
+
+				pathp,status = line:match("(.+) (.+)")
+				if pathp then
+					
+					for j=1,#tb do
+
+						if pathp:lower() == "ms0:/seplugins/"..tb[j].path:lower() then
+
+							if files.exists(PMounts[i].."pspemu/seplugins/"..tb[j].path:lower()) then
+								tb2["game"..PMounts[i]..tb[j].path:lower()] = tonumber(status) or 0
+								break
+							end
+						end
+					end
+
+				end
+
+			end
+		end
+
+
 	end
-	fp:close()
 
 end
 
-function delete_plugin(path)
+function insert_disable_plugin(path,install)
 
-	--del vsh.txt & game.txt
 	local nlinea, cont, _find, file_txt = 0,0,false, {}
 	local find_obj = "ms0:/seplugins/npdrm_free.prx"
 
@@ -66,8 +91,16 @@ function delete_plugin(path)
 
 	end
 
-	if _find then
-		file_txt[nlinea] = find_obj.." 0"
+	if install == 1 then
+		if _find then
+			file_txt[nlinea] = find_obj.." 1"
+		else
+			table.insert(file_txt, find_obj.." 1")
+		end
+	else
+		if _find then
+			file_txt[nlinea] = find_obj.." 0"
+		end
 	end
 
 	local fp = io.open(path, "w+")
@@ -90,8 +123,13 @@ function npdrm_free()
 	local scroll = newScroll(npdrm_p, limit)
 	local xscroll = 10
 
+	local plugins_status={}
+	read_configs_npdrm(npdrm_p,plugins_status)
+
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
@@ -116,6 +154,21 @@ function npdrm_free()
 
 			if npdrm_p[i].inst then ccolor = color.green else ccolor = color.white end
 			screen.print(25,y, npdrm_p[i].name,1,ccolor,0x0)
+
+			if plugins_status[ "vsh"..PMounts[selector]..npdrm_p[i].path:lower() ] then
+				if plugins_status[ "vsh"..PMounts[selector]..npdrm_p[i].path:lower() ] == 1 then
+					if dotg then dotg:blit(900,y-1) end
+				elseif plugins_status[ "vsh"..PMounts[selector]..npdrm_p[i].path:lower() ] == 0 then
+					if doty then doty:blit(900,y-1) end
+				end
+			end
+			if plugins_status[ "game"..PMounts[selector]..npdrm_p[i].path:lower() ] then
+				if plugins_status[ "game"..PMounts[selector]..npdrm_p[i].path:lower() ] == 1 then
+					if dotg then dotg:blit(925,y-1) end
+				elseif plugins_status[ "game"..PMounts[selector]..npdrm_p[i].path:lower() ] == 0 then
+					if doty then doty:blit(925,y-1) end
+				end
+			end
 
 			y+=35
 		end
@@ -179,62 +232,83 @@ function npdrm_free()
 
 			--install plugin
 			if buttons.accept then
-				if not change then buttons.homepopup(0) end
 
-					files.copy("resources/pkgj/npdrm_free.prx", PMounts[selector].."pspemu/seplugins/")
-					if files.exists(PMounts[selector].."pspemu/seplugins/npdrm_free.prx") then
-						if back2 then back2:blit(0,0) end
-							message_wait(LANGUAGE["NPDRMFREE_INSTALLED"])
-						os.delay(1500)
-					end
+				files.copy("resources/pkgj/npdrm_free.prx", PMounts[selector].."pspemu/seplugins/")
+				if files.exists(PMounts[selector].."pspemu/seplugins/npdrm_free.prx") then
+					if back2 then back2:blit(0,0) end
+						message_wait(LANGUAGE["NPDRMFREE_INSTALLED"])
+					os.delay(1500)
+				end
 
-					--Update vsh.txt
-					if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
-						insert_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt")
-					else
-						files.copy("resources/pkgj/vsh.txt", PMounts[selector].."pspemu/seplugins/")
+				local flag_inst = false
+				--Update vsh.txt
+				if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
+					if plugins_status[ "vsh"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] == 0 or not plugins_status[ "vsh"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] then
+						insert_disable_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt",1)
+						flag_inst = true
 					end
+				else
+					files.copy("resources/pkgj/vsh.txt", PMounts[selector].."pspemu/seplugins/")
+					flag_inst = true
+				end
+
+				if flag_inst then
+					plugins_status[ "vsh"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] = 1
+
 					if back2 then back2:blit(0,0) end
 						message_wait(LANGUAGE["NPDRMFREE_VSH_UPDATED"])
 					os.delay(1500)
+				end
 
-					--Update game.txt
-					if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-						insert_plugin(PMounts[selector].."pspemu/seplugins/game.txt")
-	
-					else
-						files.copy("resources/pkgj/game.txt", PMounts[selector].."pspemu/seplugins/")
+				local flag_inst = false
+				--Update game.txt
+				if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
+					if plugins_status[ "game"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] == 0 or not plugins_status[ "game"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] then
+						insert_disable_plugin(PMounts[selector].."pspemu/seplugins/game.txt",1)
+						flag_inst = true
 					end
+				else
+					files.copy("resources/pkgj/game.txt", PMounts[selector].."pspemu/seplugins/")
+					flag_inst = true
+				end
+
+				if flag_inst then
+					plugins_status[ "game"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] = 1
+
 					if back2 then back2:blit(0,0) end
 						message_wait(LANGUAGE["NPDRMFREE_GAME_UPDATED"])
 					os.delay(1500)
-				if not change then buttons.homepopup(1) end
+				end
 			end
 
-			--del plugins
+			--disable plugins
 			if buttons.triangle then
 
-				if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") then
-					delete_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt")
-					if back2 then back2:blit(0,0) end
-						message_wait(npdrm_p[scroll.sel].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
-					os.delay(750)
+				local flag_inst = false
+
+				if files.exists(PMounts[selector].."pspemu/seplugins/vsh.txt") and plugins_status[ "vsh"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] == 1 then
+					flag_inst = true
+					insert_disable_plugin(PMounts[selector].."pspemu/seplugins/vsh.txt",0)
+					plugins_status[ "vsh"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] = 0
 				end
 
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["NPDRMFREE_VSH_UPDATED"])
-				os.delay(1500)
-
-				if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") then
-					delete_plugin(PMounts[selector].."pspemu/seplugins/game.txt")
+				if flag_inst then
 					if back2 then back2:blit(0,0) end
-						message_wait(npdrm_p[scroll.sel].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
-					os.delay(750)
+						message_wait(LANGUAGE["NPDRMFREE_VSH_UPDATED"])
+					os.delay(1500)
 				end
 
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["NPDRMFREE_GAME_UPDATED"])
-				os.delay(1500)
+				if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") and plugins_status[ "game"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] == 1 then
+					flag_inst = true
+					insert_disable_plugin(PMounts[selector].."pspemu/seplugins/game.txt",0)
+					plugins_status[ "game"..PMounts[selector]..npdrm_p[scroll.sel].path:lower() ] = 0
+				end
+
+				if flag_inst then
+					if back2 then back2:blit(0,0) end
+						message_wait(LANGUAGE["NPDRMFREE_GAME_UPDATED"])
+					os.delay(1500)
+				end
 
 			end
 

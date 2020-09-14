@@ -16,9 +16,26 @@ function plugins_installation(tb,sel)
 	else
 
 		--Aqui checaremos posibles conflictos de plugins
-
+		
 		if tb[sel].path == "sharpscale.skprx" then
 			tai.putBeforeSection("ALL","!AKRK00005","")
+
+		--Ds4Touch
+		elseif tb[sel].path == "ds4touch.skprx" and hw.model() == "PlayStation TV" then
+			tai.put("ALL",  path_tai.."ds4touch.suprx")
+			files.copy(path_plugins.."ds4touch.suprx", "ur0:/tai/")
+
+		-- Sysident
+		elseif tb[sel].path == "sysident.suprx" then
+			tai.put("KERNEL",  path_tai.."sysident.skprx")
+			files.copy(path_plugins.."sysident.skprx", "ur0:/tai/")
+			change = true
+
+		-- QuickMenuPlus
+		elseif tb[sel].path == "quickmenuplus.suprx" then
+			tai.del("main", "quick_power.suprx")
+			tai.del("main", "quick_volume.suprx")
+			tai.del("KERNEL", "rapidmenu.skprx")
 
 		--Checking plugin Batt (only 1 of them)
 		elseif tb[sel].path == "shellbat.suprx" then
@@ -316,7 +333,6 @@ function autoplugin()
 		screen.flip()
 
 		--------------------------	Controls	--------------------------
-		--if buttons.select then error("USB") end
 
 		if buttons.released.cancel then
 			--Clean
