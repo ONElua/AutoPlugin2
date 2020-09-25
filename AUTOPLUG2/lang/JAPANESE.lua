@@ -117,6 +117,7 @@ JAPANESE["UNINSTALLP_TITLE"] =                          "Plugins Manager"
 JAPANESE["UNINSTALLP_NOCONFIG_FOUND"] =                 "config.txtが見つかりません: "
 JAPANESE["UNINSTALLP_PLUGIN"] =                         "プラグインをアンインストールします"
 JAPANESE["UNINSTALLP_LEFTRIGHT_SECTION"] =              "セクションを切り替えます"
+JAPANESE["UNINSTALLP_LEFTRIGHT_CONFIG"] =               "To switch config"
 JAPANESE["UNINSTALLP_QUESTION"] =                       "Are you sure you want to disable?"
 JAPANESE["UNINSTALLP_DISABLE"] =                        "has been disabled"
 JAPANESE["UNINSTALLP_EMPTY"] =                          "アンインストールできるものがありません!!!"
@@ -194,7 +195,10 @@ JAPANESE["CXMB_DESC"] =                                 "CXMBを使用すると�
 JAPANESE["LANGSWAPPER_DESC"] =                          "ゲームのホームメニューと、異なる言語（別の地域）のゲームのセーブデータツールをPSPで設定したものに設定します。"
 JAPANESE["CATEGORYLITE_DESC"] =                         "すべてのゲーム、エミュレーター、Homebrewをゲームディレクトリ直下の独自のフォルダーに整理します"
 JAPANESE["KHBBS_UNDUB_DESC"] =                          "ゲーム「キングダムハーツ：バースバイスリープ/ファイナルミックス」のUNDUBバージョン（日本語の音声）"
-JAPANESE["GE_PATCH_DESC"] =                             "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
+JAPANESE["GE_PATCH_DESC"] =                             "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+
+--PSP Plugins Manager
+JAPANESE["PSP_PLUGINS_MANAGER"] =                       "PSP Plugins Manager"
 
 --config pkgj
 JAPANESE["MENU_INSTALL_CONFIG"] =                       "PKGJ v0.45以上のconfig.txtをインストールします"
@@ -450,3 +454,8 @@ JAPANESE["RESTART_QUESTION"] =                          "今すぐ再起動し�
 JAPANESE["CHINESE_FONT_DOWNLOAD"] =                     "中国語フォントのダウンロード"
 JAPANESE["YES"] =                                       "はい"
 JAPANESE["NO"] =                                        "いいえ"
+
+JAPANESE["SYSTEM_ERROR"] =                              "System Error"
+JAPANESE["SYSTEM_ERROR_REPO"] =                         "Please report this error to Autoplugin2 Repo at Onelua Github"
+JAPANESE["SYSTEM_ERROR_FIX"] =                          "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+JAPANESE["ERROR_LOADING_FILE"] =                        "Error loading file"

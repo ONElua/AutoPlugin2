@@ -183,6 +183,10 @@ function psp_ctrls()
 			if buttons.released.l then selector -= 1 else selector += 1 end
 			if selector > #PMounts then selector = 1
 			elseif selector < 1 then selector = #PMounts end
+			for i=1,scroll.maxim do
+				psp_plugins[i].inst = false
+			end
+			scroll = newScroll(psp_plugins, limit)
 		end
 
 		--Exit
@@ -216,6 +220,7 @@ function psp_ctrls()
 						files.copy("resources/plugins_psp/controls_psp/"..psp_plugins[i].path, PMounts[selector].."pspemu/seplugins/")
 
 						if plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 0 or not plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] then
+
 							insert_disable_psp_plugin(PMounts[selector], psp_plugins[i],1)
 							plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] = 1
 
@@ -241,7 +246,6 @@ function psp_ctrls()
 			if buttons.select then
 				for i=1,scroll.maxim do
 					psp_plugins[i].inst = false
-					toinstall = 0
 				end
 			end
 
@@ -257,8 +261,10 @@ function psp_ctrls()
 				for i=1,scroll.maxim do
 					if psp_plugins[i].inst then
 						if files.exists(PMounts[selector].."pspemu/seplugins/game.txt") and plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] == 1 then
+
 							insert_disable_psp_plugin(PMounts[selector], psp_plugins[i],0)
 							plugins_status[ PMounts[selector]..psp_plugins[i].path:lower() ] = 0
+							psp_plugins[i].inst = false
 
 							if back2 then back2:blit(0,0) end
 								message_wait(psp_plugins[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
@@ -270,7 +276,7 @@ function psp_ctrls()
 				for i=1,scroll.maxim do
 					psp_plugins[i].inst = false
 				end
-				
+
 			end
 
 		end

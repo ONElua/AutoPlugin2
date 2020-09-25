@@ -59,13 +59,20 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.11 ###
+- Update GE Patch plugin by TheOfficialFloW v0.18.1
+- Update GTA Native Resolution Patch by TheOfficialFloW v0.3
+- Update BetterTrackPlug by fmudanyali v1.0.3.1
+- Update udcd_uvc by xerpi v1.7
+- Update ds4touch by MERLev v1.1.1
+- Add new function PSP Plugin Manager
+
 ### Changelog 1.10 ###
 - Added Ge patch plugin from TheOfficialFloW in PSP plugins for Adrenaline section
 - Added plugins from CBPS: QuickMenu Plus
 - Update Sysident v1.1
 - Added ds4touch from MERLev
 - Added the new option Configuration for QuicMenu Plus to Extras section
-- Added green dot to enabled psp plugins and yellow for disabled
 
 ### Changelog 1.09 ###
 - Fix Updater Plugins Online

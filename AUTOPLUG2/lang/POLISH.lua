@@ -117,6 +117,7 @@ POLISH["UNINSTALLP_TITLE"] =                        "Menedzer pluginow"
 POLISH["UNINSTALLP_NOCONFIG_FOUND"] =               "Nie znaleziono pliku config.txt w: "
 POLISH["UNINSTALLP_PLUGIN"] =                       "Aby odinstalować plugin"
 POLISH["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Przełącz sekcje"
+POLISH["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
 POLISH["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
 POLISH["UNINSTALLP_DISABLE"] =                      "has been disabled"
 POLISH["UNINSTALLP_EMPTY"] =                        "PUSTO !!!"
@@ -188,13 +189,16 @@ POLISH["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for To
 
 --psp plugins
 POLISH["PLUGINS_PSP_TITLE"] =                       "Dostępne pluginy PSP (Adrenaline)"
-POLISH["GTA_PATCH_DESC"] =                          "Ten plugin zmienia rozdzielczość w grze do natywnej 960x544. Obsługiwane tytuły:Vice City Stories [ULUS10160] (v3.00) i Liberty City Stories [ULUS10041] (v3.00). Adrenaline v6.9 lub wyższe -> Opcja wymus wyłączenie układu wysokiej pamięci (W menu Recovery -> Zaawansowane -> Zaawansowana konfiguracja)."
+POLISH["GTA_PATCH_DESC"] =                          "Ten plugin zmienia rozdzielczość w grze do natywnej 960x544. Obsługiwane tytuły:Vice City Stories [ULUS10160] (v3.00) i Liberty City Stories [ULUS10041] (v3.00). Adrenaline v7.0 lub wyższe -> Opcja wymus wyłączenie układu wysokiej pamięci (W menu Recovery -> Zaawansowane -> Zaawansowana konfiguracja)."
 POLISH["CAMERA_PATCH_DESC"] =                       "ten plugin dodaje prawą gałkę analogową dla wspieranych gier dla PSP (Adrenaline)"
 POLISH["CXMB_DESC"] =                               "CXMB Pozwala użytkownikowi na dodanie motywów CTF do PSP/THEMES"
 POLISH["LANGSWAPPER_DESC"] =                        "Ustawia menu główne gry, do zapisywania danych w języku, w jakim jest PSP (Adrenalie)"
 POLISH["CATEGORYLITE_DESC"] =                       "Uporzątkuj wszytskie swoje gry, emulatory, homebrew do własnych folderów w katalogu gier"
 POLISH["KHBBS_UNDUB_DESC"] =                        "Wersja UNDUB (Dzwięk w Japoni) dla gry Kingdom Hearts: Birth By Sleep/Final Mix"
-POLISH["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
+POLISH["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+
+--PSP Plugins Manager
+POLISH["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
 
 --config pkgj
 POLISH["MENU_INSTALL_CONFIG"] =                     "Instalacja config.txt dla PKGJ v0.45+"
@@ -450,3 +454,8 @@ POLISH["RESTART_QUESTION"] =                        "Czy napewno chcesz zresetow
 POLISH["CHINESE_FONT_DOWNLOAD"] =                   "Pobieranie Chinskich czcionek"
 POLISH["YES"] =                                     "TAK"
 POLISH["NO"] =                                      "NIE"
+
+POLISH["SYSTEM_ERROR"] =                            "System Error"
+POLISH["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
+POLISH["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+POLISH["ERROR_LOADING_FILE"] =                      "Error loading file"

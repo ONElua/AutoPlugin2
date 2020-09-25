@@ -11,7 +11,7 @@
 
 function plugins_installation(tb,sel)
 
-	if tb[sel].path:find("udcd_uvc",1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
+	if tb[sel].path:find(string.lower("udcd_uvc"),1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
 	elseif tb[sel].path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	else
 
@@ -21,9 +21,8 @@ function plugins_installation(tb,sel)
 			tai.putBeforeSection("ALL","!AKRK00005","")
 
 		--Ds4Touch
-		elseif tb[sel].path == "ds4touch.skprx" and hw.model() == "PlayStation TV" then
-			tai.put("ALL",  path_tai.."ds4touch.suprx")
-			files.copy(path_plugins.."ds4touch.suprx", "ur0:/tai/")
+		elseif tb[sel].path == "ds4touch.skprx" then
+			tai.del("ALL",  path_tai.."ds4touch.suprx")
 
 		-- Sysident
 		elseif tb[sel].path == "sysident.suprx" then
@@ -60,7 +59,7 @@ function plugins_installation(tb,sel)
 			tai.del("KERNEL", "vitacheat.skprx")
 
 		--udcd
-		elseif tb[sel].path:find("udcd_uvc",1,true) then
+		elseif tb[sel].path:find(string.lower("udcd_uvc"),1,true) then
 			--os.message("delete udcds")
 			tai.del("KERNEL", "udcd_uvc.skprx")
 			tai.del("KERNEL", "udcd_uvc_oled_off.skprx")

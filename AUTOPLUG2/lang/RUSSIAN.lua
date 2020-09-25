@@ -117,6 +117,7 @@ RUSSIAN["UNINSTALLP_TITLE"] =                        "Менеджер плаг�
 RUSSIAN["UNINSTALLP_NOCONFIG_FOUND"] =               "Файл config.txt не найден в разделе "
 RUSSIAN["UNINSTALLP_PLUGIN"] =                       "Удалить плагин"
 RUSSIAN["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Выбрать секцию"
+RUSSIAN["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
 RUSSIAN["UNINSTALLP_QUESTION"] =                     "Вы уверены, что хотите отключить?"
 RUSSIAN["UNINSTALLP_DISABLE"] =                      "был отключен"
 RUSSIAN["UNINSTALLP_EMPTY"] =                        "НИЧЕГО НЕТ!!!"
@@ -188,13 +189,16 @@ RUSSIAN["TONYHAWKS_REMASTERED_DESC"] =               "Поддержка вто�
 
 --psp plugins
 RUSSIAN["PLUGINS_PSP_TITLE"] =                       "Доступные PSP плагины (для Adrenaline)"
-RUSSIAN["GTA_PATCH_DESC"] =                          "Плагин повышает разрешение игры до 960x544, как у родных Vita игр. Поддерживаются игры: Vice City Stories [ULUS10160] (v3.00) и Liberty City Stories [ULUS10041] (v3.00). Необходим Adrenaline v6.9 или новее -> отключите настройку Force high memory layout (находится в Recovery menu -> Advanced -> Advanced configuration)."
+RUSSIAN["GTA_PATCH_DESC"] =                          "Плагин повышает разрешение игры до 960x544, как у родных Vita игр. Поддерживаются игры: Vice City Stories [ULUS10160] (v3.00) и Liberty City Stories [ULUS10041] (v3.00). Необходим Adrenaline v7.0 или новее -> отключите настройку Force high memory layout (находится в Recovery menu -> Advanced -> Advanced configuration)."
 RUSSIAN["CAMERA_PATCH_DESC"] =                       "Плагин добавляет поддержку второго аналога для различных PSP игр в Adrenaline"
 RUSSIAN["CXMB_DESC"] =                               "CXMB позволяет использовать кастомные темы в формате CTF из папки PSP/THEMES"
 RUSSIAN["LANGSWAPPER_DESC"] =                        "Изменяет язык диалогов сохранения и выхода из игры на текущий, выбранный в настройках"
 RUSSIAN["CATEGORYLITE_DESC"] =                       "Распределите ваши игры, эмуляторы и прочие программы по категориям в меню Игры"
 RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (японскую озвучку) для игры Kingdom Hearts: Birth By Sleep/Final Mix"
 RUSSIAN["GE_PATCH_DESC"] =                           "Эксперементальный плагин, позволяющий повысить разрешение до 960x544 в некоторых PSP играх"
+
+--PSP Plugins Manager
+RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
 
 --config PKGj
 RUSSIAN["MENU_INSTALL_CONFIG"] =                     "Установить config.txt для PKGj v0.45+"
@@ -450,3 +454,8 @@ RUSSIAN["RESTART_QUESTION"] =                        "Вы хотите выпо
 RUSSIAN["CHINESE_FONT_DOWNLOAD"] =                   "Загрузка китайского шрифта"
 RUSSIAN["YES"] =                                     "да"
 RUSSIAN["NO"] =                                      "нет"
+
+RUSSIAN["SYSTEM_ERROR"] =                            "System Error"
+RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
+RUSSIAN["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+RUSSIAN["ERROR_LOADING_FILE"] =                      "Error loading file"

@@ -117,6 +117,7 @@ FRENCH["UNINSTALLP_TITLE"] =                        "Plugins Manager"
 FRENCH["UNINSTALLP_NOCONFIG_FOUND"] =               "Config.txt introuvable dans : "
 FRENCH["UNINSTALLP_PLUGIN"] =                       "Désinstaller le plugin"
 FRENCH["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Changer de partition"
+FRENCH["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
 FRENCH["UNINSTALLP_QUESTION"] =                     "Êtes-vous sûr de vouloir le désactiver ?"
 FRENCH["UNINSTALLP_DISABLE"] =                      "a été désactivé"
 FRENCH["UNINSTALLP_EMPTY"] =                        "-= Pas de plugin installé =-"
@@ -188,13 +189,16 @@ FRENCH["TONYHAWKS_REMASTERED_DESC"] =               "Double joystick pour le jeu
 
 --psp plugins
 FRENCH["PLUGINS_PSP_TITLE"] =                       "Liste des plugins PSP disponible"
-FRENCH["GTA_PATCH_DESC"] =                          "Ce plugin augmente la résolution interne du jeu en natif (960x544). Jeux compatibles :Vice City Stories [ULUS10160] (v3.00) et Liberty City Stories [ULUS10041] (v3.00). Adrenaline v6.9 ou plus -> Paramètre Forcer la mise en page de la mémoire haute désactivée (dans Recovery menu -> Advanced -> Advanced configuration)."
+FRENCH["GTA_PATCH_DESC"] =                          "Ce plugin augmente la résolution interne du jeu en natif (960x544). Jeux compatibles :Vice City Stories [ULUS10160] (v3.00) et Liberty City Stories [ULUS10041] (v3.00). Adrenaline v7.0 ou plus -> Paramètre Forcer la mise en page de la mémoire haute désactivée (dans Recovery menu -> Advanced -> Advanced configuration)."
 FRENCH["CAMERA_PATCH_DESC"] =                       "Ce plugin ajoute le support du stick analogique droit aux jeux PSP compatible"
 FRENCH["CXMB_DESC"] =                               "CXMB permet aux utilisateurs d'utiliser des thèmes personnalisés au format CTF"
 FRENCH["LANGSWAPPER_DESC"] =                        "Il définit le menu d'accueil des jeux et utilitaire de sauvegarde des données dans la langue de votre console sur les jeux dont la langue de la région est différente"
 FRENCH["CATEGORYLITE_DESC"] =                       "Organisez tous vos jeux, émulateurs, homebrews, jeux, dans leur propre dossier sous le répertoire JEUX"
 FRENCH["KHBBS_UNDUB_DESC"] =                        "Version UNDUB (Audio en Japonais) pour le jeu Kingdom Hearts: Birth By Sleep/Final Mix"
-FRENCH["GE_PATCH_DESC"] =                           "Il s'agit d'un plugin expérimental pour Adrenaline v6.9 qui vous permet de jouer à quelques jeux PSP en résolution native"
+FRENCH["GE_PATCH_DESC"] =                           "Il s'agit d'un plugin expérimental pour Adrenaline v7.0 qui vous permet de jouer à quelques jeux PSP en résolution native"
+
+--PSP Plugins Manager
+FRENCH["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
 
 --config pkgj
 FRENCH["MENU_INSTALL_CONFIG"] =                     "Config.txt du PKGJ v0.45+"
@@ -383,9 +387,9 @@ FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les pr
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
-FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	  "Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
-FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	  "Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
-FRENCH["INSTALLP_DESC_QUICKMENU"] =             	  "Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
+FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
+FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
+FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
 
 --ALL
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -450,3 +454,8 @@ FRENCH["RESTART_QUESTION"] =                        "\n\nVoulez-vous redémarrer
 FRENCH["CHINESE_FONT_DOWNLOAD"] =                   "Télécharger la police Chinoise"
 FRENCH["YES"] =                                     "Oui"
 FRENCH["NO"] =                                      "Non"
+
+FRENCH["SYSTEM_ERROR"] =                            "System Error"
+FRENCH["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
+FRENCH["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+FRENCH["ERROR_LOADING_FILE"] =                      "Error loading file"

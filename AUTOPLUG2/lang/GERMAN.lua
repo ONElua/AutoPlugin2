@@ -117,6 +117,7 @@ GERMAN["UNINSTALLP_TITLE"] =                        "Plugin Manager"
 GERMAN["UNINSTALLP_NOCONFIG_FOUND"] =               "Keine config.txt gefunden in: "
 GERMAN["UNINSTALLP_PLUGIN"] =                       "Plugin deinstallieren"
 GERMAN["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Abschnitt wechseln"
+GERMAN["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
 GERMAN["UNINSTALLP_QUESTION"] =                     "Are you sure you want to disable?"
 GERMAN["UNINSTALLP_DISABLE"] =                      "has been disabled"
 GERMAN["UNINSTALLP_EMPTY"] =                        "LEER!"
@@ -188,13 +189,16 @@ GERMAN["TONYHAWKS_REMASTERED_DESC"] =               "Dual Analogs Enabler for To
 
 --psp plugins
 GERMAN["PLUGINS_PSP_TITLE"] =                       "Verfügbare PSP plugins (Adrenaline)"
-GERMAN["GTA_PATCH_DESC"] =                          "Dieses Plugin erhöht die interne Auflösung des Spiels auf die native Auflösung 960x544. Unterstützte Titel:Vice City Stories [ULUS10160] (v3.00) und Liberty City Stories [ULUS10041] (v3.00). Adrenaline v6.9 oder höher -> Die Option 'Force high memory layout' deaktiviert (in 'Recovery menu' -> 'Advanced' -> 'Advanced configuration')."
+GERMAN["GTA_PATCH_DESC"] =                          "Dieses Plugin erhöht die interne Auflösung des Spiels auf die native Auflösung 960x544. Unterstützte Titel:Vice City Stories [ULUS10160] (v3.00) und Liberty City Stories [ULUS10041] (v3.00). Adrenaline v7.0 oder höher -> Die Option 'Force high memory layout' deaktiviert (in 'Recovery menu' -> 'Advanced' -> 'Advanced configuration')."
 GERMAN["CAMERA_PATCH_DESC"] =                       "Dieses Plugin kann für PSP Spiele (Adrenaline) Unterstüzung für den rechten Analog Stick hinzufügen"
 GERMAN["CXMB_DESC"] =                               "Mit CXMB können Nutzer eigene CTF Themes in PSP/THEMES verwenden"
 GERMAN["LANGSWAPPER_DESC"] =                        "Das Hauptmenu und die Speicherdaten, von Spielen aus anderen Regionen, werden in der PSP Systemsprache angezeigt."
 GERMAN["CATEGORYLITE_DESC"] =                       "Ordne all deine Spiele, Emulatoren und Homebrews in eigene Ordner unter dem Spieleverzeichnis."
 GERMAN["KHBBS_UNDUB_DESC"] =                        "UNDUB Version (Audio in Japanisch) für das Spiel Kingdom Hearts: Birth By Sleep/Final Mix"
-GERMAN["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v6.9 that allows you to play a few games in native resolution"
+GERMAN["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+
+--PSP Plugins Manager
+GERMAN["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
 
 --config pkgj
 GERMAN["MENU_INSTALL_CONFIG"] =                     "config.txt für PKGJ v0.45+ installieren"
@@ -274,8 +278,8 @@ GERMAN["FONT_DEFAULT"] =                            "System"
 GERMAN["MENU_TITLE_PLUGINS_ONLINE"] =               "Plugins Aktualisierung"
 
 --Langs
-GERMAN["ENGLISH_US"] = 								"Englisch_US"
 GERMAN["JAPANESE"] =                                "Japanisch"
+GERMAN["ENGLISH_US"] = 								"Englisch_US"
 GERMAN["GERMAN"] =                              	"Deutsch"
 GERMAN["FRENCH"] =                                  "Französisch"
 GERMAN["SPANISH"] =                                 "Spanisch"
@@ -450,3 +454,8 @@ GERMAN["RESTART_QUESTION"] =                        "Möchtest du jetzt neustart
 GERMAN["CHINESE_FONT_DOWNLOAD"] =                   "Chinesische Schrift runterladen"
 GERMAN["YES"] =                                     "Ja"
 GERMAN["NO"] =                                      "Nein"
+
+GERMAN["SYSTEM_ERROR"] =                            "System Error"
+GERMAN["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
+GERMAN["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+GERMAN["ERROR_LOADING_FILE"] =                      "Error loading file"

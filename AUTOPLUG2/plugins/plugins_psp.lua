@@ -1,12 +1,12 @@
 pluginsP = {
 
-{	name = "CXMB", name="cxmb.prx", path = "cxmb/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CXMB_DESC"], KEY = "CXMB_DESC", },
-{	name = "GTA Native Resolution Patch v0.2", name = "gta_native.prx",	path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["GTA_PATCH_DESC"], KEY = "GTA_PATCH_DESC", },
-{	name = "Camera Patch Lite", name = "camera_patch_lite.prx",	path = "seplugins/", txt = "game.txt", config = "camera_patch_lite.ini", version = "0001", desc = LANGUAGE["CAMERA_PATCH_DESC"], KEY = "CAMERA_PATCH_DESC", },
-{	name = "Lang Swapper", name = "LangSwapper.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["LANGSWAPPER_DESC"], KEY = "LANGSWAPPER_DESC", },
-{	name = "Category lite", name = "category_lite.prx",	path = "seplugins/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CATEGORYLITE_DESC"], KEY = "CATEGORYLITE_DESC", },
-{	name = "Kingdom Hearts: Birth By Sleep/Final Mix UNDUB", name = "bbsfmUndub.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["KHBBS_UNDUB_DESC"], KEY = "KHBBS_UNDUB_DESC", },
-{	name = "GE Patch Plugin v0.15", name = "ge_patch.prx", path = "seplugins/", txt = "game.txt", version = "0002", desc = LANGUAGE["GE_PATCH_DESC"], KEY = "GE_PATCH_DESC", link = "https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md", },
+{	nameR = "CXMB", name="cxmb.prx", path = "cxmb/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CXMB_DESC"], KEY = "CXMB_DESC", },
+{	nameR = "GTA Native Resolution Patch v0.3", name = "gta_native.prx",	path = "seplugins/", txt = "game.txt", version = "0002", desc = LANGUAGE["GTA_PATCH_DESC"], KEY = "GTA_PATCH_DESC", },
+{	nameR = "Camera Patch Lite", name = "camera_patch_lite.prx",	path = "seplugins/", txt = "game.txt", config = "camera_patch_lite.ini", version = "0001", desc = LANGUAGE["CAMERA_PATCH_DESC"], KEY = "CAMERA_PATCH_DESC", },
+{	nameR = "Lang Swapper", name = "LangSwapper.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["LANGSWAPPER_DESC"], KEY = "LANGSWAPPER_DESC", },
+{	nameR = "Category lite", name = "category_lite.prx",	path = "seplugins/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CATEGORYLITE_DESC"], KEY = "CATEGORYLITE_DESC", },
+{	nameR = "Kingdom Hearts: Birth By Sleep/Final Mix UNDUB", name = "bbsfmUndub.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["KHBBS_UNDUB_DESC"], KEY = "KHBBS_UNDUB_DESC", },
+{	nameR = "GE Patch Plugin v0.18.1", name = "ge_patch.prx", path = "seplugins/", txt = "game.txt", version = "0003", desc = LANGUAGE["GE_PATCH_DESC"], KEY = "GE_PATCH_DESC", link = "https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md", },
 
 }
 

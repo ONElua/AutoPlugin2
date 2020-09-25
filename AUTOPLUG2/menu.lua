@@ -73,6 +73,10 @@ function menu_gral()
 		if buttons.down or buttons.analogly > 60 then scroll:down() end
 
 		--if buttons.cancel then menu[5].funct() end
+		
+		
+		--if buttons.select then error("Debugger") end
+		
 		if buttons.accept then menu[scroll.sel].funct() end
 
 	end

@@ -9,6 +9,50 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+function read_configs()
+
+	local configs = {"vsh.txt","game.txt","pops.txt"}
+
+	for i=1, #plugins_for_psp do
+
+		for j=1,#configs do
+
+			if files.exists(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j]) then
+
+				for line in io.lines(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j]) do
+
+					if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
+
+					pathp,status = line:match("(.+) (.+)")
+					if pathp then
+
+						local plugs = {}
+						plugs.exists = files.exists(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j])
+						plugs.path = pathp
+						plugs.status = tonumber(status) or 0
+
+						if configs[j] == "vsh.txt" then
+							table.insert(plugins_for_psp[i][1],plugs)
+							plugins_for_psp[i][1].config = "vsh"
+						elseif configs[j] == "game.txt" then
+							table.insert(plugins_for_psp[i][2],plugs)
+							plugins_for_psp[i][2].config = "game"
+						elseif configs[j] == "pops.txt" then
+							table.insert(plugins_for_psp[i][3],plugs)
+							plugins_for_psp[i][3].config = "pops"
+						end
+
+					end
+				end--for
+
+			end
+
+		end
+
+	end
+
+end
+
 function read_configs(tb,tb2)
 
 	for i=1, #PMounts do
@@ -153,7 +197,7 @@ function pluginsPSP()
 			if i == scroll.sel then draw.offsetgradrect(15,y-10,945,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
 			if pluginsP[i].inst then ccolor = color.green else ccolor = color.white end
-			screen.print(25,y, pluginsP[i].name,1,ccolor,0x0)
+			screen.print(25,y, pluginsP[i].nameR,1,ccolor,0x0)
 
 			if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] then
 				if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 1 then
@@ -211,6 +255,10 @@ function pluginsPSP()
 			if buttons.released.l then selector -= 1 else selector += 1 end
 			if selector > #PMounts then selector = 1
 			elseif selector < 1 then selector = #PMounts end
+			for i=1,scroll.maxim do
+				pluginsP[i].inst = false
+			end
+			scroll = newScroll(pluginsP, limit)
 		end
 
 		--Exit
@@ -255,6 +303,7 @@ function pluginsPSP()
 
 							add_disable_psp_plugin(PMounts[selector], pluginsP[i], 1)
 							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = 1
+							pluginsP[i].inst = false
 
 							if back2 then back2:blit(0,0) end
 								message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
@@ -264,7 +313,7 @@ function pluginsPSP()
 				end
 
 				for i=1,scroll.maxim do
-					pluginsP[i].inst = false
+					pluginsP[scroll.sel].inst = false
 				end
 
 			end
@@ -292,6 +341,7 @@ function pluginsPSP()
 
 							add_disable_psp_plugin(PMounts[selector], pluginsP[i],0)
 							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = 0
+							pluginsP[i].inst = false
 
 							if back2 then back2:blit(0,0) end
 								message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
@@ -301,7 +351,7 @@ function pluginsPSP()
 				end
 
 				for i=1,scroll.maxim do
-					pluginsP[i].inst = false
+					pluginsP[scroll.sel].inst = false
 				end
 
 			end

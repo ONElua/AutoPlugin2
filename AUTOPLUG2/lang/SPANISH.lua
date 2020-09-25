@@ -117,6 +117,7 @@ SPANISH["UNINSTALLP_TITLE"] =                           "Administrador de Plugin
 SPANISH["UNINSTALLP_NOCONFIG_FOUND"] =                  "No se encontró config.txt en: "
 SPANISH["UNINSTALLP_PLUGIN"] =                          "Para desinstalar Plugin"
 SPANISH["UNINSTALLP_LEFTRIGHT_SECTION"] =               "para cambiar de sección"
+SPANISH["UNINSTALLP_LEFTRIGHT_CONFIG"] =                "para cambiar de config"
 SPANISH["UNINSTALLP_QUESTION"] =                        "Are you sure you want to disable?"
 SPANISH["UNINSTALLP_DISABLE"] =                         "ha sido desactivado"
 SPANISH["UNINSTALLP_EMPTY"] =                           "¡¡¡ Vacio !!!"
@@ -188,13 +189,16 @@ SPANISH["TONYHAWKS_REMASTERED_DESC"] =                  "Habilitador de dos aná
 
 --psp plugins
 SPANISH["PLUGINS_PSP_TITLE"] =                          "Plugins de PSP disponibles (Adrenaline)"
-SPANISH["GTA_PATCH_DESC"] =                             "Este plugin aumenta la resolución interna del juego a una resolución nativa de 960x544. Titulos soportados: Vice City Stories [ULUS10160] (v3.00) y Liberty City Stories [ULUS10041] (v3.00). En Adrenaline v6.9 o superior -> Opción 'Force high memory layout' debe estar deshabilitada (la opción se encuentra en Menu Recovery -> Advanced -> Advanced configuration)."
+SPANISH["GTA_PATCH_DESC"] =                             "Este plugin aumenta la resolución interna del juego a una resolución nativa de 960x544. Titulos soportados: Vice City Stories [ULUS10160] (v3.00) y Liberty City Stories [ULUS10041] (v3.00). En Adrenaline v7.0 o superior -> Opción 'Force high memory layout' debe estar deshabilitada (la opción se encuentra en Menu Recovery -> Advanced -> Advanced configuration)."
 SPANISH["CAMERA_PATCH_DESC"] =                          "Este plugin añade soporte para el analógico derecho a los juegos de PSP en Adrenaline"
 SPANISH["CXMB_DESC"] =                                  "CXMB permite usar temas personalizados .CTF en la carpeta PSP/THEMES"
 SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu de los juegos y la herramienta de datos guardados para juegos con idioma distinto (de otra región) al establecido en tu PSP "
 SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus juegos, emuladores, homebrews, en su propia carpeta bajo el Directorio de Juegos"
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
-SPANISH["GE_PATCH_DESC"] =                              " Este es un Plugin experimental para Adrenaline v6.9 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
+SPANISH["GE_PATCH_DESC"] =                              "Este es un Plugin experimental para Adrenaline v7.0 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
+
+--PSP Plugins Manager
+SPANISH["PSP_PLUGINS_MANAGER"] =                        "PSP Plugins Manager"
 
 --config pkgj
 SPANISH["MENU_INSTALL_CONFIG"] =                        "Instala config.txt para PKGj v0.51+"
@@ -222,12 +226,12 @@ SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --QuickMenu Plus
-SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para manterner presionado el botón"
+SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para mantener presionado el botón"
 SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Botón de Modo Reposo"
 SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "Estilo del Background (fondo)"
 SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Ajusta el tiempo de presion del botón PS para abrir el Quick Menu. El tiempo esta en microsegundos. Por ejemplo, coloca 250000 para 250 milisegundos (0,25 segundos). Por defecto el tiempo es de 500 milisegundos"
 SPANISH["QUICKMENU_MENU_STANDBYRESTART_DESC"] =         "Ajusta el botón de Reposo para funcionar como botón de Reinicio. Coloca en el archivo 1 para habilitar 'Reiniciar y Apagar', o 0 para deshabilitar 'Suspender y Apagar-Reiniciar'. Cuando este ajuste está deshabilitado, mantén presionado el botón de 'Apagar-Reiniciar' para Reiniciar, y aprétalo para Apagar. Por defecto está habilitado en PS Vita y deshabilitado en PSTV"
-SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =        "Ajusta el estilo del Fondo del Menú. Coloca en el archivo 0 para el estilo original, 1 para estilo traslúcido y 2 para estilo Negro. Por defecto es traslúcido. Estilo The default is translucent. El estilo Negro puede reducir el consumo de batería de los modelos con pantalla OLED. El efecto de gradiente (degradado) fue removido en todos los estilos"
+SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"] =        "Ajusta el estilo del Fondo del Menú. Coloca en el archivo 0 para el estilo original, 1 para estilo traslúcido y 2 para estilo Negro. Por defecto es traslúcido. El estilo Negro puede reducir el consumo de batería de los modelos con pantalla OLED. El efecto de gradiente (degradado) fue removido en todos los estilos"
 SPANISH["QUICKMENU_MENU_UPDATE_CONFIG"] =               "Actualiza las configuraciones para QuickMenu Plus"
 SPANISH["QUICKMENU_MENU_UPDATING"] =                    "¡Actualizando las configuraciones de QuickMenu Plus!\n\nPor favor espera..."
 SPANISH["QUICKMENU_OSK_TITLE_TIME"] =                   "Tiempo en microsegundos"
@@ -385,7 +389,7 @@ SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de o
 SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin que corre siempre en segundo plano un servidor FTP"
 SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un screenshot cada vez que desbloquees un trofeo"
 SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
-SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añadir nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
+SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
 
 --ALL
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -450,3 +454,8 @@ SPANISH["RESTART_QUESTION"] =                           "¿Quieres reiniciar aho
 SPANISH["CHINESE_FONT_DOWNLOAD"] =                      "Descargando Letras para idioma Chino"
 SPANISH["YES"] =                                        "SI"
 SPANISH["NO"] =                                         "NO"
+
+SPANISH["SYSTEM_ERROR"] =                               "Error de Sistema"
+SPANISH["SYSTEM_ERROR_REPO"] =                          "Por favor reporta este error al Repositorio Autoplugin2 de Onelua Github"
+SPANISH["SYSTEM_ERROR_FIX"] =                           "o soluciona este error en la linea mencionada arriba (ux0:ruta/archivo.lua:numero de linea)"
+SPANISH["ERROR_LOADING_FILE"] =                         "Error al cargar el archivo"

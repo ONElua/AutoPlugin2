@@ -117,6 +117,7 @@ CHINESE_S["UNINSTALLP_TITLE"] =                        "插件管理器"
 CHINESE_S["UNINSTALLP_NOCONFIG_FOUND"] =               "在这里找不到 config.txt 文件: "
 CHINESE_S["UNINSTALLP_PLUGIN"] =                       "卸载插件"
 CHINESE_S["UNINSTALLP_LEFTRIGHT_SECTION"] =            "切换选项"
+CHINESE_S["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
 CHINESE_S["UNINSTALLP_QUESTION"] =                     "你确定要禁用吗?"
 CHINESE_S["UNINSTALLP_DISABLE"] =                      "已被禁用"
 CHINESE_S["UNINSTALLP_EMPTY"] =                        "空白!"
@@ -188,13 +189,16 @@ CHINESE_S["TONYHAWKS_REMASTERED_DESC"] =               "双摇杆启用器,适�
 
 --psp plugins
 CHINESE_S["PLUGINS_PSP_TITLE"] =                       "可供使用的 PSP(Adrenaline) 插件"
-CHINESE_S["GTA_PATCH_DESC"] =                          "此插件用于提升游戏内部分辨率到 960*544.支持游戏:罪恶都市传奇 [ULUS10160] (v3.00) 和 自由城故事 [ULUS10041] (v3.00). Adrenaline v6.9 或更新版本 -> 选择 强制禁用高内存布局 选项 (在 恢复菜单 -> 高级 -> 高级配置)."
+CHINESE_S["GTA_PATCH_DESC"] =                          "此插件用于提升游戏内部分辨率到 960*544.支持游戏:罪恶都市传奇 [ULUS10160] (v3.00) 和 自由城故事 [ULUS10041] (v3.00). Adrenaline v7.0 或更新版本 -> 选择 强制禁用高内存布局 选项 (在 恢复菜单 -> 高级 -> 高级配置)."
 CHINESE_S["CAMERA_PATCH_DESC"] =                       "这个插件可以为 Adrenaline 上的 PSP 游戏添加右摇杆支持"
 CHINESE_S["CXMB_DESC"] =                               "CXMB 允许用户在 PSP/THEMES 中使用自定义 CTF 主题"
 CHINESE_S["LANGSWAPPER_DESC"] =                        "此插件用于设置游戏主菜单和存档语言为您的系统语言,适用于具备不同区域语言的游戏"
 CHINESE_S["CATEGORYLITE_DESC"] =                       "将所有游戏,模拟器,自制软件组织到游戏目录下它们自己的文件夹中"
 CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降生/最终Mix 游戏的 Undub (日语配音) 版本"
-CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v6.9 的实验性插件, 允许您使用原始分辨率运行部分游戏"
+CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v7.0 的实验性插件, 允许您使用原始分辨率运行部分游戏"
+
+--PSP Plugins Manager
+CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
 
 --config pkgj
 CHINESE_S["MENU_INSTALL_CONFIG"] =                     "为 PKGj v0.45+ 安装 config.txt"
@@ -450,3 +454,8 @@ CHINESE_S["RESTART_QUESTION"] =                        "是否重启?"
 CHINESE_S["CHINESE_FONT_DOWNLOAD"] =                   "正在下载扩展字体"
 CHINESE_S["YES"] =                                     "是"
 CHINESE_S["NO"] =                                      "否"
+
+CHINESE_S["SYSTEM_ERROR"] =                            "System Error"
+CHINESE_S["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
+CHINESE_S["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
+CHINESE_S["ERROR_LOADING_FILE"] =                      "Error loading file"

@@ -38,14 +38,32 @@ function load_translates()
 
 	-- Official Translations
 	if files.exists(args[4]..args[5]..".lua") then
-		dofile(args[4]..args[5]..".lua")
-		load_language(args[5], true)
+		t,s = loadfile(args[4]..args[5]..".lua")
+		if t then
+			t()
+			load_language(args[5], true)
+		else
+			if s then
+				os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
+			else
+				os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n"..args[4]..args[5]..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
+			end
+		end
 	end
 
 	-- User Translations
 	if files.exists("ux0:data/AUTOPLUGIN2/lang/"..args[5]..".lua") then
-		dofile("ux0:data/AUTOPLUGIN2/lang/"..args[5]..".lua")
-		load_language(args[5])
+		t,s = loadfile("ux0:data/AUTOPLUGIN2/lang/"..args[5]..".lua")
+		if t then
+			t()
+			load_language(args[5])
+		else
+			if s then
+				os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
+			else
+				os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n".."ux0:data/AUTOPLUGIN2/lang/"..args[5]..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
+			end
+		end
 	end
 end
 
