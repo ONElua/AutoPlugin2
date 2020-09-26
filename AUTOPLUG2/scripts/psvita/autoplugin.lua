@@ -85,6 +85,9 @@ function plugins_installation(tb,sel)
 		elseif tb[sel].path == "ModalVol.suprx" and not game.exists("MODALVOLM") then
 			__file = "VolumeControl.vpk"
 			game.install("resources/plugins/VolumeControl.vpk",false)
+		elseif tb[sel].path == "pspemu-colour-crunch.skprx" and not game.exists("AKRK00006") then
+			__file = "lcd-colour-crunch.vpk"
+			game.install("resources/plugins/lcd-colour-crunch.vpk",false)
 		elseif tb[sel].path == "monaural.skprx" and not game.exists("AKRK00003") then
 			__file = "MonauralConfig.vpk"
 			game.install("resources/plugins/MonauralConfig.vpk",false)
