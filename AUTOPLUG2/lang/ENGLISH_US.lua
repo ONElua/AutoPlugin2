@@ -356,6 +356,7 @@ ENGLISH_US["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a 
 ENGLISH_US["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 ENGLISH_US["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 ENGLISH_US["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+ENGLISH_US["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 
 ENGLISH_US["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "This plugin can display Boot Splash on PS Vita/PSTV at boot. Requires ENSO."
 ENGLISH_US["CUSTOMBOOTSPLASH_QUESTION"] =               "Set this image as Custom Boot Splash ?"
