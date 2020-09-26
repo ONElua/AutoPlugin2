@@ -117,7 +117,7 @@ CHINESE_S["UNINSTALLP_TITLE"] =                        "插件管理器"
 CHINESE_S["UNINSTALLP_NOCONFIG_FOUND"] =               "在这里找不到 config.txt 文件: "
 CHINESE_S["UNINSTALLP_PLUGIN"] =                       "卸载插件"
 CHINESE_S["UNINSTALLP_LEFTRIGHT_SECTION"] =            "切换选项"
-CHINESE_S["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
+CHINESE_S["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "切换配置"
 CHINESE_S["UNINSTALLP_QUESTION"] =                     "你确定要禁用吗?"
 CHINESE_S["UNINSTALLP_DISABLE"] =                      "已被禁用"
 CHINESE_S["UNINSTALLP_EMPTY"] =                        "空白!"
@@ -198,7 +198,7 @@ CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降�
 CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v7.0 的实验性插件, 允许您使用原始分辨率运行部分游戏"
 
 --PSP Plugins Manager
-CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
+CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP 插件管理器"
 
 --config pkgj
 CHINESE_S["MENU_INSTALL_CONFIG"] =                     "为 PKGj v0.45+ 安装 config.txt"
@@ -455,7 +455,7 @@ CHINESE_S["CHINESE_FONT_DOWNLOAD"] =                   "正在下载扩展字体
 CHINESE_S["YES"] =                                     "是"
 CHINESE_S["NO"] =                                      "否"
 
-CHINESE_S["SYSTEM_ERROR"] =                            "System Error"
-CHINESE_S["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
-CHINESE_S["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
-CHINESE_S["ERROR_LOADING_FILE"] =                      "Error loading file"
+CHINESE_S["SYSTEM_ERROR"] =                            "系统错误"
+CHINESE_S["SYSTEM_ERROR_REPO"] =                       "请将此问题反馈到 Github Onelua 名下的 Autoplugin2 仓库"
+CHINESE_S["SYSTEM_ERROR_FIX"] =                        "或尝试修复在上述路径 (形如 ux0:目录/文件名.lua:行号) 中找到的文件文本行中的错误"
+CHINESE_S["ERROR_LOADING_FILE"] =                      "文件载入遇到问题"
