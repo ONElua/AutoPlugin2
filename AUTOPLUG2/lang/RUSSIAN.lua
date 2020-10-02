@@ -50,7 +50,7 @@ RUSSIAN["MENU_PSP_INSTALL_NPDRMFREE"] =              "Установить npdrm
 RUSSIAN["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Установить RemasteredControls от TheOfficialFloW"
 RUSSIAN["MENU_PSP_INSTALL_PLUGINS"] =                "Установить другие PSP плагины для Adrenaline"
 
-RUSSIAN["MENU_PSP_NPDRMFREE_DESC"] =                 "Плагин позволяет запускать зашифрованные PS1 и PSP игры в формате EBOOT.PBP без их покупки"
+RUSSIAN["MENU_PSP_NPDRMFREE_DESC"] =                 "Плагин позволяет запускать зашифрованные PSP игры в формате EBOOT.PBP без их покупки (обход ошибки 80010087)"
 RUSSIAN["MENU_PSP_PSPCTRLS_DESC"] =                  "Сборник плагинов для переноса управления камерой на правый аналог в PSP играх в Adrenaline"
 RUSSIAN["MENU_PSP_PLUGINS_DESC"] =                   "Установить PSP плагины, также работающие в Adrenaline"
 
@@ -113,15 +113,15 @@ RUSSIAN["INSTALLP_OSK_TEXT"] =                       "Введите свой т
 RUSSIAN["INSTALLP_WARNING_UDCD"] =                   "Плагин udcd_uvc поддерживает Fat и Slim"
 
 --Uninstall Plugins
-RUSSIAN["UNINSTALLP_TITLE"] =                        "Менеджер плагинов"
+RUSSIAN["UNINSTALLP_TITLE"] =                        "Управление плагинами"
 RUSSIAN["UNINSTALLP_NOCONFIG_FOUND"] =               "Файл config.txt не найден в разделе "
 RUSSIAN["UNINSTALLP_PLUGIN"] =                       "Удалить плагин"
 RUSSIAN["UNINSTALLP_LEFTRIGHT_SECTION"] =            "Выбрать секцию"
-RUSSIAN["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "To switch config"
+RUSSIAN["UNINSTALLP_LEFTRIGHT_CONFIG"] =             "Выбор режима:"
 RUSSIAN["UNINSTALLP_QUESTION"] =                     "Вы уверены, что хотите отключить?"
 RUSSIAN["UNINSTALLP_DISABLE"] =                      "был отключен"
 RUSSIAN["UNINSTALLP_EMPTY"] =                        "НИЧЕГО НЕТ!!!"
-RUSSIAN["UNINSTALLP_NO_PLUGINS"] =                   "В данной секции нет плагинов"
+RUSSIAN["UNINSTALLP_NO_PLUGINS"] =                   "В данном разделе нет плагинов"
 RUSSIAN["UNINSTALLP_PLUGINS_NEED"] =                 "требуется для работоспособности следующих плагинов"
 RUSSIAN["UNINSTALLP_QUESTION_NEED"] =                "Вы хотите удалить и их тоже?"
 RUSSIAN["UNINSTALLP_SYSTEM_PLUGIN"] =                "Необходимый плагин, невозможно удалить!"
@@ -160,7 +160,7 @@ RUSSIAN["SD2VITA_UMA_FRIENDLY"] =                    "USB или PSVSD на Vita
 RUSSIAN["UPDATE_WIFI_LOW"] =                         "Слабый сигнал Wi-Fi"
 RUSSIAN["UPDATE_WIFI_IS_ON"] =                       "Требуется подключение к Интернет"
 RUSSIAN["UPDATE_CHECK_DB"] =                         "Проверка базы данных"
-RUSSIAN["UPDATE_PLUGIN"] =                           "Обновлённые плагины"
+RUSSIAN["UPDATE_PLUGIN"] =                           "Обновлён плагин"
 RUSSIAN["UPDATE_ERROR_DB"] =                         "Ошибка при загрузке db.lua"
 RUSSIAN["UPDATE_NO_NEWS"] =                          "Все плагины уже обновлены"
 
@@ -175,7 +175,7 @@ RUSSIAN["NPDRMFREE_INSTALL"] =                       "Установить пл�
 RUSSIAN["PSPCTRLS_TITLE"] =                          "Плагины Remastered Controls от TheOfficialFloW (для Adrenaline)"
 RUSSIAN["PSPCTRLS_GAME_UPDATED"] =                   "Файл game.txt обновлён"
 RUSSIAN["PSPCTRLS_DESC_ALL"] =                       "Поддержка второго аналогового стика"
-RUSSIAN["PSPCTRLS_LR_SWAP"] =                        "Выбрать раздел"
+RUSSIAN["PSPCTRLS_LR_SWAP"] =                        "Выбор раздела:"
 RUSSIAN["GTA_REMASTERED_DESC"] =                     "Поддержка второго стика в Grand Theft Auto: Liberty City Stories и Grand Theft Auto: Vice City Stories"
 RUSSIAN["GTAV2_REMASTERED_DESC"] =                   "Поддержка второго стика в Grand Theft Auto: Liberty City Stories и Grand Theft Auto: Vice City Stories"
 RUSSIAN["KHBBS_REMASTERED_DESC"] =                   "Поддержка второго стика в Kingdom Hearts: Birth by Sleep и Kingdom Hearts: Birth by Sleep Final Mix"
@@ -198,7 +198,7 @@ RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (
 RUSSIAN["GE_PATCH_DESC"] =                           "Эксперементальный плагин, позволяющий повысить разрешение до 960x544 в некоторых PSP играх"
 
 --PSP Plugins Manager
-RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
+RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "Управление плагинами PSP"
 
 --config PKGj
 RUSSIAN["MENU_INSTALL_CONFIG"] =                     "Установить config.txt для PKGj v0.45+"
@@ -447,15 +447,15 @@ RUSSIAN["STRING_BACKUP_CONFIGS"] =                   "Создание файл�
 RUSSIAN["STRING_MISSING_CONFIG"] =                   "Файл config.txt не обнаружен"
 RUSSIAN["STRING_BACK"] =                             "Вернуться назад"
 RUSSIAN["STRING_CLOSE"] =                            "Выйти из AutoPlugin"
-RUSSIAN["STRING_INSTALLED"] =                        "успешно установлен"
-RUSSIAN["STRING_UNINSTALLED"] =                      "успешно удалён"
+RUSSIAN["STRING_INSTALLED"] =                        "Успешно установлен"
+RUSSIAN["STRING_UNINSTALLED"] =                      "Успешно удалён"
 RUSSIAN["STRING_PLEASE_WAIT"] =                      "Пожалуйста, подождите..."
 RUSSIAN["RESTART_QUESTION"] =                        "Вы хотите выполнить перезагрузку сейчас?"
 RUSSIAN["CHINESE_FONT_DOWNLOAD"] =                   "Загрузка китайского шрифта"
 RUSSIAN["YES"] =                                     "да"
 RUSSIAN["NO"] =                                      "нет"
 
-RUSSIAN["SYSTEM_ERROR"] =                            "System Error"
-RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
-RUSSIAN["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
-RUSSIAN["ERROR_LOADING_FILE"] =                      "Error loading file"
+RUSSIAN["SYSTEM_ERROR"] =                            "Системная ошибка"
+RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Пожалуйста, сообщите об этом на сайте github.com/ONElua/AutoPlugin2"
+RUSSIAN["SYSTEM_ERROR_FIX"] =                        "Или исправьте ошибку в указанном файле (ux0:папки/файл.lua:номер_строки)"
+RUSSIAN["ERROR_LOADING_FILE"] =                      "Ошибка загрузки файла"
