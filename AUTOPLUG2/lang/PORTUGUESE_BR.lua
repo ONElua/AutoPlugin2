@@ -104,6 +104,7 @@ PORTUGUESE_BR["CUSTOMWARNING_MESSAGE"] =                   "Lembre-se de ativar 
 
 PORTUGUESE_BR["INSTALLP_VITABRIGHT_360"] =                 "Vitabright é somente para 3.60/H-encore 3.68"
 PORTUGUESE_BR["INSTALLP_CWARNING_360_365"] =               "Aviso Personalizado não funciona nas versões 3.67/3.68"
+PORTUGUESE_BR["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 PORTUGUESE_BR["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Plugin shellsecbat detectado!\n\nInstalar shellbat e desinstalar shellsecbat?"
 PORTUGUESE_BR["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Plugin shellbat detectado!\n\nInstalar shellsecbat e desinstalar shellbat?"
 PORTUGUESE_BR["INSTALLP_WARNING_REFOOD"] =                 "Para funcionar o plugin Refood será instalado em ur0:/tai"
@@ -356,6 +357,8 @@ PORTUGUESE_BR["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides
 PORTUGUESE_BR["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 PORTUGUESE_BR["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 PORTUGUESE_BR["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+PORTUGUESE_BR["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+PORTUGUESE_BR["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 PORTUGUESE_BR["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Este plugin pode exibir o Splash de inicialização no PS Vita/PSTV na inicialização. Requer ENSO."
 PORTUGUESE_BR["CUSTOMBOOTSPLASH_QUESTION"] =               "Definir esta imagem como Splash de inicialização personalizado?"
@@ -452,6 +455,7 @@ PORTUGUESE_BR["STRING_UNINSTALLED"] =                      "foi desinstalado"
 PORTUGUESE_BR["STRING_PLEASE_WAIT"] =                      "Por favor, aguarde..."
 PORTUGUESE_BR["RESTART_QUESTION"] =                        "Deseja reiniciar agora?"
 PORTUGUESE_BR["CHINESE_FONT_DOWNLOAD"] =                   "Baixar fonte em chinês"
+PORTUGUESE_BR["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 PORTUGUESE_BR["YES"] =                                     "SIM"
 PORTUGUESE_BR["NO"] =                                      "NÃO"
 

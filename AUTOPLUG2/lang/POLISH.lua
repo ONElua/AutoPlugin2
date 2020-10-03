@@ -104,6 +104,7 @@ POLISH["CUSTOMWARNING_MESSAGE"] =                   "Pamiętaj aby włączyć pl
 
 POLISH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright jest tylko na 3.60/H-encore 3.68"
 POLISH["INSTALLP_CWARNING_360_365"] =               "Własne ostrzeżenie o epilepsji nie działa na 3.67/3.68"
+POLISH["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 POLISH["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Plugin shellsecbat wykryty!\n\nZainstalować shellbat i odinstalować shellsecbat ?"
 POLISH["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Plugin shellbat wykryty!\n\nZainstalować shellsecbat i odinstalować shellbat ?"
 POLISH["INSTALLP_WARNING_REFOOD"] =                 "Plugin Refood zostanie zainstalowany w ur0:/tai"
@@ -356,6 +357,8 @@ POLISH["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a bric
 POLISH["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 POLISH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 POLISH["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+POLISH["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+POLISH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 POLISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ten plugin pozwala na wyświetlenie własnego ekranu startowego na PS Vita/PSTV. Wymaga ENSO."
 POLISH["CUSTOMBOOTSPLASH_QUESTION"] =               "Czy chcesz ustawić ten obraz, jako obraz startowy ?"
@@ -452,6 +455,7 @@ POLISH["STRING_UNINSTALLED"] =                      "Zostało odinstalowane"
 POLISH["STRING_PLEASE_WAIT"] =                      "Proszę czekać..."
 POLISH["RESTART_QUESTION"] =                        "Czy napewno chcesz zresetować konsolę ?"
 POLISH["CHINESE_FONT_DOWNLOAD"] =                   "Pobieranie Chinskich czcionek"
+POLISH["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 POLISH["YES"] =                                     "TAK"
 POLISH["NO"] =                                      "NIE"
 

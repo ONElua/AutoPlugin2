@@ -104,6 +104,7 @@ GERMAN["CUSTOMWARNING_MESSAGE"] =                   "Denke daran, das Plugin dü
 
 GERMAN["INSTALLP_VITABRIGHT_360"] =                 "Vitabright ist nur für PSVita OLED und 3.60/H-Encore 3.68"
 GERMAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning funktioniert nicht für 3.67/3.68"
+GERMAN["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 GERMAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               shellsecbat Plugin entdeckt!\n\nStattdessen shellbat Plugin installieren und shellsecbat deinstallieren?"
 GERMAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               shellbat Plugin entdeckt!\n\nStattdessen shellsecbat Plugin installieren und shellbat deinstallieren?"
 GERMAN["INSTALLP_WARNING_REFOOD"] =                 "Damit das Plugin reFOOD funktioniert wird es in ur0:/tai installiert"
@@ -356,6 +357,8 @@ GERMAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a bric
 GERMAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 GERMAN["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 GERMAN["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+GERMAN["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+GERMAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 GERMAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Dieses Plugin kann das Bootlogo auf der PSVita / PSTV beim Booten durch ein Bild ersetzen. ENSO erforderlich"
 GERMAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Dein 'Splash-Bild' als eigenes 'Boot-Splash' nutzen?"
@@ -452,6 +455,7 @@ GERMAN["STRING_UNINSTALLED"] =                      "wurde deinstalliert"
 GERMAN["STRING_PLEASE_WAIT"] =                      "Bitte warten..."
 GERMAN["RESTART_QUESTION"] =                        "Möchtest du jetzt neustarten?"
 GERMAN["CHINESE_FONT_DOWNLOAD"] =                   "Chinesische Schrift runterladen"
+GERMAN["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 GERMAN["YES"] =                                     "Ja"
 GERMAN["NO"] =                                      "Nein"
 

@@ -104,6 +104,7 @@ JAPANESE["CUSTOMWARNING_MESSAGE"] =                     "カスタム警告プ�
 
 JAPANESE["INSTALLP_VITABRIGHT_360"] =                   "Vitabrightは3.60/H-encore3.68専用です"
 JAPANESE["INSTALLP_CWARNING_360_365"] =                 "3.67/3.68はカスタム警告が機能しません"
+JAPANESE["INSTALLP_LCDCOLOURSPACECHANGE"] =             "LCD Colour Space Changer only work in Vita Slim"
 JAPANESE["INSTALLP_QUESTION_SHELLSECBAT"] =             "\n               プラグインshellsecbatが検出されました！\n\n代わりにshellbatをインストールし、shellsecbatをアンインストールしますか？"
 JAPANESE["INSTALLP_QUESTION_SHELLBAT"] =                "\n               プラグインshellbatが検出されました！\n\n代わりにshellsecbatをインストールし、shellbatをアンインストールしますか？"
 JAPANESE["INSTALLP_WARNING_REFOOD"] =                   "reF00Dプラグインを機能させるためur0：/taiにインストールされます"
@@ -356,6 +357,8 @@ JAPANESE["INSTALLP_DESC_EMERGENCYMOUNT"] =              "This plugin provides a 
 JAPANESE["INSTALLP_DESC_MAFUINPUT"] =                   "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 JAPANESE["INSTALLP_DESC_COREUNLOCK"] =                  "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 JAPANESE["INSTALLP_DESC_DS4TOUCH"] =                    "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+JAPANESE["INSTALLP_DESC_LCDSPACE"] =                    "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+JAPANESE["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =             "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"
@@ -452,6 +455,7 @@ JAPANESE["STRING_UNINSTALLED"] =                        "アンインストー�
 JAPANESE["STRING_PLEASE_WAIT"] =                        "お待ちください..."
 JAPANESE["RESTART_QUESTION"] =                          "今すぐ再起動しますか？"
 JAPANESE["CHINESE_FONT_DOWNLOAD"] =                     "中国語フォントのダウンロード"
+JAPANESE["BG_MP3_DOWNLOAD"] =                           "Downloading BG Music"
 JAPANESE["YES"] =                                       "はい"
 JAPANESE["NO"] =                                        "いいえ"
 

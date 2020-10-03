@@ -13,6 +13,7 @@ function plugins_installation(tb,sel)
 
 	if tb[sel].path:find(string.lower("udcd_uvc"),1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
 	elseif tb[sel].path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif tb[sel].path == "pspemu-colour-crunch.skprx" and hw.model() != "Vita Slim" then os.message(LANGUAGE["INSTALLP_LCDCOLOURSPACECHANGE"])
 	else
 
 		--Aqui checaremos posibles conflictos de plugins
@@ -22,12 +23,12 @@ function plugins_installation(tb,sel)
 
 		--Ds4Touch
 		elseif tb[sel].path == "ds4touch.skprx" then
-			tai.del("ALL",  path_tai.."ds4touch.suprx")
+			tai.del("ALL",  "ds4touch.suprx")
 
 		-- Sysident
 		elseif tb[sel].path == "sysident.suprx" then
 			tai.put("KERNEL",  path_tai.."sysident.skprx")
-			files.copy(path_plugins.."sysident.skprx", "ur0:/tai/")
+			files.copy(path_plugins.."sysident.skprx", "ur0:tai/")
 			change = true
 
 		-- QuickMenuPlus
@@ -88,6 +89,9 @@ function plugins_installation(tb,sel)
 		elseif tb[sel].path == "monaural.skprx" and not game.exists("AKRK00003") then
 			__file = "MonauralConfig.vpk"
 			game.install("resources/plugins/MonauralConfig.vpk",false)
+		elseif tb[sel].path == "pspemu-colour-crunch.skprx" and not game.exists("AKRK00006") then
+			__file = "lcd-colour-crunch.vpk"
+			game.install("resources/plugins/lcd-colour-crunch.vpk",false)
 		elseif tb[sel].path == "VitaGrafix.suprx" and not game.exists("VGCF00001") then
 			files.delete("tmp")
 			if back2 then back2:blit(0,0) end
@@ -139,15 +143,29 @@ function plugins_installation(tb,sel)
 		__file = ""
 
 
+		--Delete plugins Specials
+		if tb[sel].tai_del1 and tb[sel].section_del1 then
+			--os.message("section1: "..tb[sel].section_del1.."\n".."plugin1: "..tb[sel].tai_del1)
+			tai.del(tb[sel].section_del1, tb[sel].tai_del1)
+
+			if tb[sel].section_del1:upper() == "MAIN" or tb[sel].section_del1:upper() == "KERNEL" then change = true end
+		end
+		if tb[sel].tai_del2 and tb[sel].section_del2 then
+			--os.message("section2: "..tb[sel].section_del2.."\n".."plugin2: "..tb[sel].tai_del2)
+			tai.del(tb[sel].section_del2, tb[sel].tai_del2)
+
+			if tb[sel].section_del2:upper() == "MAIN" or tb[sel].section_del2:upper() == "KERNEL" then change = true end
+		end
+
 		--Copy Especial Config for the plugin
 		if tb[sel].config then
 			if tb[sel].config == "custom_warning.txt" then
 					
-				if not files.exists("ur0:/tai/"..tb[sel].config) then
+				if not files.exists("ur0:tai/"..tb[sel].config) then
 					local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
 					if not text or (string.len(text)<=0) then text = "" end--os.nick() end
 
-					local fp = io.open("ur0:/tai/"..tb[sel].config, "wb")
+					local fp = io.open("ur0:tai/"..tb[sel].config, "wb")
 					if fp then
 						fp:write(string.char(0xFF)..string.char(0xFE))
 						fp:write(os.toucs2(text))
@@ -155,7 +173,7 @@ function plugins_installation(tb,sel)
 					end
 				end
 			else
-				files.copy(path_plugins..tb[sel].config, tb[sel].configpath or "ur0:/tai/")
+				files.copy(path_plugins..tb[sel].config, tb[sel].configpath or "ur0:tai/")
 			end
 		end
 

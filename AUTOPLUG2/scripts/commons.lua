@@ -139,7 +139,7 @@ end
 
 --Variables Universales
 path_plugins = "resources/plugins/"
-path_tai = "ur0:/tai/"
+path_tai = "ur0:tai/"
 version = tostring(os.swversion())
 
 --Buttons Assign

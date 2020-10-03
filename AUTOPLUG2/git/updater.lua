@@ -57,16 +57,19 @@ function screen.flip()
 				return 1;
 			end
 
-			if http.download(url, path2vpk).success and files.exists(path2vpk) then
-				files.mkdir("ux0:/data/1luapkg")
-				files.copy("eboot.bin","ux0:/data/1luapkg")
-				files.copy("git/updater/script.lua","ux0:/data/1luapkg/")
-				files.copy("git/updater/update.png","ux0:/data/1luapkg/")
-				files.copy("git/updater/language.lua","ux0:/data/1luapkg/")
-				files.copy("git/updater/param.sfo","ux0:/data/1luapkg/sce_sys/")
-				game.installdir("ux0:/data/1luapkg")
-				files.delete("ux0:/data/1luapkg")
-				game.launch(string.format("ONEUPDATE&%s&%s&%s&%s", os.titleid(), path2vpk, files.cdir().."/lang/", __LANG)) -- Goto installer extern!
+			if http.download(url, path2vpk).success then
+				os.delay(500)
+				if files.exists(path2vpk) then
+					files.mkdir("ux0:/data/1luapkg")
+					files.copy("eboot.bin","ux0:/data/1luapkg")
+					files.copy("git/updater/script.lua","ux0:/data/1luapkg/")
+					files.copy("git/updater/update.png","ux0:/data/1luapkg/")
+					files.copy("git/updater/language.lua","ux0:/data/1luapkg/")
+					files.copy("git/updater/param.sfo","ux0:/data/1luapkg/sce_sys/")
+					game.installdir("ux0:/data/1luapkg")
+					files.delete("ux0:/data/1luapkg")
+					game.launch(string.format("ONEUPDATE&%s&%s&%s&%s", os.titleid(), path2vpk, files.cdir().."/lang/", __LANG)) -- Goto installer extern!
+				end
 			end
 			onAppInstall = onAppInstallOld
 			onNetGetFile = onNetGetFileOld

@@ -48,7 +48,7 @@ function img2splashbin(img,flag)
 				fp:close()
 
 				if copy then
-					files.copy("resources/plugins/custom_boot_splash.skprx", "ur0:/tai/")
+					files.copy("resources/plugins/custom_boot_splash.skprx", "ur0:tai/")
 				end
 
 				if flag then

@@ -104,6 +104,7 @@ RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте ус
 
 RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только на 3.60 и 3.68"
 RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и 3.68"
+RUSSIAN["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 RUSSIAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Обнаружен плагин shellsecbat!\n\nУстановить shellbat, удалив shellsecbat?"
 RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\nУстановить shellsecbat, удалив shellbat?"
 RUSSIAN["INSTALLP_WARNING_REFOOD"] =                 "Для работоспособности плагин reF00D будет установлен в ur0:tai"
@@ -356,6 +357,8 @@ RUSSIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Данный плагин 
 RUSSIAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I это плагин, который может записать и воспроизвести последовательность нажатых клавиш. Сама запись будет сохранена в ur0:/data/MAFU-I/capture.dat"
 RUSSIAN["INSTALLP_DESC_COREUNLOCK"] =                "Плагин даёт возможность использовать системное (четвёртое) ядро процессора в играх и пользовательских приложениях"
 RUSSIAN["INSTALLP_DESC_DS4TOUCH"] =                  "Поддержка сенсорной панели DS4 на PSTV и Vita с плагином MiniVitaTV."
+RUSSIAN["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+RUSSIAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
@@ -452,6 +455,7 @@ RUSSIAN["STRING_UNINSTALLED"] =                      "Успешно удалё�
 RUSSIAN["STRING_PLEASE_WAIT"] =                      "Пожалуйста, подождите..."
 RUSSIAN["RESTART_QUESTION"] =                        "Вы хотите выполнить перезагрузку сейчас?"
 RUSSIAN["CHINESE_FONT_DOWNLOAD"] =                   "Загрузка китайского шрифта"
+RUSSIAN["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 RUSSIAN["YES"] =                                     "да"
 RUSSIAN["NO"] =                                      "нет"
 

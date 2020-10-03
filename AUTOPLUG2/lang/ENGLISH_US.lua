@@ -104,6 +104,7 @@ ENGLISH_US["CUSTOMWARNING_MESSAGE"] =                   "Remember to enable the 
 
 ENGLISH_US["INSTALLP_VITABRIGHT_360"] =                 "Vitabright is only for 3.60/H-encore 3.68"
 ENGLISH_US["INSTALLP_CWARNING_360_365"] =               "Custom Warning doesn't work on 3.67/3.68"
+ENGLISH_US["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 ENGLISH_US["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Plugin shellsecbat detected!\n\nInstall shellbat instead and uninstall shellsecbat ?"
 ENGLISH_US["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Plugin shellbat detected!\n\nInstall shellsecbat instead and uninstall shellbat ?"
 ENGLISH_US["INSTALLP_WARNING_REFOOD"] =                 "Plugin Refood to work will be installed on ur0:/tai"
@@ -356,6 +357,8 @@ ENGLISH_US["INSTALLP_DESC_EMERGENCYMOUNT"] =            "This plugin provides a 
 ENGLISH_US["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 ENGLISH_US["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 ENGLISH_US["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+ENGLISH_US["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+ENGLISH_US["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 ENGLISH_US["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "This plugin can display Boot Splash on PS Vita/PSTV at boot. Requires ENSO."
 ENGLISH_US["CUSTOMBOOTSPLASH_QUESTION"] =               "Set this image as Custom Boot Splash ?"
@@ -452,6 +455,7 @@ ENGLISH_US["STRING_UNINSTALLED"] =                      "has been uninstalled"
 ENGLISH_US["STRING_PLEASE_WAIT"] =                      "Please wait..."
 ENGLISH_US["RESTART_QUESTION"] =                        "Do you want to restart now ?"
 ENGLISH_US["CHINESE_FONT_DOWNLOAD"] =                   "Downloading Chinese Font"
+ENGLISH_US["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 ENGLISH_US["YES"] =                                     "YES"
 ENGLISH_US["NO"] =                                      "NO"
 

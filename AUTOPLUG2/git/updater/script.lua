@@ -51,6 +51,12 @@ function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 	screen.flip()
 end
 
+snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1)
+if snd then
+	sound.loop(snd)
+	snd:play(1)
+end
+
 game.install(args[3])--Path to vpk
 files.delete(args[3])--delete vpk
 

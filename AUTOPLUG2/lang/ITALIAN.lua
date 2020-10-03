@@ -104,6 +104,7 @@ ITALIAN["CUSTOMWARNING_MESSAGE"] =                      "Ricordati di abilitare 
 
 ITALIAN["INSTALLP_VITABRIGHT_360"] =                    "Vitabright funziona solo per 3.60/H-encore 3.68"
 ITALIAN["INSTALLP_CWARNING_360_365"] =                  "Custom Warning non funziona su 3.67/3.68"
+ITALIAN["INSTALLP_LCDCOLOURSPACECHANGE"] =              "LCD Colour Space Changer only work in Vita Slim"
 ITALIAN["INSTALLP_QUESTION_SHELLSECBAT"] =              "\nPlugin shellsecbat RILEVATO !!!\n\nInstallare shellbat e cancellare shellsecbat ?"
 ITALIAN["INSTALLP_QUESTION_SHELLBAT"] =                 "\nPlugin shellbat RILEVATO !!!\n\nInstallare shellsecbat e cancellare shellbat ?"
 ITALIAN["INSTALLP_WARNING_REFOOD"] =                    "Il Plugin Refood per funzionare deve essere installato su ur0:/tai"
@@ -356,6 +357,8 @@ ITALIAN["INSTALLP_DESC_EMERGENCYMOUNT"] =               "This plugin provides a 
 ITALIAN["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I is a plugin that lets you record the input you provide to your PSVita and play it back whenever you need to. The capture will be saved in ur0:/data/MAFU-I/capture.dat"
 ITALIAN["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin for PS Vita that allows game mode applications to use system-reserved CPU core (CPU3)"
 ITALIAN["INSTALLP_DESC_DS4TOUCH"] =                     "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
+ITALIAN["INSTALLP_DESC_LCDSPACE"] =                     "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+ITALIAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =              "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 ITALIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Questo plugin può visualizzare/personalizzare il Boot Splash su PS Vita/PSTV all'avvio. Richiede ENSO"
 ITALIAN["CUSTOMBOOTSPLASH_QUESTION"] =                  "Impostare questa immagine come Boot Splash personalizzato ?"
@@ -452,6 +455,7 @@ ITALIAN["STRING_UNINSTALLED"] =                         "è stato disinstallato"
 ITALIAN["STRING_PLEASE_WAIT"] =                         "Attendere prego..."
 ITALIAN["RESTART_QUESTION"] =                           "Vuoi riavviare adesso ?"
 ITALIAN["CHINESE_FONT_DOWNLOAD"] =                      "Scaricamento del Font Cinese"
+ITALIAN["BG_MP3_DOWNLOAD"] =                            "Downloading BG Music"
 ITALIAN["YES"] =                                        "SI"
 ITALIAN["NO"] =                                         "NO"
 

@@ -104,6 +104,7 @@ SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plu
 
 SPANISH["INSTALLP_VITABRIGHT_360"] =                    "Vitabright SOLO funciona en 3.60/3.68 H-Encore"
 SPANISH["INSTALLP_CWARNING_360_365"] =                  "Custom Warning no funciona en 3.67/3.68+"
+SPANISH["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 SPANISH["INSTALLP_QUESTION_SHELLSECBAT"] =              "\n               ¡Se detectó el Plugin shellsecbat!\n\n¿Instalar shellbat en su lugar y desinstalar shellsecbat?"
 SPANISH["INSTALLP_QUESTION_SHELLBAT"] =                 "\n               ¡Se detectó el Plugin Shellbat!\n\n¿Instalar shellsecbat en su lugar y desinstalar shellbat?"
 SPANISH["INSTALLP_WARNING_REFOOD"] =                    "Para que el Plugin ReFood funcione, será instalado en ur0:/tai"
@@ -356,6 +357,8 @@ SPANISH["INSTALLP_DESC_EMERGENCYMOUNT"] =               "Este Plugin provee prot
 SPANISH["INSTALLP_DESC_MAFUINPUT"] =                    "MAFU-I es un Plugin que te permite grabar los inputs(botones presionados) ingresados a PS Vita y volver a reproducirlos cuando lo requieras. La captura se guardará en ur0:/data/MAFU-I/capture.dat"
 SPANISH["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin para PS Vita que permite a las aplicaciones de juego a usar los Nucleos de CPU reservados para el uso de las aplicaciones de sistema (CPU3)"
 SPANISH["INSTALLP_DESC_DS4TOUCH"] =                     "Añade soporte para el touchpad del DualShock4 (como ds4vita) a las PSTV y PS Vita con el Plugin MiniVitaTV"
+SPANISH["INSTALLP_DESC_LCDSPACE"] =                     "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+SPANISH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =              "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -452,6 +455,7 @@ SPANISH["STRING_UNINSTALLED"] =                         "Ha sido desinstalado"
 SPANISH["STRING_PLEASE_WAIT"] =                         "Por favor, espera..."
 SPANISH["RESTART_QUESTION"] =                           "¿Quieres reiniciar ahora?"
 SPANISH["CHINESE_FONT_DOWNLOAD"] =                      "Descargando Letras para idioma Chino"
+SPANISH["BG_MP3_DOWNLOAD"] =                            "Downloading BG Music"
 SPANISH["YES"] =                                        "SI"
 SPANISH["NO"] =                                         "NO"
 

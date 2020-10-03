@@ -1,3 +1,11 @@
+# v1.12
+++ Add Background Music (put your bg.mp3 in ux0:data/Autoplugin2/bg/bg.mp3)
+++ Add VolLightbarCtrlWithDS4 by CallmeBK v1.1
+++ Add LCD Colour Space Changer by cuevavirus 1.1.0
+++ Update ds4touch by MERLev v1.1.2
+++ Update TrophyShot v1.1.1 by FMudanyali
+++ Update GE Patch plugin by TheOfficialFloW v0.19
+
 # v1.11
 ++ Update GE Patch plugin by TheOfficialFloW v0.18.1
 ++ Update GTA Native Resolution Patch by TheOfficialFloW v0.3

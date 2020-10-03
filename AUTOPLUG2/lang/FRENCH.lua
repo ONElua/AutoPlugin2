@@ -104,6 +104,7 @@ FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'activer le 
 
 FRENCH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright est uniquement pour les 3.60 ou h-encore 3.68"
 FRENCH["INSTALLP_CWARNING_360_365"] =               "Custom Warning ne fonctionne pas en 3.67/3.68/3.73"
+FRENCH["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
 FRENCH["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Plugin shellsecbat détecté!\n\nInstaller shellbat à la place et de désinstaller shellsecbat ?"
 FRENCH["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Plugin shellbat détecté!\n\nInstaller shellsecbat à la place et de désinstaller shellbat ?"
 FRENCH["INSTALLP_WARNING_REFOOD"] =                 "Le plugin Ref00d doit être installé dans ur0:/tai/ pour fonctionner"
@@ -356,6 +357,8 @@ FRENCH["INSTALLP_DESC_EMERGENCYMOUNT"] =            "Ce plugin fournit une prote
 FRENCH["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I est un plugin qui vous permet d'enregistrer les données que vous fournissez à votre PSVita et de les lire quand vous en avez besoin. La capture sera enregistrée dans ur0:/data/MAFU-I/capture.dat"
 FRENCH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin pour PS Vita qui permet aux applications en mode jeu d'utiliser le noyau CPU réservé au système (CPU3)"
 FRENCH["INSTALLP_DESC_DS4TOUCH"] =                  "Ajoute le support du pavé tactile ds4 (façon ds4vita) à PSVita TV et à la PSVita avec MiniVitaTV."
+FRENCH["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
+FRENCH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher une image personnalisée au démarrage de votre PS Vita/PSTV. Nécessite ENSO installer."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
@@ -452,6 +455,7 @@ FRENCH["STRING_UNINSTALLED"] =                      "a été désinstallé"
 FRENCH["STRING_PLEASE_WAIT"] =                      "Veuillez patienter..."
 FRENCH["RESTART_QUESTION"] =                        "\n\nVoulez-vous redémarrer votre console maintenant ?"
 FRENCH["CHINESE_FONT_DOWNLOAD"] =                   "Télécharger la police Chinoise"
+FRENCH["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 FRENCH["YES"] =                                     "Oui"
 FRENCH["NO"] =                                      "Non"
 

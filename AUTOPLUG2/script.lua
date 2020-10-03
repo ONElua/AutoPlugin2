@@ -9,6 +9,8 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1)
+
 dofile("git/shared.lua")
 PLUGINS_PORT = channel.new("PLUGINS_PORT")
 cont_global = atomic.new(0)
@@ -60,11 +62,28 @@ if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 		if back then back:blit(0,0) end
 			message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 		os.delay(500)
-		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+		__file = "font.pgf"
+			http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+		__file = ""
 	end
 	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
 end
 if fnt then font.setdefault(fnt) end
+
+if not files.exists("ux0:data/AUTOPLUGIN2/bg/bg.mp3") then
+	if back then back:blit(0,0) end
+		message_wait(LANGUAGE["BG_MP3_DOWNLOAD"])
+	os.delay(500)
+	__file = "bg.mp3"
+		http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/bg/bg.mp3", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/bg/bg.mp3")
+	__file = ""	
+	if not snd then snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3") end
+end
+
+if snd then
+	sound.loop(snd)
+	snd:play(1)
+end
 
 if os.access() == 0 then
 	if back then back:blit(0,0) end
