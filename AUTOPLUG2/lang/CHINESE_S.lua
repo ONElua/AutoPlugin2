@@ -104,7 +104,7 @@ CHINESE_S["CUSTOMWARNING_MESSAGE"] =                   "请记住启用 Custom W
 
 CHINESE_S["INSTALLP_VITABRIGHT_360"] =                 "Vitabright 仅适用于 3.60/H-encore 3.68"
 CHINESE_S["INSTALLP_CWARNING_360_365"] =               "Custom Warning 无法用于 3.67/3.68"
-CHINESE_S["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer only work in Vita Slim"
+CHINESE_S["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD 色彩空间转换器仅适用于 Vita Slim"
 CHINESE_S["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               检测到 shellsecbat 插件!\n\n安装 shellbat 插件并卸载 shellsecbat 插件 ?"
 CHINESE_S["INSTALLP_QUESTION_SHELLBAT"] =              "\n               检测到 shellbat 插件!\n\n安装 shellsecbat 插件并卸载 shellbat 插件 ?"
 CHINESE_S["INSTALLP_WARNING_REFOOD"] =                 "插件 Refood 将被安装到 ur0:/tai"
@@ -357,8 +357,8 @@ CHINESE_S["INSTALLP_DESC_EMERGENCYMOUNT"] =            "此插件为Vita提供�
 CHINESE_S["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I 插件用于记录您在 PSVita 的操作并在需要时进行回放. 捕获内容将被保存为 ur0:/data/MAFU-I/capture.dat"
 CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游戏模式应用程序使用系统保留的CPU内核(CPU3)"
 CHINESE_S["INSTALLP_DESC_DS4TOUCH"] =                  "增加 ds4 触控支持 (ds4vita 方案), 用于 PS TV 以及已安装 MiniVitaTV 插件的 Vita."
-CHINESE_S["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
-CHINESE_S["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
+CHINESE_S["INSTALLP_DESC_LCDSPACE"] =                  "一键更改 LCD 色彩空间,并在 PSP 模拟器程序中强制设置色彩空间 (仅适用于 PSVITA 2000)."
+CHINESE_S["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "使用 DS4 控制器控制 PS Vita 音量. DS4 灯条用作 DS4 电池指示器."
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
@@ -455,7 +455,7 @@ CHINESE_S["STRING_UNINSTALLED"] =                      "已完成卸载"
 CHINESE_S["STRING_PLEASE_WAIT"] =                      "请稍候..."
 CHINESE_S["RESTART_QUESTION"] =                        "是否重启?"
 CHINESE_S["CHINESE_FONT_DOWNLOAD"] =                   "正在下载扩展字体"
-CHINESE_S["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
+CHINESE_S["BG_MP3_DOWNLOAD"] =                         "正在下载背景音乐"
 CHINESE_S["YES"] =                                     "是"
 CHINESE_S["NO"] =                                      "否"
 
