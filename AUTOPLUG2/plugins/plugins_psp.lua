@@ -6,7 +6,7 @@ pluginsP = {
 {	nameR = "Lang Swapper", name = "LangSwapper.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["LANGSWAPPER_DESC"], KEY = "LANGSWAPPER_DESC", },
 {	nameR = "Category lite", name = "category_lite.prx",	path = "seplugins/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CATEGORYLITE_DESC"], KEY = "CATEGORYLITE_DESC", },
 {	nameR = "Kingdom Hearts: Birth By Sleep/Final Mix UNDUB", name = "bbsfmUndub.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["KHBBS_UNDUB_DESC"], KEY = "KHBBS_UNDUB_DESC", },
-{	nameR = "GE Patch Plugin v0.19", name = "ge_patch.prx", path = "seplugins/", txt = "game.txt", version = "0004", desc = LANGUAGE["GE_PATCH_DESC"], KEY = "GE_PATCH_DESC", link = "https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md", },
+{	nameR = "GE Patch Plugin v0.19.1", name = "ge_patch.prx", path = "seplugins/", txt = "game.txt", version = "0005", desc = LANGUAGE["GE_PATCH_DESC"], KEY = "GE_PATCH_DESC", link = "https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md", },
 
 }
 
