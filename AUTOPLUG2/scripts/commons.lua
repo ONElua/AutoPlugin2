@@ -16,6 +16,11 @@ SYMBOL_CIRCLE	= string.char(0xe2)..string.char(0x97)..string.char(0x8b)
 
 change,ReloadConfig = false,false
 
+--snd:vol
+function vol_mp3()
+	if buttons.analogry < -60 and snd then hw.volume(hw.volume()+1) elseif buttons.analogry > 60 and snd then hw.volume(hw.volume()-1) end
+end
+
 function exit_bye_bye()
 
 	--tai.sync("ux0:config_test.txt") --Write Test---------------------------------------

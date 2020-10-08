@@ -98,6 +98,8 @@ function menu_psp()
 		if buttons.cancel then break end
 		if buttons.accept then menu[scroll.sel].funct() end
 
+		vol_mp3()
+
 	end
 end
 

@@ -330,6 +330,8 @@ function pluginsmanager()
 			exit_bye_bye()
 		end
 
+		vol_mp3()
+
 		if buttons.triangle then 
 			--explorer_plugin()
 		end

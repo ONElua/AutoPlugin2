@@ -366,6 +366,8 @@ function autoplugin()
 			exit_bye_bye()
 		end
 
+		vol_mp3()
+
 		if scr.maxim > 0 then
 			if buttons.left or buttons.right then xscr1 = 10 end
 

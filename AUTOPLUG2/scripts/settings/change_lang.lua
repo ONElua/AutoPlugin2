@@ -101,6 +101,8 @@ function change_lang()
 			exit_bye_bye()
 		end
 
+		vol_mp3()
+
 		--Ctrls
 		if scroll.maxim > 0 then
 

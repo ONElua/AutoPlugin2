@@ -76,6 +76,8 @@ function menu_gral()
 
 		if buttons.accept then menu[scroll.sel].funct() end
 
+		vol_mp3()
+
 	end
 
 end

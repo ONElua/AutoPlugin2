@@ -224,6 +224,8 @@ function menu_extras()
 			menu[scroll.sel].funct()
 		end
 
+		vol_mp3()
+
     end
 
 end

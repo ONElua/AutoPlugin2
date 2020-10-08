@@ -219,6 +219,8 @@ function npdrm_free()
 			exit_bye_bye()
 		end
 
+		vol_mp3()
+
 		if scroll.maxim > 0 then
 
 			if buttons.up or buttons.analogly < -60 then

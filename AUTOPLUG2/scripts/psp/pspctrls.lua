@@ -194,6 +194,8 @@ function psp_ctrls()
 			exit_bye_bye()
 		end
 
+		vol_mp3()
+
 		if scroll.maxim > 0 then
 
 			if buttons.left or buttons.right then xscroll = 10 end
