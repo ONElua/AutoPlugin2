@@ -17,8 +17,18 @@ SYMBOL_CIRCLE	= string.char(0xe2)..string.char(0x97)..string.char(0x8b)
 change,ReloadConfig = false,false
 
 --snd:vol
+vol = snd:vol()
 function vol_mp3()
-	if buttons.analogry < -60 and snd then hw.volume(hw.volume()+1) elseif buttons.analogry > 60 and snd then hw.volume(hw.volume()-1) end
+
+	if snd then
+		if buttons.analogry < -60 then vol+=1 elseif buttons.analogry > 60 then vol-=1 end
+		if vol < 0 then vol = 0 end
+		if vol > 100 then vol = 100 end
+		snd:vol(vol)
+
+		if buttons.analogrx < -60 then snd:stop() elseif buttons.analogrx > 60 then snd:play() end
+	end
+
 end
 
 function exit_bye_bye()
