@@ -17,7 +17,8 @@ SYMBOL_CIRCLE	= string.char(0xe2)..string.char(0x97)..string.char(0x8b)
 change,ReloadConfig = false,false
 
 --snd:vol
-vol = snd:vol()
+vol = 0
+if snd then vol = snd:vol() end
 function vol_mp3()
 
 	if snd then
