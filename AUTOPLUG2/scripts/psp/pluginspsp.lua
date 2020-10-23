@@ -9,42 +9,23 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-function read_configs()
+function sub_read(txt, mountP, tb, tb2)
 
-	local configs = {"vsh.txt","game.txt","pops.txt"}
+	for line in io.lines(txt) do
 
-	for i=1, #plugins_for_psp do
+		if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
 
-		for j=1,#configs do
+		pathp,status = line:match("(.+) (.+)")
+		if pathp then
+					
+			for j=1,#tb do
+				if pathp:lower() == "ms0:/"..tb[j].path:lower()..tb[j].name:lower() then
 
-			if files.exists(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j]) then
-
-				for line in io.lines(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j]) do
-
-					if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-
-					pathp,status = line:match("(.+) (.+)")
-					if pathp then
-
-						local plugs = {}
-						plugs.exists = files.exists(plugins_for_psp[i].mount.."pspemu/seplugins/"..configs[j])
-						plugs.path = pathp
-						plugs.status = tonumber(status) or 0
-
-						if configs[j] == "vsh.txt" then
-							table.insert(plugins_for_psp[i][1],plugs)
-							plugins_for_psp[i][1].config = "vsh"
-						elseif configs[j] == "game.txt" then
-							table.insert(plugins_for_psp[i][2],plugs)
-							plugins_for_psp[i][2].config = "game"
-						elseif configs[j] == "pops.txt" then
-							table.insert(plugins_for_psp[i][3],plugs)
-							plugins_for_psp[i][3].config = "pops"
-						end
-
+					if files.exists(mountP.."pspemu/"..tb[j].path:lower()..tb[j].name:lower()) then
+						tb2[mountP..tb[j].name:lower()] = tonumber(status) or nil
+						break
 					end
-				end--for
-
+				end
 			end
 
 		end
@@ -57,58 +38,15 @@ function read_configs(tb,tb2)
 
 	for i=1, #PMounts do
 
+		--vsh.txt
 		if files.exists(PMounts[i].."pspemu/seplugins/vsh.txt") then
-
-			--vsh.txt
-			for line in io.lines(PMounts[i].."pspemu/seplugins/vsh.txt") do
-
-				if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-
-				pathp,status = line:match("(.+) (.+)")
-				if pathp then
-					
-					for j=1,#tb do
-
-						if pathp:lower() == "ms0:/"..tb[j].path:lower()..tb[j].name:lower() then
-
-							if files.exists(PMounts[i].."pspemu/"..tb[j].path:lower()..tb[j].name:lower()) then
-								tb2[PMounts[i]..tb[j].name:lower()] = tonumber(status) or 0
-								break
-							end
-						end
-					end
-
-				end
-
-			end
+			sub_read(PMounts[i].."pspemu/seplugins/vsh.txt", PMounts[i], tb, tb2)
 		end
 
-
+		--game.txt
 		if files.exists(PMounts[i].."pspemu/seplugins/game.txt") then
-			--game.txt
-			for line in io.lines(PMounts[i].."pspemu/seplugins/game.txt") do
-
-				if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-
-				pathp,status = line:match("(.+) (.+)")
-				if pathp then
-					
-					for j=1,#tb do
-
-						if pathp:lower() == "ms0:/"..tb[j].path:lower()..tb[j].name:lower() then
-
-							if files.exists(PMounts[i].."pspemu/"..tb[j].path:lower()..tb[j].name:lower()) then
-								tb2[PMounts[i]..tb[j].name:lower()] = tonumber(status) or 0
-								break
-							end
-						end
-					end
-
-				end
-
-			end
+			sub_read(PMounts[i].."pspemu/seplugins/game.txt", PMounts[i], tb, tb2)
 		end
-
 
 	end
 
@@ -143,7 +81,8 @@ function add_disable_psp_plugin(device,obj,install)
 			table.insert(file_txt, find_obj.." 1")
 		end
 	else
-		file_txt[nlinea] = find_obj.." 0"
+		--file_txt[nlinea] = find_obj.." 0"
+		table.remove(file_txt, nlinea)
 	end
 
 	local fp = io.open(device.."pspemu/seplugins/"..obj.txt, "w+")
@@ -302,15 +241,15 @@ function pluginsPSP()
 						end
 
 						if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 0 or not plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] then
-
 							add_disable_psp_plugin(PMounts[selector], pluginsP[i], 1)
 							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = 1
 							pluginsP[i].inst = false
-
-							if back2 then back2:blit(0,0) end
-								message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
-							os.delay(750)
 						end
+
+						if back2 then back2:blit(0,0) end
+							message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+						os.delay(750)
+
 					end
 				end
 
@@ -342,7 +281,7 @@ function pluginsPSP()
 						if files.exists(PMounts[selector].."pspemu/seplugins/"..pluginsP[i].txt) and plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 1 then
 
 							add_disable_psp_plugin(PMounts[selector], pluginsP[i],0)
-							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = 0
+							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = nil--0
 							pluginsP[i].inst = false
 
 							if back2 then back2:blit(0,0) end

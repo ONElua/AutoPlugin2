@@ -1,30 +1,12 @@
-P4Golden = false
-
---Ckecking game P4 Golden
-P4 = {
-	{ id = "PCSG00004", region = "Japan" },
-	{ id = "PCSG00563", region = "Japan (Reprint)" },
-	{ id = "PCSE00120", region = "North America" },
-	{ id = "PCSB00245", region = "Europe and Australia" },
-	{ id = "PCSH00021", region = "Asia" },
-
+--Ckecking game Catherine
+CatherineTB = {
+	{ id = "PCSG01179", region = "Japan" },
 }
 
-gamesP4 = {}
-for i=1,#P4 do
-	if game.exists(P4[i].id) then
-		P4Golden = true
-		table.insert(gamesP4,P4[i])
-	end
-end
-	
-function P4Golden_HD()
-
-	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) return end
+function Catherine_HD()
 
 	local patchs = {
-		{ res = "1920x1080 HD", desc = LANGUAGE["P4G_1920x1080_DESC"], path = "p4goldenhd_1920x1080.suprx" },
-		{ res = "1280x720 HD",  desc = LANGUAGE["P4G_1280x720_DESC"], path = "p4goldenhd_1280x720.suprx" },
+		{ res = "Catherine Full Body 1280x720 HD",  desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"], path = "catherinefbhd.suprx" },
 	}
 
 	for i=1,#patchs do
@@ -41,18 +23,18 @@ function P4Golden_HD()
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["INSTALL_P4G_HD_TITLE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["INSTALL_CATHERINE_HD_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
 
 		--Games
 		local xRoot = 200
-		local w = (955-xRoot)/#gamesP4
-		for i=1, #gamesP4 do
+		local w = (955-xRoot)/#CatherineTB
+		for i=1, #CatherineTB do
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, gamesP4[i].id, 1, color.white, color.blue, __ACENTER)
+			screen.print(xRoot+(w/2), 75, CatherineTB[i].id, 1, color.white, color.blue, __ACENTER)
 			xRoot += w
 		end
 
@@ -61,9 +43,9 @@ function P4Golden_HD()
 
 			if i == scroll.sel then draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			idx = tai.find(gamesP4[selector].id,patchs[i].path)
+			idx = tai.find(CatherineTB[selector].id, patchs[i].path)
 			if idx != nil then
-				if files.exists(tai.gameid[ gamesP4[selector].id ].prx[idx].path) then
+				if files.exists(tai.gameid[ CatherineTB[selector].id ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
 				else
 					if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
@@ -83,12 +65,6 @@ function P4Golden_HD()
 			else
 				screen.print(480, 400, patchs[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
 			end
-		end
-
-		if #gamesP4 > 1 then
-			if buttonskey2 then buttonskey2:blitsprite(5,448,2) end
-			if buttonskey2 then buttonskey2:blitsprite(35,448,3) end
-			screen.print(70,450, LANGUAGE["INSTALL_P4G_HD_CHANGE"],1,color.white,color.black,__ALEFT)
 		end
 
 		if buttonskey then buttonskey:blitsprite(10, 483, saccept) end
@@ -124,15 +100,8 @@ function P4Golden_HD()
 				if scroll:down() then xscroll = 10 end
 			end
 
-			--L/R
-			if buttons.released.l or buttons.released.r then
-				if buttons.released.l then selector -= 1 else selector += 1 end
-				if selector > #gamesP4 then selector = 1
-				elseif selector < 1 then selector = #gamesP4 end
-			end
-
 			if buttons.accept then
-				Patch_P4G_install(gamesP4[selector],patchs[scroll.sel])
+				Patch_Catherine_install(CatherineTB[selector],patchs[scroll.sel])
 			end
 
 		end
@@ -142,19 +111,16 @@ function P4Golden_HD()
 end
 
 
-function Patch_P4G_install(game,res)
+function Patch_Catherine_install(game,res)
 
 	--Copy plugin to tai folder
-	files.copy(path_plugins.."p4goldenHD/"..res.path, path_tai)
-
-	tai.del(game.id, "p4goldenhd_1920x1080.suprx")
-	tai.del(game.id, "p4goldenhd_1280x720.suprx")
+	files.copy(path_plugins.."catherineHD/"..res.path, path_tai)
 
 	tai.put(game.id, path_tai..res.path)
 	ReloadConfig = true
 
 	if back2 then back2:blit(0,0) end
-		message_wait(LANGUAGE["INSTALLING_P4G_HD_PATCH"].."\n\n"..res.res)
+		message_wait(LANGUAGE["INSTALLING_CATHERINE_HD_PATCH"].."\n\n"..res.res)
 	os.delay(850)
 
 end
