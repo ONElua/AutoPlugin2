@@ -44,6 +44,15 @@ CHINESE_S["INSTALL_P4G_HD"] =                          "安装高清补丁"
 CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
 CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
 
+--Catherine HD
+CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"
+CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
+CHINESE_S["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by Cuevavirus"
+CHINESE_S["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
+CHINESE_S["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
+
+CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+
 --Options PSP
 CHINESE_S["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) 插件"
 CHINESE_S["MENU_PSP_INSTALL_NPDRMFREE"] =              "安装 npdrm free 插件 (由 qwikrazor87 开发)"
@@ -62,7 +71,7 @@ CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
 CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
-CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =             	"重置 ur0 目录的 config.txt"
+CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =                "重置 ur0 目录的 config.txt"
 CHINESE_S["MENU_EXTRAS_QUICKMENU_PLUS"] =              "配置 QuickMenu Plus"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"

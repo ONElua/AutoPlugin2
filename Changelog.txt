@@ -1,3 +1,6 @@
+# v1.14
+++ Added Catherine Full Body HD 1280x720 (Vita Plugins).
+
 # v1.13
 ++ If you don't want to have background music, delete bg.mp3 file from ux0: data/autoplugin2/bg
 ++ Background music controls: Right analog up/down for volume up/down and left/right for stop/play

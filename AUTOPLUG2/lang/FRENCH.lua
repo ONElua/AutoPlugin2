@@ -44,6 +44,15 @@ FRENCH["INSTALL_P4G_HD"] =                          "Installer le patch HD"
 FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
 FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du patch HD"
 
+--Catherine HD
+FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"
+FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
+FRENCH["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by Cuevavirus"
+FRENCH["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
+FRENCH["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
+
+FRENCH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+
 --Options PSP
 FRENCH["MENU_PSP_TITLE"] =                          "Plugins PSP pour Adrenaline"
 FRENCH["MENU_PSP_INSTALL_NPDRMFREE"] =              "npdrm free de qwikrazor87"

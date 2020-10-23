@@ -125,8 +125,11 @@ plugins = {
 --NPXS10010
 { name = "DePlayEnabler by alpakeno v1.0", path = "deplayenabler.suprx", section = "NPXS10010", config = "deplayenabler.txt", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DEPLAYENABLER"], KEY = "INSTALLP_DESC_DEPLAYENABLER", link = "https://raw.githubusercontent.com/alpakeno/DePlayEnabler/master/README.md", },
 
---Especial P4 Golden HD
+--Special P4 Golden HD
 { name = "Persona 4 Golden HD 1920x1080 v1.0.1", path = "p4goldenhd_1920x1080.suprx", version = "0001", desc = LANGUAGE["P4G_1920x1080_DESC"], KEY = "P4G_1920x1080_DESC", REMOVE = true, },
 { name = "Persona 4 Golden HD 1280x720 v1.0.1",  path = "p4goldenhd_1280x720.suprx",  version = "0001", desc = LANGUAGE["P4G_1280x720_DESC"], KEY = "P4G_1280x720_DESC", REMOVE = true, },
+
+--Special Catherine Full Body HD
+{ name = "Catherine Full Body HD 1280x720 v1.2.0",  path = "catherinefbhd.suprx",  version = "0001", desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"], KEY = "MENU_PSVITA_INSTALL_P4G_HD_DESC", REMOVE = true, },
 
 }

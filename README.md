@@ -61,6 +61,9 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.14 ###
+- Added Catherine Full Body HD 1280x720 (Vita Plugins).
+
 ### Changelog 1.13 ###
 - If you don't want to have background music, delete bg.mp3 file from ux0: data/autoplugin2/bg
 - Background music controls: Right analog up/down for volume up/down and left/right for stop/play
