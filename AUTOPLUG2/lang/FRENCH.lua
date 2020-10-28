@@ -35,23 +35,23 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouve
 
 --P4 Golden HD
 FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Patch HD du jeu Persona 4 Golden"
-FRENCH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Ce patch modifie les résolutions de rendu 3D et de framebuffer de Persona 4 Golden sur la Vita et la PSTV à 1920x1080 ou 1280x720. (Nécessite le plugin Sharpscale)"
+FRENCH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Ce patch modifie les résolutions de rendu 3D et de framebuffer de Persona 4 Golden sur la PSVita et la PSTV en 1920x1080 ou 1280x720. (Nécessite le plugin Sharpscale)"
 FRENCH["P4G_1920x1080_DESC"] =                      "La résolution 1920x1080 peut être transmis en HDMI ou les utilisateurs de Vita peuvent profiter d'une image sur-échantillonnée directement sur l'écran. (L'overclocking est nécessaire pour obtenir de bonnes performances). La fréquence d'images se situe entre 20 et 30 FPS, avec 25-30 FPS dans toutes les zones sauf les plus intensives graphiquement"
 FRENCH["P4G_1280x720_DESC"] =                       "La résolution 1280x720 peut être transmis en HDMI ou USB (udcd Xerpi) ou les utilisateurs de Vita peuvent profiter d'une image sur-échantillonnée directement sur l'écran. (L'overclocking est nécessaire pour de bonnes performances). La fréquence d'images est de 30 FPS"
 FRENCH["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD par Cuevavirus"
-FRENCH["NO_P4GOLDEN_GAMES"] =                       "\n\nJeu Persona 4 Golden non trouvé"
+FRENCH["NO_P4GOLDEN_GAMES"] =                       "\n\nJeu Persona 4 Golden non trouver"
 FRENCH["INSTALL_P4G_HD"] =                          "Installer le patch HD"
 FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
-FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du patch HD"
+FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du patch HD en cours..."
 
 --Catherine HD
-FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"
-FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
-FRENCH["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by Cuevavirus"
-FRENCH["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
-FRENCH["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
+FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Patch HD du jeu Catherine"
+FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "Ce patch modifie les résolutions de rendu 3D et de framebuffer de Catherine Full Body sur la PSVita et PSTV en 1280x720. La résolution 1280x720 peut être sortie en HDMI ou USB (udcd-uvc), ou les utilisateurs de Vita peuvent profiter d'une image sur-échantillonnée directement sur l'écran (nécessite le plugin Sharpscale)"
+FRENCH["INSTALL_CATHERINE_HD_TITLE"] =              "Patch HD Catherine Full Body par Cuevavirus"
+FRENCH["NO_CHATERINE_GAMES"] =                      "\n\nJeu Catherine Full Body non trouver"
+FRENCH["INSTALLING_CATHERINE_HD_PATCH"] =           "Installation du patch HD en cours..."
 
-FRENCH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+FRENCH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Installer la dernière version du plugin Sharpscale \n\n 2. Mettre ON sur 'Unlock framebuffer size' dans les paramètres du plugin \n\n 3. L'overclocking est recommander pour de bonnes performances (nous recommandons le plugin LOLIcon ou lolita444/500)"
 
 --Options PSP
 FRENCH["MENU_PSP_TITLE"] =                          "Plugins PSP pour Adrenaline"
