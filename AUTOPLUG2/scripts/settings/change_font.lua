@@ -15,7 +15,7 @@ function change_font()
 
 	local current_font = nil
 
-	local tb = { { name = LANGUAGE["FONT_DEFAULT_PGF"], ext = "pgf" }, { name = LANGUAGE["FONT_DEFAULT_PVF"], ext = "pvf" }, }
+	local tb = { { name = LANGUAGE["FONT_DEFAULT"], ext = "pgf" }, { name = LANGUAGE["FONT_DEFAULT_PVF"], ext = "pvf" }, }
 
 	for i=1,#fonts do
 		if __FONT:lower() == fonts[i].name:lower() and files.exists("ux0:data/AUTOPLUGIN2/font/"..fonts[i].name) and not current_font then current_font = fonts[i].name end
@@ -26,7 +26,7 @@ function change_font()
 
 	if not current_font then
 		if type_fnt == __FONT_TYPE_PGF then
-			current_font = LANGUAGE["FONT_DEFAULT_PGF"]
+			current_font = LANGUAGE["FONT_DEFAULT"]
 		else
 			current_font = LANGUAGE["FONT_DEFAULT_PVF"]
 		end
@@ -97,7 +97,7 @@ function change_font()
 				if scroll.sel == 1 then
 
 					__FONT, type_fnt = "", __FONT_TYPE_PGF
-					current_font = LANGUAGE["FONT_DEFAULT_PGF"]
+					current_font = LANGUAGE["FONT_DEFAULT"]
 					font.setdefault(__FONT_TYPE_PGF)
 
 				elseif scroll.sel == 2 then
@@ -116,7 +116,7 @@ function change_font()
 						font.setdefault(fnt)
 					else
 						__FONT, type_fnt = "", __FONT_TYPE_PGF
-						current_font = LANGUAGE["FONT_DEFAULT_PGF"]
+						current_font = LANGUAGE["FONT_DEFAULT"]
 						font.setdefault()
 					end
 				end

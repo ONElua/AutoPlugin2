@@ -51,10 +51,20 @@ dofile("scripts/scroll.lua")
 
 -- Loading font
 files.mkdir("ux0:data/AUTOPLUGIN2/font/")
-fnt = nil
+fnt,type_fnt = nil, __FONT_TYPE_PGF
 __FONT = ini.read(__PATH_INI,"FONT","font","")
+
 if __FONT != "" then
-	fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+	if __FONT == "font.pvf" then
+		font.setdefault(__FONT_TYPE_PVF)
+		type_fnt = __FONT_TYPE_PVF
+	else
+		fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+		if fnt then
+			font.setdefault(fnt)
+			type_fnt = font.type(fnt)
+		end
+	end
 end
 
 if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
@@ -66,9 +76,14 @@ if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 			http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 		__file = ""
 	end
-	if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
+	if not fnt then
+		fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf"
+		if fnt then
+			font.setdefault(fnt)
+			type_fnt = font.type(fnt)
+		end
+	end
 end
-if fnt then font.setdefault(fnt) end
 
 if snd then
 	sound.loop(snd)
