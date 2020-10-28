@@ -14,14 +14,23 @@ function change_font()
 	local fonts = files.listfiles("ux0:data/AUTOPLUGIN2/font/")
 
 	local current_font = nil
-	local tb = { { name = LANGUAGE["FONT_DEFAULT"], ext = "pgf" }, }
+
+	local tb = { { name = LANGUAGE["FONT_DEFAULT_PGF"], ext = "pgf" }, { name = LANGUAGE["FONT_DEFAULT_PVF"], ext = "pvf" }, }
+
 	for i=1,#fonts do
 		if __FONT:lower() == fonts[i].name:lower() and files.exists("ux0:data/AUTOPLUGIN2/font/"..fonts[i].name) and not current_font then current_font = fonts[i].name end
 		if files.exists("ux0:data/AUTOPLUGIN2/font/"..fonts[i].name) and (fonts[i].ext:upper() == "PGF" or fonts[i].ext:upper() == "PVF" or fonts[i].ext:upper() == "TTF") then
 			table.insert(tb, fonts[i])
 		end
 	end
-	if not current_font then current_font = LANGUAGE["FONT_DEFAULT"] end
+
+	if not current_font then
+		if type_fnt == __FONT_TYPE_PGF then
+			current_font = LANGUAGE["FONT_DEFAULT_PGF"]
+		else
+			current_font = LANGUAGE["FONT_DEFAULT_PVF"]
+		end
+	end
 
 	local maxim,y1 = 8,85
 	local scroll = newScroll(tb,maxim)
@@ -52,10 +61,10 @@ function change_font()
 			local pos_height = math.max(h/scroll.maxim, maxim)
 			draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
-			if screen.textwidth(LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_font) > 925 then
-				xscroll = screen.print(xscroll, 445, LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_font, 1, color.white, color.blue, __SLEFT,935)
+			if screen.textwidth(LANGUAGE["MENU_CURRENT_FONT"]..current_font) > 925 then
+				xscroll = screen.print(xscroll, 445, LANGUAGE["MENU_CURRENT_FONT"]..current_font, 1, color.white, color.blue, __SLEFT,935)
 			else
-				screen.print(10, 445,LANGUAGE["TRANSLATE_CURRENT_TITLE"]..current_font,1,color.white,color.blue,__ALEFT)
+				screen.print(10, 445,LANGUAGE["MENU_CURRENT_FONT"]..current_font,1,color.white,color.blue,__ALEFT)
 			end
 
 		else
@@ -85,22 +94,29 @@ function change_font()
 
 			if buttons.accept then
 
-				fnt = nil
 				if scroll.sel == 1 then
-					__FONT = ""
-					current_font = LANGUAGE["FONT_DEFAULT"]
-					font.setdefault()
-				else
-					__FONT = tb[scroll.sel].name
 
-					fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+					__FONT, type_fnt = "", __FONT_TYPE_PGF
+					current_font = LANGUAGE["FONT_DEFAULT_PGF"]
+					font.setdefault(__FONT_TYPE_PGF)
+
+				elseif scroll.sel == 2 then
+
+					__FONT, type_fnt = "font.pvf", __FONT_TYPE_PVF
+					current_font = LANGUAGE["FONT_DEFAULT_PVF"]
+					font.setdefault(__FONT_TYPE_PVF)
+
+				else
+
+					fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..tb[scroll.sel].name)
 
 					if fnt then
+						type_fnt, __FONT = font.type(fnt), tb[scroll.sel].name
 						current_font = __FONT
 						font.setdefault(fnt)
 					else
-						__FONT = ""
-						current_font = LANGUAGE["FONT_DEFAULT"]
+						__FONT, type_fnt = "", __FONT_TYPE_PGF
+						current_font = LANGUAGE["FONT_DEFAULT_PGF"]
 						font.setdefault()
 					end
 				end

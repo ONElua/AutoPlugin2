@@ -116,13 +116,31 @@ function change_lang()
 				update_language(ENGLISH_US)
 
 				-- Official Translations
-				dofile("lang/"..tb[scroll.sel].file..".lua")
-				load_language(tb[scroll.sel].file, true)
+				t,s = loadfile("lang/"..tb[scroll.sel].file..".lua")
+				if t then
+					t()
+					load_language(tb[scroll.sel].file, true)
+				else
+					if s then
+						os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
+					else
+						os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n".."lang/"..tb[scroll.sel].file..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
+					end
+				end
 
 				-- User Translations
 				if files.exists("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua") then
-					dofile("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua")
-					load_language(tb[scroll.sel].file)
+					t,s = loadfile("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua")
+					if t then
+						t()
+						load_language(tb[scroll.sel].file)
+					else
+						if s then
+							os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
+						else
+							os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n".."ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
+						end
+					end
 				end
 
 				dofile("plugins/plugins.lua")
@@ -134,11 +152,20 @@ function change_lang()
 					_update = LANGUAGE["YES"]
 				end
 
-				__LANG, fnt = tb[scroll.sel].file, nil
-
+				__LANG, fnt, type_fnt = tb[scroll.sel].file, nil, __FONT_TYPE_PGF
 				__FONT = ini.read(__PATH_INI,"FONT","font","")
+
 				if __FONT != "" then
-					fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+					if __FONT == "font.pvf" then
+						font.setdefault(__FONT_TYPE_PVF)
+						type_fnt = __FONT_TYPE_PVF
+					else
+						fnt = font.load("ux0:data/AUTOPLUGIN2/font/"..__FONT)
+						if fnt then
+							font.setdefault(fnt)
+							type_fnt = font.type(fnt)
+						end
+					end
 				end
 
 				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
@@ -146,14 +173,17 @@ function change_lang()
 						if back then back:blit(0,0) end
 							message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 						os.delay(500)
-						http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+						__file = "font.pgf"
+							http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+						__file = ""
 					end
-					if not fnt then fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf" end
-				end
-
-				if fnt then	font.setdefault(fnt)
-				else __FONT=""
-					font.setdefault()
+					if not fnt then
+						fnt, __FONT = font.load("ux0:data/AUTOPLUGIN2/font/font.pgf"), "font.pgf"
+						if fnt then
+							font.setdefault(fnt)
+							type_fnt = font.type(fnt)
+						end
+					end
 				end
 
 				os.delay(150)
