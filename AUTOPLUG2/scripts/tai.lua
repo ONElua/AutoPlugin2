@@ -133,7 +133,6 @@ function tai.parse(data, blend)
 				id_sect = line:sub(2)
 				if id_sect:lower() == "kernel" then raw[i] = "*KERNEL"
 				elseif id_sect:lower() == "main" then raw[i] = "*main"
-				elseif id_sect:lower() == "all" then raw[i] = "*ALL"
 				elseif id_sect:lower() == "all" then raw[i] = "*ALL" end
 				line = raw[i]
 				id_sect = line:sub(2)
@@ -141,7 +140,6 @@ function tai.parse(data, blend)
 				-- TO-DO: add support to section´s with ! is a section will be no load by taihen, but how to handle with tai?
 				if not game_id[id_sect] then game_id[id_sect] = { line = {}, prx = {}, section = id_sect }; nr[id_sect] = {} end
 				table.insert(game_id[id_sect].line, i)
-				--os.message("Sect "..tostring(id_sect))
 				continue
 			end
 
