@@ -43,6 +43,7 @@ This tool allows you to install/uninstall the following plugins with one click
 | [ds4touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
 | [TrophyShot](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
 | [VolLightbarCtrlWithDS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [CallmeBK](https://github.com/CallmeBK/) |
+| [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
 
 # Optional settings
 - Update plugins Online
@@ -60,6 +61,11 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### v1.15 ###
+- Add FdFix by TheOfficialFloW v1.0 (Required for GTA3)
+- Add PVF Font as option to change font
+- Fix Sharpscale Config Crash (so hope)
 
 ### Changelog 1.14 ###
 - Added Catherine Full Body HD 1280x720 (Vita Plugins).

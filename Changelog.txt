@@ -1,3 +1,8 @@
+# v1.15
+++ Add FdFix by TheOfficialFloW v1.0 (Required for GTA3)
+++ Add PVF Font as option to change font
+++ Fix Sharpscale Config Crash (so hope)
+
 # v1.14
 ++ Added Catherine Full Body HD 1280x720 (Vita Plugins).
 
