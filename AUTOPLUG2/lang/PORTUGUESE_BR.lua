@@ -266,6 +266,7 @@ PORTUGUESE_BR["NOTHING_TO_TRANSLATE"] =                    "Obrigado pelo seu in
 PORTUGUESE_BR["MENU_TITLE_LANG_ONLINE"] =                  "Idiomas disponíveis"
 PORTUGUESE_BR["MENU_TITLE_LANGUAGE"] =                     "Selecionar idioma"
 PORTUGUESE_BR["MENU_TITLE_FONT"] =                         "Selecionar font"
+PORTUGUESE_BR["MENU_CURRENT_FONT"] =                       "Autoplugin2 font: "
 PORTUGUESE_BR["LANGUAGE_RELOAD"] =                         "O idioma foi alterado"
 PORTUGUESE_BR["LANGUAGE_NO_UPDATE"] =                      "Não há atualizações de idioma disponíveis"
 PORTUGUESE_BR["PLUGINS_NO_ONLINE"] =                       "Não há atualizações de plugin disponíveis"
@@ -282,7 +283,8 @@ PORTUGUESE_BR["CLEAN_LANGS"] =                             "Limpar seleção de 
 --Change font
 PORTUGUESE_BR["FONT_FAILED"] =                             "Nenhuma fonte (pgf, pvf, ttf) encontrada em ux0:data/AUTOPLUGIN2/font/"
 PORTUGUESE_BR["FONT_RELOAD"] =                             "A fonte foi alterada"
-PORTUGUESE_BR["FONT_DEFAULT"] =                            "Sistema"
+PORTUGUESE_BR["FONT_DEFAULT"] =                            "PGF System"
+PORTUGUESE_BR["FONT_DEFAULT_PVF"] =                        "PVF System"
 
 --Plugins Online
 PORTUGUESE_BR["MENU_TITLE_PLUGINS_ONLINE"] =               "Atualização de plugin"
@@ -368,6 +370,7 @@ PORTUGUESE_BR["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita t
 PORTUGUESE_BR["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 PORTUGUESE_BR["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 PORTUGUESE_BR["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
+PORTUGUESE_BR["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
 
 PORTUGUESE_BR["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Este plugin pode exibir o Splash de inicialização no PS Vita/PSTV na inicialização. Requer ENSO."
 PORTUGUESE_BR["CUSTOMBOOTSPLASH_QUESTION"] =               "Definir esta imagem como Splash de inicialização personalizado?"

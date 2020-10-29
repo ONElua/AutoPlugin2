@@ -266,6 +266,7 @@ JAPANESE["NOTHING_TO_TRANSLATE"] =                      "ご関心をお寄せ�
 JAPANESE["MENU_TITLE_LANG_ONLINE"] =                    "利用可能な言語"
 JAPANESE["MENU_TITLE_LANGUAGE"] =                       "言語を選択する"
 JAPANESE["MENU_TITLE_FONT"] =                           "Select font"
+JAPANESE["MENU_CURRENT_FONT"] =                         "Autoplugin2 font: "
 JAPANESE["LANGUAGE_RELOAD"] =                           "言語が変更されました"
 JAPANESE["LANGUAGE_NO_UPDATE"] =                        "利用可能な言語の更新はありません"
 JAPANESE["PLUGINS_NO_ONLINE"] =                         "利用可能なプラグインの更新はありません"
@@ -282,7 +283,8 @@ JAPANESE["CLEAN_LANGS"] =                               "選択した言語フ�
 --Change font
 JAPANESE["FONT_FAILED"] =                               "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
 JAPANESE["FONT_RELOAD"] =                               "The font has been changed"
-JAPANESE["FONT_DEFAULT"] =                              "System"
+JAPANESE["FONT_DEFAULT"] =                              "PGF System"
+JAPANESE["FONT_DEFAULT_PVF"] =                          "PVF System"
 
 --Plugins Online
 JAPANESE["MENU_TITLE_PLUGINS_ONLINE"] =                 "プラグインの更新"
@@ -368,6 +370,7 @@ JAPANESE["INSTALLP_DESC_COREUNLOCK"] =                  "Plugin for PS Vita that
 JAPANESE["INSTALLP_DESC_DS4TOUCH"] =                    "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 JAPANESE["INSTALLP_DESC_LCDSPACE"] =                    "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 JAPANESE["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =             "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
+JAPANESE["INSTALLP_DESC_FDFIX"] =                        "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"

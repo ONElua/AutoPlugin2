@@ -266,6 +266,7 @@ GERMAN["NOTHING_TO_TRANSLATE"] =                    "Danke für dein interesse, 
 GERMAN["MENU_TITLE_LANG_ONLINE"] =                  "Verfügbare Sprachen"
 GERMAN["MENU_TITLE_LANGUAGE"] =                     "Sprache wählen"
 GERMAN["MENU_TITLE_FONT"] =                         "Select font"
+GERMAN["MENU_CURRENT_FONT"] =                       "Autoplugin2 font: "
 GERMAN["LANGUAGE_RELOAD"] =                         "Die Sprache wurde geändert"
 GERMAN["LANGUAGE_NO_UPDATE"] =                      "Keine verfügbaren Sprach Updates vorhanden"
 GERMAN["PLUGINS_NO_ONLINE"] =                       "Keine verfügbaren Plugin Updates vorhanden"
@@ -282,7 +283,8 @@ GERMAN["CLEAN_LANGS"] =                             "Alle Markierungen entfernen
 --Change font
 GERMAN["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
 GERMAN["FONT_RELOAD"] =                             "The font has been changed"
-GERMAN["FONT_DEFAULT"] =                            "System"
+GERMAN["FONT_DEFAULT"] =                            "PGF System"
+GERMAN["FONT_DEFAULT_PVF"] =                        "PVF System"
 
 --Plugins Online
 GERMAN["MENU_TITLE_PLUGINS_ONLINE"] =               "Plugins Aktualisierung"
@@ -368,6 +370,7 @@ GERMAN["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that all
 GERMAN["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 GERMAN["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 GERMAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
+GERMAN["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
 
 GERMAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Dieses Plugin kann das Bootlogo auf der PSVita / PSTV beim Booten durch ein Bild ersetzen. ENSO erforderlich"
 GERMAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Dein 'Splash-Bild' als eigenes 'Boot-Splash' nutzen?"

@@ -57,6 +57,7 @@ Online_Plugins = {
 { name = "ds4touch by MERLev v1.1.3", path = "ds4touch.skprx", section = "KERNEL", version = "0004", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"], KEY = "INSTALLP_DESC_DS4TOUCH", link = "https://raw.githubusercontent.com/MERLev/ds4touch/master/README.md", },
 { name = "VolLightbarCtrlWithDS4 by CallmeBK v1.1", path = "VolLightbarCtrlWithDS4.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VOLLIGHTBAR_DS4"], KEY = "INSTALLP_DESC_VOLLIGHTBAR_DS4", link = "https://raw.githubusercontent.com/CallmeBK/VolLightbarCtrlWithDS4/master/README.md", },
 { name = "LCD Colour Space Changer by cuevavirus 1.1.0", path = "pspemu-colour-crunch.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_LCDSPACE"], KEY = "INSTALLP_DESC_LCDSPACE", },
+{ name = "FdFix by TheOfficialFloW v1.0", path = "fd_fix.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FDFIX"], KEY = "INSTALLP_DESC_FDFIX", link = "https://raw.githubusercontent.com/TheOfficialFloW/FdFix/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },

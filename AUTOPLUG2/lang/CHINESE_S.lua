@@ -266,6 +266,7 @@ CHINESE_S["NOTHING_TO_TRANSLATE"] =                    "感谢您的关注, 但�
 CHINESE_S["MENU_TITLE_LANG_ONLINE"] =                  "可用语言"
 CHINESE_S["MENU_TITLE_LANGUAGE"] =                     "选择语言"
 CHINESE_S["MENU_TITLE_FONT"] =                         "选择字体"
+CHINESE_S["MENU_CURRENT_FONT"] =                       "Autoplugin2 font: "
 CHINESE_S["LANGUAGE_RELOAD"] =                         "语言已更改"
 CHINESE_S["LANGUAGE_NO_UPDATE"] =                      "没有可用的语言文件更新"
 CHINESE_S["PLUGINS_NO_ONLINE"] =                       "没有可用的插件更新"
@@ -282,7 +283,8 @@ CHINESE_S["CLEAN_LANGS"] =                             "清除选中的语言"
 --Change font
 CHINESE_S["FONT_FAILED"] =                             "没有在 ux0:data/AUTOPLUGIN2/font/ 找到字体文件 (pgf,pvf,ttf)"
 CHINESE_S["FONT_RELOAD"] =                             "字体已更改"
-CHINESE_S["FONT_DEFAULT"] =                            "系统"
+CHINESE_S["FONT_DEFAULT"] =                            "PGF System"
+CHINESE_S["FONT_DEFAULT_PVF"] =                        "PVF System"
 
 --Plugins Online
 CHINESE_S["MENU_TITLE_PLUGINS_ONLINE"] =               "插件更新"
@@ -368,6 +370,7 @@ CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游
 CHINESE_S["INSTALLP_DESC_DS4TOUCH"] =                  "增加 ds4 触控支持 (ds4vita 方案), 用于 PS TV 以及已安装 MiniVitaTV 插件的 Vita."
 CHINESE_S["INSTALLP_DESC_LCDSPACE"] =                  "一键更改 LCD 色彩空间,并在 PSP 模拟器程序中强制设置色彩空间 (仅适用于 PSVITA 2000)."
 CHINESE_S["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "使用 DS4 控制器控制 PS Vita 音量. DS4 灯条用作 DS4 电池指示器."
+CHINESE_S["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"

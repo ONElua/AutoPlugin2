@@ -266,6 +266,7 @@ ENGLISH_US["NOTHING_TO_TRANSLATE"] =                    "Thank you for you inter
 ENGLISH_US["MENU_TITLE_LANG_ONLINE"] =                  "Available languages"
 ENGLISH_US["MENU_TITLE_LANGUAGE"] =                     "Select language"
 ENGLISH_US["MENU_TITLE_FONT"] =                         "Select font"
+ENGLISH_US["MENU_CURRENT_FONT"] =                       "Autoplugin2 font: "
 ENGLISH_US["LANGUAGE_RELOAD"] =                         "The language has been changed"
 ENGLISH_US["LANGUAGE_NO_UPDATE"] =                      "There are no available language updates"
 ENGLISH_US["PLUGINS_NO_ONLINE"] =                       "There are no available plugin updates"
@@ -282,7 +283,8 @@ ENGLISH_US["CLEAN_LANGS"] =                             "To clean selected Langs
 --Change font
 ENGLISH_US["FONT_FAILED"] =                             "No founds fonts (pgf,pvf,ttf) in ux0:data/AUTOPLUGIN2/font/"
 ENGLISH_US["FONT_RELOAD"] =                             "The font has been changed"
-ENGLISH_US["FONT_DEFAULT"] =                            "System"
+ENGLISH_US["FONT_DEFAULT"] =                            "PGF System"
+ENGLISH_US["FONT_DEFAULT_PVF"] =                        "PVF System"
 
 --Plugins Online
 ENGLISH_US["MENU_TITLE_PLUGINS_ONLINE"] =               "Plugin updates"
@@ -368,6 +370,7 @@ ENGLISH_US["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that
 ENGLISH_US["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 ENGLISH_US["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 ENGLISH_US["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
+ENGLISH_US["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Required for GTA3)"
 
 ENGLISH_US["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "This plugin can display Boot Splash on PS Vita/PSTV at boot. Requires ENSO."
 ENGLISH_US["CUSTOMBOOTSPLASH_QUESTION"] =               "Set this image as Custom Boot Splash ?"
