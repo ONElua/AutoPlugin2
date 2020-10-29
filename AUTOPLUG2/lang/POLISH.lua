@@ -370,7 +370,7 @@ POLISH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita that all
 POLISH["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 POLISH["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 POLISH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
-POLISH["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+POLISH["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
 
 POLISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ten plugin pozwala na wyświetlenie własnego ekranu startowego na PS Vita/PSTV. Wymaga ENSO."
 POLISH["CUSTOMBOOTSPLASH_QUESTION"] =               "Czy chcesz ustawić ten obraz, jako obraz startowy ?"

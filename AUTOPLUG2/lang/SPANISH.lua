@@ -370,7 +370,7 @@ SPANISH["INSTALLP_DESC_COREUNLOCK"] =                   "Plugin para PS Vita que
 SPANISH["INSTALLP_DESC_DS4TOUCH"] =                     "Añade soporte para el touchpad del DualShock4 (como ds4vita) a las PSTV y PS Vita con el Plugin MiniVitaTV"
 SPANISH["INSTALLP_DESC_LCDSPACE"] =                     "Cambia el Espacio de Color de la pantalla LCD (Los colores que posee la pantalla, haciendo una especie de emulación de los colores de una Pantalla OLED) con un click y fuerza el Espacio de Cie en aplicaciones de PSPEmu (como juegos de PSP o PS One) (Solo en PS Vita 2000)."
 SPANISH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =              "Control del Volumen de PS Vita usando un DS4 (DualShock4). La barra de luz de DS4 indica el nivel de batería del DS4. Simultaneamente SELECT + L1 para bajar el volumen, SELECT + R1 para subir el volumen, SELECT + R1 + L1 para mutear"
-SPANISH["INSTALLP_DESC_FDFIX"] =                        "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+SPANISH["INSTALLP_DESC_FDFIX"] =                        "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"

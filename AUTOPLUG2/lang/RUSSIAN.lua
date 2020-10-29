@@ -370,7 +370,7 @@ RUSSIAN["INSTALLP_DESC_COREUNLOCK"] =                "Плагин даёт во
 RUSSIAN["INSTALLP_DESC_DS4TOUCH"] =                  "Поддержка сенсорной панели DS4 на PSTV и Vita с плагином MiniVitaTV."
 RUSSIAN["INSTALLP_DESC_LCDSPACE"] =                  "Быстрая смена цветового пространства LCD экрана в обычном режиме, а также принудительный контрастный режим при эмуляции PSP (только для PS Vita 2K)"
 RUSSIAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "Регулировка громкости PS Vita при помощи DualShock 4, при этом световая панель выступает в качестве индикатора заряда контроллера"
-RUSSIAN["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+RUSSIAN["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"

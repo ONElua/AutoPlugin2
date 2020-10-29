@@ -370,7 +370,7 @@ JAPANESE["INSTALLP_DESC_COREUNLOCK"] =                  "Plugin for PS Vita that
 JAPANESE["INSTALLP_DESC_DS4TOUCH"] =                    "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 JAPANESE["INSTALLP_DESC_LCDSPACE"] =                    "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 JAPANESE["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =             "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
-JAPANESE["INSTALLP_DESC_FDFIX"] =                        "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+JAPANESE["INSTALLP_DESC_FDFIX"] =                       "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
 
 JAPANESE["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =            "このプラグインは、ブート時にPSVita/PSTVにブートスプラッシュを表示できます。 ENSO必須"
 JAPANESE["CUSTOMBOOTSPLASH_QUESTION"] =                 "この画像をカスタムブートスプラッシュとして設定しますか？"

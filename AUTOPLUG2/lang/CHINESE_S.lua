@@ -370,7 +370,7 @@ CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游
 CHINESE_S["INSTALLP_DESC_DS4TOUCH"] =                  "增加 ds4 触控支持 (ds4vita 方案), 用于 PS TV 以及已安装 MiniVitaTV 插件的 Vita."
 CHINESE_S["INSTALLP_DESC_LCDSPACE"] =                  "一键更改 LCD 色彩空间,并在 PSP 模拟器程序中强制设置色彩空间 (仅适用于 PSVITA 2000)."
 CHINESE_S["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "使用 DS4 控制器控制 PS Vita 音量. DS4 灯条用作 DS4 电池指示器."
-CHINESE_S["INSTALLP_DESC_FDFIX"] =                     "此插件解决了 PS Vita 自制软件在挂起和恢复后文件描述符无效的问题. (GTA3需要它)"
+CHINESE_S["INSTALLP_DESC_FDFIX"] =                     "此插件解决了 PS Vita 自制软件在挂起和恢复后文件描述符无效的问题."
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"

@@ -370,7 +370,7 @@ PORTUGUESE_BR["INSTALLP_DESC_COREUNLOCK"] =                "Plugin for PS Vita t
 PORTUGUESE_BR["INSTALLP_DESC_DS4TOUCH"] =                  "Adds ds4 touchpad support (ds4vita way) to PS TV and Vita with MiniVitaTV."
 PORTUGUESE_BR["INSTALLP_DESC_LCDSPACE"] =                  "Change the LCD colour space with one click and force colour space settings in PSPEmu applications(only for PSVITA 2000)."
 PORTUGUESE_BR["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS Vita - Control volume using DS4 controller. DS4 lightbar used as DS4 battery indicator"
-PORTUGUESE_BR["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+PORTUGUESE_BR["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
 
 PORTUGUESE_BR["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Este plugin pode exibir o Splash de inicialização no PS Vita/PSTV na inicialização. Requer ENSO."
 PORTUGUESE_BR["CUSTOMBOOTSPLASH_QUESTION"] =               "Definir esta imagem como Splash de inicialização personalizado?"
