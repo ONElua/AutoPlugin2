@@ -108,7 +108,7 @@ write_config()
 dofile("scripts/tai.lua")
 tai.load()
 
-if tai.find("KERNEL", "sharpscale.skprx") and not tai.gameid["!AKRK00005"] then
+if tai.find("KERNEL", "sharpscale.skprx") and not tai.check("!AKRK00005") then
 	tai.putBeforeSection("ALL","!AKRK00005","")
 	tai.sync()
 	change = true
@@ -116,6 +116,7 @@ if tai.find("KERNEL", "sharpscale.skprx") and not tai.gameid["!AKRK00005"] then
 	screen.flip()
 	os.message(LANGUAGE["REPAIR_CONFIG_SHARPSCALE"])
 end
+
 if not tai.find("main", "ur0:tai/henkaku.suprx") or
 		not tai.find("NPXS10015", "ur0:tai/henkaku.suprx") or
 			not tai.find("NPXS10016", "ur0:tai/henkaku.suprx") then

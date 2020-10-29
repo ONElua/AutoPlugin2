@@ -18,6 +18,8 @@
 	- Added Always Safe Plugins Henkaku.
 	v1.4 - 18/04/2020 at 07:08 am
 	- Improved multiple file mixing.
+	v1.5 - 28/10/2020 at 09:24 pm
+	- tai.check(id) add by gdl(Iteración de tai.raw en busqueda de "!AKRK00005"
 ]]
 
 -- Write a file.
@@ -131,6 +133,7 @@ function tai.parse(data, blend)
 				id_sect = line:sub(2)
 				if id_sect:lower() == "kernel" then raw[i] = "*KERNEL"
 				elseif id_sect:lower() == "main" then raw[i] = "*main"
+				elseif id_sect:lower() == "all" then raw[i] = "*ALL"
 				elseif id_sect:lower() == "all" then raw[i] = "*ALL" end
 				line = raw[i]
 				id_sect = line:sub(2)
@@ -138,6 +141,7 @@ function tai.parse(data, blend)
 				-- TO-DO: add support to section´s with ! is a section will be no load by taihen, but how to handle with tai?
 				if not game_id[id_sect] then game_id[id_sect] = { line = {}, prx = {}, section = id_sect }; nr[id_sect] = {} end
 				table.insert(game_id[id_sect].line, i)
+				--os.message("Sect "..tostring(id_sect))
 				continue
 			end
 
@@ -287,6 +291,18 @@ function tai.put(id, path, pos)
 		return true
 	end
 
+	return false
+
+end
+
+function tai.check(id)
+	local len = #tai.raw
+	for i=1, len do
+		local line = tai.raw[i]
+		if line:find("!AKRK00005", 1, true) then
+			return true
+		end
+	end
 	return false
 
 end

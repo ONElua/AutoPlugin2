@@ -17,8 +17,7 @@ function plugins_installation(tb,sel)
 	else
 
 		--Aqui checaremos posibles conflictos de plugins
-		
-		if tb[sel].path == "sharpscale.skprx" then
+		if tb[sel].path == "sharpscale.skprx" and not tai.check("!AKRK00005") then
 			tai.putBeforeSection("ALL","!AKRK00005","")
 
 		--Ds4Touch
