@@ -45,13 +45,13 @@ CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
 CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
 
 --Catherine HD
-CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"
-CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
-CHINESE_S["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by Cuevavirus"
-CHINESE_S["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
-CHINESE_S["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
+CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "凯瑟琳浓郁口感高清补丁"
+CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "此补丁可将 Vita 和 PSTV 上的凯瑟琳浓郁口感的3D渲染和帧缓冲分辨率更改为 1280x720. 1280x720 可被输出到 HDMI 及 USB (udcd-uvc), 或者 Vita 用户可直接在屏幕上享受超采样图像 (依赖 Sharpscale 插件)"
+CHINESE_S["INSTALL_CATHERINE_HD_TITLE"] =              "凯瑟琳浓郁口感高清补丁 作者:Cuevavirus"
+CHINESE_S["NO_CHATERINE_GAMES"] =                      "找不到 凯瑟琳浓郁口感 游戏本体"
+CHINESE_S["INSTALLING_CATHERINE_HD_PATCH"] =           "正在安装 凯瑟琳浓郁口感 高清补丁"
 
-CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. 安装最新版本的 Sharpscale \n\n 2. 在 sharpscale 配置程序中启用 '解锁帧缓冲区大小 Unlock framebuffer size' 选项 \n\n 3. 需要超频以获得良好的性能 (我们推荐使用 LOLIcon 或者 lolita444/500)"
 
 --Options PSP
 CHINESE_S["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) 插件"
@@ -89,7 +89,7 @@ CHINESE_S["MENU_EXTRAS_QUICKMENU_DESC"] =              "可配置的电源按钮
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
 CHINESE_S["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "启用自动更新: "
 CHINESE_S["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "更改语言"
-CHINESE_S["MENU_SETTINGS_CHANGE_FONT"] =               "修改字体"
+CHINESE_S["MENU_SETTINGS_CHANGE_FONT"] =               "更换字体"
 
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "为 AutoPlugin II 下载可用语言包"
 CHINESE_S["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "启动时自动更新插件及语言包"
@@ -266,7 +266,7 @@ CHINESE_S["NOTHING_TO_TRANSLATE"] =                    "感谢您的关注, 但�
 CHINESE_S["MENU_TITLE_LANG_ONLINE"] =                  "可用语言"
 CHINESE_S["MENU_TITLE_LANGUAGE"] =                     "选择语言"
 CHINESE_S["MENU_TITLE_FONT"] =                         "选择字体"
-CHINESE_S["MENU_CURRENT_FONT"] =                       "Autoplugin2 font: "
+CHINESE_S["MENU_CURRENT_FONT"] =                       "Autoplugin2 字体: "
 CHINESE_S["LANGUAGE_RELOAD"] =                         "语言已更改"
 CHINESE_S["LANGUAGE_NO_UPDATE"] =                      "没有可用的语言文件更新"
 CHINESE_S["PLUGINS_NO_ONLINE"] =                       "没有可用的插件更新"
@@ -283,8 +283,8 @@ CHINESE_S["CLEAN_LANGS"] =                             "清除选中的语言"
 --Change font
 CHINESE_S["FONT_FAILED"] =                             "没有在 ux0:data/AUTOPLUGIN2/font/ 找到字体文件 (pgf,pvf,ttf)"
 CHINESE_S["FONT_RELOAD"] =                             "字体已更改"
-CHINESE_S["FONT_DEFAULT"] =                            "PGF System"
-CHINESE_S["FONT_DEFAULT_PVF"] =                        "PVF System"
+CHINESE_S["FONT_DEFAULT"] =                            "PGF 系统方案"
+CHINESE_S["FONT_DEFAULT_PVF"] =                        "PVF 系统方案"
 
 --Plugins Online
 CHINESE_S["MENU_TITLE_PLUGINS_ONLINE"] =               "插件更新"
@@ -370,7 +370,7 @@ CHINESE_S["INSTALLP_DESC_COREUNLOCK"] =                "PS Vita 插件,允许游
 CHINESE_S["INSTALLP_DESC_DS4TOUCH"] =                  "增加 ds4 触控支持 (ds4vita 方案), 用于 PS TV 以及已安装 MiniVitaTV 插件的 Vita."
 CHINESE_S["INSTALLP_DESC_LCDSPACE"] =                  "一键更改 LCD 色彩空间,并在 PSP 模拟器程序中强制设置色彩空间 (仅适用于 PSVITA 2000)."
 CHINESE_S["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "使用 DS4 控制器控制 PS Vita 音量. DS4 灯条用作 DS4 电池指示器."
-CHINESE_S["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume. (Need for GTA3)"
+CHINESE_S["INSTALLP_DESC_FDFIX"] =                     "此插件解决了 PS Vita 自制软件在挂起和恢复后文件描述符无效的问题. (GTA3需要它)"
 
 CHINESE_S["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "此插件将在 PSVita/PSTV 启动时显示自定义启动画面. 依赖 ENSO."
 CHINESE_S["CUSTOMBOOTSPLASH_QUESTION"] =               "将此图片设置为自定义启动画面 ?"
