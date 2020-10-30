@@ -370,7 +370,7 @@ FRENCH["INSTALLP_DESC_COREUNLOCK"] =                "Plugin pour PS Vita qui per
 FRENCH["INSTALLP_DESC_DS4TOUCH"] =                  "Ajoute le support du pavé tactile ds4 (façon ds4vita) à PSVita TV et à la PSVita avec MiniVitaTV."
 FRENCH["INSTALLP_DESC_LCDSPACE"] =                  "Changer l'espace de couleur de l'écran LCD en un clic et forcer les paramètres de l'espace de couleur dans les applications PSPEmu (uniquement pour PSVITA 2000)."
 FRENCH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "Contrôlez le volume à l'aide de la manette Dualshock 4. La barre lumineuse est utilisée comme indicateur de batterie."
-FRENCH["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
+FRENCH["INSTALLP_DESC_FDFIX"] =                     "Ce plugin corrige un problème dans les homebrews de PS Vita où les descripteurs de fichiers sont invalidés après une suspension et une reprise."
 
 FRENCH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Ce plugin peut afficher une image personnalisée au démarrage de votre PS Vita/PSTV. Nécessite ENSO installer."
 FRENCH["CUSTOMBOOTSPLASH_QUESTION"] =               "Définissez cette image comme image de démarrage personnalisée ?"
