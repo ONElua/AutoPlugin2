@@ -73,6 +73,7 @@ JAPANESE["MENU_EXTRAS_TRANSP_IMPOSE"] =                 "クイックメニュ�
 JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "AutoPlugin IIの翻訳"
 JAPANESE["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
 JAPANESE["MENU_EXTRAS_QUICKMENU_PLUS"] =                "Configuration for QuickMenu Plus"
+JAPANESE["MENU_AUTOBOOT_TITLE"] =                       "Autoboot"
 
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
@@ -84,6 +85,7 @@ JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用す�
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =     "Warning!!! This option wil reset your ur0:tai/config.txt"
 JAPANESE["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =         "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 JAPANESE["MENU_EXTRAS_QUICKMENU_DESC"] =                "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
+JAPANESE["MENU_EXTRAS_AUTOBOOT_DESC"] =                 "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 JAPANESE["MENU_SETTINGS_LANG_ONLINE"] =                 "利用可能な言語をダウンロードする"
@@ -405,8 +407,10 @@ JAPANESE["INSTALLP_DESC_FTPEVERYWHERE"] =               "ftpeverywhere - Always 
 JAPANESE["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 JAPANESE["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
+JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+JAPANESE["INSTALLP_DESC_DT2S"] =                        "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"
 JAPANESE["INSTALLP_DESC_ITLSENSO"] =                    "Enso対応デバイスにTLS v1.2を追加します"
 JAPANESE["INSTALLP_DESC_KUIO"] =                        "KuioはTaiHen用の軽量カーネルモジュールで、ユーザーモジュールが基本的なI/O操作のためにux0：dataにアクセスできるようにします"
@@ -437,6 +441,7 @@ JAPANESE["INSTALLP_DESC_CPUAFFCHANGER"] =               "This plugin changes CPU
 JAPANESE["INSTALLP_DESC_SHARPSCALE"] =                  "Native 960x544 HDMI output for PSTV."
 JAPANESE["INSTALLP_DESC_RAPIDMENU"] =                   "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 JAPANESE["INSTALLP_DESC_SCOREHAX"] =                    "Instant pro at any game!"
+JAPANESE["INSTALLP_DESC_HONRIPPER"] =                   "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"
@@ -457,7 +462,7 @@ JAPANESE["REPAIR_CONFIG_TXT"] =                         "Henkaku plugins fixed i
 JAPANESE["REPAIR_CONFIG_SHARPSCALE"] =                  "Fix Sharpscale config crash!"
 JAPANESE["STRING_UNSAFE_MODE"] =                        "このHomebrewにはUNSAFEモードが必要です！"
 JAPANESE["STRING_PSVITA_RESTART"] =                     "PSVitaが再起動します"
-JAPANESE["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
+JAPANESE["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
 JAPANESE["STRING_BACKUP_CONFIGS"] =                     "Config_backups.txtの作成"
 JAPANESE["STRING_MISSING_CONFIG"] =                     "config.txtがありません"
 JAPANESE["STRING_BACK"] =                               "メニューに戻る"
@@ -470,6 +475,8 @@ JAPANESE["CHINESE_FONT_DOWNLOAD"] =                     "中国語フォント�
 JAPANESE["BG_MP3_DOWNLOAD"] =                           "Downloading BG Music"
 JAPANESE["YES"] =                                       "はい"
 JAPANESE["NO"] =                                        "いいえ"
+JAPANESE["GAMEID"] =                                    "GAMEID: "
+JAPANESE["CURRENT"] =                                   "Current: "
 
 JAPANESE["SYSTEM_ERROR"] =                              "System Error"
 JAPANESE["SYSTEM_ERROR_REPO"] =                         "Please report this error to Autoplugin2 Repo at Onelua Github"

@@ -44,6 +44,8 @@ This tool allows you to install/uninstall the following plugins with one click
 | [TrophyShot](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
 | [VolLightbarCtrlWithDS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [CallmeBK](https://github.com/CallmeBK/) |
 | [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
+| [dt2s-vita](https://github.com/joel16/dt2s-vita/)  | [joel16](https://github.com/joel16/) |
+| [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
 
 # Optional settings
 - Update plugins Online
@@ -62,9 +64,15 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
-### v1.15 ###
-- Add FdFix by TheOfficialFloW v1.0 (Required for GTA3)
-- Add PVF Font as option to change font
+### Changelog 1.16 ###
+- Added new option at Extras for Autoboot plugin
+- Added support to show pics of selected plugin function (will be uploaded eventually)
+- Added HonRipper by GrapheneCt v1.0
+- Added DoubleTap2Sleep by Joel v1.0
+
+### Changelog 1.15 ###
+- Added FdFix by TheOfficialFloW v1.0 (Required for GTA3)
+- Added PVF Font as option to change font
 - Fix Sharpscale Config Crash (so hope)
 
 ### Changelog 1.14 ###

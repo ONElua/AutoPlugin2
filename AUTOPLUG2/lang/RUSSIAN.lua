@@ -73,6 +73,7 @@ RUSSIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Настроить про�
 RUSSIAN["MENU_EXTRAS_TRANSLATE"] =                   "Перевести AutoPlugin II"
 RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Сбросить config.txt в разделе ur0"
 RUSSIAN["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Настройки плагина QuickMenu Plus"
+RUSSIAN["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
 
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
@@ -84,6 +85,7 @@ RUSSIAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Помогите улуч�
 RUSSIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Внимание!!! Эта функция сбросит ваш ur0:tai/config.txt"
 RUSSIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Внимание!!!\n\nВсе установленные плагины будут отключены!!!\n\nВы действительно хотите сбросить ur0:tai/config.txt?"
 RUSSIAN["MENU_EXTRAS_QUICKMENU_DESC"] =              "Настроить действия кнопок питания, ускорить открытие меню и выбрать стиль фона"
+RUSSIAN["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обновления переводов"
@@ -405,8 +407,10 @@ RUSSIAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "Плагин добавл�
 RUSSIAN["INSTALLP_DESC_TROPHYSHOT"] =             	 "Автоматическое создание снимка экрана при получении приза - прямо как на PS4."
 RUSSIAN["INSTALLP_DESC_BOOTSOUND"] =             	 "Плагин позволяет воспроизвести звук в формате WAV при включении Vita или PSTV."
 RUSSIAN["INSTALLP_DESC_QUICKMENU"] =             	 "Quick Menu Plus объединяет в себе возможности Quick Power, Quick Volume и Rapidmenu, добавляя и что-то новое от себя. Кнопки Выключение, Перезагрузка и Ожидание с возможностью настройки; ползунок громкости, ускорение открытия меню, а также настраиваемый фон."
+RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+RUSSIAN["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
 RUSSIAN["INSTALLP_DESC_ITLSENSO"] =                  "Добавление поддержки TLS 1.2 для устройств с установленным enso"
 RUSSIAN["INSTALLP_DESC_KUIO"] =                      "Позволяет пользовательским плагинам выполнять операции чтения и записи в файлы и папки (плагин-компаньон для других плагинов)"
@@ -437,6 +441,7 @@ RUSSIAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "Плагин перено�
 RUSSIAN["INSTALLP_DESC_SHARPSCALE"] =                "Вывод родного разрешения 960x544 (в рамке) при выборе 720p и кратного масштабирования (с обрезкой нижних 8 строк) при выборе 1080i для PSTV"
 RUSSIAN["INSTALLP_DESC_RAPIDMENU"] =                 "Ускорение открытия быстрого меню в 10 раз (200 мсек. вместо 2 сек.)"
 RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в любой игре без особого труда!"
+RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"
@@ -457,7 +462,7 @@ RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, х
 RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"
 RUSSIAN["STRING_UNSAFE_MODE"] =                      "Необходимо разрешить небезопасные приложения в настройках HENkaku!"
 RUSSIAN["STRING_PSVITA_RESTART"] =                   "Система PS Vita будет перезагружена"
-RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "Перезагрузить taiHEN config.txt"
+RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "taiHEN config.txt Reloaded OK"
 RUSSIAN["STRING_BACKUP_CONFIGS"] =                   "Создание файла config_backups.txt"
 RUSSIAN["STRING_MISSING_CONFIG"] =                   "Файл config.txt не обнаружен"
 RUSSIAN["STRING_BACK"] =                             "Вернуться назад"
@@ -470,6 +475,8 @@ RUSSIAN["CHINESE_FONT_DOWNLOAD"] =                   "Загрузка кита�
 RUSSIAN["BG_MP3_DOWNLOAD"] =                         "Загрузка фоновой музыки"
 RUSSIAN["YES"] =                                     "да"
 RUSSIAN["NO"] =                                      "нет"
+RUSSIAN["GAMEID"] =                                  "GAMEID: "
+RUSSIAN["CURRENT"] =                                 "Current: "
 
 RUSSIAN["SYSTEM_ERROR"] =                            "Системная ошибка"
 RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Пожалуйста, сообщите об этом на сайте github.com/ONElua/AutoPlugin2"

@@ -73,6 +73,7 @@ SPANISH["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Establecer Nivel de Tra
 SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
 SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Resetear el archivo config.txt en ur0"
 SPANISH["MENU_EXTRAS_QUICKMENU_PLUS"] =                 "Configuraciones para QuickMenu Plus"
+SPANISH["MENU_AUTOBOOT_TITLE"] =                        "Autoboot"
 
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -84,6 +85,7 @@ SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoP
 SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "¡¡¡Cuidado!!! Esta opción reseteará el archivo ur0:tai/config.txt"
 SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 ¡¡¡Cuidado!!!\n\n¡¡¡Todos los Plugins instalados serán DESINSTALADOS!!!\n\n¿Estás seguro que deseas resetear el archivo ur0:tai/config.txt?"
 SPANISH["MENU_EXTRAS_QUICKMENU_DESC"] =                 "Opción para configurar el Botón de Encendido, tiempo de apertura más rápido para Quick Menu(menú que sale al mantener presionado el botón PS) y estilo personalizado del fondo del menú"
+SPANISH["MENU_EXTRAS_AUTOBOOT_DESC"] =                  "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
@@ -405,8 +407,10 @@ SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin 
 SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un screenshot cada vez que desbloquees un trofeo"
 SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
 SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
+SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+SPANISH["INSTALLP_DESC_DT2S"] =                         "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
 SPANISH["INSTALLP_DESC_ITLSENSO"] =                     "Añade TLS v1.2 a los dispositivos con Enso"
 SPANISH["INSTALLP_DESC_KUIO"] =                         "Kuio is un módulo liviano de Kernel para taiHEN que permite a los módulos de usuario acceder a ux0:data para operaciones de I/O básicas"
@@ -437,6 +441,7 @@ SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la M
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
 SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
 SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
+SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
@@ -457,7 +462,7 @@ SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arre
 SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "¡Arregla las configuraciones que hacen crashear a Sharpscale!"
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
-SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "Recarga el config.txt de taiHEN "
+SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "taiHEN config.txt Recargado con éxito"
 SPANISH["STRING_BACKUP_CONFIGS"] =                      "Creando Config_backups.txt"
 SPANISH["STRING_MISSING_CONFIG"] =                      "Falta config.txt"
 SPANISH["STRING_BACK"] =                                "Para volver al menú"
@@ -470,6 +475,8 @@ SPANISH["CHINESE_FONT_DOWNLOAD"] =                      "Descargando Letras para
 SPANISH["BG_MP3_DOWNLOAD"] =                            "Descargando Música de Fondo (BGM)"
 SPANISH["YES"] =                                        "SI"
 SPANISH["NO"] =                                         "NO"
+SPANISH["GAMEID"] =                                     "GAMEID: "
+SPANISH["CURRENT"] =                                    "Actual: "
 
 SPANISH["SYSTEM_ERROR"] =                               "Error de Sistema"
 SPANISH["SYSTEM_ERROR_REPO"] =                          "Por favor reporta este error al Repositorio en Github de Autoplugin2 de Onelua"

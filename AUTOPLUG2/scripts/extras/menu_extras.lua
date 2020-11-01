@@ -14,6 +14,7 @@ dofile("scripts/extras/quickmenu.lua")
 dofile("scripts/extras/pkgj.lua")
 dofile("scripts/extras/customsplash.lua")
 dofile("scripts/extras/translate.lua")
+dofile("scripts/psvita/autoboot.lua")
 
 files.mkdir("ux0:data/AUTOPLUGIN2/vpks/")
 
@@ -147,6 +148,10 @@ function menu_extras()
 		end
 	end
 
+	local autoboot_callback = function ()
+		autoboot()
+	end
+
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
@@ -155,6 +160,11 @@ function menu_extras()
 
 	if game.exists("PKGJ00000") then
 		table.insert(menu, 1, { text = LANGUAGE["MENU_EXTRAS_PKGJ_TITLE"],		desc = LANGUAGE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"],	funct = config_callback } )
+	end
+
+	local idx = tai.find("main", "AutoBoot.suprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_AUTOBOOT_TITLE"],	desc = LANGUAGE["MENU_EXTRAS_AUTOBOOT_DESC"],	funct = autoboot_callback } )
 	end
 
 	local idx = tai.find("KERNEL", "custom_boot_splash.skprx")
@@ -189,11 +199,15 @@ function menu_extras()
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.2,color.white,0x0,__ACENTER)
 
-        local y = 130
+        local y = 95
         for i=scroll.ini, scroll.lim do
             if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
             screen.print(480,y,menu[i].text,1.2,color.white, 0x0, __ACENTER)
-            y += 45
+			if i == 4 then
+				y += 60
+			else
+				y += 45
+			end
         end
 
 		if screen.textwidth(menu[scroll.sel].desc) > 925 then

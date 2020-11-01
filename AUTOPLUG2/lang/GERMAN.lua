@@ -73,6 +73,7 @@ GERMAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Transparent Impose festlege
 GERMAN["MENU_EXTRAS_TRANSLATE"] =                   "AutoPlugin II Übersetzen"
 GERMAN["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 GERMAN["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
+GERMAN["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
 
 GERMAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Ermöglicht die Anpassung der Optionen für PKGj in der config.txt"
 GERMAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Ermöglicht das Festlegen eines eigenen Bildes beim Booten"
@@ -84,6 +85,7 @@ GERMAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Hilf AutoPlugin II zu verbe
 GERMAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
 GERMAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 GERMAN["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
+GERMAN["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 GERMAN["MENU_SETTINGS_LANG_ONLINE"] =               "Verfügbare Sprachen herunterladen"
@@ -405,8 +407,10 @@ GERMAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always runn
 GERMAN["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 GERMAN["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 GERMAN["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
+GERMAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+GERMAN["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 GERMAN["INSTALLP_DESC_YAMT"] =                      "Ein anderes Kernel Plugin um den Speicher einer Partition zu zuweisen, für PSVita/PSTV (Benötigt Enso, NUR mit der Firmware 3.60 und 3.65"
 GERMAN["INSTALLP_DESC_ITLSENSO"] =                  "Fügt Geräten mit ENSO TLS v1.2 hinzu"
 GERMAN["INSTALLP_DESC_KUIO"] =                      "Ermöglicht Benutzermodulen den Zugriff auf ux0:data für grundlegende I/O Vorgänge. Kann für bestimmte Plugins erforderlich sein"
@@ -437,6 +441,7 @@ GERMAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU aff
 GERMAN["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
 GERMAN["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 GERMAN["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+GERMAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."
@@ -457,7 +462,7 @@ GERMAN["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in ta
 GERMAN["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 GERMAN["STRING_UNSAFE_MODE"] =                      "Der Modus 'UNSAFE MODE' ist erforderlich für diese Homebrew!"
 GERMAN["STRING_PSVITA_RESTART"] =                   "Die PS Vita wird neu gestartet"
-GERMAN["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
+GERMAN["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
 GERMAN["STRING_BACKUP_CONFIGS"] =                   "Erstelle Config_backups.txt"
 GERMAN["STRING_MISSING_CONFIG"] =                   "config.txt wurde nicht gefunden"
 GERMAN["STRING_BACK"] =                             "zurück ins Menü"
@@ -470,6 +475,8 @@ GERMAN["CHINESE_FONT_DOWNLOAD"] =                   "Chinesische Schrift runterl
 GERMAN["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 GERMAN["YES"] =                                     "Ja"
 GERMAN["NO"] =                                      "Nein"
+GERMAN["GAMEID"] =                                  "GAMEID: "
+GERMAN["CURRENT"] =                                 "Current: "
 
 GERMAN["SYSTEM_ERROR"] =                            "System Error"
 GERMAN["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"

@@ -1,6 +1,12 @@
+# v1.16
+++ Added new option at Extras for Autoboot plugin
+++ Added support to show pics of selected plugin function (will be uploaded eventually)
+++ HonRipper by GrapheneCt v1.0
+++ Added DoubleTap2Sleep by Joel v1.0
+
 # v1.15
-++ Add FdFix by TheOfficialFloW v1.0 (Required for GTA3)
-++ Add PVF Font as option to change font
+++ Added FdFix by TheOfficialFloW v1.0 (Required for GTA3)
+++ Added PVF Font as option to change font
 ++ Fix Sharpscale Config Crash (so hope)
 
 # v1.14
@@ -13,9 +19,9 @@
 ++ Update GE Patch plugin by TheOfficialFloW v0.2
 
 # v1.12
-++ Add Background Music (put your bg.mp3 in ux0:data/Autoplugin2/bg/bg.mp3)
-++ Add VolLightbarCtrlWithDS4 by CallmeBK v1.1
-++ Add LCD Colour Space Changer by cuevavirus 1.1.0
+++ Added Background Music (put your bg.mp3 in ux0:data/Autoplugin2/bg/bg.mp3)
+++ Added VolLightbarCtrlWithDS4 by CallmeBK v1.1
+++ Added LCD Colour Space Changer by cuevavirus 1.1.0
 ++ Update ds4touch by MERLev v1.1.2
 ++ Update TrophyShot v1.1.1 by FMudanyali
 ++ Update GE Patch plugin by TheOfficialFloW v0.19
@@ -26,7 +32,7 @@
 ++ Update BetterTrackPlug by fmudanyali v1.0.3.1
 ++ Update udcd_uvc by xerpi v1.7
 ++ Update ds4touch by MERLev v1.1.1
-++ Add new function PSP Plugin Manager
+++ Added new function PSP Plugin Manager
 
 # v1.10
 ++ Added Ge patch plugin from TheOfficialFloW in PSP plugins for Adrenaline section

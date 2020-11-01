@@ -9,6 +9,9 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+screenshots = "ux0:data/AUTOPLUGIN2/screenshots/"
+files.mkdir(screenshots)
+
 function plugins_installation(tb,sel)
 
 	if tb[sel].path:find(string.lower("udcd_uvc"),1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
@@ -227,9 +230,9 @@ function plugins_installation(tb,sel)
 			files.extract("resources/plugins/vitacheat.zip","ux0:")
 			files.copy("resources/plugins/vitacheat360/vitacheat.suprx","ux0:vitacheat/")
 
-		elseif tb[sel].path == "AutoBoot.suprx" and not files.exists("ux0:data/AutoBoot/") then--AutoBoot
+		elseif tb[sel].path == "AutoBoot.suprx" and not files.exists("ux0:data/AutoBoot/boot.cfg") then--AutoBoot
 			files.extract("resources/plugins/AutoBoot.zip","ux0:")
-		   elseif tb[sel].path == "ps4linkcontrols.suprx" and not files.exists("ux0:ps4linkcontrols.txt") then--ps4linkcontrols
+		elseif tb[sel].path == "ps4linkcontrols.suprx" and not files.exists("ux0:ps4linkcontrols.txt") then--ps4linkcontrols
 			files.extract("resources/plugins/ps4linkcontrols.zip","ux0:")
 		end
 
@@ -350,7 +353,7 @@ function autoplugin()
 
 		--------------------------	Controls	--------------------------
 
-		if buttons.released.cancel then
+		if buttons.cancel then
 			--Clean
 			for i=1,scr.maxim do
 				tb_cop[i].inst = false
@@ -418,13 +421,40 @@ function autoplugin()
 
 			--Readme online
 			if buttons.triangle then
+
+				local vbuff = screen.buffertoimage()
+
 				local onNetGetFileOld = onNetGetFile
 				onNetGetFile = nil
+
+				local SCREENSHOT,img = nil,nil
+				if tb_cop[scr.sel].id then
+					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
+					img = image.load(screenshots..tb_cop[scr.sel].id)
+					if not img then
+						if http.getfile(SCREENSHOT, screenshots..tb_cop[scr.sel].id) then
+							img = image.load(screenshots..tb_cop[scr.sel].id)
+						end
+					end
+				end
+
 				local readme = nil
 				if tb_cop[scr.sel].link then readme = http.get(tb_cop[scr.sel].link) end
 				os.dialog(readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
 				onNetGetFile = onNetGetFileOld
+				
+				if img then
+					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					img:scale(85)
+					img:center()
+					img:blit(480,272)
+					screen.flip()
+					buttons.waitforkey()
+				end
+				img,vbuff = nil,nil
+
 			end
+
 		end
 	end
 

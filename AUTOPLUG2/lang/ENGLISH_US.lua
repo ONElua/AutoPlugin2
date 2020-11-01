@@ -73,6 +73,7 @@ ENGLISH_US["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Set transparent impose"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE"] =                   "Translate AutoPlugin II"
 ENGLISH_US["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 ENGLISH_US["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
+ENGLISH_US["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
 
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
@@ -84,6 +85,7 @@ ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option will reset your ur0:tai/config.txt"
 ENGLISH_US["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 ENGLISH_US["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu opening time and Custom background styles"
+ENGLISH_US["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 ENGLISH_US["MENU_SETTINGS_LANG_ONLINE"] =               "Download available languages"
@@ -405,8 +407,10 @@ ENGLISH_US["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Always 
 ENGLISH_US["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 ENGLISH_US["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 ENGLISH_US["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
+ENGLISH_US["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+ENGLISH_US["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 ENGLISH_US["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
 ENGLISH_US["INSTALLP_DESC_ITLSENSO"] =                  "Adds TLS v1.2 to Enso enabled devices"
 ENGLISH_US["INSTALLP_DESC_KUIO"] =                      "Kuio is a lightweight kernel module for TaiHen that allows user modules to access ux0:data for basic I/O operations"
@@ -437,6 +441,7 @@ ENGLISH_US["INSTALLP_DESC_CPUAFFCHANGER"] =             "This plugin changes CPU
 ENGLISH_US["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output for PSTV."
 ENGLISH_US["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 ENGLISH_US["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+ENGLISH_US["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 ENGLISH_US["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"
@@ -457,7 +462,7 @@ ENGLISH_US["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed i
 ENGLISH_US["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 ENGLISH_US["STRING_UNSAFE_MODE"] =                      "UNSAFE MODE is required for this Homebrew!"
 ENGLISH_US["STRING_PSVITA_RESTART"] =                   "Your PSVita will restart"
-ENGLISH_US["STRINGS_CONFIG_SUCCESS"] =		            "Reload taiHEN config.txt"
+ENGLISH_US["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
 ENGLISH_US["STRING_BACKUP_CONFIGS"] =                   "Creating Config_backups.txt"
 ENGLISH_US["STRING_MISSING_CONFIG"] =                   "Missing config.txt"
 ENGLISH_US["STRING_BACK"] =                             "Return to menu"
@@ -470,6 +475,8 @@ ENGLISH_US["CHINESE_FONT_DOWNLOAD"] =                   "Downloading Chinese Fon
 ENGLISH_US["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 ENGLISH_US["YES"] =                                     "YES"
 ENGLISH_US["NO"] =                                      "NO"
+ENGLISH_US["GAMEID"] =                                  "GAMEID: "
+ENGLISH_US["CURRENT"] =                                 "Current: "
 
 ENGLISH_US["SYSTEM_ERROR"] =                            "System Error"
 ENGLISH_US["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"

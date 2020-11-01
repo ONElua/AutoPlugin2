@@ -73,6 +73,7 @@ PORTUGUESE_BR["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Definir imposição 
 PORTUGUESE_BR["MENU_EXTRAS_TRANSLATE"] =                   "Traduzir AutoPlugin II"
 PORTUGUESE_BR["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 PORTUGUESE_BR["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
+PORTUGUESE_BR["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
 
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Alterar as opções de config.txt do PKGj"
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Definir uma imagem personalizada de inicialização"
@@ -84,6 +85,7 @@ PORTUGUESE_BR["MENU_EXTRAS_TRANSLATE_DESC"] =              "Ajude a melhorar o A
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option wil reset your ur0:tai/config.txt"
 PORTUGUESE_BR["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Warning!!!\n\nAll the installed plugins will be uninstalled!!!\n\nAre you sure you want to reset ur0:tai/config.txt?"
 PORTUGUESE_BR["MENU_EXTRAS_QUICKMENU_DESC"] =              "Configurable power buttons, Faster Quick Menu open time and Custom background styles"
+PORTUGUESE_BR["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
 
 --Options Settings
 PORTUGUESE_BR["MENU_SETTINGS_LANG_ONLINE"] =               "Baixar idiomas disponíveis"
@@ -405,8 +407,10 @@ PORTUGUESE_BR["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - Alwa
 PORTUGUESE_BR["INSTALLP_DESC_TROPHYSHOT"] =                "Just like in PS4, it takes a screenshot whenever you unlock a trophy."
 PORTUGUESE_BR["INSTALLP_DESC_BOOTSOUND"] =             	   "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 PORTUGUESE_BR["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
+PORTUGUESE_BR["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 
 --ALL
+PORTUGUESE_BR["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 PORTUGUESE_BR["INSTALLP_DESC_YAMT"] =                      "Outro plugin do kernel da (re) montagem da ferramenta para PSVita/PSTV (requer Enso, compatível apenas com o firmware 3.60 e 3.65"
 PORTUGUESE_BR["INSTALLP_DESC_ITLSENSO"] =                  "Adiciona TLS v1.2 aos dispositivos habilitados com Enso"
 PORTUGUESE_BR["INSTALLP_DESC_KUIO"] =                      "O Kuio é um módulo leve do kernel para TaiHen que permite que os módulos do usuário acessem dados do ux0: para operações básicas de E/S"
@@ -437,6 +441,7 @@ PORTUGUESE_BR["INSTALLP_DESC_CPUAFFCHANGER"] =             "Este plug-in altera 
 PORTUGUESE_BR["INSTALLP_DESC_SHARPSCALE"] =                "Saída nativa de 960x544 HDMI para PSTV."
 PORTUGUESE_BR["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 PORTUGUESE_BR["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
+PORTUGUESE_BR["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 
 --*NPXS10013
 PORTUGUESE_BR["INSTALLP_DESC_PS4LINK"] =                   "Plugin taiHEN que permite forçar a configuração preferida do botão Remote Play"
@@ -457,7 +462,7 @@ PORTUGUESE_BR["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixe
 PORTUGUESE_BR["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"
 PORTUGUESE_BR["STRING_UNSAFE_MODE"] =                      "O MODO NÃO SEGURO é necessário para este Homebrew!"
 PORTUGUESE_BR["STRING_PSVITA_RESTART"] =                   "Seu PSVita será reiniciado"
-PORTUGUESE_BR["STRINGS_CONFIG_SUCCESS"] =		           "Reload taiHEN config.txt"
+PORTUGUESE_BR["STRINGS_CONFIG_SUCCESS"] =		           "taiHEN config.txt Reloaded OK"
 PORTUGUESE_BR["STRING_BACKUP_CONFIGS"] =                   "Criando arquivo Config_backups.txt"
 PORTUGUESE_BR["STRING_MISSING_CONFIG"] =                   "Faltando arquivo config.txt"
 PORTUGUESE_BR["STRING_BACK"] =                             "Returnar ao menu"
@@ -470,6 +475,8 @@ PORTUGUESE_BR["CHINESE_FONT_DOWNLOAD"] =                   "Baixar fonte em chin
 PORTUGUESE_BR["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
 PORTUGUESE_BR["YES"] =                                     "SIM"
 PORTUGUESE_BR["NO"] =                                      "NÃO"
+PORTUGUESE_BR["GAMEID"] =                                  "GAMEID: "
+PORTUGUESE_BR["CURRENT"] =                                 "Current: "
 
 PORTUGUESE_BR["SYSTEM_ERROR"] =                            "System Error"
 PORTUGUESE_BR["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
