@@ -73,7 +73,7 @@ FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin Transp
 FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
 FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	"Réinitialiser config.txt dans ur0"
 FRENCH["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration du QuickMenu Plus"
-FRENCH["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
+FRENCH["MENU_AUTOBOOT_TITLE"] =                     "Autoboot (démarrage automatique)"
 
 FRENCH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Permet de configurer le fichier config.txt de PKGj"
 FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Modifier le démarrage de votre console avec une image personnalisée"
@@ -85,7 +85,7 @@ FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlu
 FRENCH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Attention !!! Cette option va réinitialiser votre ur0:tai/config.txt"
 FRENCH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Attention!!!\nTous les plugins installés seront désinstallés!!!\n\nÊtes-vous sûr de vouloir réinitialiser votre fichier config.txt ?"
 FRENCH["MENU_EXTRAS_QUICKMENU_DESC"] =              "Règle le temps d'ouverture du menu rapide du bouton PS plus rapide ainsi qu'un arrière-plan personnalisés"
-FRENCH["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
+FRENCH["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Permet de choisir une application/un jeu à lancer au démarrage de la console"
 
 --Options Settings
 FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Paramètres des langues"
@@ -285,8 +285,8 @@ FRENCH["CLEAN_LANGS"] =                             "Annuler la sélection"
 --Change font
 FRENCH["FONT_FAILED"] =                             "\n\nPas de police d'écriture trouvées dans ux0:data/AUTOPLUGIN2/font/\n\nPolice compatible : pgf,pvf,ttf"
 FRENCH["FONT_RELOAD"] =                             "La police d'écriture a été modifiée"
-FRENCH["FONT_DEFAULT"] =                            "PGF System"
-FRENCH["FONT_DEFAULT_PVF"] =                        "PVF System"
+FRENCH["FONT_DEFAULT"] =                            "Font PGF"
+FRENCH["FONT_DEFAULT_PVF"] =                        "Font PVF"
 
 --Plugins Online
 FRENCH["MENU_TITLE_PLUGINS_ONLINE"] =               "Mises à jour des plugins"
@@ -382,7 +382,7 @@ FRENCH["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "Installation du boot_splash
 FRENCH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "Échec de l'installation du boot_splash.bin !!!"
 
 --Main
-FRENCH["INSTALLP_DESC_DENABLER"] =                  "Télécharger des fichiers via votre navigateur"
+FRENCH["INSTALLP_DESC_DENABLER"] =                  "Télécharger des fichiers via le navigateur internet de la PSVita"
 FRENCH["INSTALLP_DESC_NOLOCKSCREEN"] =              "Désactive l'écran de verrouillage de la PSVita"
 FRENCH["INSTALLP_DESC_NOTROPHYMSG"] =               "Désactive le message d'indication de trophée lorsque vous lancez une application dont les sauvegardes sont liées à un autre compte. Utile si vous changez constamment de compte"
 FRENCH["INSTALLP_DESC_CUSTOMWARNING"] =             "Vous permet de définir un message d'avertissement personnalisé au lieu de l'avertissement d'épilepsie lorsque vous démarrez avec ENSO"
@@ -407,10 +407,10 @@ FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un s
 FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
 FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
 FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
-FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction "double tap to sleep" d'Android qui est utilisée sur la barre d'état."
 
 --ALL
-FRENCH["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
+FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
 FRENCH["INSTALLP_DESC_ITLSENSO"] =                  "Ajoute le support du TLS v1.2 aux appareils compatibles Enso"
 FRENCH["INSTALLP_DESC_KUIO"] =                      "Kuio est un module Kernel léger pour TaiHen qui permet aux modules utilisateurs d'accéder aux données ux0:data pour des opérations d'I/O"
@@ -418,7 +418,7 @@ FRENCH["INSTALLP_DESC_VSHMENU"] =                   "Un plugin VSH menu taiHEN p
 FRENCH["INSTALLP_DESC_VITAGRAFIX"] =                "Plugin qui permet de changer la résolution et le cap FPS des jeux PS Vita"
 FRENCH["INSTALLP_DESC_OVERCLOCK"] =                 "Simple plugin d'Overclock pour Taihen (ouvrir menu : SELECT + UP. Fermeture menu : SELECT + DOWN)"
 FRENCH["INSTALLP_DESC_FRAMECOUNTER"] =              "Il s'agit d'un petit plugin qui fonctionne comme un compteur FPS. Il affichera un compteur FPS en haut à gauche de votre écran."
-FRENCH["INSTALLP_DESC_VGI"] =                       "Un simple plugin taihen qui affiche des informations utiles sur les jeux PS Vita. (SÉLECTIONNER + L Ouvrir/Fermer le menu VSH dans votre jeu)"
+FRENCH["INSTALLP_DESC_VGI"] =                       "Un simple plugin Taihen qui affiche des informations utiles sur les jeux PS Vita. (SÉLECTIONNER + L Ouvrir/Fermer le menu VSH dans votre jeu)"
 FRENCH["INSTALLP_DESC_FUCKPSSE"] =                  "Un plugin pour déchiffrer les jeux PSM"
 FRENCH["INSTALLP_DESC_PSMPATCH"] =                  "Permet de modifier les jeux PSM, et peut également être utilisé pour charger les homebrews PSM."
 FRENCH["INSTALLP_DESC_TROPHAX"] =                   "Déverrouillage universel des trophées pour le PSVITA. (dans le jeu START + SELECT activer le plugin, L+R débloquer tout ou L+START débloquer un trophée spécifique, L+UP ou L+DOWN pour faire votre sélection puis L+CIRCLE pour débloquer)"
@@ -441,7 +441,7 @@ FRENCH["INSTALLP_DESC_CPUAFFCHANGER"] =             "Ce plugin modifie le masque
 FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour les PSTV."
 FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouverture du menu rapide de 2 secondes à 200 millisecondes."
 FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantané dans n'importe quel jeu!"
-FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
@@ -472,11 +472,11 @@ FRENCH["STRING_UNINSTALLED"] =                      "a été désinstallé"
 FRENCH["STRING_PLEASE_WAIT"] =                      "Veuillez patienter..."
 FRENCH["RESTART_QUESTION"] =                        "\n\nVoulez-vous redémarrer votre console maintenant ?"
 FRENCH["CHINESE_FONT_DOWNLOAD"] =                   "Télécharger la police Chinoise"
-FRENCH["BG_MP3_DOWNLOAD"] =                         "Downloading BG Music"
+FRENCH["BG_MP3_DOWNLOAD"] =                         "Télécharger la musique de fond "
 FRENCH["YES"] =                                     "Oui"
 FRENCH["NO"] =                                      "Non"
 FRENCH["GAMEID"] =                                  "GAMEID: "
-FRENCH["CURRENT"] =                                 "Current: "
+FRENCH["CURRENT"] =                                 "Actuel: "
 
 FRENCH["SYSTEM_ERROR"] =                            "Erreur système"
 FRENCH["SYSTEM_ERROR_REPO"] =                       "Veuillez signaler cette erreur sur le GitHub Onelua de Autoplugin II"
