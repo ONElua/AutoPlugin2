@@ -407,7 +407,7 @@ FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un s
 FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
 FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
 FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
-FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction "double tap to sleep" d'Android qui est utilisée sur la barre d'état."
+FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 
 --ALL
 FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."
