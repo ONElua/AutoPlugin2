@@ -110,37 +110,46 @@ function change_lang()
 			if buttons.down or buttons.analogly > 60 then scroll:down() end
 
 			if buttons.accept then
-				LANGUAGE = {}
 
-				dofile("lang/ENGLISH_US.lua")
-				update_language(ENGLISH_US)
+				official, user, s = nil,nil, nil
 
 				-- Official Translations
-				t,s = loadfile("lang/"..tb[scroll.sel].file..".lua")
-				if t then
-					t()
-					load_language(tb[scroll.sel].file, true)
-				else
+				official,s = loadfile("lang/"..tb[scroll.sel].file..".lua")
+				if not official then
 					if s then
 						os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
 					else
 						os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n".."lang/"..tb[scroll.sel].file..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
 					end
+					break
 				end
 
 				-- User Translations
 				if files.exists("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua") then
-					t,s = loadfile("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua")
-					if t then
-						t()
-						load_language(tb[scroll.sel].file)
-					else
+					user,s = loadfile("ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua")
+					if not user then
 						if s then
 							os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"])
 						else
 							os.dialog(LANGUAGE["ERROR_LOADING_FILE"].."\n\n".."ux0:data/AUTOPLUGIN2/lang/"..tb[scroll.sel].file..".lua".."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"], LANGUAGE["SYSTEM_ERROR"])
 						end
+						break
 					end
+				end
+
+				if official then
+					LANGUAGE = {}
+
+					dofile("lang/ENGLISH_US.lua")
+					update_language(ENGLISH_US)
+
+					official()
+					load_language(tb[scroll.sel].file, true)
+				end
+
+				if user then
+					user()
+					load_language(tb[scroll.sel].file)
 				end
 
 				dofile("plugins/plugins.lua")
@@ -190,7 +199,6 @@ function change_lang()
 				if back then back:blit(0,0) end
 					message_wait(LANGUAGE["LANGUAGE_RELOAD"])
 				os.delay(1500)
-
 
 				--Pendiente update para plugins PSP
 				dofile("plugins/plugins_psp.lua")
