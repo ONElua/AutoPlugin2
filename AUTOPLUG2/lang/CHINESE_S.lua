@@ -73,7 +73,7 @@ CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明
 CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
 CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =                "重置 ur0 目录的 config.txt"
 CHINESE_S["MENU_EXTRAS_QUICKMENU_PLUS"] =              "配置 QuickMenu Plus"
-CHINESE_S["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
+CHINESE_S["MENU_AUTOBOOT_TITLE"] =                     "自动引导"
 
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -85,7 +85,7 @@ CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "警告!!! 此选项将重置 ur0:tai/config.txt"
 CHINESE_S["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 警告!!!\n\n所有已安装的插件将被卸载!!!\n\n您确定要重置 ur0:tai/config.txt?"
 CHINESE_S["MENU_EXTRAS_QUICKMENU_DESC"] =              "可配置的电源按钮, 提高快捷菜单开启速度以及自定义背景样式"
-CHINESE_S["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
+CHINESE_S["MENU_EXTRAS_AUTOBOOT_DESC"] =               "允许你选择一款 程序/游戏 在机器启动时运行"
 
 --Options Settings
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
@@ -399,7 +399,7 @@ CHINESE_S["INSTALLP_DESC_DOLCEPOLCE"] =                "移除 PSTV 黑名单验
 CHINESE_S["INSTALLP_DESC_LOWMEMMODE"] =                "启动系统程序的同时保持后台运行大内存占用游戏"
 CHINESE_S["INSTALLP_DESC_QUICKPOWER"] =                "关机,重启和暂停,均通过快捷菜单操作完成.适用于 PSVita 以及 PSTV.按住 Power Off(关机) 按钮即可重启."
 CHINESE_S["INSTALLP_DESC_QUICKVOLUME"] =               "从 PSVita 快捷菜单更改音量,就像在 PSTV 上那样."
-CHINESE_S["INSTALLP_DESC_QASCREEN"] =                  "适用于 PSVita 的高质量截屏插件.解锁 QA 截屏的本地 SceShell 实现."
+CHINESE_S["INSTALLP_DESC_QASCREEN"] =                  "适用于 PSVita 的高质量截屏插件.原生解锁 SceShell(主屏) QA screenshot 执行."
 CHINESE_S["INSTALLP_DESC_NOSHAREDFB"] =                "对于在系统模式下运行但使用标准帧缓冲实现的自制应用程序,允许您在挂起恢复周期之后绕过共享的帧缓冲问题的插件."
 CHINESE_S["INSTALLP_DESC_TRIMPOSE"] =                  "PS Vita 插件,用于使强制菜单 (长按 PS 按钮出现的那个) 透明."
 CHINESE_S["INSTALLP_DESC_QUIETSHOT"] =                 "在截屏,录像,拍照及拍摄全景照时,关闭快门音效.适用于 Playstation Vita 以及 PlayStation TV."
@@ -407,10 +407,10 @@ CHINESE_S["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - 始终�
 CHINESE_S["INSTALLP_DESC_TROPHYSHOT"] =                "就像在 PS4 中那样,解锁奖杯的同时自动截屏."
 CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动 PS Vita / PS TV 时播放一个 WAV 格式文件作为自定义启动音效."
 CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并了 Quick Power, Quick Volume 和 Rapidmenu 的功能, 并添加了新特性. 关闭电源, 重启和待机按钮, 可配置的电源按钮, 音量滑块, 提高快捷菜单开启速度, 自定义背景样式."
-CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
 
 --ALL
-CHINESE_S["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
+CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款用于重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
 CHINESE_S["INSTALLP_DESC_ITLSENSO"] =                  "为启用 Enso 的设备添加 TLS v1.2 支持"
 CHINESE_S["INSTALLP_DESC_KUIO"] =                      "Kuio 是一个适用于大变革的轻量内核模块,允许用户模块访问 ux0:data 目录进行基本的 I/O 操作"
@@ -441,7 +441,7 @@ CHINESE_S["INSTALLP_DESC_CPUAFFCHANGER"] =             "此插件将 PSVita 系�
 CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持原生 960x544 HDMI 输出."
 CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "将快捷菜单的打开时间从2秒减少到200毫秒."
 CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.在任何游戏中瞬间变身职业玩家!"
-CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
@@ -462,7 +462,7 @@ CHINESE_S["REPAIR_CONFIG_TXT"] =                       "已修复变革插件配
 CHINESE_S["REPAIR_CONFIG_SHARPSCALE"] =                "修复 Sharpscale 配置崩溃问题!"
 CHINESE_S["STRING_UNSAFE_MODE"] =                      "此程序需要开启不安全模式 (UNSAFE MODE)!"
 CHINESE_S["STRING_PSVITA_RESTART"] =                   "您的 PSVita 即将重启"
-CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "taiHEN config.txt Reloaded OK"
+CHINESE_S["STRINGS_CONFIG_SUCCESS"] =		           "大变革 config.txt 已完成重载"
 CHINESE_S["STRING_BACKUP_CONFIGS"] =                   "正在创建 Config_backups.txt"
 CHINESE_S["STRING_MISSING_CONFIG"] =                   "找不到 config.txt"
 CHINESE_S["STRING_BACK"] =                             "返回主菜单"
@@ -475,8 +475,8 @@ CHINESE_S["CHINESE_FONT_DOWNLOAD"] =                   "正在下载扩展字体
 CHINESE_S["BG_MP3_DOWNLOAD"] =                         "正在下载背景音乐"
 CHINESE_S["YES"] =                                     "是"
 CHINESE_S["NO"] =                                      "否"
-CHINESE_S["GAMEID"] =                                  "GAMEID: "
-CHINESE_S["CURRENT"] =                                 "Current: "
+CHINESE_S["GAMEID"] =                                  "游戏ID: "
+CHINESE_S["CURRENT"] =                                 "当前: "
 
 CHINESE_S["SYSTEM_ERROR"] =                            "系统错误"
 CHINESE_S["SYSTEM_ERROR_REPO"] =                       "请将此问题反馈到 Github Onelua 名下的 Autoplugin2 仓库"
