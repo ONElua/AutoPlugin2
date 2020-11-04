@@ -5,6 +5,8 @@ CatherineTB = {
 
 function Catherine_HD()
 
+	local CATHERINE_ID = "CATHERINEHD.png"
+
 	local patchs = {
 		{ res = "Catherine Full Body 1280x720 HD",  desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"], path = "catherinefbhd.suprx" },
 	}
@@ -80,7 +82,7 @@ function Catherine_HD()
 
 		--------------------------	Controls	--------------------------
 
-		if buttons.released.cancel then break end
+		if buttons.cancel then break end
 
 		--Exit
 		if buttons.start then
@@ -102,6 +104,33 @@ function Catherine_HD()
 
 			if buttons.accept then
 				Patch_Catherine_install(CatherineTB[selector],patchs[scroll.sel])
+			end
+
+			if buttons.triangle then
+
+				local vbuff = screen.buffertoimage()
+
+				local onNetGetFileOld = onNetGetFile
+				onNetGetFile = nil
+
+				local img = image.load(screenshots..CATHERINE_ID)
+				if not img then
+					if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, CATHERINE_ID), screenshots..CATHERINE_ID) then
+						img = image.load(screenshots..CATHERINE_ID)
+					end
+				end
+
+				onNetGetFile = onNetGetFileOld				
+				if img then
+					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					img:scale(85)
+					img:center()
+					img:blit(480,272)
+					screen.flip()
+					buttons.waitforkey()
+				end
+				img,vbuff = nil,nil
+
 			end
 
 		end

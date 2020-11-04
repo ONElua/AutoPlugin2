@@ -17,10 +17,13 @@ for i=1,#P4 do
 		table.insert(gamesP4,P4[i])
 	end
 end
-	
+
+
 function P4Golden_HD()
 
 	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) return end
+
+	local P4GOLDEN_ID = "PERSONA4GOLDENHD.png"
 
 	local patchs = {
 		{ res = "1920x1080 HD", desc = LANGUAGE["P4G_1920x1080_DESC"], path = "p4goldenhd_1920x1080.suprx" },
@@ -104,7 +107,7 @@ function P4Golden_HD()
 
 		--------------------------	Controls	--------------------------
 
-		if buttons.released.cancel then break end
+		if buttons.cancel then break end
 
 		--Exit
 		if buttons.start then
@@ -133,6 +136,33 @@ function P4Golden_HD()
 
 			if buttons.accept then
 				Patch_P4G_install(gamesP4[selector],patchs[scroll.sel])
+			end
+
+			if buttons.triangle then
+
+				local vbuff = screen.buffertoimage()
+
+				local onNetGetFileOld = onNetGetFile
+				onNetGetFile = nil
+
+				local img = image.load(screenshots..P4GOLDEN_ID)
+				if not img then
+					if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, P4GOLDEN_ID), screenshots..P4GOLDEN_ID) then
+						img = image.load(screenshots..P4GOLDEN_ID)
+					end
+				end
+
+				onNetGetFile = onNetGetFileOld				
+				if img then
+					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					img:scale(85)
+					img:center()
+					img:blit(480,272)
+					screen.flip()
+					buttons.waitforkey()
+				end
+				img,vbuff = nil,nil
+
 			end
 
 		end
