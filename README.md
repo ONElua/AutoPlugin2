@@ -162,6 +162,7 @@ Size must be less than 20MB
 	*([gdljjrod](https://twitter.com/gdljjrod)).*<br>
 	*RG<br>
 
+- Special thanks to *([Varon9](@silent_r41d3r)) for the plugins images
 - HAM for new resources
 - TheFloW
 - yifanlu
