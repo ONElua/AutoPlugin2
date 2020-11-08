@@ -35,7 +35,7 @@ RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Запустить про�
 
 --P4 Golden HD
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD Patch"
-RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцены и кадрового буфера Persona 4 Golden на PS Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
+RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцен и кадрового буфера Persona 4 Golden на PS Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
 RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 может быть как выведено по HDMI, так и на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 20-30 FPS, в большинстве случаев 25-30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD от Cuevavirus"
@@ -45,13 +45,13 @@ RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
 RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD Patch"
 
 --Catherine HD
-RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"
-RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
-RUSSIAN["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by Cuevavirus"
-RUSSIAN["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
-RUSSIAN["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
+RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD Patch"
+RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "Этот патч изменяет разрешение 3D сцен и кадрового буфера Catherine: Full Body на PS Vita и PSTV до 1280x720. (Необходим плагин Sharpscale)"
+RUSSIAN["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine: Full Body HD от Cuevavirus"
+RUSSIAN["NO_CHATERINE_GAMES"] =                      "Catherine: Full Body не найдена"
+RUSSIAN["INSTALLING_CATHERINE_HD_PATCH"] =           "Установка Catherine: FB HD Patch"
 
-RUSSIAN["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+RUSSIAN["INSTRUCTIONS_HD_PATCH"] =                   " 1. Установите самую новую версию Sharpscale \n\n 2. Включите 'Unlock framebuffer size' в приложении Sharpscale \n\n 3. Для лучшей производительности используйте плагин для разгона "
 
 --Options PSP
 RUSSIAN["MENU_PSP_TITLE"] =                          "Плагины для PSP (Adrenaline)"
@@ -85,7 +85,7 @@ RUSSIAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "Помогите улуч�
 RUSSIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Внимание!!! Эта функция сбросит ваш ur0:tai/config.txt"
 RUSSIAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 Внимание!!!\n\nВсе установленные плагины будут отключены!!!\n\nВы действительно хотите сбросить ur0:tai/config.txt?"
 RUSSIAN["MENU_EXTRAS_QUICKMENU_DESC"] =              "Настроить действия кнопок питания, ускорить открытие меню и выбрать стиль фона"
-RUSSIAN["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Allows you to choose an app/game to launch when booting"
+RUSSIAN["MENU_EXTRAS_AUTOBOOT_DESC"] =               "Позволяет выбрать приложение для автозапуска при включении системы"
 
 --Options Settings
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обновления переводов"
@@ -285,8 +285,8 @@ RUSSIAN["CLEAN_LANGS"] =                             "Очистить выбо�
 --Change font
 RUSSIAN["FONT_FAILED"] =                             "Отсутствуют шрифты в формате pgf, pvf или ttf в папке ux0:data/AUTOPLUGIN2/font/"
 RUSSIAN["FONT_RELOAD"] =                             "Шрифт успешно изменён"
-RUSSIAN["FONT_DEFAULT"] =                            "PGF System"
-RUSSIAN["FONT_DEFAULT_PVF"] =                        "PVF System"
+RUSSIAN["FONT_DEFAULT"] =                            "Системный в формате PGF"
+RUSSIAN["FONT_DEFAULT_PVF"] =                        "Системный в формате PVF"
 
 --Plugins Online
 RUSSIAN["MENU_TITLE_PLUGINS_ONLINE"] =               "Обновления плагинов"
@@ -372,7 +372,7 @@ RUSSIAN["INSTALLP_DESC_COREUNLOCK"] =                "Плагин даёт во
 RUSSIAN["INSTALLP_DESC_DS4TOUCH"] =                  "Поддержка сенсорной панели DS4 на PSTV и Vita с плагином MiniVitaTV."
 RUSSIAN["INSTALLP_DESC_LCDSPACE"] =                  "Быстрая смена цветового пространства LCD экрана в обычном режиме, а также принудительный контрастный режим при эмуляции PSP (только для PS Vita 2K)"
 RUSSIAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "Регулировка громкости PS Vita при помощи DualShock 4, при этом световая панель выступает в качестве индикатора заряда контроллера"
-RUSSIAN["INSTALLP_DESC_FDFIX"] =                     "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
+RUSSIAN["INSTALLP_DESC_FDFIX"] =                     "Плагин исправляет ошибку устаревших файловых дескрипторов в хоумбрю, возникающую при использовании режима ожидания"
 
 RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего загрузочного изображения при загрузке системы (необходим enso)"
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
@@ -407,10 +407,10 @@ RUSSIAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "Плагин добавл�
 RUSSIAN["INSTALLP_DESC_TROPHYSHOT"] =             	 "Автоматическое создание снимка экрана при получении приза - прямо как на PS4."
 RUSSIAN["INSTALLP_DESC_BOOTSOUND"] =             	 "Плагин позволяет воспроизвести звук в формате WAV при включении Vita или PSTV."
 RUSSIAN["INSTALLP_DESC_QUICKMENU"] =             	 "Quick Menu Plus объединяет в себе возможности Quick Power, Quick Volume и Rapidmenu, добавляя и что-то новое от себя. Кнопки Выключение, Перезагрузка и Ожидание с возможностью настройки; ползунок громкости, ускорение открытия меню, а также настраиваемый фон."
-RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Рекомендуем) Эта версия срабатывает только при касании верхнего края экрана. В SceShell (домашний экран) это область панели информации. Таким образом, работа оказывается максимально схожей с тем, как это сделано на Андроид."
 
 --ALL
-RUSSIAN["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
+RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
 RUSSIAN["INSTALLP_DESC_ITLSENSO"] =                  "Добавление поддержки TLS 1.2 для устройств с установленным enso"
 RUSSIAN["INSTALLP_DESC_KUIO"] =                      "Позволяет пользовательским плагинам выполнять операции чтения и записи в файлы и папки (плагин-компаньон для других плагинов)"
@@ -441,7 +441,7 @@ RUSSIAN["INSTALLP_DESC_CPUAFFCHANGER"] =             "Плагин перено�
 RUSSIAN["INSTALLP_DESC_SHARPSCALE"] =                "Вывод родного разрешения 960x544 (в рамке) при выборе 720p и кратного масштабирования (с обрезкой нижних 8 строк) при выборе 1080i для PSTV"
 RUSSIAN["INSTALLP_DESC_RAPIDMENU"] =                 "Ускорение открытия быстрого меню в 10 раз (200 мсек. вместо 2 сек.)"
 RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в любой игре без особого труда!"
-RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper разработан для извлечения содержимого книг в формате .MNH (Marlin-Hon), который используется в приложении PS Vita Sony Reader (PCSC80012)"
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"
@@ -476,7 +476,7 @@ RUSSIAN["BG_MP3_DOWNLOAD"] =                         "Загрузка фоно�
 RUSSIAN["YES"] =                                     "да"
 RUSSIAN["NO"] =                                      "нет"
 RUSSIAN["GAMEID"] =                                  "GAMEID: "
-RUSSIAN["CURRENT"] =                                 "Current: "
+RUSSIAN["CURRENT"] =                                 "Выбран: "
 
 RUSSIAN["SYSTEM_ERROR"] =                            "Системная ошибка"
 RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Пожалуйста, сообщите об этом на сайте github.com/ONElua/AutoPlugin2"
