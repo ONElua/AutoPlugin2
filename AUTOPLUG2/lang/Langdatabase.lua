@@ -6,7 +6,7 @@ Langs = {
 { id =  "CHINESE_S",	version = "01.37",		author =  "yexun1995" },
 { id =  "FRENCH",		version = "01.39",		author =  "Chronoss09" },
 { id =  "GERMAN",		version = "01.24",		author =  "Schn1ek3" },
-{ id =  "RUSSIAN",		version = "01.36",		author =  "Yoti" },
+{ id =  "RUSSIAN",		version = "01.37",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.24",		author =  "Gameplay World's" },
 { id =  "PORTUGUESE_BR",version = "01.11",		author =  "allanaln2009" },
 }
