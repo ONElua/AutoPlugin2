@@ -366,6 +366,9 @@ function tai.sync(path)
 		tai.del("KERNEL", "ur0:tai/henkaku.suprx")
 		
 		local force_path = {
+		  { path = "ur0:tai/ds34vita.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/ds4touch.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/reVita.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc_lcd_off.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc_oled_off.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },

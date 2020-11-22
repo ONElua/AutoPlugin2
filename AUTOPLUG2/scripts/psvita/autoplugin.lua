@@ -15,7 +15,8 @@ files.mkdir(screenshots)
 function plugins_installation(tb,sel)
 
 	if tb[sel].path:find(string.lower("udcd_uvc"),1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
-	elseif tb[sel].path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif tb[sel].path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif tb[sel].path == "reVita.skprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif tb[sel].path == "pspemu-colour-crunch.skprx" and hw.model() != "Vita Slim" then os.message(LANGUAGE["INSTALLP_LCDCOLOURSPACECHANGE"])
 	else
 
@@ -82,19 +83,19 @@ function plugins_installation(tb,sel)
 			end
 		end
 
-		if tb[sel].path == "vitastick.skprx" and not game.exists("VITASTICK") then
+		if tb[sel].path == "vitastick.skprx" then
 			__file = "vitastick.vpk"
 			game.install("resources/plugins/vitastick.vpk",false)
-		elseif tb[sel].path == "ModalVol.suprx" and not game.exists("MODALVOLM") then
+		elseif tb[sel].path == "ModalVol.suprx" then
 			__file = "VolumeControl.vpk"
 			game.install("resources/plugins/VolumeControl.vpk",false)
-		elseif tb[sel].path == "monaural.skprx" and not game.exists("AKRK00003") then
+		elseif tb[sel].path == "monaural.skprx" then
 			__file = "MonauralConfig.vpk"
 			game.install("resources/plugins/MonauralConfig.vpk",false)
-		elseif tb[sel].path == "pspemu-colour-crunch.skprx" and not game.exists("AKRK00006") then
+		elseif tb[sel].path == "pspemu-colour-crunch.skprx" then
 			__file = "lcd-colour-crunch.vpk"
 			game.install("resources/plugins/lcd-colour-crunch.vpk",false)
-		elseif tb[sel].path == "VitaGrafix.suprx" and not game.exists("VGCF00001") then
+		elseif tb[sel].path == "VitaGrafix.suprx" then
 			files.delete("tmp")
 			if back2 then back2:blit(0,0) end
 				message_wait()
@@ -234,6 +235,13 @@ function plugins_installation(tb,sel)
 			files.extract("resources/plugins/AutoBoot.zip","ux0:")
 		elseif tb[sel].path == "ps4linkcontrols.suprx" and not files.exists("ux0:ps4linkcontrols.txt") then--ps4linkcontrols
 			files.extract("resources/plugins/ps4linkcontrols.zip","ux0:")
+				-- reVita.skprx
+		elseif tb[sel].path == "reVita.skprx" then
+			if os.message(LANGUAGE["INSTALLP_DESC_REVITA_GYRO"].."\n",1) == 1 then
+				files.copy(path_plugins.."reVitaMotion.suprx", "ur0:tai/")
+				tai.put("main",  path_tai.."reVitaMotion.suprx")
+				change = true
+			end
 		end
 
 		if tb[sel].section2 and tb[sel].section2:upper() == "KERNEL" then
@@ -270,6 +278,7 @@ function autoplugin()
 	local xscr1,toinstall = 10,0
 	scr.ini,scr.lim,scr.sel = 1,limit,1
 
+	--local icon0 = nil
 	while true do
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
@@ -285,7 +294,18 @@ function autoplugin()
 		local y = 64
 		for i=scr.ini,scr.lim do
 
-			if i == scr.sel then draw.offsetgradrect(3,y-9,944,31,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
+			if i == scr.sel then draw.offsetgradrect(3,y-9,944,31,color.shine:a(75),color.shine:a(135),0x0,0x0,21)
+			
+--[[
+				if not icon0 then
+					icon0 = image.load(screenshots..tb_cop[scr.sel].id)
+					if icon0 then
+						icon0:resize(260,150)
+						icon0:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR)
+					end
+				end
+]]
+			end
 
 			idx = tai.find(tb_cop[i].section,tb_cop[i].path)
 			if idx != nil then
@@ -318,6 +338,13 @@ function autoplugin()
 			--Bar Scroll
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scr.maxim-1))*(scr.sel-1), 8, pos_height, color.new(0,255,0))
 		--end
+
+--[[
+		--Blit icon0
+		if icon0 then
+			icon0:blit(650, 45)
+		end
+]]
 
 		if tb_cop[scr.sel].desc then
 			if screen.textwidth(tb_cop[scr.sel].desc) > 925 then
@@ -353,6 +380,7 @@ function autoplugin()
 
 		--------------------------	Controls	--------------------------
 
+		--if buttons.select then error("FTP") end
 		if buttons.cancel then
 			--Clean
 			for i=1,scr.maxim do
@@ -374,10 +402,14 @@ function autoplugin()
 			if buttons.left or buttons.right then xscr1 = 10 end
 
 			if buttons.up or buttons.analogly < -60 then
-				if scr:up() then xscr1 = 10 end
+				if scr:up() then xscr1 = 10
+					icon0 = nil
+				end
 			end
 			if buttons.down or buttons.analogly > 60 then
-				if scr:down() then xscr1 = 10 end
+				if scr:down() then xscr1 = 10
+					icon0 = nil
+				end
 			end
 
 			--Install selected plugins
@@ -438,20 +470,28 @@ function autoplugin()
 					end
 				end
 
-				local readme = nil
-				if tb_cop[scr.sel].link then readme = http.get(tb_cop[scr.sel].link) end
-				os.dialog(readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
-				onNetGetFile = onNetGetFileOld
-				
+				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
+					tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
+					if not tb_cop[scr.sel].readme then tb_cop[scr.sel].status = false else tb_cop[scr.sel].status = true end
+					--os.message("get readme")
+				end
+
+				os.dialog(tb_cop[scr.sel].readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
+
 				if img then
 					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR)
 					img:scale(85)
 					img:center()
 					img:blit(480,272)
 					screen.flip()
 					buttons.waitforkey()
+					os.delay(150)
 				end
+
 				img,vbuff = nil,nil
+				onNetGetFile = onNetGetFileOld
+				os.delay(75)
 
 			end
 
