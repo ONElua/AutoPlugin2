@@ -41,6 +41,8 @@ This tool allows you to install/uninstall the following plugins with one click
 | [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
 | [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
 | [ds4touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
+| [ds34vita](https://github.com/MERLev/ds34vita)  | [MERLev](https://github.com/MERLev) |
+| [reVita](https://github.com/MERLev/reVita)  | [MERLev](https://github.com/MERLev) |
 | [TrophyShot](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
 | [VolLightbarCtrlWithDS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [CallmeBK](https://github.com/CallmeBK/) |
 | [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
@@ -63,6 +65,12 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 1.17 ###
+- Added support to show pics of selected plugin function (will be uploaded eventually)
+- Update DoubleTap2Sleep by Joel v1.1
+- Added reVita plugin for MERLEV v1.07
+- Added ds34vita plugin for MERLEV v1.0.1
 
 ### Changelog 1.16 ###
 - Added new option at Extras for Autoboot plugin
@@ -162,7 +170,6 @@ Size must be less than 20MB
 	*([gdljjrod](https://twitter.com/gdljjrod)).*<br>
 	*RG<br>
 
-- Special thanks to ([Varon9](https://twitter.com/silent_r41d3r)) for the plugins images
 - HAM for new resources
 - TheFloW
 - yifanlu

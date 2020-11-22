@@ -1,3 +1,9 @@
+# v1.17
+++ Added support to show pics of selected plugin function (will be uploaded eventually)
+++ Update DoubleTap2Sleep by Joel v1.1
+++ Added reVita plugin for MERLEV v1.07
+++ Added ds34vita plugin for MERLEV v1.0.1
+
 # v1.16
 ++ Added new option at Extras for Autoboot plugin
 ++ Added support to show pics of selected plugin function (will be uploaded eventually)
