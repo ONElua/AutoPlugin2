@@ -14,6 +14,8 @@ plugins_manager = {}
 --path "pspemu/seplugins/game.txt" plugins_manager
 function read_configs_all()
 
+	plugins_manager = {}
+
 	for i=1,#PMounts do
 		table.insert(plugins_manager, { {}, {}, {}, mount = PMounts[i] })
 	end
