@@ -166,7 +166,6 @@ if buttons.assign()==0 then
 end
 
 PMounts = {}
-plugins_manager = {}
 function check_mounts ()
 	local partitions = { "ux0:", "ur0:", "uma0:", "imc0:", "xmc0:" }
 
@@ -176,7 +175,6 @@ function check_mounts ()
 			if device_info then
 				files.mkdir(partitions[i].."pspemu/seplugins/")
 				table.insert(PMounts,partitions[i])
-				table.insert(plugins_manager, { {}, {}, {}, mount = partitions[i] })
 			end
 		end
 	end
