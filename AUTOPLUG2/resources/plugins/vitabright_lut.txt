@@ -1,9 +1,9 @@
-# This is a modified gamma table
+# This is a modified gamma table, more information here: https://github.com/devnoname120/vitabright/wiki/What-is-the-format-of-the-OLED-gamma-table
+E1 E1 FF CF D7 CA C1 C9 BA E1 E3 DE D5 CF D3 FA ED E6 2F 00 2F
 CC CC EA D0 D8 CB C3 CB BB E2 E4 DF D6 CE D3 FA ED E6 2F 00 2F
 BF BF DA D4 DB CE C6 CD BF E3 E3 E1 D7 CA D3 FA ED E6 2F 00 2F
 9F 9F BE CF D7 C9 C2 CB BB E1 E3 DE D6 D0 D3 FA ED E6 2F 00 2F
 99 99 B6 D1 D9 CC C3 CB BC E2 E4 DF D6 CC D3 FA ED E6 2F 00 2F
-8F 8F AA D4 DB CE C6 CD BF E3 E3 E1 D7 CA D3 FA ED E6 2F 00 2F
 # Games that set the CPU freq to 444 Mhz will only make the below values usable
 8D 8D A7 D5 DB CF C6 CE C0 E4 E4 E1 D7 C8 D3 FA ED E6 2F 00 2F
 8B 8B A5 D5 DB CF C7 CE C0 E3 E3 E1 D8 C7 D3 FA ED E6 2F 00 2F
