@@ -95,6 +95,48 @@ function plugins_installation(tb,sel)
 		elseif tb[sel].path == "pspemu-colour-crunch.skprx" then
 			__file = "lcd-colour-crunch.vpk"
 			game.install("resources/plugins/lcd-colour-crunch.vpk",false)
+		elseif tb[sel].path == "vitabright.skprx" then
+			files.delete("tmp")
+			if back2 then back2:blit(0,0) end
+				message_wait()
+			os.delay(250)
+			
+			local onNetGetFileOld = onNetGetFile
+			onNetGetFile = nil
+			http.download("https://github.com/devnoname120/vitabright-lut-editor/releases/latest/","tmp")
+			onNetGetFile = onNetGetFileOld
+			if files.exists("tmp") then
+				local objh = html.parsefile("tmp")
+				if objh then
+
+					local links = objh:findall(html.TAG_A)
+					if links then
+						--os.message("Links "..#links)
+						for i=1,#links do
+							if links[i].href then
+								if links[i].href:find(".vpk",1,true) then
+									os.message(links[i].href)
+									onNetGetFile = onNetGetFileOld
+									__file = "VitabrightLutEditor.vpk"
+									http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk")
+									if files.exists("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk") then
+										game.install("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk",false)
+										break
+									end
+								end
+							end
+						end
+					else
+						os.message(LANGUAGE["LANG_ONLINE_FAIL_CONEXION"])
+					end
+				else
+					os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
+				end
+			else
+				os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
+			end
+			
+			
 		elseif tb[sel].path == "VitaGrafix.suprx" then
 			files.delete("tmp")
 			if back2 then back2:blit(0,0) end
