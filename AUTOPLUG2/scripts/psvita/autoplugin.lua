@@ -115,7 +115,7 @@ function plugins_installation(tb,sel)
 						for i=1,#links do
 							if links[i].href then
 								if links[i].href:find(".vpk",1,true) then
-									os.message(links[i].href)
+									--os.message(links[i].href)
 									onNetGetFile = onNetGetFileOld
 									__file = "VitabrightLutEditor.vpk"
 									http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk")
