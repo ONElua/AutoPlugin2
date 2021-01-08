@@ -109,11 +109,7 @@ function install()
 	os.delay(2000)
 
 	configure()
-
-	os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-	os.delay(150)
-	buttons.homepopup(1)
-	power.restart()
+	exit_bye_bye()
 
 end
 
@@ -253,11 +249,8 @@ function save_storage_config(devices)
 	if back2 then back2:blit(0, 0) end
 	os.message(LANGUAGE["SD2VITA_UPDATED_CONFIG"])
 	os.delay(2000)
+	exit_bye_bye()
 
-	os.message(LANGUAGE["STRING_PSVITA_RESTART"])
-	os.delay(150)
-	buttons.homepopup(1)
-	power.restart()
 end
 
 function read_storage_config()

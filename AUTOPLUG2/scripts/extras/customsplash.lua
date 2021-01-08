@@ -170,11 +170,7 @@ function customimgsplash()
 					files.copy("resources/plugins/custom_boot_splash.skprx",path_tai)
 					if img2splashbin(custom_boot[scroll.sel].img,true) == 1 then
 						if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-							if back then back:blit(0,0) end
-								message_wait(LANGUAGE["STRING_PSVITA_RESTART"])
-							os.delay(1500)
-							buttons.homepopup(1)
-							power.restart()
+							exit_bye_bye()
 						else
 							custom_boot[scroll.sel].img = image.load(custom_boot[scroll.sel].path)
 							if custom_boot[scroll.sel].img then
@@ -201,11 +197,7 @@ function customimgsplash()
 						tmpimg:reset()
 						if img2splashbin(tmpimg,true) == 1 then
 							if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-								if back then back:blit(0,0) end
-									message_wait(LANGUAGE["STRING_PSVITA_RESTART"])
-								os.delay(1500)
-								buttons.homepopup(1)
-								power.restart()
+								exit_bye_bye()
 							end
 						else
 							os.message(LANGUAGE["INSTALLP_DESC_BOOTSPLASH_FAIL"])

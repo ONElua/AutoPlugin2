@@ -90,14 +90,8 @@ function menu_extras()
 			fp:close()
 
 			if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-				if back then back:blit(0,0) end
-					message_wait(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(1500)
-				buttons.homepopup(1)
-				power.restart()
+				exit_bye_bye()
 			end
-
-		end
 	end
 
 	--local translate_callback = function ()
@@ -119,11 +113,7 @@ function menu_extras()
 			os.delay(1500)
 
 			if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-				if back then back:blit(0,0) end
-					message_wait(LANGUAGE["STRING_PSVITA_RESTART"])
-				os.delay(1500)
-				buttons.homepopup(1)
-				power.restart()
+				exit_bye_bye()
 			end
 
 		end
