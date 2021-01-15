@@ -205,7 +205,6 @@ function plugins_installation(tb,sel)
 		--Copy Especial Config for the plugin
 		if tb[sel].config then
 			if tb[sel].config == "custom_warning.txt" then
-					
 				if not files.exists("ur0:tai/"..tb[sel].config) then
 					local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
 					if not text or (string.len(text)<=0) then text = "" end--os.nick() end
@@ -215,6 +214,7 @@ function plugins_installation(tb,sel)
 						fp:write(string.char(0xFF)..string.char(0xFE))
 						fp:write(os.toucs2(text))
 						fp:close()
+						files.delete("ux0:tai/custom_warning.txt")
 					end
 				end
 			else

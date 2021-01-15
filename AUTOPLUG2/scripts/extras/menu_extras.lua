@@ -78,7 +78,6 @@ function menu_extras()
 	local customwarning_callback = function ()
 
 		local pathCW = "ur0:tai/"
-		if files.exists("ux0:tai/custom_warning.txt") then pathCW = "ux0:tai/" end
 
 		local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
 		if not text then return end
@@ -88,7 +87,7 @@ function menu_extras()
 			fp:write(string.char(0xFF)..string.char(0xFE))
 			fp:write(os.toucs2(text))
 			fp:close()
-
+			files.delete("ux0:tai/custom_warning.txt")
 			if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
 				exit_bye_bye()
 			end
