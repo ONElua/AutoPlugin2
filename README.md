@@ -66,6 +66,10 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.19 ###
+- [Fix] Only some inner corrections
+- Support for http.download (without ITLs enso)
+
 ### Changelog 1.18 ###
 - Update VitaBright v1.1 and vitabright-lut-editor-1.1.vpk
 - [Fix] Plugins duplicates in Plugins Manager (PSP)

@@ -1,3 +1,7 @@
+# v1.19
+++ Only some inner corrections.
+++ Support for http.download (without ITLs enso)
+
 # v1.18
 ++ Update VitaBright v1.1 and vitabright-lut-editor-1.1.vpk
 ++ [Fix] Plugins duplicates in Plugins Manager (PSP)
