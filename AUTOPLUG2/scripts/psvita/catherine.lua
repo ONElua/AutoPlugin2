@@ -22,6 +22,8 @@ function Catherine_HD()
 	local scroll,selector,xscroll = newScroll(patchs,#patchs),1,10
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
@@ -115,7 +117,7 @@ function Catherine_HD()
 
 				local img = image.load(screenshots..CATHERINE_ID)
 				if not img then
-					if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, CATHERINE_ID), screenshots..CATHERINE_ID) then
+					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, CATHERINE_ID), screenshots..CATHERINE_ID).success then
 						img = image.load(screenshots..CATHERINE_ID)
 					end
 				end
@@ -146,7 +148,7 @@ function Patch_Catherine_install(game,res)
 	files.copy(path_plugins.."catherineHD/"..res.path, path_tai)
 
 	tai.put(game.id, path_tai..res.path)
-	ReloadConfig = true
+	ReloadConfig,change = true,true
 
 	if back2 then back2:blit(0,0) end
 		message_wait(LANGUAGE["INSTALLING_CATHERINE_HD_PATCH"].."\n\n"..res.res)

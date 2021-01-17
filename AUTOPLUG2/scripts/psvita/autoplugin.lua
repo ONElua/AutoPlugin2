@@ -162,7 +162,7 @@ function plugins_installation(tb,sel)
 									onNetGetFile = onNetGetFileOld
 									__file = "VitaGrafixConfigurator.vpk"
 									http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk")
-									http.getfile("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
+									http.download("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
 									if files.exists("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk") then
 										game.install("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk",false)
 										break
@@ -506,7 +506,7 @@ function autoplugin()
 					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
 					img = image.load(screenshots..tb_cop[scr.sel].id)
 					if not img then
-						if http.getfile(SCREENSHOT, screenshots..tb_cop[scr.sel].id) then
+						if http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id).success then
 							img = image.load(screenshots..tb_cop[scr.sel].id)
 						end
 					end

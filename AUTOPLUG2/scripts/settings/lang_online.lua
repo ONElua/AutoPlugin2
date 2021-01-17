@@ -29,6 +29,10 @@ end
 
 function lang_online()
 
+	files.delete("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
+
 	if back then back:blit(0,0) end
 		message_wait()
 	os.delay(500)
@@ -36,7 +40,9 @@ function lang_online()
 	local tmpss = {}
 
 	__file = "Langdatabase.lua"
-	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
+	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+
+	if files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
@@ -53,7 +59,7 @@ function lang_online()
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
 						--if os.message("bajar si o no ?\n"..Online_Langs[j].id,1) == 1 then
 						__file = Online_Langs[j].id
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/")) then
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/").success then
 							if back2 then back2:blit(0,0) end
 								message_wait(LANGUAGE["STRING_INSTALLED"].."\n\n"..Online_Langs[j].id.."\n")
 							os.delay(1500)
@@ -70,7 +76,6 @@ function lang_online()
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"])
 		return
-
 	end--Online_Langs > 0
 
 	local tmps = {}
@@ -85,7 +90,7 @@ function lang_online()
 		if not __find then
 			--if os.message("BBajar si o no ?\n"..Online_Langs[i].id,1) == 1 then
 			__file = Online_Langs[i].id
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/")) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/").success then
 				if back2 then back2:blit(0,0) end
 					message_wait(LANGUAGE["STRING_INSTALLED"].."\n\n"..Online_Langs[i].id)
 				os.delay(1500)

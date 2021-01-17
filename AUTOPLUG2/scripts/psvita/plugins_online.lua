@@ -57,21 +57,27 @@ end
 
 function plugins_online2()
 
+	files.delete("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
+
 	if back then back:blit(0,0) end
 		message_wait()
 	os.delay(500)
 
+	buttons.homepopup(0)
+
 	local onNetGetFileOld = onNetGetFile
 	onNetGetFile = nil
 	__file = "Langdatabase.lua"
-	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
+	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+
+	if files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 		return
 	end
-
-	buttons.homepopup(0)
 
 	local tmpss = {}
 	local __flag = false
@@ -84,8 +90,7 @@ function plugins_online2()
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
 						--if os.message("bajar si o no ?\n"..Online_Langs[j].id,1) == 1 then
 						__file = Online_Langs[j].id
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/")) then
-
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/").success then
 							Langs[i] = Online_Langs[j]
 							table.insert(tmpss,Langs[i])
 							__flag = true
@@ -98,7 +103,6 @@ function plugins_online2()
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"])
 		return
-
 	end--Online_Langs > 0
 
 	local tmps = {}
@@ -113,7 +117,7 @@ function plugins_online2()
 		if not __find then
 			--if os.message("Bajar si o no ?\n"..Online_Langs[i].id,1) == 1 then
 			__file = Online_Langs[i].id
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/")) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/").success then
 				table.insert(tmps, { line = i })
 				__flag = true
 			end
@@ -141,7 +145,9 @@ function plugins_online2()
 	onNetGetFile = onNetGetFileOld
 
 	__file = "Database Plugins"
-	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins.lua") then
+	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
+
+	if files.exists("ux0:data/AUTOPLUGIN2/plugins/plugins.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
@@ -170,8 +176,8 @@ function plugins_online2()
 						elseif Online_Plugins[j].path:lower() == "vitacheat.skprx" then vitacheat_path = "vitacheat365" end
 
 						if vitacheat_path != nil then
-							if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s/vitacheat.suprx", APP_REPO, APP_PROJECT, APP_FOLDER, vitacheat_path),
-								path_plugins..vitacheat_path.."/")) then
+							if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s/vitacheat.suprx", APP_REPO, APP_PROJECT, APP_FOLDER, vitacheat_path),
+								path_plugins..vitacheat_path.."/").success then
 
 								if back2 then back2:blit(0,0) end
 									message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..vitacheat_path)
@@ -182,16 +188,16 @@ function plugins_online2()
 						
 						--if os.message("Update bajar si o no ?\n"..Online_Plugins[j].name,1) == 1 then
 						--Lo mejor es poner ruta a project/resources/plugins
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path), path_plugins)) then
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path), path_plugins).success then
 
 							cont_global:set(tonumber(cont_global:get())-1)
 
 							if Online_Plugins[j].path2 then
-								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path2), path_plugins)
+								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path2), path_plugins)
 							end
 
 							if Online_Plugins[j].config and not files.exists("ur0:tai/"..Online_Plugins[j].config) then
-								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].config), path_plugins)
+								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].config), path_plugins)
 							end
 
 							if back2 then back2:blit(0,0) end
@@ -231,15 +237,15 @@ function plugins_online2()
 
 			__file = Online_Plugins[i].name
 
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path), path_plugins)) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path), path_plugins).success then
 
 				cont_global:set(tonumber(cont_global:get())-1)
 
 				if Online_Plugins[i].path2 then
-					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path2), path_plugins)
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path2), path_plugins)
 				end
 				if Online_Plugins[i].config and not files.exists("ur0:tai/"..Online_Plugins[i].config) then
-					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].config), path_plugins)
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].config), path_plugins)
 				end
 
 				if back2 then back2:blit(0,0) end

@@ -41,6 +41,8 @@ function P4Golden_HD()
 	local scroll,selector,xscroll = newScroll(patchs,#patchs),1,10
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
@@ -147,7 +149,7 @@ function P4Golden_HD()
 
 				local img = image.load(screenshots..P4GOLDEN_ID)
 				if not img then
-					if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, P4GOLDEN_ID), screenshots..P4GOLDEN_ID) then
+					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, P4GOLDEN_ID), screenshots..P4GOLDEN_ID).success then
 						img = image.load(screenshots..P4GOLDEN_ID)
 					end
 				end
@@ -181,7 +183,7 @@ function Patch_P4G_install(game,res)
 	tai.del(game.id, "p4goldenhd_1280x720.suprx")
 
 	tai.put(game.id, path_tai..res.path)
-	ReloadConfig = true
+	ReloadConfig,change = true,true
 
 	if back2 then back2:blit(0,0) end
 		message_wait(LANGUAGE["INSTALLING_P4G_HD_PATCH"].."\n\n"..res.res)

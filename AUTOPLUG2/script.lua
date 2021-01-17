@@ -73,7 +73,7 @@ if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 			message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 		os.delay(500)
 		__file = "font.pgf"
-			http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
+			http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/font/font.pgf", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/font/font.pgf")
 		__file = ""
 	end
 	if not fnt then

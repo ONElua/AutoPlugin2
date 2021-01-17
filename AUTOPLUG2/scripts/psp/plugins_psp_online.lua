@@ -87,21 +87,28 @@ end
 
 function plugins_online3()
 
+	files.delete("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
+
 	if back then back:blit(0,0) end
 		message_wait()
 	os.delay(500)
 
+	buttons.homepopup(0)
+
 	local onNetGetFileOld = onNetGetFile
 	onNetGetFile = nil
+
 	__file = "Langdatabase.lua"
-	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
+	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+
+	if files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 		return
 	end
-
-	buttons.homepopup(0)
 
 	local tmpss = {}
 	local __flag = false
@@ -113,8 +120,7 @@ function plugins_online3()
 				if string.upper(Langs[i].id) == string.upper(Online_Langs[j].id) then
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
 						__file = Online_Langs[j].id
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/")) then
-
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/").success then
 							Langs[i] = Online_Langs[j]
 							table.insert(tmpss,Langs[i])
 							__flag = true
@@ -127,7 +133,6 @@ function plugins_online3()
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"])
 		return
-
 	end--Online_Langs > 0
 
 	local tmps = {}
@@ -141,7 +146,7 @@ function plugins_online3()
 		end
 		if not __find then
 			__file = Online_Langs[i].id
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/")) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/").success then
 				table.insert(tmps, { line = i })
 				__flag = true
 			end
@@ -169,7 +174,9 @@ function plugins_online3()
 	onNetGetFile = onNetGetFileOld
 
 	__file = "Database Plugins"
-	if http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins_psp.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua") then
+	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins_psp.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
+
+	if files.exists("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
@@ -193,10 +200,10 @@ function plugins_online3()
 
 						__file = Online_pluginsP[j].name
 
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].path), "resources/plugins_psp/")) then
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].path), "resources/plugins_psp/").success then
 
 							if Online_pluginsP[j].config then
-								http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].config), "resources/plugins_psp/")
+								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].config), "resources/plugins_psp/")
 							end
 
 							if back2 then back2:blit(0,0) end
@@ -236,7 +243,7 @@ function plugins_online3()
 
 						__file = Online_psp_plugins[j].name
 
-						if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[j].path), "resources/plugins_psp/controls_psp/")) then
+						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[j].path), "resources/plugins_psp/controls_psp/").success then
 
 							if back2 then back2:blit(0,0) end
 								message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[j].name)
@@ -280,10 +287,10 @@ function plugins_online3()
 
 			__file = Online_pluginsP[i].name
 
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].name), "resources/plugins_psp/")) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].name), "resources/plugins_psp/").success then
 
 				if Online_pluginsP[i].config then
-					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].config), "resources/plugins_psp/")
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].config), "resources/plugins_psp/")
 				end
 
 				if back2 then back2:blit(0,0) end
@@ -315,10 +322,10 @@ function plugins_online3()
 
 			__file = Online_psp_plugins[i].name
 
-			if (http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].path), "resources/plugins_psp/controls_psp/")) then
+			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].path), "resources/plugins_psp/controls_psp/").success then
 
 				if Online_psp_plugins[i].config then
-					http.getfile(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].config), "resources/plugins_psp/controls_psp/")
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].config), "resources/plugins_psp/controls_psp/")
 				end
 
 				if back2 then back2:blit(0,0) end

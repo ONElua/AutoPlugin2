@@ -91,6 +91,7 @@ function menu_extras()
 			if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
 				exit_bye_bye()
 			end
+		end
 	end
 
 	--local translate_callback = function ()
