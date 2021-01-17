@@ -310,6 +310,9 @@ function autoplugin()
 	update_translations(plugins, tb_cop)
 
 	for k = #tb_cop,1,-1 do
+		if tb_cop[k].path == "adrenaline_kernel.skprx" and not files.exists("ux0:app/PSPEMUCFW") then
+			table.remove(tb_cop,k)
+		end
 		if tb_cop[k].REMOVE then
 			table.remove(tb_cop,k)
 		end
@@ -510,10 +513,16 @@ function autoplugin()
 							img = image.load(screenshots..tb_cop[scr.sel].id)
 						end
 					end
+					if img then img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR) end
 				end
 
 				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
-					tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
+					http.download(tb_cop[scr.sel].link,"ux0:data/AUTOPLUGIN2/tmp.txt")
+					if files.exists("ux0:data/AUTOPLUGIN2/readmes/tmp.txt") then
+						tb_cop[scr.sel].readme = files.read("ux0:data/AUTOPLUGIN2/tmp.txt")
+					end
+					files.delete("ux0:data/AUTOPLUGIN2/tmp.txt")
+					--tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
 					if not tb_cop[scr.sel].readme then tb_cop[scr.sel].status = false else tb_cop[scr.sel].status = true end
 					--os.message("get readme")
 				end
@@ -522,7 +531,6 @@ function autoplugin()
 
 				if img then
 					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
-					img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR)
 					img:scale(85)
 					img:center()
 					img:blit(480,272)
