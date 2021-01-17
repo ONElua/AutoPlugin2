@@ -13,7 +13,6 @@ function screen.flip()
 
 		local info = UPDATE_PORT:pop()
 		local version = info[1]
-		--local version = UPDATE_PORT:pop()
 		local major = (version >> 0x18) & 0xFF;
 		local minor = (version >> 0x10) & 0xFF;
 		update = image.load("git/updater/update.png")
@@ -22,20 +21,18 @@ function screen.flip()
 		elseif back then back:blit(0,0) end
 		screen.flip()
 
-		if os.dialog(string.format("\n    %s v %s", APP_PROJECT, string.format("%X.%02X ",major, minor)..(LANGUAGE["UPDATER_AVAILABLE"])).."\n\n"..info[2], LANGUAGE["UPDATER_QUESTION_UPDATE"], __DIALOG_MODE_OK_CANCEL) == true then
+		if os.dialog(info[2].."\nDo you want to update the application?", string.format("New Update %s %s available.", APP_PROJECT, string.format("%X.%02X",major, minor)), __DIALOG_MODE_OK_CANCEL) == true then
 			buttons.homepopup(0)
 
 			if update then update:blit(0,0)
 			elseif back then back:blit(0,0) end
 
-			local url = string.format("https://github.com/%s/%s/releases/download/%s/%s", APP_REPO, APP_PROJECT, string.format("%X.%02X",major, minor), APP_PROJECT..".vpk")
-			local path2vpk = "ux0:data/"..APP_PROJECT..".vpk"
-
+			local url = "http://devdavisnunez.x10.mx/wikihb/download/?id=152"
+			local path = "ux0:data/"..APP_PROJECT..".vpk"
 			local onAppInstallOld = onAppInstall
 			function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 				return 10 -- Ok code
 			end
-
 			local onNetGetFileOld = onNetGetFile
 			function onNetGetFile(size,written,speed)
 
