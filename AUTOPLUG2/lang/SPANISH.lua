@@ -37,7 +37,7 @@ SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =      "Comprueba si hay alguna
 SPANISH["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Parche para Persona 4 Golden HD"
 SPANISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =            "Este parche cambia el Render 3D y la resolución del Framebuffer de Persona 4 Golden en PS Vita y PSTV a 1920x1080 o 1280x720 (Requiere el Plugin Sharpscale)"
 SPANISH["P4G_1920x1080_DESC"] =                         "1920x1080 puede ser mostrado en HDMI, o los usuarios de PS Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla. (Se requiere Overclocking para un buen rendimiento. Los Framerate fluctuan entre 20-30 FPS, con 25-30 FPS en general excepto en las áreas gráficamente más exigentes)"
-SPANISH["P4G_1280x720_DESC"] =                          "1280x720 puede ser mostrado en HDMI o USB (udcd Xerpi), o o los usuarios de PS Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla. (Se requiere Overclocking para un buen rendimiento. Corre a 30 FPS)"
+SPANISH["P4G_1280x720_DESC"] =                          "1280x720 puede ser mostrado en HDMI o USB (udcd Xerpi), o los usuarios de PS Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla. (Se requiere Overclocking para un buen rendimiento. Corre a 30 FPS)"
 SPANISH["INSTALL_P4G_HD_TITLE"] =                       "Persona 4 Golden HD by Cuevavirus"
 SPANISH["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden no se ha encontrado"
 SPANISH["INSTALL_P4G_HD"] =                             "Instalar Parche HD"
@@ -45,13 +45,13 @@ SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Cambiar GameID"
 SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de P4 Golden"
 
 --Catherine HD
-SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Catherine HD PATCH"
-SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =      "This patch changes the 3D render and framebuffer resolutions of Catherine Full Body on the Vita and PSTV to 1280x720. 1280x720 can be output to HDMI or USB (udcd-uvc), or Vita users can enjoy a supersampled image directly on the screen (Require Sharpscale plugin)"
+SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Parche para Catherine HD"
+SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =      "Este parche cambia el render 3D y la resolución del framebuffer de Catherine Full Body en PS Vita y PSTV a 1280x720. Esta resolución puede salir a través de HDMI o USB (usando udcd-uvc), y los usuarios de Vita pueden disfrutar de la imagen supermuestreada (suavizada) directamente en la pantalla (requiere el plugin Sharpscale)"
 SPANISH["INSTALL_CATHERINE_HD_TITLE"] =                 "Catherine Full Body HD by Cuevavirus"
-SPANISH["NO_CHATERINE_GAMES"] =                         "Catherine Full Body not found"
-SPANISH["INSTALLING_CATHERINE_HD_PATCH"] =              "Installing Catherine Full Body HD"
+SPANISH["NO_CHATERINE_GAMES"] =                         "Catherine Full Body no se ha encontrado"
+SPANISH["INSTALLING_CATHERINE_HD_PATCH"] =              "Instalando Catherine Full Body HD"
 
-SPANISH["INSTRUCTIONS_HD_PATCH"] =                      " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+SPANISH["INSTRUCTIONS_HD_PATCH"] =                      " 1. Instalar la última version de Sharpscale \n\n 2. Activa 'Desbloquear tamaño de framebuffer' ('Unlock framebuffer size') en la app de configuraciones de Sharpscale \n\n 3. Se requiere Overclocking para un buen rendimiento (recomendamos LOLIcon o lolita444/500)"
 
 --Options PSP
 SPANISH["MENU_PSP_TITLE"] =                             "Plugins para PSP (Adrenaline)"
@@ -85,7 +85,7 @@ SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoP
 SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "¡¡¡Cuidado!!! Esta opción reseteará el archivo ur0:tai/config.txt"
 SPANISH["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =          "\n                                 ¡¡¡Cuidado!!!\n\n¡¡¡Todos los Plugins instalados serán DESINSTALADOS!!!\n\n¿Estás seguro que deseas resetear el archivo ur0:tai/config.txt?"
 SPANISH["MENU_EXTRAS_QUICKMENU_DESC"] =                 "Opción para configurar el Botón de Encendido, tiempo de apertura más rápido para Quick Menu(menú que sale al mantener presionado el botón PS) y estilo personalizado del fondo del menú"
-SPANISH["MENU_EXTRAS_AUTOBOOT_DESC"] =                  "Allows you to choose an app/game to launch when booting"
+SPANISH["MENU_EXTRAS_AUTOBOOT_DESC"] =                  "Permite elegir una App/Juego para abrir al momento de inicio"
 
 --Options Settings
 SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Disponibles"
@@ -115,7 +115,7 @@ SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plu
 
 SPANISH["INSTALLP_VITABRIGHT_360"] =                    "Vitabright SOLO funciona en 3.60/3.68 H-Encore"
 SPANISH["INSTALLP_CWARNING_360_365"] =                  "Custom Warning no funciona en 3.67/3.68+"
-SPANISH["INSTALLP_REVITA_360_365"] =                    "reVita only work on 3.60/3.65"
+SPANISH["INSTALLP_REVITA_360_365"] =                    "reVita solo funciona en 3.60/3.65"
 SPANISH["INSTALLP_LCDCOLOURSPACECHANGE"] =              "LCD Colour Space Changer solo funciona en PS Vita 2000 (Slim)"
 SPANISH["INSTALLP_QUESTION_SHELLSECBAT"] =              "\n               ¡Se detectó el Plugin shellsecbat!\n\n¿Instalar shellbat en su lugar y desinstalar shellsecbat?"
 SPANISH["INSTALLP_QUESTION_SHELLBAT"] =                 "\n               ¡Se detectó el Plugin Shellbat!\n\n¿Instalar shellsecbat en su lugar y desinstalar shellbat?"
@@ -123,7 +123,7 @@ SPANISH["INSTALLP_WARNING_REFOOD"] =                    "Para que el Plugin ReFo
 SPANISH["INSTALLP_OSK_TITLE"] =                         "Texto para Custom Warning"
 SPANISH["INSTALLP_OSK_TEXT"] =                          "Escribe tu TEXTO aquí"
 
-SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo trabaja en Fat/Slim"
+SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo funciona en Fat/Slim"
 
 --Uninstall Plugins
 SPANISH["UNINSTALLP_TITLE"] =                           "Administrador de Plugins"
@@ -331,9 +331,9 @@ SPANISH["INSTALLP_DESC_REPATCH271"] =                   "Versión anterior de re
 SPANISH["INSTALLP_DESC_LOLICON"] =                      "Permite verdadero overclocking (500mHz) a través de un Plugin que corre en el Kernel. Usar con cuidado, ya que puede dañar tu PS Vita debido a las consecuencias de usar overclocking (SELECT + ARRIBA activa el menú. SELECT + ABAJO cierra el menú)"
 SPANISH["INSTALLP_DESC_DS3VITA"] =                      "Controla tu PS Vita con un DualShock 3"
 SPANISH["INSTALLP_DESC_DS4VITA"] =                      "Controla tu PS Vita con un DualShock 4"
-SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
-SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
-SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Add Gyro support ?"
+SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combina las funcionalidades de ds4vita y ds3vita de xerpi. Permite usar hasta dos controles al mismo tiempo"
+SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita es un plugin para PS Vita/PSTV, que permite remapear botones y activar distintas acciones. Es la continuación de remaPSV de Rinnegatamante, reescrito como un Kernel Plugin. (Para abrir el menú de configs, presiona START + CUADRADO, personalizable en Settings -> Hotkeys.)"
+SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscópio al plugin reVita"
 SPANISH["INSTALLP_DESC_UDCDUVC"] =                      "Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora (Version Oficial)"
 SPANISH["INSTALLP_DESC_UDCDUVCO"] =                     "(Version para Vitas OLED FAT) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el plugin para LCD y OLED"
 SPANISH["INSTALLP_DESC_UDCDUVCL"] =                     "(Version para Vitas LED SLIM) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el plugin para LCD y OLED"
@@ -377,7 +377,7 @@ SPANISH["INSTALLP_DESC_CAPUNLOCK"] =                    "Unlocks some non-game c
 SPANISH["INSTALLP_DESC_DS4TOUCH"] =                     "Añade soporte para el touchpad del DualShock4 (como ds4vita) a las PSTV y PS Vita con el Plugin MiniVitaTV"
 SPANISH["INSTALLP_DESC_LCDSPACE"] =                     "Cambia el Espacio de Color de la pantalla LCD (Los colores que posee la pantalla, haciendo una especie de emulación de los colores de una Pantalla OLED) con un click y fuerza el Espacio de Cie en aplicaciones de PSPEmu (como juegos de PSP o PS One) (Solo en PS Vita 2000)."
 SPANISH["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =              "Control del Volumen de PS Vita usando un DS4 (DualShock4). La barra de luz de DS4 indica el nivel de batería del DS4. Simultaneamente SELECT + L1 para bajar el volumen, SELECT + R1 para subir el volumen, SELECT + R1 + L1 para mutear"
-SPANISH["INSTALLP_DESC_FDFIX"] =                        "This plugin fixes an issue in PS Vita homebrews where file descriptors are invalidated after suspend and resume."
+SPANISH["INSTALLP_DESC_FDFIX"] =                        "Este Plugin arregla un problema en los Homebrews de PS Vita en donde los descriptores de archivos eran invalidados despues de suspender y resumir la consola"
 
 SPANISH["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =             "Este Plugin puede mostrar una Imagen Personalizada en el arranque de PS Vita/PS TV. Requiere Enso"
 SPANISH["CUSTOMBOOTSPLASH_QUESTION"] =                  "¿Quieres establecer esta imagen como Imagen de Arranque?"
@@ -412,10 +412,10 @@ SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin 
 SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un screenshot cada vez que desbloquees un trofeo"
 SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
 SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
-SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
 
 --ALL
-SPANISH["INSTALLP_DESC_DT2S"] =                         "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
+SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
 SPANISH["INSTALLP_DESC_ITLSENSO"] =                     "Añade TLS v1.2 a los dispositivos con Enso"
 SPANISH["INSTALLP_DESC_KUIO"] =                         "Kuio is un módulo liviano de Kernel para taiHEN que permite a los módulos de usuario acceder a ux0:data para operaciones de I/O básicas"
@@ -446,7 +446,7 @@ SPANISH["INSTALLP_DESC_CPUAFFCHANGER"] =                "Este Plugin cambia la M
 SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x544 a través de HDMI en PSTV"
 SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
 SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
-SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
