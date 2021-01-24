@@ -28,7 +28,7 @@ function screen.flip()
 			elseif back then back:blit(0,0) end
 
 			local url = "http://devdavisnunez.x10.mx/wikihb/download/?id=152"
-			local path = "ux0:data/"..APP_PROJECT..".vpk"
+			local path2vpk = "ux0:data/"..APP_PROJECT..".vpk"
 			local onAppInstallOld = onAppInstall
 			function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 				return 10 -- Ok code
