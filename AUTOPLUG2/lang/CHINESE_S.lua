@@ -66,6 +66,7 @@ CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP
 --Options Extras
 CHINESE_S["MENU_EXTRAS_PKGJ_TITLE"] =                  "PKGj 配置选项"
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "下载并安装 iTLS-Enso vpk"
+CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell vpk"
 CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "下载并安装 batteryFixer vpk"
 CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画面"
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
@@ -80,6 +81,7 @@ CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作
 CHINESE_S["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "当使用 ENSO 系统开机时,设置自定义警告消息替代癫痫警告"
 CHINESE_S["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "允许您设置透明度 (255 = 0% 透明度, 0 = 100% 透明度) 不推荐设置透明度参数小于 30"
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "下载并安装 iTLS-Enso vpk 到您的 Vita (为启用 Enso 的设备添加 TLS v1.2 支持)"
+CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-batteryFixer vpk 到您的 Vita (解决大多数 PSVita 的电池相关问题)"
 CHINESE_S["MENU_EXTRAS_TRANSLATE_DESC"] =              "通过翻译为您的语言来帮助改进 AutoPlugin II!"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "警告!!! 此选项将重置 ur0:tai/config.txt"

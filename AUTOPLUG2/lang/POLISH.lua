@@ -66,6 +66,7 @@ POLISH["MENU_PSP_PLUGINS_DESC"] =                   "Zainstaluj pluginy PSP (Adr
 --Options Extras
 POLISH["MENU_EXTRAS_PKGJ_TITLE"] =                  "Opcje konfiguracji PKGj"
 POLISH["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Pobierz i zainstaluj iTLS-Enso vpk"
+POLISH["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell vpk"
 POLISH["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Pobierz i zainstaluj batteryFixer vpk"
 POLISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Ustaw własny Bootsplash"
 POLISH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Ustaw własną informacje o epilepsji"
@@ -80,6 +81,7 @@ POLISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Umożliwia ustawienie włas
 POLISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Pozwala ustawić własny komunikat o epilepsji, podczas odpalania konsoli z Enso"
 POLISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Pozwala ustawić poziom przezroczystości (255 = 0% przezroczystości, 0 = 100% przezroczystości) wartości poniżej 30 ae nie jest zalecana"
 POLISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Umożliwia pobranie i zainstalowanie iTLS-Enso vpk na twojej Vicie (Dodaj TLS v1.2 do urządzenia z Enso)"
+POLISH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
 POLISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Umożliwia pobranie i zainstalowanie PSP2-batteryFixer vpk na twojej Vicie (Usówa większość problemów z baterią)"
 POLISH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Pomóż ulepszyć Autoplugin II, tłumacząc na swój język!"
 POLISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Uwaga!!! ta opcja pozwala zresetować plik config w ur0:tai/config.txt"

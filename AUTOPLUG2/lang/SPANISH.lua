@@ -66,6 +66,7 @@ SPANISH["MENU_PSP_PLUGINS_DESC"] =                      "Instala Plugins de PSP 
 --Options Extras
 SPANISH["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opciones para Config de PKGj"
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO"] =               "Descargar e instalar el vpk de iTLS-Enso"
+SPANISH["MENU_EXTRAS_INSTALL_VITASHELL"] =              "Descargar e instalar Vitashell"
 SPANISH["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Descargar e instalar el vpk de batteryFixer"
 SPANISH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Establecer una imagen Custom Boot Splash"
 SPANISH["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Establecer un mensaje para Custom Warning Message"
@@ -80,6 +81,7 @@ SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una 
 SPANISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Permite establecer un mensaje de advertencia personalizado en lugar de la advertencia de epilepsia cuando inicia PS Vita. Compatible solo con Enso"
 SPANISH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Permite establecerel Nivel de Transparencia (255 = 0% Transparencia, 0 = 100% Transparencia). No esta recomendado usar valores bajo 30"
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Permite descargar e instalar el vpk de iTLS-Enso en tu PS Vita (Añade TLS v1.2 a los dispositivos con Enso)"
+SPANISH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =         "Permite descargar e instalar Vitashell en tu PS Vita"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permite descargar e instalar el vpk de PSP2-batteryFixer en tu PS Vita (Corrige la mayoría de los problemas relacionados con la batería de PS Vita)"
 SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "¡¡¡Cuidado!!! Esta opción reseteará el archivo ur0:tai/config.txt"
