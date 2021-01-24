@@ -126,6 +126,10 @@ function menu_extras()
 	local itls_callback = function ()
 		download_install("https://github.com/SKGleba/iTLS-Enso/releases/latest/", "iTLS-Enso.vpk")
 	end
+	
+	local vitashell_callback = function ()
+		download_install("https://github.com/TheOfficialFloW/VitaShell/releases/latest/", "VitaShell.vpk")
+	end
 
 	local batteryfixer_callback = function ()
 		download_install("https://github.com/SKGleba/PSP2-batteryFixer/releases/latest/", "batteryFixer.vpk")
@@ -145,6 +149,7 @@ function menu_extras()
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
 	}
 
