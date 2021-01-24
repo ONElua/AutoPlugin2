@@ -1,3 +1,7 @@
+# v1.20
+++ Added option in Extras section: Install Vitashell
+++ Some plugins corrections thanks to Yoti
+
 # v1.19
 ++ Only some inner corrections.
 ++ Support for http.download (without ITLs enso)
