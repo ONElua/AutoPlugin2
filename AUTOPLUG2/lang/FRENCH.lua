@@ -66,7 +66,7 @@ FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Plugins PSP utile a utilis�
 --Options Extras
 FRENCH["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configuration de PKGJ"
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Télécharger et installer iTLS-Enso"
-FRENCH["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell vpk"
+FRENCH["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Télécharger et installer Vitashell"
 FRENCH["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Télécharger et installer batteryFixer"
 FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personnalisée au démarrage"
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
@@ -81,7 +81,7 @@ FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Modifier le démarrage de v
 FRENCH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Vous permet de définir un message personnalisé à la place du message d'avertissement d'épilepsie du démarrage de la console"
 FRENCH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Vous permet de définir le niveau de transparence à utilisé avec le plugin (255 = 0% de transparence, 0 = 100% de transparence). Les valeurs inférieures à 30% ne sont pas recommandées"
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Permet de télécharger et d'installer iTLS-Enso sur votre console, ajoute TLS v1.2 aux consoles compatibles avec Enso (3.60/3.65)"
-FRENCH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
+FRENCH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Téléchargez et installez Vitashell directement sur votre PSVita"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Permet de télécharger et d'installer PSP2-batteryFixer sur votre console (corrige la plupart des problèmes liés aux batterie de la PSVita)"
 FRENCH["MENU_EXTRAS_TRANSLATE_DESC"] =              "Aidez à améliorer AutoPlugin II en le traduisant dans votre langue !"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Attention !!! Cette option va réinitialiser votre ur0:tai/config.txt"
