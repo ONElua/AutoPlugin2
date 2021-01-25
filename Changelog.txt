@@ -1,3 +1,6 @@
+# v1.21
+++ Fixed error when downloading plugins and languages updates
+
 # v1.20
 ++ Added option in Extras section: Install Vitashell
 ++ Some plugins corrections thanks to Yoti
