@@ -321,6 +321,7 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 CHINESE_S["INSTALLP_DESC_NONPDRM"] =                   "绕过任何 PSVita 内容的 DRM 保护机制"
 CHINESE_S["INSTALLP_DESC_NONPDRMU"] =                  "绕过任何 PSVita 内容的 DRM 保护机制 (第三方 MOD)"
 CHINESE_S["INSTALLP_DESC_MINIVITATV"] =                "伪装设备为 PS TV, 允许连接 DS3/DS4 控制器, 与最多4位朋友在 PSVita 上玩本地多人游戏"

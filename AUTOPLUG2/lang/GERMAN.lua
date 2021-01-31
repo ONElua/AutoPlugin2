@@ -321,6 +321,7 @@ GERMAN["TURKISH"] =                                 "Türkisch"
 GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den Speicher automatisch an eine beliebige Partition anbringt (SD2VITA)"
 
 --KERNEL
+GERMAN["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 GERMAN["INSTALLP_DESC_NONPDRM"] =                   "Ermöglicht es, den DRM-Schutz bei allen PS Vita Inhalten zu umgehen"
 GERMAN["INSTALLP_DESC_NONPDRMU"] =                  "Ermöglicht es, den DRM-Schutz bei allen PS Vita Inhalten zu umgehen (Inoffizieller MOD)"
 GERMAN["INSTALLP_DESC_MINIVITATV"] =                "Ermöglicht es, lokale Multiplayer-Spiele auf der PS Vita mit bis zu 4 Freunden zu spielen"

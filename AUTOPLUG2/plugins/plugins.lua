@@ -1,6 +1,7 @@
 plugins = {
 
 --Kernel
+{ name = "Kubridge v.01 by TheOfficialFloW", id = "KUBRIDGE.png", path = "kubridge.skprx",	section = "KERNEL",	version = "0001", desc = LANGUAGE["INSTALLP_DESC_KUBRIDGE"], KEY = "INSTALLP_DESC_KUBRIDGE", },
 { name = "NoNpDrm by TheOfficialFloW v1.2",	id = "NONPDRM.png", path = "nonpdrm.skprx",	section = "KERNEL",	version = "0001", desc = LANGUAGE["INSTALLP_DESC_NONPDRM"], KEY = "INSTALLP_DESC_NONPDRM", link = "https://raw.githubusercontent.com/TheOfficialFloW/NoNpDrm/master/readme.md", },
 { name = "NoNpDrm Unofficial by LMAN v1.4",	id = "NONPDRM.png", path = "nonpdrm_un.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NONPDRMU"], KEY = "INSTALLP_DESC_NONPDRMU", },
 { name = "NoPsmDrm by frangarcj v1.4", id = "NOPSMDRM.png", path = "nopsmdrm.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_NOPSMDRM"], KEY = "INSTALLP_DESC_NOPSMDRM", link = "https://raw.githubusercontent.com/frangarcj/NoPsmDrm/master/README.md", },

@@ -321,6 +321,7 @@ POLISH["TURKISH"] =                                 "TURECKI"
 POLISH["INSTALLP_DESC_SD2VITA"] =                   "Plugin kernela, który automatycznie montuje / przekierowuje dowolne urządzenie pamięci do dowolnych punktów montowania (SD2VITA)"
 
 --KERNEL
+POLISH["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 POLISH["INSTALLP_DESC_NONPDRM"] =                   "Pozwala ominąć zabezpieczenie DRM na dowolnej Vicie"
 POLISH["INSTALLP_DESC_NONPDRMU"] =                  "Pozwala ominąć zabezpieczenie DRM na dowolnej Vicie(Nieoficjalny MOD)"
 POLISH["INSTALLP_DESC_MINIVITATV"] =                "Pozwala na gre multiplayer w sieci lokalnej z 4 graczami na PS Vita"

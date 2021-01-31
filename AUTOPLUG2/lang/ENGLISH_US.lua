@@ -321,6 +321,7 @@ ENGLISH_US["TURKISH"] =                                 "TURKISH"
 ENGLISH_US["INSTALLP_DESC_SD2VITA"] =                   "Kernel plugin that automatically mounts/redirects any storage device to any mount points you want (SD2VITA)"
 
 --KERNEL
+ENGLISH_US["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 ENGLISH_US["INSTALLP_DESC_NONPDRM"] =                   "Bypass DRM protection on any PS Vita content"
 ENGLISH_US["INSTALLP_DESC_NONPDRMU"] =                  "Bypass DRM protection on any PS Vita content(Unofficial MOD)"
 ENGLISH_US["INSTALLP_DESC_MINIVITATV"] =                "Play local multiplayer games on your PS Vita with up to 4 friends"

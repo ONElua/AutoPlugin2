@@ -321,6 +321,7 @@ JAPANESE["TURKISH"] =                                   "トルコ語"
 JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバイスを必要なマウントポイントに自動的にマウント/リダイレクトするカーネルプラグイン（SD2VITA）"
 
 --KERNEL
+JAPANESE["INSTALLP_DESC_KUBRIDGE"] =                    "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 JAPANESE["INSTALLP_DESC_NONPDRM"] =                     "PSVitaコンテンツでDRM保護をバイパスできます"
 JAPANESE["INSTALLP_DESC_NONPDRMU"] =                    "PSVitaコンテンツでDRM保護をバイパスできます（非公式MOD）"
 JAPANESE["INSTALLP_DESC_MINIVITATV"] =                  "最大4人とPSVitaでローカルマルチプレイヤーゲームをプレイできます"
