@@ -321,9 +321,9 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
-RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
+RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Обеспечивает связь между ядром и пользовательским окружением (необходим для запуска Max Payne)"
 RUSSIAN["INSTALLP_DESC_NONPDRM"] =                   "Позволяет обходить DRM защиту PS Vita контента"
-RUSSIAN["INSTALLP_DESC_NONPDRMU"] =                  "Позволяет обходить DRM защиту PS Vita контента (неофициальная модификация)"
+RUSSIAN["INSTALLP_DESC_NONPDRMU"] =                  "Позволяет обходить DRM защиту PS Vita контента (неофициальная модификация с поддержкой тем)"
 RUSSIAN["INSTALLP_DESC_MINIVITATV"] =                "Позволяет играть на PS Vita в локальный мультиплеер вплоть до 4 игроков одновременно"
 RUSSIAN["INSTALLP_DESC_MINIVITATV_DS3"] =            "Поддержка DualShock 3/4 (плагин необходим для работы MiniVitaTV)"
 RUSSIAN["INSTALLP_DESC_NOPSMDRM"] =                  "Позволяет обходить DRM защиту PS Mobile контента"
