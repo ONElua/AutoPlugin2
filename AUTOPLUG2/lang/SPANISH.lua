@@ -321,7 +321,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
+SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Módulo Puente Kernel-usuario para PS Vita (Requerido por el Port de MaxPayne)"
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"
 SPANISH["INSTALLP_DESC_NONPDRMU"] =                     "Permite evitar la protección DRM en cualquier contenido de PS Vita(MOD no oficial)"
 SPANISH["INSTALLP_DESC_MINIVITATV"] =                   "Permite jugar multijugador local en tu PS Vita con hasta 4 amigos en juegos compatibles"
