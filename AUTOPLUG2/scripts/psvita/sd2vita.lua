@@ -20,6 +20,7 @@ function install()
 	local x_lenw1, x_lenw2, x_lenw3, x_lenw4, x_lenw5 = 25, 25, 25, 25, 25
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0, 0) end
 
 		screen.print(480, 18, LANGUAGE["MENU_TITLE_SD2VITA"], 1.2, color.white, 0x0, __ACENTER)
@@ -117,7 +118,7 @@ function configure()
 	local original = read_storage_config()
 	local mounts = {
 		{ name = "none", friendly = LANGUAGE["MOUNT_NONE_FRIENDLY"], index = 1 },
-		{ name = "ux0", friendly = LANGUAGE["MOUNT_UX0_FRIENDLY"], index = 2 },
+		{ name = "ux0",  friendly = LANGUAGE["MOUNT_UX0_FRIENDLY"],  index = 2 },
 		{ name = "xmc0", friendly = LANGUAGE["MOUNT_XMC0_FRIENDLY"], index = 3},
 		{ name = "imc0", friendly = LANGUAGE["MOUNT_IMC0_FRIENDLY"], index = 4 },
 		{ name = "uma0", friendly = LANGUAGE["MOUNT_UMA0_FRIENDLY"], index = 5 },
@@ -136,6 +137,7 @@ function configure()
 
 	while true do
 		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0, 0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
@@ -249,8 +251,8 @@ function save_storage_config(devices)
 	if back2 then back2:blit(0, 0) end
 	os.message(LANGUAGE["SD2VITA_UPDATED_CONFIG"])
 	os.delay(2000)
-	exit_bye_bye()
-
+	change = true
+	--exit_bye_bye()
 end
 
 function read_storage_config()
