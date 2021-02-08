@@ -116,7 +116,7 @@ SPANISH["INSTALLP_NO_VPK"] =                            "¡Fallo al Descargar/In
 SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plugin de Custom Warning"
 
 SPANISH["INSTALLP_VITABRIGHT_360"] =                    "Vitabright SOLO funciona en 3.60/3.68 H-Encore"
-SPANISH["INSTALLP_CWARNING_360_365"] =                  "Custom Warning no funciona en 3.67/3.68+"
+SPANISH["INSTALLP_CWARNING_360_365"] =                  "Custom Warning no funciona en 3.67/3.68"
 SPANISH["INSTALLP_REVITA_360_365"] =                    "reVita solo funciona en 3.60/3.65"
 SPANISH["INSTALLP_LCDCOLOURSPACECHANGE"] =              "LCD Colour Space Changer solo funciona en PS Vita 2000 (Slim)"
 SPANISH["INSTALLP_QUESTION_SHELLSECBAT"] =              "\n               ¡Se detectó el Plugin shellsecbat!\n\n¿Instalar shellbat en su lugar y desinstalar shellsecbat?"
