@@ -27,6 +27,7 @@ function load_language(slang,mode)
 	elseif 	slang == "PORTUGUESE_BR"	then if mode then update_language(PORTUGUESE_BR)	else update_language(CUSTOM_PORTUGUESE_BR) end
 	elseif 	slang == "ENGLISH_GB"		then if mode then update_language(ENGLISH_GB)		else update_language(CUSTOM_ENGLISH_GB) end
 	elseif 	slang == "TURKISH"			then if mode then update_language(TURKISH)			else update_language(CUSTOM_TURKISH) end
+	elseif 	slang == "CATALAN"			then if mode then update_language(CATALAN)			else update_language(CUSTOM_CATALAN) end
 	end
 
 end
