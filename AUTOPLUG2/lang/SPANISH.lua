@@ -321,7 +321,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
+SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Módulo Puente Kernel-Usuario para PS Vita (Requerido por el Port de MaxPayne)"
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"
 SPANISH["INSTALLP_DESC_NONPDRMU"] =                     "Permite evitar la protección DRM en cualquier contenido de PS Vita(MOD no oficial)"
 SPANISH["INSTALLP_DESC_MINIVITATV"] =                   "Permite jugar multijugador local en tu PS Vita con hasta 4 amigos en juegos compatibles"
@@ -427,7 +427,7 @@ SPANISH["INSTALLP_DESC_VITAGRAFIX"] =                   "Plugin que permite camb
 SPANISH["INSTALLP_DESC_OVERCLOCK"] =                    "Plugin simple de Overclock para taiHEN (SELECT + ARRIBA Activa el menú. SELECT + ABAJO Cierra el menú)"
 SPANISH["INSTALLP_DESC_FRAMECOUNTER"] =                 "Pequeño Plugin que sirve como un contador de FPS. Muestra la cantidad de FPS en la esquina superior izquierda de tu pantalla"
 SPANISH["INSTALLP_DESC_VGI"] =                          "Plugin simple para taiHEN que muestra información útil acerca del juego de PS Vita en ejecución (SELECT + L Abre/Cierra el menú de VGi en tu juego)"
-SPANISH["INSTALLP_DESC_FUCKPSSE"] =                     "A plugin to Dump & Decrypt PSSE-Protected Games."
+SPANISH["INSTALLP_DESC_FUCKPSSE"] =                     "Plugin para Dumpear (extraer) y Desencriptar juegos protegidos por PSSE (PlayStation Suite Encrypted, sistema de encriptado usado en juegos de PSM en PS Vita)"
 SPANISH["INSTALLP_DESC_PSMPATCH"] =                     "Permite la modificación (modding) de juegos de PSM, y además puede ser usado para cargar Homebrew de PSM"
 SPANISH["INSTALLP_DESC_TROPHAX"] =                      "Desbloqueador universal de trofeos de PS Vita (En el juego, START + SELECT habilita el Plugin, luego L+R desbloquea todos los trofeos o L+START desbloquea un trofeo específico, L+ARRIBA o L+ABAJO para seleccionar y luego L+CIRCULO para desbloquear el trofeo elegido)"
 SPANISH["INSTALLP_DESC_TURBOPAD"] =                     "Este plugin te permite activar RapidFire (Pulsación Rápida) en cualquier botón (START + TRIANGULO Abre menú de configuración)"
