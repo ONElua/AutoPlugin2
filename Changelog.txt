@@ -1,3 +1,8 @@
+# v1.22
+++ Added option to install sharkF00d.
+++ Added Kubridge plugin for TheOfficialFloW
+++ Fixed bug that will close the app after changing mount points for sd2vita and pressing triangle.
+
 # v1.21
 ++ Fixed error when downloading plugins and languages updates
 
