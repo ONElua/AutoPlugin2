@@ -90,6 +90,7 @@ function plugins_online2()
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
 						--if os.message("bajar si o no ?\n"..Online_Langs[j].id,1) == 1 then
 						__file = Online_Langs[j].id
+						--os.message("Online_Langs\n"..Online_Langs[j].id)
 						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/"..Online_Langs[j].id..".lua").success then
 							Langs[i] = Online_Langs[j]
 							table.insert(tmpss,Langs[i])
@@ -118,6 +119,7 @@ function plugins_online2()
 			--if os.message("Bajar si o no ?\n"..Online_Langs[i].id,1) == 1 then
 			__file = Online_Langs[i].id
 			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/"..Online_Langs[i].id..".lua").success then
+				--os.message("Online_Langs 2\n"..Online_Langs[i].id)
 				table.insert(tmps, { line = i })
 				__flag = true
 			end
@@ -170,6 +172,7 @@ function plugins_online2()
 						os.delay(350)
 
 						__file = Online_Plugins[j].name
+						--os.message("Plugin\n"..Online_Plugins[j].name)
 
 						local vitacheat_path = nil
 						if Online_Plugins[j].path:lower() == "vitacheat360.skprx" then vitacheat_path = "vitacheat360"
@@ -188,9 +191,12 @@ function plugins_online2()
 						
 						--if os.message("Update bajar si o no ?\n"..Online_Plugins[j].name,1) == 1 then
 						--Lo mejor es poner ruta a project/resources/plugins
+						--os.message("Try Plugin\n"..Online_Plugins[j].path)
 						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path), path_plugins..Online_Plugins[j].path).success then
 
 							cont_global:set(tonumber(cont_global:get())-1)
+
+							--os.message("Done Plugin\n"..Online_Plugins[j].path)
 
 							if Online_Plugins[j].path2 then
 								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[j].path2), path_plugins..Online_Plugins[j].path2)
@@ -220,6 +226,7 @@ function plugins_online2()
 
 	end--Online_Plugins>0
 
+	--Plugins Nuevos
 	local tmps = {}
 	for i=1,#Online_Plugins do
 		local _find = false
@@ -237,9 +244,12 @@ function plugins_online2()
 
 			__file = Online_Plugins[i].name
 
+			--os.message("Try New Plugin\n"..Online_Plugins[i].path)
 			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path), path_plugins..Online_Plugins[i].path).success then
 
 				cont_global:set(tonumber(cont_global:get())-1)
+
+				--os.message("Done New Plugin\n"..Online_Plugins[i].path)
 
 				if Online_Plugins[i].path2 then
 					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Plugins[i].path2), path_plugins..Online_Plugins[i].path2)
