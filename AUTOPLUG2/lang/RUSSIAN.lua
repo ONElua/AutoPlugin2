@@ -34,22 +34,22 @@ RUSSIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Настроить пла�
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Запустить проверку наличия обновлённых версий плагинов"
 
 --P4 Golden HD
-RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD Patch"
+RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD патч"
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцен и кадрового буфера Persona 4 Golden на PS Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
 RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 может быть как выведено по HDMI, так и на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 20-30 FPS, в большинстве случаев 25-30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD от Cuevavirus"
 RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden не найдена"
-RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD Patch"
+RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD патч"
 RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
-RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD Patch"
+RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD патча"
 
 --Catherine HD
-RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD Patch"
+RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD патч"
 RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "Этот патч изменяет разрешение 3D сцен и кадрового буфера Catherine: Full Body на PS Vita и PSTV до 1280x720. (Необходим плагин Sharpscale)"
 RUSSIAN["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine: Full Body HD от Cuevavirus"
 RUSSIAN["NO_CHATERINE_GAMES"] =                      "Catherine: Full Body не найдена"
-RUSSIAN["INSTALLING_CATHERINE_HD_PATCH"] =           "Установка Catherine: FB HD Patch"
+RUSSIAN["INSTALLING_CATHERINE_HD_PATCH"] =           "Установка Catherine: FB HD патча"
 
 RUSSIAN["INSTRUCTIONS_HD_PATCH"] =                   " 1. Установите самую новую версию Sharpscale \n\n 2. Включите 'Unlock framebuffer size' в приложении Sharpscale \n\n 3. Для лучшей производительности используйте плагин для разгона "
 
@@ -323,7 +323,7 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
-RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Обеспечивает связь между ядром и пользовательским окружением (необходим для запуска Max Payne)"
+RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Обеспечивает связь между ядром и пользовательским окружением (необходим для запуска портов с Android)"
 RUSSIAN["INSTALLP_DESC_NONPDRM"] =                   "Позволяет обходить DRM защиту PS Vita контента"
 RUSSIAN["INSTALLP_DESC_NONPDRMU"] =                  "Позволяет обходить DRM защиту PS Vita контента (неофициальная модификация с поддержкой тем)"
 RUSSIAN["INSTALLP_DESC_MINIVITATV"] =                "Позволяет играть на PS Vita в локальный мультиплеер вплоть до 4 игроков одновременно"
@@ -429,7 +429,7 @@ RUSSIAN["INSTALLP_DESC_VITAGRAFIX"] =                "Плагин для изм
 RUSSIAN["INSTALLP_DESC_OVERCLOCK"] =                 "Простой плагин для разгона (SELECT+UP показать и SELECT+DOWN скрыть меню)"
 RUSSIAN["INSTALLP_DESC_FRAMECOUNTER"] =              "Плагин показывает количество кадров в секунду в углу экрана"
 RUSSIAN["INSTALLP_DESC_VGI"] =                       "Плагин отображает информацию о видеоизображении (SELECT+L показ/скрытие меню во время игры)"
-RUSSIAN["INSTALLP_DESC_FUCKPSSE"] =                  "A plugin to Dump & Decrypt PSSE-Protected Games."
+RUSSIAN["INSTALLP_DESC_FUCKPSSE"] =                  "Плагин для дампа декриптованых из PSSE файлов PS Mobile игр"
 RUSSIAN["INSTALLP_DESC_PSMPATCH"] =                  "Аналог плагина rePatch, только для PS Mobile игр"
 RUSSIAN["INSTALLP_DESC_TROPHAX"] =                   "Плагин для взлома призов в PS Vita играх (START+SELECT запуск плагина, L+R разблокировать все призы и L+START разблокировать выбранный приз, L+UP или L+DOWN для выбора и L+CIRCLE для разблокировки)"
 RUSSIAN["INSTALLP_DESC_TURBOPAD"] =                  "Возможность переключения клавиш в турбо-режим (START+TRIANGLE вызов меню)"
@@ -472,7 +472,7 @@ RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, х
 RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"
 RUSSIAN["STRING_UNSAFE_MODE"] =                      "Необходимо разрешить небезопасные приложения в настройках HENkaku!"
 RUSSIAN["STRING_PSVITA_RESTART"] =                   "Система PS Vita будет перезагружена"
-RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "taiHEN config.txt Reloaded OK"
+RUSSIAN["STRINGS_CONFIG_SUCCESS"] =		             "taiHEN config.txt успешно загружен"
 RUSSIAN["STRING_BACKUP_CONFIGS"] =                   "Создание файла config_backups.txt"
 RUSSIAN["STRING_MISSING_CONFIG"] =                   "Файл config.txt не обнаружен"
 RUSSIAN["STRING_BACK"] =                             "Вернуться назад"
