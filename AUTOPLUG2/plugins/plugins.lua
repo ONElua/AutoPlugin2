@@ -93,6 +93,7 @@ plugins = {
 { name = "BootSound v1.0 by teakhanirons", id = "BOOTSOUND.png", path = "bootsound.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND", },
 { name = "Quick Menu Plus v2.0.0 by cuevavirus", id = "QUICKMENU.png", path = "quickmenuplus.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKMENU"], KEY = "INSTALLP_DESC_QUICKMENU", link = "https://git.shotatoshounenwachigau.moe/vita/quickmenuplus/plain/CHANGELOG.md", },
 { name = "dt2s-vita v1.1 DoubleTap2Sleep for PS VITA (StatusBar) by joel16", id = "DT2SBAR.png", path = "dt2s_statusbar.suprx", section = "main", tai_del1 = "dt2s.suprx", section_del1 = "ALL", version = "0002", desc = LANGUAGE["INSTALLP_DESC_DT2S_STATUSBAR"], KEY = "INSTALLP_DESC_DT2S_STATUSBAR", link = "https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md", },
+{ name = "Fruitpeel v1.0 by cuevavirus", id = "FRUITPEEL.png", path = "fruitpeel.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FRUITPEEL"], KEY = "INSTALLP_DESC_FRUITPEEL", },
 
 --All
 { name = "dt2s-vita v1.1 DoubleTap2Sleep for PS VITA by joel16", id = "DT2S.png", path = "dt2s.suprx", section = "ALL", tai_del1 = "dt2s_statusbar.suprx", section_del1 = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_DT2S"], KEY = "INSTALLP_DESC_DT2S", link = "https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md", },

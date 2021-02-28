@@ -418,6 +418,7 @@ POLISH["INSTALLP_DESC_TROPHYSHOT"] =             	"Podobnie jak na PS4, wykonuje
 POLISH["INSTALLP_DESC_BOOTSOUND"] =             	"Ta wtyczka może odtwarzać plik WAV jako niestandardowy jingle startowy PS Vita/PS TV."
 POLISH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus łączy w sobie Quick Power, Quick Volume i Rapidmenu, a także dodaje nowe funkcje. Wyłączenie, restart, i przycisk uśpienia, konfigurowalny przycisk power, suwak głośności, Szybszy czas otwarcia szybkiego menu, Niestandardowe style tła."
 POLISH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Rekomendowane) Ta wersja działa tylko wtedy, gdy dotkniesz górnej części ekranu dotykowego. W SceShell (pulpit) był by to pasek stanu. Działa to podobnie do funkcji podwójnego stuknięcia w trybie uśpienia systemu Android, która jest na pasku stanu."
+POLISH["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 POLISH["INSTALLP_DESC_DT2S"] =                      "TA wersja działa tylko po podwójnym stuknięciu w ekran dotykowy. Nie jest zalecana, gdyż często dochodzi do odblokowania ekranu po podwójnym doknięciu."

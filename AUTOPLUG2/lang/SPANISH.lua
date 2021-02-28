@@ -418,6 +418,7 @@ SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un
 SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
 SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
 SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
+SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"

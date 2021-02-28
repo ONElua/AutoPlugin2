@@ -418,6 +418,7 @@ CHINESE_S["INSTALLP_DESC_TROPHYSHOT"] =                "就像在 PS4 中那样,
 CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动 PS Vita / PS TV 时播放一个 WAV 格式文件作为自定义启动音效."
 CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并了 Quick Power, Quick Volume 和 Rapidmenu 的功能, 并添加了新特性. 关闭电源, 重启和待机按钮, 可配置的电源按钮, 音量滑块, 提高快捷菜单开启速度, 自定义背景样式."
 CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
+CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."
