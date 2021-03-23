@@ -44,7 +44,7 @@ function exit_bye_bye()
 	end
 
 	if change then
-		os.message(LANGUAGE["STRING_PSVITA_RESTART"])
+
 		os.delay(250)
 
 		--error("USB")--Debugger			----------------------------------------------
