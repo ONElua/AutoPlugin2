@@ -468,7 +468,7 @@ ENGLISH_US["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will b
 ENGLISH_US["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
-ENGLISH_US["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+ENGLISH_US["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 ENGLISH_US["MISSING_PLUGIN"] =                          "The plugin is missing!"
 ENGLISH_US["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 ENGLISH_US["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"

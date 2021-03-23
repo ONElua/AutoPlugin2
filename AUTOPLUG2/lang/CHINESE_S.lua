@@ -468,7 +468,7 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 CHINESE_S["INSTALLP_DESC_DEPLAYENABLER"] =             "启用视频调试播放模式,并且能够修改配置文件中 sd0 和 ux0 目录路径."
 
 --Comunes
-CHINESE_S["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+CHINESE_S["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 CHINESE_S["MISSING_PLUGIN"] =                          "找不到插件!"
 CHINESE_S["REPAIR_CONFIG_TXT"] =                       "已修复变革插件配置文件 tai/config.txt"
 CHINESE_S["REPAIR_CONFIG_SHARPSCALE"] =                "修复 Sharpscale 配置崩溃问题!"

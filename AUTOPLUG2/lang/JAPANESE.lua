@@ -468,7 +468,7 @@ JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリー�
 JAPANESE["INSTALLP_DESC_DEPLAYENABLER"] =               "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
-JAPANESE["PLUGINS_BOOT_WARNING"] =                      "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+JAPANESE["PLUGINS_BOOT_WARNING"] =                      "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 JAPANESE["MISSING_PLUGIN"] =                            "The plugin is missing!"
 JAPANESE["REPAIR_CONFIG_TXT"] =                         "Henkaku plugins fixed in tai/config.txt"
 JAPANESE["REPAIR_CONFIG_SHARPSCALE"] =                  "Fix Sharpscale config crash!"

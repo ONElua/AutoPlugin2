@@ -468,7 +468,7 @@ FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la
 FRENCH["INSTALLP_DESC_DEPLAYENABLER"] =             "Activer le mode de lecture de débogage vidéo avec la possibilité de modifier le chemin d'accès aux dossiers sd0 et ux0 à partir du fichier de configuration."
 
 --Comunes
-FRENCH["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+FRENCH["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 FRENCH["MISSING_PLUGIN"] =                          "Le plugin est absent !"
 FRENCH["REPAIR_CONFIG_TXT"] =                       "\n\nCorrection des plugins Henkaku dans tai/config.txt"
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "\n\nCorrection du crash de la configuration du Sharpscale !"

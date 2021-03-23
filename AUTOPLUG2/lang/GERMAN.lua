@@ -468,7 +468,7 @@ GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden 
 GERMAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
-GERMAN["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+GERMAN["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 GERMAN["MISSING_PLUGIN"] =                          "The plugin is missing!"
 GERMAN["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 GERMAN["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"

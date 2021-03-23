@@ -468,7 +468,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
 --Comunes
-RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"
 RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, хранящиеся в tai/config.txt"
 RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"

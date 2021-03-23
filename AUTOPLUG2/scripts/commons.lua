@@ -49,7 +49,7 @@ function exit_bye_bye()
 
 		--error("USB")--Debugger			----------------------------------------------
 
-		os.dialog(LANGUAGE["PLUGINS_BOOT_WARNING"])
+		os.dialog(LANGUAGE["STRING_PSVITA_RESTART"].."\n\n\n"..LANGUAGE["PLUGINS_BOOT_WARNING"])
 
 		buttons.homepopup(1)
 		power.restart()
