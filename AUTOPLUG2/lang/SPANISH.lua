@@ -468,6 +468,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Habilita el modo debug de Reproducción de Videos, permitiendo cambiar la ruta entre sd0 y ux0 desde el archivo de configuraciones"
 
 --Comunes
+SPANISH["PLUGINS_BOOT_WARNING"] =                        "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"
 SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arreglados en tai/config.txt"
 SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "¡Arregla las configuraciones que hacen crashear a Sharpscale!"

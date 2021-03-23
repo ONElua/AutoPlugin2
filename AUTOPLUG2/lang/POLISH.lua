@@ -468,6 +468,7 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną
 POLISH["INSTALLP_DESC_DEPLAYENABLER"] =             "Włącz tryb odtwarzania debugowania wideo z możliwością zmiany ścieżki folderów sd0 i ux0 z pliku konfiguracyjnego."
 
 --Comunes
+POLISH["PLUGINS_BOOT_WARNING"] =                    "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 POLISH["MISSING_PLUGIN"] =                          "Brak pluginu!"
 POLISH["REPAIR_CONFIG_TXT"] =                       "Napraw pluginy Henkaku w tai/config.txt"
 POLISH["REPAIR_CONFIG_SHARPSCALE"] =                "Napraw błąd konfiguracji Sharpscale!"

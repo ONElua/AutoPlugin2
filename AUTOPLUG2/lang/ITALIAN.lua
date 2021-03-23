@@ -468,6 +468,7 @@ ITALIAN["INSTALLP_DESC_RESCREENY"] =                    "Plugin che permette di 
 ITALIAN["INSTALLP_DESC_DEPLAYENABLER"] =                "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
+ITALIAN["PLUGINS_BOOT_WARNING"] =                       "Keeping L pressed while booting or when h-encore is installing will disable all plugins"
 ITALIAN["MISSING_PLUGIN"] =                             "The plugin is missing!"
 ITALIAN["REPAIR_CONFIG_TXT"] =                          "Henkaku plugins fixed in tai/config.txt"
 ITALIAN["REPAIR_CONFIG_SHARPSCALE"] =                   "Fix Sharpscale config crash!"
