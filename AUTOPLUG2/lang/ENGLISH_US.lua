@@ -76,7 +76,17 @@ ENGLISH_US["MENU_EXTRAS_TRANSLATE"] =                   "Translate AutoPlugin II
 ENGLISH_US["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 ENGLISH_US["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 ENGLISH_US["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
+ENGLISH_US["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
+ENGLISH_US["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
+ENGLISH_US["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
+ENGLISH_US["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
+ENGLISH_US["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
+ENGLISH_US["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
+ENGLISH_US["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
+ENGLISH_US["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
+ENGLISH_US["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
 
+ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
 ENGLISH_US["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Set a custom warning message (instead of the epilepsy warning) when you boot with ENSO"
@@ -421,6 +431,7 @@ ENGLISH_US["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This vers
 ENGLISH_US["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+ENGLISH_US["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 ENGLISH_US["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 ENGLISH_US["INSTALLP_DESC_YAMT"] =                      "Yet another (re)mount tool kernel plugin for PSVita/PSTV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65"
 ENGLISH_US["INSTALLP_DESC_ITLSENSO"] =                  "Adds TLS v1.2 to Enso enabled devices"
@@ -468,7 +479,7 @@ ENGLISH_US["INSTALLP_DESC_RESCREENY"] =                 "Vita screenshots will b
 ENGLISH_US["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
-ENGLISH_US["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+ENGLISH_US["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 ENGLISH_US["MISSING_PLUGIN"] =                          "The plugin is missing!"
 ENGLISH_US["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 ENGLISH_US["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"

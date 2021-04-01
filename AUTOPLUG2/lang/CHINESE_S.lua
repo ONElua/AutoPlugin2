@@ -76,7 +76,17 @@ CHINESE_S["MENU_EXTRAS_TRANSLATE"] =                   "翻译 AutoPlugin II"
 CHINESE_S["MENU_EXTRAS_RESET_CONFIG"] =                "重置 ur0 目录的 config.txt"
 CHINESE_S["MENU_EXTRAS_QUICKMENU_PLUS"] =              "配置 QuickMenu Plus"
 CHINESE_S["MENU_AUTOBOOT_TITLE"] =                     "自动引导"
+CHINESE_S["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
+CHINESE_S["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
+CHINESE_S["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
+CHINESE_S["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
+CHINESE_S["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
+CHINESE_S["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
+CHINESE_S["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
+CHINESE_S["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
+CHINESE_S["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
 
+CHINESE_S["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
 CHINESE_S["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "当使用 ENSO 系统开机时,设置自定义警告消息替代癫痫警告"
@@ -421,6 +431,7 @@ CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插
 CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款用于重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"
 CHINESE_S["INSTALLP_DESC_ITLSENSO"] =                  "为启用 Enso 的设备添加 TLS v1.2 支持"
@@ -468,7 +479,7 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 CHINESE_S["INSTALLP_DESC_DEPLAYENABLER"] =             "启用视频调试播放模式,并且能够修改配置文件中 sd0 和 ux0 目录路径."
 
 --Comunes
-CHINESE_S["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+CHINESE_S["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 CHINESE_S["MISSING_PLUGIN"] =                          "找不到插件!"
 CHINESE_S["REPAIR_CONFIG_TXT"] =                       "已修复变革插件配置文件 tai/config.txt"
 CHINESE_S["REPAIR_CONFIG_SHARPSCALE"] =                "修复 Sharpscale 配置崩溃问题!"

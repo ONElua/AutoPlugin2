@@ -76,7 +76,17 @@ RUSSIAN["MENU_EXTRAS_TRANSLATE"] =                   "Перевести AutoPlu
 RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Сбросить config.txt в разделе ur0"
 RUSSIAN["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Настройки плагина QuickMenu Plus"
 RUSSIAN["MENU_AUTOBOOT_TITLE"] =                     "Автозагрузка"
+RUSSIAN["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
+RUSSIAN["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
+RUSSIAN["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
+RUSSIAN["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
+RUSSIAN["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
+RUSSIAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
+RUSSIAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
+RUSSIAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
+RUSSIAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
 
+RUSSIAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
 RUSSIAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Позволяет выбрать и установить свой текст вместо предупреждения об эпилепсии при включении системы (нужен enso)"
@@ -421,6 +431,7 @@ RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Рекомендуем) �
 RUSSIAN["INSTALLP_DESC_FRUITPEEL"] =                 "Плагин позволяет заменить фоновое изображение экрана блокировки (требования: формат PNG/8 bit/non-interlaced, разрешение не больше 896x448, размер файла не больше 512 КБ)"
 
 --ALL
+RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
 RUSSIAN["INSTALLP_DESC_ITLSENSO"] =                  "Добавление поддержки TLS 1.2 для устройств с установленным enso"
@@ -468,7 +479,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
 --Comunes
-RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"
 RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, хранящиеся в tai/config.txt"
 RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"

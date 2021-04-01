@@ -76,7 +76,17 @@ PORTUGUESE_BR["MENU_EXTRAS_TRANSLATE"] =                   "Traduzir AutoPlugin 
 PORTUGUESE_BR["MENU_EXTRAS_RESET_CONFIG"] =             	"Reset config.txt in ur0"
 PORTUGUESE_BR["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration for QuickMenu Plus"
 PORTUGUESE_BR["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
+PORTUGUESE_BR["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
+PORTUGUESE_BR["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
+PORTUGUESE_BR["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
+PORTUGUESE_BR["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
+PORTUGUESE_BR["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
+PORTUGUESE_BR["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
+PORTUGUESE_BR["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
+PORTUGUESE_BR["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
+PORTUGUESE_BR["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
 
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Alterar as opções de config.txt do PKGj"
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Definir uma imagem personalizada de inicialização"
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Definir uma mensagem de aviso personalizada (em vez do aviso de epilepsia) ao inicializar com o ENSO"
@@ -421,6 +431,7 @@ PORTUGUESE_BR["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This v
 PORTUGUESE_BR["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+PORTUGUESE_BR["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 PORTUGUESE_BR["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 PORTUGUESE_BR["INSTALLP_DESC_YAMT"] =                      "Outro plugin do kernel da (re) montagem da ferramenta para PSVita/PSTV (requer Enso, compatível apenas com o firmware 3.60 e 3.65"
 PORTUGUESE_BR["INSTALLP_DESC_ITLSENSO"] =                  "Adiciona TLS v1.2 aos dispositivos habilitados com Enso"
@@ -468,7 +479,7 @@ PORTUGUESE_BR["INSTALLP_DESC_RESCREENY"] =                 "As capturas de tela 
 PORTUGUESE_BR["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
-PORTUGUESE_BR["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+PORTUGUESE_BR["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 PORTUGUESE_BR["MISSING_PLUGIN"] =                          "The plugin is missing!"
 PORTUGUESE_BR["REPAIR_CONFIG_TXT"] =                       "Henkaku plugins fixed in tai/config.txt"
 PORTUGUESE_BR["REPAIR_CONFIG_SHARPSCALE"] =                "Fix Sharpscale config crash!"

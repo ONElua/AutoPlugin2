@@ -76,7 +76,17 @@ SPANISH["MENU_EXTRAS_TRANSLATE"] =                      "Traduce AutoPlugin II"
 SPANISH["MENU_EXTRAS_RESET_CONFIG"] =             	    "Resetear el archivo config.txt en ur0"
 SPANISH["MENU_EXTRAS_QUICKMENU_PLUS"] =                 "Configuraciones para QuickMenu Plus"
 SPANISH["MENU_AUTOBOOT_TITLE"] =                        "Autoboot"
+SPANISH["MENU_EXTRAS_DOWNLOAD_TSV"] =                   "Descargar Base de Datos PKGj"
+SPANISH["MENU_EXTRAS_PSV_GAMES_TSV"] =                  "Juegos PS Vita"
+SPANISH["MENU_EXTRAS_PSV_DLC_TSV"] =                    "PSV DLCs"
+SPANISH["MENU_EXTRAS_PSV_DEMOS_TSV"] =                  "PSV Demos"
+SPANISH["MENU_EXTRAS_PSV_THEMES_TSV"] =                 "PSV Themes"
+SPANISH["MENU_EXTRAS_PSM_GAMES_TSV"] =                  "PSM Games"
+SPANISH["MENU_EXTRAS_PSX_GAMES_TSV"] =                  "PSX Games"
+SPANISH["MENU_EXTRAS_PSP_GAMES_TSV"] =                  "PSP Games"
+SPANISH["MENU_EXTRAS_PSP_DLC_TSV"] =                    "PSP DLCs"
 
+SPANISH["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =      "Descarga la Base de Datos usada en PKGj (Archivos TSV)"
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
 SPANISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Permite establecer un mensaje de advertencia personalizado en lugar de la advertencia de epilepsia cuando inicia PS Vita. Compatible solo con Enso"
@@ -421,6 +431,7 @@ SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta vers
 SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+SPANISH["INSTALLP_DESC_VITANEARESTN"] =                 "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
 SPANISH["INSTALLP_DESC_ITLSENSO"] =                     "Añade TLS v1.2 a los dispositivos con Enso"
@@ -468,7 +479,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Habilita el modo debug de Reproducción de Videos, permitiendo cambiar la ruta entre sd0 y ux0 desde el archivo de configuraciones"
 
 --Comunes
-SPANISH["PLUGINS_BOOT_WARNING"] =                        "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+SPANISH["PLUGINS_BOOT_WARNING"] =                        "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"
 SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arreglados en tai/config.txt"
 SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "¡Arregla las configuraciones que hacen crashear a Sharpscale!"

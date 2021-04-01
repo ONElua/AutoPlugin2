@@ -76,7 +76,17 @@ POLISH["MENU_EXTRAS_TRANSLATE"] =                   "Przetłumacz Autoplugin II"
 POLISH["MENU_EXTRAS_RESET_CONFIG"] =             	"Zresetuj config.txt w ur0"
 POLISH["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Konfiguracja QuickMenu Plus"
 POLISH["MENU_AUTOBOOT_TITLE"] =                     "Autoboot"
+POLISH["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
+POLISH["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
+POLISH["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
+POLISH["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
+POLISH["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
+POLISH["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
+POLISH["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
+POLISH["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
+POLISH["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
 
+POLISH["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 POLISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Umożliwia dostosowanie opcji w pliku config.txt dla PKGj"
 POLISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Umożliwia ustawienie własnego ekranu startowego"
 POLISH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Pozwala ustawić własny komunikat o epilepsji, podczas odpalania konsoli z Enso"
@@ -421,6 +431,7 @@ POLISH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Rekomendowane) Ta wersja d
 POLISH["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+POLISH["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 POLISH["INSTALLP_DESC_DT2S"] =                      "TA wersja działa tylko po podwójnym stuknięciu w ekran dotykowy. Nie jest zalecana, gdyż często dochodzi do odblokowania ekranu po podwójnym doknięciu."
 POLISH["INSTALLP_DESC_YAMT"] =                      "Jeszcze jeden plugin kernela montowania/odmontowania dla PSVita/PSTV (Wymagane Enso, Kompatybilne TYLKO z oprogramowaniem 3.60 i 3.65"
 POLISH["INSTALLP_DESC_ITLSENSO"] =                  "Dodaj TLS v1.2 do urządzeń z Enso"
@@ -468,7 +479,7 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną
 POLISH["INSTALLP_DESC_DEPLAYENABLER"] =             "Włącz tryb odtwarzania debugowania wideo z możliwością zmiany ścieżki folderów sd0 i ux0 z pliku konfiguracyjnego."
 
 --Comunes
-POLISH["PLUGINS_BOOT_WARNING"] =                    "Your Plugins causes boot loop!!! \n\n Keeping L pressed while booting or when h-encore is installing will disable all plugins"
+POLISH["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 POLISH["MISSING_PLUGIN"] =                          "Brak pluginu!"
 POLISH["REPAIR_CONFIG_TXT"] =                       "Napraw pluginy Henkaku w tai/config.txt"
 POLISH["REPAIR_CONFIG_SHARPSCALE"] =                "Napraw błąd konfiguracji Sharpscale!"
