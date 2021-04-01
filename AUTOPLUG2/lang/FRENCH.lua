@@ -86,7 +86,7 @@ FRENCH["MENU_EXTRAS_PSX_GAMES_TSV"] =               "Jeux PSX"
 FRENCH["MENU_EXTRAS_PSP_GAMES_TSV"] =               "Jeux PSP"
 FRENCH["MENU_EXTRAS_PSP_DLC_TSV"] =                 "DLC PSP"
 
-FRENCH["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Télécharger la base de donnée (fichier TSV) de PKGj"
+FRENCH["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Télécharger la base de donnée (fichier TSV) de PKGj (Internet obligatoire)"
 FRENCH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Permet de configurer le fichier config.txt de PKGj"
 FRENCH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Modifier le démarrage de votre console avec une image personnalisée"
 FRENCH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Vous permet de définir un message personnalisé à la place du message d'avertissement d'épilepsie du démarrage de la console"
