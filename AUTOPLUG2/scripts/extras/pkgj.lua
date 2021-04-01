@@ -81,6 +81,117 @@ local psp_psx_location_callback = function (obj)
 	
 end
 
+function downloadtsv_callback()
+
+	local path_configtxt = "ux0:pkgj/"
+	if files.exists("ur0:pkgj/config.txt") then path_configtxt = "ur0:pkgj/" end
+
+	local tsv = {
+
+		{ url = "https://nopaystation.com/tsv/PSV_GAMES.tsv",  name = "titles_psvgames.tsv", sname = LANGUAGE["MENU_EXTRAS_PSV_GAMES_TSV"],
+			info = files.info(path_configtxt.."titles_psvgames.tsv"), },
+		{ url = "https://nopaystation.com/tsv/PSV_DLCS.tsv",   name = "titles_psvdlcs.tsv", sname = LANGUAGE["MENU_EXTRAS_PSV_DLC_TSV"],
+			info = files.info(path_configtxt.."titles_psvdlcs.tsv"),   },
+		{ url = "https://nopaystation.com/tsv/PSV_DEMOS.tsv",  name = "titles_psvdemos.tsv", sname = LANGUAGE["MENU_EXTRAS_PSV_DEMOS_TSV"],
+			info = files.info(path_configtxt.."titles_psvdemos.tsv"),  },
+		{ url = "https://nopaystation.com/tsv/PSV_THEMES.tsv", name = "titles_psvthemes.tsv", sname = LANGUAGE["MENU_EXTRAS_PSV_THEMES_TSV"],
+			info = files.info(path_configtxt.."titles_psvthemes.tsv"), },
+		{ url = "https://nopaystation.com/tsv/PSM_GAMES.tsv",  name = "titles_psmgames.tsv", sname = LANGUAGE["MENU_EXTRAS_PSM_GAMES_TSV"],
+			info = files.info(path_configtxt.."titles_psmgames.tsv"),  },
+		{ url = "https://nopaystation.com/tsv/PSX_GAMES.tsv",  name = "titles_psxgames.tsv", sname = LANGUAGE["MENU_EXTRAS_PSX_GAMES_TSV"],
+			info = files.info(path_configtxt.."titles_psxgames.tsv"),  },
+		{ url = "https://nopaystation.com/tsv/PSP_GAMES.tsv",  name = "titles_pspgames.tsv", sname = LANGUAGE["MENU_EXTRAS_PSP_GAMES_TSV"],
+			info = files.info(path_configtxt.."titles_pspgames.tsv"),  },
+		{ url = "https://nopaystation.com/tsv/PSP_DLCS.tsv",   name = "titles_pspdlcs.tsv", sname = LANGUAGE["MENU_EXTRAS_PSP_DLC_TSV"],
+			info = files.info(path_configtxt.."titles_pspdlcs.tsv"),   },
+	}
+
+	files.delete(path_configtxt.."dbtmp.tsv")
+
+	local scroll,xscroll = newScroll(tsv,8),10
+	while true do
+		buttons.read()
+		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+
+		if back2 then back2:blit(0,0) end
+
+		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		screen.print(480,20,LANGUAGE["MENU_EXTRAS_DOWNLOAD_TSV"],1.2,color.white,0x0,__ACENTER)
+
+		draw.fillrect(0,64,960,322,color.shine:a(25))
+
+		local y = 83
+		for i=scroll.ini, scroll.lim do
+			if i == scroll.sel then draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
+			screen.print(25,y, tsv[i].sname,1.1,color.white,color.black, __ALEFT)
+			if tsv[i].info then
+				screen.print(940,y, tsv[i].info.mtime,1.2,color.white,color.black, __ARIGHT)
+			end
+			y += 38
+		end
+
+		screen.print(480, 408, path_configtxt..tsv[scroll.sel].name,1.2,color.green,0x0,__ACENTER)
+
+		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
+		screen.print(40,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
+
+		if buttonskey3 then buttonskey3:blitsprite(920,518,1) end
+		screen.print(915,522,LANGUAGE["STRING_CLOSE"],1,color.white,color.blue, __ARIGHT)
+
+		screen.flip()
+
+		--------------------------	Controls	--------------------------
+
+		if buttons.released.cancel then break end
+
+		--Exit
+		if buttons.start then
+			exit_bye_bye()
+		end
+
+		vol_mp3()
+
+		if scroll.maxim > 0 then
+
+			if buttons.left or buttons.right then xscroll = 10 end
+
+			if buttons.up or buttons.analogly < -60 then
+				if scroll:up() then xscroll = 10 end
+			end
+			if buttons.down or buttons.analogly > 60 then
+				if scroll:down() then xscroll = 10 end
+			end
+
+			if buttons.accept then
+
+				if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					message_wait()
+				os.delay(500)
+
+				__file = tsv[scroll.sel].name
+
+				buttons.homepopup(0)
+				if http.download(tsv[scroll.sel].url, path_configtxt.."dbtmp.tsv").success then
+					files.delete(path_configtxt..tsv[scroll.sel].name)
+					files.rename(path_configtxt.."dbtmp.tsv", tsv[scroll.sel].name)
+					tsv[scroll.sel].info = files.info(path_configtxt..tsv[scroll.sel].name)
+				else
+					os.dialog(tsv[scroll.sel].name.."\n\n"..LANGUAGE["INSTALLP_NO_VPK"])
+				end
+
+				files.delete("ux0:pkgj/dbtmp.tsv")
+				__file = ""
+
+			end
+
+		end
+
+	end
+
+	__file = ""
+	files.delete(path_configtxt.."dbtmp.tsv")
+end
+
 function config_pkgj()
 
 	--Clean

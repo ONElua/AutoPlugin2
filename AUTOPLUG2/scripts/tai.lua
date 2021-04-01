@@ -378,6 +378,7 @@ function tai.sync(path)
 		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/nonpdrm_un.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/gamesd.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/storagemgr.skprx", section = "KERNEL" },

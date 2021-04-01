@@ -50,7 +50,10 @@ function plugins_installation(tb,sel)
 		elseif tb[sel].path:find(string.lower("repatch"),1,true) then
 			tai.del("KERNEL", "repatch.skprx")
 			tai.del("KERNEL", "repatch_4.skprx")
-
+		-- Nonpdrm
+		elseif tb[sel].path:find(string.lower("nonpdrm"),1,true) then
+			tai.del("KERNEL", "nonpdrm.skprx")
+			tai.del("KERNEL", "nonpdrm_un.skprx")
 		--Refood or syscall
 		elseif tb[sel].path == "reF00D.skprx" then
 			tai.del("KERNEL", "0syscall6.skprx")

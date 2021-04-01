@@ -72,6 +72,10 @@ function menu_extras()
 	end
 
 	local config_callback = function ()
+		downloadtsv_callback()
+	end
+
+	local config_callback = function ()
 		config_pkgj()
 	end
 
@@ -151,6 +155,7 @@ function menu_extras()
 	end
 
 	local menu = {
+		{ text = LANGUAGE["MENU_EXTRAS_DOWNLOAD_TSV"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"],	funct = downloadtsv_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],		desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
@@ -199,14 +204,14 @@ function menu_extras()
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.2,color.white,0x0,__ACENTER)
 
-        local y = 80
+        local y = 70
         for i=scroll.ini, scroll.lim do
             if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
             screen.print(480,y,menu[i].text,1.2,color.white, 0x0, __ACENTER)
-			if i == 5 then
-				y += 60
+			if i == 2 or i == 3 or i == 7 then
+				y += 55
 			else
-				y += 45
+				y += 40
 			end
         end
 
