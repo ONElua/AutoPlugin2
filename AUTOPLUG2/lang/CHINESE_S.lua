@@ -33,6 +33,10 @@ CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (S
 CHINESE_S["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "配置 SD2VITA 插件 (StorageMgr v3.2,由 CelesteBlue 开发)"
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "在线检查插件更新"
 
+--Vita-Nearest-Neighbour
+CHINESE_S["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
+CHINESE_S["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+
 --P4 Golden HD
 CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD"] =              "女神异闻录4黄金版高清补丁"
 CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "此补丁可将 Vita 和 PSTV 上的女神异闻录4黄金版的3D渲染和帧缓冲分辨率更改为 1920x1080 或 1280x720. (依赖 Sharpscale 插件)"

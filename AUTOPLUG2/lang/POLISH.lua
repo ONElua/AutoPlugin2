@@ -33,6 +33,10 @@ POLISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Zainstaluj plugin dla SD2VI
 POLISH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Skonfiguruj plugin dla SD2VITA (StorageMgr v3.2 by CelesteBlue)"
 POLISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Sprawdz czy nie ma aktualizacji pluginów"
 
+--Vita-Nearest-Neighbour
+POLISH["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
+POLISH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+
 --P4 Golden HD
 POLISH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD PATCH"
 POLISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Ten patch zminia rozdzielczość 3D i bufora ramki w Persona 4 Golden na  PS Vita i PSTV do rozdzielczości 1920x1080 albo 1280x720. (Wymagany plugin Sharpscale )"

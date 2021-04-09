@@ -33,6 +33,10 @@ FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la S
 FRENCH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurer le plugin de la SD2VITAA (StorageMgr v3.2 de CelesteBlue)"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouvelle version de mise à jour des plugins"
 
+--Vita-Nearest-Neighbour
+FRENCH["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
+FRENCH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+
 --P4 Golden HD
 FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Patch HD du jeu Persona 4 Golden"
 FRENCH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Ce patch modifie les résolutions de rendu 3D et de framebuffer de Persona 4 Golden sur la PSVita et la PSTV en 1920x1080 ou 1280x720. (Nécessite le plugin Sharpscale)"
@@ -110,7 +114,7 @@ FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Police d'écriture"
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II (internet requis)"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Recevoir ou non les mises à jour automatique de AutoPlugin II"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de définir la langue par défaut a utilisé avec AutoPlugin II"
-FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	  "Permet de changer la police d'écriture de AutoPlugin II"
+FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Permet de changer la police d'écriture de AutoPlugin II"
 
 --Install Plugins
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés :"
@@ -228,7 +232,7 @@ FRENCH["GE_PATCH_DESC"] =                           "Il s'agit d'un plugin expé
 FRENCH["PSP_PLUGINS_MANAGER"] =                     "Gestionnaire de plugins PSP"
 
 --config pkgj
-FRENCH["MENU_INSTALL_CONFIG"] =                     "Config.txt de PKGJ v0.45+"
+FRENCH["MENU_INSTALL_CONFIG"] =                     "Config.txt du PKGJ v0.45+"
 FRENCH["MENU_INSTALL_CONFIG_DESC"] =                "Installer le fichier config.txt du PKGJ (Wifi obligatoire)"
 FRENCH["MENU_INSTALLED_CONFIG"] =                   "ux0:pkgi/config.txt du PKGJ a été installé!"
 FRENCH["NO_CONFIG_PKGJ"] =                          "Pas de fichier config.txt installé"
@@ -424,9 +428,9 @@ FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les pr
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
-FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	  "Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
-FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	  "Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
-FRENCH["INSTALLP_DESC_QUICKMENU"] =             	  "Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
+FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
+FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
+FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 
@@ -485,7 +489,7 @@ FRENCH["REPAIR_CONFIG_TXT"] =                       "\n\nCorrection des plugins 
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "\n\nCorrection du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
-FRENCH["STRINGS_CONFIG_SUCCESS"] =		              "taiHEN config.txt Reloaded OK"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
@@ -498,7 +502,7 @@ FRENCH["CHINESE_FONT_DOWNLOAD"] =                   "Télécharger la police Chi
 FRENCH["BG_MP3_DOWNLOAD"] =                         "Télécharger la musique de fond "
 FRENCH["YES"] =                                     "Oui"
 FRENCH["NO"] =                                      "Non"
-FRENCH["GAMEID"] =                                  "GAME ID: "
+FRENCH["GAMEID"] =                                  "GAMEID: "
 FRENCH["CURRENT"] =                                 "Actuel: "
 
 FRENCH["SYSTEM_ERROR"] =                            "Erreur système"

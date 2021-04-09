@@ -33,6 +33,10 @@ SPANISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Instala el Plugin SD2VI
 SPANISH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =            "Configura el Plugin SD2VITA (StorageMgr v3.2 de CelesteBlue)"
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =      "Comprueba si hay alguna actualización para los Plugins"
 
+--Vita-Nearest-Neighbour
+SPANISH["MENU_PSVITA_INSTALL_NEAREST"] =                "Vita Nearest Neighbour"
+SPANISH["MENU_PSVITA_INSTALL_NEAREST_Q"] =              "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+
 --P4 Golden HD
 SPANISH["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Parche para Persona 4 Golden HD"
 SPANISH["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =            "Este parche cambia el Render 3D y la resolución del Framebuffer de Persona 4 Golden en PS Vita y PSTV a 1920x1080 o 1280x720 (Requiere el Plugin Sharpscale)"

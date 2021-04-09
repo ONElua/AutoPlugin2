@@ -33,6 +33,10 @@ RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Установить пл�
 RUSSIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Настроить плагин для SD2VITA (StorageMgr v3.2 от CelesteBlue)"
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Запустить проверку наличия обновлённых версий плагинов"
 
+--Vita-Nearest-Neighbour
+RUSSIAN["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
+RUSSIAN["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+
 --P4 Golden HD
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD патч"
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцен и кадрового буфера Persona 4 Golden на PS Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
