@@ -291,7 +291,7 @@ function plugins_online2()
 	while true do
 		buttons.read()
 
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
 

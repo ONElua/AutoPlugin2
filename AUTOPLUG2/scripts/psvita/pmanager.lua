@@ -13,7 +13,7 @@ function searchPlugByPath(p, sect, path)
 	--print(string.format("SPP [%s]: %s|%d", (sect or "NOTHING"), (path or "unkpath"), (idx or 999)))
 	if not p or not sect or not p[sect] then return nil end
 	for i=1, #p[sect] do
-		if path == files.nopath(p[sect][i].path:lower()) then
+		if path:lower() == files.nopath(p[sect][i].path:lower()) then
 			return i;
 		end
 	end
@@ -179,7 +179,7 @@ function pluginsmanager()
 			end
 			
 			if buttons.accept and not plugs[sections[over]][scroll.sel].is_sys then
-				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL, __ACENTER) == true then
+				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL) == true then
 
 					-- Special for Yamt
 					if plugs[sections[over]][scroll.sel].file == "yamt.suprx" then --Yamt
@@ -227,37 +227,52 @@ function pluginsmanager()
 							change = true
 						end
 					end
-
+					
+					-- Special for VitaNearestNeighbour
 					local section1 = sections[over]
 					local path1 = files.nopath(plugs[sections[over]][scroll.sel].path:lower())
+
 					local section2 = ""
 					local path2 = ""
-					if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
-						section1 = plugs[sections[over]][scroll.sel].bridge.section
-						path1 = plugs[sections[over]][scroll.sel].bridge.path:lower()
-						--os.message("bridge: "..path1.."\n"..section1)
-						if plugs[sections[over]][scroll.sel].bridge.section2 then
-							section2 = plugs[sections[over]][scroll.sel].bridge.section2
-							path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
-							--os.message("bridge2: "..path2.."\n"..section2)
-						end
-					end
 
-					local idx = searchPlugByPath(plugs, section1, path1);
-					if idx then
-						--os.message("idx: "..path1.."\n"..section1)
-						--Delete plugin
-						if path1 then
-							--os.message(path1)
-							if path1 != "adrenaline_kernel.skprx" then
-								--files.delete(plugs[section1][idx].path)
+					if plugs[sections[over]][scroll.sel].file:lower() == "vitanearestneighbour.suprx" then
+						local idx3 = searchPlugByPath(plugs, sections[over], "vitanearestneighbour.suprx")
+						if idx3 then
+							--os.message("ESPECIAL")
+							tai.del(sections[over], plugs[sections[over]][idx3].path)
+							table.remove(plugs[sections[over]], idx3)
+							bridge_n["vitanearestneighbour.suprx"][sections[over]] = nil
+							ReloadConfig = true
+						end
+					else
+
+						if plugs[sections[over]][scroll.sel].bridge then -- Remove second plug of the selected
+							section1 = plugs[sections[over]][scroll.sel].bridge.section
+							path1 = plugs[sections[over]][scroll.sel].bridge.path:lower()
+							--os.message("bridge: "..path1.."\n"..section1)
+							if plugs[sections[over]][scroll.sel].bridge.section2 then
+								section2 = plugs[sections[over]][scroll.sel].bridge.section2
+								path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
+								--os.message("bridge2: "..path2.."\n"..section2)
 							end
 						end
-						--print(string.format("E [%s]: %s|%d", path1, section1, (idx or 300)))
-						--print(plugs[section1][idx].path)
-						tai.del(section1, plugs[section1][idx].path)
-						table.remove(plugs[section1], idx)
-						bridge_n[path1][section1] = nil
+
+						local idx = searchPlugByPath(plugs, section1, path1);
+						if idx then
+							--os.message("idx: "..path1.."\n"..section1)
+							--Delete plugin
+							if path1 then
+								--os.message(path1)
+								if path1 != "adrenaline_kernel.skprx" then
+									--files.delete(plugs[section1][idx].path)
+								end
+							end
+							--print(string.format("E [%s]: %s|%d", path1, section1, (idx or 300)))
+							--print(plugs[section1][idx].path)
+							tai.del(section1, plugs[section1][idx].path)
+							table.remove(plugs[section1], idx)
+							bridge_n[path1][section1] = nil
+						end
 					end
 
 					ReloadConfig = true
@@ -275,7 +290,7 @@ function pluginsmanager()
 
 					if #need_second > 0 then
 						if os.dialog(path2.." "..ENGLISH_US["UNINSTALLP_QUESTION_NEED"].."\n"..(table.concat(msg_need, '\n'))..LANGUAGE["UNINSTALLP_PLUGINS_NEED"],
-								LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], __DIALOG_MODE_OK_CANCEL, __ACENTER) then
+								LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], __DIALOG_MODE_OK_CANCEL) == true then
 							for i=1, #need_second do
 								local _path = need_second[i].path or ""
 								local _section = need_second[i].section or ""

@@ -1,34 +1,20 @@
---[[ 
-	Autoinstall plugin
+function search_gameid()
 
-	Licensed by Creative Commons Attribution-ShareAlike 4.0
-	http://creativecommons.org/licenses/by-sa/4.0/
-	
-	Dev: TheHeroeGAC
-	Designed By Gdljjrod & DevDavisNunez.
-	Collaborators: BaltazaR4 & Wzjk.
-]]
-
-files.mkdir("ux0:data/AutoBoot/")
-Autoboot_path = "ux0:data/AutoBoot/boot.cfg"
-
-function autoboot()
-
-	if not files.exists(Autoboot_path) then
-		files.new(Autoboot_path)
+	local descript = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"]
+	for j=1,#plugins do
+		if "INSTALLP_DESC_VITANEARESTN" == plugins[j].KEY then
+			descript = plugins[j].name
+		end
 	end
-
-	local current = ""
-
-	for line in io.lines(Autoboot_path) do
-		current = line
-		break
-	end
-	--os.message(tostring(current))
 
 	local list_tmp = game.list(__GAME_LIST_APP)
+	local tmp = {
+		title = "ALL", id = "ALL"
+	}
+	
 	if list_tmp then
 		table.sort(list_tmp, function (a,b) return string.lower(a.title)<string.lower(b.title) end)
+		table.insert(list_tmp, 1, tmp)
 	end
 
 	local limit = 9
@@ -43,7 +29,7 @@ function autoboot()
 		if back then back:blit(0,0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_AUTOBOOT_TITLE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],1.2,color.white,0x0,__ACENTER)
 
 		local y = 65
 		for i=scroll.ini, scroll.lim do
@@ -68,8 +54,7 @@ function autoboot()
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 		--end
 
-		--Current
-		screen.print(13,475,"Current: "..current,1,color.green, 0x0, __ALEFT)
+		screen.print(480, 490, descript,1,color.white,color.blue,__ACENTER)
 
 		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
 		screen.print(45,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
@@ -101,16 +86,48 @@ function autoboot()
 			end
 
 			if buttons.accept then
-				local fp = io.open(Autoboot_path, "w+")
-				if fp then
-					fp:write(list_tmp[scroll.sel].id)
-					fp:close()
-					change = true
-					os.dialog("\n"..Autoboot_path.."\n\n"..LANGUAGE["GAMEID"]..list_tmp[scroll.sel].id, LANGUAGE["MENU_AUTOBOOT_TITLE"])
-					current = list_tmp[scroll.sel].id
-				end
+				return list_tmp[scroll.sel].id
 			end
 		end
 
 	end
+
+end
+
+
+function VitaNearest()
+
+	--if os.dialog(LANGUAGE["MENU_PSVITA_INSTALL_NEAREST_Q"], LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"], __DIALOG_MODE_OK_CANCEL) == true then
+	local _section = search_gameid()
+	if _section then
+		
+		--os.message(_section)
+
+		if _section == "ALL" then
+			--Buscar todos los gameids de este plugin y borrarlos de tai
+			local ids = tai.findALL("VitaNearestNeighbour.suprx")
+			if ids then
+				for i=1,#ids do
+					--os.message()
+					tai.del(ids[i].section,"VitaNearestNeighbour.suprx")
+				end
+			end
+
+			files.copy(path_plugins.."VitaNearestNeighbour.suprx", path_tai)
+			tai.put("ALL",  "ur0:tai/VitaNearestNeighbour.suprx")
+			ReloadConfig = true
+
+			os.message("VitaNearestNeighbour.suprx\n\nALL\n\n"..LANGUAGE["STRING_INSTALLED"])
+				
+		else
+			files.copy(path_plugins.."VitaNearestNeighbour.suprx", path_tai)
+			tai.del("ALL", "VitaNearestNeighbour.suprx")
+			tai.put(_section,  "ur0:tai/VitaNearestNeighbour.suprx")
+			ReloadConfig = true
+
+			os.message("VitaNearestNeighbour.suprx".."\n\n".._section.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+		end
+
+	end
+
 end

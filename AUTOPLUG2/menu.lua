@@ -72,8 +72,6 @@ function menu_gral()
 		if buttons.up or buttons.analogly < -60 then scroll:up() end
 		if buttons.down or buttons.analogly > 60 then scroll:down() end
 
-		--if buttons.select then error("Debugger") end
-
 		if buttons.accept then menu[scroll.sel].funct() end
 
 		vol_mp3()
