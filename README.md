@@ -66,6 +66,15 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.23 ###
+- Added option to configure Vita Nearest Neighbour plugin by gameid or in section ALL
+- Updated Music Premium plugin to v1.06 
+- Turbopad plugin got replaced by Turbopad mod by yoti
+- Updated Ref00d plugin to v1.1
+- Added Fruitpeel plugin
+- Warning message on how to boot the psvita disabling all plugins just in case
+- Added option to download tsv files for pkgj
+
 ### Changelog 1.22 ###
 - Added option to install sharkF00d.
 - Added Kubridge plugin for TheOfficialFloW
