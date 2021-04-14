@@ -35,7 +35,7 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouve
 
 --Vita-Nearest-Neighbour
 FRENCH["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
-FRENCH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+FRENCH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nSouhaitez-vous installer ce plugin dans un jeu spécifique ??\n\n Sinon, il sera installé dans TOUTES les sections."
 
 --P4 Golden HD
 FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Patch HD du jeu Persona 4 Golden"
