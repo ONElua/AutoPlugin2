@@ -34,14 +34,14 @@ RUSSIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Настроить пла�
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Запустить проверку наличия обновлённых версий плагинов"
 
 --Vita-Nearest-Neighbour
-RUSSIAN["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
-RUSSIAN["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
+RUSSIAN["MENU_PSVITA_INSTALL_NEAREST"] =             "Ступенчатая интерполяция для PS Vita"
+RUSSIAN["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nВы желаете установить плагин для конкретной игры?\n\n В противном случае, плагин будет добавлен в секцию ALL."
 
 --P4 Golden HD
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD"] =              "Persona 4 Golden HD патч"
 RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изменяет разрешение 3D сцен и кадрового буфера Persona 4 Golden на PS Vita и PSTV до 1920x1080 или 1280x720. (Необходим плагин Sharpscale)"
 RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 может быть как выведено по HDMI, так и на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 20-30 FPS, в большинстве случаев 25-30 FPS (для нормальной производительности требуется разгон)."
-RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
+RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD от Cuevavirus"
 RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden не найдена"
 RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD патч"
@@ -80,17 +80,17 @@ RUSSIAN["MENU_EXTRAS_TRANSLATE"] =                   "Перевести AutoPlu
 RUSSIAN["MENU_EXTRAS_RESET_CONFIG"] =             	 "Сбросить config.txt в разделе ur0"
 RUSSIAN["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Настройки плагина QuickMenu Plus"
 RUSSIAN["MENU_AUTOBOOT_TITLE"] =                     "Автозагрузка"
-RUSSIAN["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Download PKGj Database"
-RUSSIAN["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV Games"
-RUSSIAN["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV DLCs"
-RUSSIAN["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV Demos"
-RUSSIAN["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV Themes"
-RUSSIAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
-RUSSIAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
-RUSSIAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
-RUSSIAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
+RUSSIAN["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Обновить списки для PKGj"
+RUSSIAN["MENU_EXTRAS_PSV_GAMES_TSV"] =               "PSV игры"
+RUSSIAN["MENU_EXTRAS_PSV_DLC_TSV"] =                 "PSV дополнения"
+RUSSIAN["MENU_EXTRAS_PSV_DEMOS_TSV"] =               "PSV демо-версии"
+RUSSIAN["MENU_EXTRAS_PSV_THEMES_TSV"] =              "PSV темы"
+RUSSIAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM игры"
+RUSSIAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX игры"
+RUSSIAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP игры"
+RUSSIAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP дополнения"
 
-RUSSIAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
+RUSSIAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Обновить списки (файлы TSV) для PKGj"
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
 RUSSIAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Позволяет выбрать и установить свой текст вместо предупреждения об эпилепсии при включении системы (нужен enso)"
@@ -131,9 +131,9 @@ RUSSIAN["INSTALLP_NO_VPK"] =                         "Ошибка при заг
 --customWarning
 RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте установить плагин Custom Warning"
 
-RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только на 3.60 и 3.68"
-RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и 3.68"
-RUSSIAN["INSTALLP_REVITA_360_365"] =                 "reVita only work on 3.60/3.65"
+RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только с 3.60 по 3.68"
+RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и новее"
+RUSSIAN["INSTALLP_REVITA_360_365"] =                 "reVita работает только на 3.60 и 3.65"
 RUSSIAN["INSTALLP_LCDCOLOURSPACECHANGE"] =           "LCD Colour Space Changer работает только на PS Vita 2K"
 RUSSIAN["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Обнаружен плагин shellsecbat!\n\nУстановить shellbat, удалив shellsecbat?"
 RUSSIAN["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Обнаружен плагин shellbat!\n\nУстановить shellsecbat, удалив shellbat?"
@@ -435,7 +435,7 @@ RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Рекомендуем) �
 RUSSIAN["INSTALLP_DESC_FRUITPEEL"] =                 "Плагин позволяет заменить фоновое изображение экрана блокировки (требования: формат PNG/8 bit/non-interlaced, разрешение не больше 896x448, размер файла не больше 512 КБ)"
 
 --ALL
-RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
+RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Несложный плагин, который перехватывает механизм обработки текстур и позволяет интерполировать их методом ближайшего соседа (ступенчатой интерполяцией)"
 RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
 RUSSIAN["INSTALLP_DESC_ITLSENSO"] =                  "Добавление поддержки TLS 1.2 для устройств с установленным enso"
@@ -483,7 +483,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
 --Comunes
-RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
+RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Если вследствие конфликтов плагинов ваша PS Vita/TV перестанет загружаться, то зажмите клавишу L при загрузке или запуске h-encore"
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"
 RUSSIAN["REPAIR_CONFIG_TXT"] =                       "Плагины HENkaku, хранящиеся в tai/config.txt"
 RUSSIAN["REPAIR_CONFIG_SHARPSCALE"] =                "Исправление вылета при запуске Sharpscale!"
