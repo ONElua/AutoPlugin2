@@ -345,6 +345,7 @@ RUSSIAN["INSTALLP_DESC_MINIVITATV_DS3"] =            "Поддержка DualSho
 RUSSIAN["INSTALLP_DESC_NOPSMDRM"] =                  "Позволяет обходить DRM защиту PS Mobile контента"
 RUSSIAN["INSTALLP_DESC_VITABRIGHT"] =                "Позволяет использовать свою таблицу гаммы, что даёт возможность понизить или повысить яркость в более широком диапазоне"
 RUSSIAN["INSTALLP_DESC_NOAVLS"] =                    "Отключает AVLS на системах с принудительным включением AVLS"
+RUSSIAN["INSTALLP_DESC_REPATCHEX"] =                 "Modification of rePatch that adds Homebrew app0: and ux0:/data migration to other partitions, allowing you to play games with data on different storage."
 RUSSIAN["INSTALLP_DESC_REPATCH"] =                   "Позволяет применять модификации и переводы для PS Vita игр"
 RUSSIAN["INSTALLP_DESC_REPATCH271"] =                "Предыдущая версия плагина для тех, у кого проблемы с новой"
 RUSSIAN["INSTALLP_DESC_LOLICON"] =                   "Позволяет включить разгон до 500 МГц (SELECT+UP показать меню/SELECT+DOWN скрыть меню)"
