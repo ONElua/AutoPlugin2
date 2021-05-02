@@ -97,6 +97,7 @@ ENGLISH_US["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Set a custom warning me
 ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transparency (255 = 0% Transparency, 0 = 100% Transparency) values below 30 are not recommended"
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
+ENGLISH_US["MENU_EXTRAS_INSTALL_YAMT_DESC"] =           "Download and install Yamt vpk in your Vita(Yet another (re)mount tool kernel plugin for PS Vita/PS TV)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =      "Download and install ShaRKF00D vpk in your Vita"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Download and install PSP2-batteryFixer vpk in your Vita (Fixes most of PSVita's battery-related problems)"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin II by translating to your language!"
