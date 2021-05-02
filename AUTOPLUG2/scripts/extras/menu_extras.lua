@@ -138,6 +138,10 @@ function menu_extras()
 	local ShaRKF00D_callback = function ()
 		download_install("https://github.com/OsirizX/ShaRKF00D/releases/latest/", "ShaRKF00D.vpk")
 	end
+	
+	local yamt_callback = function ()
+		download_install("https://github.com/SKGleba/yamt-vita/releases/latest/", "yamt.vpk")
+	end
 
 	local batteryfixer_callback = function ()
 		download_install("https://github.com/SKGleba/PSP2-batteryFixer/releases/latest/", "batteryFixer.vpk")
@@ -160,6 +164,7 @@ function menu_extras()
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"],		funct = ShaRKF00D_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	    desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
 	}
 
