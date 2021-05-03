@@ -1,3 +1,9 @@
+# v1.24
+++ Added option "Downloads"
+++ Added ReSavedata plugin by Princess of Sleeping v1.0
+++ Added option to install Yamt vpk (Downloads option)
+++ Removed Lolicon plugin
+
 # v1.23
 ++ Added option to configure Vita Nearest Neighbour plugin by gameid or in section ALL
 ++ Updated Music Premium plugin to v1.06 
