@@ -399,6 +399,7 @@ function tai.sync(path)
 		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/custom_warning.suprx", section = "main" },
 		  { path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/repatch_ex.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
