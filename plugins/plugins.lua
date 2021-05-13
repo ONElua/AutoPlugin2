@@ -1,4 +1,4 @@
-plugins = {
+Online_Plugins = {
 
 --Kernel
 { name = "Kubridge v.01 by TheOfficialFloW", id = "KUBRIDGE.png", path = "kubridge.skprx",	section = "KERNEL",	version = "0001", desc = LANGUAGE["INSTALLP_DESC_KUBRIDGE"], KEY = "INSTALLP_DESC_KUBRIDGE", },
