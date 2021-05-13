@@ -356,6 +356,7 @@ JAPANESE["INSTALLP_DESC_LOLICON"] =                     "カーネルで実行�
 JAPANESE["INSTALLP_DESC_DS3VITA"] =                     "DualShock 3でPSVitaを制御する"
 JAPANESE["INSTALLP_DESC_DS4VITA"] =                     "DualShock 4でPSVitaを制御する"
 JAPANESE["INSTALLP_DESC_DS34VITA"] =                    "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+JAPANESE["INSTALLP_DESC_DS5VITA"] =                     "Plugin to use PS5 dualsense on PSVITA"
 JAPANESE["INSTALLP_DESC_REVITA"] =                      "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
 JAPANESE["INSTALLP_DESC_REVITA_GYRO"] =                 "Add Gyro support ?"
 JAPANESE["INSTALLP_DESC_UDCDUVC"] =                     "USB経由でVita画面をPCにストリーミングできます（公式）"

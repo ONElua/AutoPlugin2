@@ -356,6 +356,7 @@ RUSSIAN["INSTALLP_DESC_LOLICON"] =                   "Позволяет вкл�
 RUSSIAN["INSTALLP_DESC_DS3VITA"] =                   "Управляйте вашей PS Vita при помощи DualShock 3"
 RUSSIAN["INSTALLP_DESC_DS4VITA"] =                   "Управляйте вашей PS Vita при помощи DualShock 4"
 RUSSIAN["INSTALLP_DESC_DS34VITA"] =                  "Сочетает в себе функционал плагинов ds3vita и ds4vita от xerpi. Есть возможность подключения до двух контроллеров одновременно"
+RUSSIAN["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 RUSSIAN["INSTALLP_DESC_REVITA"] =                    "reVita это плагин для PS Vita/PS TV, который позволяет переназначить клавиши и сенсоры. Является развитием remaPSV от Rinnegatamante's remaPSV, при этом будучи переписанным как плагин ядра. (Вызов меню: START + SQUARE, можно изменить в Settings -> Hotkeys)"
 RUSSIAN["INSTALLP_DESC_REVITA_GYRO"] =               "Добавить поддержку гироскопа?"
 RUSSIAN["INSTALLP_DESC_UDCDUVC"] =                   "Позволяет транслировать экран PS Vita через USB (экран PS Vita всегда включен)"

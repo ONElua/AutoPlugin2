@@ -356,6 +356,7 @@ FRENCH["INSTALLP_DESC_LOLICON"] =                   "Permet l'overclocking réel
 FRENCH["INSTALLP_DESC_DS3VITA"] =                   "Contrôlez votre PSVita avec un DualShock 3"
 FRENCH["INSTALLP_DESC_DS4VITA"] =                   "Contrôlez votre PSVita avec un DualShock 4"
 FRENCH["INSTALLP_DESC_DS34VITA"] =                  "Combine les fonctionnalités de ds4vita et ds3vita de xerpi. Permet d'utiliser jusqu'à deux contrôleurs en même temps."
+FRENCH["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 FRENCH["INSTALLP_DESC_REVITA"] =                    "reVita est un plugin pour PS Vita / PS TV, qui vous permet de remapper les entrées et de déclencher différentes actions. C'est une continuation de remaPSV de Rinnegatamante, qui a été entièrement réécrit comme un plugin de noyau. (Pour faire apparaître le menu de configuration, appuyez sur START + CARRE, personnalisable sous Settings -> Hotkeys.)"
 FRENCH["INSTALLP_DESC_REVITA_GYRO"] =               "Ajout du support Gyro ?"
 FRENCH["INSTALLP_DESC_UDCDUVC"] =                   "Vous permet de diffuser votre écran Vita sur votre PC via USB (OFFICIEL)"

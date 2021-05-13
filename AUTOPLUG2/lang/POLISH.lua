@@ -356,6 +356,7 @@ POLISH["INSTALLP_DESC_LOLICON"] =                   "Włącza podkręcenia proce
 POLISH["INSTALLP_DESC_DS3VITA"] =                   "Kontroluj swoją Vitę z DualShock 3"
 POLISH["INSTALLP_DESC_DS4VITA"] =                   "Kontroluj swoją Vitę z DualShock 4"
 POLISH["INSTALLP_DESC_DS34VITA"] =                  "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+POLISH["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 POLISH["INSTALLP_DESC_REVITA"] =                    "reVita to plugin dla PS Vita / PS TV, co pozwala na zmianę mapowania triggerów i wyzwalanie różnych działań. Jest to kontynuacja pluginu remaPSV od Rinnegatamante (Aby otworzyć menu konfiguracji, wciśnij START + KWADRAT, Konfigurowalne ustawienia -> Skróty klawiszowe.)"
 POLISH["INSTALLP_DESC_REVITA_GYRO"] =               "Dodać wsparcie żyroskopu ?"
 POLISH["INSTALLP_DESC_UDCDUVC"] =                   "Włącza stream ekranu Vity do PC przez przewód USB (OFICJALNY)"

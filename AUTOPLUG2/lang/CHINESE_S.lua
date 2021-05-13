@@ -356,6 +356,7 @@ CHINESE_S["INSTALLP_DESC_LOLICON"] =                   "通过从内核运行小
 CHINESE_S["INSTALLP_DESC_DS3VITA"] =                   "使用 DualShock 3 控制PSV"
 CHINESE_S["INSTALLP_DESC_DS4VITA"] =                   "使用 DualShock 4 控制PSV"
 CHINESE_S["INSTALLP_DESC_DS34VITA"] =                  "合并了 xerpi 开发的插件 ds4vita 以及 ds3vita 的功能. 允许同时使用最多两个控制器."
+CHINESE_S["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 CHINESE_S["INSTALLP_DESC_REVITA"] =                    "reVita 是一款适用于 PS Vita / PS TV 的插件, 它使您可以重新映射输入并触发不同的操作. 它是 Rinnegatamante 开发的 remaPSV 的延续版本, 且已被完全重写为内核插件. (唤起配置菜单, 按 START + 方块 键, 可在 Settings -> Hotkeys 修改此组合键操作)"
 CHINESE_S["INSTALLP_DESC_REVITA_GYRO"] =               "添加陀螺仪支持 ?"
 CHINESE_S["INSTALLP_DESC_UDCDUVC"] =                   "使用 USB 线缆将 Vita 屏显内容流式传输到电脑 (官方版本)"

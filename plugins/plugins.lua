@@ -1,4 +1,4 @@
-Online_Plugins = {
+plugins = {
 
 --Kernel
 { name = "Kubridge v.01 by TheOfficialFloW", id = "KUBRIDGE.png", path = "kubridge.skprx",	section = "KERNEL",	version = "0001", desc = LANGUAGE["INSTALLP_DESC_KUBRIDGE"], KEY = "INSTALLP_DESC_KUBRIDGE", },
@@ -14,6 +14,7 @@ Online_Plugins = {
 { name = "ds3vita by xerpi Beta3", id = "DS3VITA.png", path = "ds3vita.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DS3VITA"], KEY = "INSTALLP_DESC_DS3VITA", link = "https://raw.githubusercontent.com/xerpi/ds3vita/hooks/README.md", },
 { name = "ds4vita by xerpi v1.2", id = "DS4VITA.png", path = "ds4vita.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DS4VITA"], KEY = "INSTALLP_DESC_DS4VITA", link = "https://raw.githubusercontent.com/xerpi/ds4vita/master/README.md", },
 { name = "ds34vita by MERLev v1.0.1", id = "DS34VITA.png", path = "ds34vita.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DS34VITA"], KEY = "INSTALLP_DESC_DS34VITA", link = "https://raw.githubusercontent.com/MERLev/ds34vita/master/README.md", },
+{ name = "ds5vita by  theheroGAC v1.0 beta", id = "DS5VITA.png", path = "ds5vita.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DS5VITA"], KEY = "INSTALLP_DESC_DS5VITA", link = "https://raw.githubusercontent.com/theheroGAC/ds5vita/main/README.md", },
 { name = "reVita by MERLev v1.0.7", id = "REVITA.png", path = "reVita.skprx", section = "KERNEL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_REVITA"], KEY = "INSTALLP_DESC_REVITA", link = "https://raw.githubusercontent.com/MERLev/reVita/master/README.md", },
 { name = "udcd_uvc by xerpi v1.7", id = "UDCD.png", path = "udcd_uvc.skprx", section = "KERNEL", version = "0004", desc = LANGUAGE["INSTALLP_DESC_UDCDUVC"], KEY = "INSTALLP_DESC_UDCDUVC", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },
 { name = "udcd_uvc OLED by xerpi v1.7", id = "UDCD.png", path = "udcd_uvc_oled_off.skprx", section = "KERNEL", version = "0004", desc = LANGUAGE["INSTALLP_DESC_UDCDUVCO"], KEY = "INSTALLP_DESC_UDCDUVCO", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },

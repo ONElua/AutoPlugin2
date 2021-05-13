@@ -356,6 +356,7 @@ ITALIAN["INSTALLP_DESC_LOLICON"] =                      "Plugin che consente l'o
 ITALIAN["INSTALLP_DESC_DS3VITA"] =                      "Controlla la tua PSVita utilizzando un DualShock 3"
 ITALIAN["INSTALLP_DESC_DS4VITA"] =                      "Controlla la tua PSVita utilizzando un DualShock 4"
 ITALIAN["INSTALLP_DESC_DS34VITA"] =                     "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+ITALIAN["INSTALLP_DESC_DS5VITA"] =                      "Plugin to use PS5 dualsense on PSVITA"
 ITALIAN["INSTALLP_DESC_REVITA"] =                       "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
 ITALIAN["INSTALLP_DESC_REVITA_GYRO"] =                  "Add Gyro support ?"
 ITALIAN["INSTALLP_DESC_UDCDUVC"] =                      "Consente di trasmettere in streaming la schermata della tua PSVita sul tuo PC"

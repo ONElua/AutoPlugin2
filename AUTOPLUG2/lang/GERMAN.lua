@@ -356,6 +356,7 @@ GERMAN["INSTALLP_DESC_LOLICON"] =                   "Ein kleines Menü auf dem B
 GERMAN["INSTALLP_DESC_DS3VITA"] =                   "Steuere deine PSVita mit einem DualShock 3 Controller"
 GERMAN["INSTALLP_DESC_DS4VITA"] =                   "Steuere deine PSVita mit einem DualShock 4 Controller"
 GERMAN["INSTALLP_DESC_DS34VITA"] =                  "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+GERMAN["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 GERMAN["INSTALLP_DESC_REVITA"] =                    "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
 GERMAN["INSTALLP_DESC_REVITA_GYRO"] =               "Add Gyro support ?"
 GERMAN["INSTALLP_DESC_UDCDUVC"] =                   "Den PS-Vita Bildschirm über USB auf den PC zu übertragen. (Offiziell)"
