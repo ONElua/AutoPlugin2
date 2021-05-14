@@ -1,3 +1,7 @@
+#v1.25
+++ Delete ds5vita.skprx
+++ Another useless system update
+
 # v1.24
 ++ Added option "Downloads"
 ++ Added ReSavedata plugin by Princess of Sleeping v1.0
