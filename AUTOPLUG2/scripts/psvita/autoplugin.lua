@@ -50,7 +50,11 @@ function plugins_installation(tb,sel)
 		elseif tb[sel].path:find(string.lower("repatch"),1,true) then
 			tai.del("KERNEL", "repatch.skprx")
 			tai.del("KERNEL", "repatch_4.skprx")
-
+			tai.del("KERNEL", "repatch_ex.skprx")
+		-- Nonpdrm
+		elseif tb[sel].path:find(string.lower("nonpdrm"),1,true) then
+			tai.del("KERNEL", "nonpdrm.skprx")
+			tai.del("KERNEL", "nonpdrm_un.skprx")
 		--Refood or syscall
 		elseif tb[sel].path == "reF00D.skprx" then
 			tai.del("KERNEL", "0syscall6.skprx")
@@ -135,8 +139,7 @@ function plugins_installation(tb,sel)
 			else
 				os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
 			end
-			
-			
+
 		elseif tb[sel].path == "VitaGrafix.suprx" then
 			files.delete("tmp")
 			if back2 then back2:blit(0,0) end
@@ -326,7 +329,7 @@ function autoplugin()
 	--local icon0 = nil
 	while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0,0) end
 
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].."  "..toinstall.."/"..#tb_cop,1,color.white)
@@ -425,7 +428,6 @@ function autoplugin()
 
 		--------------------------	Controls	--------------------------
 
-		--if buttons.select then error("FTP") end
 		if buttons.cancel then
 			--Clean
 			for i=1,scr.maxim do

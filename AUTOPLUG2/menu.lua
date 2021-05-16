@@ -17,6 +17,10 @@ local psp_callback = function ()
 	menu_psp()
 end
 
+local downloads_callback = function ()
+	downloads()
+end
+
 local extras_callback = function ()
 	menu_extras()
 end
@@ -34,6 +38,7 @@ function menu_gral()
 	local menu = {
 		{ text = LANGUAGE["MENU_PSVITA"],	funct = psvita_callback },
 		{ text = LANGUAGE["MENU_PSP"],		funct = psp_callback },
+		{ text = LANGUAGE["MENU_DOWNLOADS"],funct = downloads_callback },
 		{ text = LANGUAGE["MENU_EXTRAS"],	funct = extras_callback },
 		{ text = LANGUAGE["MENU_SETTINGS"],	funct = settings_callback },
 		{ text = LANGUAGE["MENU_EXIT"],		funct = exit_callback }
@@ -46,6 +51,7 @@ function menu_gral()
 		menu = {
 			{ text = LANGUAGE["MENU_PSVITA"],	funct = psvita_callback },
 			{ text = LANGUAGE["MENU_PSP"],		funct = psp_callback },
+			{ text = LANGUAGE["MENU_DOWNLOADS"],funct = downloads_callback },
 			{ text = LANGUAGE["MENU_EXTRAS"],	funct = extras_callback },
 			{ text = LANGUAGE["MENU_SETTINGS"],	funct = settings_callback },
 			{ text = LANGUAGE["MENU_EXIT"],		funct = exit_callback }
@@ -71,8 +77,6 @@ function menu_gral()
 		--Controls
 		if buttons.up or buttons.analogly < -60 then scroll:up() end
 		if buttons.down or buttons.analogly > 60 then scroll:down() end
-
-		--if buttons.select then error("Debugger") end
 
 		if buttons.accept then menu[scroll.sel].funct() end
 

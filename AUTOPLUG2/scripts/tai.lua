@@ -238,8 +238,7 @@ function tai.find(id, path)
 
 	if not tai.gameid[id] then return nil end
 
-	local fname = files.nopath(path)--name or ""
-	fname = fname:lower()
+	local fname = files.nopath(path:lower())
 
 	for i=1, #tai.gameid[id].prx do
 		local x1,x2 = string.find(tai.gameid[id].prx[i].path:lower(), fname, 1, true)
@@ -249,6 +248,32 @@ function tai.find(id, path)
 	end
 
 	return nil
+end
+
+--[[
+	NUMBER tai.findALL(path)
+	Search a filename in the list of plugins
+	return nil in case of error, table in success
+]]
+function tai.findALL(path)
+
+	local fname = files.nopath(path:lower())
+
+	local ids = {}
+	for k,v in pairs(tai.gameid) do
+		for a=1, #v.prx do
+			--os.message(tai.gameid[k].prx[a].path)
+			local x1,x2 = string.find(tai.gameid[k].prx[a].path:lower(), fname, 1, true)
+			if x1 then
+				local tmp = {}
+				tmp.section = k
+				tmp.index = a
+				table.insert(ids,tmp)
+			end
+		end
+	end
+
+	return ids
 end
 
 --[[
@@ -340,7 +365,7 @@ function tai.del(id, path)
 
 	if idx then
 		table.remove(tai.raw, tai.gameid[id].prx[idx].line)
-		if #tai.gameid[id].prx == 1 and (id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx!
+		if #tai.gameid[id].prx == 1 and (id != "KERNEL" and id != "main" and id != "NPXS10015" and id != "NPXS10016") then -- remove section if not have nothing more prx! and id != "ALL"
 			table.remove(tai.raw, tai.gameid[id].line[1])
 		end
 		tai.parse() -- Refresh all ids lines etc..
@@ -374,10 +399,12 @@ function tai.sync(path)
 		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/custom_warning.suprx", section = "main" },
 		  { path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/repatch_ex.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/nonpdrm_un.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/gamesd.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/storagemgr.skprx", section = "KERNEL" },

@@ -20,6 +20,7 @@ dofile("scripts/psvita/autoplugin.lua")
 dofile("scripts/psvita/plugins_online.lua")
 dofile("scripts/psvita/p4golden.lua")
 dofile("scripts/psvita/catherine.lua")
+dofile("scripts/psvita/nearest.lua")
 
 Catherine = false
 if game.exists("PCSG01179") then Catherine = true end
@@ -38,6 +39,10 @@ end
 
 local onlineplugins_callback = function ()
 	plugins_online2()
+end
+
+local VitaNearest_callback = function ()
+	VitaNearest()
 end
 
 local p4_callback = function ()
@@ -59,8 +64,9 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
+		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
 	}
-	
+
 	if P4Golden then
 		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback } )
 	end
@@ -84,7 +90,9 @@ function menu_ps()
 			{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 			{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 			{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
+			{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
 		}
+		
 		if P4Golden then
 			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback } )
 		end
@@ -99,7 +107,7 @@ function menu_ps()
 		end
 
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
 

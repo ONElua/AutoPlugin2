@@ -20,7 +20,7 @@ function install()
 	local x_lenw1, x_lenw2, x_lenw3, x_lenw4, x_lenw5 = 25, 25, 25, 25, 25
 	while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0, 0) end
 
 		screen.print(480, 18, LANGUAGE["MENU_TITLE_SD2VITA"], 1.2, color.white, 0x0, __ACENTER)
@@ -137,7 +137,7 @@ function configure()
 
 	while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 		if back2 then back2:blit(0, 0) end
 
 		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)

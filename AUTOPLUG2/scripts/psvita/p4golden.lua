@@ -41,7 +41,7 @@ function P4Golden_HD()
 	local scroll,selector,xscroll = newScroll(patchs,#patchs),1,10
 	while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back2 then back2:blit(0,0) end
 

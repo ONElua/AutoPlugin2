@@ -44,10 +44,14 @@ function exit_bye_bye()
 	end
 
 	if change then
-		os.message(LANGUAGE["STRING_PSVITA_RESTART"])
+
 		os.delay(250)
-		buttons.homepopup(1)
+
 		--error("USB")--Debugger			----------------------------------------------
+
+		os.dialog(LANGUAGE["STRING_PSVITA_RESTART"].."\n\n\n"..LANGUAGE["PLUGINS_BOOT_WARNING"])
+
+		buttons.homepopup(1)
 		power.restart()
 	end
 
