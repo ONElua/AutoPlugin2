@@ -340,6 +340,7 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
+FRENCH["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 FRENCH["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 FRENCH["INSTALLP_DESC_KUBRIDGE"] =                  "Module du noyau utilisateur pour PS Vita (nécessaire pour le jeu MaxPayne porté sur PSVita)"
 FRENCH["INSTALLP_DESC_NONPDRM"] =                   "Vous permet de contourner la protection DRM sur tout contenu PS Vita"

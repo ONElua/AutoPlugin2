@@ -340,6 +340,7 @@ JAPANESE["TURKISH"] =                                   "トルコ語"
 JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバイスを必要なマウントポイントに自動的にマウント/リダイレクトするカーネルプラグイン（SD2VITA）"
 
 --KERNEL
+JAPANESE["INSTALLP_DESC_X1VITA"] =                      "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 JAPANESE["INSTALLP_DESC_RESAVEDATA"] =                  "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 JAPANESE["INSTALLP_DESC_KUBRIDGE"] =                    "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 JAPANESE["INSTALLP_DESC_NONPDRM"] =                     "PSVitaコンテンツでDRM保護をバイパスできます"

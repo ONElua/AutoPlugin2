@@ -340,6 +340,7 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 CHINESE_S["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 CHINESE_S["INSTALLP_DESC_KUBRIDGE"] =                  "适用于 PS Vita 的 内核-用户 桥模块 (移植版游戏 马克思佩恩 需要它)"
 CHINESE_S["INSTALLP_DESC_NONPDRM"] =                   "绕过任何 PSVita 内容的 DRM 保护机制"

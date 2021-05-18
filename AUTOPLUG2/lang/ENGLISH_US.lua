@@ -340,6 +340,7 @@ ENGLISH_US["TURKISH"] =                                 "TURKISH"
 ENGLISH_US["INSTALLP_DESC_SD2VITA"] =                   "Kernel plugin that automatically mounts/redirects any storage device to any mount points you want (SD2VITA)"
 
 --KERNEL
+ENGLISH_US["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 ENGLISH_US["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 ENGLISH_US["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 ENGLISH_US["INSTALLP_DESC_NONPDRM"] =                   "Bypass DRM protection on any PS Vita content"
@@ -355,7 +356,7 @@ ENGLISH_US["INSTALLP_DESC_REPATCH271"] =                "Antecedent version of r
 ENGLISH_US["INSTALLP_DESC_LOLICON"] =                   "Enables actual overclocking 500 MHz via a small Vita shell ran from kernel (SELECT + UP enable menu. SELECT + DOWN close menu)"
 ENGLISH_US["INSTALLP_DESC_DS3VITA"] =                   "Control your Vita with a DualShock 3"
 ENGLISH_US["INSTALLP_DESC_DS4VITA"] =                   "Control your Vita with a DualShock 4"
-ENGLISH_US["INSTALLP_DESC_DS34VITA"] =                  "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+ENGLISH_US["INSTALLP_DESC_DS34VITA"] =                  "Combines functionality of xerpi's ds4vita and ds3vita. Add support for the DualSense (by Hydr8gon), Allows reVita integration, Alows to use up to two controllers at the same time."
 ENGLISH_US["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
 ENGLISH_US["INSTALLP_DESC_REVITA"] =                    "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
 ENGLISH_US["INSTALLP_DESC_REVITA_GYRO"] =               "Add Gyro support ?"

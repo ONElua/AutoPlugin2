@@ -340,6 +340,7 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 RUSSIAN["INSTALLP_DESC_RESAVEDATA"] =                "Плагин перенаправляет сохранения игр (без шифрования) в подпапки внутри ux0:resavedata (подпапку с TITLE_ID необходимо создать вручную, например ux0:resavedata/PCSF00001)"
 RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Обеспечивает связь между ядром и пользовательским окружением (необходим для запуска портов с Android)"
 RUSSIAN["INSTALLP_DESC_NONPDRM"] =                   "Позволяет обходить DRM защиту PS Vita контента"

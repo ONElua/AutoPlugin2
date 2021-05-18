@@ -340,6 +340,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
+SPANISH["INSTALLP_DESC_X1VITA"] =                       "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 SPANISH["INSTALLP_DESC_RESAVEDATA"] =                   "Plugin que redirecciona los SaveData (datos de guardado) como el de los juegos a ux0:resavedata sin encriptación PFS. (Redirecciona si existe la carpeta con el id del Título dentro de ux0:resavedata/ , como por ejemplo ux0:resavedata/PCSG00001/)"
 SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Módulo Puente Kernel-Usuario para PS Vita (Requerido por el Port de MaxPayne)"
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"

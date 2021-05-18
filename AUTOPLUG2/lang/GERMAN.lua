@@ -340,6 +340,7 @@ GERMAN["TURKISH"] =                                 "Türkisch"
 GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den Speicher automatisch an eine beliebige Partition anbringt (SD2VITA)"
 
 --KERNEL
+GERMAN["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 GERMAN["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 GERMAN["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 GERMAN["INSTALLP_DESC_NONPDRM"] =                   "Ermöglicht es, den DRM-Schutz bei allen PS Vita Inhalten zu umgehen"
