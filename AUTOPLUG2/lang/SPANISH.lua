@@ -340,7 +340,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_X1VITA"] =                       "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
+SPANISH["INSTALLP_DESC_X1VITA"] =                       "¡Maneja tu PS Vita con un mando de Xbox One! ¡¡¡Este Plugin aún no es compatible con los otros Plugin de ds vita(Plugin para usar dualshocks, como ds3, ds4 y ds34)!!!"
 SPANISH["INSTALLP_DESC_RESAVEDATA"] =                   "Plugin que redirecciona los SaveData (datos de guardado) como el de los juegos a ux0:resavedata sin encriptación PFS. (Redirecciona si existe la carpeta con el id del Título dentro de ux0:resavedata/ , como por ejemplo ux0:resavedata/PCSG00001/)"
 SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Módulo Puente Kernel-Usuario para PS Vita (Requerido por el Port de MaxPayne)"
 SPANISH["INSTALLP_DESC_NONPDRM"] =                      "Permite evitar la protección DRM en cualquier contenido de PS Vita"
@@ -356,7 +356,7 @@ SPANISH["INSTALLP_DESC_REPATCH271"] =                   "Versión anterior de re
 SPANISH["INSTALLP_DESC_LOLICON"] =                      "Permite verdadero overclocking (500mHz) a través de un Plugin que corre en el Kernel. Usar con cuidado, ya que puede dañar tu PS Vita debido a las consecuencias de usar overclocking (SELECT + ARRIBA activa el menú. SELECT + ABAJO cierra el menú)"
 SPANISH["INSTALLP_DESC_DS3VITA"] =                      "Controla tu PS Vita con un DualShock 3"
 SPANISH["INSTALLP_DESC_DS4VITA"] =                      "Controla tu PS Vita con un DualShock 4"
-SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combina las funcionalidades de ds4vita y ds3vita de xerpi. Permite usar hasta dos controles al mismo tiempo"
+SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combina las funcionalidades de ds4vita y ds3vita de xerpi. Añade soporte para usar DualSense (por Hydr8gon), así tambien integración con el Plugin reVita. Permite usar hasta dos controles al mismo tiempo"
 SPANISH["INSTALLP_DESC_DS5VITA"] =                      "Plugin para usar el DualSense de PS5 en PS Vita"
 SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita es un plugin para PS Vita/PSTV, que permite remapear botones y activar distintas acciones. Es la continuación de remaPSV de Rinnegatamante, reescrito como un Kernel Plugin. (Para abrir el menú de configs, presiona START + CUADRADO, personalizable en Settings -> Hotkeys.)"
 SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscópio al plugin reVita"
