@@ -16,7 +16,7 @@ FRENCH["MENU_TITLE"] =                              "AutoPlugin II"
 FRENCH["MENU_PSVITA"] =                             "Plugins PSVita"
 FRENCH["MENU_PSP"] =                                "Plugins PSP pour Adrenaline"
 FRENCH["MENU_EXTRAS"] =                             "Menu Extra"
-FRENCH["MENU_DOWNLOADS"] =                          "Downloads"
+FRENCH["MENU_DOWNLOADS"] =                          "Téléchargement"
 FRENCH["MENU_SETTINGS"] =                           "Paramètres"
 FRENCH["MENU_EXIT"] =                               "Quitter"
 
@@ -36,7 +36,7 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouve
 
 --Vita-Nearest-Neighbour
 FRENCH["MENU_PSVITA_INSTALL_NEAREST"] =             "Vita Nearest Neighbour"
-FRENCH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nSouhaitez-vous installer ce plugin dans un jeu spécifique ??\n\n Sinon, il sera installé dans TOUTES les sections."
+FRENCH["MENU_PSVITA_INSTALL_NEAREST_Q"] =           "\n\nSouhaitez-vous installer ce plugin pour un jeu spécifique ??\n\n Sinon, il sera installé sur TOUTES les sections."
 
 --P4 Golden HD
 FRENCH["MENU_PSVITA_INSTALL_P4G_HD"] =              "Patch HD du jeu Persona 4 Golden"
@@ -79,7 +79,7 @@ FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personna
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin TransparentImpose"
 FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
-FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	"Réinitialiser config.txt dans ur0"
+FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	  "Réinitialiser config.txt dans ur0"
 FRENCH["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration du QuickMenu Plus"
 FRENCH["MENU_AUTOBOOT_TITLE"] =                     "Autoboot (démarrage automatique)"
 FRENCH["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Télécharger la base de donnée PKGj"
@@ -117,7 +117,7 @@ FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Police d'écriture"
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II (internet requis)"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Recevoir ou non les mises à jour automatique de AutoPlugin II"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de définir la langue par défaut a utilisé avec AutoPlugin II"
-FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	"Permet de changer la police d'écriture de AutoPlugin II"
+FRENCH["MENU_SETTINGS_CHANGE_FONT_DESC"] =         	"Permet de changer la police d'écriture de AutoPlugin II"
 
 --Install Plugins
 FRENCH["LIST_PLUGINS"] =                            "Liste des plugins prêts à être installés :"
@@ -260,7 +260,7 @@ FRENCH["TRANSIMPOSE_OSK_TITLE"] =                   "Configuration du plugin"
 FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de transparence en cours..."
 
 --QuickMenu Plus
-FRENCH["QUICKMENU_MENU_TIME"] =                		"Temps de pression du menu rapide"
+FRENCH["QUICKMENU_MENU_TIME"] =                	  	"Temps de pression du menu rapide"
 FRENCH["QUICKMENU_MENU_STANDBYRESTART"] =           "Style de bouton"
 FRENCH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "Style de fond d'écran"
 FRENCH["QUICKMENU_MENU_TIME_DESC"] =                "Règle le temps de pression du bouton Quick Menu PS. Temps en microsecondes. Par exemple, mettez 250000 pour 250 millisecondes. Le temps par défaut est de 500 millisecondes"
@@ -435,9 +435,9 @@ FRENCH["INSTALLP_DESC_NOSHAREDFB"] =                "Permet de contourner les pr
 FRENCH["INSTALLP_DESC_TRIMPOSE"] =                  "Plugin pour PS Vita qui rend le menu imposé (celui qui apparaît après une longue pression sur le bouton PS) transparent."
 FRENCH["INSTALLP_DESC_QUIETSHOT"] =                 "Désactive le son de l'obturateur lors de la prise d'une capture d'écran, d'une photo, d'une vidéo ou d'une photo panoramique. Fonctionne à la fois sur la Playstation Vita et la PlayStation TV."
 FRENCH["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - active un serveur FTP en arrière-plan sur le port 1337."
-FRENCH["INSTALLP_DESC_TROPHYSHOT"] =             	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
-FRENCH["INSTALLP_DESC_BOOTSOUND"] =             	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
-FRENCH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
+FRENCH["INSTALLP_DESC_TROPHYSHOT"] =              	"Tout comme sur la PS4, il fait une capture d'écran chaque fois que l'on déverrouille un trophée."
+FRENCH["INSTALLP_DESC_BOOTSOUND"] =               	"Ce plugin peut lire un fichier WAV comme un jingle de démarrage sur une PSVita/PSTV au démarrage."
+FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 
@@ -496,7 +496,7 @@ FRENCH["REPAIR_CONFIG_TXT"] =                       "\n\nCorrection des plugins 
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "\n\nCorrection du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
-FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		              "taiHEN config.txt Reloaded OK"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
