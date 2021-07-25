@@ -340,6 +340,9 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_8BIVITA"] =                   "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+RUSSIAN["INSTALLP_DESC_REAUTH"] =                    "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+RUSSIAN["INSTALLP_DESC_DUALSENSE"] =                 "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
 RUSSIAN["INSTALLP_DESC_X1VITA"] =                    "Управляйте вашей PS Vita при помощи геймпада от Xbox One! В данный момент плагин не совместим с другими аналогичными."
 RUSSIAN["INSTALLP_DESC_RESAVEDATA"] =                "Плагин перенаправляет сохранения игр (без шифрования) в подпапки внутри ux0:resavedata (подпапку с TITLE_ID необходимо создать вручную, например ux0:resavedata/PCSF00001)"
 RUSSIAN["INSTALLP_DESC_KUBRIDGE"] =                  "Обеспечивает связь между ядром и пользовательским окружением (необходим для запуска портов с Android)"
@@ -413,6 +416,7 @@ RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - УСПЕ
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
+RUSSIAN["INSTALLP_DESC_USBDISABLE"] =                "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 RUSSIAN["INSTALLP_DESC_DENABLER"] =                  "Загружайте любые файлы при помощи браузера"
 RUSSIAN["INSTALLP_DESC_NOLOCKSCREEN"] =              "Плагин отключает сенсорный экран блокировки"
 RUSSIAN["INSTALLP_DESC_NOTROPHYMSG"] =               "Плагин отключает предупреждение при обнаружении сохранения, созданного под другим аккаунтом"
@@ -516,3 +520,4 @@ RUSSIAN["SYSTEM_ERROR"] =                            "Системная оши�
 RUSSIAN["SYSTEM_ERROR_REPO"] =                       "Пожалуйста, сообщите об этом на сайте github.com/ONElua/AutoPlugin2"
 RUSSIAN["SYSTEM_ERROR_FIX"] =                        "Или исправьте ошибку в указанном файле (ux0:папки/файл.lua:номер_строки)"
 RUSSIAN["ERROR_LOADING_FILE"] =                      "Ошибка загрузки файла"
+RUSSIAN["DOWNLOAD_PLUGINS"] =                        "Downloading database plugins"

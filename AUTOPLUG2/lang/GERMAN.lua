@@ -340,6 +340,9 @@ GERMAN["TURKISH"] =                                 "Türkisch"
 GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den Speicher automatisch an eine beliebige Partition anbringt (SD2VITA)"
 
 --KERNEL
+GERMAN["INSTALLP_DESC_8BIVITA"] =                   "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+GERMAN["INSTALLP_DESC_REAUTH"] =                    "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+GERMAN["INSTALLP_DESC_DUALSENSE"] =                 "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
 GERMAN["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 GERMAN["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 GERMAN["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
@@ -413,6 +416,7 @@ GERMAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin fertig!"
 GERMAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin FEHLER!"
 
 --Main
+GERMAN["INSTALLP_DESC_USBDISABLE"] =                "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 GERMAN["INSTALLP_DESC_DENABLER"] =                  "Dateien durch den Browser runterladen"
 GERMAN["INSTALLP_DESC_NOLOCKSCREEN"] =              "Deaktiviert den Sperrbildschirm von der PSVita"
 GERMAN["INSTALLP_DESC_NOTROPHYMSG"] =               "Deaktiviert die Trophäenhinweismeldung, wenn eine Anwendung gestartet wird, deren Spielstände mit einem anderen Konto verknüpft sind. Nützlich, wenn zwischen Konten gewechselt wird."
@@ -516,3 +520,4 @@ GERMAN["SYSTEM_ERROR"] =                            "System Error"
 GERMAN["SYSTEM_ERROR_REPO"] =                       "Please report this error to Autoplugin2 Repo at Onelua Github"
 GERMAN["SYSTEM_ERROR_FIX"] =                        "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
 GERMAN["ERROR_LOADING_FILE"] =                      "Error loading file"
+GERMAN["DOWNLOAD_PLUGINS"] =                        "Downloading database plugins"

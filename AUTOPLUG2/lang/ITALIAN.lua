@@ -340,6 +340,9 @@ ITALIAN["TURKISH"] =                                    "TURCO"
 ITALIAN["INSTALLP_DESC_SD2VITA"] =                      "Plugin del kernel che monta/reindirizza automaticamente qualsiasi dispositivo di archiviazione su qualsiasi partizione desiderata (SD2VITA)"
 
 --KERNEL
+ITALIAN["INSTALLP_DESC_8BIVITA"] =                      "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+ITALIAN["INSTALLP_DESC_REAUTH"] =                       "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+ITALIAN["INSTALLP_DESC_DUALSENSE"] =                    "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
 ITALIAN["INSTALLP_DESC_X1VITA"] =                       "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 ITALIAN["INSTALLP_DESC_RESAVEDATA"] =                   "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 ITALIAN["INSTALLP_DESC_KUBRIDGE"] =                     "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
@@ -413,6 +416,7 @@ ITALIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =              "boot_splash.bin CREATO 
 ITALIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =              "boot_splash.bin FALLITO !!!"
 
 --Main
+ITALIAN["INSTALLP_DESC_USBDISABLE"] =                   "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 ITALIAN["INSTALLP_DESC_DENABLER"] =                     "Permette di scaricare i file dal tuo browser"
 ITALIAN["INSTALLP_DESC_NOLOCKSCREEN"] =                 "Disattiva la schermata di blocco su PSVita"
 ITALIAN["INSTALLP_DESC_NOTROPHYMSG"] =                  "Disabilita il messaggio dei suggerimenti dei trofei quando lanci un'applicazione collegato a un altro account. Utile se cambi continuamente account"
@@ -516,3 +520,4 @@ ITALIAN["SYSTEM_ERROR"] =                               "System Error"
 ITALIAN["SYSTEM_ERROR_REPO"] =                          "Please report this error to Autoplugin2 Repo at Onelua Github"
 ITALIAN["SYSTEM_ERROR_FIX"] =                           "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
 ITALIAN["ERROR_LOADING_FILE"] =                         "Error loading file"
+ITALIAN["DOWNLOAD_PLUGINS"] =                           "Downloading database plugins"

@@ -340,6 +340,9 @@ POLISH["TURKISH"] =                                 "TURECKI"
 POLISH["INSTALLP_DESC_SD2VITA"] =                   "Plugin kernela, który automatycznie montuje / przekierowuje dowolne urządzenie pamięci do dowolnych punktów montowania (SD2VITA)"
 
 --KERNEL
+POLISH["INSTALLP_DESC_8BIVITA"] =                   "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+POLISH["INSTALLP_DESC_REAUTH"] =                    "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+POLISH["INSTALLP_DESC_DUALSENSE"] =                 "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
 POLISH["INSTALLP_DESC_X1VITA"] =                    "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
 POLISH["INSTALLP_DESC_RESAVEDATA"] =                "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 POLISH["INSTALLP_DESC_KUBRIDGE"] =                  "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
@@ -413,6 +416,7 @@ POLISH["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin GOTOWY !!!"
 POLISH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin BŁĄD !!!"
 
 --Main
+POLISH["INSTALLP_DESC_USBDISABLE"] =                "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 POLISH["INSTALLP_DESC_DENABLER"] =                  "Pobieraj pliki przez przeglądarkę"
 POLISH["INSTALLP_DESC_NOLOCKSCREEN"] =              "Wyłącza blokadę ekranu w PSVita"
 POLISH["INSTALLP_DESC_NOTROPHYMSG"] =               "Wyłącza wskazówkę dotyczącą trofeum po uruchomieniu aplikacji, której zapisane dane są połączone z innym kontem. Przydatne, jeśli ciągle zmieniasz konta"
@@ -516,3 +520,4 @@ POLISH["SYSTEM_ERROR"] =                            "Błąd systemu"
 POLISH["SYSTEM_ERROR_REPO"] =                       "Proszę wyślij raport do Autoplugin2 Repo at Onelua Github"
 POLISH["SYSTEM_ERROR_FIX"] =                        "Lub napraw błąd w linii tekstowej pliku znalezionej w ścieżce wymienionej powyżej (ux0:path/file.lua:numer lini)"
 POLISH["ERROR_LOADING_FILE"] =                      "Błąd ładowania pliku"
+POLISH["DOWNLOAD_PLUGINS"] =                        "Downloading database plugins"

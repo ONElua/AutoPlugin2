@@ -340,6 +340,9 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
+SPANISH["INSTALLP_DESC_8BIVITA"] =                      "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+SPANISH["INSTALLP_DESC_REAUTH"] =                       "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+SPANISH["INSTALLP_DESC_DUALSENSE"] =                    "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
 SPANISH["INSTALLP_DESC_X1VITA"] =                       "¡Maneja tu PS Vita con un mando de Xbox One! ¡¡¡Este Plugin aún no es compatible con los otros Plugin de ds vita(Plugin para usar dualshocks, como ds3, ds4 y ds34)!!!"
 SPANISH["INSTALLP_DESC_RESAVEDATA"] =                   "Plugin que redirecciona los SaveData (datos de guardado) como el de los juegos a ux0:resavedata sin encriptación PFS. (Redirecciona si existe la carpeta con el id del Título dentro de ux0:resavedata/ , como por ejemplo ux0:resavedata/PCSG00001/)"
 SPANISH["INSTALLP_DESC_KUBRIDGE"] =                     "Módulo Puente Kernel-Usuario para PS Vita (Requerido por el Port de MaxPayne)"
@@ -413,6 +416,7 @@ SPANISH["INSTALLP_DESC_BOOTSPLASH_DONE"] =              "¡ boot_splash.bin CREA
 SPANISH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =              "¡ boot_splash.bin FALLO !"
 
 --Main
+SPANISH["INSTALLP_DESC_USBDISABLE"] =                   "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 SPANISH["INSTALLP_DESC_DENABLER"] =                     "Permite descargar archivos a través del navegador"
 SPANISH["INSTALLP_DESC_NOLOCKSCREEN"] =                 "Desactiva la pantalla de bloqueo de la PS Vita"
 SPANISH["INSTALLP_DESC_NOTROPHYMSG"] =                  "Desactiva el mensaje que impide que ganes trofeos cuando inicia una aplicación que esté vinculada a una cuenta diferente. Útil si cambias constantemente de cuenta"
@@ -516,3 +520,4 @@ SPANISH["SYSTEM_ERROR"] =                               "Error de Sistema"
 SPANISH["SYSTEM_ERROR_REPO"] =                          "Por favor reporta este error al Repositorio en Github de Autoplugin2 de Onelua"
 SPANISH["SYSTEM_ERROR_FIX"] =                           "o soluciona este error en la linea mencionada arriba (ux0:ruta/archivo.lua:numero de linea)"
 SPANISH["ERROR_LOADING_FILE"] =                         "Error al cargar el archivo"
+SPANISH["DOWNLOAD_PLUGINS"] =                           "Downloading database plugins"
