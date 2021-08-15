@@ -68,6 +68,7 @@ Online_Plugins = {
 { name = "reAuth - Use PlayStation Store and sign-in by cuevavirus v1.0", id = "REAUTH.png", path = "reAuth.skprx", section = "KERNEL", config = "reAuth/", configpath = "ur0:data/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_REAUTH"], KEY = "INSTALLP_DESC_REAUTH", },
 { name = "X1Vita by Ibrahim778 v3.3", id = "X1VITA.png", path = "X1Vita.skprx", section = "KERNEL", version = "0002", desc = LANGUAGE["INSTALLP_DESC_X1VITA"], KEY = "INSTALLP_DESC_X1VITA", link = "https://raw.githubusercontent.com/Ibrahim778/X1Vita/master/README.md" },
 { name = "8BitVita by Ibrahim778 v1.2", id = "EBITVITA.png", path = "8BitVita.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_8BIVITA"], KEY = "INSTALLP_DESC_8BIVITA", link = "https://raw.githubusercontent.com/Ibrahim778/8BitVita/master/README.md", },
+{ name = "vshPatch by KuromeSan v1.0", id = "VSHPATCH.png", path = "vshPatch.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VSHPATCH"], KEY = "INSTALLP_DESC_VSHPATCH", link = "https://raw.githubusercontent.com/KuromeSan/vshPatch/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md", },
@@ -100,7 +101,7 @@ Online_Plugins = {
 { name = "Quick Menu Plus v2.0.0 by cuevavirus", id = "QUICKMENU.png", path = "quickmenuplus.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKMENU"], KEY = "INSTALLP_DESC_QUICKMENU", link = "https://git.shotatoshounenwachigau.moe/vita/quickmenuplus/plain/CHANGELOG.md", },
 { name = "dt2s-vita v1.1 DoubleTap2Sleep for PS VITA (StatusBar) by joel16", id = "DT2SBAR.png", path = "dt2s_statusbar.suprx", section = "main", tai_del1 = "dt2s.suprx", section_del1 = "ALL", version = "0002", desc = LANGUAGE["INSTALLP_DESC_DT2S_STATUSBAR"], KEY = "INSTALLP_DESC_DT2S_STATUSBAR", link = "https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md", },
 { name = "Fruitpeel v1.0 by cuevavirus", id = "FRUITPEEL.png", path = "fruitpeel.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FRUITPEEL"], KEY = "INSTALLP_DESC_FRUITPEEL", },
-{ name = "USBDisable by Ibrahim778 v2.0", id = "USBDISABLE.png", path = "USBDisable.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_USBDISABLE"], KEY = "INSTALLP_DESC_USBDISABLE", link = "https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md", },
+{ name = "USBDisable by Ibrahim778 v3.0", id = "USBDISABLE.png", path = "USBDisable.suprx", section = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_USBDISABLE"], KEY = "INSTALLP_DESC_USBDISABLE", link = "https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md", },
 
 --All
 --{ name = "Vita-Nearest-Neighbour v1.0 by MuxaJlbl4", id = "VITANEARESTN.png", path = "VitaNearestNeighbour.suprx", section = "ALL", gameid = true, version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"], KEY = "INSTALLP_DESC_VITANEARESTN", link = "https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md", },
