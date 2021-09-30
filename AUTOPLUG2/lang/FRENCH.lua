@@ -417,6 +417,7 @@ FRENCH["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "Installation du boot_splash
 FRENCH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "Échec de l'installation du boot_splash.bin !!!"
 
 --Main
+FRENCH["INSTALLP_DESC_PASTEUNLOCK"] =               "Plugin for PS Vita that unlocks hidden copy/paste feature in system software. To activate copypaste popup press and hold your finger on the text until it zooms in. After that release your finger from the screen and copypaste popup will open."
 FRENCH["INSTALLP_DESC_USBDISABLE"] =                "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 FRENCH["INSTALLP_DESC_DENABLER"] =                  "Télécharger des fichiers via le navigateur internet de la PSVita"
 FRENCH["INSTALLP_DESC_NOLOCKSCREEN"] =              "Désactive l'écran de verrouillage de la PSVita"

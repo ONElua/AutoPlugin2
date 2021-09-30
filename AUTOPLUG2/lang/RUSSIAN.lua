@@ -417,6 +417,7 @@ RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - УСПЕ
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
+RUSSIAN["INSTALLP_DESC_PASTEUNLOCK"] =               "Plugin for PS Vita that unlocks hidden copy/paste feature in system software. To activate copypaste popup press and hold your finger on the text until it zooms in. After that release your finger from the screen and copypaste popup will open."
 RUSSIAN["INSTALLP_DESC_USBDISABLE"] =                "Плагин отключает надоедливое сообщение 'Подключение' при подключении к ПК -- (Q)CMA не прекратит работать!"
 RUSSIAN["INSTALLP_DESC_DENABLER"] =                  "Загружайте любые файлы при помощи браузера"
 RUSSIAN["INSTALLP_DESC_NOLOCKSCREEN"] =              "Плагин отключает сенсорный экран блокировки"
