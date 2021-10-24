@@ -340,7 +340,7 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
-RUSSIAN["INSTALLP_DESC_VSHPATCH"] =                  "Like repatch, but for system applications. this is an emulated VS0, simply put your changes you want to make into ux0:/vshPatch/ and then the changes will be reflected in vs0: partition, via the power of fios2"
+RUSSIAN["INSTALLP_DESC_VSHPATCH"] =                  "Функции плагина аналогичны rePatch, но только для системных приложений. Создаётся ''виртуальный раздел'' vs0 в папке ux0:/vshPatch/, куда можно помещать свои изменённые файлы вместо настоящего раздела vs0"
 RUSSIAN["INSTALLP_DESC_8BIVITA"] =                   "Аналог X1Vita, только с 8BitDo VID/PID и раскладкой кнопок (совместимые модели: Lite, Pro, Pro+, Pro 2 и Zero 2)"
 RUSSIAN["INSTALLP_DESC_REAUTH"] =                    "reAuth позволяет получить доступ в PS Store, а также выполнить вход в PS Network на прошивках 3.60 и 3.65 (необходимо: enso, включить подмену версии и указать версию 3.73)"
 RUSSIAN["INSTALLP_DESC_DUALSENSE"] =                 "Плагин позволяет использовать DualSense прямо как DualShock 4 на PlayStation TV, а также на PlayStation Vita с установленным MiniVitaTV"
@@ -417,7 +417,7 @@ RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - УСПЕ
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
-RUSSIAN["INSTALLP_DESC_PASTEUNLOCK"] =               "Plugin for PS Vita that unlocks hidden copy/paste feature in system software. To activate copypaste popup press and hold your finger on the text until it zooms in. After that release your finger from the screen and copypaste popup will open."
+RUSSIAN["INSTALLP_DESC_PASTEUNLOCK"] =               "Новый плагин для PS Vita, который разблокирует скрытые функции копирования/вставки текста. Для использования зажмите текст на экране до появления увеличения. После чего отпустите палец и появится меню выбора функции."
 RUSSIAN["INSTALLP_DESC_USBDISABLE"] =                "Плагин отключает надоедливое сообщение 'Подключение' при подключении к ПК -- (Q)CMA не прекратит работать!"
 RUSSIAN["INSTALLP_DESC_DENABLER"] =                  "Загружайте любые файлы при помощи браузера"
 RUSSIAN["INSTALLP_DESC_NOLOCKSCREEN"] =              "Плагин отключает сенсорный экран блокировки"
