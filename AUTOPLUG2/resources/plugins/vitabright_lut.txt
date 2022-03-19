@@ -1,22 +1,24 @@
-# This is a modified gamma table, more information here: https://github.com/devnoname120/vitabright/wiki/What-is-the-format-of-the-OLED-gamma-table
-E1 E1 FF CF D7 CA C1 C9 BA E1 E3 DE D5 CF D3 FA ED E6 2F 00 2F
-CC CC EA D0 D8 CB C3 CB BB E2 E4 DF D6 CE D3 FA ED E6 2F 00 2F
-BF BF DA D4 DB CE C6 CD BF E3 E3 E1 D7 CA D3 FA ED E6 2F 00 2F
+# This is a modified gamma table, more information here: https://github.com/devnoname120/vitabright/wiki/What-is-the-format-of-the-OLED-gamma-table%3F
+# Four Extra Bright Custom Values, Including Maximum Capable Brightness Of The Screen
+D8 DA FF BA C2 B2 BF C8 B8 E1 E5 DE D4 CE D3 FA ED E6 2F 00 2F
+C5 C6 E9 C5 CD BC BE C7 BA DF E3 D7 D4 CE D3 FA ED E6 2F 00 2F
+B8 B8 DA C7 D0 BF BF C7 B9 E1 E5 DB D4 CE D3 FA ED E6 2F 00 2F
+AA AA C9 CC D5 C7 C0 C8 B9 E1 E3 DB D4 CE D3 FA ED E6 2F 00 2F
+# The Bellow Five Values Were Taken From The Default Slider, Including The Default Brightest, And The Default Dimmest
 9F 9F BE CF D7 C9 C2 CB BB E1 E3 DE D6 D0 D3 FA ED E6 2F 00 2F
-99 99 B6 D1 D9 CC C3 CB BC E2 E4 DF D6 CC D3 FA ED E6 2F 00 2F
 # Games that set the CPU freq to 444 Mhz will only make the below values usable
-8D 8D A7 D5 DB CF C6 CE C0 E4 E4 E1 D7 C8 D3 FA ED E6 2F 00 2F
-8B 8B A5 D5 DB CF C7 CE C0 E3 E3 E1 D8 C7 D3 FA ED E6 2F 00 2F
-87 86 9F D6 DD D1 C7 CE C1 E4 E3 E2 D9 C6 D3 FA ED E6 2F 00 2F
-84 83 9B D7 DE D2 C8 CE C2 E4 E3 E2 D9 C3 D3 FA ED E6 2F 00 2F
-7F 7E 95 D7 DE D2 CB CF C5 E5 E3 E3 DA BF D3 FA ED E6 2F 00 2F
-7D 7C 92 D7 DD D2 CB D0 C6 E5 E1 E3 DA BD D3 FA ED E6 2F 00 2F
+# The Bellow Value Is The Same Default Maximum Brightest Available On 444 Mhz Games
+91 91 AC D3 DA CE C5 CD BE E3 E3 E0 D7 CA D3 FA ED E6 2F 00 2F
+89 89 A2 D5 DB CF C8 CF C2 E3 E3 E1 D9 C7 D3 FA ED E6 2F 00 2F
+82 81 99 D6 DD D1 CA CF C3 E4 E3 E3 DA C2 D3 FA ED E6 2F 00 2F
 79 78 8D D9 DF D5 CB CF C5 E5 E0 E4 DC B8 D4 FA ED E6 2F 00 2F
-# Value that's used by default by the Vita when dimming because of inactivity
-6A 68 7A DC E1 D8 D1 CF CD E6 D9 E3 CD 8C CB F0 9C F9 2F 00 2F
-58 55 68 E5 E4 DE D6 D2 D0 E8 D5 E5 CB 78 C7 EE 9C F9 2F 00 2F
-# Low brightness, but blueish tone. Might want to fix this
-49 48 5D D9 DF D5 CB CF C5 E5 E0 E4 DC B8 D4 FA ED E6 2F 00 2F
-# Flux-like orange tone, easy on the eyes
-64 5A 62 E3 E4 DD D4 D0 CF E7 D7 E4 CD 7B C9 F0 9C F9 2F 00 2F
-58 55 68 E5 E4 DE D6 D2 D0 E8 D5 E5 CB 78 C7 EE 9C F9 2F 00 2F
+# Seven Extra Dim Custom Values, Including Dimmest Before Screen Loses Too Much Contrast & Colour
+72 71 84 E3 DF E0 DB D1 D7 E2 CA DE E6 57 D0 DD 00 00 00 00 00
+68 67 79 E4 DF E1 DE D1 DC E3 BC DC E7 00 4E 98 00 00 00 00 00
+5F 5E 6E E7 E0 E6 E1 D0 DE E1 AD E0 C4 00 00 00 00 00 00 00 00
+57 55 66 E9 E1 E8 E7 D5 E4 E5 9F DE C6 00 00 00 00 00 00 00 00
+51 4E 5F EB E4 EC EA D4 E7 E9 8B E1 BF 00 00 00 00 00 00 00 00
+4D 49 5B EB E1 EB EA CF E9 E6 22 D9 B7 00 00 00 00 00 00 00 00
+48 43 56 F0 E4 EE EA CC EC DF 00 E2 B7 00 00 00 00 00 00 00 00
+# Not On Slider
+48 43 56 F0 E4 EE EA CC EC DF 00 E2 B7 00 00 00 00 00 00 00 00
