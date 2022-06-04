@@ -48,6 +48,9 @@ This tool allows you to install/uninstall the following plugins with one click
 | [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
 | [dt2s-vita](https://github.com/joel16/dt2s-vita/)  | [joel16](https://github.com/joel16/) |
 | [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
+| [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
+| [PasteUnlock](https://github.com/GrapheneCt/PasteUnlock/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
+| [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [SonicMastr](https://github.com/SonicMastrb) |
 
 # Optional settings
 - Update plugins Online
@@ -65,6 +68,13 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 1.26 ###
+- Added QuickLauncher v1.3 (QuickMenuReborn) by Ibrahim778
+- Added CapUnlocker v1.4 by GrapheneCt
+- Added PasteUnlock v1.0 by GrapheneCt
+- Added Repatch reLoaded v1.2 Hotfix by SonicMastr
+- Updated VitaBright v2.0 by devnoname120
 
 ### Changelog 1.25 ###
 - Delete ds5vita.skprx
