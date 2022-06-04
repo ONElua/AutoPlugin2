@@ -446,6 +446,7 @@ JAPANESE["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a W
 JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 JAPANESE["INSTALLP_DESC_FRUITPEEL"] =                   "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
+JAPANESE["INSTALLP_DESC_QUICKLAUNCHER"] =               "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
 
 --ALL
 JAPANESE["INSTALLP_DESC_VITANEARESTN"] =                "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"

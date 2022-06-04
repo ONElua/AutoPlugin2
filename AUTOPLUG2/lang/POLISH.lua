@@ -446,6 +446,7 @@ POLISH["INSTALLP_DESC_BOOTSOUND"] =             	"Ta wtyczka może odtwarzać pl
 POLISH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus łączy w sobie Quick Power, Quick Volume i Rapidmenu, a także dodaje nowe funkcje. Wyłączenie, restart, i przycisk uśpienia, konfigurowalny przycisk power, suwak głośności, Szybszy czas otwarcia szybkiego menu, Niestandardowe style tła."
 POLISH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Rekomendowane) Ta wersja działa tylko wtedy, gdy dotkniesz górnej części ekranu dotykowego. W SceShell (pulpit) był by to pasek stanu. Działa to podobnie do funkcji podwójnego stuknięcia w trybie uśpienia systemu Android, która jest na pasku stanu."
 POLISH["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
+POLISH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
 
 --ALL
 POLISH["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"

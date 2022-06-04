@@ -35,6 +35,7 @@ end
 function exit_bye_bye()
 
 	--tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
+	--os.exit()
 	tai.sync() --Write Test
 
 	if change then ReloadConfig = false end

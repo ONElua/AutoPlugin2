@@ -446,6 +446,7 @@ CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动
 CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并了 Quick Power, Quick Volume 和 Rapidmenu 的功能, 并添加了新特性. 关闭电源, 重启和待机按钮, 可配置的电源按钮, 音量滑块, 提高快捷菜单开启速度, 自定义背景样式."
 CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
 CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "修改锁屏背景壁纸 (具有8位调色板的非隔行扫描PNG. 最大支持分辨率为 896x448. 文件大小最大支持到 512 KiB)"
+CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "适用于 PS Vita 的简单的大变革插件, 用于覆盖纹理采样. 强制使用点过滤方法(最近邻插值)而非线性渲染."

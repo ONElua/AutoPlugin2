@@ -207,7 +207,15 @@ function plugins_installation(tb,sel)
 
 		--Copy Especial Config for the plugin
 		if tb[sel].config then
-			if tb[sel].config == "custom_warning.txt" then
+
+			--QuickMenuReborn Addons
+			if tb[sel].configpath == "ur0:QuickMenuReborn/" then
+				if not files.exists("ur0:QuickMenuReborn/qmr_plugin.rco") then
+					files.copy(path_plugins.."QuickMenuReborn/qmr_plugin.rco", "ur0:QuickMenuReborn/")
+				end
+				files.copy(path_plugins.."QuickMenuReborn/"..tb[sel].config, "ur0:QuickMenuReborn/")
+
+			elseif tb[sel].config == "custom_warning.txt" then
 				if not files.exists("ur0:tai/"..tb[sel].config) then
 					local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
 					if not text or (string.len(text)<=0) then text = "" end--os.nick() end
@@ -268,12 +276,15 @@ function plugins_installation(tb,sel)
 
 		elseif tb[sel].path == "vitacheat.skprx" then		--Vitacheat 3.65
 
+			files.delete("ux0:vitacheat/font/font.dat")
 			files.extract("resources/plugins/vitacheat.zip","ux0:")
 			files.copy("resources/plugins/vitacheat365/vitacheat.suprx","ux0:vitacheat/")
 
 		elseif tb[sel].path == "vitacheat360.skprx" then	--Vitacheat 3.60
 
 			files.extract("resources/plugins/vitacheat.zip","ux0:")
+			files.delete("ux0:vitacheat/font/font.dat")
+			files.extract("resources/plugins/font.zip","ux0:")--font 16kb
 			files.copy("resources/plugins/vitacheat360/vitacheat.suprx","ux0:vitacheat/")
 
 		elseif tb[sel].path == "AutoBoot.suprx" and not files.exists("ux0:data/AutoBoot/boot.cfg") then--AutoBoot
@@ -520,7 +531,7 @@ function autoplugin()
 
 				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
 					http.download(tb_cop[scr.sel].link,"ux0:data/AUTOPLUGIN2/tmp.txt")
-					if files.exists("ux0:data/AUTOPLUGIN2/readmes/tmp.txt") then
+					if files.exists("ux0:data/AUTOPLUGIN2/tmp.txt") then
 						tb_cop[scr.sel].readme = files.read("ux0:data/AUTOPLUGIN2/tmp.txt")
 					end
 					files.delete("ux0:data/AUTOPLUGIN2/tmp.txt")
