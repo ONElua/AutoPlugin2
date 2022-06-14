@@ -6,7 +6,7 @@ Online_Langs = {
 { id =  "CHINESE_S",	version = "01.58",		author =  "yexun1995" },
 { id =  "FRENCH",		version = "01.59",		author =  "Chronoss09" },
 { id =  "GERMAN",		version = "01.41",		author =  "Schn1ek3" },
-{ id =  "RUSSIAN",		version = "01.60",		author =  "Yoti" },
+{ id =  "RUSSIAN",		version = "01.61",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.42",		author =  "KierownikStacji" },
 { id =  "PORTUGUESE_BR",version = "01.28",		author =  "allanaln2009" },
 }
