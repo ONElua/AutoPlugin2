@@ -388,7 +388,7 @@ function tai.sync(path)
 		tai.put("main", "ur0:tai/henkaku.suprx", 1)
 		tai.put("NPXS10015", "ur0:tai/henkaku.suprx", 1)
 		tai.put("NPXS10016", "ur0:tai/henkaku.suprx", 1)
-		tai.del("KERNEL", "ur0:tai/henkaku.suprx")
+		tai.del("KERNEL", "ur0:tai/henkaku.skprx")
 		
 		local force_path = {
 		  { path = "ur0:tai/ds34vita.skprx", section = "KERNEL" },
