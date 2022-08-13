@@ -30,8 +30,8 @@ JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =          "プラグインの更�
 
 JAPANESE["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =          "SCENE-PSVITAによって作成された最も便利なプラグインをインストールします"
 JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =        "プラグインを簡単かつ容易にアンインストールします"
-JAPANESE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =          "SD2VITAプラグインのインストール (StorageMgr v3.2 by CelesteBlue)"
-JAPANESE["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =           "SD2VITAプラグインの構成 (StorageMgr v3.2 by CelesteBlue)"
+JAPANESE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =          "SD2VITAプラグインのインストール (StorageMgr v3.4 by CelesteBlue & Yoti)"
+JAPANESE["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =           "SD2VITAプラグインの構成 (StorageMgr v3.4 by CelesteBlue & Yoti)"
 JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =     "新しく更新されたプラグインの有無を確認します"
 
 --Vita-Nearest-Neighbour
@@ -71,10 +71,11 @@ JAPANESE["MENU_PSP_PLUGINS_DESC"] =                     "Adrenaline用のPSPプ�
 --Options Extras
 JAPANESE["MENU_EXTRAS_PKGJ_TITLE"] =                    "PKGJ設定オプション"
 JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO"] =              "iTLS-Enso.vpkをダウンロードしてインストール"
-JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL"] =             "Download and install Vitashell vpk"
-JAPANESE["MENU_EXTRAS_INSTALL_SHARKF00D"] =             "Download and install ShaRKF00D vpk"
-JAPANESE["MENU_EXTRAS_INSTALL_BATTFIX"] =               "batteryFixer.vpkをダウンロードしてインストール"
-JAPANESE["MENU_EXTRAS_INSTALL_YAMT"] =                  "Download and install Yamt vpk"
+JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL"] =             "Download and install Vitashell"
+JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL2"] =            "Download and install Vitashell (from Yoti)"
+JAPANESE["MENU_EXTRAS_INSTALL_SHARKF00D"] =             "Download and install ShaRKF00D"
+JAPANESE["MENU_EXTRAS_INSTALL_BATTFIX"] =               "batteryFixer をダウンロードしてインストール"
+JAPANESE["MENU_EXTRAS_INSTALL_YAMT"] =                  "Download and install Yamt"
 JAPANESE["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =            "カスタムブートスプラッシュの設定"
 JAPANESE["MENU_EXTRAS_CUSTOM_WARNING"] =                "カスタム警告メッセージの設定"
 JAPANESE["MENU_EXTRAS_TRANSP_IMPOSE"] =                 "クイックメニュー透明化の設定"
@@ -97,8 +98,9 @@ JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオ
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
 JAPANESE["MENU_EXTRAS_CUSTOMWARNING_DESC"] =            "ENSOで起動するときに、標準の警告メッセージの代わりにカスタムの警告メッセージを設定できます"
 JAPANESE["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =             "透明化のレベルを設定できます。（255 = 0％透明、0 = 100％透明） 30未満の値は推奨されません"
-JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =         "VitaにiTLS-Enso.vpkをダウンロードしてインストールできます（Enso対応デバイスにTLS v1.2を追加します）"
+JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =         "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =        "Download and install Vitashell vpk in your Vita"
+JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =       "Download and install Vitashell vpk in your Vita (From Yoti github)"
 JAPANESE["MENU_EXTRAS_INSTALL_YAMT_DESC"] =             "Download and install Yamt vpk in your Vita: Yet another (re)mount tool kernel plugin for PS Vita/PS TV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65)"
 JAPANESE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =        "Download and install ShaRKF00D vpk in your Vita"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =          "PSViaにPSP2-batteryFixer.vpkをダウンロードしてインストールできます（PSVitaのバッテリー関連の問題のほとんどを修正します）"

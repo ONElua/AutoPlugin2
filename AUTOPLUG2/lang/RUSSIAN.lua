@@ -70,12 +70,12 @@ RUSSIAN["MENU_PSP_PLUGINS_DESC"] =                   "Установить PSP �
 
 --Options Extras
 RUSSIAN["MENU_EXTRAS_PKGJ_TITLE"] =                  "Изменение различных настроек PKGj"
-RUSSIAN["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Загрузить и установить iTLS-Enso vpk"
-RUSSIAN["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Загрузить и установить VitaShell vpk"
-RUSSIAN["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Загрузить и установить VitaShell vpk (от Yoti)"
-RUSSIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Загрузить и установить batteryFixer vpk"
-RUSSIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Загрузить и установить ShaRKF00D vpk"
-RUSSIAN["MENU_EXTRAS_INSTALL_YAMT"] =                "Загрузить и установить YAMT vpk"
+RUSSIAN["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Загрузить и установить iTLS-Enso"
+RUSSIAN["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Загрузить и установить VitaShell"
+RUSSIAN["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Загрузить и установить VitaShell(от Yoti)"
+RUSSIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Загрузить и установить batteryFixer"
+RUSSIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Загрузить и установить ShaRKF00D"
+RUSSIAN["MENU_EXTRAS_INSTALL_YAMT"] =                "Загрузить и установить YAMT"
 RUSSIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Установить своё загрузочное изображение (Boot Splash)"
 RUSSIAN["MENU_EXTRAS_CUSTOM_WARNING"] =              "Установить свой загрузочный текст (Warning Message)"
 RUSSIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Настроить прозрачность фона быстрого меню PS Vita"

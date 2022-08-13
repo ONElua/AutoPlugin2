@@ -1,3 +1,7 @@
+#v1.27
+++ Added PSVshellPlus v1.2 by GrapheneCt
+++ Fixed Revita v1.08 by MERLev
+
 #v1.26
 ++ Added QuickLauncher v1.3 (QuickMenuReborn) by Ibrahim778
 ++ Added CapUnlocker v1.4 by GrapheneCt

@@ -30,8 +30,8 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifiez les mises à jour
 
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés de la scène PSVITA"
 FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller un plugin installé facilement"
-FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la SD2VITA (StorageMgr v3.2 de CelesteBlue)"
-FRENCH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurer le plugin de la SD2VITAA (StorageMgr v3.2 de CelesteBlue)"
+FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la SD2VITA (StorageMgr v3.4 (de CelesteBlue & Yoti))"
+FRENCH["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurer le plugin de la SD2VITAA (StorageMgr v3.4 (de CelesteBlue & Yoti))"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Vérifier s'il y a de nouvelle version de mise à jour des plugins"
 
 --Vita-Nearest-Neighbour
@@ -72,9 +72,10 @@ FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Plugins PSP utile a utilis�
 FRENCH["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configuration de PKGJ"
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Télécharger et installer iTLS-Enso"
 FRENCH["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Télécharger et installer Vitashell"
+FRENCH["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Download and install Vitashell (from Yoti)"
 FRENCH["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Télécharger et installer ShaRKF00D"
 FRENCH["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Télécharger et installer batteryFixer"
-FRENCH["MENU_EXTRAS_INSTALL_YAMT"] =                "Download and install Yamt vpk"
+FRENCH["MENU_EXTRAS_INSTALL_YAMT"] =                "Download and install Yamt"
 FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personnalisée au démarrage"
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin TransparentImpose"
@@ -99,6 +100,7 @@ FRENCH["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Vous permet de définir un 
 FRENCH["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Vous permet de définir le niveau de transparence à utilisé avec le plugin (255 = 0% de transparence, 0 = 100% de transparence). Les valeurs inférieures à 30% ne sont pas recommandées"
 FRENCH["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Permet de télécharger et d'installer iTLS-Enso sur votre console, ajoute TLS v1.2 aux consoles compatibles avec Enso (3.60/3.65) , internet requis"
 FRENCH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Téléchargez et installez Vitashell directement sur votre PSVita (connexion internet requis)"
+FRENCH["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =     "Download and install Vitashell vpk in your Vita (From Yoti github)"
 FRENCH["MENU_EXTRAS_INSTALL_YAMT_DESC"] =           "Download and install Yamt vpk in your Vita (Yet another (re)mount tool kernel plugin for PS Vita/PS TV)"
 FRENCH["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =      "Téléchargez et installez ShaRKF00D directement sur votre PSVita (connexion internet requis)"
 FRENCH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Permet de télécharger et d'installer PSP2-batteryFixer sur votre console (corrige la plupart des problèmes liés aux batterie de la PSVita), internet requis"

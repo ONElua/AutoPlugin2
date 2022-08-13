@@ -30,8 +30,8 @@ CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "检查插件更新"
 
 CHINESE_S["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "安装为 PSVita 环境开发的实用插件"
 CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "卸载插件"
-CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (StorageMgr v3.2,由 CelesteBlue 开发)"
-CHINESE_S["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "配置 SD2VITA 插件 (StorageMgr v3.2,由 CelesteBlue 开发)"
+CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (StorageMgr v3.4 by CelesteBlue & Yoti)"
+CHINESE_S["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "配置 SD2VITA 插件 (StorageMgr v3.4 by CelesteBlue & Yoti)"
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "在线检查插件更新"
 
 --Vita-Nearest-Neighbour
@@ -70,11 +70,12 @@ CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP
 
 --Options Extras
 CHINESE_S["MENU_EXTRAS_PKGJ_TITLE"] =                  "PKGj 配置选项"
-CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "下载并安装 iTLS-Enso vpk"
-CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL"] =           "下载并安装 Vitashell vpk"
-CHINESE_S["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "下载并安装 ShaRKF00D vpk"
-CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "下载并安装 batteryFixer vpk"
-CHINESE_S["MENU_EXTRAS_INSTALL_YAMT"] =                "下载并安装 Yamt vpk"
+CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "下载并安装 iTLS-Enso"
+CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL"] =           "下载并安装 Vitashell"
+CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Download and install Vitashell (from Yoti)"
+CHINESE_S["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "下载并安装 ShaRKF00D"
+CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "下载并安装 batteryFixer"
+CHINESE_S["MENU_EXTRAS_INSTALL_YAMT"] =                "下载并安装 Yamt"
 CHINESE_S["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "设置自定义启动画面"
 CHINESE_S["MENU_EXTRAS_CUSTOM_WARNING"] =              "设置自定义警告消息"
 CHINESE_S["MENU_EXTRAS_TRANSP_IMPOSE"] =               "设置强制菜单透明度"
@@ -99,6 +100,7 @@ CHINESE_S["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "当使用 ENSO 系统开
 CHINESE_S["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "允许您设置透明度 (255 = 0% 透明度, 0 = 100% 透明度) 不推荐设置透明度参数小于 30"
 CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "下载并安装 iTLS-Enso vpk 到您的 Vita (为启用 Enso 的设备添加 TLS v1.2 支持)"
 CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "下载并安装 Vitashell vpk 到您的 Vita"
+CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =     "Download and install Vitashell vpk in your Vita (From Yoti github)"
 CHINESE_S["MENU_EXTRAS_INSTALL_YAMT_DESC"] =           "下载并安装 Yamt vpk 到您的 Vita: 又一款适用于 PS Vita/PS TV 的重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 以及 3.65 系统版本)"
 CHINESE_S["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =      "下载并安装 ShaRKF00D vpk 到您的 Vita"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "下载并安装 PSP2-batteryFixer vpk 到您的 Vita (解决大多数 PSVita 的电池相关问题)"

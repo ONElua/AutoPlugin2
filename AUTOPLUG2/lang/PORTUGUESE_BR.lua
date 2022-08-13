@@ -30,8 +30,8 @@ PORTUGUESE_BR["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Checar por atualiza�
 
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Instale os plugins mais úteis criados por SCENE-PSVITA"
 PORTUGUESE_BR["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Desinstalar plugins"
-PORTUGUESE_BR["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Instalar plugin SD2VITA (StorageMgr v3.2 por CelesteBlue)"
-PORTUGUESE_BR["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurar plugin SD2VITA (StorageMgr v3.2 por CelesteBlue)"
+PORTUGUESE_BR["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Instalar plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
+PORTUGUESE_BR["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "Configurar plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
 PORTUGUESE_BR["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "Verificar online se há novos plugins atualizados"
 
 --Vita-Nearest-Neighbour
@@ -72,9 +72,10 @@ PORTUGUESE_BR["MENU_PSP_PLUGINS_DESC"] =                   "Instalar plugins PSP
 PORTUGUESE_BR["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configurar opções do PKGj"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Baixar e instalar o vpk iTLS-Enso"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Baixar e instalar o vpk batteryFixer"
-PORTUGUESE_BR["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell vpk"
-PORTUGUESE_BR["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Download and install ShaRKF00D vpk"
-PORTUGUESE_BR["MENU_EXTRAS_INSTALL_YAMT"] =                "Download and install Yamt vpk"
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell"
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Download and install Vitashell (from Yoti)"
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Download and install ShaRKF00D"
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_YAMT"] =                "Download and install Yamt"
 PORTUGUESE_BR["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Definir splash de inicialização customizada"
 PORTUGUESE_BR["MENU_EXTRAS_CUSTOM_WARNING"] =              "Definir mensagem de aviso personalizada"
 PORTUGUESE_BR["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Definir imposição transparente"
@@ -99,6 +100,7 @@ PORTUGUESE_BR["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Definir uma mensagem
 PORTUGUESE_BR["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Definir valore de nível de transparência (255 = 0% Transparente, 0 = 100% Transparente) Valores abaixo de 30 não são recomendados"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Baixar e instalar o vpk iTLS-Enso no Vita (Adiciona TLS v1.2 aos dispositivos com Enso habilitado)"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
+PORTUGUESE_BR["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =     "Download and install Vitashell vpk in your Vita (From Yoti github)"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_YAMT_DESC"] =           "Download and install Yamt vpk in your Vita: Yet another (re)mount tool kernel plugin for PS Vita/PS TV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65)"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =      "Download and install ShaRKF00D vpk in your Vita"
 PORTUGUESE_BR["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Baixar e instalar o vpk PSP2-batteryFixer no Vita (Corrige a maioria dos problemas relacionados à bateria do PSVita)"
