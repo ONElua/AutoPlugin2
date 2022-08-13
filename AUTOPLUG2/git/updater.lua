@@ -54,7 +54,8 @@ function screen.flip()
 				return 1;
 			end
 
-			if http.download(url, path2vpk).success then
+			local res = http.download(url, path2vpk)
+			if res and res.success then
 				os.delay(500)
 				if files.exists(path2vpk) then
 					files.mkdir("ux0:/data/1luapkg")
@@ -67,6 +68,9 @@ function screen.flip()
 					files.delete("ux0:/data/1luapkg")
 					game.launch(string.format("ONEUPDATE&%s&%s&%s&%s", os.titleid(), path2vpk, files.cdir().."/lang/", __LANG)) -- Goto installer extern!
 				end
+			else
+				files.delete(path2vpk)
+				os.message(LANGUAGE["UPDATER_ERROR"])
 			end
 			onAppInstall = onAppInstallOld
 			onNetGetFile = onNetGetFileOld
