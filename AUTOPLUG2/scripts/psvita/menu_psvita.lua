@@ -131,7 +131,7 @@ function menu_ps()
 		else
 			screen.print(480, 520, menu[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
 		end
-
+		--screen.print(05,60,"D: "..tostring(THIDS:geterror()),0.9)
 		screen.flip()
 
 		--Controls

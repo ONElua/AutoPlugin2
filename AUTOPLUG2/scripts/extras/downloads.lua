@@ -33,8 +33,8 @@ function download_install(url,name)
 							onNetGetFile = onNetGetFileOld
 							__file = files.nopath(files.nofile(links[i].href))..name
 							__file = string.gsub(__file,"/","  ")
-							http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vpks/"..name)
-							if files.exists("ux0:data/AUTOPLUGIN2/vpks/"..name) then
+							local res = http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vpks/"..name)
+							if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/vpks/"..name) then
 								game.install("ux0:data/AUTOPLUGIN2/vpks/"..name,false)
 								break
 							end
@@ -63,9 +63,13 @@ function downloads()
 	local itls_callback = function ()
 		download_install("https://github.com/SKGleba/iTLS-Enso/releases/latest/", "iTLS-Enso.vpk")
 	end
-	
+
 	local vitashell_callback = function ()
 		download_install("https://github.com/TheOfficialFloW/VitaShell/releases/latest/", "VitaShell.vpk")
+	end
+
+	local vitashell_yoti_callback = function ()
+		download_install("https://github.com/RealYoti/VitaShell/releases/latest/", "VitaShell.vpk")
 	end
 
 	local ShaRKF00D_callback = function ()
@@ -83,6 +87,7 @@ function downloads()
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2"],desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"],		funct = vitashell_yoti_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"],		funct = ShaRKF00D_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	    desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },

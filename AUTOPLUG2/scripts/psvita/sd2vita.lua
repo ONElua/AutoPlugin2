@@ -95,6 +95,17 @@ function install()
 
 	--delete if plugin gamesd.skprx
 	tai.del("KERNEL", "ur0:tai/gamesd.skprx")
+	--delete if plugin usbmc.skprx
+	tai.del("KERNEL", "ur0:tai/usbmc.skprx")
+	--Disable Yamt
+	if files.exists("ur0:tai/yamt.cfg") then
+		local fp = io.open("ur0:tai/yamt.cfg", "r+")
+		if fp then
+			fp:seek("set",0x01)
+			fp:write(0)
+			fp:close()
+		end
+	end
 
 	--Install plugin to tai folder
 	files.copy(path_plugins.."storagemgr.skprx", "ur0:tai")

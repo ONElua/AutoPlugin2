@@ -40,9 +40,9 @@ function lang_online()
 	local tmpss = {}
 
 	__file = "Langdatabase.lua"
-	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
+	local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 
-	if files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
+if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])

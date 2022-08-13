@@ -171,7 +171,8 @@ function downloadtsv_callback()
 				__file = tsv[scroll.sel].name
 
 				buttons.homepopup(0)
-				if http.download(tsv[scroll.sel].url, path_configtxt.."dbtmp.tsv").success then
+				local res = http.download(tsv[scroll.sel].url, path_configtxt.."dbtmp.tsv")
+				if res and res.success and files.exists(path_configtxt.."dbtmp.tsv") then
 					files.delete(path_configtxt..tsv[scroll.sel].name)
 					files.rename(path_configtxt.."dbtmp.tsv", tsv[scroll.sel].name)
 					tsv[scroll.sel].info = files.info(path_configtxt..tsv[scroll.sel].name)
