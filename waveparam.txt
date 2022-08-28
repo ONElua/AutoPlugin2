@@ -1,0 +1,172 @@
+#
+# Dark red SCE "iboot" color template
+#
+
+type Select
+set_value selecter[0].r           0.000000
+set_value selecter[0].g           0.000000
+set_value selecter[0].b           0.000000
+set_value selecter[0].a           1.000000
+set_value selecter[1].r           0.000000
+set_value selecter[1].g           0.000000
+set_value selecter[1].b           0.000000
+set_value selecter[1].a           0.900000
+
+type Material
+set_value color.r           0.000001
+set_value color.g           0.000001
+set_value color.b           0.000001
+set_value color.a           0.900000
+set_value diffuse_coeff     0.491071
+set_value specular_coeff    1.525877
+set_value specular_power    72.750000
+set_value fresnel_front     0.000000
+set_value fresnel_control   0.120467
+set_value fresnel_coeff     0.940949
+set_value refraction_coeff  2.082463
+set_value refraction_amount 0.151785
+set_value second_reflection 0.000000
+
+type PointLightSphere
+set_value theta_phi[0]    1.430546
+set_value theta_phi[1]    -0.336599
+set_value distance        1.099089
+set_value attn.a          0.900000
+set_value attn.b          0.000000
+set_value attn.c          0.000000
+set_value attn.d          0.000000
+set_value ambient_color.r 0.019607
+set_value ambient_color.g 0.019607
+set_value ambient_color.b 0.019607
+set_value ambient_color.a 0.900000
+set_value diffuse_color.r 0.019607
+set_value diffuse_color.g 0.019607
+set_value diffuse_color.b 0.019607
+set_value diffuse_color.a 0.500000
+set_value fade            0.519642
+
+set_value ambient_color.r 0.019607
+set_value ambient_color.g 0.019607
+set_value ambient_color.b 0.019607
+
+type Fog1
+set_value color.r       0.019607
+set_value color.g       0.019607
+set_value color.b       0.019607
+set_value color.a       0.900000
+set_value density.a     0.098153
+set_value density.b     0.062500
+set_value density.c     0.071918
+set_value density.d     10.000000
+set_value light_color.r 0.019607
+set_value light_color.g 0.019607
+set_value light_color.b 0.019607
+set_value light_color.a 1.000000
+set_value d_scale       2.507272
+set_value d_offset      5.415760
+
+type Fog0
+set_value color.r       0.019607
+set_value color.g       0.000005
+set_value color.b       0.000005
+set_value color.a       0.900000
+set_value density.a     0.558153
+set_value density.b     0.062500
+set_value density.c     0.071918
+set_value density.d     30.00000
+set_value light_color.r 0.553571
+set_value light_color.g 0.019607
+set_value light_color.b 0.019607
+set_value light_color.a 1.000000
+set_value d_scale       2.207272
+set_value d_offset      3.415760
+
+type Sky
+set_value theta_phi[0]             3.440341
+set_value theta_phi[1]             -0.336599
+set_value distance                 60.216381
+set_value sun_color.r              0.000907
+set_value sun_color.g              0.000000
+set_value sun_color.b              0.009607
+set_value sun_color.a              1.000000
+set_value sun_power                1.666348
+set_value sun_control              0.435714
+set_value zenith_color.r           0.099142
+set_value zenith_color.g           0.009607
+set_value zenith_color.b           0.009607
+set_value zenith_color.a           0.000000
+set_value horizon_color.r          0.009696
+set_value horizon_color.g          0.000000
+set_value horizon_color.b          0.000000
+set_value horizon_color.a          0.255000
+set_value wave_fog_alpha           0.026785
+set_value radius                   7.363738
+set_value xscale                   0.842857
+set_value side_angle               0.635730
+set_value horizon_angle            0.196349
+set_value horizon_blend_range      0.144052
+set_value horizon_curvature        0.923598
+set_value sky_blend_start          0.492699
+set_value sky_blend_range          0.786082
+set_value pos_distortion_scale     0.009146
+set_value grad_distortion_scale    0.009146
+set_value horizon_distortion_scale 0.009108
+
+type FFTWave
+set_value gravity    12.710714
+set_value A          0.000000
+set_value logA       -20.000000
+set_value patch_size 98.214287
+set_value wind_speed 10.250000
+set_value wind_dir   -4.141592
+set_value time_step  0.003101
+
+type WaveInstance
+set_value distortion_scale     0.130587
+set_value translation.x        0.000371
+set_value translation.y        -0.009445
+set_value translation.z        -2.550752
+set_value translation.w        0.000000
+set_value rotation.x           -0.439656
+set_value rotation.y           0.000000
+set_value rotation.z           0.000000
+set_value rotation.w           0.898166
+set_value scale.x              0.539773
+set_value scale.y              0.450897
+set_value scale.z              0.435805
+set_value scale.w              0.000000
+set_value global_scale         4.922255
+set_value uv_scale             0.625000
+set_value uv_rotate            221.785721
+set_value center_color.r       0.019607
+set_value center_color.g       0.019607
+set_value center_color.b       0.019607
+set_value center_color.a       0.600000
+set_value center_power         0.007324
+set_value edge_color.r         0.607142
+set_value edge_color.g         0.000784
+set_value edge_color.b         0.000285
+set_value edge_color.a         0.500000
+set_value edge_power           4.844873
+set_value cross_section.x      0.199972
+set_value cross_section.y      0.253692
+set_value cross_section.z      -0.241464
+set_value cross_section.w      2.056981
+set_value cross_section_flat.x 0.169096
+set_value cross_section_flat.y 0.109336
+set_value cross_section_flat.z -0.307033
+set_value cross_section_flat.w 1.053961
+set_value decay                0.364284
+set_value shadow_nor_blend     0.700000
+
+type WaveRenderer
+set_value edge_fog[0]   0.401784
+set_value edge_fog[1]   0.757142
+set_value pitch_max     -0.813448
+set_value pitch_rest    -0.698131
+set_value pitch_min     -0.743323
+set_value pitch_debug   -0.743323
+set_value roll_max      0.180766
+set_value roll_max_zone 0.122173
+set_value zoom          0.335714
+set_value camera_chase  0.096621
