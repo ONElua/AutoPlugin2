@@ -115,7 +115,9 @@ POLISH["MENU_SETTINGS_LANG_ONLINE"] =               "Pobierz język"
 POLISH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Włącz AutoUpdate: "
 POLISH["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Wybierz język"
 POLISH["MENU_SETTINGS_CHANGE_FONT"] =               "Wybierz czcionkę"
+POLISH["MENU_SETTINGS_AUTO_FIX"] =                  "Tai Config Auto: "
 
+POLISH["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
 POLISH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Pobierz jezyk do AutoPlugin II"
 POLISH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Włącz autoaktualizacje"
 POLISH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Wybierz domyślny język dla AutoPlugin II"
@@ -451,6 +453,7 @@ POLISH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus łączy w sobi
 POLISH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Rekomendowane) Ta wersja działa tylko wtedy, gdy dotkniesz górnej części ekranu dotykowego. W SceShell (pulpit) był by to pasek stanu. Działa to podobnie do funkcji podwójnego stuknięcia w trybie uśpienia systemu Android, która jest na pasku stanu."
 POLISH["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 POLISH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+POLISH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
 POLISH["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
@@ -486,6 +489,7 @@ POLISH["INSTALLP_DESC_SHARPSCALE"] =                "Natywna rodzielczość HDMI
 POLISH["INSTALLP_DESC_RAPIDMENU"] =                 "Skróć czas otwierania szybkiego menu z 2 sekund do 200 milisekund."
 POLISH["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro w każdej grze!"
 POLISH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper to plugin do aplikacji PS Vita Sony Reader (PCSC80012), która służy do wyodrębniania zawartości formatu książki Sony .MNH (Marlin-Hon)."
+POLISH["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 POLISH["INSTALLP_DESC_PS4LINK"] =                   "Wtyczka taiHEN, która pozwala wymusić preferowaną konfigurację przycisku gry zdalnej"

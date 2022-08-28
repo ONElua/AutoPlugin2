@@ -115,7 +115,9 @@ SPANISH["MENU_SETTINGS_LANG_ONLINE"] =                  "Descargar Idiomas Dispo
 SPANISH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =            "Habilitar AutoUpdate: "
 SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE"] =              "Cambiar Idioma"
 SPANISH["MENU_SETTINGS_CHANGE_FONT"] =                  "Cambiar font"
+SPANISH["MENU_SETTINGS_AUTO_FIX"] =                     "Tai Config Auto: "
 
+SPANISH["MENU_SETTINGS_AUTO_FIX_DESC"] =                "Enable/Disable The Tai Config Auto"
 SPANISH["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Descarga paquetes de idiomas disponibles para AutoPlugin II"
 SPANISH["MENU_SETTINGS_AUTOUPDATE_DESC"] =              "Habilitar AutoUpdate Si/No"
 SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =         "Permite cambiar y ajustar el idioma por defecto de AutoPlugin II"
@@ -451,6 +453,7 @@ SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona l
 SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
 SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de fondo de la pantalla de bloqueo (la que queda una vez se 'pela' la imagen de bloqueo) (formato PNG con paleta de 8 bit no entrelazada. Resolución máxima de 896x448. Peso máximo de 512 Kb)"
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+SPANISH["INSTALLP_DESC_WAVE"] =                         "A PS Vita home background wave add plugin."
 
 --ALL
 SPANISH["INSTALLP_DESC_VITANEARESTN"] =                 "Sencillo Plugin de taiHEN para PS Vita que sobreescribe el muestreo de texturas (las distintas formas de mostrar texturas). Fuerza el renderizado, en vez de usar filtrado Lineal, lo hace con el método Point Filtering (Filtrado por Punto. Interpolación por Nearest-Neighbor o Vecino más Cercano en Español)"
@@ -486,6 +489,7 @@ SPANISH["INSTALLP_DESC_SHARPSCALE"] =                   "Salida Nativa de 960x54
 SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que toma abrir el Menú Rápido de 2 segundos a 200 milisegundos (0.2 segundos)"
 SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
 SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
+SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"

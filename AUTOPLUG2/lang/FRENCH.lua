@@ -115,7 +115,9 @@ FRENCH["MENU_SETTINGS_LANG_ONLINE"] =               "Paramètres des langues"
 FRENCH["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Activer les mises à jour automatique : "
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Langue"
 FRENCH["MENU_SETTINGS_CHANGE_FONT"] =               "Police d'écriture"
+FRENCH["MENU_SETTINGS_AUTO_FIX"] =                  "Tai Config Auto: "
 
+FRENCH["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
 FRENCH["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Télécharger les packs linguistiques disponibles pour AutoPlugin II (internet requis)"
 FRENCH["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Recevoir ou non les mises à jour automatique de AutoPlugin II"
 FRENCH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Permet de définir la langue par défaut a utilisé avec AutoPlugin II"
@@ -451,6 +453,7 @@ FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Qui
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+FRENCH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
@@ -486,6 +489,7 @@ FRENCH["INSTALLP_DESC_SHARPSCALE"] =                "Sortie HDMI 960x544 pour le
 FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouverture du menu rapide de 2 secondes à 200 millisecondes."
 FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantané dans n'importe quel jeu!"
 FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
+FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"

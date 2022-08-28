@@ -115,7 +115,9 @@ JAPANESE["MENU_SETTINGS_LANG_ONLINE"] =                 "利用可能な言語�
 JAPANESE["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =           "自動更新を有効にする: "
 JAPANESE["MENU_SETTINGS_CHANGE_LANGUAGE"] =             "言語を変更する"
 JAPANESE["MENU_SETTINGS_CHANGE_FONT"] =                 "Change font"
+JAPANESE["MENU_SETTINGS_AUTO_FIX"] =                    "Tai Config Auto: "
 
+JAPANESE["MENU_SETTINGS_AUTO_FIX_DESC"] =               "Enable/Disable The Tai Config Auto"
 JAPANESE["MENU_SETTINGS_LANG_ONLINE_DESC"] =            "AutoPlugin IIの利用可能な言語パックをダウンロードする"
 JAPANESE["MENU_SETTINGS_AUTOUPDATE_DESC"] =             "自動更新を有効にする：はい/いいえ"
 JAPANESE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =        "AutoPlugin IIの言語をデフォルトとして変更および設定できます"
@@ -451,6 +453,7 @@ JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Q
 JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 JAPANESE["INSTALLP_DESC_FRUITPEEL"] =                   "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 JAPANESE["INSTALLP_DESC_QUICKLAUNCHER"] =               "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+JAPANESE["INSTALLP_DESC_WAVE"] =                         "A PS Vita home background wave add plugin."
 
 --ALL
 JAPANESE["INSTALLP_DESC_VITANEARESTN"] =                "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
@@ -486,6 +489,7 @@ JAPANESE["INSTALLP_DESC_SHARPSCALE"] =                  "Native 960x544 HDMI out
 JAPANESE["INSTALLP_DESC_RAPIDMENU"] =                   "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 JAPANESE["INSTALLP_DESC_SCOREHAX"] =                    "Instant pro at any game!"
 JAPANESE["INSTALLP_DESC_HONRIPPER"] =                   "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+JAPANESE["INSTALLP_DESC_HIDEAP"] =                      "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"

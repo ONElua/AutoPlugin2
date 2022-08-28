@@ -115,7 +115,9 @@ GERMAN["MENU_SETTINGS_LANG_ONLINE"] =               "Verfügbare Sprachen herunt
 GERMAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "AutoUpdate aktivieren: "
 GERMAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Sprache ändern"
 GERMAN["MENU_SETTINGS_CHANGE_FONT"] =               "Change font"
+GERMAN["MENU_SETTINGS_AUTO_FIX"] =                  "Tai Config Auto: "
 
+GERMAN["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
 GERMAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Verfügbare Sprachpakete für AutoPlugin II herunterladen"
 GERMAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "AutoUpdate aktivieren Ja/Nein"
 GERMAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Standardsprache für AutoPlugin II festlegen"
@@ -451,6 +453,7 @@ GERMAN["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick P
 GERMAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 GERMAN["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 GERMAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+GERMAN["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
 GERMAN["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
@@ -486,6 +489,7 @@ GERMAN["INSTALLP_DESC_SHARPSCALE"] =                "Native 960x544 HDMI output 
 GERMAN["INSTALLP_DESC_RAPIDMENU"] =                 "Reduce quick menu open time from 2 seconds to 200 milliseconds."
 GERMAN["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game!"
 GERMAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
+GERMAN["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 GERMAN["INSTALLP_DESC_PS4LINK"] =                   "taiHEN Plugin, mit dem die bevorzugte Tasten Konfiguration für Remote Play erzwungen werden kann."
