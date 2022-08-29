@@ -139,7 +139,7 @@ plugins = {
 { name = "ShowInfo Lite by Yoti v0.2", id = "SHOWINFOLITE.png", path = "ShowInfoLite.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFO"], KEY = "INSTALLP_DESC_SHOWINFO", },
 { name = "ShowInfo Full by Yoti v0.6", id = "SHOWINFOFULL.png", path = "ShowInfo.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SHOWINFOFU"], KEY = "INSTALLP_DESC_SHOWINFOFU", },
 { name = "Volume Control Pack by GrapheneCt v1.0", id = "VOLUMECTRL.png", path = "ModalVol.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MODALVOL"], KEY = "INSTALLP_DESC_MODALVOL", link = "https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md", },
-{ name = "hide-autoplugin by SilicaAndPina v1.0", id = "HIDEAP.png", path = "hide-autoplugin.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_HIDEAP"], KEY = "INSTALLP_DESC_HIDEAP", link = "https://silica.codes/SilicaAndPina/hide-autoplugin/raw/branch/main/README.md", },
+--{ name = "hide-autoplugin by SilicaAndPina v1.0", id = "HIDEAP.png", path = "hide-autoplugin.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_HIDEAP"], KEY = "INSTALLP_DESC_HIDEAP", link = "https://silica.codes/SilicaAndPina/hide-autoplugin/raw/branch/main/README.md", },
 
 --2 prxs
 { name = "MakePsmGreatAgain by SilicaAndPina v1.5", id = "MAKEPSM.png", path = "MakePsmGreatAgain.suprx", section = "PCSI00007", path2 = "MakePsmGreatAgain.suprx", section2 = "PCSI00009", version = "0003", desc = LANGUAGE["INSTALLP_DESC_MAKEPSM"], KEY = "INSTALLP_DESC_MAKEPSM", link = "https://silica.codes/SilicaAndPina/makepsmgreatagain/raw/branch/master/README.md", },
