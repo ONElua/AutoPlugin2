@@ -453,7 +453,7 @@ FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Qui
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
-FRENCH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
+FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
