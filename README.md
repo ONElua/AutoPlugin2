@@ -69,6 +69,12 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 1.28 ###
+- Multiselection for bundle plugin installation has been disabled. 
+- When installing a plugin, the corresponding readme file will be shown if it has one at github. 
+- Autoplugin2 will download plugin updates (if nedeed) when the app is started.
+- Download section works again.
+
 ### Changelog 1.27 ###
 - Added PSVshellPlus v1.2 by GrapheneCt
 - Fixed Revita v1.08 by MERLev
