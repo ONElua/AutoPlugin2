@@ -39,7 +39,10 @@ function menu_psp()
 	end
 
 	local onlinepluginspsp_callback = function ()
-		plugins_online3()
+		if back then back:blit(0,0) end
+			message_wait(LANGUAGE["UPDATER_DOWNLOADING"])
+		os.delay(750)
+		psp_plugins_online()
 	end
 
 	local menu = {
@@ -54,20 +57,13 @@ function menu_psp()
 	local xscroll = 10
 	while true do
 
-		menu = {
-			{ text = LANGUAGE["MENU_PSP_INSTALL_NPDRMFREE"],		desc = LANGUAGE["MENU_PSP_NPDRMFREE_DESC"],	funct = npdrm_callback },
-			{ text = LANGUAGE["MENU_PSP_INSTALL_REMASTERED_CTRLS"],	desc = LANGUAGE["MENU_PSP_PSPCTRLS_DESC"],	funct = psp_ctrls_callback },
-			{ text = LANGUAGE["MENU_PSP_INSTALL_PLUGINS"],			desc = LANGUAGE["MENU_PSP_PLUGINS_DESC"],	funct = psp_plugins_callback },
-			{ text = LANGUAGE["UNINSTALLP_TITLE"],					desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], funct = psp_plugins_manager_callback },
-			{ text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"], funct = onlinepluginspsp_callback },
-		}
-
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_PSP_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		local y = 145

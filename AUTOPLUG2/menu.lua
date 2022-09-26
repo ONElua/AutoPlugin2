@@ -9,6 +9,13 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+if tonumber(cont_global:get()) > 0 then
+	if back then back:blit(0,0) end
+		message_wait(LANGUAGE["UPDATER_DOWNLOADING"])
+	os.delay(750)
+	psvita_plugins_online()
+end
+
 local psvita_callback = function ()
     menu_ps()
 end
@@ -47,25 +54,16 @@ function menu_gral()
 
 	buttons.interval(10,6)
 	while true do
-	
-		menu = {
-			{ text = LANGUAGE["MENU_PSVITA"],	funct = psvita_callback },
-			{ text = LANGUAGE["MENU_PSP"],		funct = psp_callback },
-			{ text = LANGUAGE["MENU_DOWNLOADS"],funct = downloads_callback },
-			{ text = LANGUAGE["MENU_EXTRAS"],	funct = extras_callback },
-			{ text = LANGUAGE["MENU_SETTINGS"],	funct = settings_callback },
-			{ text = LANGUAGE["MENU_EXIT"],		funct = exit_callback }
-		}
-
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_TITLE"],1.2,color.white,0x0,__ACENTER)
 
-		local y = 145
+		local y = 115
 		for i=scroll.ini, scroll.lim do
 			if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 			screen.print(480,y,menu[i].text,1.2,color.white,0x0,__ACENTER)

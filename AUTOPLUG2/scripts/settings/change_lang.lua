@@ -36,6 +36,7 @@ function change_lang()
 
 	local current_lang = nil
 	local tb = {}
+			if #langs > 1 then table.sort(langs ,function (a,b) return string.lower(a.file)<string.lower(b.file) end) end
 	for i=1,#langs do
 		if __LANG == langs[i].file and files.exists("lang/"..langs[i].file..".lua") and not current_lang then current_lang = langs[i].name end
 		if files.exists("lang/"..langs[i].file..".lua") then
@@ -44,7 +45,7 @@ function change_lang()
 	end
 	if not current_lang then current_lang = "ENGLISH_US" end
 
-	local maxim,y1 = 8,85
+	local maxim,y1 = 7,80
 	local scroll = newScroll(tb,maxim)
 	local xscroll,xcroll2 = 10,10
 
@@ -55,7 +56,8 @@ function change_lang()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_LANGUAGE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
@@ -179,7 +181,7 @@ function change_lang()
 
 				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 					if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-						if back then back:blit(0,0) end
+						if back2 then back2:blit(0,0) end
 							message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 						os.delay(500)
 						__file = "font.pgf"
@@ -196,7 +198,7 @@ function change_lang()
 				end
 
 				os.delay(150)
-				if back then back:blit(0,0) end
+				if back2 then back2:blit(0,0) end
 					message_wait(LANGUAGE["LANGUAGE_RELOAD"])
 				os.delay(1500)
 
@@ -204,7 +206,7 @@ function change_lang()
 				dofile("plugins/plugins_psp.lua")
 
 				write_config()
-
+				dofile("menu.lua")
 				break
 			end
 

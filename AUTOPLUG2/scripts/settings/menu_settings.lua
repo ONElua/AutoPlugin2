@@ -40,23 +40,39 @@ function menu_settings()
 	local change_font_callback = function ()
 		change_font()
 	end
+	
+	local auto_tai_callback = function ()
+		local tmp = __AUTO
+		if __AUTO == 1 then
+			_autotai = LANGUAGE["NO"]
+			__AUTO = 0
+		else
+			_autotai = LANGUAGE["YES"]
+			__AUTO = 1
+		end
+
+		if __AUTO != tmp then write_config() os.delay(150) end
+	end
 
 	local menu = {
 		{ text = LANGUAGE["MENU_SETTINGS_LANG_ONLINE"],			desc = LANGUAGE["MENU_SETTINGS_LANG_ONLINE_DESC"],			funct = lang_online_callback },
 		{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 		{ text = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE"],		desc = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"],		funct = change_lang_callback },
 		{ text = LANGUAGE["MENU_SETTINGS_CHANGE_FONT"],			desc = LANGUAGE["MENU_SETTINGS_CHANGE_FONT_DESC"],			funct = change_font_callback },
+		{ text = LANGUAGE["MENU_SETTINGS_AUTO_FIX"].._autotai,	desc = LANGUAGE["MENU_SETTINGS_AUTO_FIX_DESC"],				funct = auto_tai_callback },
 	}
 	local scroll = newScroll(menu,#menu)
 
 	local xscroll = 10
 	while true do
+
 		--Reload Menu for LANGUAGE
 		menu = {
 			{ text = LANGUAGE["MENU_SETTINGS_LANG_ONLINE"],			desc = LANGUAGE["MENU_SETTINGS_LANG_ONLINE_DESC"],			funct = lang_online_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE"],		desc = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"],		funct = change_lang_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_FONT"],			desc = LANGUAGE["MENU_SETTINGS_CHANGE_FONT_DESC"],			funct = change_font_callback },
+			{ text = LANGUAGE["MENU_SETTINGS_AUTO_FIX"].._autotai,	desc = LANGUAGE["MENU_SETTINGS_AUTO_FIX_DESC"],				funct = auto_tai_callback },
 		}
 
 		buttons.read()
@@ -64,7 +80,8 @@ function menu_settings()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_SETTINGS"],1.2,color.white,0x0,__ACENTER)
 
 		local y = 145

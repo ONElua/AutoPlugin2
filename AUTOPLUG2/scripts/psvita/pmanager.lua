@@ -43,6 +43,7 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "Sysident by cuevavirus", path = "sysident.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"] })
 	table.insert(tb_cop, { name = "Ds4touch by MERLev", path = "ds4touch.skprx", section = "KERNEL", path2 = "ds4touch.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"] })
 
+
 	for k,v in pairs(tai.gameid) do
 		if k:lower() != "kernel" and k:lower() != "main" and k:lower() != "all" then
 			table.insert(sections, k)
@@ -88,7 +89,9 @@ function pluginsmanager()
 	while true do
 		buttons.read()
 		
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
 		draw.fillrect(870,0,90,40, color.green:a(90))

@@ -130,9 +130,10 @@ function npdrm_free()
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["NPDRMFREE_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		--Partitions
@@ -180,9 +181,9 @@ function npdrm_free()
 		draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
 		if screen.textwidth(LANGUAGE["MENU_PSP_NPDRMFREE_DESC"]) > 925 then
-			xscroll = screen.print(xscroll, 400, LANGUAGE["MENU_PSP_NPDRMFREE_DESC"],1,color.white,color.blue,__SLEFT,935)
+			xscroll = screen.print(xscroll, 400, LANGUAGE["MENU_PSP_NPDRMFREE_DESC"],1,color.green,0x0,__SLEFT,935)
 		else
-			screen.print(480, 400, LANGUAGE["MENU_PSP_NPDRMFREE_DESC"],1,color.white,color.blue,__ACENTER)
+			screen.print(480, 400, LANGUAGE["MENU_PSP_NPDRMFREE_DESC"],1,color.green,0x0,__ACENTER)
 		end
 
 		if buttonskey2 then buttonskey2:blitsprite(900,448,2) end

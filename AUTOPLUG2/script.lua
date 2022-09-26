@@ -9,7 +9,15 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+--Activamos Paleta de Colores Precargados
+color.loadpalette()
+
 snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1)
+splash.zoom("imgs/splash.png")
+
+--Imagen de Fondo
+back = image.load("imgs/back1.png")
+back2 = image.load("imgs/back2.png")
 
 dofile("git/shared.lua")
 PLUGINS_PORT = channel.new("PLUGINS_PORT")
@@ -21,19 +29,9 @@ if files.exists("ux0:/app/ONEUPDATE") then
 	game.delete("ONEUPDATE") -- Exists delete update app
 end
 
---Activamos Paleta de Colores Precargados
-color.loadpalette()
-
 --Creamos nuestra carpeta principal de Trabajo
 files.mkdir("ux0:data/AUTOPLUGIN2/")
 __PATH_INI    = "ux0:data/AUTOPLUGIN2/config.ini"
-
---Show splash
---splash.zoom("imgs/splash.png")
-
---Imagen de Fondo
-back = image.load("imgs/back.png")
-back2 = image.load("imgs/back2.png")
 
 --Sprites para Botones
 buttonskey = image.load("imgs/buttons.png",20,20)
@@ -97,6 +95,9 @@ if os.access() == 0 then
 	os.exit()
 end
 
+__AUTO = tonumber(ini.read(__PATH_INI,"TAI","auto","1"))
+if __AUTO == 1 then _autotai = LANGUAGE["YES"] else _autotai = LANGUAGE["NO"] end
+
 __UPDATE = tonumber(ini.read(__PATH_INI,"UPDATE","update","1"))
 _update = LANGUAGE["NO"]
 if __UPDATE == 1 then
@@ -109,7 +110,7 @@ dofile("scripts/tai.lua")
 tai.load()
 
 if tai.find("KERNEL", "sharpscale.skprx") and not tai.check("!AKRK00005") then
-	tai.putBeforeSection("ALL","!AKRK00005","")
+	tai.putBeforeSection("ALL","*!AKRK00005","")
 	tai.sync()
 	change = true
 	if back then back:blit(0,0) end

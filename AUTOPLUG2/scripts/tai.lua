@@ -322,7 +322,7 @@ function tai.check(id)
 	local len = #tai.raw
 	for i=1, len do
 		local line = tai.raw[i]
-		if line:find("!AKRK00005", 1, true) then
+		if line:find(id, 1, true) then
 			return true
 		end
 	end
@@ -389,15 +389,16 @@ function tai.sync(path)
 		tai.put("NPXS10015", "ur0:tai/henkaku.suprx", 1)
 		tai.put("NPXS10016", "ur0:tai/henkaku.suprx", 1)
 		tai.del("KERNEL", "ur0:tai/henkaku.skprx")
-		
+
+if __AUTO == 1 then
 		local force_path = {
+		--  { path = "ur0:tai/custom_warning.suprx", section = "main" },
 		  { path = "ur0:tai/ds34vita.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/ds4touch.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/reVita.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc_lcd_off.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc_oled_off.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/custom_warning.suprx", section = "main" },
 		  { path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch_ex.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
@@ -419,6 +420,8 @@ function tai.sync(path)
 				tai.put(force_path[i].section, force_path[i].path, 1)
 			end
 		end
+end
+
 		files.write(path or tai.path, table.concat(tai.raw, '\n'))
 	end
 end

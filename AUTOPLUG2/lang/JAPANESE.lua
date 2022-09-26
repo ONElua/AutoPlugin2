@@ -27,7 +27,9 @@ JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS"] =             "プラグインのア�
 JAPANESE["MENU_PSVITA_INSTALL_SD2VITA"] =               "SD2VITAプラグインのインストール"
 JAPANESE["MENU_PSVITA_CONFIGURE_SD2VITA"] =             "SD2VITAプラグインの構成"
 JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =          "プラグインの更新を確認"
+JAPANESE["MENU_PSVITA_HD_PATCH"] =                      "HD Patches"
 
+JAPANESE["MENU_PSVITA_HD_PATCH_DESC"] =                 "HD patches some for psvita games"
 JAPANESE["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =          "SCENE-PSVITAによって作成された最も便利なプラグインをインストールします"
 JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =        "プラグインを簡単かつ容易にアンインストールします"
 JAPANESE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =          "SD2VITAプラグインのインストール (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ JAPANESE["INSTALL_CATHERINE_HD_TITLE"] =                "Catherine Full Body HD 
 JAPANESE["NO_CHATERINE_GAMES"] =                        "Catherine Full Body not found"
 JAPANESE["INSTALLING_CATHERINE_HD_PATCH"] =             "Installing Catherine Full Body HD"
 
-JAPANESE["INSTRUCTIONS_HD_PATCH"] =                     " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+JAPANESE["INSTRUCTIONS_HD_PATCH"] =                     " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend PSVshell+)"
 
 --Options PSP
 JAPANESE["MENU_PSP_TITLE"] =                            "PSP（Adrenaline）プラグイン"
@@ -201,6 +203,7 @@ JAPANESE["UPDATE_CHECK_DB"] =                           "データベースの�
 JAPANESE["UPDATE_PLUGIN"] =                             "プラグインを更新しました"
 JAPANESE["UPDATE_ERROR_DB"] =                           "db.luaのダウンロードエラー"
 JAPANESE["UPDATE_NO_NEWS"] =                            "すべてのプラグインは最新です"
+JAPANESE["UPDATE_QUESTION"] =                           "is installed\n\nWould you like to update it?"
 
 --npdrm free
 JAPANESE["NPDRMFREE_TITLE"] =                           "NPDRM FREEプラグインをインストールする (by qwikrazor87)"

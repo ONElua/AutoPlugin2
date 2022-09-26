@@ -18,12 +18,8 @@ dofile("scripts/psvita/sd2vita.lua")
 dofile("scripts/psvita/pmanager.lua")
 dofile("scripts/psvita/autoplugin.lua")
 dofile("scripts/psvita/plugins_online.lua")
-dofile("scripts/psvita/p4golden.lua")
-dofile("scripts/psvita/catherine.lua")
 dofile("scripts/psvita/nearest.lua")
-
-Catherine = false
-if game.exists("PCSG01179") then Catherine = true end
+dofile("scripts/psvita/hdpatch.lua")
 
 local sd2vita_callback = function ()
 	sd2vita()
@@ -38,19 +34,45 @@ local uinstallp_callback = function ()
 end
 
 local onlineplugins_callback = function ()
-	plugins_online2()
+	psvita_plugins_online()
 end
 
 local VitaNearest_callback = function ()
 	VitaNearest()
 end
 
-local p4_callback = function ()
-	P4Golden_HD()
+local hd_patch_callback = function ()
+	HD_Patch()
 end
 
-local catherine_callback = function ()
-	Catherine_HD()
+local autoboot_callback = function ()
+	autoboot()
+end
+
+local customQuickMenu_callback = function ()
+	config_quickmenu()
+end
+
+local convertimgsplash_callback = function ()
+	customimgsplash()
+end
+
+local customwarning_callback = function ()
+
+	local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
+	if not text then return end
+
+	local fp = io.open(path_tai.."custom_warning.txt", "wb")
+	if fp then
+		fp:write(string.char(0xFF)..string.char(0xFE))
+		fp:write(os.toucs2(text))
+		fp:close()
+		files.delete("ux0:tai/custom_warning.txt")
+		files.delete("uma0:tai/custom_warning.txt")
+		--if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
+		--	exit_bye_bye()
+		--end
+	end
 end
 
 function menu_ps()
@@ -64,20 +86,28 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
-		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
+		{ text = LANGUAGE["MENU_PSVITA_HD_PATCH"],          desc = LANGUAGE["MENU_PSVITA_HD_PATCH_DESC"],	        funct = hd_patch_callback },
+		--{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
 	}
 
-	if P4Golden then
-		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback } )
-	end
-	if Catherine then
-		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"],	funct = catherine_callback } )
+	local idx = tai.find("main", "AutoBoot.suprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_AUTOBOOT_TITLE"],	desc = LANGUAGE["MENU_EXTRAS_AUTOBOOT_DESC"],	funct = autoboot_callback } )
 	end
 
-	if tonumber(cont_global:get()) == 0 then
-		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
-	else
-		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"].." ( "..tostring(cont_global:get()).." )",	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
+	local idx = tai.find("KERNEL", "custom_boot_splash.skprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CONVERT_BOOTSPLASH"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"],	funct = convertimgsplash_callback } )
+	end
+
+	idx = tai.find("main", "custom_warning.suprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CUSTOM_WARNING"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMWARNING_DESC"],	funct = customwarning_callback } )
+	end
+
+	idx = tai.find("main", "quickmenuplus.suprx")
+	if idx then
+		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],	desc = LANGUAGE["MENU_EXTRAS_QUICKMENU_DESC"],	funct = customQuickMenu_callback } )
 	end
 
 	local scroll = newScroll(menu,#menu)
@@ -85,41 +115,21 @@ function menu_ps()
 
 	buttons.interval(10,6)
 	while true do
-	
-		menu = {
-			{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
-			{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
-			{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
-			{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
-		}
-		
-		if P4Golden then
-			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		funct = p4_callback } )
-		end
-		if Catherine then
-			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"],	funct = catherine_callback } )
-		end
-
-		if tonumber(cont_global:get()) == 0 then
-			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
-		else
-			table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"].." ( "..tostring(cont_global:get()).." )",	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
-		end
-
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_PSVITA_TITLE"],1.2,color.white,0x0,__ACENTER)
 
-		local y = 135
+		local y = 115
 		for i=scroll.ini, scroll.lim do
 			if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 			screen.print(480,y,menu[i].text,1.2,color.white,0x0,__ACENTER)
 			
-			if i == 3 or i == #menu-1 then
+			if i == 3 then
 				y += 65
 			else
 				y += 45
@@ -145,7 +155,7 @@ function menu_ps()
 		end
 
 		if buttons.cancel then break end
-		if buttons.accept then menu[scroll.sel].funct() end
+		if buttons.accept then menu[scroll.sel].funct()	end
 
 		vol_mp3()
 

@@ -19,35 +19,12 @@ dofile("scripts/psvita/autoboot.lua")
 
 function menu_extras()
 
-	local convertimgsplash_callback = function ()
-		customimgsplash()
-	end
-
 	local config_callback = function ()
 		downloadtsv_callback()
 	end
 
 	local config_callback = function ()
 		config_pkgj()
-	end
-
-	local customwarning_callback = function ()
-
-		local pathCW = "ur0:tai/"
-
-		local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
-		if not text then return end
-
-		local fp = io.open(pathCW.."custom_warning.txt", "wb")
-		if fp then
-			fp:write(string.char(0xFF)..string.char(0xFE))
-			fp:write(os.toucs2(text))
-			fp:close()
-			files.delete("ux0:tai/custom_warning.txt")
-			if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-				exit_bye_bye()
-			end
-		end
 	end
 
 	--local translate_callback = function ()
@@ -75,19 +52,11 @@ function menu_extras()
 		end
 	end
 
-	local customQuickMenu_callback = function ()
-		config_quickmenu()
-	end
-
 	local resetconfig_callback = function ()
 		if os.message(LANGUAGE["MENU_EXTRAS_QUESTION_RESET_CONFIG"],1) == 1 then
 			files.copy("resources/config/config.txt","ur0:tai/")
 			tai.load()
 		end
-	end
-
-	local autoboot_callback = function ()
-		autoboot()
 	end
 
 	local menu = {
@@ -99,30 +68,16 @@ function menu_extras()
 		table.insert(menu, 1, { text = LANGUAGE["MENU_EXTRAS_PKGJ_TITLE"],		desc = LANGUAGE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"],	funct = config_callback } )
 	end
 
-	local idx = tai.find("main", "AutoBoot.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_AUTOBOOT_TITLE"],	desc = LANGUAGE["MENU_EXTRAS_AUTOBOOT_DESC"],	funct = autoboot_callback } )
-	end
 
-	local idx = tai.find("KERNEL", "custom_boot_splash.skprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CONVERT_BOOTSPLASH"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"],	funct = convertimgsplash_callback } )
-	end
 
-	idx = tai.find("main", "custom_warning.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CUSTOM_WARNING"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMWARNING_DESC"],	funct = customwarning_callback } )
-	end
-
+--[[
 	idx = tai.find("main", "TrImpose.suprx")
 	if idx then
 		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSP_IMPOSE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSPIMPOSE_DESC"],	funct = customTransImpose_callback } )
 	end
+]]
 
-	idx = tai.find("main", "quickmenuplus.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],	desc = LANGUAGE["MENU_EXTRAS_QUICKMENU_DESC"],	funct = customQuickMenu_callback } )
-	end
+
 
 	local scroll = newScroll(menu,#menu)
 
@@ -133,7 +88,8 @@ function menu_extras()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.2,color.white,0x0,__ACENTER)
 
         local y = 145

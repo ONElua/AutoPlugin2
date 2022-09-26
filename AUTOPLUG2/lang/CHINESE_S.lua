@@ -27,7 +27,9 @@ CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA"] =             "安装 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "配置 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "检查插件更新"
+CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+CHINESE_S["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 CHINESE_S["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "安装为 PSVita 环境开发的实用插件"
 CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ CHINESE_S["INSTALL_CATHERINE_HD_TITLE"] =              "凯瑟琳浓郁口感高
 CHINESE_S["NO_CHATERINE_GAMES"] =                      "找不到 凯瑟琳浓郁口感 游戏本体"
 CHINESE_S["INSTALLING_CATHERINE_HD_PATCH"] =           "正在安装 凯瑟琳浓郁口感 高清补丁"
 
-CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. 安装最新版本的 Sharpscale \n\n 2. 在 sharpscale 配置程序中启用 '解锁帧缓冲区大小 Unlock framebuffer size' 选项 \n\n 3. 需要超频以获得良好的性能 (我们推荐使用 LOLIcon 或者 lolita444/500)"
+CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. 安装最新版本的 Sharpscale \n\n 2. 在 sharpscale 配置程序中启用 '解锁帧缓冲区大小 Unlock framebuffer size' 选项 \n\n 3. 需要超频以获得良好的性能 (我们推荐使用 PSVshell+)"
 
 --Options PSP
 CHINESE_S["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) 插件"
@@ -201,6 +203,7 @@ CHINESE_S["UPDATE_CHECK_DB"] =                         "正在检查数据库"
 CHINESE_S["UPDATE_PLUGIN"] =                           "已更新插件"
 CHINESE_S["UPDATE_ERROR_DB"] =                         "db.lua 下载出错"
 CHINESE_S["UPDATE_NO_NEWS"] =                          "所有插件均已更新"
+CHINESE_S["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 CHINESE_S["NPDRMFREE_TITLE"] =                         "安装 NPDRM FREE 插件 (由 qwikrazor87 开发)"

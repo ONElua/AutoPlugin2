@@ -27,7 +27,9 @@ POLISH["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Odinstaluj Pluginy"
 POLISH["MENU_PSVITA_INSTALL_SD2VITA"] =             "Zainstaluj plugin SD2VITA"
 POLISH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Skonfiguruj plugin SD2VITA"
 POLISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Sprawdz aktualizacje pluginow"
+POLISH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+POLISH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 POLISH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Zainstaluj pluginy tworzone przez SCENE PSVITA"
 POLISH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Odinstaluj pluginy łatwo i szybko"
 POLISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Zainstaluj plugin dla SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ POLISH["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by C
 POLISH["NO_CHATERINE_GAMES"] =                      "Nie znaleziono Catherine Full Body"
 POLISH["INSTALLING_CATHERINE_HD_PATCH"] =           "Instalacja Catherine Full Body HD"
 
-POLISH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Zainstaluj najnowszą wersje pluginu Sharpscale \n\n 2. Włącz 'Odblokowanie bufora ramki' w sharpscale  \n\n 3. Polecany jest Overclocking dla lepszych wrażeń (Rekomendowane pliginy to LOLIcon i lolita444/500)"
+POLISH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Zainstaluj najnowszą wersje pluginu Sharpscale \n\n 2. Włącz 'Odblokowanie bufora ramki' w sharpscale  \n\n 3. Polecany jest Overclocking dla lepszych wrażeń (Rekomendowane pliginy to PSVshell+)"
 
 --Options PSP
 POLISH["MENU_PSP_TITLE"] =                          "Pluginy dla PSP (Adrenaline)"
@@ -201,6 +203,7 @@ POLISH["UPDATE_CHECK_DB"] =                         "Sprawdzanie bazy danych"
 POLISH["UPDATE_PLUGIN"] =                           "Aktualizowanie pluginu"
 POLISH["UPDATE_ERROR_DB"] =                         "Błąd pobierania db.lua"
 POLISH["UPDATE_NO_NEWS"] =                          "Wszystkie pluginy zostały zaktualizowane"
+POLISH["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 POLISH["NPDRMFREE_TITLE"] =                         "Zainstaluj plugin NPDRM FREE od qwikrazor87"

@@ -27,7 +27,9 @@ ITALIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =              "Disinstalla Plugin"
 ITALIAN["MENU_PSVITA_INSTALL_SD2VITA"] =                "Installa il Plugin SD2VITA"
 ITALIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =              "Configura Plugin per SD2VITA"
 ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Controlla gli aggiornamenti dei plugin"
+ITALIAN["MENU_PSVITA_HD_PATCH"] =                       "HD Patches"
 
+ITALIAN["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games"
 ITALIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Installa i plugin più utili della scena PSVITA"
 ITALIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Disinstalla i plugin facilmente e semplicemente"
 ITALIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Installa il Plugin per SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -56,13 +58,13 @@ ITALIAN["INSTALL_CATHERINE_HD_TITLE"] =                 "Catherine Full Body HD 
 ITALIAN["NO_CHATERINE_GAMES"] =                         "Catherine Full Body not found"
 ITALIAN["INSTALLING_CATHERINE_HD_PATCH"] =              "Installing Catherine Full Body HD"
 
-ITALIAN["INSTRUCTIONS_HD_PATCH"] =                      " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+ITALIAN["INSTRUCTIONS_HD_PATCH"] =                      " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend PSVshell+)"
 
 --Options PSP
 ITALIAN["MENU_PSP_TITLE"] =                             "Opzioni PSP (Adrenaline)"
 ITALIAN["MENU_PSP_INSTALL_NPDRMFREE"] =                 "Installa il plugin npdrm free di qwikrazor87"
 ITALIAN["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =          "Installa i plugin RemasteredControls di TheOfficialFloW"
-ITALIAN["MENU_PSP_INSTALL_PLUGINS"] =                   "Plugin PSP per Adrenaline"
+.ITALIAN["MENU_PSP_INSTALL_PLUGINS"] =                   "Plugin PSP per Adrenaline"
 
 ITALIAN["MENU_PSP_NPDRMFREE_DESC"] =                    "Un plugin PSP/ePSP per eseguire i contenuti ufficiali NPDRM PS1/PSP senza bisogno di una licenza valida .Rif o Act.dat."
 ITALIAN["MENU_PSP_PSPCTRLS_DESC"] =                     "Una raccolta di patch per far funzionare gli analogici per i giochi PSP su Adrenaline"
@@ -201,6 +203,7 @@ ITALIAN["UPDATE_CHECK_DB"] =                            "Controllo Database"
 ITALIAN["UPDATE_PLUGIN"] =                              "Aggiornamento Plugin"
 ITALIAN["UPDATE_ERROR_DB"] =                            "Errore nello scaricamento del file db.lua"
 ITALIAN["UPDATE_NO_NEWS"] =                             "Tutti i plugin sono aggiornati"
+ITALIAN["UPDATE_QUESTION"] =                            "is installed\n\nWould you like to update it?"
 
 --npdrm free
 ITALIAN["NPDRMFREE_TITLE"] =                            "Installa il plugin NPDRM FREE di qwikrazor87"

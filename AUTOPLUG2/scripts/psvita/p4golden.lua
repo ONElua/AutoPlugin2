@@ -12,40 +12,41 @@ P4 = {
 
 gamesP4 = {}
 for i=1,#P4 do
-	if game.exists(P4[i].id) then
-		P4Golden = true
+	--if game.exists(P4[i].id) then
+	--	P4Golden = true
 		table.insert(gamesP4,P4[i])
-	end
+	--end
 end
 
 
 function P4Golden_HD()
 
-	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) return end
+	--if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) end
 
 	local P4GOLDEN_ID = "PERSONA4GOLDENHD.png"
 
-	local patchs = {
+	local patches = {
 		{ res = "1920x1080 HD", desc = LANGUAGE["P4G_1920x1080_DESC"], path = "p4goldenhd_1920x1080.suprx" },
 		{ res = "1280x720 HD",  desc = LANGUAGE["P4G_1280x720_DESC"], path = "p4goldenhd_1280x720.suprx" },
 	}
 
-	for i=1,#patchs do
+	for i=1,#patches do
 		for j=1,#plugins do
-			if patchs[i].desc == plugins[j].desc then
-				patchs[i].res = plugins[j].name
+			if patches[i].desc == plugins[j].desc then
+				patches[i].res = plugins[j].name
 			end
 		end
 	end
 
-	local scroll,selector,xscroll = newScroll(patchs,#patchs),1,10
+	local scroll,selector,xscroll = newScroll(patches,#patches),1,10
 	while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
 		screen.print(480,20,LANGUAGE["INSTALL_P4G_HD_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
@@ -58,15 +59,17 @@ function P4Golden_HD()
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
 			screen.print(xRoot+(w/2), 75, gamesP4[i].id, 1, color.white, color.blue, __ACENTER)
+			draw.fillrect(750,435,200,42, color.shine:a(25))
+			screen.print(940,445,gamesP4[selector].region,1,color.white,color.blue, __ARIGHT)
 			xRoot += w
 		end
 
 		local y = 155
 		for i=scroll.ini, scroll.lim do
 
-			if i == scroll.sel then draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
+			if i == scroll.sel then	draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			idx = tai.find(gamesP4[selector].id,patchs[i].path)
+			idx = tai.find(gamesP4[selector].id,patches[i].path)
 			if idx != nil then
 				if files.exists(tai.gameid[ gamesP4[selector].id ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
@@ -75,18 +78,18 @@ function P4Golden_HD()
 				end
 			end
 
-			screen.print(25,y, patchs[i].res)
+			screen.print(25,y, patches[i].res)
 			y+=45
 		end
 
 		--Instructions
-		screen.print(25, 245, LANGUAGE["INSTRUCTIONS_HD_PATCH"],1,color.white,color.blue,__ALEFT)
+		screen.print(25, 265, LANGUAGE["INSTRUCTIONS_HD_PATCH"],1,color.white,color.blue,__ALEFT)
 
-		if patchs[scroll.sel].desc then
-			if screen.textwidth(patchs[scroll.sel].desc) > 925 then
-				xscroll = screen.print(xscroll, 400, patchs[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
+		if patches[scroll.sel].desc then
+			if screen.textwidth(patches[scroll.sel].desc) > 925 then
+				xscroll = screen.print(xscroll, 400, patches[scroll.sel].desc,1,color.green,0x0,__SLEFT,935)
 			else
-				screen.print(480, 400, patchs[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
+				screen.print(480, 400, patches[scroll.sel].desc,1,color.green,0x0,__ACENTER)
 			end
 		end
 
@@ -137,7 +140,7 @@ function P4Golden_HD()
 			end
 
 			if buttons.accept then
-				Patch_P4G_install(gamesP4[selector],patchs[scroll.sel])
+				Patch_P4G_install(gamesP4[selector],patches[scroll.sel])
 			end
 
 			if buttons.triangle then
@@ -173,11 +176,10 @@ function P4Golden_HD()
 
 end
 
-
 function Patch_P4G_install(game,res)
 
 	--Copy plugin to tai folder
-	files.copy(path_plugins.."p4goldenHD/"..res.path, path_tai)
+	files.copy(path_plugins..res.path, path_tai)
 
 	tai.del(game.id, "p4goldenhd_1920x1080.suprx")
 	tai.del(game.id, "p4goldenhd_1280x720.suprx")

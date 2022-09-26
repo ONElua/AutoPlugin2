@@ -9,175 +9,21 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-function update_database3(database,tb1,tb2)
+function psp_plugins_online()
 
-	local file = io.open(database, "w+")
-
-    file:write("pluginsP = {\n")
-
-	for s,t in pairs(tb1) do
-		file:write("{ ")
-			if type(t) == "table" then
-				for k,v in pairs(t) do
-					if k != "install" and k != "new" and k != "inst" then
-						file:write(string.format(' %s = "%s",', tostring(k), tostring(v)))
-					end
-				end
-		file:write("},\n")
-			end
-	end
-
-	file:write("}\n")
-	
-	file:write("psp_plugins = {\n")
-
-	for s,t in pairs(tb2) do
-		file:write("{ ")
-			if type(t) == "table" then
-				for k,v in pairs(t) do
-					if k != "install" and k != "new" and k != "inst" then
-						file:write(string.format(' %s = "%s",', tostring(k), tostring(v)))
-					end
-				end
-		file:write("},\n")
-			end
-	end
-
-	file:write("}\n")
-	
-	
-	file:close()
-
-
-	local cont = {}
-	for line in io.lines(database) do
-		if line:byte(#line) == 13 then line = line:sub(1,#line-1) end --Remove CR == 13
-		table.insert(cont,line)
-	end
-
-
-	dofile("plugins/plugins_psp.lua")--Official
-
-	for i=1,#pluginsP do
-		for j=1, #cont do
-			if string.find(cont[j], pluginsP[i].KEY, 1, true) then
-				cont[j] = cont[j]:gsub('desc = "(.-)",', 'desc = LANGUAGE["'..pluginsP[i].KEY..'"],')
-			end
-		end
-	end
-
-	for i=1,#psp_plugins do
-		for j=1, #cont do
-			if string.find(cont[j], psp_plugins[i].KEY, 1, true) then
-				cont[j] = cont[j]:gsub('desc = "(.-)",', 'desc = LANGUAGE["'..psp_plugins[i].KEY..'"],')
-			end
-		end
-	end
-
-	local file = io.open("plugins/plugins_psp.lua", "w+")
-	for s,t in pairs(cont) do
-		file:write(string.format('%s\n', tostring(t)))
-	end
-	file:close()
-
-	dofile("plugins/plugins_psp.lua")--Official
-	if #pluginsP > 0 then table.sort(pluginsP, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
-	if #psp_plugins > 0 then table.sort(psp_plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
-end
-
-function plugins_online3()
-
-	files.delete("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
-	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
-	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
-
-	if back then back:blit(0,0) end
-		message_wait()
-	os.delay(500)
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/")
+	files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 	buttons.homepopup(0)
 
-	local onNetGetFileOld = onNetGetFile
-	onNetGetFile = nil
-
-	__file = "Langdatabase.lua"
-	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
-
-	if files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
-		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
-	else
-		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
-		return
-	end
-
-	local tmpss = {}
-	local __flag = false
-	if #Online_Langs > 0 then
-
-		for i=1,#Langs do
-
-			for j=1,#Online_Langs do
-				if string.upper(Langs[i].id) == string.upper(Online_Langs[j].id) then
-					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
-						__file = Online_Langs[j].id
-						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/"..Online_Langs[j].id..".lua").success then
-							Langs[i] = Online_Langs[j]
-							table.insert(tmpss,Langs[i])
-							__flag = true
-						end
-					end
-				end
-			end
-
-		end
-	else
-		os.message(LANGUAGE["LANG_ONLINE_FAILDB"])
-		return
-	end--Online_Langs > 0
-
-	local tmps = {}
-	for i=1,#Online_Langs do
-		local __find = false
-		for j=1,#Langs do
-			if string.upper(Online_Langs[i].id) == string.upper(Langs[j].id) then
-				__find = true
-				break
-			end
-		end
-		if not __find then
-			__file = Online_Langs[i].id
-			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/"..Online_Langs[i].id..".lua").success then
-				table.insert(tmps, { line = i })
-				__flag = true
-			end
-		end
-
-	end
-
-	__file = ""
-	for i=1,#tmps do
-		table.insert( Langs, Online_Langs[tmps[i].line] )
-		Langs[#Langs].new = true
-		table.insert(tmpss,Langs[#Langs])
-	end
-
-	if __flag then
-		if #Langs > 1 then table.sort(Langs ,function (a,b) return string.lower(a.id)<string.lower(b.id) end) end
-		update_database("lang/Langdatabase.lua",Langs)
-	else
-		dofile("lang/Langdatabase.lua")--Official
-		load_translates()
-	end
-
-	local tmpss = {}
-
-	onNetGetFile = onNetGetFileOld
+	local tmp_plugins = {}
+	local tmpdir = "ux0:data/AUTOPLUGIN2/plugins/"
 
 	__file = "Database Plugins"
-	http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins_psp.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
-
-	if files.exists("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua") then
-		dofile("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
+	--Online_Plugins
+	local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins_psp.lua", APP_REPO, APP_PROJECT), tmpdir.."plugins_psp.lua")
+	if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."plugins_psp.lua") then
+		dofile(tmpdir.."plugins_psp.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 		return
@@ -187,31 +33,33 @@ function plugins_online3()
 
 	--Plugins for PSP (Adrenaline)
 	if #Online_pluginsP > 0 then
+
+		local onNetGetFileOld = onNetGetFile
+		onNetGetFile = nil
+
 		for i=1,#pluginsP do
-			pluginsP[i].install = true
 
 			for j=1,#Online_pluginsP do
 				if string.upper(pluginsP[i].KEY) == string.upper(Online_pluginsP[j].KEY) then
 
 					if tonumber(pluginsP[i].version) < tonumber(Online_pluginsP[j].version) then
 
-						if back2 then back2:blit(0,0) end
-						os.delay(350)
+						--os.message("Plugin\n"..Online_pluginsP[j].name)
 
-						__file = Online_pluginsP[j].name
-						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].name), "resources/plugins_psp/"..Online_pluginsP[j].name).success then
-							--os.message(Online_pluginsP[j].name)
+						local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].name), tmpdir..Online_pluginsP[j].name)
+						if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_pluginsP[j].name) then
+							files.move(tmpdir..Online_pluginsP[j].name,"resources/plugins_psp/")
+
 							if Online_pluginsP[j].config then
-								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].config), "resources/plugins_psp/"..Online_pluginsP[j].config)
+								http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[j].config), tmpdir..Online_pluginsP[j].config)
+								files.move(tmpdir..Online_pluginsP[j].config,"resources/plugins_psp/")
 							end
 
 							if back2 then back2:blit(0,0) end
-								message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_pluginsP[j].name)
-								--os.message(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[j].name)
+								message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_pluginsP[j].nameR)
 							os.delay(1500)
 
-							pluginsP[i] = Online_pluginsP[j]
-							table.insert(tmpss,pluginsP[i])
+							table.insert(tmp_plugins,pluginsP[i])
 							__flag = true
 						end
 
@@ -230,26 +78,23 @@ function plugins_online3()
 	--Plugins for PSP Remastered Controls (Adrenaline)
 	if #Online_psp_plugins > 0 then
 		for i=1,#psp_plugins do
-			psp_plugins[i].install = true
 
 			for j=1,#Online_psp_plugins do
 				if string.upper(psp_plugins[i].KEY) == string.upper(Online_psp_plugins[j].KEY) then
 
 					if tonumber(psp_plugins[i].version) < tonumber(Online_psp_plugins[j].version) then
 
-						if back2 then back2:blit(0,0) end
-						os.delay(350)
+						--os.message("Plugin: \n"..Online_psp_plugins[j].path)
 
-						__file = Online_psp_plugins[j].name
-
-						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[j].path), "resources/plugins_psp/controls_psp/"..Online_psp_plugins[j].path).success then
+						http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[j].path), tmpdir..Online_psp_plugins[j].path)
+						if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_psp_plugins[j].path) then
+							files.move(tmpdir..Online_psp_plugins[j].path,"resources/plugins_psp/controls_psp/")
 
 							if back2 then back2:blit(0,0) end
 								message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[j].name)
 							os.delay(1500)
 
-							psp_plugins[i] = Online_psp_plugins[j]
-							table.insert(tmpss,psp_plugins[i])
+							table.insert(tmp_plugins,psp_plugins[i])
 							__flag = true
 						end
 
@@ -265,13 +110,9 @@ function plugins_online3()
 
 	end--Online_pluginsP>0
 
-
-	local tmps,tmps2 = {},{}
-
-	--Plugins for PSP
+	--Plugins Nuevos
 	for i=1,#Online_pluginsP do
 		local _find = false
-		local sifind = 0
 		for j=1,#pluginsP do
 			if string.upper(Online_pluginsP[i].KEY) == string.upper(pluginsP[j].KEY) then
 				_find = true
@@ -280,23 +121,23 @@ function plugins_online3()
 		end
 		if not _find then
 
-			if back2 then back2:blit(0,0) end
-			os.delay(350)
+			--os.message("1 Try New Plugin\n"..Online_pluginsP[i].nameR)
 
-			__file = Online_pluginsP[i].name
-
-			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].name), "resources/plugins_psp/"..Online_pluginsP[i].name).success then
+			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].name), tmpdir..Online_pluginsP[i].name)
+			if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_pluginsP[i].name) then
+				files.move(tmpdir..Online_pluginsP[i].name,"resources/plugins_psp/")
 
 				if Online_pluginsP[i].config then
-					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].config), "resources/plugins_psp/"..Online_pluginsP[i].config)
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_pluginsP[i].config), tmpdir..Online_pluginsP[i].config)
+					files.move(tmpdir..Online_pluginsP[i].config,"resources/plugins_psp/")
 				end
 
 				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_pluginsP[i].name)
-					--os.message(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[i].name)
+					message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_pluginsP[i].nameR)
 				os.delay(1500)
 
-				table.insert(tmps, { line = i })
+				table.insert(tmp_plugins,Online_PluginsP[i])
+				tmp_plugins[#tmp_plugins].new = true
 				__flag = true
 			end
 		end
@@ -305,7 +146,6 @@ function plugins_online3()
 	--Plugins for Remastered Controls
 	for i=1,#Online_psp_plugins do
 		local _find = false
-		local sifind = 0
 		for j=1,#psp_plugins do
 			
 			if string.upper(Online_psp_plugins[i].KEY) == string.upper(psp_plugins[j].KEY) then
@@ -315,55 +155,119 @@ function plugins_online3()
 		end
 		if not _find then
 
-			if back2 then back2:blit(0,0) end
-			os.delay(350)
+			--os.message("2 Try New Plugin\n"..Online_psp_plugins[i].name)
 
-			__file = Online_psp_plugins[i].name
-
-			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].path), "resources/plugins_psp/controls_psp/"..Online_psp_plugins[i].path).success then
-
+			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].path), tmpdir..Online_psp_plugins[i].path)
+			if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_psp_plugins[i].path) then
+				files.move(tmpdir..Online_psp_plugins[i].path,"resources/plugins_psp/controls_psp/")
+				
 				if Online_psp_plugins[i].config then
-					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].config), "resources/plugins_psp/controls_psp/"..Online_psp_plugins[i].config)
+					http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins_psp/controls_psp/%s", APP_REPO, APP_PROJECT, APP_FOLDER, Online_psp_plugins[i].config), tmp..Online_psp_plugins[i].config)
+					files.move(tmpdir..Online_psp_plugins[i].config,"resources/plugins_psp/controls_psp/")
 				end
 
 				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[i].name)
-					--os.message(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[i].name)
+					message_wait(LANGUAGE["UPDATE_PLUGIN"].."\n\n"..Online_psp_plugins[i].path)
 				os.delay(1500)
 
-				table.insert(tmps2, { line = i })
+				table.insert(tmp_plugins,Online_psp_plugins[i])
+				tmp_plugins[#tmp_plugins].new = true
 				__flag = true
 			end
 		end
 	end
 
-	if tmps then
-		for i=1,#tmps do
-			table.insert( pluginsP, Online_pluginsP[tmps[i].line] )
-			pluginsP[#pluginsP].new = true
-			pluginsP[#pluginsP].install = true
-			table.insert(tmpss,pluginsP[#pluginsP])
-		end
-	end
-	if tmps2 then
-		for i=1,#tmps2 do
-			table.insert( psp_plugins, Online_psp_plugins[tmps2[i].line] )
-			psp_plugins[#psp_plugins].new = true
-			psp_plugins[#psp_plugins].install = true
-			table.insert(tmpss,psp_plugins[#psp_plugins])
-		end
-	end
+	onNetGetFile = onNetGetFileOld
+--Clean
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/")
+	files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 	__file = ""
 	if __flag then
-		update_database3("plugins/plugins_psp.lua",pluginsP,psp_plugins)
+
+		local onNetGetFileOld = onNetGetFile
+		onNetGetFile = nil
+	
+		--Update Langs
+		update_lang(nil)
+		files.delete("ux0:data/AUTOPLUGIN2/lang/")
+
+		onNetGetFile = onNetGetFileOld
+
+		local onNetGetFileOld = onNetGetFile
+		onNetGetFile = nil
+		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/plugins/plugins_psp.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."plugins_psp.lua")
+		onNetGetFile = onNetGetFileOld
+
+		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."plugins_psp.lua") then
+			files.move(tmpdir.."plugins_psp.lua","plugins/")
+			dofile("plugins/plugins_psp.lua")--Official
+			if #pluginsP > 0 then table.sort(pluginsP, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
+			if #psp_plugins > 0 then table.sort(psp_plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
+
+		--aqui actualizar plugins en pspemu/seplugins
+
+			local plugins_status={}
+			read_configs(pluginsP,plugins_status)
+
+			local tb_cop = {}
+			update_translations(pluginsP, tb_cop)
+
+			--Update plugin???
+			for i=1,#tb_cop do
+				for j=1,#tmp_plugins do
+
+					if string.upper(tb_cop[i].name) == string.upper(tmp_plugins[j].name) then
+						--os.message("plugins: "..tb_cop[i].path.."\nupdates: "..tmp_plugins[j].path)
+						for k=1, #PMounts do
+							if plugins_status[ PMounts[k]..tb_cop[i].name:lower() ] then
+								os.message(PMounts[k].."pspemu/"..tb_cop[i].path)
+								--install plugin
+								files.copy("resources/plugins_psp/"..tb_cop[i].name, PMounts[k].."pspemu/"..tb_cop[i].path)
+
+								--install config
+								if tb_cop[i].config then
+									files.copy("resources/plugins_psp/"..tb_cop[i].config, PMounts[k].."pspemu/"..tb_cop[i].path)
+								end
+							end
+						end
+					end
+				end
+			end
+
+			local plugins_status={}
+			read_configs_pspctrls(psp_plugins,plugins_status)
+
+			local tb_cop = {}
+			update_translations(psp_plugins, tb_cop)
+
+			--Update psp_plugins???
+			for i=1,#tb_cop do
+				for j=1,#tmp_plugins do
+
+					if string.upper(tb_cop[i].path) == string.upper(tmp_plugins[j].path) then
+						--os.message("plugins: "..tb_cop[i].path.."\nupdates: "..tmp_plugins[j].path)
+						for k=1, #PMounts do
+							if plugins_status[ PMounts[k]..tb_cop[i].path:lower() ] then
+								os.message(PMounts[k].."pspemu/seplugins/"..tb_cop[i].path)
+								--install plugin
+								files.copy("resources/plugins_psp/controls_psp/"..tb_cop[i].path, PMounts[k].."pspemu/seplugins/")
+							end
+						end
+					end
+				end
+			end
+			
+			
+		end
+		
 	end
 
 	buttons.homepopup(1)
 
 	local maxim,y1 = 10,85
-	local scroll = newScroll(tmpss,maxim)
-	table.sort(tmpss ,function (a,b) return string.lower(a.name)<string.lower(b.name) end)
+	local scroll = newScroll(tmp_plugins,maxim)
+	table.sort(tmp_plugins ,function (a,b) return string.lower(a.name)<string.lower(b.name) end)
 
 	while true do
 		buttons.read()
@@ -372,7 +276,8 @@ function plugins_online3()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
@@ -382,8 +287,9 @@ function plugins_online3()
 
 				if i == scroll.sel then draw.offsetgradrect(17,y-12,938,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-				screen.print(30,y, tmpss[i].name, 1.0, color.white,0x0)
-				if tmpss[i].new then
+				screen.print(30,y, tmp_plugins[i].nameR or tmp_plugins[i].name, 1.0, color.white,0x0)
+				
+				if tmp_plugins[i].new then
 					screen.print(945,y,LANGUAGE["LANG_FILE_NEW"],1.0,color.green,0x0,__ARIGHT)
 				else
 					screen.print(945,y,LANGUAGE["LANG_FILE_UPDATE"],1.0,color.green,0x0,__ARIGHT)

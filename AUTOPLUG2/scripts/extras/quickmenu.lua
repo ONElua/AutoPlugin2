@@ -84,9 +84,10 @@ function config_quickmenu()
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
@@ -119,12 +120,12 @@ function config_quickmenu()
 			y+=35
 		end
 
-		screen.print(480, 360, menuext[scroll.sel].path,1.2,color.green,0x0,__ACENTER)
+		screen.print(480, 360, menuext[scroll.sel].path,1.2,color.white,color.blue,__ACENTER)
 
 		if screen.textwidth(menuext[scroll.sel].desc) > 925 then
-			xscroll = screen.print(xscroll, 400, menuext[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
+			xscroll = screen.print(xscroll, 400, menuext[scroll.sel].desc,1,color.green,0x0,__SLEFT,935)
 		else
-			screen.print(480, 400, menuext[scroll.sel].desc,1,color.white,color.blue,__ACENTER)
+			screen.print(480, 400, menuext[scroll.sel].desc,1,color.green,0x0,__ACENTER)
 		end
 
 		if buttonskey then buttonskey:blitsprite(10, 498, __TRIANGLE) end

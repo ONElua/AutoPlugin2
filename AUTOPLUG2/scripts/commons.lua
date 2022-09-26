@@ -33,10 +33,12 @@ function vol_mp3()
 end
 
 function exit_bye_bye()
-
-	--tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
-	--os.exit()
-
+--[[
+	tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
+	--os.message("bye")
+	error("usb error")
+	os.exit()
+]]
 	tai.sync() --Write Test
 
 	if change then ReloadConfig = false end
@@ -65,7 +67,8 @@ end
 __file = ""
 function onNetGetFile(size,written,speed)
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.green:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
 	screen.print(480,12,tostring(__file),1.2,color.white, color.blue:a(135),__ACENTER)
 
@@ -83,7 +86,8 @@ end
 function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.green:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
     if step == 1 then -- Only msg of state
 		screen.print(10,12,LANGUAGE["UPDATER_SEARCH_UNSAFE_VPK"].."   "..tostring(__file))
@@ -109,7 +113,8 @@ end
 function onExtractFiles(size,written,file,totalsize,totalwritten)
 
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.blue:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
 	if written != 0 then
 		l = (written*940)/size
@@ -135,6 +140,7 @@ function write_config()
 	ini.write(__PATH_INI,"UPDATE","update",__UPDATE)
 	ini.write(__PATH_INI,"LANGUAGE","lang",__LANG)
 	ini.write(__PATH_INI,"FONT","font",__FONT)
+	ini.write(__PATH_INI,"TAI","auto",__AUTO)
 end
 
 function draw.offsetgradrect(x,y,sx,sy,c1,c2,c3,c4,offset)

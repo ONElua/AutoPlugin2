@@ -21,7 +21,7 @@ function install()
 	while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
-		if back2 then back2:blit(0, 0) end
+		if back then back:blit(0,0) end
 
 		screen.print(480, 18, LANGUAGE["MENU_TITLE_SD2VITA"], 1.2, color.white, 0x0, __ACENTER)
 
@@ -116,7 +116,7 @@ function install()
 
 	tai.sync()
 
-	if back2 then back2:blit(0, 0) end
+	if back then back:blit(0,0) end
 		message_wait(LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"] .. "\n\n" .. LANGUAGE["STRING_INSTALLED"])
 	os.delay(2000)
 
@@ -149,9 +149,10 @@ function configure()
 	while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
-		if back2 then back2:blit(0, 0) end
+		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480, 20, LANGUAGE["SD2VITA_CONFIG_TITLE"], 1.2, color.white, 0x0, __ACENTER)
 
 		screen.print(5, 80, LANGUAGE["SD2VITA_CONFIG_DEVICE"], 1, color.white, 0x0, __ALEFT)
@@ -259,7 +260,7 @@ function save_storage_config(devices)
 	end
 	files.write("ur0:tai/storage_config.txt", d)
 
-	if back2 then back2:blit(0, 0) end
+	if back then back:blit(0,0) end
 	os.message(LANGUAGE["SD2VITA_UPDATED_CONFIG"])
 	os.delay(2000)
 	change = true

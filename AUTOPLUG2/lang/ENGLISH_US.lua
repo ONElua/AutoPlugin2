@@ -27,7 +27,9 @@ ENGLISH_US["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Uninstall plugins"
 ENGLISH_US["MENU_PSVITA_INSTALL_SD2VITA"] =             "Install plugin for SD2VITA"
 ENGLISH_US["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configure plugin for SD2VITA"
 ENGLISH_US["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Check for plugin updates"
+ENGLISH_US["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+ENGLISH_US["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 ENGLISH_US["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Install the most useful plugins made by SCENE-PSVITA"
 ENGLISH_US["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Uninstall plugins"
 ENGLISH_US["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Install Plugin SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ ENGLISH_US["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD 
 ENGLISH_US["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
 ENGLISH_US["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
 
-ENGLISH_US["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+ENGLISH_US["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend PSVshell+)"
 
 --Options PSP
 ENGLISH_US["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) Plugins"
@@ -201,6 +203,7 @@ ENGLISH_US["UPDATE_CHECK_DB"] =                         "Checking database"
 ENGLISH_US["UPDATE_PLUGIN"] =                           "Updated plugin"
 ENGLISH_US["UPDATE_ERROR_DB"] =                         "Error downloading db.lua"
 ENGLISH_US["UPDATE_NO_NEWS"] =                          "All plugins are up to date"
+ENGLISH_US["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 ENGLISH_US["NPDRMFREE_TITLE"] =                         "Install NPDRM FREE plugin from qwikrazor87"

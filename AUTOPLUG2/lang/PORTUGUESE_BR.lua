@@ -27,7 +27,9 @@ PORTUGUESE_BR["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Desinstalar plugins"
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_SD2VITA"] =             "Instalar plugin para SD2VITA"
 PORTUGUESE_BR["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurar plugin for SD2VITA"
 PORTUGUESE_BR["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Checar por atualizações de plugin"
+PORTUGUESE_BR["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+PORTUGUESE_BR["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Instale os plugins mais úteis criados por SCENE-PSVITA"
 PORTUGUESE_BR["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Desinstalar plugins"
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Instalar plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ PORTUGUESE_BR["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body 
 PORTUGUESE_BR["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
 PORTUGUESE_BR["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
 
-PORTUGUESE_BR["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+PORTUGUESE_BR["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend PSVshell+)"
 
 --Options PSP
 PORTUGUESE_BR["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) Plugins"
@@ -201,6 +203,7 @@ PORTUGUESE_BR["UPDATE_CHECK_DB"] =                         "Verificando banco de
 PORTUGUESE_BR["UPDATE_PLUGIN"] =                           "Plugin atulizado"
 PORTUGUESE_BR["UPDATE_ERROR_DB"] =                         "Erro ao baixar arquivo db.lua"
 PORTUGUESE_BR["UPDATE_NO_NEWS"] =                          "Todos os plugins estão atualizados"
+PORTUGUESE_BR["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 PORTUGUESE_BR["NPDRMFREE_TITLE"] =                         "Instalar puglin NPDRM FREE do qwikrazor87"

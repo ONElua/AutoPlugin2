@@ -11,43 +11,17 @@
 
 dofile("lang/Langdatabase.lua")--Official
 
-function update_database(database,tb)
+function update_lang(tb)
 
-	local file = io.open(database, "w+")
-
-    file:write("Langs = {\n")
-
-	for s,t in pairs(tb) do
-		file:write(string.format('{ id =  "%s",		version = "%s",		author =  "%s" },\n', tostring(t.id), tostring(t.version), tostring(t.author)))
-	end
-
-	file:write("}\n")
-	file:close()
-	dofile("lang/Langdatabase.lua")--Official
-	load_translates()
-end
-
-function lang_online()
-
-	files.delete("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
-	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
-	files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins_psp.lua")
-
-	if back then back:blit(0,0) end
-		message_wait()
-	os.delay(500)
-
-	local tmpss = {}
-
-	__file = "Langdatabase.lua"
 	local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/Translations/Langdatabase.lua", APP_REPO, APP_PROJECT), "ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
-
-if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
+	if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua") then
 		dofile("ux0:data/AUTOPLUGIN2/lang/Langdatabase.lua")
 	else
 		os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 		return
 	end
+
+	local tmpdir = "ux0:data/AUTOPLUGIN2/lang/"
 
 	local __flag = false
 	if #Online_Langs > 0 then
@@ -57,16 +31,17 @@ if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.
 			for j=1,#Online_Langs do
 				if string.upper(Langs[i].id) == string.upper(Online_Langs[j].id) then
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
-						--if os.message("bajar si o no ?\n"..Online_Langs[j].id,1) == 1 then
 						__file = Online_Langs[j].id
-						if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), "lang/"..Online_Langs[j].id..".lua").success then
-							if back2 then back2:blit(0,0) end
-								message_wait(LANGUAGE["STRING_INSTALLED"].."\n\n"..Online_Langs[j].id.."\n")
-							os.delay(1500)
-
+						--os.message("Online_Langs\n"..tmpdir..Online_Langs[j].id..".lua")
+						local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), tmpdir..Online_Langs[j].id..".lua")
+						if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
+							files.move(tmpdir..Online_Langs[j].id..".lua","lang/")
 							Langs[i] = Online_Langs[j]
-							table.insert(tmpss,Langs[i])
+							if tb then table.insert(tb,Langs[i]) end
 							__flag = true
+							--os.message("lang/"..Online_Langs[j].id..".lua")
+						else
+							os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 						end
 					end
 				end
@@ -78,6 +53,7 @@ if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.
 		return
 	end--Online_Langs > 0
 
+--Nuevos
 	local tmps = {}
 	for i=1,#Online_Langs do
 		local __find = false
@@ -88,30 +64,52 @@ if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.
 			end
 		end
 		if not __find then
-			--if os.message("BBajar si o no ?\n"..Online_Langs[i].id,1) == 1 then
 			__file = Online_Langs[i].id
-			if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), "lang/"..Online_Langs[i].id..".lua").success then
-				if back2 then back2:blit(0,0) end
-					message_wait(LANGUAGE["STRING_INSTALLED"].."\n\n"..Online_Langs[i].id)
-				os.delay(1500)
+			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), tmpdir..Online_Langs[i].id..".lua")
+				--os.message("Online_Langs 2\n"..Online_Langs[i].id)
+				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
 				table.insert(tmps, { line = i })
 				__flag = true
+				files.move(tmpdir..Online_Langs[i].id..".lua","lang/")
+				--os.message("lang/"..Online_Langs[i].id..".lua")
 			end
 		end
 
 	end
 
+	os.delay(1500)
 	__file = ""
 	for i=1,#tmps do
 		table.insert( Langs, Online_Langs[tmps[i].line] )
 		Langs[#Langs].new = true
-		table.insert(tmpss,Langs[#Langs])
+		if tb then table.insert(tb,Langs[#Langs]) end
 	end
 
 	if __flag then
-		if #Langs > 1 then table.sort(Langs ,function (a,b) return string.lower(a.id)<string.lower(b.id) end) end
-		update_database("lang/Langdatabase.lua",Langs)
+		files.delete(tmpdir.."Langdatabase.lua")
+		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/Langdatabase.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."Langdatabase.lua")
+		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."Langdatabase.lua") then
+			files.move(tmpdir.."Langdatabase.lua","lang/")
+			dofile("lang/Langdatabase.lua")--Official
+			if #Langs > 1 then table.sort(Langs ,function (a,b) return string.lower(a.id)<string.lower(b.id) end) end
+			load_translates()
+		end
 	end
+
+end
+
+function lang_online()
+
+	files.delete("ux0:data/AUTOPLUGIN2/lang/")
+
+	if back then back:blit(0,0) end
+		message_wait()
+	os.delay(500)
+
+	__file = "Langdatabase.lua"
+	local tmpss = {}
+	update_lang(tmpss)
+	files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 	local maxim,y1 = 8,85
 	local scroll = newScroll(tmpss,maxim)
@@ -124,7 +122,8 @@ if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/lang/Langdatabase.
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_LANG_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then

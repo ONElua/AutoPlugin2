@@ -27,7 +27,9 @@ SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS"] =              "Desinstalar Plugins"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA"] =                "Instalar Plugin SD2VITA"
 SPANISH["MENU_PSVITA_CONFIGURE_SD2VITA"] =              "Configura el Plugin para SD2VITA"
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Buscar Actualizaciones de Plugins"
+SPANISH["MENU_PSVITA_HD_PATCH"] =                       "HD Patches"
 
+SPANISH["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games"
 SPANISH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Instala los Plugins más útiles desarrollados por la Scene de PSVita"
 SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Desinstala Plugins de manera fácil y sencilla"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Instala el Plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
@@ -56,7 +58,7 @@ SPANISH["INSTALL_CATHERINE_HD_TITLE"] =                 "Catherine Full Body HD 
 SPANISH["NO_CHATERINE_GAMES"] =                         "Catherine Full Body no se ha encontrado"
 SPANISH["INSTALLING_CATHERINE_HD_PATCH"] =              "Instalando Catherine Full Body HD"
 
-SPANISH["INSTRUCTIONS_HD_PATCH"] =                      " 1. Instalar la última version de Sharpscale \n\n 2. Activa 'Unlock framebuffer size' en la app de configuraciones de Sharpscale \n\n 3. Se requiere Overclocking para un buen rendimiento (recomendamos LOLIcon o lolita444/500)"
+SPANISH["INSTRUCTIONS_HD_PATCH"] =                      " 1. Instalar la última version de Sharpscale \n\n 2. Activa 'Unlock framebuffer size' en la app de configuraciones de Sharpscale \n\n 3. Se requiere Overclocking para un buen rendimiento (recomendamos PSVshell+)"
 
 --Options PSP
 SPANISH["MENU_PSP_TITLE"] =                             "Plugins para PSP (Adrenaline)"
@@ -201,6 +203,7 @@ SPANISH["UPDATE_CHECK_DB"] =                            "Comprobando Base de Dat
 SPANISH["UPDATE_PLUGIN"] =                              "Plugin Actualizado"
 SPANISH["UPDATE_ERROR_DB"] =                            "Error al descargar db.lua"
 SPANISH["UPDATE_NO_NEWS"] =                             "Todos los plugins están actualizados"
+SPANISH["UPDATE_QUESTION"] =                            "is installed\n\nWould you like to update it?"
 
 --npdrm free
 SPANISH["NPDRMFREE_TITLE"] =                            "Instalar plugin NPDRM FREE de qwikrazor87"

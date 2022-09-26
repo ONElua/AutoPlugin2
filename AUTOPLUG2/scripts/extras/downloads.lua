@@ -28,13 +28,13 @@ function download_install(url,name)
 				--os.message("Links "..#links)
 				for i=1,#links do
 					if links[i].href then
-						if links[i].href:find(name,1,true) then
+						
+						if links[i].href:find("releases/tag/",1,true) then
 							--os.message(links[i].href)
-							onNetGetFile = onNetGetFileOld
-							__file = files.nopath(files.nofile(links[i].href))..name
-							__file = string.gsub(__file,"/","  ")
-							local res = http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vpks/"..name)
-							if res and res.success and files.exists("ux0:data/AUTOPLUGIN2/vpks/"..name) then
+							__file = name.." "..files.nopath(links[i].href)
+							--os.message(__file)
+							local res = http.download(url.."/releases/download/"..files.nopath(links[i].href).."/"..name,"ux0:data/AUTOPLUGIN2/vpks/"..name)
+							if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/vpks/"..name) then
 								game.install("ux0:data/AUTOPLUGIN2/vpks/"..name,false)
 								break
 							end
@@ -61,27 +61,27 @@ end
 function downloads()
 
 	local itls_callback = function ()
-		download_install("https://github.com/SKGleba/iTLS-Enso/releases/latest/", "iTLS-Enso.vpk")
+		download_install("https://github.com/SKGleba/iTLS-Enso", "iTLS-Enso.vpk")
 	end
 
 	local vitashell_callback = function ()
-		download_install("https://github.com/TheOfficialFloW/VitaShell/releases/latest/", "VitaShell.vpk")
+		download_install("https://github.com/TheOfficialFloW/VitaShell", "VitaShell.vpk")
 	end
 
 	local vitashell_yoti_callback = function ()
-		download_install("https://github.com/RealYoti/VitaShell/releases/latest/", "VitaShell.vpk")
+		download_install("https://github.com/RealYoti/VitaShell/", "VitaShell.vpk")
 	end
 
 	local ShaRKF00D_callback = function ()
-		download_install("https://github.com/OsirizX/ShaRKF00D/releases/latest/", "ShaRKF00D.vpk")
+		download_install("https://github.com/OsirizX/ShaRKF00D", "ShaRKF00D.vpk")
 	end
 
 	local batteryfixer_callback = function ()
-		download_install("https://github.com/SKGleba/PSP2-batteryFixer/releases/latest/", "batteryFixer.vpk")
+		download_install("https://github.com/SKGleba/PSP2-batteryFixer", "batteryFixer.vpk")
 	end
 
 	local yamt_callback = function ()
-		download_install("https://github.com/SKGleba/yamt-vita/releases/latest/", "yamt.vpk")
+		download_install("https://github.com/SKGleba/yamt-vita", "yamt.vpk")
 	end
 
 	local menu = {
@@ -102,7 +102,8 @@ function downloads()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_DOWNLOADS"],1.2,color.white,0x0,__ACENTER)
 
         local y = 145

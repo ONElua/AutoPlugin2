@@ -91,7 +91,7 @@ function customimgsplash()
 		end
 	end
 
-	local limit = 10
+	local limit = 9
 	local scroll = newScroll(custom_boot, limit)
 
 	local install = false
@@ -101,12 +101,13 @@ function customimgsplash()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["CUSTOMBOOTSPLASH_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
 
-			local y = 80
+			local y = 70
 			for i=scroll.ini, scroll.lim do
 
 				if i == scroll.sel then

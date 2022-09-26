@@ -27,7 +27,9 @@ FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Désinstaller un plugin ins
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA"] =             "Installer le plugin de la SD2VITA"
 FRENCH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurer le plugin de la SD2VITA"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifiez les mises à jour des plugins"
+FRENCH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés de la scène PSVITA"
 FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller un plugin installé facilement"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la SD2VITA (StorageMgr v3.4 (de CelesteBlue & Yoti))"
