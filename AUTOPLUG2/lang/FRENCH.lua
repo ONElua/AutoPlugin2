@@ -29,7 +29,7 @@ FRENCH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurer le plugin de la 
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifiez les mises à jour des plugins"
 FRENCH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
-FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
+FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "correctifs HD pour certains jeux de la PSVita"
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés de la scène PSVITA"
 FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller un plugin installé facilement"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin de la SD2VITA (StorageMgr v3.4 (de CelesteBlue & Yoti))"
@@ -82,7 +82,7 @@ FRENCH["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Définir une image personna
 FRENCH["MENU_EXTRAS_CUSTOM_WARNING"] =              "Définir un message personnalisé au démarrage"
 FRENCH["MENU_EXTRAS_TRANSP_IMPOSE"] =               "Configurer le plugin TransparentImpose"
 FRENCH["MENU_EXTRAS_TRANSLATE"] =                   "Traduire AutoPlugin II"
-FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	"Réinitialiser config.txt dans ur0"
+FRENCH["MENU_EXTRAS_RESET_CONFIG"] =             	  "Réinitialiser config.txt du ur0"
 FRENCH["MENU_EXTRAS_QUICKMENU_PLUS"] =              "Configuration du QuickMenu Plus"
 FRENCH["MENU_AUTOBOOT_TITLE"] =                     "Autoboot (démarrage automatique)"
 FRENCH["MENU_EXTRAS_DOWNLOAD_TSV"] =                "Télécharger la base de donnée PKGj"
@@ -138,11 +138,11 @@ FRENCH["INSTALLP_QUESTION_VPK"] =                   "doit être téléchargé po
 FRENCH["INSTALLP_NO_VPK"] =                         "Échec du téléchargement ou de l'installation !"
 
 --customWarning
-FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'activer le plugin Custom Warning"
+FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'installer le plugin Custom Warning"
 
-FRENCH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright est uniquement pour les 3.60 ou h-encore 3.68"
-FRENCH["INSTALLP_CWARNING_360_365"] =               "Custom Warning ne fonctionne pas en 3.67/3.68/3.73"
-FRENCH["INSTALLP_REVITA_360_365"] =                 "reVita fonctionne uniquement en 3.60/3.65"
+FRENCH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright est valable uniquement pour les versions 3.60 ou h-encore en 3.68"
+FRENCH["INSTALLP_CWARNING_360_365"] =               "Custom Warning ne fonctionne pas sous les firmwares 3.67/3.68/3.73"
+FRENCH["INSTALLP_REVITA_360_365"] =                 "reVita fonctionne uniquement sous les firmwares 3.60 & 3.65"
 FRENCH["INSTALLP_LCDCOLOURSPACECHANGE"] =           "Changeur d'espace couleur LCD, ne fonctionne que sur PSVita Slim"
 FRENCH["INSTALLP_QUESTION_SHELLSECBAT"] =           "\n               Plugin shellsecbat détecté!\n\nInstaller shellbat à la place et de désinstaller shellsecbat ?"
 FRENCH["INSTALLP_QUESTION_SHELLBAT"] =              "\n               Plugin shellbat détecté!\n\nInstaller shellsecbat à la place et de désinstaller shellbat ?"
@@ -198,12 +198,12 @@ FRENCH["SD2VITA_UMA_FRIENDLY"] =                    "USB ou PSVSD des Vita 3G"
 
 --plugins online
 FRENCH["UPDATE_WIFI_LOW"] =                         "Signal Wifi faible"
-FRENCH["UPDATE_WIFI_IS_ON"] =                       "Connexion internet requis"
-FRENCH["UPDATE_CHECK_DB"] =                         "Vérification de la base de données"
+FRENCH["UPDATE_WIFI_IS_ON"] =                       "Une connexion internet est requise"
+FRENCH["UPDATE_CHECK_DB"] =                         "Vérification de la base de donnée"
 FRENCH["UPDATE_PLUGIN"] =                           "Plugin mise à jour"
 FRENCH["UPDATE_ERROR_DB"] =                         "Erreur de téléchargement du db.lua"
 FRENCH["UPDATE_NO_NEWS"] =                          "Tous les plugins sont à jour"
-FRENCH["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
+FRENCH["UPDATE_QUESTION"] =                         "est installé\n\nVoulez-vous le mettre à jour ?"
 
 --npdrm free
 FRENCH["NPDRMFREE_TITLE"] =                         "NPDRM FREE par qwikrazor87"
@@ -213,9 +213,9 @@ FRENCH["NPDRMFREE_GAME_UPDATED"] =                  "game.txt mise à jour"
 FRENCH["NPDRMFREE_INSTALL"] =                       "Installer le plugin"
 
 --pspctrls (Remastered Controls)
-FRENCH["PSPCTRLS_TITLE"] =                          "Plugins utilisant le second joysticks de la PSVita dans les jeux PSP avec Adrenaline"
+FRENCH["PSPCTRLS_TITLE"] =                          "Plugins utilisant le second joystick de la PSVita dans les jeux PSP avec Adrenaline"
 FRENCH["PSPCTRLS_GAME_UPDATED"] =                   "game.txt mise à jour"
-FRENCH["PSPCTRLS_DESC_ALL"] =                       "Utilise le second joystick pour contrôlé la caméra du jeu"
+FRENCH["PSPCTRLS_DESC_ALL"] =                       "Utilise le second joystick pour contrôlé la caméra dans un jeu PSP"
 FRENCH["PSPCTRLS_LR_SWAP"] =                        "Changer de partition"
 FRENCH["GTA_REMASTERED_DESC"] =                     "Double joystick pour les jeux Grand Theft Auto: Liberty City Stories et Grand Theft Auto: Vice City Stories"
 FRENCH["GTAV2_REMASTERED_DESC"] =                   "Double joystick pour les jeux Grand Theft Auto: Liberty City Stories et Grand Theft Auto: Vice City Stories"
@@ -230,7 +230,7 @@ FRENCH["TONYHAWKS_REMASTERED_DESC"] =               "Double joystick pour le jeu
 
 --psp plugins
 FRENCH["PLUGINS_PSP_TITLE"] =                       "Liste des plugins PSP disponible"
-FRENCH["GTA_PATCH_DESC"] =                          "Ce plugin augmente la résolution interne du jeu en natif (960x544). Jeux compatibles :Vice City Stories [ULUS10160] (v3.00) et Liberty City Stories [ULUS10041] (v3.00). Adrenaline v7.0 ou plus -> Paramètre Forcer la mise en page de la mémoire haute désactivée (dans Recovery menu -> Advanced -> Advanced configuration)."
+FRENCH["GTA_PATCH_DESC"] =                          "Ce plugin augmente la résolution interne du jeu en natif (960x544). Jeux compatibles : Vice City Stories [ULUS10160] (v3.00) et Liberty City Stories [ULUS10041] (v3.00). Adrenaline v7.0 ou plus -> Paramètre Forcer la mise en page de la mémoire haute désactivée (dans Recovery menu -> Advanced -> Advanced configuration)."
 FRENCH["CAMERA_PATCH_DESC"] =                       "Ce plugin ajoute le support du stick analogique droit aux jeux PSP compatible"
 FRENCH["CXMB_DESC"] =                               "CXMB permet aux utilisateurs d'utiliser des thèmes personnalisés au format CTF"
 FRENCH["LANGSWAPPER_DESC"] =                        "Il définit le menu d'accueil des jeux et utilitaire de sauvegarde des données dans la langue de votre console sur les jeux dont la langue de la région est différente"
@@ -514,7 +514,7 @@ FRENCH["REPAIR_CONFIG_TXT"] =                       "\n\nCorrection des plugins 
 FRENCH["REPAIR_CONFIG_SHARPSCALE"] =                "\n\nCorrection du crash de la configuration du Sharpscale !"
 FRENCH["STRING_UNSAFE_MODE"] =                      "Le MODE UNSAFE est requis pour utilisé cet homebrew!"
 FRENCH["STRING_PSVITA_RESTART"] =                   "\nVotre console va redémarrée pour appliquer les changements"
-FRENCH["STRINGS_CONFIG_SUCCESS"] =		            "taiHEN config.txt Reloaded OK"
+FRENCH["STRINGS_CONFIG_SUCCESS"] =		              "taiHEN config.txt Reloaded OK"
 FRENCH["STRING_BACKUP_CONFIGS"] =                   "Sauvegarde de votre Config.txt en cours..."
 FRENCH["STRING_MISSING_CONFIG"] =                   "Fichier config.txt manquant"
 FRENCH["STRING_BACK"] =                             "Revenir au menu"
