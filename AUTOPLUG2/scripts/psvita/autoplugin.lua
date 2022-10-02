@@ -454,7 +454,8 @@ function autoplugin()
 					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
 					img = image.load(screenshots..tb_cop[scr.sel].id)
 					if not img then
-						if http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id).headers.status_code == 200 then
+						local res = http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id)
+						if res.headers and res.headers.status_code == 200 and files.exists(screenshots..tb_cop[scr.sel].id) then
 							img = image.load(screenshots..tb_cop[scr.sel].id)
 						else files.delete(screenshots..tb_cop[scr.sel].id)
 						end
@@ -521,7 +522,8 @@ function autoplugin()
 					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
 					img = image.load(screenshots..tb_cop[scr.sel].id)
 					if not img then
-						if http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id).headers.status_code == 200 then
+						local res = http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id)
+						if res.headers and res.headers.status_code == 200 and files.exists(screenshots..tb_cop[scr.sel].id) then
 							img = image.load(screenshots..tb_cop[scr.sel].id)
 						else files.delete(screenshots..tb_cop[scr.sel].id)
 						end
