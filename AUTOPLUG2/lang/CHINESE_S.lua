@@ -27,9 +27,9 @@ CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA"] =             "安装 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "配置 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "检查插件更新"
-CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
+CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "高清补丁"
 
-CHINESE_S["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
+CHINESE_S["MENU_PSVITA_HD_PATCH_DESC"] =               "适用于部分 PS Vita 游戏的高清补丁"
 CHINESE_S["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "安装为 PSVita 环境开发的实用插件"
 CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -117,9 +117,9 @@ CHINESE_S["MENU_SETTINGS_LANG_ONLINE"] =               "下载可用语言"
 CHINESE_S["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "启用自动更新: "
 CHINESE_S["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "更改语言"
 CHINESE_S["MENU_SETTINGS_CHANGE_FONT"] =               "更换字体"
-CHINESE_S["MENU_SETTINGS_AUTO_FIX"] =                  "Tai Config Auto: "
+CHINESE_S["MENU_SETTINGS_AUTO_FIX"] =                  "大变革自动配置: "
 
-CHINESE_S["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
+CHINESE_S["MENU_SETTINGS_AUTO_FIX_DESC"] =             "启用/禁用大变革自动配置"
 CHINESE_S["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "为 AutoPlugin II 下载可用语言包"
 CHINESE_S["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "启动时自动更新插件及语言包"
 CHINESE_S["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "变更及设置 AutoPlugin II 默认语言"
@@ -456,7 +456,7 @@ CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并�
 CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
 CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "修改锁屏背景壁纸 (具有8位调色板的非隔行扫描PNG. 最大支持分辨率为 896x448. 文件大小最大支持到 512 KiB)"
 CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "在快速菜单增加按钮, 用于快速启动应用程序. 本插件使用 QuickMenuReborn 制作."
-CHINESE_S["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
+CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL
 CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "适用于 PS Vita 的简单的大变革插件, 用于覆盖纹理采样. 强制使用点过滤方法(最近邻插值)而非线性渲染."
@@ -492,7 +492,7 @@ CHINESE_S["INSTALLP_DESC_SHARPSCALE"] =                "此插件令 PSTV 支持
 CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "将快捷菜单的打开时间从2秒减少到200毫秒."
 CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.在任何游戏中瞬间变身职业玩家!"
 CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
-CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
+CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程序隐藏 ux0:/app/AUTOPLUG2"
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
