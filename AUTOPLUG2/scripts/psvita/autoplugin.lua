@@ -51,7 +51,7 @@ function plugins_installation(obj)
 			tai.del("main", "quick_volume.suprx")
 			tai.del("KERNEL", "rapidmenu.skprx")
 
-		-- QuickMenuPlus
+		-- QuickMenuReborn
 		elseif obj.path == "QuickMenuReborn.suprx" then
 			files.delete("ux0:QuickMenuReborn/")
 
