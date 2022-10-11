@@ -459,6 +459,7 @@ CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "在快速菜单增加按
 CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL
+CHINESE_S["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "适用于 PS Vita 的简单的大变革插件, 用于覆盖纹理采样. 强制使用点过滤方法(最近邻插值)而非线性渲染."
 CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."
 CHINESE_S["INSTALLP_DESC_YAMT"] =                      "适用于 PSVita/PSTV 的又一款用于重新挂载分区的内核插件 (依赖 Enso, 仅兼容 3.60 及 3.65 固件)"

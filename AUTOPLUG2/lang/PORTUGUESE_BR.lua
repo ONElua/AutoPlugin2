@@ -459,6 +459,7 @@ PORTUGUESE_BR["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add butt
 PORTUGUESE_BR["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
+PORTUGUESE_BR["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 PORTUGUESE_BR["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 PORTUGUESE_BR["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 PORTUGUESE_BR["INSTALLP_DESC_YAMT"] =                      "Outro plugin do kernel da (re) montagem da ferramenta para PSVita/PSTV (requer Enso, compatível apenas com o firmware 3.60 e 3.65"

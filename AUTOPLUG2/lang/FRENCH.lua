@@ -459,6 +459,7 @@ FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to 
 FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL
+FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
 FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"

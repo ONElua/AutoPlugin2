@@ -27,9 +27,9 @@ RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Удалить плаги�
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA"] =             "Установить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Настроить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Проверить обновления плагинов"
-RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD патчи"
+RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
-RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD патчи для нескольких PS Vita игр"
+RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 RUSSIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Установить наиболее полезные плагины, созданные сценой PS Vita"
 RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Легко и просто удалить установленные плагины"
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Установить плагин для SD2VITA (StorageMgr v3.4 от CelesteBlue & Yoti)"
@@ -117,9 +117,9 @@ RUSSIAN["MENU_SETTINGS_LANG_ONLINE"] =               "Загрузить обн�
 RUSSIAN["MENU_SETTINGS_ENABLE_AUTOUPDATE"] =         "Включить автоообновление: "
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Выбрать язык приложения"
 RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Выбрать шрифт приложения"
-RUSSIAN["MENU_SETTINGS_AUTO_FIX"] =                  "Автоправка tai config.txt: "
+RUSSIAN["MENU_SETTINGS_AUTO_FIX"] =                  "Tai Config Auto: "
 
-RUSSIAN["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Включить или выключить автоправку tai config.txt"
+RUSSIAN["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Загрузить новые и обновлённые переводы для AutoPlugin II"
 RUSSIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Включить автоматическое обновление программы (да/нет)"
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Выбрать и применить язык перевода AutoPlugin II"
@@ -203,7 +203,7 @@ RUSSIAN["UPDATE_CHECK_DB"] =                         "Проверка базы 
 RUSSIAN["UPDATE_PLUGIN"] =                           "Обновлён плагин"
 RUSSIAN["UPDATE_ERROR_DB"] =                         "Ошибка при загрузке db.lua"
 RUSSIAN["UPDATE_NO_NEWS"] =                          "Все плагины уже обновлены"
-RUSSIAN["UPDATE_QUESTION"] =                         "уже установлен\n\nВыполнить обновление?"
+RUSSIAN["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 RUSSIAN["NPDRMFREE_TITLE"] =                         "Плагин npdrm_free от qwikrazor87"
@@ -422,7 +422,7 @@ RUSSIAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "Показ своего з
 RUSSIAN["CUSTOMBOOTSPLASH_QUESTION"] =               "Применить выбранное изображение в качестве загрузочного?"
 RUSSIAN["INSTALLP_DESC_NOFINDSPLASH"] =              "Поместите своё изображение в папку ux0:CustomBootsplash/\n(имя файла должно быть splash.png, а его размер 960x544)"
 RUSSIAN["INSTALLP_DESC_SPLASHGH"] =                  "Размер изображения должен быть 960x544"
-RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - ГОТОВО!!!"
+RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - УСПЕХ!!!"
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
@@ -456,9 +456,10 @@ RUSSIAN["INSTALLP_DESC_QUICKMENU"] =             	 "Quick Menu Plus объеди
 RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Рекомендуем) Эта версия срабатывает только при касании верхнего края экрана. В SceShell (домашний экран) это область панели информации. Таким образом, работа оказывается максимально схожей с тем, как это сделано на Андроид."
 RUSSIAN["INSTALLP_DESC_FRUITPEEL"] =                 "Плагин позволяет заменить фоновое изображение экрана блокировки (требования: формат PNG/8 bit/non-interlaced, разрешение не больше 896x448, размер файла не больше 512 КБ)"
 RUSSIAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "Плагин для добавления кнопок запуска программ в быстрое меню PS Vita (основан на QuickMenuReborn)"
-RUSSIAN["INSTALLP_DESC_WAVE"] =                      "Плагин для добавления анимации волн на фоне домашнего экрана PS Vita"
+RUSSIAN["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
+RUSSIAN["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Несложный плагин, который перехватывает механизм обработки текстур и позволяет интерполировать их методом ближайшего соседа (ступенчатой интерполяцией)"
 RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
@@ -492,7 +493,7 @@ RUSSIAN["INSTALLP_DESC_SHARPSCALE"] =                "Вывод родного 
 RUSSIAN["INSTALLP_DESC_RAPIDMENU"] =                 "Ускорение открытия быстрого меню в 10 раз (200 мсек. вместо 2 сек.)"
 RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в любой игре без особого труда!"
 RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper разработан для извлечения содержимого книг в формате .MNH (Marlin-Hon), который используется в приложении PS Vita Sony Reader (PCSC80012)"
-RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает наличие установленного AutoPlugin II от других приложений"
+RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"
