@@ -51,6 +51,10 @@ function plugins_installation(obj)
 			tai.del("main", "quick_volume.suprx")
 			tai.del("KERNEL", "rapidmenu.skprx")
 
+		-- QuickMenuPlus
+		elseif obj.path == "QuickMenuReborn.suprx" then
+			files.delete("ux0:QuickMenuReborn/")
+
 		--Checking plugin Batt (only 1 of them)
 		elseif obj.path == "shellbat.suprx" then
 			tai.del("main", "shellsecbat.suprx")
@@ -288,7 +292,7 @@ function plugins_installation(obj)
 			files.extract("resources/plugins/AutoBoot.zip","ux0:")
 		elseif obj.path == "ps4linkcontrols.suprx" and not files.exists("ux0:ps4linkcontrols.txt") then--ps4linkcontrols
 			files.extract("resources/plugins/ps4linkcontrols.zip","ux0:")
-				-- reVita.skprx
+			-- reVita.skprx
 		elseif obj.path == "reVita.skprx" then
 			if os.message(LANGUAGE["INSTALLP_DESC_REVITA_GYRO"].."\n",1) == 1 then
 				files.copy(path_plugins.."reVitaMotion.suprx", path_tai)
@@ -298,7 +302,11 @@ function plugins_installation(obj)
 		elseif string.find(obj.name, "QuickLauncher", 1, true) then
 			if not files.exists("ux0:data/quicklauncher.txt") then
 				files.copy(path_plugins.."quicklauncher.txt", "ux0:data/")
-			else
+			end
+			--fruitpeel.suprx
+		elseif obj.path == "fruitpeel.suprx" then
+			if not files.exists("ur0:/data/fruitpeel.png") then
+				files.copy("imgs/fruitpeel.png","ur0:/data/")
 			end
 		end
 
