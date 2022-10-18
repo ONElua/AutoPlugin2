@@ -119,7 +119,7 @@ RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE"] =           "Выбрать язык п
 RUSSIAN["MENU_SETTINGS_CHANGE_FONT"] =               "Выбрать шрифт приложения"
 RUSSIAN["MENU_SETTINGS_AUTO_FIX"] =                  "Автоправка tai config.txt: "
 
-RUSSIAN["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Enable/Disable The Tai Config Auto"
+RUSSIAN["MENU_SETTINGS_AUTO_FIX_DESC"] =             "Включить или выключить автоправку tai config.txt"
 RUSSIAN["MENU_SETTINGS_LANG_ONLINE_DESC"] =          "Загрузить новые и обновлённые переводы для AutoPlugin II"
 RUSSIAN["MENU_SETTINGS_AUTOUPDATE_DESC"] =           "Включить автоматическое обновление программы (да/нет)"
 RUSSIAN["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =      "Выбрать и применить язык перевода AutoPlugin II"
@@ -459,7 +459,7 @@ RUSSIAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "Плагин для доб
 RUSSIAN["INSTALLP_DESC_WAVE"] =                      "Плагин для добавления анимации волн на фоне домашнего экрана PS Vita"
 
 --ALL
-RUSSIAN["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
+RUSSIAN["INSTALLP_DESC_3GDISABLE"] =                 "Самый правильный способ отключения 3G функционала. Плагин заставляет прошивку думать, что она работает на обычной модели без 3G (только Wi-Fi)"
 RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Несложный плагин, который перехватывает механизм обработки текстур и позволяет интерполировать их методом ближайшего соседа (ступенчатой интерполяцией)"
 RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"
 RUSSIAN["INSTALLP_DESC_YAMT"] =                      "Удобный плагин для изменения точек монтирования устройств на прошивках 3.60 и 3.65 (необходим enso)"
