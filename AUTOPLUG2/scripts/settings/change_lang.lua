@@ -157,11 +157,8 @@ function change_lang()
 				dofile("plugins/plugins.lua")
 				if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
-				if __UPDATE == 0 then
-					_update = LANGUAGE["NO"]
-				else
-					_update = LANGUAGE["YES"]
-				end
+				if __UPDATE == 0 then _update = LANGUAGE["NO"] else	_update = LANGUAGE["YES"] end
+				if __AUTO == 0 then _autotai = LANGUAGE["NO"] else _autotai = LANGUAGE["YES"] end
 
 				__LANG, fnt, type_fnt = tb[scroll.sel].file, nil, __FONT_TYPE_PGF
 				__FONT = ini.read(__PATH_INI,"FONT","font","")
