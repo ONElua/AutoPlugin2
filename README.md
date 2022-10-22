@@ -71,8 +71,8 @@ Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/m
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
 ### Changelog 1.29 ###
-++ Fixed error when updating languages.
-++ Added korean language support.
+- Fixed error when updating languages.
+- Added korean language support.
 
 ### Changelog 1.28 ###
 - Multiselection for bundle plugin installation has been disabled. 
