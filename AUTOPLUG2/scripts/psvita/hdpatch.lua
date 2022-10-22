@@ -39,7 +39,7 @@ function HD_Patch()
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,"HD patch",1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_HD_PATCH"],1.2,color.white,0x0,__ACENTER)
 		--screen.print(480,20,LANGUAGE["MENU_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		local y = 145

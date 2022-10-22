@@ -70,6 +70,7 @@ function load_translates()
 			end
 		end
 	end
+
 end
 
 load_translates()

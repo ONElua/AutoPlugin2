@@ -67,7 +67,7 @@ function update_lang(tb)
 			__file = Online_Langs[i].id
 			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), tmpdir..Online_Langs[i].id..".lua")
 				--os.message("Online_Langs 2\n"..Online_Langs[i].id)
-				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
+				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[i].id..".lua") then
 				table.insert(tmps, { line = i })
 				__flag = true
 				files.move(tmpdir..Online_Langs[i].id..".lua","lang/")
