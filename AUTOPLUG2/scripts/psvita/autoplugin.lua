@@ -9,14 +9,6 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/scripts/psvita/autoplugin.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."autoplugin.lua")
-if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."autoplugin.lua") then
-	files.move(tmpdir.."autoplugin.lua","scripts/psvita/")
-	dofile("scripts/psvita/autoplugin.lua")--Official
-else
-	files.delete(tmpdir.."autoplugin.lua")
-end
-
 screenshots = "ux0:data/AUTOPLUGIN2/screenshots/"
 files.mkdir(screenshots)
 
