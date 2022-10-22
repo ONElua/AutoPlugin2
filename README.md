@@ -51,7 +51,6 @@ This tool allows you to install/uninstall the following plugins with one click
 | [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
 | [PasteUnlock](https://github.com/GrapheneCt/PasteUnlock/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
 | [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [SonicMastr](https://github.com/SonicMastrb) |
-| [vita3g-disable](https://github.com/VictorGamer072YT/vita3g-disable) | [VictorGamer072YT](https://github.com/VictorGamer072YT) |
 
 # Optional settings
 - Update plugins Online
@@ -69,6 +68,10 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 1.29 ###
+++ Fixed error when updating languages.
+++ Added korean language support.
 
 ### Changelog 1.28 ###
 - Multiselection for bundle plugin installation has been disabled. 

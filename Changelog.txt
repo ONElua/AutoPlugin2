@@ -1,3 +1,7 @@
+#v1.29
+++ Fixed error when updating languages.
+++ Added korean language support.
+
 #v1.28
 ++ Multiselection for bundle plugin installation has been disabled. 
 ++ When installing a plugin, the corresponding readme file will be shown if it has one at github. 
