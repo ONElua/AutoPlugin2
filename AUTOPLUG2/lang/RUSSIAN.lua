@@ -494,6 +494,7 @@ RUSSIAN["INSTALLP_DESC_RAPIDMENU"] =                 "Ускорение отк�
 RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в любой игре без особого труда!"
 RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper разработан для извлечения содержимого книг в формате .MNH (Marlin-Hon), который используется в приложении PS Vita Sony Reader (PCSC80012)"
 RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает наличие установленного AutoPlugin II от других приложений"
+RUSSIAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"

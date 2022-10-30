@@ -494,6 +494,7 @@ KOREAN["INSTALLP_DESC_RAPIDMENU"] =                 "빠른 메뉴 열기 시간
 KOREAN["INSTALLP_DESC_SCOREHAX"] =                  "모든 게임에서 인스턴트 프로!"
 KOREAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper는 소니의 .MNH(Marlin-Hon) 책 형식의 콘텐츠를 추출하도록 설계된 PS 비타 소니 리더 응용 프로그램 (PCSC80012)용 플러그인"
 KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 ux0:/app/AUTOPLUG2 숨김"
+KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 KOREAN["INSTALLP_DESC_PS4LINK"] =                   "선호하는 원격 재생 버튼 구성을 강제할 수 있는 taiHEN 플러그인"

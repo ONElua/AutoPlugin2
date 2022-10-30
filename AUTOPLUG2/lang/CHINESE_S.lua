@@ -494,6 +494,7 @@ CHINESE_S["INSTALLP_DESC_RAPIDMENU"] =                 "将快捷菜单的打开
 CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.在任何游戏中瞬间变身职业玩家!"
 CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
 CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程序隐藏 ux0:/app/AUTOPLUG2"
+CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"

@@ -494,6 +494,7 @@ SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que to
 SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
 SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
 SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
+SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"

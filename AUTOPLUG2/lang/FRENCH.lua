@@ -494,6 +494,7 @@ FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouvertur
 FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantané dans n'importe quel jeu!"
 FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
 FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 de toute application qui lance une vérification de l'application s'il est installé dans la console."
+FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
