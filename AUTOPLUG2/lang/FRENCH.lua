@@ -368,7 +368,7 @@ FRENCH["INSTALLP_DESC_LOLICON"] =                   "Permet l'overclocking réel
 FRENCH["INSTALLP_DESC_DS3VITA"] =                   "Contrôlez votre PSVita avec un DualShock 3"
 FRENCH["INSTALLP_DESC_DS4VITA"] =                   "Contrôlez votre PSVita avec un DualShock 4"
 FRENCH["INSTALLP_DESC_DS34VITA"] =                  "Combine les fonctionnalités de ds4vita et ds3vita de xerpi. Permet d'utiliser jusqu'à deux contrôleurs en même temps."
-FRENCH["INSTALLP_DESC_DS5VITA"] =                   "Plugin to use PS5 dualsense on PSVITA"
+FRENCH["INSTALLP_DESC_DS5VITA"] =                   "Contrôlez votre PSVita avec une Dualsense 5 (manette de la PS5)"
 FRENCH["INSTALLP_DESC_REVITA"] =                    "reVita est un plugin pour PS Vita / PS TV, qui vous permet de remapper les entrées et de déclencher différentes actions. C'est une continuation de remaPSV de Rinnegatamante, qui a été entièrement réécrit comme un plugin de noyau. (Pour faire apparaître le menu de configuration, appuyez sur START + CARRE, personnalisable sous Settings -> Hotkeys.)"
 FRENCH["INSTALLP_DESC_REVITA_GYRO"] =               "Ajout du support Gyro ?"
 FRENCH["INSTALLP_DESC_UDCDUVC"] =                   "Vous permet de diffuser votre écran Vita sur votre PC via USB (OFFICIEL)"
@@ -401,8 +401,8 @@ FRENCH["INSTALLP_DESC_DERIN"] =                     "Affichage de l'horloge OSD 
 FRENCH["INSTALLP_DESC_LOLITA"] =                    "Règle l'horloge de votre PSVita au maximum en permanence et désactive les limitations telles que la faible luminosité et l'absence de Wi-Fi pour les jeux intensifs."
 FRENCH["INSTALLP_DESC_LOLITA4"] =                   "Règle l'horloge de votre PSVita sur 444 mhz en permanence et désactive les limitations telles que la faible luminosité et l'absence de Wi-Fi pour les jeux intensifs."
 FRENCH["INSTALLP_DESC_PSVSHELL"] =                  "Encore un autre plugin d'overclock (SELECT + UP ou SELECT + DOWN pour basculer entre les 3 modes de l'interface graphique)"
-FRENCH["INSTALLP_DESC_PSVSHELLPLUS"] =              "Advanced Overclock&Info plugin for PS Vita. Provides fully GPU accelerated HUD, accurate memory and FPS tracking with full Quick Menu integration."
-FRENCH["INSTALLP_DESC_POCKETSTATION"] =             "Forces pocketstation support on all PS1 Classics"
+FRENCH["INSTALLP_DESC_PSVSHELLPLUS"] =              "Plugin avancé d'Overclock pour PS Vita. Fournit un HUD entièrement complète du GPU, une mémoire précise et un suivi FPS avec une intégration complète du menu rapide."
+FRENCH["INSTALLP_DESC_POCKETSTATION"] =             "Force la prise en charge de Pocketstation sur tous les jeux PS1 Classics"
 FRENCH["INSTALLP_DESC_SYSCALL6"] =                  "Un outil qui corrige le syscall 6 du secure_kernel lv0 de la Playstation Vita (vérifications SELF/RVK)"
 FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des canaux pour la Playstation Vita (nécessite MonauralConfig.vpk)"
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
@@ -455,11 +455,11 @@ FRENCH["INSTALLP_DESC_BOOTSOUND"] =               	"Ce plugin peut lire un fichi
 FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Quick Power, Quick Volume et Rapidmenu, tout en ajoutant de nouvelles fonctionnalités. Boutons de mise hors tension, de redémarrage et de veille, boutons d'alimentation configurables, barre de défilement du volume, temps d'ouverture plus rapide du menu rapide, styles d'arrière-plan personnalisés."
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
-FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "Un plugin qui ajoute des raccourcis via le menu rapide pour lancer rapidement des applications. Basé sur QuickMenuReborn."
 FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL
-FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
+FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "C'est la bonne façon de désactiver la fonction 3G de la PSVita. Cela a essentiellement pour effet de faire croire au système qu'il s'agit d'un modèl Wi-Fi."
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
 FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."
 FRENCH["INSTALLP_DESC_YAMT"] =                      "Encore un autre plugin Kernel de l'outil de (re)montage pour PSVita/PSTV (nécessite Enso, compatible UNIQUEMENT avec les firmware 3.60 et 3.65"
@@ -494,7 +494,7 @@ FRENCH["INSTALLP_DESC_RAPIDMENU"] =                 "Réduis le temps d'ouvertur
 FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantané dans n'importe quel jeu!"
 FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
 FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 de toute application qui lance une vérification de l'application s'il est installé dans la console."
-FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
+FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard est un plugin et une application pour PS Vita qui vous permet de l'utiliser comme clavier USB. L'hôte pensera que votre vita est un vrai clavier."
 
 --*NPXS10013
 FRENCH["INSTALLP_DESC_PS4LINK"] =                   "plugin taiHEN qui permet de forcer la configuration préférée des boutons de lecture à distance"
