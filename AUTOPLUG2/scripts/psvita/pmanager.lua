@@ -42,6 +42,7 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "StorageMgr CelesteBlue", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SD2VITA"] })
 	table.insert(tb_cop, { name = "Sysident by cuevavirus", path = "sysident.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"] })
 	table.insert(tb_cop, { name = "Ds4touch by MERLev", path = "ds4touch.skprx", section = "KERNEL", path2 = "ds4touch.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"] })
+	table.insert(tb_cop, { name = "Daemon for Vitadb-Downloader", path = "vdb_daemon.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_DAEMON"] })
 
 
 	for k,v in pairs(tai.gameid) do
@@ -73,6 +74,7 @@ function pluginsmanager()
 				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
 					plugs[sections[y]][x].bridge = tb_cop[k]
 					plugs[sections[y]][x].desc = tb_cop[k].desc
+					plugs[sections[y]][x].crc = tb_cop[k].crc
 					--os.message("Bridge: "..plugs[sections[y]][x].bridge.name)
 					break;
 				end
@@ -88,10 +90,14 @@ function pluginsmanager()
 
 	while true do
 		buttons.read()
-		
-		if back then back:blit(0,0) end
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
+
+		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
+
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
 		draw.fillrect(870,0,90,40, color.green:a(90))

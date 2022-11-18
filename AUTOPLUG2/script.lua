@@ -8,11 +8,15 @@
 	Designed By Gdljjrod & DevDavisNunez.
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
+snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1) or sound.load("ux0:data/AUTOPLUGIN2/bg/bg.ogg")
+if snd then
+	sound.loop(snd)
+	snd:play(1)
+end
 
 --Activamos Paleta de Colores Precargados
 color.loadpalette()
 
-snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1)
 splash.zoom("imgs/splash.png")
 
 --Imagen de Fondo
@@ -44,6 +48,7 @@ __LANG = ini.read(__PATH_INI,"LANGUAGE","lang","")
 if __LANG == "" then __LANG = os.language() end
 dofile("scripts/language.lua")
 
+dofile("addons/stars.lua")
 dofile("scripts/commons.lua")
 dofile("scripts/scroll.lua")
 
@@ -81,11 +86,6 @@ if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 			type_fnt = font.type(fnt)
 		end
 	end
-end
-
-if snd then
-	sound.loop(snd)
-	snd:play(1)
 end
 
 if os.access() == 0 then

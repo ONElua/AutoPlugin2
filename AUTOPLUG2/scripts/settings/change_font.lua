@@ -38,13 +38,14 @@ function change_font()
 
 	while true do
 		buttons.read()
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		if back then back:blit(0,0) end
-
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_FONT"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then

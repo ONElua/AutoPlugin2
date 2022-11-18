@@ -97,12 +97,14 @@ function customimgsplash()
 	local install = false
 	while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back then back:blit(0,0) end
+		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["CUSTOMBOOTSPLASH_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
@@ -171,6 +173,7 @@ function customimgsplash()
 					files.copy("resources/plugins/custom_boot_splash.skprx",path_tai)
 					if img2splashbin(custom_boot[scroll.sel].img,true) == 1 then
 						if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
+							change = true
 							exit_bye_bye()
 						else
 							custom_boot[scroll.sel].img = image.load(custom_boot[scroll.sel].path)
@@ -198,6 +201,7 @@ function customimgsplash()
 						tmpimg:reset()
 						if img2splashbin(tmpimg,true) == 1 then
 							if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
+								change = true
 								exit_bye_bye()
 							end
 						else

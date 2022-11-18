@@ -27,14 +27,14 @@ function vol_mp3()
 		if vol > 100 then vol = 100 end
 		snd:vol(vol)
 
-		if buttons.analogrx < -60 then snd:stop() elseif buttons.analogrx > 60 then snd:play() end
+		if buttons.analogrx < -60 or buttons.analogrx > 60 then snd:pause() end
 	end
 
 end
 
 function exit_bye_bye()
 --[[
-	tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
+--	tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
 	--os.message("bye")
 	error("usb error")
 	os.exit()
@@ -48,13 +48,8 @@ function exit_bye_bye()
 	end
 
 	if change then
-
 		os.delay(250)
-
-		--error("USB")--Debugger			----------------------------------------------
-
 		os.dialog(LANGUAGE["STRING_PSVITA_RESTART"].."\n\n\n"..LANGUAGE["PLUGINS_BOOT_WARNING"])
-
 		buttons.homepopup(1)
 		power.restart()
 	end
@@ -67,6 +62,8 @@ end
 __file = ""
 function onNetGetFile(size,written,speed)
 	if back then back:blit(0,0) end
+	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
@@ -83,11 +80,16 @@ function onNetGetFile(size,written,speed)
 	return 1
 end
 
+__icon = nil
 function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 
 	if back then back:blit(0,0) end
+	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
+
+	if __icon then __icon:blit(480,276) end
 
     if step == 1 then -- Only msg of state
 		screen.print(10,12,LANGUAGE["UPDATER_SEARCH_UNSAFE_VPK"].."   "..tostring(__file))
@@ -113,6 +115,8 @@ end
 function onExtractFiles(size,written,file,totalsize,totalwritten)
 
 	if back then back:blit(0,0) end
+	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 

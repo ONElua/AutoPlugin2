@@ -51,10 +51,15 @@ function plugins_installation(obj)
 			tai.del("main", "quick_volume.suprx")
 			tai.del("KERNEL", "rapidmenu.skprx")
 
+		-- psp2wpp (wave)
+		elseif obj.path == "psp2wpp.suprx" then
+			if not files.exists("ux0:data/waveparam.bin") then
+				files.copy("resources/plugins/waveparam.bin",obj.configpath)
+			end
+
 		-- QuickMenuReborn
 		elseif obj.path == "QuickMenuReborn.suprx" then
 			files.delete("ux0:QuickMenuReborn/")
-
 		--Checking plugin Batt (only 1 of them)
 		elseif obj.path == "shellbat.suprx" then
 			tai.del("main", "shellsecbat.suprx")
@@ -102,6 +107,7 @@ function plugins_installation(obj)
 			__file = files.nopath(obj.vpk)
 			os.message(__file.." "..LANGUAGE["INSTALLP_QUESTION_VPK"],0)
 			local path2vpk = "ux0:data/AUTOPLUGIN2/vpks/"..__file
+			--os.message(obj.vpk)--autoplugin2/raw/master/vpks/...vpk
 			local res = http.download(obj.vpk, path2vpk)
 			if res.headers and res.headers.status_code == 200 and files.exists(path2vpk) then
 				game.install("ux0:data/AUTOPLUGIN2/vpks/"..__file,false)
@@ -127,7 +133,7 @@ function plugins_installation(obj)
 			if back2 then back2:blit(0,0) end
 				message_wait()
 			os.delay(250)
-			
+
 			local onNetGetFileOld = onNetGetFile
 			onNetGetFile = nil
 			http.download("https://github.com/devnoname120/vitabright-lut-editor","tmp")
@@ -315,7 +321,7 @@ function plugins_installation(obj)
 
 		if back2 then back2:blit(0,0) end
 			message_wait(plugin_name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
-		os.delay(1500)
+		os.delay(2000)
 
 	end
 
@@ -343,7 +349,10 @@ function autoplugin()
 	while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
+
 		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)
 
@@ -357,20 +366,28 @@ function autoplugin()
 
 			if i == scr.sel then draw.offsetgradrect(3,y-9,944,33,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
+			tb_cop[i].len = screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)
+
 			idx = tai.find(tb_cop[i].section,tb_cop[i].path)
 			if idx != nil then
+
+				tb_cop[i].path_prx = tai.gameid[ tb_cop[i].section ].prx[idx].path
+
 				if files.exists(tai.gameid[ tb_cop[i].section ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
 				else
 					if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
 				end
+			else
+				
+				if tb_cop[i].v then
+					screen.print(50 + tb_cop[i].len,y, tb_cop[i].v, 1.2,color.white,color.blue:a(175),__ALEFT)
+				end
+
 			end
 
 			if tb_cop[i].path2 == "kuio.skprx" or tb_cop[i].path2 == "ioplus.skprx" then
-				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)--125
 				screen.print(895,y, " ("..tb_cop[i].path2.." )", 1.0,color.yellow,color.blue,__ARIGHT)
-			else
-				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)
 			end
 
 			y+=36
@@ -406,9 +423,6 @@ function autoplugin()
 			screen.print(950, 502, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
 		end
 
-		if buttonskey then buttonskey:blitsprite(10,448,__TRIANGLE) end
-		screen.print(45,450,LANGUAGE["PLUGINS_README_ONLINE"],1,color.white,color.black, __ALEFT)
-
 		if buttonskey then buttonskey:blitsprite(10,472,scancel) end
 		screen.print(45,475,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
 
@@ -432,8 +446,6 @@ function autoplugin()
 		vol_mp3()
 
 		if scr.maxim > 0 then
-			if buttons.l then
-			end
 
 			if buttons.left or buttons.right then xscr1 = 10 end
 
@@ -446,126 +458,12 @@ function autoplugin()
 
 			--Install selected plugins
 			if buttons.accept then
-				buttons.homepopup(0)
 
 				if back2 then back2:blit(0,0) end
 					message_wait()
-				os.delay(1000)
+				os.delay(300)
 
-				local vbuff = screen.buffertoimage()
-
-				local onNetGetFileOld = onNetGetFile
-				onNetGetFile = nil
-
-				local SCREENSHOT,img = nil,nil
-				if tb_cop[scr.sel].id then
-					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
-					img = image.load(screenshots..tb_cop[scr.sel].id)
-					if not img then
-						local res = http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id)
-						if res.headers and res.headers.status_code == 200 and files.exists(screenshots..tb_cop[scr.sel].id) then
-							img = image.load(screenshots..tb_cop[scr.sel].id)
-						else files.delete(screenshots..tb_cop[scr.sel].id)
-						end
-					end
-					if img then img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR) end
-				end
-
-				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
-					tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
-					if not tb_cop[scr.sel].readme then
-						local res = http.download(tb_cop[scr.sel].link,"ux0:data/AUTOPLUGIN2/tmp.txt")
-						if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/tmp.txt") then
-							tb_cop[scr.sel].readme = files.read("ux0:data/AUTOPLUGIN2/tmp.txt")
-						end
-						files.delete("ux0:data/AUTOPLUGIN2/tmp.txt")
-					end
-					if not tb_cop[scr.sel].readme then tb_cop[scr.sel].status = false else tb_cop[scr.sel].status = true end
-				end
-
-				os.dialog(tb_cop[scr.sel].readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
-
-				if img then
-					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
-					img:scale(85)
-					img:center()
-					img:blit(480,272)
-					screen.flip()
-					buttons.waitforkey()
-					os.delay(150)
-				end
-
-				img,vbuff = nil,nil
-				onNetGetFile = onNetGetFileOld
-				os.delay(75)
-
-				if tb_cop[scr.sel].path:lower() == "vitacheat.skprx" then--360
-					if not files.exists("ux0:data/AUTOPLUGIN2/font365.zip") then
-						__file = "Vitacheat (Font)"
-						local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/resources/plugins/font365.zip", APP_REPO, APP_PROJECT, APP_FOLDER), "ux0:data/AUTOPLUGIN2/font365.zip")
-						if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/font365.zip") then
-							plugins_installation(tb_cop[scr.sel])
-						else
-							files.delete("ux0:data/AUTOPLUGIN2/font365.zip")
-							os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
-						end
-					else
-						plugins_installation(tb_cop[scr.sel])
-					end
-				else plugins_installation(tb_cop[scr.sel]) end
-
-				buttons.homepopup(1)
-			end
-
-			--Readme online
-			if buttons.triangle then
-
-				local vbuff = screen.buffertoimage()
-
-				local onNetGetFileOld = onNetGetFile
-				onNetGetFile = nil
-
-				local SCREENSHOT,img = nil,nil
-				if tb_cop[scr.sel].id then
-					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
-					img = image.load(screenshots..tb_cop[scr.sel].id)
-					if not img then
-						local res = http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id)
-						if res.headers and res.headers.status_code == 200 and files.exists(screenshots..tb_cop[scr.sel].id) then
-							img = image.load(screenshots..tb_cop[scr.sel].id)
-						else files.delete(screenshots..tb_cop[scr.sel].id)
-						end
-					end
-					if img then img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR) end
-				end
-
-				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
-					tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
-					if not tb_cop[scr.sel].readme then
-						local res = http.download(tb_cop[scr.sel].link,"ux0:data/AUTOPLUGIN2/tmp.txt")
-						if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/tmp.txt") then
-							tb_cop[scr.sel].readme = files.read("ux0:data/AUTOPLUGIN2/tmp.txt")
-						end
-						files.delete("ux0:data/AUTOPLUGIN2/tmp.txt")
-					end
-					if not tb_cop[scr.sel].readme then tb_cop[scr.sel].status = false else tb_cop[scr.sel].status = true end
-				end
-
-				os.dialog(tb_cop[scr.sel].readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
-
-				if img then
-					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
-					img:scale(85)
-					img:center()
-					img:blit(480,272)
-					screen.flip()
-					buttons.waitforkey()
-					os.delay(150)
-				end
-
-				img,vbuff = nil,nil
-				onNetGetFile = onNetGetFileOld
-				os.delay(75)
+				plugin_info(tb_cop[scr.sel])
 
 			end
 

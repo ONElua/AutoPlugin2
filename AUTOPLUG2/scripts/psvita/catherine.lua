@@ -8,6 +8,8 @@ if game.exists("PCSG01179") then Catherine = true end
 
 function Catherine_HD()
 
+	if not P4Golden then os.message(LANGUAGE["NO_CHATERINE_GAMES"]) end
+
 	local CATHERINE_ID = "CATHERINEHD.png"
 
 	local patches = {
@@ -27,10 +29,12 @@ function Catherine_HD()
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back then back:blit(0,0) end
+		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
 		screen.print(480,20,LANGUAGE["INSTALL_CATHERINE_HD_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))

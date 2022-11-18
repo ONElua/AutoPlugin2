@@ -6,6 +6,9 @@ end
 
 UPDATE_PORT = channel.new("UPDATE_PORT")
 
+yes_update = atomic.new(0)
+UPDATE_PORT:push(yes_update)
+
 local scr_flip = screen.flip
 function screen.flip()
 	scr_flip()
@@ -61,19 +64,16 @@ function screen.flip()
 			end
 
 			local res = http.download(url, path2vpk)
-			if res.headers and res.headers.status_code == 200 then
-				os.delay(500)
-				if files.exists(path2vpk) then
-					files.mkdir("ux0:/data/1luapkg")
-					files.copy("eboot.bin","ux0:/data/1luapkg")
-					files.copy("git/updater/script.lua","ux0:/data/1luapkg/")
-					files.copy("git/updater/update.png","ux0:/data/1luapkg/")
-					files.copy("git/updater/language.lua","ux0:/data/1luapkg/")
-					files.copy("git/updater/param.sfo","ux0:/data/1luapkg/sce_sys/")
-					game.installdir("ux0:/data/1luapkg")
-					files.delete("ux0:/data/1luapkg")
-					game.launch(string.format("ONEUPDATE&%s&%s&%s&%s", os.titleid(), path2vpk, files.cdir().."/lang/", __LANG)) -- Goto installer extern!
-				end
+			if res.headers and res.headers.status_code == 200 and files.exists(path2vpk) then
+				files.mkdir("ux0:/data/1luapkg")
+				files.copy("eboot.bin","ux0:/data/1luapkg")
+				files.copy("git/updater/script.lua","ux0:/data/1luapkg/")
+				files.copy("git/updater/update.png","ux0:/data/1luapkg/")
+				files.copy("git/updater/language.lua","ux0:/data/1luapkg/")
+				files.copy("git/updater/param.sfo","ux0:/data/1luapkg/sce_sys/")
+				game.installdir("ux0:/data/1luapkg")
+				files.delete("ux0:/data/1luapkg")
+				game.launch(string.format("ONEUPDATE&%s&%s&%s&%s", os.titleid(), path2vpk, files.cdir().."/lang/", __LANG)) -- Goto installer extern!
 			else
 				os.message(LANGUAGE["UPDATER_ERROR"])
 			end

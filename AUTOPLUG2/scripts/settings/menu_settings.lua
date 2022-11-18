@@ -69,26 +69,31 @@ function menu_settings()
 		--Reload Menu for LANGUAGE
 		menu = {
 			{ text = LANGUAGE["MENU_SETTINGS_LANG_ONLINE"],			desc = LANGUAGE["MENU_SETTINGS_LANG_ONLINE_DESC"],			funct = lang_online_callback },
-			{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE"],		desc = LANGUAGE["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"],		funct = change_lang_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_CHANGE_FONT"],			desc = LANGUAGE["MENU_SETTINGS_CHANGE_FONT_DESC"],			funct = change_font_callback },
 			{ text = LANGUAGE["MENU_SETTINGS_AUTO_FIX"].._autotai,	desc = LANGUAGE["MENU_SETTINGS_AUTO_FIX_DESC"],				funct = auto_tai_callback },
+			{ text = LANGUAGE["MENU_SETTINGS_ENABLE_AUTOUPDATE"].._update,	desc = LANGUAGE["MENU_SETTINGS_AUTOUPDATE_DESC"],	funct = autoupdate_callback },
 		}
 
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_SETTINGS"],1.2,color.white,0x0,__ACENTER)
 
 		local y = 145
 		for i=scroll.ini, scroll.lim do
-			if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
-			screen.print(480,y,menu[i].text,1.2,color.white,0x0,__ACENTER)
-			y += 45
+			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21)
+				tam = 1.4
+			else tam = 1.2 end
+
+			screen.print(480,y,menu[i].text,tam,color.white,0x0,__ACENTER)
+			y += 50
 		end
 
 		if screen.textwidth(menu[scroll.sel].desc) > 925 then

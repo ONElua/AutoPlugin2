@@ -51,6 +51,6 @@ if wlan.isconnected() then
 		end
 	end
 end
-
+files.delete("ux0:data/AUTOPLUGIN2/plugins/plugins.lua")
 cont_global:set(cont_plugins)
 cont_global:lost()

@@ -12,16 +12,15 @@ P4 = {
 
 gamesP4 = {}
 for i=1,#P4 do
-	--if game.exists(P4[i].id) then
-	--	P4Golden = true
+	if game.exists(P4[i].id) then
+		P4Golden = true
 		table.insert(gamesP4,P4[i])
-	--end
+	end
 end
-
 
 function P4Golden_HD()
 
-	--if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) end
+	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) end
 
 	local P4GOLDEN_ID = "PERSONA4GOLDENHD.png"
 
@@ -43,10 +42,12 @@ function P4Golden_HD()
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back then back:blit(0,0) end
+		if back2 then back2:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
 		screen.print(480,20,LANGUAGE["INSTALL_P4G_HD_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))

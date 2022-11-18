@@ -11,6 +11,18 @@
 
 files.mkdir("ux0:data/AUTOPLUGIN2/vpks/")
 
+function get_icon0(obj)
+
+	local vpk = files.scan(obj,1)
+	if vpk and #vpk > 0 then
+		for i=1,#vpk do
+			local name = vpk[i].name:lower()
+			if name == "sce_sys/icon0.png" then return game.geticon0(obj, vpk[i].pos) end
+		end
+    end
+	return nil
+end
+
 function download_install(url,name)
 
 	files.delete("tmp")
@@ -35,7 +47,10 @@ function download_install(url,name)
 							--os.message(__file)
 							local res = http.download(url.."/releases/download/"..files.nopath(links[i].href).."/"..name,"ux0:data/AUTOPLUGIN2/vpks/"..name)
 							if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/vpks/"..name) then
+								__icon = get_icon0("ux0:data/AUTOPLUGIN2/vpks/"..name)
+								if __icon then __icon:center() end						
 								game.install("ux0:data/AUTOPLUGIN2/vpks/"..name,false)
+								__icon = nil
 								break
 							end
 						end
@@ -76,6 +91,10 @@ function downloads()
 		download_install("https://github.com/OsirizX/ShaRKF00D", "ShaRKF00D.vpk")
 	end
 
+	local SHARKB33D_callback = function ()
+		download_install("https://github.com/Rinnegatamante/ShaRKBR33D", "ShaRKBR33D.vpk")
+	end
+
 	local batteryfixer_callback = function ()
 		download_install("https://github.com/SKGleba/PSP2-batteryFixer", "batteryFixer.vpk")
 	end
@@ -84,13 +103,19 @@ function downloads()
 		download_install("https://github.com/SKGleba/yamt-vita", "yamt.vpk")
 	end
 
+	local onemenu_callback = function ()
+		download_install("https://github.com/ONElua/ONEMenu-for-PSVita", "ONEMenuVita.vpk")
+	end
+
 	local menu = {
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2"],desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"],		funct = vitashell_yoti_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"],		funct = ShaRKF00D_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	    desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2"], desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"],	funct = vitashell_yoti_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ONEMENU"],    desc = LANGUAGE["MENU_EXTRAS_INSTALL_ONEMENU_DESC"],		funct = onemenu_callback },
+--		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"],		funct = ShaRKF00D_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKB33D"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_SHARKB33D_DESC"],		funct = SHARKB33D_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	     desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)
@@ -98,19 +123,24 @@ function downloads()
 	local xscroll = 10
     while true do
 		buttons.read()
-		if change then buttons.homepopup(0) else buttons.homepopup(1) end
+		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
+		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_DOWNLOADS"],1.2,color.white,0x0,__ACENTER)
 
-        local y = 145
+        local y = 115
         for i=scroll.ini, scroll.lim do
-            if i == scroll.sel then draw.offsetgradrect(5,y-12,950,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
-            screen.print(480,y,menu[i].text,1.2,color.white, 0x0, __ACENTER)
-			y += 40
+			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21)
+				tam = 1.4
+			else tam = 1.2 end
+
+			screen.print(480,y,menu[i].text,tam,color.white,0x0,__ACENTER)
+			y += 45
         end
 
 		if screen.textwidth(menu[scroll.sel].desc) > 925 then
