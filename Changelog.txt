@@ -1,3 +1,9 @@
+#v2.00
+++ Now the installed plugins will display their installed version, for older plugin versions will be displayed as unknown.
+++ Automatic plugins updates will happen only if the newest Autoplugin2 version is installed.
+++ Sharkf00 replaced by ShaRKBR33D.
+++ Added ONEMenu for psvita in the download section.
+
 #v1.29
 ++ Fixed error when updating languages.
 ++ Added korean language support.

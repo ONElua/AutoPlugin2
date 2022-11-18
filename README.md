@@ -71,6 +71,12 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 2.00 ###
+- Now the installed plugins will display their installed version, for older plugin versions will be displayed as unknown.
+- Automatic plugins updates will happen only if the newest Autoplugin2 version is installed.
+- Sharkf00 replaced by ShaRKBR33D.
+- Added ONEMenu for psvita in the download section.
+
 ### Changelog 1.29 ###
 - Fixed error when updating languages.
 - Added korean language support.
