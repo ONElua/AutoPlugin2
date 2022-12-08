@@ -8,15 +8,11 @@
 	Designed By Gdljjrod & DevDavisNunez.
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
-snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1) or sound.load("ux0:data/AUTOPLUGIN2/bg/bg.ogg")
-if snd then
-	sound.loop(snd)
-	snd:play(1)
-end
 
 --Activamos Paleta de Colores Precargados
 color.loadpalette()
 
+snd = sound.load("ux0:data/AUTOPLUGIN2/bg/bg.mp3",1) or sound.load("ux0:data/AUTOPLUGIN2/bg/bg.ogg")
 splash.zoom("imgs/splash.png")
 
 --Imagen de Fondo
@@ -47,6 +43,11 @@ doty = image.load("imgs/dot_yellow.png")
 __LANG = ini.read(__PATH_INI,"LANGUAGE","lang","")
 if __LANG == "" then __LANG = os.language() end
 dofile("scripts/language.lua")
+
+if snd then
+	sound.loop(snd)
+	snd:play(1)
+end
 
 dofile("addons/stars.lua")
 dofile("scripts/commons.lua")

@@ -9,6 +9,11 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
+day = tonumber(os.date("%d"))
+month = tonumber(os.date("%m"))
+snow = false
+if (month == 12 and (day >= 20 and day <= 25)) then snow = true end
+
 screenshots = "ux0:data/AUTOPLUGIN2/screenshots/"
 files.mkdir(screenshots)
 
@@ -351,7 +356,7 @@ function autoplugin()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back2 then back2:blit(0,0) end
-		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		if snow then stars.render() end
 		wave:blit(0.7,50)
 
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)

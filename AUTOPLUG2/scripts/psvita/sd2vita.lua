@@ -23,7 +23,7 @@ function install()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
-		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		if snow then stars.render() end
 		wave:blit(0.7,50)
 
 		screen.print(480, 18, LANGUAGE["MENU_TITLE_SD2VITA"], 1.2, color.white, 0x0, __ACENTER)
@@ -154,7 +154,7 @@ function configure()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
-		if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+		if snow then stars.render() end
 		wave:blit(0.7,50)
 
 		draw.fillrect(0,0,960,55,color.black:a(100))

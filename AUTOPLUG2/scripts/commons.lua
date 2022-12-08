@@ -27,7 +27,7 @@ function vol_mp3()
 		if vol > 100 then vol = 100 end
 		snd:vol(vol)
 
-		if buttons.analogrx < -60 or buttons.analogrx > 60 then snd:pause() end
+		--if buttons.analogrx < -60 or buttons.analogrx > 60 then snd:pause() end
 	end
 
 end
@@ -62,7 +62,7 @@ end
 __file = ""
 function onNetGetFile(size,written,speed)
 	if back then back:blit(0,0) end
-	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	if snow then stars.render() end
 	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
@@ -84,7 +84,7 @@ __icon = nil
 function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 
 	if back then back:blit(0,0) end
-	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	if snow then stars.render() end
 	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
@@ -115,7 +115,7 @@ end
 function onExtractFiles(size,written,file,totalsize,totalwritten)
 
 	if back then back:blit(0,0) end
-	if math.minmax(tonumber(os.date("%d%m")),2012,2512) == tonumber(os.date("%d%m")) then stars.render() end
+	if snow then stars.render() end
 	wave:blit(0.7,50)
 	draw.fillrect(0,0,960,40,color.black:a(100))
 	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
