@@ -1,3 +1,6 @@
+#v2.01
+++ Goodbye snow (only at late december)
+
 #v2.00
 ++ Now the installed plugins will display their installed version, for older plugin versions will be displayed as unknown.
 ++ Automatic plugins updates will happen only if the newest Autoplugin2 version is installed.
