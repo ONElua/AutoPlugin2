@@ -145,7 +145,7 @@ Online_Plugins = {
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
   crc = 0xe869fae2, v = "v1.2", crc2 = 0xa398acb7, version = "0001", link = "https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md", },
 { name = "MiniVitaTV by TheOfficialFloW", id = "MINIVITATV.png", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV",
-  crc = 0xba303e37, v = "beta 0.4", crc2 = 0x981077fd, version = "0001", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
+  crc = 0xa7cca609, v = "beta 0.5", crc2 = 0x981077fd, version = "0002", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
 { name = "reVita by MERLev", id = "REVITA.png", path = "reVita.skprx", section = "KERNEL", path2 = "ioplus.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REVITA"], KEY = "INSTALLP_DESC_REVITA",
   crc = 0xc359f44b, v = "v1.0.8", crc2 = 0xe73bfd7b, version = "0003", dl = "reVitaMotion.suprx", link = "https://raw.githubusercontent.com/MERLev/reVita/master/README.md", },
 
