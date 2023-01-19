@@ -200,7 +200,7 @@ plugins = {
 { name = "Fruitpeel by cuevavirus", id = "FRUITPEEL.png", path = "fruitpeel.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_FRUITPEEL"], KEY = "INSTALLP_DESC_FRUITPEEL",
   crc = 0xfd02ee75, v = "v1.0", version = "0001", },
 { name = "USBDisable by Ibrahim778", id = "USBDISABLE.png", path = "USBDisable.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_USBDISABLE"], KEY = "INSTALLP_DESC_USBDISABLE",
-  crc = 0x03afb806, v = "v3.02", version = "0002", link = "https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md", },
+  crc = 0x03afb806, v = "v3.02", version = "0003", link = "https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md", },
 { name = "ftpeverywhere by teakhanirons", id = "FTPEVERYWHERE.png", path = "ftpeverywhere.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE",
   crc = 0x2b650ebd, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", },
 
