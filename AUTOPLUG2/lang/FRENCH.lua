@@ -365,6 +365,7 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
+FRENCH["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 FRENCH["INSTALLP_DESC_VSHPATCH"] =                  "Comme repatch, mais pour les applications système. il s'agit d'un VS0 émulé, mettez simplement vos modifications que vous souhaitez apporter dans ux0:/vshPatch/ et ensuite les modifications seront répercutées dans la partition vs0:, via la puissance de fios2"
 FRENCH["INSTALLP_DESC_8BIVITA"] =                   "Fondamentalement, juste X1Vita mais avec 8bitdo vid, pid et mappages. (Contrôleurs 8bitdo compatibles : Lite, Pro, Pro+, Pro 2 et Zero 2)"
 FRENCH["INSTALLP_DESC_REAUTH"] =                    "reAuth vous permet d'utiliser le PlayStation Store et de vous connecter au PlayStation Network sur 3.60-3.65 (Enso est requis - le Spoof PSN est activée dans les paramètres Henkaku et définie sur 3.73)"

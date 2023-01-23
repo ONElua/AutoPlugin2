@@ -365,6 +365,7 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 RUSSIAN["INSTALLP_DESC_VSHPATCH"] =                  "Функции плагина аналогичны rePatch, но только для системных приложений. Создаётся ''виртуальный раздел'' vs0 в папке ux0:/vshPatch/, куда можно помещать свои изменённые файлы вместо настоящего раздела vs0"
 RUSSIAN["INSTALLP_DESC_8BIVITA"] =                   "Аналог X1Vita, только с 8BitDo VID/PID и раскладкой кнопок (совместимые модели: Lite, Pro, Pro+, Pro 2 и Zero 2)"
 RUSSIAN["INSTALLP_DESC_REAUTH"] =                    "reAuth позволяет получить доступ в PS Store, а также выполнить вход в PS Network на прошивках 3.60 и 3.65 (необходимо: enso, включить подмену версии и указать версию 3.73)"

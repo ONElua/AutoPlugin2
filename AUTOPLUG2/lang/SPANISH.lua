@@ -365,6 +365,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
+SPANISH["INSTALLP_DESC_VIXEN"] =                        "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 SPANISH["INSTALLP_DESC_VSHPATCH"] =                     "Plugin similar a rePatch, pero para aplicaciones del Sistema. Es una partición VS0 emulada, simplemente pon los cambios que quieres realizar dentro de la carpeta ux0:/vshPatch/ y los cambios se verán reflejados en la partición vs0: , a traves del poder de fios2"
 SPANISH["INSTALLP_DESC_8BIVITA"] =                      "Básiscamente es el Plugin X1Vita, pero con el mapping (mapeado de botones), vid(Id de Vendedor) y pid(Id de Producto) de 8bitdo. (Controles de 8bitdo compatibles: Lite, Pro, Pro+, Pro 2, y Zero 2)"
 SPANISH["INSTALLP_DESC_REAUTH"] =                       "reAuth te permite usar la PlayStation Store e ingresar (hacer Login) en PlayStation Network en FW 3.60-3.65 (Se requiere de Enso, Habilitar el spoofing de PSN en los ajustes de Henkaku, y que la versión de spoof sea 3.73)"

@@ -365,6 +365,7 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
+KOREAN["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 KOREAN["INSTALLP_DESC_VSHPATCH"] =                  "rePatch와 비슷하지만 시스템 응용 프로그램용입니다. 이것은 에뮬레이트된 VS0입니다. 변경하려는 변경 사항을 ux0:/vshPatch/에 넣으면 변경 사항이 fios2의 힘을 통해 vs0: 파티션에 반영"
 KOREAN["INSTALLP_DESC_8BIVITA"] =                   "기본적으로 X1Vita지만 8bitdo vid, pid 및 매핑이 있습니다. (호환되는 8bitdo 컨트롤러: 라이트, 프로, 프로+, 프로 2, 제로 2)"
 KOREAN["INSTALLP_DESC_REAUTH"] =                    "reAuth를 사용하면 3.60-3.65에서 플레이스테이션 스토어를 사용하고 플레이스테이션 네트워크에 로그인할 수 있습니다 (Enso가 필요합니다. Henkaku 설정에서 PSN 스푸핑이 켜져 있고 버전 스푸핑이 3.73으로 설정되어 있음)"

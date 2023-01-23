@@ -365,6 +365,7 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 CHINESE_S["INSTALLP_DESC_VSHPATCH"] =                  "类似于 repatch, 但适用于系统程序. 这是一个模拟 VS0 分区的插件, 借助于 fios2 的能力, 仅需要将你想做的变动放入 ux0:/vshPatch/ 目录, 之后变更将作用于 vs0: 分区"
 CHINESE_S["INSTALLP_DESC_8BIVITA"] =                   "基本上只是 X1Vita 但支持八位堂(8bitdo) 的 vid, pid 以及按键映射. (兼容的 8bitdo 控制器包括: Lite, Pro, Pro+, Pro 2, & Zero 2)"
 CHINESE_S["INSTALLP_DESC_REAUTH"] =                    "reAuth 允许你在 3.60-3.65 系统环境使用 PlayStation Store 以及登录 PlayStation 网络 (需要 Enso 固化, 在 Henkaku 设置界面开启PSN伪装, 伪装版本设置为最新的 3.73)"
