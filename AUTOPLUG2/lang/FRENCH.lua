@@ -365,7 +365,7 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
-FRENCH["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
+FRENCH["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. Pilote kernel de la PSVita pour les manettes de la xbox 360"
 FRENCH["INSTALLP_DESC_VSHPATCH"] =                  "Comme repatch, mais pour les applications système. il s'agit d'un VS0 émulé, mettez simplement vos modifications que vous souhaitez apporter dans ux0:/vshPatch/ et ensuite les modifications seront répercutées dans la partition vs0:, via la puissance de fios2"
 FRENCH["INSTALLP_DESC_8BIVITA"] =                   "Fondamentalement, juste X1Vita mais avec 8bitdo vid, pid et mappages. (Contrôleurs 8bitdo compatibles : Lite, Pro, Pro+, Pro 2 et Zero 2)"
 FRENCH["INSTALLP_DESC_REAUTH"] =                    "reAuth vous permet d'utiliser le PlayStation Store et de vous connecter au PlayStation Network sur 3.60-3.65 (Enso est requis - le Spoof PSN est activée dans les paramètres Henkaku et définie sur 3.73)"
@@ -475,7 +475,7 @@ FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Qui
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "Un plugin qui ajoute des raccourcis via le menu rapide pour lancer rapidement des applications. Basé sur QuickMenuReborn."
-FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
+FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague du XMB de la PSVita."
 
 --ALL
 FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "C'est la bonne façon de désactiver la fonction 3G de la PSVita. Cela a essentiellement pour effet de faire croire au système qu'il s'agit d'un modèl Wi-Fi."
