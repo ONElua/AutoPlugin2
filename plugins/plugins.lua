@@ -110,7 +110,7 @@ Online_Plugins = {
 { name = "Magic Automatic Fake User Input by Rufis01", id = "MAFUINPUT.png", path = "MAFUinput.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT",
   crc = 0x6322adb1, v = "v2.0-Alpha.1", version = "0003", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "ViXEn by isage", id = "VIXEN.png", path = "vixen.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIXEN"], KEY = "INSTALLP_DESC_VIXEN",
-  crc = 0x23887f19, v = "v1.2", version = "0002", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
+  crc = 0x6b13d8a0, v = "v1.3", version = "0003", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH",
