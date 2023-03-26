@@ -36,7 +36,7 @@ function change_lang()
 
 	local current_lang = nil
 	local tb = {}
-			if #langs > 1 then table.sort(langs ,function (a,b) return string.lower(a.file)<string.lower(b.file) end) end
+	if #langs > 1 then table.sort(langs ,function (a,b) return string.lower(a.file)<string.lower(b.file) end) end
 	for i=1,#langs do
 		if __LANG == langs[i].file and files.exists("lang/"..langs[i].file..".lua") and not current_lang then current_lang = langs[i].name end
 		if files.exists("lang/"..langs[i].file..".lua") then

@@ -17,13 +17,14 @@ function sub_read(txt, mountP, tb, tb2)
 
 		pathp,status = line:match("(.+) (.+)")
 		if pathp then
-					
 			for j=1,#tb do
-				if pathp:lower() == "ms0:/"..tb[j].path:lower()..tb[j].name:lower() then
+				if not tb[j].hide then
+					if pathp:lower() == "ms0:/"..tb[j].path:lower()..tb[j].name:lower() then
 
-					if files.exists(mountP.."pspemu/"..tb[j].path:lower()..tb[j].name:lower()) then
-						tb2[mountP..tb[j].name:lower()] = tonumber(status) or nil
-						break
+						if files.exists(mountP.."pspemu/"..tb[j].path:lower()..tb[j].name:lower()) then
+							tb2[mountP..tb[j].name:lower()] = tonumber(status) or nil
+							break
+						end
 					end
 				end
 			end
@@ -95,16 +96,25 @@ end
 
 function pluginsPSP()
 
+	local tb_cop = {}
+	update_translations(pluginsP, tb_cop)
+
+	for k = #tb_cop,1,-1 do
+		if tb_cop[k].REMOVE then
+			table.remove(tb_cop,k)
+		end
+	end
+
 	local plugins_status={}
-	read_configs(pluginsP,plugins_status)
+	read_configs(tb_cop,plugins_status)
 
 	local selector,limit = 1,8
-	if #pluginsP < limit then limit = #pluginsP end
-	local scroll = newScroll(pluginsP, limit)
+	if #tb_cop < limit then limit = #tb_cop end
+	local scroll = newScroll(tb_cop, limit)
 	local xscroll = 10
 
 	for i=1,scroll.maxim do
-		pluginsP[i].inst = false
+		tb_cop[i].inst = false
 	end
 
 	while true do
@@ -138,17 +148,17 @@ function pluginsPSP()
 
 			if i == scroll.sel then draw.offsetgradrect(15,y-10,945,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			if pluginsP[i].inst then ccolor = color.green else ccolor = color.white end
-			screen.print(25,y, pluginsP[i].nameR,1,ccolor,0x0)
+			if tb_cop[i].inst then ccolor = color.green else ccolor = color.white end
+			screen.print(25,y, tb_cop[i].nameR,1,ccolor,0x0)
 
-			if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] then
-				if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 1 then
+			if plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] then
+				if plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] == 1 then
 					if dotg then dotg:blit(925,y-1) end
-				elseif plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 0 then
+				elseif plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] == 0 then
 					if doty then doty:blit(925,y-1) end
 				end
 			end
-			screen.print(920,y, "( "..pluginsP[i].txt.." )",1,ccolor,0x0,__ARIGHT)
+			screen.print(920,y, "( "..tb_cop[i].txt.." )",1,ccolor,0x0,__ARIGHT)
 
 			y+=35
 		end
@@ -159,11 +169,11 @@ function pluginsPSP()
 		local pos_height = math.max(h/scroll.maxim, limit)
 		draw.fillrect(3, ybar-2 + ((h-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 
-		if pluginsP[scroll.sel].desc then
-			if screen.textwidth(pluginsP[scroll.sel].desc) > 925 then
-				xscroll = screen.print(xscroll, 400, pluginsP[scroll.sel].desc,1,color.green,0x0,__SLEFT,935)
+		if tb_cop[scroll.sel].desc then
+			if screen.textwidth(tb_cop[scroll.sel].desc) > 925 then
+				xscroll = screen.print(xscroll, 400, tb_cop[scroll.sel].desc,1,color.green,0x0,__SLEFT,935)
 			else
-				screen.print(480, 400, pluginsP[scroll.sel].desc,1,color.green,0x0,__ACENTER)
+				screen.print(480, 400, tb_cop[scroll.sel].desc,1,color.green,0x0,__ACENTER)
 			end
 		end
 
@@ -198,9 +208,9 @@ function pluginsPSP()
 			if selector > #PMounts then selector = 1
 			elseif selector < 1 then selector = #PMounts end
 			for i=1,scroll.maxim do
-				pluginsP[i].inst = false
+				tb_cop[i].inst = false
 			end
-			scroll = newScroll(pluginsP, limit)
+			scroll = newScroll(tb_cop, limit)
 		end
 
 		--Exit
@@ -230,72 +240,72 @@ function pluginsPSP()
 					files.new(PMounts[selector].."pspemu/seplugins/game.txt")
 				end
 
-				pluginsP[scroll.sel].inst = true
+				tb_cop[scroll.sel].inst = true
 
 				for i=1, scroll.maxim do
-					if pluginsP[i].inst then
+					if tb_cop[i].inst then
 						
 						--install plugin
-						files.copy("resources/plugins_psp/"..pluginsP[i].name, PMounts[selector].."pspemu/"..pluginsP[i].path)
+						files.copy("resources/plugins_psp/"..tb_cop[i].name, PMounts[selector].."pspemu/"..tb_cop[i].path)
 
 						--install config
-						if pluginsP[i].config then
-							files.copy("resources/plugins_psp/"..pluginsP[i].config, PMounts[selector].."pspemu/"..pluginsP[i].path)
+						if tb_cop[i].config then
+							files.copy("resources/plugins_psp/"..tb_cop[i].config, PMounts[selector].."pspemu/"..tb_cop[i].path)
 						end
 
-						if plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 0 or not plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] then
-							add_disable_psp_plugin(PMounts[selector], pluginsP[i], 1)
-							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = 1
-							pluginsP[i].inst = false
+						if plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] == 0 or not plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] then
+							add_disable_psp_plugin(PMounts[selector], tb_cop[i], 1)
+							plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] = 1
+							tb_cop[i].inst = false
 						end
 
 						if back2 then back2:blit(0,0) end
-							message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
+							message_wait(tb_cop[i].name.."\n\n"..LANGUAGE["STRING_INSTALLED"])
 						os.delay(750)
 
 					end
 				end
 
 				for i=1,scroll.maxim do
-					pluginsP[scroll.sel].inst = false
+					tb_cop[scroll.sel].inst = false
 				end
 
 			end
 			
 			--Mark/Unmark
 			if buttons.square then
-				pluginsP[scroll.sel].inst = not pluginsP[scroll.sel].inst
+				tb_cop[scroll.sel].inst = not tb_cop[scroll.sel].inst
 			end
 
 			--Clean selected
 			if buttons.select then
 				for i=1,scroll.maxim do
-					pluginsP[i].inst = false
+					tb_cop[i].inst = false
 				end
 			end
 
 			--disable plugins
 			if buttons.triangle then
 
-				pluginsP[scroll.sel].inst = true
+				tb_cop[scroll.sel].inst = true
 
 				for i=1,scroll.maxim do
-					if pluginsP[i].inst then
-						if files.exists(PMounts[selector].."pspemu/seplugins/"..pluginsP[i].txt) and plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] == 1 then
+					if tb_cop[i].inst then
+						if files.exists(PMounts[selector].."pspemu/seplugins/"..tb_cop[i].txt) and plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] == 1 then
 
-							add_disable_psp_plugin(PMounts[selector], pluginsP[i],0)
-							plugins_status[ PMounts[selector]..pluginsP[i].name:lower() ] = nil--0
-							pluginsP[i].inst = false
+							add_disable_psp_plugin(PMounts[selector], tb_cop[i],0)
+							plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] = nil--0
+							tb_cop[i].inst = false
 
 							if back2 then back2:blit(0,0) end
-								message_wait(pluginsP[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
+								message_wait(tb_cop[i].name.."\n\n"..LANGUAGE["STRING_UNINSTALLED"])
 							os.delay(750)
 						end
 					end
 				end
 
 				for i=1,scroll.maxim do
-					pluginsP[scroll.sel].inst = false
+					tb_cop[scroll.sel].inst = false
 				end
 
 			end

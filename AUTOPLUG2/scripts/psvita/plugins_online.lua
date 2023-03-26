@@ -334,7 +334,11 @@ function psvita_plugins_online()
 
 				if i == scroll.sel then draw.offsetgradrect(17,y-12,938,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-				screen.print(30,y, tmp_plugins[i].name, 1.0, color.white,0x0)
+				if tmp_plugins[i].v then
+					screen.print(30,y, tmp_plugins[i].name.." "..tmp_plugins[i].v, 1.0, color.white,0x0)
+				else
+					screen.print(30,y, tmp_plugins[i].name, 1.0, color.white,0x0)
+				end
 				if tmp_plugins[i].new then
 					screen.print(945,y,LANGUAGE["LANG_FILE_NEW"],1.0,color.green,0x0,__ARIGHT)
 				else

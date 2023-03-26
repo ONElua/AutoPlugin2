@@ -54,7 +54,7 @@ function menu_gral()
 		if snow then stars.render() end
 		wave:blit(0.7,50)
 
-		if tonumber(cont_global:get()) > 0 and tonumber(yes_update:get()) == 2 then
+		if tonumber(cont_global:get()) > 0 and yes_update and tonumber(yes_update:get()) == 2 then
 			if back then back:blit(0,0) end
 				message_wait(LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"])
 			os.delay(750)

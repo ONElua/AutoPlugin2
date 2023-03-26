@@ -54,12 +54,7 @@ function screen.flip()
 				screen.flip()
 
 				buttons.read()
-				--[[
-				if buttons.cancel then--Cancel or Abort
-					files.delete(path2vpk)
-					return 0
-				end
-				]]
+				--if buttons.cancel then return 0 end --Cancel or Abort
 				return 1
 			end
 

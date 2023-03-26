@@ -13,6 +13,33 @@
 dofile("plugins/plugins.lua")
 if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
+--[[
+local fp = io.open("db.json", "w+")
+fp:write("{\n")
+fp:write('	"plugins": [\n')
+for key,value in pairs(plugins) do
+	fp:write("		{\n")
+	if type(value) == "table" then
+		for s,t in pairs(value) do
+			if s == "crc" then
+				fp:write(string.format('			"%s": "0x%x",\n', tostring(s),tonumber(t)) )
+			elseif s == "link" then
+				fp:write(string.format('			"readme": "%s",\n',tostring(t)) )
+			elseif s == "desc" then
+				fp:write(string.format('			"%s": "LANGUAGE["%s"]",\n', tostring(s),tostring(value.KEY)))
+			else
+				fp:write(string.format('			"%s": "%s",\n', tostring(s),tostring(t)) )
+			end
+		end
+		fp:write("		},\n")
+	end
+end
+fp:write('	]\n')
+fp:write('}')
+fp:close()
+
+error("usb")]]
+
 --Funciones PSVITA
 dofile("scripts/psvita/sd2vita.lua")
 dofile("scripts/psvita/pmanager.lua")
