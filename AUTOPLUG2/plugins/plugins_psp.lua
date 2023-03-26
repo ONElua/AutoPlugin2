@@ -7,6 +7,7 @@ pluginsP = {
 {	nameR = "Category lite", name = "category_lite.prx",	path = "seplugins/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["CATEGORYLITE_DESC"], KEY = "CATEGORYLITE_DESC", },
 {	nameR = "Kingdom Hearts: Birth By Sleep/Final Mix UNDUB", name = "bbsfmUndub.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["KHBBS_UNDUB_DESC"], KEY = "KHBBS_UNDUB_DESC", },
 {	nameR = "GE Patch Plugin v0.2", name = "ge_patch.prx", path = "seplugins/", txt = "game.txt", version = "0006", desc = LANGUAGE["GE_PATCH_DESC"], KEY = "GE_PATCH_DESC", link = "https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md", },
+{	nameR = "Npdrm free by qwikrazor87, modified by lusid1 v7.3", name = "npdrm_free_mod.prx", version = "0001", REMOVE = true, desc = LANGUAGE["MENU_PSP_NPDRMFREE_MOD_DESC"], KEY = "MENU_PSP_NPDRMFREE_MOD_DESC", link = "https://raw.githubusercontent.com/lusid1/npdrm_free_mod/master/README.md", },
 
 }
 

@@ -79,6 +79,7 @@ JAPANESE["MENU_PSP_INSTALL_NPDRMFREE"] =                "npdrm freeプラグイ�
 JAPANESE["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =         "RemasteredControlsプラグインをインストール (by TheOfficialFloW)"
 JAPANESE["MENU_PSP_INSTALL_PLUGINS"] =                  "Adrenaline用のPSPプラグイン"
 
+JAPANESE["MENU_PSP_NPDRMFREE_MOD_DESC"] =               "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 JAPANESE["MENU_PSP_NPDRMFREE_DESC"] =                   "有効な「.rif」ライセンスまたは「act.dat」を必要とせずに公式のNPDRM PS1/PSPコンテンツを実行するPSP/ePSPプラグイン"
 JAPANESE["MENU_PSP_PSPCTRLS_DESC"] =                    "特定のPSPゲームで両方のアナログを使用できるようにするAdrenaline用のパッチのコレクション"
 JAPANESE["MENU_PSP_PLUGINS_DESC"] =                     "Adrenaline用のPSPプラグインをインストール"

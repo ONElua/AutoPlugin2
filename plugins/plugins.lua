@@ -110,7 +110,7 @@ Online_Plugins = {
 { name = "Magic Automatic Fake User Input by Rufis01", id = "MAFUINPUT.png", path = "MAFUinput.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT",
   crc = 0x6322adb1, v = "v2.0-Alpha.1", version = "0003", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "ViXEn by isage", id = "VIXEN.png", path = "vixen.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIXEN"], KEY = "INSTALLP_DESC_VIXEN",
-  crc = 0x6b13d8a0, v = "v1.3", version = "0003", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
+  crc = 0x342b62a9, v = "v1.3.1", version = "0004", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH",
@@ -218,8 +218,8 @@ Online_Plugins = {
   crc = 0x72ed507a, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
 { name = "QuickLauncher by Ibrahim778 (QuickMenuReborn)", id = "QUICKLAUNCHER.png", path = "QuickMenuReborn.suprx", section = "main", config = "QuickMenuReborn.zip", configpath = "ur0:/", desc = LANGUAGE["INSTALLP_DESC_QUICKLAUNCHER"], KEY = "INSTALLP_DESC_QUICKLAUNCHER",
   crc = 0x6acf244c, v = "v1.2", crc2 = 0x83f771ea, version = "0001",  dl = "QuickMenuReborn.zip", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
-{ name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", configpath = "ux0:data/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
-  crc = 0x981d7d15, v = "v1.0", version = "0001", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
+{ name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", config2 = "0.txt", configpath = "ux0:data/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
+  crc = 0x42685a0c, v = "v1.1.4", version = "0002", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
 
 --2 prxs
 { name = "Quietshot by cuevavirus", id = "QUIETSHOT.png", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT",

@@ -79,6 +79,7 @@ CHINESE_S["MENU_PSP_INSTALL_NPDRMFREE"] =              "安装 npdrm free 插件
 CHINESE_S["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "安装 RemasteredControls 插件 (由 TheOfficialFloW 开发)"
 CHINESE_S["MENU_PSP_INSTALL_PLUGINS"] =                "适用于 Adrenaline 的 PSP 插件"
 
+CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 CHINESE_S["MENU_PSP_NPDRMFREE_DESC"] =                 "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容."
 CHINESE_S["MENU_PSP_PSPCTRLS_DESC"] =                  "Adrenaline 上适用于 PSP 游戏的双摇杆补丁合集"
 CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP插件"

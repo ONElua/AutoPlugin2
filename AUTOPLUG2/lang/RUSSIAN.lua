@@ -79,6 +79,7 @@ RUSSIAN["MENU_PSP_INSTALL_NPDRMFREE"] =              "Установить npdrm
 RUSSIAN["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Установить RemasteredControls от TheOfficialFloW"
 RUSSIAN["MENU_PSP_INSTALL_PLUGINS"] =                "Установить другие PSP плагины для Adrenaline"
 
+RUSSIAN["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 RUSSIAN["MENU_PSP_NPDRMFREE_DESC"] =                 "Плагин позволяет запускать зашифрованные PSP игры в формате EBOOT.PBP без их покупки (обход ошибки 80010087)"
 RUSSIAN["MENU_PSP_PSPCTRLS_DESC"] =                  "Сборник плагинов для переноса управления камерой на правый аналог в PSP играх в Adrenaline"
 RUSSIAN["MENU_PSP_PLUGINS_DESC"] =                   "Установить PSP плагины, также работающие в Adrenaline"

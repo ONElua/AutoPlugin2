@@ -79,6 +79,7 @@ PORTUGUESE_BR["MENU_PSP_INSTALL_NPDRMFREE"] =              "Instalar plugin npdr
 PORTUGUESE_BR["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Instalar plugin RemasteredControls do TheOfficialFloW"
 PORTUGUESE_BR["MENU_PSP_INSTALL_PLUGINS"] =                "PSP plugins para Adrenaline"
 
+PORTUGUESE_BR["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 PORTUGUESE_BR["MENU_PSP_NPDRMFREE_DESC"] =                 "Um plugin PSP/ePSP para executar o conteúdo oficial do NPDRM PS1/PSP sem a necessidade de uma licença .rif ou act.dat válida."
 PORTUGUESE_BR["MENU_PSP_PSPCTRLS_DESC"] =                  "Uma coleção de patches para os analógicos para jogos de PSP no Adrenaline"
 PORTUGUESE_BR["MENU_PSP_PLUGINS_DESC"] =                   "Instalar plugins PSP para Adrenaline"

@@ -79,6 +79,7 @@ KOREAN["MENU_PSP_INSTALL_NPDRMFREE"] =              "qwikrazor87에서 npdrm 무
 KOREAN["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "TheOfficialFlow에서 리마스터된 제어 플러그인 설치"
 KOREAN["MENU_PSP_INSTALL_PLUGINS"] =                "아드레날링용 PSP 플러그인"
 
+KOREAN["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 KOREAN["MENU_PSP_NPDRMFREE_DESC"] =                 "유효한 .rif 라이센스 또는 act.dat 없이도 공식 NPDRM PS1/PSP 콘텐츠를 실행하기 위한 PSP/ePSP 플러그인입니다."
 KOREAN["MENU_PSP_PSPCTRLS_DESC"] =                  "아드레날린의 PSP 게임용 듀얼 아날로그 패치 모음"
 KOREAN["MENU_PSP_PLUGINS_DESC"] =                   "아드레날린용 PSP 플러그인 설치"

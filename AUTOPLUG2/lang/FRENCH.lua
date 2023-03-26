@@ -79,6 +79,7 @@ FRENCH["MENU_PSP_INSTALL_NPDRMFREE"] =              "npdrm free de qwikrazor87"
 FRENCH["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Plugins RemasteredControls par TheOfficialFloW"
 FRENCH["MENU_PSP_INSTALL_PLUGINS"] =                "Collection des plugins PSP utile"
 
+FRENCH["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
 FRENCH["MENU_PSP_NPDRMFREE_DESC"] =                 "Un plugin PSP/ePSP pour exécuter des contenus NPDRM officiel (PS1/PSP) sans avoir besoin d'une licence .rif ou act.dat valide."
 FRENCH["MENU_PSP_PSPCTRLS_DESC"] =                  "Une collection des plugins pour utilisé le second sticks de la PSvita sur des jeux PSP"
 FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Plugins PSP utile a utilisé avec Adrenaline"
