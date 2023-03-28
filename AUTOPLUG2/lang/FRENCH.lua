@@ -79,7 +79,7 @@ FRENCH["MENU_PSP_INSTALL_NPDRMFREE"] =              "npdrm free de qwikrazor87"
 FRENCH["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "Plugins RemasteredControls par TheOfficialFloW"
 FRENCH["MENU_PSP_INSTALL_PLUGINS"] =                "Collection des plugins PSP utile"
 
-FRENCH["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
+FRENCH["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "Un plugin PSP/ePSP pour exécuter le contenu officiel NPDRM PS1/PSP sans avoir besoin d'une licence .rif valide ou act.dat. Il est destiné à être utilisé en conjonction avec nploader_mod qui prend désormais en charge les DLC cryptés et décryptés."
 FRENCH["MENU_PSP_NPDRMFREE_DESC"] =                 "Un plugin PSP/ePSP pour exécuter des contenus NPDRM officiel (PS1/PSP) sans avoir besoin d'une licence .rif ou act.dat valide."
 FRENCH["MENU_PSP_PSPCTRLS_DESC"] =                  "Une collection des plugins pour utilisé le second sticks de la PSvita sur des jeux PSP"
 FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Plugins PSP utile a utilisé avec Adrenaline"
@@ -366,7 +366,7 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
-FRENCH["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
+FRENCH["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. Pilote PSVita pour les manettes de la xbox 360"
 FRENCH["INSTALLP_DESC_VSHPATCH"] =                  "Comme repatch, mais pour les applications système. il s'agit d'un VS0 émulé, mettez simplement vos modifications que vous souhaitez apporter dans ux0:/vshPatch/ et ensuite les modifications seront répercutées dans la partition vs0:, via la puissance de fios2"
 FRENCH["INSTALLP_DESC_8BIVITA"] =                   "Fondamentalement, juste X1Vita mais avec 8bitdo vid, pid et mappages. (Contrôleurs 8bitdo compatibles : Lite, Pro, Pro+, Pro 2 et Zero 2)"
 FRENCH["INSTALLP_DESC_REAUTH"] =                    "reAuth vous permet d'utiliser le PlayStation Store et de vous connecter au PlayStation Network sur 3.60-3.65 (Enso est requis - le Spoof PSN est activée dans les paramètres Henkaku et définie sur 3.73)"
