@@ -169,6 +169,7 @@ KOREAN["INSTALLP_OSK_TITLE"] =                      "커스텀 경고 텍스트"
 KOREAN["INSTALLP_OSK_TEXT"] =                       "여기에 텍스트 입력"
 
 KOREAN["INSTALLP_WARNING_UDCD"] =                   "Fat/Slim에서 작동하는 플러그인 udcd"
+KOREAN["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 KOREAN["INSTALLP_DESC_DAEMON"] =                    "일반 콘솔 사용 중 백그라운드에서 홈브류 업데이트 확인을 위한 데몬 지원 (VitaDB-Downloader에 필요)"
@@ -476,6 +477,8 @@ KOREAN["INSTALLP_DESC_QUICKMENU"] =             	"퀵 메뉴 플러스는 퀵 �
 KOREAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(권장) 이 버전은 터치스크린의 맨 위 부분을 터치해야만 작동합니다. SceShell (홈 화면)에서는 상태 표시줄이 됩니다. 이것은 상태 표시줄에서 사용되는 안드로이드의 두 번 탭하여 절전 모드와 더 유사하게 작동합니다."
 KOREAN["INSTALLP_DESC_FRUITPEEL"] =                 "잠금 화면 배경 화면 변경 (8비트 팔레트 비인터레이스가 있는 PNG. 최대 크기 896x448. 파일 크기 최대 512KiB)"
 KOREAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "빠른 메뉴에서 앱을 빠르게 실행할 수 있는 버튼을 추가하는 플러그인입니다. QuickMenuReborn을 사용하여 만들었습니다."
+KOREAN["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+KOREAN["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 KOREAN["INSTALLP_DESC_WAVE"] =                      "PS 비타 홈 배경 웨이브 추가 플러그인입니다."
 
 --ALL

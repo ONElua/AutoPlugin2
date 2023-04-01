@@ -169,6 +169,7 @@ RUSSIAN["INSTALLP_OSK_TITLE"] =                      "Свой текст для
 RUSSIAN["INSTALLP_OSK_TEXT"] =                       "Введите свой текст в это поле"
 
 RUSSIAN["INSTALLP_WARNING_UDCD"] =                   "Плагин udcd_uvc поддерживает Fat и Slim"
+RUSSIAN["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 RUSSIAN["INSTALLP_DESC_DAEMON"] =                    "Плагин для фоновой автоматической проверки обновлений программ (используется VitaDB-Downloader)"
@@ -476,6 +477,8 @@ RUSSIAN["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus объед
 RUSSIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Рекомендуем) Эта версия срабатывает только при касании верхнего края экрана. В SceShell (домашний экран) это область панели информации. Таким образом, работа оказывается максимально схожей с тем, как это сделано на Андроид."
 RUSSIAN["INSTALLP_DESC_FRUITPEEL"] =                 "Плагин позволяет заменить фоновое изображение экрана блокировки (требования: формат PNG/8 bit/non-interlaced, разрешение не больше 896x448, размер файла не больше 512 КБ)"
 RUSSIAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "Плагин для добавления кнопок запуска программ в быстрое меню PS Vita (основан на QuickMenuReborn)"
+RUSSIAN["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+RUSSIAN["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 RUSSIAN["INSTALLP_DESC_WAVE"] =                      "Плагин для добавления анимации волн на фоне домашнего экрана PS Vita"
 
 --ALL

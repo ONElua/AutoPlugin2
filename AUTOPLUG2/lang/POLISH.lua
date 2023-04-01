@@ -169,6 +169,7 @@ POLISH["INSTALLP_OSK_TITLE"] =                      "Tekst o ostrzeżeniu o epil
 POLISH["INSTALLP_OSK_TEXT"] =                       "Wpisz tekst tutaj"
 
 POLISH["INSTALLP_WARNING_UDCD"] =                   "Plugin udcd działa na Vicie Fat/Slim"
+POLISH["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 POLISH["INSTALLP_DESC_DAEMON"] =                    "Daemon support for homebrews update check in background during normal console usage (needed for VitaDB-Downloader)"
@@ -476,6 +477,8 @@ POLISH["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus łączy w sobi
 POLISH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Rekomendowane) Ta wersja działa tylko wtedy, gdy dotkniesz górnej części ekranu dotykowego. W SceShell (pulpit) był by to pasek stanu. Działa to podobnie do funkcji podwójnego stuknięcia w trybie uśpienia systemu Android, która jest na pasku stanu."
 POLISH["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 POLISH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+POLISH["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+POLISH["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 POLISH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL

@@ -169,6 +169,7 @@ FRENCH["INSTALLP_OSK_TITLE"] =                      "Configuration du plugin Cus
 FRENCH["INSTALLP_OSK_TEXT"] =                       "Entrer votre texte personnalisé ici..."
 
 FRENCH["INSTALLP_WARNING_UDCD"] =                   "Plugin UDCD pour les PS Vita Fat/Slim"
+FRENCH["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 FRENCH["INSTALLP_DESC_DAEMON"] =                    "Prise en charge du Daemon pour la vérification des mises à jour des homebrews en arrière-plan lors de l'utilisation normale de la console (nécessaire pour le plugin VitaDB-Downloader)"
@@ -476,6 +477,8 @@ FRENCH["INSTALLP_DESC_QUICKMENU"] =               	"Quick Menu Plus fusionne Qui
 FRENCH["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommandé) Cette version ne fonctionne que si vous touchez la partie supérieure de votre écran tactile. Dans SceShell (écran d'accueil), il s'agit de la barre d'état. Cela ressemble plus à la fonction double tap to sleep d'Android qui est utilisée sur la barre d'état."
 FRENCH["INSTALLP_DESC_FRUITPEEL"] =                 "Change le fond d'écran de l'écran de verrouillage (PNG avec une palette de 8 bits non entrelacée. Jusqu'à une taille maximale de 896x448. La taille du fichier peut atteindre un maximum de 512 KiB)"
 FRENCH["INSTALLP_DESC_QUICKLAUNCHER"] =             "Un plugin qui ajoute des raccourcis via le menu rapide pour lancer rapidement des applications. Basé sur QuickMenuReborn."
+FRENCH["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+FRENCH["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL

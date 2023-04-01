@@ -169,6 +169,7 @@ CHINESE_S["INSTALLP_OSK_TITLE"] =                      "自定义警告文本"
 CHINESE_S["INSTALLP_OSK_TEXT"] =                       "在这里输入文本"
 
 CHINESE_S["INSTALLP_WARNING_UDCD"] =                   "插件 udcd 适用于 Fat/Slim(1000/2000) 机型"
+CHINESE_S["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 CHINESE_S["INSTALLP_DESC_DAEMON"] =                    "在正常控制台使用期间，为自制软件后台更新检查提供守护进程支持 (VitaDB-Downloader 需要它)"
@@ -476,6 +477,8 @@ CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并�
 CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
 CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "修改锁屏背景壁纸 (具有8位调色板的非隔行扫描PNG. 最大支持分辨率为 896x448. 文件大小最大支持到 512 KiB)"
 CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "在快速菜单增加按钮, 用于快速启动应用程序. 本插件使用 QuickMenuReborn 制作."
+CHINESE_S["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+CHINESE_S["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL

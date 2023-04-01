@@ -9,37 +9,6 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-
---[[
-	idx = tai.find("main", "TrImpose.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_TRANSP_IMPOSE"],	desc = LANGUAGE["MENU_EXTRAS_TRANSPIMPOSE_DESC"],	funct = customTransImpose_callback } )
-	end
-
-	local idx = tai.find("main", "AutoBoot.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_AUTOBOOT_TITLE"],	desc = LANGUAGE["MENU_EXTRAS_AUTOBOOT_DESC"],	funct = autoboot_callback } )
-	end
-
-	local idx = tai.find("KERNEL", "custom_boot_splash.skprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CONVERT_BOOTSPLASH"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"],	funct = convertimgsplash_callback } )
-	end
-
-	idx = tai.find("main", "custom_warning.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_CUSTOM_WARNING"],	desc = LANGUAGE["MENU_EXTRAS_CUSTOMWARNING_DESC"],	funct = customwarning_callback } )
-	end
-
-	idx = tai.find("main", "quickmenuplus.suprx")
-	if idx then
-		table.insert(menu, { text = LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],	desc = LANGUAGE["MENU_EXTRAS_QUICKMENU_DESC"],	funct = customQuickMenu_callback } )
-	end
-	
-	--{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],   desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],			funct = VitaNearest_callback },
-
-]]
-
 --local VitaNearest_callback = function ()
 --	VitaNearest()
 --end
@@ -136,12 +105,11 @@ function plugin_info(obj)
 
 	onNetGetFile = onNetGetFileOld
 
-	local crc1,crc2,crc3,path3 = nil,nil,nil,nil
+	local crc1,crc2,crc3,installed_prx = nil,nil,nil,false
 	if obj.path_prx then crc1 = files.crc32(obj.path_prx) or nil end
-
-	if obj.crc2 then
-		if obj.path2 and files.exists(path_tai..obj.path2) then crc2 = files.crc32(path_tai..obj.path2) end
-	end
+	if obj.crc2 and obj.path2 and obj.path != "sysident.suprx" then
+		crc2 = files.crc32(path_tai..obj.path2) or nil
+	end--files.exists(path_tai..obj.path2)
 
 	--PLugins que se pueden modificar sus valores,texto o imagen
 	local customize,flag = nil,false
@@ -160,40 +128,41 @@ function plugin_info(obj)
 	end
 
 	--checks addons
-	local suprxs = nil
+	local addons = nil
 
 	if obj.path == "reAuth.skprx" then
-		suprxs = { 
+		addons = { 
 			{ path = "libhttp.suprx", exists = false },
 			{ path = "libssl.suprx", exists = false },
 			{ path = "reAuth.suprx", exists = false },
 		}
-		for i = 1,#suprxs do
-			if files.exists("ur0:data/reAuth/"..suprxs[i].path) then suprxs[i].exists = true end
+		for i = 1,#addons do
+			if files.exists("ur0:data/reAuth/"..addons[i].path) then addons[i].exists = true end
 		end
 
 	elseif obj.path == "PSVshellPlus_Kernel.skprx" then
-		suprxs = { 
+		addons = { 
 			{ path = "psvshell_plugin.rco", exists = false },
 		}
-		for i = 1,#suprxs do
-			if files.exists("ur0:data/PSVshell/"..suprxs[i].path) then suprxs[i].exists = true end
+		for i = 1,#addons do
+			if files.exists("ur0:data/PSVshell/"..addons[i].path) then addons[i].exists = true end
 		end
 
 	elseif obj.path == "sysident.suprx" then
-		path3 = "sysident.skprx"
-		if files.exists(path_tai.."sysident.skprx") then crc3 = files.crc32(path_tai.."sysident.skprx") end
+		obj.path3 = "sysident.skprx"
+		crc3 = files.crc32(path_tai.."sysident.skprx") or nil
 
 	elseif obj.path == "QuickMenuReborn.suprx" then
-		if files.exists("ur0:QuickMenuReborn/QuickLauncher.suprx") then
-			crc3 = files.crc32("ur0:QuickMenuReborn/QuickLauncher.suprx")
-		end
-		obj.path3,path3 = "QuickLauncher.suprx","QuickLauncher.suprx"
-		suprxs = { 
+		addons = { 
 			{ path = "qmr_plugin.rco", exists = false },
 		}
-		for i = 1,#suprxs do
-			if files.exists("ur0:QuickMenuReborn/"..suprxs[i].path) then suprxs[i].exists = true end
+		for i = 1,#addons do
+			if files.exists("ur0:QuickMenuReborn/"..addons[i].path) then addons[i].exists = true end
+		end
+
+		if obj.configpath then
+			obj.path3 = obj.config
+			crc3 = files.crc32(obj.configpath..obj.config) or nil
 		end
 
 	end
@@ -201,8 +170,7 @@ function plugin_info(obj)
 	--tai config
 	if obj.section2 then obj.idx = tai.find(obj.section2,obj.path2) end
 	if obj.idx != nil then
-		if files.exists(tai.gameid[ obj.section2 ].prx[obj.idx].path) then
-		end
+		--if files.exists(tai.gameid[ obj.section2 ].prx[obj.idx].path) then	end
 	end
 
 	local xscr1 = 10
@@ -225,7 +193,25 @@ function plugin_info(obj)
 				if obj.path == "adrenaline_kernel.skprx" then
 					screen.print(15, y1, LANGUAGE["MENU_INSTALLED_INFO"],1,color.white,color.blue,__ALEFT)
 				else
-					if obj.crc == crc1 then
+
+					if obj.path == "QuickMenuReborn.suprx" and obj.configpath then
+						if files.exists(obj.configpath..obj.config) then
+							if obj.crc2 == crc3 then
+								if screen.textwidth(obj.v) > 150 then
+									screen.print(15, y1, LANGUAGE["MENU_INFO_VERSION"].."\n"..obj.v,1,color.white,color.blue,__ALEFT)
+									y1 += 25
+								else
+									screen.print(15, y1, LANGUAGE["MENU_INFO_VERSION"]..obj.v,1,color.white,color.blue,__ALEFT)
+								end
+							else
+								screen.print(15, y1, LANGUAGE["MENU_INFO_VERSION"]..LANGUAGE["MENU_INFO_VERSION_UNK"],1,color.white,color.blue,__ALEFT)
+							end
+						else
+							installed_prx = false
+							screen.print(15, y1, LANGUAGE["MENU_INFO_VERSION"]..LANGUAGE["MENU_INFO_VERSION_NONE"],1,color.white,color.blue,__ALEFT)
+						end						
+
+					elseif obj.crc == crc1 then
 						if screen.textwidth(obj.v) > 150 then
 							screen.print(15, y1, LANGUAGE["MENU_INFO_VERSION"].."\n"..obj.v,1,color.white,color.blue,__ALEFT)
 							y1 += 25
@@ -250,16 +236,17 @@ function plugin_info(obj)
 			end
 		end
 
+		--Addons
 		local y = 140
-		if suprxs and #suprxs > 0 then
+		if addons and #addons > 0 then
 			screen.print(15, y, LANGUAGE["MENU_INFO_ADDONS"],1,color.white,color.blue,__ALEFT)
 			y+=20
-			for i = 1,#suprxs do
-				--suprxs[i].len  = screen.print(15, y, suprxs[i].path,1,color.white,color.blue,__ALEFT)
-				if suprxs[i].exists == true then
-					screen.print(15, y, suprxs[i].path,1,color.green,0x0,__ALEFT)
+			for i = 1,#addons do
+				--addons[i].len  = screen.print(15, y, addons[i].path,1,color.white,color.blue,__ALEFT)
+				if addons[i].exists == true then
+					screen.print(15, y, addons[i].path,1,color.green,0x0,__ALEFT)
 				else
-					screen.print(15, y, suprxs[i].path,1,color.yellow,0x0,__ALEFT)
+					screen.print(15, y, addons[i].path,1,color.yellow,0x0,__ALEFT)
 				end
 				y+=20
 			end
@@ -283,7 +270,7 @@ function plugin_info(obj)
 			y+=20
 			screen.print(15, y, "[ "..obj.section2.." ]",1,color.white,0x0,__ALEFT)
 		end
-		if obj.path2 then
+		if obj.path2 and obj.section2 then
 			y+=20
 			if obj.idx then
 				screen.print(15, y, obj.path2,1,color.green,0x0,__ALEFT)
@@ -294,39 +281,12 @@ function plugin_info(obj)
 
 		--CRC
 		if obj.path != "adrenaline_kernel.skprx" then
-
 			if obj.path2 then
-
-				if crc3 then
-					y+=30
-					screen.print(15, y, LANGUAGE["MENU_INFO_CRC"],1,color.white,color.blue,__ALEFT)
-					y+=20
-					if obj.crc2 == crc3 then
-						screen.print(15, y, path3,1,color.green,0x0,__ALEFT)
-					else
-						screen.print(15, y, path3,1,color.yellow,0x0,__ALEFT)
-					end
-				elseif crc2 then
-					y+=30
-					screen.print(15, y, LANGUAGE["MENU_INFO_CRC"],1,color.white,color.blue,__ALEFT)
-					y+=20
-					if obj.crc2 == crc2 then
-						screen.print(15, y, obj.path2,1,color.green,0x0,__ALEFT)
-					else
-						screen.print(15, y, obj.path2,1,color.yellow,0x0,__ALEFT)
-					end
-				end
+				if crc3 then print_crc(y,obj.crc2,crc3,obj.path3)
+					elseif crc2 then print_crc(y,obj.crc2,crc2,obj.path2)
+						else print_crc(y,obj.crc2,crc2,obj.path2) end
 			elseif obj.path3 then
-				if crc3 then
-					y+=30
-					screen.print(15, y, LANGUAGE["MENU_INFO_CRC"],1,color.white,color.blue,__ALEFT)
-					y+=20
-					if obj.crc2 == crc3 then
-						screen.print(15, y, path3,1,color.green,0x0,__ALEFT)
-					else
-						screen.print(15, y, path3,1,color.yellow,0x0,__ALEFT)
-					end
-				end
+				if crc3 then print_crc(y,obj.crc2,crc3,obj.path3) end
 			end
 		end
 	end
@@ -352,10 +312,24 @@ function plugin_info(obj)
 		end
 
 		if buttonskey then buttonskey:blitsprite(10,515,saccept) end
-		if obj.path_prx then
-			screen.print(45,518,LANGUAGE["MENU_REINSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+		if obj.path == "QuickMenuReborn.suprx" and obj.configpath then
+			idx = tai.find(obj.section,obj.path)
+		
+		
+			if files.exists(tai.gameid[ obj.section ].prx[idx].path) and files.exists(obj.configpath..obj.config) then
+				screen.print(45,518,LANGUAGE["MENU_REINSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+			elseif files.exists(tai.gameid[ obj.section ].prx[idx].path) and not files.exists(obj.configpath..obj.config) then
+				screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+			else
+				screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+			end
 		else
-			screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+
+			if obj.path_prx then
+				screen.print(45,518,LANGUAGE["MENU_REINSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+			else
+				screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+			end
 		end
 
 		if buttonskey3 then buttonskey3:blitsprite(920,518,1) end
@@ -405,4 +379,15 @@ function plugin_info(obj)
 
 	end
 
+end
+
+function print_crc(_y,_crc1,_crc2,_name)
+	_y+=30
+	screen.print(15, _y, LANGUAGE["MENU_INFO_CRC"],1,color.white,color.blue,__ALEFT)
+	_y+=20
+	if _crc1 == _crc2 then
+	screen.print(15, _y, _name,1,color.green,0x0,__ALEFT)
+	else
+		screen.print(15, _y, _name,1,color.yellow,0x0,__ALEFT)
+	end
 end

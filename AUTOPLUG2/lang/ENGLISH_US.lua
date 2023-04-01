@@ -169,6 +169,7 @@ ENGLISH_US["INSTALLP_OSK_TITLE"] =                      "Text for Custom Warning
 ENGLISH_US["INSTALLP_OSK_TEXT"] =                       "Put text here"
 
 ENGLISH_US["INSTALLP_WARNING_UDCD"] =                   "Plugin udcd to work in Fat/Slim"
+ENGLISH_US["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 ENGLISH_US["INSTALLP_DESC_DAEMON"] =                    "Daemon support for homebrews update check in background during normal console usage (needed for VitaDB-Downloader)"
@@ -476,6 +477,8 @@ ENGLISH_US["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Qui
 ENGLISH_US["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 ENGLISH_US["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 ENGLISH_US["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
+ENGLISH_US["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+ENGLISH_US["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 ENGLISH_US["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL

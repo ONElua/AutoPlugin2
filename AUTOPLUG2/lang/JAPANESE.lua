@@ -169,6 +169,7 @@ JAPANESE["INSTALLP_OSK_TITLE"] =                        "カスタム警告の�
 JAPANESE["INSTALLP_OSK_TEXT"] =                         "ここにテキストを入力してください"
 
 JAPANESE["INSTALLP_WARNING_UDCD"] =                     "Fat/Slimで動作するudcdプラグイン"
+JAPANESE["INSTALLP_WARNING_VITATV"] =                   "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 JAPANESE["INSTALLP_DESC_DAEMON"] =                      "Daemon support for homebrews update check in background during normal console usage (needed for VitaDB-Downloader)"
@@ -476,7 +477,9 @@ JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Q
 JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 JAPANESE["INSTALLP_DESC_FRUITPEEL"] =                   "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 JAPANESE["INSTALLP_DESC_QUICKLAUNCHER"] =               "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
-JAPANESE["INSTALLP_DESC_WAVE"] =                         "A PS Vita home background wave add plugin."
+JAPANESE["INSTALLP_DESC_QUICKMENUREBORN"] =             "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+JAPANESE["INSTALLP_DESC_DOLCEWIFI"] =                   "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
+JAPANESE["INSTALLP_DESC_WAVE"] =                        "A PS Vita home background wave add plugin."
 
 --ALL
 JAPANESE["INSTALLP_DESC_3GDISABLE"] =                   "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"

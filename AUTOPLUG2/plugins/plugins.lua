@@ -96,7 +96,7 @@ plugins = {
 { name = "ds4touch by MERLev", id = "DS4TOUCH.png", path = "ds4touch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"], KEY = "INSTALLP_DESC_DS4TOUCH",
   crc = 0x7b060dc4, v = "v1.1.3", version = "0004", link = "https://raw.githubusercontent.com/MERLev/ds4touch/master/README.md", },
 { name = "VolLightbarCtrlWithDS4 by CallmeBK", id = "VOLLIGHTBARDS4.png", path = "VolLightbarCtrlWithDS4.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VOLLIGHTBAR_DS4"], KEY = "INSTALLP_DESC_VOLLIGHTBAR_DS4",
-  crc = 0xf85a1bc3, v = "v1.1", version = "0001", link = "https://raw.githubusercontent.com/CallmeBK/VolLightbarCtrlWithDS4/master/README.md", },
+  crc = 0xd4b51394, v = "v1.3", version = "0002", link = "https://raw.githubusercontent.com/CallmeBK/VolLightbarCtrlWithDS4/master/README.md", },
 { name = "LCD Colour Space Changer by cuevavirus", id = "LCDCOLOUR.png",  path = "pspemu-colour-crunch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_LCDSPACE"], KEY = "INSTALLP_DESC_LCDSPACE",
   crc = 0x85341adb, v = "v1.2.0", version = "0002", },
 { name = "FdFix by TheOfficialFloW", id = "FDFIX.png", path = "fd_fix.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_FDFIX"], KEY = "INSTALLP_DESC_FDFIX",
@@ -205,6 +205,8 @@ plugins = {
   crc = 0x03afb806, v = "v3.02", version = "0003", link = "https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md", },
 { name = "ftpeverywhere by teakhanirons", id = "FTPEVERYWHERE.png", path = "ftpeverywhere.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE",
   crc = 0x2b650ebd, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", },
+{ name = "(QuickMenuReborn) by Ibrahim778", id = "QUICKMENUREBORN.png", path = "QuickMenuReborn.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_QUICKMENUREBORN"], KEY = "INSTALLP_DESC_QUICKMENUREBORN",
+  crc = 0xfa9d8919, v = "v2.5", version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/QuickMenuReborn/vdsuite/README.md", },
 
 --{ name = "Quick Power by cuevavirus v1.1.0", id = "QUICKPOWER.png", path = "quick_power.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKPOWER"], KEY = "INSTALLP_DESC_QUICKPOWER", link = "https://raw.githubusercontent.com/cuevavirus/QuickPower/master/README.md", },
 --{ name = "Quick Volume by cuevavirus v1.2.1", id = "QUICKVOLUME.png", path = "quick_volume.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_QUICKVOLUME"], KEY = "INSTALLP_DESC_QUICKVOLUME", link = "https://raw.githubusercontent.com/cuevavirus/QuickVolume/master/README.md", },
@@ -216,8 +218,10 @@ plugins = {
 --with config&configpath
 { name = "TransparentImpose by GrapheneCt", id = "TRANSIMPOSE.png", path = "TrImpose.suprx", section = "main", config = "trimpose.txt", configpath = "ur0:data/", desc = LANGUAGE["INSTALLP_DESC_TRIMPOSE"], KEY = "INSTALLP_DESC_TRIMPOSE",
   crc = 0x72ed507a, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
-{ name = "QuickLauncher by Ibrahim778 (QuickMenuReborn)", id = "QUICKLAUNCHER.png", path = "QuickMenuReborn.suprx", section = "main", config = "QuickMenuReborn.zip", configpath = "ur0:/", desc = LANGUAGE["INSTALLP_DESC_QUICKLAUNCHER"], KEY = "INSTALLP_DESC_QUICKLAUNCHER",
-  crc = 0x6acf244c, v = "v1.2", crc2 = 0x83f771ea, version = "0001",  dl = "QuickMenuReborn.zip", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
+{ name = "(QuickMenuReborn) QuickLauncher by Ibrahim778", id = "QUICKLAUNCHER.png", path = "QuickMenuReborn.suprx", section = "main", config = "QuickLauncher.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_QUICKLAUNCHER"], KEY = "INSTALLP_DESC_QUICKLAUNCHER",
+  crc = 0xfa9d8919, v = "v1.3", crc2 = 0x2dfd5aa3, version = "0002", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
+{ name = "(QuickMenuReborn) DolceWiFi by Ibrahim778", hw = "PlayStation TV", id = "DOLCEWIFI.png", path = "QuickMenuReborn.suprx", section = "main", config = "DolceWiFi.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_DOLCEWIFI"], KEY = "INSTALLP_DESC_DOLCEWIFI",
+  crc = 0x19c6d124, v = "v1.3", crc2 = 0xcdae0b19, version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md", },  
 { name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", config2 = "0.txt", configpath = "ux0:data/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
   crc = 0x42685a0c, v = "v1.1.4", version = "0002", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
 

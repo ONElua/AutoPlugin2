@@ -169,6 +169,7 @@ SPANISH["INSTALLP_OSK_TITLE"] =                         "Texto para Custom Warni
 SPANISH["INSTALLP_OSK_TEXT"] =                          "Escribe tu TEXTO aquí"
 
 SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo funciona en Fat/Slim"
+SPANISH["INSTALLP_WARNING_VITATV"] =                    "Plugin only work in Vita TV"
 
 --Uninstall Plugins
 SPANISH["INSTALLP_DESC_DAEMON"] =                       "Soporte de Servicios para checkear actualizaciones de homebrews en segundo plano mientras se ocupa la consola (necesario para VitaDB-Downloader)"
@@ -476,6 +477,8 @@ SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona l
 SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
 SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de fondo de la pantalla de bloqueo (la que queda una vez se 'pela' la imagen de bloqueo) (formato PNG con paleta de 8 bit no entrelazada. Resolución máxima de 896x448. Peso máximo de 512 Kb)"
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "Plugin para añadir botones que permiten abrir aplicaciones en Quick Menu (menú que sale al mantener presionado el botón PS). Hecho usandoQuickMenuReborn."
+SPANISH["INSTALLP_DESC_QUICKMENUREBORN"] =              "Library for developers to easily add their own widgets, to the vita's Quick Menu."
+SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
 SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(olas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
 
 --ALL
