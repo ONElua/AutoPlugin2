@@ -9,5 +9,5 @@ Online_Langs = {
 { id =  "RUSSIAN",		version = "01.73",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.51",		author =  "KierownikStacji" },
 { id =  "PORTUGUESE_BR",version = "01.37",		author =  "allanaln2009" },
-{ id =  "KOREAN",       version = "01.05",		author =  "DDinghoya" },
+{ id =  "KOREAN",       version = "01.06",		author =  "DDinghoya" },
 }
