@@ -222,8 +222,8 @@ plugins = {
   crc = 0xfa9d8919, v = "v1.3", crc2 = 0x2dfd5aa3, version = "0002", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
 { name = "(QuickMenuReborn) DolceWiFi by Ibrahim778", hw = "PlayStation TV", id = "DOLCEWIFI.png", path = "QuickMenuReborn.suprx", section = "main", config = "DolceWiFi.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_DOLCEWIFI"], KEY = "INSTALLP_DESC_DOLCEWIFI",
   crc = 0x19c6d124, v = "v1.3", crc2 = 0xcdae0b19, version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md", },  
-{ name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", config2 = "0.txt", configpath = "ux0:data/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
-  crc = 0x42685a0c, v = "v1.1.4", version = "0002", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
+{ name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", config2 = "0.txt", configpath = "ux0:data/", configpath2 = "ux0:data/waveparams/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
+  crc = 0x42685a0c, v = "v1.1.4", version = "0003", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
 
 --2 prxs
 { name = "Quietshot by cuevavirus", id = "QUIETSHOT.png", path = "quietshot.suprx", section = "main", path2 = "quietshot.suprx", section2 = "NPXS10095", desc = LANGUAGE["INSTALLP_DESC_QUIETSHOT"], KEY = "INSTALLP_DESC_QUIETSHOT",

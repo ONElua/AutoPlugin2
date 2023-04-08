@@ -248,9 +248,9 @@ function plugins_installation(obj)
 				files.extract(path_plugins..obj.config,obj.configpath)
 			else
 				files.copy(path_plugins..obj.config, obj.configpath)
-				if obj.config2 then files.copy(path_plugins..obj.config2, obj.configpath) end
 			end
 		end
+		if obj.config2 and obj.configpath2 then files.copy(path_plugins..obj.config2, obj.configpath2) end
 
 		--Insert plugin to Config
 		local pathline_in_config = path_tai..obj.path
