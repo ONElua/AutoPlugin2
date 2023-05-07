@@ -79,7 +79,7 @@ CHINESE_S["MENU_PSP_INSTALL_NPDRMFREE"] =              "安装 npdrm free 插件
 CHINESE_S["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "安装 RemasteredControls 插件 (由 TheOfficialFloW 开发)"
 CHINESE_S["MENU_PSP_INSTALL_PLUGINS"] =                "适用于 Adrenaline 的 PSP 插件"
 
-CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
+CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容. 它旨在与 nploader_mod 结合使用, 后者现在支持加密和解密的 DLC."
 CHINESE_S["MENU_PSP_NPDRMFREE_DESC"] =                 "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容."
 CHINESE_S["MENU_PSP_PSPCTRLS_DESC"] =                  "Adrenaline 上适用于 PSP 游戏的双摇杆补丁合集"
 CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP插件"
@@ -169,7 +169,7 @@ CHINESE_S["INSTALLP_OSK_TITLE"] =                      "自定义警告文本"
 CHINESE_S["INSTALLP_OSK_TEXT"] =                       "在这里输入文本"
 
 CHINESE_S["INSTALLP_WARNING_UDCD"] =                   "插件 udcd 适用于 Fat/Slim(1000/2000) 机型"
-CHINESE_S["INSTALLP_WARNING_VITATV"] =                 "Plugin only work in Vita TV"
+CHINESE_S["INSTALLP_WARNING_VITATV"] =                 "该插件仅适用于 Vita TV"
 
 --Uninstall Plugins
 CHINESE_S["INSTALLP_DESC_DAEMON"] =                    "在正常控制台使用期间，为自制软件后台更新检查提供守护进程支持 (VitaDB-Downloader 需要它)"
@@ -367,9 +367,9 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
-CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
+CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input 启用器. 适用于 x-input gamepads (xbox360) 游戏手柄的 Vita 内核驱动."
 CHINESE_S["INSTALLP_DESC_VSHPATCH"] =                  "类似于 repatch, 但适用于系统程序. 这是一个模拟 VS0 分区的插件, 借助于 fios2 的能力, 仅需要将你想做的变动放入 ux0:/vshPatch/ 目录, 之后变更将作用于 vs0: 分区"
-CHINESE_S["INSTALLP_DESC_8BIVITA"] =                   "基本上只是 X1Vita 但支持八位堂(8bitdo) 的 vid, pid 以及按键映射. (兼容的 8bitdo 控制器包括: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+CHINESE_S["INSTALLP_DESC_8BIVITA"] =                   "基本上等同于 X1Vita 但额外支持八位堂(8bitdo) 的 vid, pid 以及按键映射. (兼容的 8bitdo 控制器包括: Lite, Pro, Pro+, Pro 2, & Zero 2)"
 CHINESE_S["INSTALLP_DESC_REAUTH"] =                    "reAuth 允许你在 3.60-3.65 系统环境使用 PlayStation Store 以及登录 PlayStation 网络 (需要 Enso 固化, 在 Henkaku 设置界面开启PSN伪装, 伪装版本设置为最新的 3.73)"
 CHINESE_S["INSTALLP_DESC_DUALSENSE"] =                 "此插件允许您以与 Dualshock 4 控制器相同的方式在 PlayStation TV 或带有 MiniVitaTV 的 PlayStation Vita 上使用 PS5 DualSense 控制器"
 CHINESE_S["INSTALLP_DESC_X1VITA"] =                    "使用 Xbox one 控制器操控您的 Vita! 此插件目前与其他的 vita 控制器插件不兼容!!!!"
@@ -422,7 +422,7 @@ CHINESE_S["INSTALLP_DESC_DERIN"] =                     "Vita 频率 OSD 屏显�
 CHINESE_S["INSTALLP_DESC_LOLITA"] =                    "将您的 Vita 频率一直设置为最大,并禁用密集型游戏中的限制,例如低亮度和断开 Wi-Fi 连接."
 CHINESE_S["INSTALLP_DESC_LOLITA4"] =                   "将您的 Vita 频率一直设置为 444 mhz 并禁用密集型游戏中的限制,例如低亮度和断开 Wi-Fi 连接."
 CHINESE_S["INSTALLP_DESC_PSVSHELL"] =                  "又一个超频插件 (SELECT + UP 或 SELECT + DOWN 实现在3个 GUI 模式间切换)"
-CHINESE_S["INSTALLP_DESC_PSVSHELLPLUS"] =              "适用于 PS Vita 的高级超频&信息展示插件. 提供完整的 GPU 加速 HUD, 精确的内存信息和 FPS 跟踪以及完整的快速菜单集成."
+CHINESE_S["INSTALLP_DESC_PSVSHELLPLUS"] =              "适用于 PS Vita 的高级超频&信息展示插件. 提供完整的 GPU 加速 HUD, 精确的内存信息和 FPS 跟踪以及完整的快捷菜单集成."
 CHINESE_S["INSTALLP_DESC_POCKETSTATION"] =             "在所有 PS1 Classics 游戏上启用 pocketstation 支持"
 CHINESE_S["INSTALLP_DESC_SYSCALL6"] =                  "修补 Playstation Vita 0级的 secure_kernel 系统调用6 (SELF / RVK校验) 的工具,用于运行高版本游戏及已下架应用等."
 CHINESE_S["INSTALLP_DESC_MONAURAL"] =                  "PSVita 的单声道音频和声道平衡 (依赖 MonauralConfig.vpk)"
@@ -476,9 +476,9 @@ CHINESE_S["INSTALLP_DESC_BOOTSOUND"] =             	   "该插件可以在启动
 CHINESE_S["INSTALLP_DESC_QUICKMENU"] =             	   "Quick Menu Plus 合并了 Quick Power, Quick Volume 和 Rapidmenu 的功能, 并添加了新特性. 关闭电源, 重启和待机按钮, 可配置的电源按钮, 音量滑块, 提高快捷菜单开启速度, 自定义背景样式."
 CHINESE_S["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(推荐) 双击休眠插件. 仅当点击屏幕顶端两次时可触发休眠. 在 SceShell (主屏) 则为双击状态栏. 这与 Android 上使用的状态栏双击睡眠功能更相似."
 CHINESE_S["INSTALLP_DESC_FRUITPEEL"] =                 "修改锁屏背景壁纸 (具有8位调色板的非隔行扫描PNG. 最大支持分辨率为 896x448. 文件大小最大支持到 512 KiB)"
-CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "在快速菜单增加按钮, 用于快速启动应用程序. 本插件使用 QuickMenuReborn 制作."
-CHINESE_S["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
-CHINESE_S["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
+CHINESE_S["INSTALLP_DESC_QUICKLAUNCHER"] =             "在快捷菜单增加按钮, 用于快速启动应用程序. 本插件使用 QuickMenuReborn 制作."
+CHINESE_S["INSTALLP_DESC_QUICKMENUREBORN"] =           "供开发人员轻松将自己的小部件添加到 vita 快捷菜单的库."
+CHINESE_S["INSTALLP_DESC_DOLCEWIFI"] =                 "用于在 PSTV (dolce) 系统的快捷菜单中为 WiFi 添加启用/禁用切换开关的插件. 本插件使用 QuickMenuReborn 制作."
 CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL
