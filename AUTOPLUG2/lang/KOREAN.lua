@@ -306,7 +306,7 @@ KOREAN["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "검정색"
 KOREAN["TRANSLATE_ENGLISH_TITLE"] =                 "영어: "
 KOREAN["TRANSLATE_CURRENT_TITLE"] =                 "시스템 언어: "
 KOREAN["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "오토플러그인 언어: "
-KOREAN["TRANSLATE_YOUR_TITLE"] =                    "당신 것: "
+KOREAN["TRANSLATE_YOUR_TITLE"] =                    "당신 언어: "
 KOREAN["SAVE_TRANSLATIONS"] =                       "번역 저장"
 KOREAN["EXIT_SAVE_TRANSLATIONS"] =                  "번역이 저장되지 않았습니다. 종료하기 전에 저장하겠습니까?"
 KOREAN["TRANSLATION_SAVED_1"] =                     "번역이 다음 위치에 저장되었습니다:"
@@ -342,7 +342,7 @@ KOREAN["MENU_TITLE_PLUGINS_ONLINE"] =               "플러그인 업데이트"
 
 --Langs
 KOREAN["JAPANESE"] =                                "일본어"
-KOREAN["KOREAN"] =                              "한국어"
+KOREAN["ENGLISH_US"] =                              "영어_미국"
 KOREAN["FRENCH"] =                                  "프랑스어"
 KOREAN["SPANISH"] =                                 "스페인어"
 KOREAN["GERMAN"] =                                  "독일어"
@@ -477,8 +477,8 @@ KOREAN["INSTALLP_DESC_QUICKMENU"] =             	"퀵 메뉴 플러스는 퀵 �
 KOREAN["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(권장) 이 버전은 터치스크린의 맨 위 부분을 터치해야만 작동합니다. SceShell (홈 화면)에서는 상태 표시줄이 됩니다. 이것은 상태 표시줄에서 사용되는 안드로이드의 두 번 탭하여 절전 모드와 더 유사하게 작동합니다."
 KOREAN["INSTALLP_DESC_FRUITPEEL"] =                 "잠금 화면 배경 화면 변경 (8비트 팔레트 비인터레이스가 있는 PNG. 최대 크기 896x448. 파일 크기 최대 512KiB)"
 KOREAN["INSTALLP_DESC_QUICKLAUNCHER"] =             "빠른 메뉴에서 앱을 빠르게 실행할 수 있는 버튼을 추가하는 플러그인입니다. QuickMenuReborn을 사용하여 만들었습니다."
-KOREAN["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
-KOREAN["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
+KOREAN["INSTALLP_DESC_QUICKMENUREBORN"] =           "개발자가 자신만의 위젯을 쉽게 추가할 수 있는 라이브러리를 비타의 빠른 메뉴에 추가할 수 있습니다."
+KOREAN["INSTALLP_DESC_DOLCEWIFI"] =                 "PSTV (돌체) 시스템의 빠른 메뉴에 WiFi 활성화 / 비활성화 토글을 추가하는 플러그인입니다. QuickMenuReborn을 사용하여 제작되었습니다."
 KOREAN["INSTALLP_DESC_WAVE"] =                      "PS 비타 홈 배경 웨이브 추가 플러그인입니다."
 
 --ALL
