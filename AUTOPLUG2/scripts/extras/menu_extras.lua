@@ -38,8 +38,8 @@ function menu_extras()
 	end
 
 	local menu = {
-		{ text = LANGUAGE["MENU_EXTRAS_DOWNLOAD_TSV"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"],	funct = downloadtsv_callback },
-		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],	desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_DOWNLOAD_TSV"],	    desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"],	funct = downloadtsv_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_RESET_CONFIG"],	    desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"],	funct = resetconfig_callback },
 	}
 
 	if game.exists("PKGJ00000") then
@@ -59,20 +59,20 @@ function menu_extras()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-        screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.2,color.white,0x0,__ACENTER)
+        screen.print(480,20,LANGUAGE["MENU_EXTRAS"],1.0,color.white,color.blue,__ACENTER)
 
         local y = 145
         for i=scroll.ini, scroll.lim do
-			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21)
-				tam = 1.4
-			else tam = 1.2 end
+			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
+			--	tam = 1.4
+			--else tam = 1.2 end
 
-			screen.print(480,y,menu[i].text,tam,color.white,0x0,__ACENTER)
+			screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)
 
 			if i == 2 or i == 3 or i == 7 then
 				y += 70
 			else
-				y += 50
+				y += 45
 			end
         end
 

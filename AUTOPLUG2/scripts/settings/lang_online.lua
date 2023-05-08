@@ -125,7 +125,7 @@ function lang_online()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-        screen.print(480,20,LANGUAGE["MENU_TITLE_LANG_ONLINE"],1.2,color.white,0x0,__ACENTER)
+        screen.print(480,20,LANGUAGE["MENU_TITLE_LANG_ONLINE"],1.0,color.white,color.blue,__ACENTER)
 
 		if scroll.maxim > 0 then
 
@@ -137,9 +137,9 @@ function lang_online()
 				screen.print(30,y, tmpss[i].id.." v "..tmpss[i].version, 1.2, color.white,0x0)
 				
 				if tmpss[i].new then
-					screen.print(945,y,LANGUAGE["LANG_FILE_NEW"],1.2,color.green,0x0,__ARIGHT)
+					screen.print(945,y,LANGUAGE["LANG_FILE_NEW"],1.0,color.green,0x0,__ARIGHT)
 				else
-					screen.print(945,y,LANGUAGE["LANG_FILE_UPDATE"],1.2,color.green,0x0,__ARIGHT)
+					screen.print(945,y,LANGUAGE["LANG_FILE_UPDATE"],1.0,color.green,0x0,__ARIGHT)
 				end
 
 				y+= 45

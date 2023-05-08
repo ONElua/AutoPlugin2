@@ -379,7 +379,7 @@ function autoplugin()
 
 			if i == scr.sel then draw.offsetgradrect(3,y-9,944,33,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			tb_cop[i].len = screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)
+			tb_cop[i].len = screen.print(40,y, tb_cop[i].name, 1.0,color.white,color.blue:a(175),__ALEFT)
 
 			idx = tai.find(tb_cop[i].section,tb_cop[i].path)
 
@@ -390,16 +390,16 @@ function autoplugin()
 				if tb_cop[i].path == "QuickMenuReborn.suprx" and tb_cop[i].configpath then
 					if files.exists(tai.gameid[ tb_cop[i].section ].prx[idx].path) and files.exists(tb_cop[i].configpath..tb_cop[i].config) then
 						if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
-					elseif files.exists(tai.gameid[ tb_cop[i].section ].prx[idx].path) and not files.exists(tb_cop[i].configpath..tb_cop[i].config) then
+					elseif files.exists(tb_cop[i].path_prx) and not files.exists(tb_cop[i].configpath..tb_cop[i].config) then
 						if tb_cop[i].v then
-							screen.print(50 + tb_cop[i].len,y, tb_cop[i].v, 1.2,color.white,color.blue:a(175),__ALEFT)
+							screen.print(50 + tb_cop[i].len,y, tb_cop[i].v, 1.0,color.white,color.blue:a(175),__ALEFT)
 						end
 					else
 						if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
 					end
 
 				else
-					if files.exists(tai.gameid[ tb_cop[i].section ].prx[idx].path) then
+					if files.exists(tb_cop[i].path_prx) then
 						if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
 					else
 						if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
@@ -409,7 +409,7 @@ function autoplugin()
 			else
 
 				if tb_cop[i].v then
-					screen.print(50 + tb_cop[i].len,y, tb_cop[i].v, 1.2,color.white,color.blue:a(175),__ALEFT)
+					screen.print(50 + tb_cop[i].len,y, tb_cop[i].v, 1.0,color.white,color.blue:a(175),__ALEFT)
 				end
 
 			end

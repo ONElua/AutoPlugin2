@@ -110,7 +110,9 @@ CHINESE_S["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM 游戏"
 CHINESE_S["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX 游戏"
 CHINESE_S["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 游戏"
 CHINESE_S["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
+CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
 
+CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "下载 PKGj 的数据库 (TSV 文件)"
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -518,6 +520,9 @@ CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.�
 CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
 CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程序隐藏 ux0:/app/AUTOPLUG2"
 CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard 是一款插件和应用程序, 可让您将 PS Vita 用作 USB 键盘. 主机会认为你的 vita 是一个真正的键盘"
+
+--*PCSC90032
+CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"

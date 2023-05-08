@@ -46,7 +46,7 @@ function autoboot()
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_AUTOBOOT_TITLE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_AUTOBOOT_TITLE"],1.0,color.white,color.blue,__ACENTER)
 
 		local y = 65
 		for i=scroll.ini, scroll.lim do
@@ -72,13 +72,13 @@ function autoboot()
 		--end
 
 		--Current
-		screen.print(13,475,LANGUAGE["CURRENT"]..current,1,color.green, 0x0, __ALEFT)
+		screen.print(13,475,LANGUAGE["CURRENT"]..current,1.0,color.green, 0x0, __ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
-		screen.print(45,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
+		screen.print(45,525,LANGUAGE["STRING_BACK"],1.0,color.white,color.black, __ALEFT)
 
 		if buttonskey3 then buttonskey3:blitsprite(920,518,1) end
-		screen.print(915,522,LANGUAGE["STRING_CLOSE"],1,color.white,color.blue, __ARIGHT)
+		screen.print(915,522,LANGUAGE["STRING_CLOSE"],1.0,color.white,color.blue, __ARIGHT)
 
 		screen.flip()
 

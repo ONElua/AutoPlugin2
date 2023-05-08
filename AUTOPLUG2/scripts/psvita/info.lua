@@ -9,10 +9,6 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
---local VitaNearest_callback = function ()
---	VitaNearest()
---end
-
 local autoboot_callback = function ()
 	autoboot()
 end
@@ -185,7 +181,7 @@ function plugin_info(obj)
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,obj.name,1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,obj.name,1.0,color.white,color.blue,__ACENTER)
 
 		local y1 = 65
 		--if obj.crc and obj.v then

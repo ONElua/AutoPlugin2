@@ -3,7 +3,7 @@ function search_gameid()
 	local descript = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"]
 	for j=1,#plugins do
 		if "INSTALLP_DESC_VITANEARESTN" == plugins[j].KEY then
-			descript = plugins[j].name
+			descript = plugins[j].desc
 		end
 	end
 
@@ -19,7 +19,7 @@ function search_gameid()
 
 	local limit = 9
 	local scroll = newScroll(list_tmp,limit)
-	local xscroll = 13
+	local xscroll,xscroll3 = 13,10
 
 	buttons.interval(10,6)
 	while true do
@@ -30,9 +30,9 @@ function search_gameid()
 		if snow then stars.render() end
 		wave:blit(0.7,50)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],1.2,color.white,0x0,__ACENTER)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],1.0,color.white,color.blue,__ACENTER)
 
 		local y = 65
 		for i=scroll.ini, scroll.lim do
@@ -44,7 +44,7 @@ function search_gameid()
 				screen.print(13, y, list_tmp[i].title,1,color.white,color.blue,__ALEFT)
 			end
 			
-			screen.print(938,y,list_tmp[i].id,1.2,color.white,0x0,__ARIGHT)
+			screen.print(938,y,list_tmp[i].id,1.0,color.white,color.blue,__ARIGHT)
 			y += 45
 		end
 
@@ -57,7 +57,13 @@ function search_gameid()
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
 		--end
 
-		screen.print(480, 490, descript,1,color.white,color.blue,__ACENTER)
+		if descript then
+			if screen.textwidth(descript) > 925 then
+				xscroll3 = screen.print(xscroll3, 490, descript,1,color.green,color.blue,__SLEFT,935)
+			else
+				screen.print(480, 490, descript,1,color.green,color.blue,__ACENTER)
+			end
+		end
 
 		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
 		screen.print(45,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)

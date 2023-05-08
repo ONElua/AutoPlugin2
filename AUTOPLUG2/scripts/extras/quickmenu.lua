@@ -90,7 +90,7 @@ function config_quickmenu()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],1.0,color.white,color.blue,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
 

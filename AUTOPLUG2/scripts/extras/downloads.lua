@@ -107,6 +107,10 @@ function downloads()
 		download_install("https://github.com/ONElua/ONEMenu-for-PSVita", "ONEMenuVita.vpk")
 	end
 
+	local psp2wpp_reload_callback = function ()
+		download_install("https://github.com/Princess-of-Sleeping/psp2wpp-reload/", "psp2wpp_reload.vpk")
+	end
+
 	local menu = {
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"],		funct = vitashell_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2"], desc = LANGUAGE["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"],	funct = vitashell_yoti_callback },
@@ -116,6 +120,7 @@ function downloads()
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"],		funct = itls_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_BATTFIX"],	 desc = LANGUAGE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"],		funct = batteryfixer_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	     desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },
+		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_WAVERELOAD"], desc = LANGUAGE["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"],    funct = psp2wpp_reload_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)
@@ -131,15 +136,15 @@ function downloads()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-        screen.print(480,20,LANGUAGE["MENU_DOWNLOADS"],1.2,color.white,0x0,__ACENTER)
+        screen.print(480,20,LANGUAGE["MENU_DOWNLOADS"],1.0,color.white,color.blue,__ACENTER)
 
         local y = 115
         for i=scroll.ini, scroll.lim do
-			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21)
-				tam = 1.4
-			else tam = 1.2 end
+			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
+			--	tam = 1.4
+			--else tam = 1.2 end
 
-			screen.print(480,y,menu[i].text,tam,color.white,0x0,__ACENTER)
+			screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)
 			y += 45
         end
 

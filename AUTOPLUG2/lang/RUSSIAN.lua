@@ -110,7 +110,9 @@ RUSSIAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM игры"
 RUSSIAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PS1 игры"
 RUSSIAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP игры"
 RUSSIAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP дополнения"
+RUSSIAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
 
+RUSSIAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
 RUSSIAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Обновить списки (файлы TSV) для PKGj"
 RUSSIAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Позволяет изменить настройки PKGj без ручного редактирования файла config.txt"
 RUSSIAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Позволяет выбрать и установить своё изображение, которое будет отображаться при запуске системы"
@@ -518,6 +520,9 @@ RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в �
 RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper разработан для извлечения содержимого книг в формате .MNH (Marlin-Hon), который используется в приложении PS Vita Sony Reader (PCSC80012)"
 RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает наличие установленного AutoPlugin II от других приложений"
 RUSSIAN["INSTALLP_DESC_VITAKEYBOARD"] =              "Тандем из плагина и приложения для использования PS Vita в качестве USB клавиатуры"
+
+--*PCSC90032
+RUSSIAN["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
 
 --*NPXS10013
 RUSSIAN["INSTALLP_DESC_PS4LINK"] =                   "Плагин для принудительного выбора раскладки управления при использовании функции удалённой игры"

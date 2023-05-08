@@ -43,6 +43,7 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "Sysident by cuevavirus", path = "sysident.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"] })
 	table.insert(tb_cop, { name = "Ds4touch by MERLev", path = "ds4touch.skprx", section = "KERNEL", path2 = "ds4touch.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"] })
 	table.insert(tb_cop, { name = "Daemon for Vitadb-Downloader", path = "vdb_daemon.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_DAEMON"] })
+	table.insert(tb_cop, { name = "Vita-Nearest-Neighbour by MuxaJlbl4", path = "VitaNearestNeighbour.suprx", desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"] })
 
 
 	for k,v in pairs(tai.gameid) do
@@ -98,7 +99,7 @@ function pluginsmanager()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
+		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.0,color.white,color.blue, __ACENTER)
 
 		draw.fillrect(870,0,90,40, color.green:a(90))
 		screen.print(900, 12, "ur0:", 1, color.white, color.blue, __ALEFT)

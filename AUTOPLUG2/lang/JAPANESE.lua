@@ -110,7 +110,9 @@ JAPANESE["MENU_EXTRAS_PSM_GAMES_TSV"] =                 "PSM Games"
 JAPANESE["MENU_EXTRAS_PSX_GAMES_TSV"] =                 "PSX Games"
 JAPANESE["MENU_EXTRAS_PSP_GAMES_TSV"] =                 "PSP Games"
 JAPANESE["MENU_EXTRAS_PSP_DLC_TSV"] =                   "PSP DLCs"
+JAPANESE["MENU_EXTRAS_INSTALL_WAVERELOAD"] =            "psp2wpp-reload"
 
+JAPANESE["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =       "You can reload waveparam.txt while editing txt"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =     "Download PKGj Database (TSV files)"
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
@@ -518,6 +520,9 @@ JAPANESE["INSTALLP_DESC_SCOREHAX"] =                    "Instant pro at any game
 JAPANESE["INSTALLP_DESC_HONRIPPER"] =                   "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 JAPANESE["INSTALLP_DESC_HIDEAP"] =                      "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 JAPANESE["INSTALLP_DESC_VITAKEYBOARD"] =                "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
+
+--*PCSC90032
+JAPANESE["INSTALLP_DESC_MIKUA"] =                       "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"

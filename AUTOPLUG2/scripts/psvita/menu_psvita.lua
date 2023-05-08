@@ -13,33 +13,6 @@
 dofile("plugins/plugins.lua")
 if #plugins > 0 then table.sort(plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
---[[
-local fp = io.open("db.json", "w+")
-fp:write("{\n")
-fp:write('	"plugins": [\n')
-for key,value in pairs(plugins) do
-	fp:write("		{\n")
-	if type(value) == "table" then
-		for s,t in pairs(value) do
-			if s == "crc" then
-				fp:write(string.format('			"%s": "0x%x",\n', tostring(s),tonumber(t)) )
-			elseif s == "link" then
-				fp:write(string.format('			"readme": "%s",\n',tostring(t)) )
-			elseif s == "desc" then
-				fp:write(string.format('			"%s": "LANGUAGE["%s"]",\n', tostring(s),tostring(value.KEY)))
-			else
-				fp:write(string.format('			"%s": "%s",\n', tostring(s),tostring(t)) )
-			end
-		end
-		fp:write("		},\n")
-	end
-end
-fp:write('	]\n')
-fp:write('}')
-fp:close()
-
-error("usb")]]
-
 --Funciones PSVITA
 dofile("scripts/psvita/sd2vita.lua")
 dofile("scripts/psvita/pmanager.lua")
@@ -74,6 +47,10 @@ local hd_patch_callback = function ()
 	HD_Patch()
 end
 
+local VitaNearest_callback = function ()
+	VitaNearest()
+end
+
 function menu_ps()
 
 	if tai.find("KERNEL", "storagemgr.skprx") then
@@ -87,6 +64,7 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
 		{ text = LANGUAGE["MENU_DOWNLOADS"],                desc = LANGUAGE["MENU_EXTRAS_DOWNLOADS_DESC"],          funct = downloads_callback },
 		{ text = LANGUAGE["MENU_PSVITA_HD_PATCH"],          desc = LANGUAGE["MENU_PSVITA_HD_PATCH_DESC"],	        funct = hd_patch_callback },
+		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],	desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],	            funct = VitaNearest_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)
@@ -103,20 +81,20 @@ function menu_ps()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_PSVITA_TITLE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_TITLE"],1.0,color.white,color.blue,__ACENTER)
 
 		local y = 115
 		for i=scroll.ini, scroll.lim do
-			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21)
-				tam = 1.4
-			else tam = 1.2 end
+			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
+			--	tam = 1.2
+			--else tam = 1.0 end
 
-			screen.print(480,y,menu[i].text,tam,color.white,0x0,__ACENTER)
+			screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)--color.white,0x0,__ACENTER)
 			
 			if i == 3 then
 				y += 70
 			else
-				y += 50
+				y += 45
 			end
 		end
 

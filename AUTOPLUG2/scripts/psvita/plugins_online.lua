@@ -17,7 +17,7 @@ function psvita_plugins_online()
 	if back then back:blit(0,0) end
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],1.0,color.white,color.blue,__ACENTER)
 		screen.flip()
 	os.delay(500)
 
@@ -41,7 +41,7 @@ function psvita_plugins_online()
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.0,color.white,color.blue,__ACENTER)
 
 		local onNetGetFileOld = onNetGetFile
 		onNetGetFile = nil
@@ -139,7 +139,7 @@ function psvita_plugins_online()
 
 			draw.fillrect(0,0,960,55,color.black:a(100))
 			draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-			screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
+			screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.0,color.white,color.blue,__ACENTER)
 
 			--os.message("Try New Plugin\n"..Online_Plugins[i].path)
 			local vitacheat_path = nil
@@ -211,8 +211,9 @@ function psvita_plugins_online()
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.0,color.white,color.blue,__ACENTER)
 
+		--Descargamos autoplugin.lua para cambios y actualizaciones
 		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/scripts/psvita/autoplugin.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."autoplugin.lua")
 		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."autoplugin.lua") then
 			files.move(tmpdir.."autoplugin.lua","scripts/psvita/")
@@ -325,7 +326,7 @@ function psvita_plugins_online()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-        screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
+        screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.0,color.white,color.blue,__ACENTER)
 
 		if scroll.maxim > 0 then
 

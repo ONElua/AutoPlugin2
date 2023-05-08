@@ -110,7 +110,9 @@ ENGLISH_US["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM Games"
 ENGLISH_US["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX Games"
 ENGLISH_US["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP Games"
 ENGLISH_US["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
+ENGLISH_US["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
 
+ENGLISH_US["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt while editing txt"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "Download PKGj Database (TSV files)"
 ENGLISH_US["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "Change PKGj config.txt options"
 ENGLISH_US["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "Set a custom boot splash image"
@@ -518,6 +520,9 @@ ENGLISH_US["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro at any game
 ENGLISH_US["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 ENGLISH_US["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 ENGLISH_US["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
+
+--*PCSC90032
+ENGLISH_US["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
 
 --*NPXS10013
 ENGLISH_US["INSTALLP_DESC_PS4LINK"] =                   "taiHEN plugin that allows to force preferred Remote Play button configuration"

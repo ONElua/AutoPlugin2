@@ -110,7 +110,7 @@ plugins = {
 { name = "Magic Automatic Fake User Input by Rufis01", id = "MAFUINPUT.png", path = "MAFUinput.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT",
   crc = 0x6322adb1, v = "v2.0-Alpha.1", version = "0003", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "ViXEn by isage", id = "VIXEN.png", path = "vixen.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIXEN"], KEY = "INSTALLP_DESC_VIXEN",
-  crc = 0x342b62a9, v = "v1.3.1", version = "0004", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
+  crc = 0x2fae6df6, v = "v1.4", version = "0005", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH",
@@ -281,7 +281,9 @@ plugins = {
 
 --{ name = "forcelang by xdanieldzd v0.2U", id = "FORCELANG.png", path = "forcelang.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FORCELANG"], KEY = "INSTALLP_DESC_FORCELANG", link = "https://raw.githubusercontent.com/xdanieldzd/forcelang/master/README.md", },
 
-
+--*PCSC90032
+{ name = "MikuAR by Avellea", id = "MIKUAR.png", path = "mikuar.suprx", section = "PCSC90032", desc = LANGUAGE["INSTALLP_DESC_MIKUAR"], KEY = "INSTALLP_DESC_MIKUAR",
+  crc = 0x3623d5d1, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/Avellea/mikuar/main/README.md", },
 --*PCSC80012
 { name = "HonRipper by GrapheneCt", id = "HONRIPPER.png", path = "HonRipper.suprx", section = "PCSC80012", desc = LANGUAGE["INSTALLP_DESC_HONRIPPER"], KEY = "INSTALLP_DESC_HONRIPPER",
   crc = 0xbef04e02, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/HonRipper/master/README.md", },
@@ -308,8 +310,8 @@ plugins = {
 { name = "Catherine Full Body HD 1280x720", id = "CATHERINEHD.png", path = "catherinefbhd.suprx", desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"], KEY = "MENU_PSVITA_INSTALL_P4G_HD_DESC", REMOVE = true,
   crc = 0xb1829bcf, v = "v1.2.0", version = "0001", },
 -- Special Vita-Nearest-Neighbour
-{ name = "Vita-Nearest-Neighbour by MuxaJlbl4", id = "VITANEARESTN.png", path = "VitaNearestNeighbour.suprx", desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"], KEY = "INSTALLP_DESC_VITANEARESTN",
-  crc = 0x2b24ba03, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md", REMOVE = true, },
+{ name = "Vita-Nearest-Neighbour by MuxaJlbl4", id = "VITANEARESTN.png", path = "VitaNearestNeighbour.suprx", desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"], KEY = "INSTALLP_DESC_VITANEARESTN", REMOVE = true,
+  crc = 0x2b24ba03, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md", },
 -- GameSDCard
 { name = "StorageMgr by CelesteBlue & Yoti (SD2VITA)", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"], KEY = "MENU_PSVITA_INSTALL_SD2VITA_DESC", REMOVE = true,
   crc = 0x8e496388, v = "v3.4",version = "0001",link = "https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md", },

@@ -1,3 +1,14 @@
+#v2.04
+++ Re-Added Vita Nearest Neighbour plugin by MuxaJlbl4
+++ Added MikuAR v1.0 plugin by Avellea
+++ Updated Vixen v1.4 plugin by isage
+
+#v2.03
+++ Added support for QuickmenuReborn addons
+++ Added Dolcewifi plugin (PSVita TV)
+++ Updated QuickLauncher plugin 
+++ Updated VolLightbarCtrlWithDS4 plugin 
+
 #v2.02
 ++ Added npdrm free mod and nploader mod (psp plugins)
 ++ Updated vixen and psp2wpp plugins

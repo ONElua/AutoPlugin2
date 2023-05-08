@@ -44,7 +44,7 @@ function autoboot()
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_AUTOBOOT_TITLE"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_AUTOBOOT_TITLE"],1.0,color.white,0x0,__ACENTER)
 
 		local y = 65
 		for i=scroll.ini, scroll.lim do
@@ -56,7 +56,7 @@ function autoboot()
 				screen.print(13, y, list_tmp[i].title,1,color.white,color.blue,__ALEFT)
 			end
 			
-			screen.print(938,y,list_tmp[i].id,1.2,color.white,0x0,__ARIGHT)
+			screen.print(938,y,list_tmp[i].id,1.0,color.white,0x0,__ARIGHT)
 			y += 45
 		end
 

@@ -135,7 +135,7 @@ function psp_plugins_manager()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["PSP_PLUGINS_MANAGER"],1.2,color.white,0x0,__ACENTER)
+		screen.print(480,20,LANGUAGE["PSP_PLUGINS_MANAGER"],1.0,color.white,color.blue,__ACENTER)
 		if plugins_manager[selector][conf].config then
 			screen.print(13, 65, "<< "..plugins_manager[selector][conf].config.." ("..scroll.maxim..")  >>", 1, color.yellow, 0x0)
 		end

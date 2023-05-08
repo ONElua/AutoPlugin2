@@ -110,7 +110,9 @@ KOREAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM 게임"
 KOREAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX 게임"
 KOREAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 게임"
 KOREAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLC"
+KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
 
+KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
 KOREAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "PKGj 데이터베이스 다운로드 (TSV 파일)"
 KOREAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "PKGj config.txt 옵션 변경"
 KOREAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "커스텀 부팅 화면 이미지 설정"
@@ -518,6 +520,9 @@ KOREAN["INSTALLP_DESC_SCOREHAX"] =                  "모든 게임에서 인스�
 KOREAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper는 소니의 .MNH(Marlin-Hon) 책 형식의 콘텐츠를 추출하도록 설계된 PS 비타 소니 리더 응용 프로그램 (PCSC80012)용 플러그인"
 KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 ux0:/app/AUTOPLUG2 숨김"
 KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 애플리케이션입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
+
+--*PCSC90032
+KOREAN["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
 
 --*NPXS10013
 KOREAN["INSTALLP_DESC_PS4LINK"] =                   "선호하는 원격 재생 버튼 구성을 강제할 수 있는 taiHEN 플러그인"
