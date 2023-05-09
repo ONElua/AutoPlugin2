@@ -110,10 +110,10 @@ KOREAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM 게임"
 KOREAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX 게임"
 KOREAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 게임"
 KOREAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLC"
-KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
+KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-리로드"
 
-KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
 KOREAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "PKGj 데이터베이스 다운로드 (TSV 파일)"
+KOREAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "PKGj 데이터베이스(TSV 파일) 다운로드"
 KOREAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "PKGj config.txt 옵션 변경"
 KOREAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "커스텀 부팅 화면 이미지 설정"
 KOREAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "ENSO로 부팅할 때 커스텀 경고 메시지 (간질 경고 대신) 설정"
@@ -128,7 +128,7 @@ KOREAN["MENU_EXTRAS_INSTALL_ONEMENU_DESC"] =        "PS비타용 원메뉴는 �
 KOREAN["MENU_EXTRAS_INSTALL_SHARKB33D_DESC"] =      "ShaRKBR33D는 libshacccg.suprx의 올인원 자동화 원클릭 추출기/설치 프로그램입니다."
 KOREAN["MENU_EXTRAS_TRANSLATE_DESC"] =              "현지 언어로 번역하여 오토플러그인 II를 개선하는 데 도움을 주세요!"
 KOREAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "경고!!! 이 옵션은 ur0:tai/config.txt를 재설정"
-KOREAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 경고!!!\n\n설치된 모든 플러그인이 제거됩니다!!!\n\ur0:tai/config.txt를 재설정하겠습니까?"
+KOREAN["MENU_EXTRAS_QUESTION_RESET_CONFIG"] =       "\n                                 경고!!!\n\n설치된 모든 플러그인이 제거됩니다!!!\n\nur0:tai/config.txt를 재설정하겠습니까?"
 KOREAN["MENU_EXTRAS_QUICKMENU_DESC"] =              "구성 가능한 전원 버튼, 빠른 메뉴 열기 시간 및 커스텀 배경 스타일"
 KOREAN["MENU_EXTRAS_AUTOBOOT_DESC"] =               "부팅할 때 실행할 앱/게임을 선택할 수 있음"
 
@@ -522,7 +522,7 @@ KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 
 KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 애플리케이션입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
 
 --*PCSC90032
-KOREAN["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
+KOREAN["INSTALLP_DESC_MIKUA"] =                     "언제든 `PCSC90032`를 실행할 수 있는 플레이스테이션 비타 플러그인입니다."
 
 --*NPXS10013
 KOREAN["INSTALLP_DESC_PS4LINK"] =                   "선호하는 원격 재생 버튼 구성을 강제할 수 있는 taiHEN 플러그인"
