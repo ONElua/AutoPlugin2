@@ -40,7 +40,7 @@ plugins = {
 { name = "NoAVLS by SilicaAndPina", id = "NOAVLS.png", path = "noavls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NOAVLS"], KEY = "INSTALLP_DESC_NOAVLS",
   crc = 0xdcbae19b, v = "v0.01", version = "0001", link = "https://silica.codes/SilicaAndPina/noavls/raw/branch/master/README.md", },
 { name = "Repatch reLoaded by SonicMastr", id = "REPATCHEX.png", path = "repatch_ex.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCHEX"], KEY = "INSTALLP_DESC_REPATCHEX",
-  crc = 0xd0f55082, v = "v1.2 Hotfix", version = "0002", link = "https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md", },
+  crc = 0x07aa6942, v = "v2.0", version = "0003", link = "https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md", },
 { name = "Repatch by dots-tb",	id = "REPATCH.png", path = "repatch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCH"], KEY = "INSTALLP_DESC_REPATCH",
   crc = 0x56d22ee4, v = "v3.0", version = "0001", link = "https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md", },
 { name = "Repatch by dots-tb", id = "REPATCH.png", path = "repatch_4.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCH271"], KEY = "INSTALLP_DESC_REPATCH271",
@@ -153,7 +153,7 @@ plugins = {
 
 --with config&configpath&2 prxs
 { name = "PSVshellPlus by GrapheneCt", id = "PSVSHELLPLUS.png", path = "PSVshellPlus_Kernel.skprx", section = "KERNEL", path2 = "PSVshellPlus_Shell.suprx", section2 = "main", config = "PSVshell.zip", configpath = "ur0:data/", tai_del1 = "PSVshell.skprx", section_del1 = "KERNEL",
-  crc = 0x4f12065b, v = "v1.3", crc2 = 0xb126009b, version = "0002", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
+  crc = 0xfd3be8e7, v = "v1.4", crc2 = 0x7E5B79BC, version = "0003", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
 
 
 --Main [SECTION]
