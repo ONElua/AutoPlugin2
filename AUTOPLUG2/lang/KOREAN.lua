@@ -112,11 +112,11 @@ KOREAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 게임"
 KOREAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLC"
 KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
 
-KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
+KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "txt를 편집하는 동안 waveparam.txt를 다시 로드할 수 있음"
 KOREAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "PKGj 데이터베이스 다운로드 (TSV 파일)"
 KOREAN["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "PKGj config.txt 옵션 변경"
 KOREAN["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "커스텀 부팅 화면 이미지 설정"
-KOREAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "ENSO로 부팅할 때 커스텀 경고 메시지 (간질 경고 대신) 설정"
+KOREAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "ENSO로 부팅할 때 커스텀 경고 메시지 (뇌전증 경고 대신) 설정"
 KOREAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "투명도 수준 (255 = 0% 투명도, 0 = 100% 투명도)을 30 미만으로 설정하는 것은 권장되지 않음"
 KOREAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Enso 지원 장치에 TLS v1.2 추가"
 KOREAN["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "비타쉘은 PS 비타의 LiveArea를 대체하는 대안입니다. 파일 관리자, 패키지 설치 프로그램, 내장 FTP 등을 제공합니다."
@@ -454,7 +454,7 @@ KOREAN["INSTALLP_DESC_USBDISABLE"] =                "비타를 컴퓨터에 연�
 KOREAN["INSTALLP_DESC_DENABLER"] =                  "탐색기를 통해 파일 다운로드"
 KOREAN["INSTALLP_DESC_NOLOCKSCREEN"] =              "PS비타에서 찾은 잠금 화면 비활성화"
 KOREAN["INSTALLP_DESC_NOTROPHYMSG"] =               "저장 데이터가 다른 계정에 연결된 응용 프로그램을 시작할 때 트로피 힌트 메시지를 비활성화합니다. 지속적으로 계정을 전환하는 경우에 유용"
-KOREAN["INSTALLP_DESC_CUSTOMWARNING"] =             "ENSO로 부팅할 때 간질 경고 대신 사용자 지정 경고 메시지를 설정할 수 있음"
+KOREAN["INSTALLP_DESC_CUSTOMWARNING"] =             "ENSO로 부팅할 때 뇌전증 경고 대신 사용자 지정 경고 메시지를 설정할 수 있음"
 KOREAN["INSTALLP_DESC_SHELLBAT"] =                  "상태 표시줄의 배터리 백분율"
 KOREAN["INSTALLP_DESC_SHELLBATM"] =                 "상태 표시줄의 배터리 백분율 및 IP 주소"
 KOREAN["INSTALLP_DESC_SHELLSECBAT"] =               "상태 표시줄의 배터리 비율: ShellBat 및 LastSeconds 퓨전 (선택 + L 버튼 또는 선택 + R 버튼은 드라이브 상태 시각화)"
@@ -522,7 +522,7 @@ KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 
 KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 애플리케이션입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
 
 --*PCSC90032
-KOREAN["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
+KOREAN["INSTALLP_DESC_MIKUA"] =                     "언제든 `PCSC90032`를 실행할 수 있는 PlayStation Vita 플러그인입니다."
 
 --*NPXS10013
 KOREAN["INSTALLP_DESC_PS4LINK"] =                   "선호하는 원격 재생 버튼 구성을 강제할 수 있는 taiHEN 플러그인"
