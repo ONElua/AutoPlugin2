@@ -253,6 +253,8 @@ Online_Plugins = {
   crc = 0x9420f9c2, v = "v0.6", version = "0001", },
 { name = "Volume Control Pack by GrapheneCt", id = "VOLUMECTRL.png", path = "ModalVol.suprx", section = "ALL", desc = LANGUAGE["INSTALLP_DESC_MODALVOL"], KEY = "INSTALLP_DESC_MODALVOL",
   crc = 0xc7e873f6, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md", },
+{ name = "Adrenaline usb enabler by isage", id = "ADRUSBENABLER.pmg", path = "adrenaline_usb_enabler.suprx", section = "ALL", desc = LANGUAGE["INSTALLP_DESC_ADRUSBENABLER"], KEY = "INSTALLP_DESC_ADRUSBENABLER",
+  crc = 0x69463a6a, v = "v0.1", version = "0001", link = "https://raw.githubusercontent.com/isage/adrenaline_usb_enabler/master/README.md", },
 --{ name = "hide-autoplugin by SilicaAndPina", id = "HIDEAP.png", path = "hide-autoplugin.suprx", section = "ALL", desc = LANGUAGE["INSTALLP_DESC_HIDEAP"], KEY = "INSTALLP_DESC_HIDEAP", link = "https://silica.codes/SilicaAndPina/hide-autoplugin/raw/branch/main/README.md",
 --  crc = 0x3282486c , v = "v1.0", version = "0001", },
 

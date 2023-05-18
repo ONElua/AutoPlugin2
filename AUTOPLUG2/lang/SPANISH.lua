@@ -484,6 +484,7 @@ SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin to add an enable
 SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(olas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
 
 --ALL
+SPANISH["INSTALLP_DESC_ADRUSBENABLER"] =                "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
 SPANISH["INSTALLP_DESC_3GDISABLE"] =                    "Esta es la manera correcta de desactivar el 3G de PS Vita. Tiene el efecto de engañar al sistema haciendole pensar que es una PS Vita con solo WiFi"
 SPANISH["INSTALLP_DESC_VITANEARESTN"] =                 "Sencillo Plugin de taiHEN para PS Vita que sobreescribe el muestreo de texturas (las distintas formas de mostrar texturas). Fuerza el renderizado, en vez de usar filtrado Lineal, lo hace con el método Point Filtering (Filtrado por Punto. Interpolación por Nearest-Neighbor o Vecino más Cercano en Español)"
 SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"

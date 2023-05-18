@@ -484,6 +484,7 @@ CHINESE_S["INSTALLP_DESC_DOLCEWIFI"] =                 "用于在 PSTV (dolce) �
 CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL
+CHINESE_S["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
 CHINESE_S["INSTALLP_DESC_3GDISABLE"] =                 "这是禁用 3g 的正确方法. 它的本质上的功能是欺骗系统, 让它认为这是一个普通的仅支持 WiFi 的 Vita"
 CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "适用于 PS Vita 的简单的大变革插件, 用于覆盖纹理采样. 强制使用点过滤方法(最近邻插值)而非线性渲染."
 CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."

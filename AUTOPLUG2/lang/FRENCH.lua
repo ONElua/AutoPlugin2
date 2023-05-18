@@ -484,6 +484,7 @@ FRENCH["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / d
 FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL
+FRENCH["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
 FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "C'est la bonne façon de désactiver la fonction 3G de la PSVita. Cela a essentiellement pour effet de faire croire au système qu'il s'agit d'un modèl Wi-Fi."
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
 FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."

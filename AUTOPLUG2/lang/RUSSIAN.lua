@@ -484,6 +484,7 @@ RUSSIAN["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / 
 RUSSIAN["INSTALLP_DESC_WAVE"] =                      "Плагин для добавления анимации волн на фоне домашнего экрана PS Vita"
 
 --ALL
+RUSSIAN["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
 RUSSIAN["INSTALLP_DESC_3GDISABLE"] =                 "Самый правильный способ отключения 3G функционала. Плагин заставляет прошивку думать, что она работает на обычной модели без 3G (только Wi-Fi)"
 RUSSIAN["INSTALLP_DESC_VITANEARESTN"] =              "Несложный плагин, который перехватывает механизм обработки текстур и позволяет интерполировать их методом ближайшего соседа (ступенчатой интерполяцией)"
 RUSSIAN["INSTALLP_DESC_DT2S"] =                      "Эта версия блокирует устройство при двойном касании в любой точке экрана. Не рекомендуется использовать из-за возможных случайных нажатий"

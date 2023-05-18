@@ -484,6 +484,7 @@ POLISH["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / d
 POLISH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
+POLISH["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
 POLISH["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 POLISH["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 POLISH["INSTALLP_DESC_DT2S"] =                      "TA wersja działa tylko po podwójnym stuknięciu w ekran dotykowy. Nie jest zalecana, gdyż często dochodzi do odblokowania ekranu po podwójnym doknięciu."
