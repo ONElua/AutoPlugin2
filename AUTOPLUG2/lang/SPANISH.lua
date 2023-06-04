@@ -79,7 +79,7 @@ SPANISH["MENU_PSP_INSTALL_NPDRMFREE"] =                 "Instalar el Plugin NPDR
 SPANISH["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =          "Instalar el Plugin RemasteredControls de TheOfficialFloW"
 SPANISH["MENU_PSP_INSTALL_PLUGINS"] =                   "Plugins de PSP para Adrenaline"
 
-SPANISH["MENU_PSP_NPDRMFREE_MOD_DESC"] =                "A PSP/ePSP plugin to run official NPDRM PS1/PSP content without need of a valid .rif license or act.dat. It is intended to be used in conjuction with nploader_mod which now supports both encrypted and decrypted DLC."
+SPANISH["MENU_PSP_NPDRMFREE_MOD_DESC"] =                "Un plugin para PSP/ePSP que permite correr contenido oficial de PS1/PSP con NPDRM, sin la necesidad de licencias .rif o act.dat válidos. Pensado para ser usado en conjunto con nploader_mod, el cual ahora soporta tanto DLCs encriptados como desencriptados"
 SPANISH["MENU_PSP_NPDRMFREE_DESC"] =                    "Un plugin para PSP/ePSP que permite correr contenido oficial de PS1/PSP con NPDRM, sin la necesidad de licencias .rif o act.dat válidos"
 SPANISH["MENU_PSP_PSPCTRLS_DESC"] =                     "Colección de parches para Adrenaline que permite usar los dos analógicos en determinados juegos de PSP"
 SPANISH["MENU_PSP_PLUGINS_DESC"] =                      "Instala Plugins de PSP para Adrenaline"
@@ -112,7 +112,7 @@ SPANISH["MENU_EXTRAS_PSP_GAMES_TSV"] =                  "Juegos PSP"
 SPANISH["MENU_EXTRAS_PSP_DLC_TSV"] =                    "DLCs PSP"
 SPANISH["MENU_EXTRAS_INSTALL_WAVERELOAD"] =             "psp2wpp-reload"
 
-SPANISH["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =        "You can reload waveparam.txt while editing txt"
+SPANISH["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =        "Puedes recargar el archivo waveparam.txt mientras editas el txt"
 SPANISH["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =      "Descarga la Base de Datos usada en PKGj (Archivos TSV)"
 SPANISH["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =         "Permite personalizar las opciones en config.txt para PKGj"
 SPANISH["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =          "Permite establecer una Imagen Personalizada al iniciar tu PS Vita."
@@ -170,8 +170,8 @@ SPANISH["INSTALLP_WARNING_REFOOD"] =                    "Para que el Plugin ReFo
 SPANISH["INSTALLP_OSK_TITLE"] =                         "Texto para Custom Warning"
 SPANISH["INSTALLP_OSK_TEXT"] =                          "Escribe tu TEXTO aquí"
 
-SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo funciona en Fat/Slim"
-SPANISH["INSTALLP_WARNING_VITATV"] =                    "Plugin only work in Vita TV"
+SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo funciona en modelo Fat/Slim"
+SPANISH["INSTALLP_WARNING_VITATV"] =                    "Plugin solo funciona en PSTV"
 
 --Uninstall Plugins
 SPANISH["INSTALLP_DESC_DAEMON"] =                       "Soporte de Servicios para checkear actualizaciones de homebrews en segundo plano mientras se ocupa la consola (necesario para VitaDB-Downloader)"
@@ -369,7 +369,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_VIXEN"] =                        "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
+SPANISH["INSTALLP_DESC_VIXEN"] =                        "Vita X-input Enabler. Driver de Kernel para PS Vita para los controles X-Input (Xbox 360)"
 SPANISH["INSTALLP_DESC_VSHPATCH"] =                     "Plugin similar a rePatch, pero para aplicaciones del Sistema. Es una partición VS0 emulada, simplemente pon los cambios que quieres realizar dentro de la carpeta ux0:/vshPatch/ y los cambios se verán reflejados en la partición vs0: , a traves del poder de fios2"
 SPANISH["INSTALLP_DESC_8BIVITA"] =                      "Básiscamente es el Plugin X1Vita, pero con el mapping (mapeado de botones), vid(Id de Vendedor) y pid(Id de Producto) de 8bitdo. (Controles de 8bitdo compatibles: Lite, Pro, Pro+, Pro 2, y Zero 2)"
 SPANISH["INSTALLP_DESC_REAUTH"] =                       "reAuth te permite usar la PlayStation Store e ingresar (hacer Login) en PlayStation Network en FW 3.60-3.65 (Se requiere de Enso, Habilitar el spoofing de PSN en los ajustes de Henkaku, y que la versión de spoof sea 3.73)"
@@ -479,12 +479,12 @@ SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona l
 SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
 SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de fondo de la pantalla de bloqueo (la que queda una vez se 'pela' la imagen de bloqueo) (formato PNG con paleta de 8 bit no entrelazada. Resolución máxima de 896x448. Peso máximo de 512 Kb)"
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "Plugin para añadir botones que permiten abrir aplicaciones en Quick Menu (menú que sale al mantener presionado el botón PS). Hecho usandoQuickMenuReborn."
-SPANISH["INSTALLP_DESC_QUICKMENUREBORN"] =              "Library for developers to easily add their own widgets, to the vita's Quick Menu."
-SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
+SPANISH["INSTALLP_DESC_QUICKMENUREBORN"] =              "Libreria para desarrolladores que permite añadir tus propios widgets (funciones) al Quick Menu (menú que sale al mantener presionado el botón PS) de PS Vita"
+SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin que añade un switch para habilitar/deshabilitar la conexión WiFi en el Quick Menu en los sistemas PSTV (dolce). Hecho usando QuickMenuReborn"
 SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(olas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
 
 --ALL
-SPANISH["INSTALLP_DESC_ADRUSBENABLER"] =                "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
+SPANISH["INSTALLP_DESC_ADRUSBENABLER"] =                "Plugin de PS Vita que activa la conexión por USB entre Adrenaline y sistemas PS2/PS3"
 SPANISH["INSTALLP_DESC_3GDISABLE"] =                    "Esta es la manera correcta de desactivar el 3G de PS Vita. Tiene el efecto de engañar al sistema haciendole pensar que es una PS Vita con solo WiFi"
 SPANISH["INSTALLP_DESC_VITANEARESTN"] =                 "Sencillo Plugin de taiHEN para PS Vita que sobreescribe el muestreo de texturas (las distintas formas de mostrar texturas). Fuerza el renderizado, en vez de usar filtrado Lineal, lo hace con el método Point Filtering (Filtrado por Punto. Interpolación por Nearest-Neighbor o Vecino más Cercano en Español)"
 SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"
@@ -523,7 +523,7 @@ SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
 
 --*PCSC90032
-SPANISH["INSTALLP_DESC_MIKUA"] =                        "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
+SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr  Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
