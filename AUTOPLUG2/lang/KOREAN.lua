@@ -484,7 +484,7 @@ KOREAN["INSTALLP_DESC_DOLCEWIFI"] =                 "PSTV (돌체) 시스템의 
 KOREAN["INSTALLP_DESC_WAVE"] =                      "PS 비타 홈 배경 웨이브 추가 플러그인입니다."
 
 --ALL
-KOREAN["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
+KOREAN["INSTALLP_DESC_ADRUSBENABLER"] =             "아드레날린과 PS2/PS3 간의 USB 페어링을 지원하는 PS비타 플러그인"
 KOREAN["INSTALLP_DESC_3GDISABLE"] =                 "이것은 3g를 비활성화하는 적절한 방법입니다. 이것은 본질적으로 이것이 일반 WiFi 전용 비타라고 생각하도록 시스템을 속이는 효과가 있습니다."
 KOREAN["INSTALLP_DESC_VITANEARESTN"] =              "텍스처 샘플링을 무시하는 플레이스ㅔ이션 비타용 간단한 taiHEN 플러그인. 선형 대신 점 필터링 방법 (최근접 이웃 보간)으로 강제 렌더링"
 KOREAN["INSTALLP_DESC_DT2S"] =                      "이 버전은 화면의 아무 곳이나 두 번 탭하면 작동합니다. 이 버전이 권장되지 않는 유일한 이유는 원하지 않을 때 터치 스크린을 두 번 탭할 수 있기 때문입니다."
