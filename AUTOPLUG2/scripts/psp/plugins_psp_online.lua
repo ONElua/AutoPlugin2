@@ -206,12 +206,17 @@ function psp_plugins_online()
 			if #psp_plugins > 0 then table.sort(psp_plugins, function (a,b) return string.lower(a.name)<string.lower(b.name) end) end
 
 		--aqui actualizar plugins en pspemu/seplugins
-
-			local plugins_status={}
-			read_configs(pluginsP,plugins_status)
-
 			local tb_cop = {}
 			update_translations(pluginsP, tb_cop)
+
+			for k = #tb_cop,1,-1 do
+				if tb_cop[k].REMOVE then
+					table.remove(tb_cop,k)
+				end
+			end
+
+			local plugins_status={}
+			read_configs(tb_cop,plugins_status)
 
 			--Update plugin???
 			for i=1,#tb_cop do
@@ -221,7 +226,7 @@ function psp_plugins_online()
 						--os.message("plugins: "..tb_cop[i].path.."\nupdates: "..tmp_plugins[j].path)
 						for k=1, #PMounts do
 							if plugins_status[ PMounts[k]..tb_cop[i].name:lower() ] then
-								os.message(PMounts[k].."pspemu/"..tb_cop[i].path)
+								--os.message(PMounts[k].."pspemu/"..tb_cop[i].path)
 								--install plugin
 								files.copy("resources/plugins_psp/"..tb_cop[i].name, PMounts[k].."pspemu/"..tb_cop[i].path)
 
@@ -235,11 +240,17 @@ function psp_plugins_online()
 				end
 			end
 
-			local plugins_status={}
-			read_configs_pspctrls(psp_plugins,plugins_status)
-
 			local tb_cop = {}
-			update_translations(psp_plugins, tb_cop)
+			update_translations(pluginsP, tb_cop)
+
+			for k = #tb_cop,1,-1 do
+				if tb_cop[k].REMOVE then
+					table.remove(tb_cop,k)
+				end
+			end
+
+			local plugins_status={}
+			read_configs_pspctrls(tb_cop,plugins_status)
 
 			--Update psp_plugins???
 			for i=1,#tb_cop do
@@ -249,7 +260,7 @@ function psp_plugins_online()
 						--os.message("plugins: "..tb_cop[i].path.."\nupdates: "..tmp_plugins[j].path)
 						for k=1, #PMounts do
 							if plugins_status[ PMounts[k]..tb_cop[i].path:lower() ] then
-								os.message(PMounts[k].."pspemu/seplugins/"..tb_cop[i].path)
+								--os.message(PMounts[k].."pspemu/seplugins/"..tb_cop[i].path)
 								--install plugin
 								files.copy("resources/plugins_psp/controls_psp/"..tb_cop[i].path, PMounts[k].."pspemu/seplugins/")
 							end
