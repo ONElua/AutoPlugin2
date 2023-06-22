@@ -83,6 +83,7 @@ GERMAN["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to run of
 GERMAN["MENU_PSP_NPDRMFREE_DESC"] =                 "Ein PSP / ePSP-Plugin zum Ausführen offizieller NPDRM PS1 / PSP-Inhalte ohne gültige .rif-Lizenz oder act.dat."
 GERMAN["MENU_PSP_PSPCTRLS_DESC"] =                  "Eine Sammlung von Dual Analogstick Patches für PSP-Spiele (Adrenaline)"
 GERMAN["MENU_PSP_PLUGINS_DESC"] =                   "Installiere PSP Plugins für Adrenaline"
+GERMAN["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
 
 --Options Extras
 GERMAN["MENU_EXTRAS_PKGJ_TITLE"] =                  "Optionen für PKGJ Config"
@@ -369,6 +370,8 @@ GERMAN["TURKISH"] =                                 "Türkisch"
 GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den Speicher automatisch an eine beliebige Partition anbringt (SD2VITA)"
 
 --KERNEL
+GERMAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+GERMAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
 GERMAN["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 GERMAN["INSTALLP_DESC_VSHPATCH"] =                  "Like repatch, but for system applications. this is an emulated VS0, simply put your changes you want to make into ux0:/vshPatch/ and then the changes will be reflected in vs0: partition, via the power of fios2"
 GERMAN["INSTALLP_DESC_8BIVITA"] =                   "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"

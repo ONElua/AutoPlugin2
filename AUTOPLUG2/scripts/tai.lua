@@ -404,6 +404,7 @@ if __AUTO == 1 then
 		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
+		  { path = "ur0:tai/NoPspEmuDrm_kern.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/nonpdrm_un.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
 		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },

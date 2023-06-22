@@ -83,6 +83,7 @@ CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "一个 PSP/ePSP 插件,�
 CHINESE_S["MENU_PSP_NPDRMFREE_DESC"] =                 "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容."
 CHINESE_S["MENU_PSP_PSPCTRLS_DESC"] =                  "Adrenaline 上适用于 PSP 游戏的双摇杆补丁合集"
 CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP插件"
+CHINESE_S["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
 
 --Options Extras
 CHINESE_S["MENU_EXTRAS_PKGJ_TITLE"] =                  "PKGj 配置选项"
@@ -369,6 +370,8 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+CHINESE_S["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
 CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input 启用器. 适用于 x-input gamepads (xbox360) 游戏手柄的 Vita 内核驱动."
 CHINESE_S["INSTALLP_DESC_VSHPATCH"] =                  "类似于 repatch, 但适用于系统程序. 这是一个模拟 VS0 分区的插件, 借助于 fios2 的能力, 仅需要将你想做的变动放入 ux0:/vshPatch/ 目录, 之后变更将作用于 vs0: 分区"
 CHINESE_S["INSTALLP_DESC_8BIVITA"] =                   "基本上等同于 X1Vita 但额外支持八位堂(8bitdo) 的 vid, pid 以及按键映射. (兼容的 8bitdo 控制器包括: Lite, Pro, Pro+, Pro 2, & Zero 2)"

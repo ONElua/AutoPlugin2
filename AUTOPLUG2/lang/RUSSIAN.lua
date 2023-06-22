@@ -83,6 +83,7 @@ RUSSIAN["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "Плагин позвол�
 RUSSIAN["MENU_PSP_NPDRMFREE_DESC"] =                 "Плагин позволяет запускать зашифрованные PSP игры в формате EBOOT.PBP без их покупки (обход ошибки 80010087)"
 RUSSIAN["MENU_PSP_PSPCTRLS_DESC"] =                  "Сборник плагинов для переноса управления камерой на правый аналог в PSP играх в Adrenaline"
 RUSSIAN["MENU_PSP_PLUGINS_DESC"] =                   "Установить PSP плагины, также работающие в Adrenaline"
+RUSSIAN["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
 
 --Options Extras
 RUSSIAN["MENU_EXTRAS_PKGJ_TITLE"] =                  "Изменение различных настроек PKGj"
@@ -369,6 +370,8 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+RUSSIAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
 RUSSIAN["INSTALLP_DESC_VIXEN"] =                     "Плагин для поддержки XInput совместимых проводных контроллеров (таких, как контроллер Xbox 360)"
 RUSSIAN["INSTALLP_DESC_VSHPATCH"] =                  "Функции плагина аналогичны rePatch, но только для системных приложений. Создаётся ''виртуальный раздел'' vs0 в папке ux0:/vshPatch/, куда можно помещать свои изменённые файлы вместо настоящего раздела vs0"
 RUSSIAN["INSTALLP_DESC_8BIVITA"] =                   "Аналог X1Vita, только с 8BitDo VID/PID и раскладкой кнопок (совместимые модели: Lite, Pro, Pro+, Pro 2 и Zero 2)"

@@ -83,6 +83,7 @@ PORTUGUESE_BR["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "A PSP/ePSP plugin to
 PORTUGUESE_BR["MENU_PSP_NPDRMFREE_DESC"] =                 "Um plugin PSP/ePSP para executar o conteúdo oficial do NPDRM PS1/PSP sem a necessidade de uma licença .rif ou act.dat válida."
 PORTUGUESE_BR["MENU_PSP_PSPCTRLS_DESC"] =                  "Uma coleção de patches para os analógicos para jogos de PSP no Adrenaline"
 PORTUGUESE_BR["MENU_PSP_PLUGINS_DESC"] =                   "Instalar plugins PSP para Adrenaline"
+PORTUGUESE_BR["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
 
 --Options Extras
 PORTUGUESE_BR["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configurar opções do PKGj"
@@ -369,6 +370,8 @@ PORTUGUESE_BR["TURKISH"] =                                 "Turco"
 PORTUGUESE_BR["INSTALLP_DESC_SD2VITA"] =                   "Plugin do kernel que monta/redireciona automaticamente qualquer dispositivo de armazenamento para qualquer ponto de montagem desejado (SD2VITA)"
 
 --KERNEL
+PORTUGUESE_BR["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+PORTUGUESE_BR["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
 PORTUGUESE_BR["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
 PORTUGUESE_BR["INSTALLP_DESC_VSHPATCH"] =                  "Like repatch, but for system applications. this is an emulated VS0, simply put your changes you want to make into ux0:/vshPatch/ and then the changes will be reflected in vs0: partition, via the power of fios2"
 PORTUGUESE_BR["INSTALLP_DESC_8BIVITA"] =                   "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"

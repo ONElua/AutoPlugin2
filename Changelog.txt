@@ -1,3 +1,10 @@
+#v2.05
+++ Fixed bug with online download of plugins for psp
+++ Added tvikey by Isagi
+++ Added adrenaline_usb_enabler by Isagi
+++ Added NoPspEmuDrm by LiEnby
+++ Added psp_gta_trophies by Freakler
+
 #v2.04
 ++ Re-Added Vita Nearest Neighbour plugin by MuxaJlbl4
 ++ Added MikuAR v1.0 plugin by Avellea

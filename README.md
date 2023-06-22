@@ -71,6 +71,13 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 2.05 ###
+- Fixed bug with online download of plugins for psp
+- Added tvikey by Isagi
+- Added adrenaline_usb_enabler by Isagi
+- Added NoPspEmuDrm by LiEnby
+- Added psp_gta_trophies by Freakler
+
 ### Changelog 2.04 ###
 - Re-Added Vita Nearest Neighbour plugin by MuxaJlbl4
 - Added MikuAR v1.0 plugin by Avellea
@@ -297,7 +304,6 @@ Size must be less than 20MB
 - Chronoss09 for translation in French
 - Schn1ek3 for translation in German
 - allanaln2009 for translation in Portuguese (PT-BR)
-- DDinghoya for translation in Korean
 
 ## Donation ##
 In case you want to support the work of the team on the vita, you can always donate for some coffee. Any amount is highly appreciated:
