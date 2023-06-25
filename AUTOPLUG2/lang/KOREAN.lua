@@ -83,7 +83,7 @@ KOREAN["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "유효한 .rif 라이선스
 KOREAN["MENU_PSP_NPDRMFREE_DESC"] =                 "유효한 .rif 라이센스 또는 act.dat 없이도 공식 NPDRM PS1/PSP 콘텐츠를 실행하기 위한 PSP/ePSP 플러그인입니다."
 KOREAN["MENU_PSP_PSPCTRLS_DESC"] =                  "아드레날린의 PSP 게임용 듀얼 아날로그 패치 모음"
 KOREAN["MENU_PSP_PLUGINS_DESC"] =                   "아드레날린용 PSP 플러그인 설치"
-KOREAN["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
+KOREAN["MENU_PSP_GTA_TROPHIES_DESC"] =              "리버티 & 바이스 시티 스토리 트로피입니다!"
 
 --Options Extras
 KOREAN["MENU_EXTRAS_PKGJ_TITLE"] =                  "PKGj 옵션 구성"
@@ -111,7 +111,7 @@ KOREAN["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM 게임"
 KOREAN["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX 게임"
 KOREAN["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 게임"
 KOREAN["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLC"
-KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
+KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-리로드"
 
 KOREAN["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "txt를 편집하는 동안 waveparam.txt를 다시 로드할 수 있음"
 KOREAN["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "PKGj 데이터베이스 다운로드 (TSV 파일)"
@@ -370,8 +370,8 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
-KOREAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
-KOREAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
+KOREAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "모든 PSPEmu DRM 검사를 우회하는 플러그인으로, 디지털 PSP 또는 PS1 게임 백업을 재생할 수 있습니다; 또는 합법적으로 소유하고 있지만 다른 PSN 계정에 있는 게임도 물론 가능합니다."
+KOREAN["INSTALLP_DESC_TVIKEY"] =                    "마우스/키보드용 PSTV 커널 드라이버"
 KOREAN["INSTALLP_DESC_VIXEN"] =                     "비타 X 입력 인에이블러. xinput 게임 패드용 PS비타 커널 드라이버(xbox 360)"
 KOREAN["INSTALLP_DESC_VSHPATCH"] =                  "rePatch와 비슷하지만 시스템 응용 프로그램용입니다. 이것은 에뮬레이트된 VS0입니다. 변경하려는 변경 사항을 ux0:/vshPatch/에 넣으면 변경 사항이 fios2의 힘을 통해 vs0: 파티션에 반영"
 KOREAN["INSTALLP_DESC_8BIVITA"] =                   "기본적으로 X1Vita지만 8bitdo vid, pid 및 매핑이 있습니다. (호환되는 8bitdo 컨트롤러: 라이트, 프로, 프로+, 프로 2, 제로 2)"
