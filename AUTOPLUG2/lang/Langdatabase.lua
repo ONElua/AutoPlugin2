@@ -6,8 +6,8 @@ Langs = {
 { id =  "CHINESE_S",	version = "01.74",		author =  "yexun1995" },
 { id =  "FRENCH",		version = "01.81",		author =  "Axce" },
 { id =  "GERMAN",		version = "01.53",		author =  "Schn1ek3" },
-{ id =  "RUSSIAN",		version = "01.77",		author =  "Yoti" },
+{ id =  "RUSSIAN",		version = "01.78",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.54",		author =  "KierownikStacji" },
 { id =  "PORTUGUESE_BR",version = "01.40",		author =  "allanaln2009" },
-{ id =  "KOREAN",       version = "01.13",		author =  "DDinghoya" },
+{ id =  "KOREAN",       version = "01.14",		author =  "DDinghoya" },
 }
