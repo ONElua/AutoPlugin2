@@ -287,9 +287,6 @@ plugins = {
 
 --{ name = "forcelang by xdanieldzd v0.2U", id = "FORCELANG.png", path = "forcelang.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FORCELANG"], KEY = "INSTALLP_DESC_FORCELANG", link = "https://raw.githubusercontent.com/xdanieldzd/forcelang/master/README.md", },
 
---*PCSC90032
-{ name = "MikuAR by Avellea", id = "MIKUAR.png", path = "mikuar.suprx", section = "PCSC90032", desc = LANGUAGE["INSTALLP_DESC_MIKUAR"], KEY = "INSTALLP_DESC_MIKUAR",
-  crc = 0x3623d5d1, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/Avellea/mikuar/main/README.md", },
 --*PCSC80012
 { name = "HonRipper by GrapheneCt", id = "HONRIPPER.png", path = "HonRipper.suprx", section = "PCSC80012", desc = LANGUAGE["INSTALLP_DESC_HONRIPPER"], KEY = "INSTALLP_DESC_HONRIPPER",
   crc = 0xbef04e02, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/HonRipper/master/README.md", },

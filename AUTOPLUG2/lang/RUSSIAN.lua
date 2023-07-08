@@ -260,6 +260,7 @@ RUSSIAN["LANGSWAPPER_DESC"] =                        "Изменяет язык 
 RUSSIAN["CATEGORYLITE_DESC"] =                       "Распределите ваши игры, эмуляторы и прочие программы по категориям в меню Игры"
 RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (японскую озвучку) для игры Kingdom Hearts: Birth By Sleep/Final Mix"
 RUSSIAN["GE_PATCH_DESC"] =                           "Эксперементальный плагин, позволяющий повысить разрешение до 960x544 в некоторых PSP играх"
+RUSSIAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "Управление плагинами PSP"

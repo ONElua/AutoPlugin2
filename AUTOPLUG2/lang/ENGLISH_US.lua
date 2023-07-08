@@ -260,6 +260,7 @@ ENGLISH_US["LANGSWAPPER_DESC"] =                        "It sets games home menu
 ENGLISH_US["CATEGORYLITE_DESC"] =                       "Organize all your games, emulators, homebrews, games, into their own folders under the Games Directory"
 ENGLISH_US["KHBBS_UNDUB_DESC"] =                        "UNDUB version (Audio in Japanese) for the game Kingdom Hearts: Birth By Sleep/Final Mix"
 ENGLISH_US["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+ENGLISH_US["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 ENGLISH_US["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"

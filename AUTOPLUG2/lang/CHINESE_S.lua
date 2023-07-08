@@ -260,6 +260,7 @@ CHINESE_S["LANGSWAPPER_DESC"] =                        "此插件用于设置游
 CHINESE_S["CATEGORYLITE_DESC"] =                       "将所有游戏,模拟器,自制软件组织到游戏目录下它们自己的文件夹中"
 CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降生/最终Mix 游戏的 Undub (日语配音) 版本"
 CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v7.0 的实验性插件, 允许您使用原始分辨率运行部分游戏"
+CHINESE_S["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP 插件管理器"

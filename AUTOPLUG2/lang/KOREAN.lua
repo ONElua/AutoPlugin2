@@ -260,6 +260,7 @@ KOREAN["LANGSWAPPER_DESC"] =                        "게임 홈 메뉴와 데이
 KOREAN["CATEGORYLITE_DESC"] =                       "모든 게임, 에뮬레이터, 홈브류, 게임을 게임 디렉토리 아래의 자체 폴더에 정리"
 KOREAN["KHBBS_UNDUB_DESC"] =                        "게임 킹덤 하츠의 언덥 버전 (일본어 오디오): 버스 바이 슬립/파이날 믹스"
 KOREAN["GE_PATCH_DESC"] =                           "이것은 기본 해상도로 몇 가지 게임을 플레이할 수 있게 해주는 아드레날린 v7.0용 실험 플러그인"
+KOREAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 KOREAN["PSP_PLUGINS_MANAGER"] =                     "PSP 플러그인 관리자"

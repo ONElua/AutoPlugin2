@@ -260,6 +260,7 @@ SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu 
 SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus juegos, emuladores, homebrews, en su propia carpeta bajo el Directorio de Juegos"
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
 SPANISH["GE_PATCH_DESC"] =                              "Este es un Plugin experimental para Adrenaline v7.0 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
+SPANISH["MENU_PSP_PSPDOC_DESC"] =                       "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 SPANISH["PSP_PLUGINS_MANAGER"] =                        "PSP Plugins Manager"

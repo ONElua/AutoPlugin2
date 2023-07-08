@@ -1,3 +1,7 @@
+#v2.06
+++ Added pspdoc plugin by qwikrazor87
+++ Removed MikuAR v1.0 plugin by Avellea
+
 #v2.05
 ++ Fixed bug with online download of plugins for psp
 ++ Added tvikey by Isagi

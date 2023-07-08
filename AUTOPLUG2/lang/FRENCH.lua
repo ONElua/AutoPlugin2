@@ -260,6 +260,7 @@ FRENCH["LANGSWAPPER_DESC"] =                        "Il définit le menu d'accue
 FRENCH["CATEGORYLITE_DESC"] =                       "Organisez tous vos jeux, émulateurs, homebrews, jeux, dans leur propre dossier sous le répertoire JEUX"
 FRENCH["KHBBS_UNDUB_DESC"] =                        "Version UNDUB (Audio en Japonais) pour le jeu Kingdom Hearts: Birth By Sleep/Final Mix"
 FRENCH["GE_PATCH_DESC"] =                           "Il s'agit d'un plugin expérimental pour Adrenaline v7.0 qui vous permet de jouer à quelques jeux PSP en résolution native"
+FRENCH["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 FRENCH["PSP_PLUGINS_MANAGER"] =                     "Gestionnaire de plugins PSP"

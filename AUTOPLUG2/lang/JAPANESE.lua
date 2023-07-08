@@ -260,6 +260,7 @@ JAPANESE["LANGSWAPPER_DESC"] =                          "ゲームのホーム�
 JAPANESE["CATEGORYLITE_DESC"] =                         "すべてのゲーム、エミュレーター、Homebrewをゲームディレクトリ直下の独自のフォルダーに整理します"
 JAPANESE["KHBBS_UNDUB_DESC"] =                          "ゲーム「キングダムハーツ：バースバイスリープ/ファイナルミックス」のUNDUBバージョン（日本語の音声）"
 JAPANESE["GE_PATCH_DESC"] =                             "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+JAPANESE["MENU_PSP_PSPDOC_DESC"] =                      "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 JAPANESE["PSP_PLUGINS_MANAGER"] =                       "PSP Plugins Manager"

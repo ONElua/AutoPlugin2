@@ -260,6 +260,7 @@ PORTUGUESE_BR["LANGSWAPPER_DESC"] =                        "Define o menu inicia
 PORTUGUESE_BR["CATEGORYLITE_DESC"] =                       "Organize todos os seus jogos, emuladores, homebrews, jogos, em suas próprias pastas no Diretório de Jogos"
 PORTUGUESE_BR["KHBBS_UNDUB_DESC"] =                        "Versão UNDUB (Audio em Japanese) para o jogo Kingdom Hearts: Birth By Sleep/Final Mix"
 PORTUGUESE_BR["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+PORTUGUESE_BR["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 PORTUGUESE_BR["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"

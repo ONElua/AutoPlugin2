@@ -260,6 +260,7 @@ GERMAN["LANGSWAPPER_DESC"] =                        "Das Hauptmenu und die Speic
 GERMAN["CATEGORYLITE_DESC"] =                       "Ordne all deine Spiele, Emulatoren und Homebrews in eigene Ordner unter dem Spieleverzeichnis."
 GERMAN["KHBBS_UNDUB_DESC"] =                        "UNDUB Version (Audio in Japanisch) für das Spiel Kingdom Hearts: Birth By Sleep/Final Mix"
 GERMAN["GE_PATCH_DESC"] =                           "This is an experimental plugin for Adrenaline v7.0 that allows you to play a few games in native resolution"
+GERMAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
 
 --PSP Plugins Manager
 GERMAN["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"
