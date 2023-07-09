@@ -147,7 +147,7 @@ Online_Plugins = {
 
 --2 prxs
 { name = "NoPspEmuDrm by SilicaAndPina", id = "NOPSPEMUDRM.png", path = "NoPspEmuDrm_kern.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM"], KEY = "INSTALLP_DESC_NOPSPEMUDRM",
-  crc = 0x5b4159fb, v = "v1.02", crc2 = 0xa8090474, version = "0003", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
+  crc = 0xe77345ca, v = "v1.03", crc2 = 0x675ee662, version = "0004", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
   crc = 0xe869fae2, v = "v1.2", crc2 = 0xa398acb7, version = "0001", link = "https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md", },
 { name = "MiniVitaTV by TheOfficialFloW", id = "MINIVITATV.png", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV",
