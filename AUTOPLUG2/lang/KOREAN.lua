@@ -2,7 +2,7 @@ KOREAN = {}
 
 --Updater
 KOREAN["UPDATER_AVAILABLE"] =                       "이제 사용할 수 있습니다."
-KOREAN["UPDATER_QUESTION_UPDATE"] =                 "애플리케이션을 업데이트하겠습니까?"
+KOREAN["UPDATER_QUESTION_UPDATE"] =                 "응용 프로그램을 업데이트하겠습니까?"
 KOREAN["UPDATER_DOWNLOADING"] =                     "업데이트 다운로드 중..."
 KOREAN["UPDATER_PERCENT"] =                         "진행: "
 KOREAN["UPDATER_SEARCH_UNSAFE_VPK"] =               "vpk에서 검색, 안전하지 않거나 위험한 파일입니다!"
@@ -35,7 +35,7 @@ KOREAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "플러그인 설치 제거"
 KOREAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "SD2비타 플러그인 설치 (CelesteBlue & Yoti의 스토리지 관리자 v3.4)"
 KOREAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =         "SD2비타 플러그인 구성 (CelesteBlue & Yoti의 스토리지 관리자 v3.4)"
 KOREAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =   "새로 업데이트된 플러그인을 온라인에서 확인"
-KOREAN["MENU_EXTRAS_DOWNLOADS_DESC"] =              "공식 저장소에서 유용한 애플리케이션 다운로드"
+KOREAN["MENU_EXTRAS_DOWNLOADS_DESC"] =              "공식 저장소에서 유용한 응용 프로그램 다운로드"
 
 --Options info
 KOREAN["MENU_INFO_VERSION"] =                       "설치된 버전: "
@@ -260,7 +260,7 @@ KOREAN["LANGSWAPPER_DESC"] =                        "게임 홈 메뉴와 데이
 KOREAN["CATEGORYLITE_DESC"] =                       "모든 게임, 에뮬레이터, 홈브류, 게임을 게임 디렉토리 아래의 자체 폴더에 정리"
 KOREAN["KHBBS_UNDUB_DESC"] =                        "게임 킹덤 하츠의 언덥 버전 (일본어 오디오): 버스 바이 슬립/파이날 믹스"
 KOREAN["GE_PATCH_DESC"] =                           "이것은 기본 해상도로 몇 가지 게임을 플레이할 수 있게 해주는 아드레날린 v7.0용 실험 플러그인"
-KOREAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
+KOREAN["MENU_PSP_PSPDOC_DESC"] =                    "PSP DOCUMENT.DAT 매뉴얼을 PNG 이미지로 덤프하는 PSP/ePSP 플러그인입니다."
 
 --PSP Plugins Manager
 KOREAN["PSP_PLUGINS_MANAGER"] =                     "PSP 플러그인 관리자"
@@ -310,11 +310,11 @@ KOREAN["QUICKMENU_BACKGROUNDSTYLE_BLACK"] =         "검정색"
 KOREAN["TRANSLATE_ENGLISH_TITLE"] =                 "영어: "
 KOREAN["TRANSLATE_CURRENT_TITLE"] =                 "시스템 언어: "
 KOREAN["TRANSLATE_CURRENT_AUTOPLUGIN"] =            "오토플러그인 언어: "
-KOREAN["TRANSLATE_YOUR_TITLE"] =                    "당신 언어: "
+KOREAN["TRANSLATE_YOUR_TITLE"] =                    "사용 언어: "
 KOREAN["SAVE_TRANSLATIONS"] =                       "번역 저장"
 KOREAN["EXIT_SAVE_TRANSLATIONS"] =                  "번역이 저장되지 않았습니다. 종료하기 전에 저장하겠습니까?"
 KOREAN["TRANSLATION_SAVED_1"] =                     "번역이 다음 위치에 저장되었습니다:"
-KOREAN["TRANSLATION_SAVED_2"] =                     "오토플러그인 II 깃어브에 이 파일을 업로드하여 승인하세요."
+KOREAN["TRANSLATION_SAVED_2"] =                     "오토플러그인 II 깃허브에 이 파일을 업로드하여 승인하세요."
 KOREAN["NOTHING_TO_TRANSLATE"] =                    "관심 가져주셔서 감사합니다만 지금은 번역할 내용이 없습니다!"
 
 --Lang Online
@@ -439,7 +439,7 @@ KOREAN["INSTALLP_DESC_STAYBRIGHT"] =                "화면 자동 디밍을 비
 KOREAN["INSTALLP_DESC_EMERGENCYMOUNT"] =            "이 플러그인은 비타에 대한 벽돌 보호 기능을 제공합니다. 부팅 시 삼각형을 누르고 있으면 USB를 통해 파티션 (비타쉘 플러스 ur0과 동일한 파티션)을 마운트하는 메뉴가 표시됩니다. 그런 다음 컴퓨터를 사용하여 문제를 해결할 수 있습니다."
 KOREAN["INSTALLP_DESC_MAFUINPUT"] =                 "MAFU-I는 PS비타에 제공한 입력을 기록하고 필요할 때마다 재생할 수 있는 플러그인입니다. 캡처는 ur0:/data/MAFU-I/capture.dat에 저장됩니다."
 KOREAN["INSTALLP_DESC_COREUNLOCK"] =                "게임 모드 응용 프로그램이 시스템 예약 CPU 코어 (CPU3)를 사용할 수 있도록 하는 PS 비타용 플러그인"
-KOREAN["INSTALLP_DESC_CAPUNLOCK"] =                 "PS 비타 홈브류 앱에 대한 일부 비 게임 기능을 잠금 해제합니다. 현재 사용 가능: cache0:과 같은 일부 가상 드라이브 탑재 허용 및 게임 애플리케이션에 4번째 코어 사용 허용합니다."
+KOREAN["INSTALLP_DESC_CAPUNLOCK"] =                 "PS 비타 홈브류 앱에 대한 일부 비 게임 기능을 잠금 해제합니다. 현재 사용 가능: cache0:과 같은 일부 가상 드라이브 탑재 허용 및 게임 응용 프로그램에 4번째 코어 사용 허용합니다."
 KOREAN["INSTALLP_DESC_DS4TOUCH"] =                  "미니비타TV가 있는 PS TV 및 비타에 ds4 터치패드 지원 (ds4비타 방식)을 추가합니다."
 KOREAN["INSTALLP_DESC_LCDSPACE"] =                  "한 번의 클릭으로 LCD 색 공간을 변경하고 PSPEmu 응용 프로그램에서 색 공간 설정을 강제 적용합니다 (PS비타 2000에만 해당)."
 KOREAN["INSTALLP_DESC_VOLLIGHTBAR_DS4"] =           "PS 비타 - DS4 컨트롤러를 사용하여 볼륨을 제어합니다. DS4 배터리 표시기로 사용되는 DS4 라이트바"
@@ -473,7 +473,7 @@ KOREAN["INSTALLP_DESC_LOWMEMMODE"] =                "백그라운드에서 확�
 KOREAN["INSTALLP_DESC_QUICKPOWER"] =                "전원 끄기, 재부팅 및 일시 중단은 모두 빠른 메뉴에서 수행할 수 있습니다. 플레이스테이션 비타 및 플레이스테이션 TV용입니다. 전원 끄기 버튼을 길게 눌러 재부팅하세요."
 KOREAN["INSTALLP_DESC_QUICKVOLUME"] =               "플레이스테이션 TV와 마찬가지로 플레이스테이션 비타의 퀵 메뉴에서 볼륨을 변경하세요."
 KOREAN["INSTALLP_DESC_QASCREEN"] =                  "PS 비타용 고품질 스크린샷 플러그인. 네이티브 QA 스크린샷 SceShell 구현을 잠금 해제합니다."
-KOREAN["INSTALLP_DESC_NOSHAREDFB"] =                "시스템 모드에서 실행되는 홈브류 애플리케이션에 대한 일시 중단-재개 주기 후 공유 프레임 버퍼 문제를 우회할 수 있습니다. 그러나 표준 프레임 버퍼 구현을 사용하세요."
+KOREAN["INSTALLP_DESC_NOSHAREDFB"] =                "시스템 모드에서 실행되는 홈브류 응용 프로그램에 대한 일시 중단-재개 주기 후 공유 프레임 버퍼 문제를 우회할 수 있습니다. 그러나 표준 프레임 버퍼 구현을 사용하세요."
 KOREAN["INSTALLP_DESC_TRIMPOSE"] =                  "임포즈 메뉴 (PS 버튼을 길게 누른 후 나타나는 메뉴)를 투명하게 만드는 PS 비타용 플러그인입니다."
 KOREAN["INSTALLP_DESC_QUIETSHOT"] =                 "스크린샷, 사진, 비디오 또는 파노라마 사진을 찍을 때 셔터음을 무음으로 만듭니다. 플레이스테이션 비타와 플레이스테이션 TV 모두에서 작동합니다."
 KOREAN["INSTALLP_DESC_FTPEVERYWHERE"] =             "ftpeverywhere - 항상 백그라운드 FTP 서버 플러그인을 실행합니다."
@@ -513,8 +513,8 @@ KOREAN["INSTALLP_DESC_WDNF"] =                      "전면 터치스크린 비�
 KOREAN["INSTALLP_DESC_REMAPSV"] =                   "remaPSV는 PS비타의 모든 단일 버튼을 다시 매핑하고 터치 및 리어터치 영역을 추가 버튼 (시작 + 네모 버튼)에 매핑할 수 있는 재매핑 플러그인"
 KOREAN["INSTALLP_DESC_REMAPSV2"] =                  "remaPSV는 PS비타의 모든 단일 버튼을 다시 매핑하고 터치 및 리어터치 영역을 추가 버튼 (시작 + 네모 버튼)에 매핑할 수 있는 재매핑 플러그인"
 KOREAN["INSTALLP_DESC_FORCELANG"] =                 "응용 프로그램의 언어를 재정의하기 위한 taiHEN 플러그인"
-KOREAN["INSTALLP_DESC_SHOWINFO"] =                  "실행 중인 애플리케이션의 title_id, stitle 및 app_ver를 표시하는 간단한 플러그인"
-KOREAN["INSTALLP_DESC_SHOWINFOFU"] =                "실행 중인 애플리케이션의 title_id, stitle 및 app_ver를 표시하는 간단한 플러그인. (풀 버전)"
+KOREAN["INSTALLP_DESC_SHOWINFO"] =                  "실행 중인 응용 프로그램의 title_id, stitle 및 app_ver를 표시하는 간단한 플러그인"
+KOREAN["INSTALLP_DESC_SHOWINFOFU"] =                "실행 중인 응용 프로그램의 title_id, stitle 및 app_ver를 표시하는 간단한 플러그인. (풀 버전)"
 KOREAN["INSTALLP_DESC_MODALVOL"] =                  "이 팩은 선택+오른쪽 게임을 종료하지 않고 실시간으로 PS 비타의 시스템 오디오 볼륨을 제어하는 응용 프로그램으로 구성 (VolumeControl.vpk 필요)"
 KOREAN["INSTALLP_DESC_TRACKPLUGMOD"] =              "PS비타용 플레이타임 추적기 플러그인"
 KOREAN["INSTALLP_DESC_PSONESCROT"] =                "PS1 게임을 위한 적절한 PNG 스크린샷 찍기 (빠른 메뉴에서 설정 열기, 아드레날린을 사용하는 경우 공식 설정 열기, 스크린샷 선택)"
@@ -524,10 +524,10 @@ KOREAN["INSTALLP_DESC_RAPIDMENU"] =                 "빠른 메뉴 열기 시간
 KOREAN["INSTALLP_DESC_SCOREHAX"] =                  "모든 게임에서 인스턴트 프로!"
 KOREAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper는 소니의 .MNH(Marlin-Hon) 책 형식의 콘텐츠를 추출하도록 설계된 PS 비타 소니 리더 응용 프로그램 (PCSC80012)용 플러그인"
 KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 ux0:/app/AUTOPLUG2 숨김"
-KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 애플리케이션입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
+KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 응용 프로그램입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
 
 --*PCSC90032
-KOREAN["INSTALLP_DESC_MIKUA"] =                     "언제든 `PCSC90032`를 실행할 수 있는 PlayStation Vita 플러그인입니다."
+KOREAN["INSTALLP_DESC_MIKUA"] =                     "언제든 `PCSC90032`를 실행할 수 있는 플레이스테이션 비타 플러그인입니다."
 
 --*NPXS10013
 KOREAN["INSTALLP_DESC_PS4LINK"] =                   "선호하는 원격 재생 버튼 구성을 강제할 수 있는 taiHEN 플러그인"
