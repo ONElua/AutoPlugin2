@@ -310,14 +310,17 @@ function plugin_info(obj)
 		if buttonskey then buttonskey:blitsprite(10,515,saccept) end
 		if obj.path == "QuickMenuReborn.suprx" and obj.configpath then
 			idx = tai.find(obj.section,obj.path)
-		
-		
-			if files.exists(tai.gameid[ obj.section ].prx[idx].path) and files.exists(obj.configpath..obj.config) then
-				screen.print(45,518,LANGUAGE["MENU_REINSTALL_INFO"],1,color.white,color.blue, __ALEFT)
-			elseif files.exists(tai.gameid[ obj.section ].prx[idx].path) and not files.exists(obj.configpath..obj.config) then
-				screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+
+			if not idx then screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
 			else
-				screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+		
+				if files.exists(tai.gameid[ obj.section ].prx[idx].path) and files.exists(obj.configpath..obj.config) then
+					screen.print(45,518,LANGUAGE["MENU_REINSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+				elseif files.exists(tai.gameid[ obj.section ].prx[idx].path) and not files.exists(obj.configpath..obj.config) then
+					screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+				else
+					screen.print(45,518,LANGUAGE["MENU_INSTALL_INFO"],1,color.white,color.blue, __ALEFT)
+				end
 			end
 		else
 
