@@ -68,7 +68,7 @@ To load a custom image at boot, the image must be in png format sized to 960X544
 You no longer need to add the line:
  "- load ur0: tai / custom_boot_splash.skprx"
 # Small note for the translation of the languages using non-standard characters
-Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
+Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).* and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
 ### Changelog 2.07 ###
