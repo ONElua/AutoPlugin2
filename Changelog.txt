@@ -1,3 +1,6 @@
+#v2.07
+++ Fixed error when installing the Quicklauncher plugin
+
 #v2.06
 ++ Added pspdoc plugin by qwikrazor87
 ++ Removed MikuAR v1.0 plugin by Avellea

@@ -71,6 +71,9 @@ You no longer need to add the line:
 Download the **font.pgf** file(here https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf ) and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
+### Changelog 2.07 ###
+++ Fixed error when installing the Quicklauncher plugin
+
 ### Changelog 2.06 ###
 - Added pspdoc plugin by qwikrazor87
 - Removed MikuAR v1.0 plugin by Avellea
