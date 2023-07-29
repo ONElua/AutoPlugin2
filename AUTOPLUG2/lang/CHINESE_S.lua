@@ -527,7 +527,7 @@ CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程
 CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard 是一款插件和应用程序, 可让您将 PS Vita 用作 USB 键盘. 主机会认为你的 vita 是一个真正的键盘"
 
 --*PCSC90032
-CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita 插件,用于支持在任何日期或时间运行 “PCSC90032”."
+CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita 插件,用于支持在任何日期或时间运行 `PCSC90032`."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
