@@ -36,7 +36,7 @@ plugins = {
 { name = "NoNpDrm Unofficial by LMAN",	id = "NONPDRM.png", path = "nonpdrm_un.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NONPDRMU"], KEY = "INSTALLP_DESC_NONPDRMU",
   crc = 0x40704407, v = "v1.4", version = "0001", },
 { name = "NoPsmDrm by frangarcj", id = "NOPSMDRM.png", path = "nopsmdrm.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NOPSMDRM"], KEY = "INSTALLP_DESC_NOPSMDRM",
-  crc = 0x3db6dcfd, v = "v1.4", version = "0001", link = "https://raw.githubusercontent.com/frangarcj/NoPsmDrm/master/README.md", },
+  crc = 0x0451b3ee, v = "v1.5", version = "0002", link = "https://raw.githubusercontent.com/frangarcj/NoPsmDrm/master/README.md", },
 { name = "NoAVLS by SilicaAndPina", id = "NOAVLS.png", path = "noavls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NOAVLS"], KEY = "INSTALLP_DESC_NOAVLS",
   crc = 0xdcbae19b, v = "v0.01", version = "0001", link = "https://silica.codes/SilicaAndPina/noavls/raw/branch/master/README.md", },
 { name = "Repatch reLoaded by SonicMastr", id = "REPATCHEX.png", path = "repatch_ex.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCHEX"], KEY = "INSTALLP_DESC_REPATCHEX",
