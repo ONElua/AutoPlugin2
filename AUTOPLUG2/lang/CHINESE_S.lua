@@ -59,7 +59,7 @@ CHINESE_S["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "此补丁可将 Vita 和
 CHINESE_S["P4G_1920x1080_DESC"] =                      "1920x1080 分辨率可输出到 HDMI, 或者Vita用户可直接在屏幕上欣赏超采样的图像. (为获得良好的性能,需要超频) 帧率范围介于20到30FPS之间,除图形密集度最高的区域外,所有帧率都为25到30FPS之间."
 CHINESE_S["P4G_1280x720_DESC"] =                       "1280x720 分辨率可输出到 HDMI 或 USB(udcd Xerpi), 或者Vita用户可以直接在屏幕上欣赏超采样的图像. (为获得良好性能，需要超频) 帧率为30FPS."
 CHINESE_S["INSTALL_P4G_HD_TITLE"] =                    "女神异闻录4黄金版高清补丁 作者:Cuevavirus"
-CHINESE_S["NO_P4GOLDEN_GAMES"] =                       "找不到 女神异闻录4黄金版 游戏本体"
+CHINESE_S["NO_P4GOLDEN_GAMES"] =                       "找不到 女神异闻录4黄金版 游戏"
 CHINESE_S["INSTALL_P4G_HD"] =                          "安装高清补丁"
 CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
 CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
@@ -79,11 +79,11 @@ CHINESE_S["MENU_PSP_INSTALL_NPDRMFREE"] =              "安装 npdrm free 插件
 CHINESE_S["MENU_PSP_INSTALL_REMASTERED_CTRLS"] =       "安装 RemasteredControls 插件 (由 TheOfficialFloW 开发)"
 CHINESE_S["MENU_PSP_INSTALL_PLUGINS"] =                "适用于 Adrenaline 的 PSP 插件"
 
-CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容. 它旨在与 nploader_mod 结合使用, 后者现在支持加密和解密的 DLC."
 CHINESE_S["MENU_PSP_NPDRMFREE_DESC"] =                 "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容."
+CHINESE_S["MENU_PSP_NPDRMFREE_MOD_DESC"] =             "一个 PSP/ePSP 插件,无需有效的 .rif 许可证或 act.dat 即可运行官方 NPDRM PS1/PSP 内容. 它旨在与 nploader_mod 结合使用, 后者现在支持加密和解密的 DLC."
 CHINESE_S["MENU_PSP_PSPCTRLS_DESC"] =                  "Adrenaline 上适用于 PSP 游戏的双摇杆补丁合集"
 CHINESE_S["MENU_PSP_PLUGINS_DESC"] =                   "为 Adrenaline 安装PSP插件"
-CHINESE_S["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophies for Liberty & Vice City Stories!"
+CHINESE_S["MENU_PSP_GTA_TROPHIES_DESC"] =              "适用于侠盗猎车手:自由城传奇 和 罪恶都市 的奖杯插件."
 
 --Options Extras
 CHINESE_S["MENU_EXTRAS_PKGJ_TITLE"] =                  "PKGj 配置选项"
@@ -91,7 +91,7 @@ CHINESE_S["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "iTLS-Enso"
 CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Vitashell"
 CHINESE_S["MENU_EXTRAS_INSTALL_VITASHELL2"] =          "Vitashell (Yoti 版本)"
 CHINESE_S["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "ShaRKF00D"
-CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "BatteryFixer"
+CHINESE_S["MENU_EXTRAS_INSTALL_BATTFIX"] =             "电池修复器"
 CHINESE_S["MENU_EXTRAS_INSTALL_YAMT"] =                "Yamt"
 CHINESE_S["MENU_EXTRAS_INSTALL_ONEMENU"] =             "OneMenu"
 CHINESE_S["MENU_EXTRAS_INSTALL_SHARKB33D"] =           "ShaRKBR33D"
@@ -111,9 +111,9 @@ CHINESE_S["MENU_EXTRAS_PSM_GAMES_TSV"] =               "PSM 游戏"
 CHINESE_S["MENU_EXTRAS_PSX_GAMES_TSV"] =               "PSX 游戏"
 CHINESE_S["MENU_EXTRAS_PSP_GAMES_TSV"] =               "PSP 游戏"
 CHINESE_S["MENU_EXTRAS_PSP_DLC_TSV"] =                 "PSP DLCs"
-CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp2wpp-reload"
+CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD"] =          "psp风格波纹背景-重载"
 
-CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "You can reload waveparam.txt while editing txt"
+CHINESE_S["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"] =     "你可以在编辑 waveparam.txt 时重新读取该文件"
 CHINESE_S["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =   "下载 PKGj 的数据库 (TSV 文件)"
 CHINESE_S["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =      "修改 PKGj 的 config.txt 选项"
 CHINESE_S["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =       "设置自定义图片作为开机画面"
@@ -260,7 +260,7 @@ CHINESE_S["LANGSWAPPER_DESC"] =                        "此插件用于设置游
 CHINESE_S["CATEGORYLITE_DESC"] =                       "将所有游戏,模拟器,自制软件组织到游戏目录下它们自己的文件夹中"
 CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降生/最终Mix 游戏的 Undub (日语配音) 版本"
 CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v7.0 的实验性插件, 允许您使用原始分辨率运行部分游戏"
-CHINESE_S["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
+CHINESE_S["MENU_PSP_PSPDOC_DESC"] =                    "这是一个 PSP/ePSP 插件,用于将 PSP DOCUMENT.DAT 手册提取为 PNG 图片."
 
 --PSP Plugins Manager
 CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP 插件管理器"
@@ -371,8 +371,8 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
-CHINESE_S["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
-CHINESE_S["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
+CHINESE_S["INSTALLP_DESC_NOPSPEMUDRM"] =               "一个用于绕过所有 PSPEmu DRM 检查的插件,您可以借助它玩数字版 PSP 或 PS1 游戏备份,或者您合法拥有但在另一个 PSN 帐户上的游戏."
+CHINESE_S["INSTALLP_DESC_TVIKEY"] =                    "PSTV 适用于 鼠标/键盘 的内核驱动"
 CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input 启用器. 适用于 x-input gamepads (xbox360) 游戏手柄的 Vita 内核驱动."
 CHINESE_S["INSTALLP_DESC_VSHPATCH"] =                  "类似于 repatch, 但适用于系统程序. 这是一个模拟 VS0 分区的插件, 借助于 fios2 的能力, 仅需要将你想做的变动放入 ux0:/vshPatch/ 目录, 之后变更将作用于 vs0: 分区"
 CHINESE_S["INSTALLP_DESC_8BIVITA"] =                   "基本上等同于 X1Vita 但额外支持八位堂(8bitdo) 的 vid, pid 以及按键映射. (兼容的 8bitdo 控制器包括: Lite, Pro, Pro+, Pro 2, & Zero 2)"
@@ -488,7 +488,7 @@ CHINESE_S["INSTALLP_DESC_DOLCEWIFI"] =                 "用于在 PSTV (dolce) �
 CHINESE_S["INSTALLP_DESC_WAVE"] =                      "为 PS Vita 主界面添加波纹背景图的插件."
 
 --ALL
-CHINESE_S["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
+CHINESE_S["INSTALLP_DESC_ADRUSBENABLER"] =             "用于启用 adrenaline 及 ps2/ps3 之间 usb 配对功能的 PSVita 插件"
 CHINESE_S["INSTALLP_DESC_3GDISABLE"] =                 "这是禁用 3g 的正确方法. 它的本质上的功能是欺骗系统, 让它认为这是一个普通的仅支持 WiFi 的 Vita"
 CHINESE_S["INSTALLP_DESC_VITANEARESTN"] =              "适用于 PS Vita 的简单的大变革插件, 用于覆盖纹理采样. 强制使用点过滤方法(最近邻插值)而非线性渲染."
 CHINESE_S["INSTALLP_DESC_DT2S"] =                      "双击休眠插件. 点击屏幕任意位置两次可触发休眠. 不建议使用此版本的唯一原因是, 有时您可能轻按两次触摸屏但并不想休眠."
@@ -527,7 +527,7 @@ CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程
 CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard 是一款插件和应用程序, 可让您将 PS Vita 用作 USB 键盘. 主机会认为你的 vita 是一个真正的键盘"
 
 --*PCSC90032
-CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
+CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita 插件,用于支持在任何日期或时间运行 `PCSC90032`."
 
 --*NPXS10013
 CHINESE_S["INSTALLP_DESC_PS4LINK"] =                   "大变革插件,用于强制选择喜欢的遥控操作按键配置方案"
