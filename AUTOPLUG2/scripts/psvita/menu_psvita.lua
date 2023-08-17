@@ -37,6 +37,8 @@ end
 
 local onlineplugins_callback = function ()
 	psvita_plugins_online()
+	--Main Cycle
+	dofile("menu.lua")
 end
 
 local downloads_callback = function ()
@@ -64,8 +66,12 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
 		{ text = LANGUAGE["MENU_DOWNLOADS"],                desc = LANGUAGE["MENU_EXTRAS_DOWNLOADS_DESC"],          funct = downloads_callback },
 		{ text = LANGUAGE["MENU_PSVITA_HD_PATCH"],          desc = LANGUAGE["MENU_PSVITA_HD_PATCH_DESC"],	        funct = hd_patch_callback },
-		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],	desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],	            funct = VitaNearest_callback },
+		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],	desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],	        funct = VitaNearest_callback },
 	}
+
+	if tonumber(cont_global:get()) > 0 and yes_update and tonumber(yes_update:get()) == 3 then
+		table.insert(menu, { text = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"].." ( "..tonumber(cont_global:get()).." )",	desc = LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"],	funct = onlineplugins_callback } )
+	end
 
 	local scroll = newScroll(menu,#menu)
 	local xscroll = 10
@@ -117,7 +123,7 @@ function menu_ps()
 		end
 
 		if buttons.cancel then break end
-		if buttons.accept then menu[scroll.sel].funct()	end
+		if buttons.accept then menu[scroll.sel].funct() end
 
 		vol_mp3()
 

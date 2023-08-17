@@ -14,8 +14,12 @@ if info then
 		if version > APP_VERSION then
 			__VERSION = 1
 			UPDATE_PORT:push({version, tostring(info[2] or "")})
-		elseif version == APP_VERSION then
+		end
+		if version == APP_VERSION then
 			__VERSION = 2
+		--2.00 = 33554432
+		elseif version >= 33554432 then
+			__VERSION = 3
 		end
 	end
 end

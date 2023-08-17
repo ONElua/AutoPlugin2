@@ -58,14 +58,13 @@ function menu_gral()
 			if back then back:blit(0,0) end
 				message_wait(LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"])
 			os.delay(750)
-			cont_global:set(tonumber(0))
 			psvita_plugins_online()
+			cont_global:set(tonumber(0))
 		end
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.shine:a(85),color.shine:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_TITLE"],1.0,color.white,color.blue,__ACENTER)
-
 		local y = 115
 		for i=scroll.ini, scroll.lim do
 			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
