@@ -246,7 +246,7 @@ function psvita_plugins_online()
 				if tb_cop[k].path == "adrenaline_kernel.skprx" then	table.remove(tb_cop,k) end
 				--No section
 				if tb_cop[k].REMOVE then
-					if tb_cop[k].path != "storagemgr.skprx" then files.copy(path_plugins..tb_cop[k].path, path_tai) end
+					--if tb_cop[k].path != "storagemgr.skprx" then files.copy(path_plugins..tb_cop[k].path, path_tai) end
 				end
 			end
 
