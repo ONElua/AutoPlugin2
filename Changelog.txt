@@ -1,3 +1,7 @@
+#v2.08
+++ Re-Added plugins updates for autoplugin II v2.00+.
+++ Fix plugins updates with the Catherine: Full Body HD, Persona 4 Golden HD and Vita Nearest Neighbour.
+
 #v2.07
 ++ Fixed error when installing the Quicklauncher plugin
 
