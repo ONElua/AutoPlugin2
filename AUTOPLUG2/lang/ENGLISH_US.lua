@@ -453,6 +453,7 @@ ENGLISH_US["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin DONE !!
 ENGLISH_US["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin FAIL !!!"
 
 --Main
+ENGLISH_US["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
 ENGLISH_US["INSTALLP_DESC_PASTEUNLOCK"] =               "Plugin for PS Vita that unlocks hidden copy/paste feature in system software. To activate copypaste popup press and hold your finger on the text until it zooms in. After that release your finger from the screen and copypaste popup will open."
 ENGLISH_US["INSTALLP_DESC_USBDISABLE"] =                "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 ENGLISH_US["INSTALLP_DESC_DENABLER"] =                  "Download files through your browser"

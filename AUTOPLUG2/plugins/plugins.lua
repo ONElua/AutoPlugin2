@@ -161,6 +161,8 @@ plugins = {
 
 
 --Main [SECTION]
+{ name = "NoTrpDrm by Rinnegatamante", id = "NOTRPDRM.png", path = "NoTrpDrm.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_NOTRPDRM"], KEY = "INSTALLP_DESC_NOTRPDRM",
+  crc = 0xd11de996, v = "v1.1", version = "0001", link = "https://raw.githubusercontent.com/Rinnegatamante/NoTrpDrm/master/README.md", },
 { name = "PasteUnlock by GrapheneCt", id = "PASTEUNLOCK.png", path = "PasteUnlock.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_PASTEUNLOCK"], KEY = "INSTALLP_DESC_PASTEUNLOCK",
   crc = 0x854c33de, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/PasteUnlock/main/README.md", },
 { name = "Download Enabler by TheOfficialFloW (VitaTweaks)", id = "DOWNLOADENABLER.png", path = "download_enabler.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_DENABLER"], KEY = "INSTALLP_DESC_DENABLER",

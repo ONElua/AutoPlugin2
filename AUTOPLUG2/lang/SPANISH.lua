@@ -453,6 +453,7 @@ SPANISH["INSTALLP_DESC_BOOTSPLASH_DONE"] =              "¡ boot_splash.bin CREA
 SPANISH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =              "¡ boot_splash.bin FALLO !"
 
 --Main
+SPANISH["INSTALLP_DESC_NOTRPDRM"] =                     "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
 SPANISH["INSTALLP_DESC_PASTEUNLOCK"] =                  "Plugin para PS Vita que desbloquea la función de copiar/pegar que se encuentra oculta en el software del sistema. Para activar el popup (ventana) de copiar y pegar, manten presionado con el dedo en el texto hasta que haga un zooms. Luego suelta y aparecerá la ventana de copiar y pegar"
 SPANISH["INSTALLP_DESC_USBDISABLE"] =                   "Desactiva el molesto mensaje de 'Conectando' cuando conectas la PS Vita al computador. ¡¡(Q)CMA sigue funcionando!!"
 SPANISH["INSTALLP_DESC_DENABLER"] =                     "Permite descargar archivos a través del navegador"

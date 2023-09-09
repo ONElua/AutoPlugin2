@@ -453,6 +453,7 @@ FRENCH["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "Installation du boot_splash
 FRENCH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "Échec de l'installation du boot_splash.bin !!!"
 
 --Main
+FRENCH["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
 FRENCH["INSTALLP_DESC_PASTEUNLOCK"] =               "Plugin pour PS Vita qui déverrouille la fonction de copier/coller cachée dans le logiciel système. Pour activer la fenêtre contextuelle copier-coller, appuyez et maintenez votre doigt sur le texte jusqu'à ce qu'il effectue un zoom avant. Après cela, relâchez votre doigt de l'écran et la fenêtre contextuelle copier-coller s'ouvrira."
 FRENCH["INSTALLP_DESC_USBDISABLE"] =                "Désactivez la boîte de dialogue ennuyeuse 'Connexion en cours...' lorsque vous connectez la vita à un ordinateur. (Q)CMA fonctionne toujours !!"
 FRENCH["INSTALLP_DESC_DENABLER"] =                  "Télécharger des fichiers via le navigateur internet de la PSVita"

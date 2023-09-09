@@ -453,6 +453,7 @@ KOREAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin 완료하�
 KOREAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin 실패하였습니다 !!!"
 
 --Main
+KOREAN["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
 KOREAN["INSTALLP_DESC_PASTEUNLOCK"] =               "시스템 소프트웨어의 숨겨진 복사/붙여넣기 기능을 잠금 해제하는 PS 비타용 플러그인입니다. 복사 붙여넣기 팝업을 활성화하려면 텍스트가 확대될 때까지 손가락을 길게 누릅니다. 그런 다음 화면에서 손가락을 떼면 복사 붙여넣기 팝업이 열립니다."
 KOREAN["INSTALLP_DESC_USBDISABLE"] =                "비타를 컴퓨터에 연결할 때 성가신 '연결 중' 대화 상자를 비활성화합니다. (Q)CMA는 여전히 작동합니다!!"
 KOREAN["INSTALLP_DESC_DENABLER"] =                  "탐색기를 통해 파일 다운로드"

@@ -453,6 +453,7 @@ RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - ГОТО
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
+RUSSIAN["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
 RUSSIAN["INSTALLP_DESC_PASTEUNLOCK"] =               "Новый плагин для PS Vita, который разблокирует скрытые функции копирования/вставки текста. Для использования зажмите текст на экране до появления увеличения. После чего отпустите палец и появится меню выбора функции."
 RUSSIAN["INSTALLP_DESC_USBDISABLE"] =                "Плагин отключает надоедливое сообщение 'Подключение' при подключении к ПК -- (Q)CMA не прекратит работать!"
 RUSSIAN["INSTALLP_DESC_DENABLER"] =                  "Загружайте любые файлы при помощи браузера"
