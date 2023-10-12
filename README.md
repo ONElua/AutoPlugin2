@@ -72,11 +72,11 @@ Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/fon
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
 ### Changelog 2.08 ###
-++ Re-Added plugins updates for autoplugin II v2.00+.
-++ Fix plugins updates with the Catherine: Full Body HD, Persona 4 Golden HD and Vita Nearest Neighbour.
+- Re-Added plugins updates for autoplugin II v2.00+
+-  Fix plugins updates with the Catherine: Full Body HD, Persona 4 Golden HD and Vita Nearest Neighbour.
 
 ### Changelog 2.07 ###
-++ Fixed error when installing the Quicklauncher plugin
+- Fixed error when installing the Quicklauncher plugin
 
 ### Changelog 2.06 ###
 - Added pspdoc plugin by qwikrazor87
