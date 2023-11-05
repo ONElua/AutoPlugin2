@@ -21,7 +21,7 @@ This tool allows you to install/uninstall the following plugins with one click
 | [Vflux](https://github.com/Applelo/vFlux) | [Applelo](https://github.com/Applelo) |
 | [Repatch](https://github.com/dots-tb/rePatch-reDux0) | [dots-tb](https://github.com/dots-tb) |
 | [LOLIcon](https://github.com/dots-tb/LOLIcon) | [dots-tb](https://github.com/dots-tb) |
-| [NoAVLS](https://bitbucket.org/SilicaAndPina/noavls) | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/) |
+| [NoAVLS](https://bitbucket.org/LiEnby/noavls) | [Li](https://bitbucket.org/LiEnby/) |
 | [ds3vita](https://github.com/xerpi/ds3vita) | [xerpi](https://github.com/xerpi) |
 | [ds4vita](https://github.com/xerpi/ds4vita) | [xerpi](https://github.com/xerpi) |
 | [PSVita USB streaming! (UVC USB Video Class)](https://github.com/xerpi/vita-udcd-uvc) | [xerpi](https://github.com/xerpi) |
@@ -29,14 +29,14 @@ This tool allows you to install/uninstall the following plugins with one click
 | [VitaGrafix](https://github.com/Electry/VitaGrafix) | [Electry](https://github.com/Electry) |
 | [usbmc](https://github.com/yifanlu/usbmc) | [Yifan Lu](https://github.com/yifanlu) |
 | [Custom Splash Boot](https://github.com/Princess-of-Sleeping/PSP2-CustomBootSplash) | [Princess of Sleeping](https://github.com/Princess-of-Sleeping) |
-| [FuckPSSE](https://bitbucket.org/SilicaAndPina/fuckpsse) | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/) |
-| [PSMPatch](https://bitbucket.org/SilicaAndPina/psmpatch) | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/) |
+| [FuckPSSE](https://bitbucket.org/LiEnby/fuckpsse) | [Li](https://bitbucket.org/LiEnby/) |
+| [PSMPatch](https://bitbucket.org/LiEnby/psmpatch) | [Li](https://bitbucket.org/LiEnby/) |
 | [ITLS-Enso](https://github.com/SKGleba/iTLS-Enso) | [SKGleba](https://github.com/SKGleba)|
-| [TropHAX](https://bitbucket.org/SilicaAndPina/trophax) | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/) |
-| [noPsmWhitelist](https://bitbucket.org/SilicaAndPina/nopsmwhitelist) | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/) |
+| [TropHAX](https://bitbucket.org/LiEnby/trophax) | [Li](https://bitbucket.org/LiEnby/) |
+| [noPsmWhitelist](https://bitbucket.org/LiEnby/nopsmwhitelist) | [Li](https://bitbucket.org/LiEnby/) |
 | [AnalogStickDisable](https://github.com/Hack-Usagi/AnalogStickDisable) | [Hack-Usagi](https://github.com/Hack-Usagi) |
 | [reF00D](https://github.com/dots-tb/reF00D) | FAPS Team |
-| [FreePSM](https://bitbucket.org/SilicaAndPina/freepsm/src/master/)  | [SilicaAndPina](https://bitbucket.org/SilicaAndPina/freepsm/src/master/) |
+| [FreePSM](https://bitbucket.org/LiEnby/freepsm/src/master/)  | [Li](https://bitbucket.org/LiEnby/freepsm/src/master/) |
 | [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [teakhanirons](https://github.com/teakhanirons) |
 | [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
 | [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
@@ -295,7 +295,7 @@ Size must be less than 20MB
 - dots-tb
 - Princess of sleeping
 - Hack-Usagi
-- SilicaAndPina
+- Li
 - OperationNT414C
 - Electry
 - SKGleba
