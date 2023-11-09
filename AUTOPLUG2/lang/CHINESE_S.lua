@@ -453,7 +453,7 @@ CHINESE_S["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin 修改�
 CHINESE_S["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin 修改失败 !!!"
 
 --Main
-CHINESE_S["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
+CHINESE_S["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm 是一个奖杯插件,可在 PlayStation Vita 系统上借助官方奖杯包与 sceNpTrophy 为自制软件提供奖杯功能支持"
 CHINESE_S["INSTALLP_DESC_PASTEUNLOCK"] =               "用于解锁系统软件中隐藏的 复制/粘贴功能的 PS Vita 插件. 要激活复制粘贴弹出窗口，请在文本上按住手指直到文本放大, 然后从屏幕上松开手指, 复制粘贴窗口将弹出."
 CHINESE_S["INSTALLP_DESC_USBDISABLE"] =                "当你将 vita 连接电脑时, 禁用恼人的 '正在连接' 对话框. (Q)CMA 仍可正常使用!!"
 CHINESE_S["INSTALLP_DESC_DENABLER"] =                  "通过浏览器下载文件"
