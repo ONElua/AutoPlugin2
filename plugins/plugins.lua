@@ -110,9 +110,11 @@ Online_Plugins = {
 { name = "Magic Automatic Fake User Input by Rufis01", id = "MAFUINPUT.png", path = "MAFUinput.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT",
   crc = 0x6322adb1, v = "v2.0-Alpha.1", version = "0003", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "ViXEn by isage", id = "VIXEN.png", path = "vixen.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIXEN"], KEY = "INSTALLP_DESC_VIXEN",
-  crc = 0x2fae6df6, v = "v1.4", version = "0005", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
+  crc = 0x5abc2d64, v = "v1.5", version = "0006", link = "https://raw.githubusercontent.com/isage/vixen/master/README.md", },
 { name = "tvikey by isage", id = "TVIKEY.png", path = "tvikey.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_TVIKEY"], KEY = "INSTALLP_DESC_TVIKEY",
   crc = 0x7c8e3f54, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/isage/tvikey/master/README.md", },
+{ name = "VitaControl by Hydr8gon", id = "VITACONTROL.png", path = "vitacontrol.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITACONTROL"], KEY = "INSTALLP_DESC_VITACONTROL",
+  crc = 0xfba93db3, v = "Rolling Release 791a80b", version = "0001", link = "https://raw.githubusercontent.com/Hydr8gon/VitaControl/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH",

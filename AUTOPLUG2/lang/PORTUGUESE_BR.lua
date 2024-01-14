@@ -371,6 +371,7 @@ PORTUGUESE_BR["TURKISH"] =                                 "Turco"
 PORTUGUESE_BR["INSTALLP_DESC_SD2VITA"] =                   "Plugin do kernel que monta/redireciona automaticamente qualquer dispositivo de armazenamento para qualquer ponto de montagem desejado (SD2VITA)"
 
 --KERNEL
+PORTUGUESE_BR["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 PORTUGUESE_BR["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
 PORTUGUESE_BR["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
 PORTUGUESE_BR["INSTALLP_DESC_VIXEN"] =                     "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"

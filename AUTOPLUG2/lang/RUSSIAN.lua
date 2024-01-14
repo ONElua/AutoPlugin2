@@ -371,6 +371,7 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "Плагин для обхода проверки лицензии встроенного PSP эмулятора, позволяющего в том числе запускать купленные на другом аккаунте игры"
 RUSSIAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV драйвер для поддержки клавиатуры и мыши"
 RUSSIAN["INSTALLP_DESC_VIXEN"] =                     "Плагин для поддержки XInput совместимых проводных контроллеров (таких, как контроллер Xbox 360)"

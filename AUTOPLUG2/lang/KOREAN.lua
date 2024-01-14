@@ -371,6 +371,7 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
+KOREAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 KOREAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "모든 PSPEmu DRM 검사를 우회하는 플러그인으로, 디지털 PSP 또는 PS1 게임 백업을 재생할 수 있습니다; 또는 합법적으로 소유하고 있지만 다른 PSN 계정에 있는 게임도 물론 가능합니다."
 KOREAN["INSTALLP_DESC_TVIKEY"] =                    "마우스/키보드용 PSTV 커널 드라이버"
 KOREAN["INSTALLP_DESC_VIXEN"] =                     "비타 X 입력 인에이블러. xinput 게임 패드용 PS비타 커널 드라이버(xbox 360)"

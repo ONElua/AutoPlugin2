@@ -371,6 +371,7 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 CHINESE_S["INSTALLP_DESC_NOPSPEMUDRM"] =               "一个用于绕过所有 PSPEmu DRM 检查的插件,您可以借助它玩数字版 PSP 或 PS1 游戏备份,或者您合法拥有但在另一个 PSN 帐户上的游戏."
 CHINESE_S["INSTALLP_DESC_TVIKEY"] =                    "PSTV 适用于 鼠标/键盘 的内核驱动"
 CHINESE_S["INSTALLP_DESC_VIXEN"] =                     "Vita X-input 启用器. 适用于 x-input gamepads (xbox360) 游戏手柄的 Vita 内核驱动."

@@ -371,6 +371,7 @@ JAPANESE["TURKISH"] =                                   "トルコ語"
 JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバイスを必要なマウントポイントに自動的にマウント/リダイレクトするカーネルプラグイン（SD2VITA）"
 
 --KERNEL
+JAPANESE["INSTALLP_DESC_VITACONTROL"] =                 "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 JAPANESE["INSTALLP_DESC_NOPSPEMUDRM"] =                 "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
 JAPANESE["INSTALLP_DESC_TVIKEY"] =                      "PSTV kernel driver for mouse/keyboard"
 JAPANESE["INSTALLP_DESC_VIXEN"] =                       "Vita X-input Enabler. PSVita kernel driver for x-input gamepads (xbox360)"
