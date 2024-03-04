@@ -30,7 +30,7 @@ plugins = {
 { name = "ds34vita by MERLev", id = "DS34VITA.png", path = "ds34vita.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_DS34VITA"], KEY = "INSTALLP_DESC_DS34VITA",
   crc = 0x9e58d7e0, v = "v1.1",  version = "0002", link = "https://raw.githubusercontent.com/MERLev/ds34vita/master/README.md", },
 { name = "Kubridge by TheOfficialFloW/bythos14", id = "KUBRIDGE.png", path = "kubridge.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_KUBRIDGE"], KEY = "INSTALLP_DESC_KUBRIDGE",
-  crc = 0xb95e60c9, v = "v0.3.1", version = "0004", },
+  crc = 0xb95e60c9, v = "v0.3.1", version = "0005", },
 { name = "NoNpDrm by TheOfficialFloW",	id = "NONPDRM.png", path = "nonpdrm.skprx",	section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NONPDRM"], KEY = "INSTALLP_DESC_NONPDRM",
   crc = 0x1040b585, v = "v1.2",	version = "0001", link = "https://raw.githubusercontent.com/TheOfficialFloW/NoNpDrm/master/readme.md", },
 { name = "NoNpDrm Unofficial by LMAN",	id = "NONPDRM.png", path = "nonpdrm_un.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NONPDRMU"], KEY = "INSTALLP_DESC_NONPDRMU",
@@ -149,7 +149,7 @@ plugins = {
 
 --2 prxs
 { name = "NoPspEmuDrm by Li", id = "NOPSPEMUDRM.png", path = "NoPspEmuDrm_kern.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM"], KEY = "INSTALLP_DESC_NOPSPEMUDRM",
-  crc = 0x27a9b037, v = "v1.05", crc2 = 0xa9242ab6, version = "0006", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
+  crc = 0x27a9b037, v = "v1.05", crc2 = 0xa9242ab6, version = "0007", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
   crc = 0xe869fae2, v = "v1.2", crc2 = 0xa398acb7, version = "0001", link = "https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md", },
 { name = "MiniVitaTV by TheOfficialFloW", id = "MINIVITATV.png", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV",
