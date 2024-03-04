@@ -30,7 +30,7 @@ plugins = {
 { name = "ds34vita by MERLev", id = "DS34VITA.png", path = "ds34vita.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_DS34VITA"], KEY = "INSTALLP_DESC_DS34VITA",
   crc = 0x9e58d7e0, v = "v1.1",  version = "0002", link = "https://raw.githubusercontent.com/MERLev/ds34vita/master/README.md", },
 { name = "Kubridge by TheOfficialFloW/bythos14", id = "KUBRIDGE.png", path = "kubridge.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_KUBRIDGE"], KEY = "INSTALLP_DESC_KUBRIDGE",
-  crc = 0xbfa0fd58, v = "v0.3", version = "0003", },
+  crc = 0xb95e60c9, v = "v0.3.1", version = "0004", },
 { name = "NoNpDrm by TheOfficialFloW",	id = "NONPDRM.png", path = "nonpdrm.skprx",	section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NONPDRM"], KEY = "INSTALLP_DESC_NONPDRM",
   crc = 0x1040b585, v = "v1.2",	version = "0001", link = "https://raw.githubusercontent.com/TheOfficialFloW/NoNpDrm/master/readme.md", },
 { name = "NoNpDrm Unofficial by LMAN",	id = "NONPDRM.png", path = "nonpdrm_un.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NONPDRMU"], KEY = "INSTALLP_DESC_NONPDRMU",
