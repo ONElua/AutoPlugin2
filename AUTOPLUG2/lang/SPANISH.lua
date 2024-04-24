@@ -83,7 +83,7 @@ SPANISH["MENU_PSP_NPDRMFREE_MOD_DESC"] =                "Un plugin para PSP/ePSP
 SPANISH["MENU_PSP_NPDRMFREE_DESC"] =                    "Un plugin para PSP/ePSP que permite correr contenido oficial de PS1/PSP con NPDRM, sin la necesidad de licencias .rif o act.dat válidos"
 SPANISH["MENU_PSP_PSPCTRLS_DESC"] =                     "Colección de parches para Adrenaline que permite usar los dos analógicos en determinados juegos de PSP"
 SPANISH["MENU_PSP_PLUGINS_DESC"] =                      "Instala Plugins de PSP para Adrenaline"
-SPANISH["MENU_PSP_GTA_TROPHIES_DESC"] =                 "Trophies for Liberty & Vice City Stories!"
+SPANISH["MENU_PSP_GTA_TROPHIES_DESC"] =                 "Trofeos para GTA Liberty & Vice City Stories!"
 
 --Options Extras
 SPANISH["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opciones para Config de PKGj"
@@ -140,11 +140,11 @@ SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE"] =              "Cambiar Idioma"
 SPANISH["MENU_SETTINGS_CHANGE_FONT"] =                  "Cambiar font"
 SPANISH["MENU_SETTINGS_AUTO_FIX"] =                     "Tai Config Auto: "
 
-SPANISH["MENU_SETTINGS_AUTO_FIX_DESC"] =                "Activa/Desactova la configuracion automática de Tai"
+SPANISH["MENU_SETTINGS_AUTO_FIX_DESC"] =                "Activa/Desactiva la configuracion automática de Tai"
 SPANISH["MENU_SETTINGS_LANG_ONLINE_DESC"] =             "Descarga paquetes de idiomas disponibles para AutoPlugin II"
 SPANISH["MENU_SETTINGS_AUTOUPDATE_DESC"] =              "Habilitar AutoUpdate Si/No"
 SPANISH["MENU_SETTINGS_CHANGE_LANGUAGE_DESC"] =         "Permite cambiar y ajustar el idioma por defecto de AutoPlugin II"
-SPANISH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	    "Permite cambiar y setear la font en AutoPlugin II"
+SPANISH["MENU_SETTINGS_CHANGE_FONT_DESC"] =      	      "Permite cambiar y setear la font en AutoPlugin II"
 
 --Install Plugins
 SPANISH["LIST_PLUGINS"] =                               "Lista de Plugins listos para instalar:"
@@ -260,7 +260,7 @@ SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu 
 SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus juegos, emuladores, homebrews, en su propia carpeta bajo el Directorio de Juegos"
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
 SPANISH["GE_PATCH_DESC"] =                              "Este es un Plugin experimental para Adrenaline v7.0 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
-SPANISH["MENU_PSP_PSPDOC_DESC"] =                       "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
+SPANISH["MENU_PSP_PSPDOC_DESC"] =                       "Un plugin para PSP/ePSP que permite dumpear los manuales de PSP en formato DOCUMENT.DAT a imagenes en formato PNG"
 
 --PSP Plugins Manager
 SPANISH["PSP_PLUGINS_MANAGER"] =                        "PSP Plugins Manager"
@@ -291,7 +291,7 @@ SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --QuickMenu Plus
-SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para mantener presionado el botón"
+SPANISH["QUICKMENU_MENU_TIME"] =                		    "Tiempo para mantener presionado el botón"
 SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Botón de Modo Reposo"
 SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "Estilo del Background (fondo)"
 SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Ajusta el tiempo de presion del botón PS para abrir el Quick Menu. El tiempo esta en microsegundos. Por ejemplo, coloca 250000 para 250 milisegundos (0,25 segundos). Por defecto el tiempo es de 500 milisegundos"
@@ -371,9 +371,9 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
-SPANISH["INSTALLP_DESC_NOPSPEMUDRM"] =                  "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
-SPANISH["INSTALLP_DESC_TVIKEY"] =                       "PSTV kernel driver for mouse/keyboard"
+SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
+SPANISH["INSTALLP_DESC_NOPSPEMUDRM"] =                  "Un Plugin que permite evitar todos los chequeos de DRM de PSPEmu, lo que permite jugar tus respaldos digitales de juegos de PSP y PS1, o de juegos que poseas legalmente pero en otra cuenta PSN"
+SPANISH["INSTALLP_DESC_TVIKEY"] =                       "Driver de Kernel para PSTV para el uso de mouse/teclado"
 SPANISH["INSTALLP_DESC_VIXEN"] =                        "Vita X-input Enabler. Driver de Kernel para PS Vita para los controles X-Input (Xbox 360)"
 SPANISH["INSTALLP_DESC_VSHPATCH"] =                     "Plugin similar a rePatch, pero para aplicaciones del Sistema. Es una partición VS0 emulada, simplemente pon los cambios que quieres realizar dentro de la carpeta ux0:/vshPatch/ y los cambios se verán reflejados en la partición vs0: , a traves del poder de fios2"
 SPANISH["INSTALLP_DESC_8BIVITA"] =                      "Básiscamente es el Plugin X1Vita, pero con el mapping (mapeado de botones), vid(Id de Vendedor) y pid(Id de Producto) de 8bitdo. (Controles de 8bitdo compatibles: Lite, Pro, Pro+, Pro 2, y Zero 2)"
@@ -397,13 +397,13 @@ SPANISH["INSTALLP_DESC_DS3VITA"] =                      "Controla tu PS Vita con
 SPANISH["INSTALLP_DESC_DS4VITA"] =                      "Controla tu PS Vita con un DualShock 4"
 SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combina las funcionalidades de ds4vita y ds3vita de xerpi. Añade soporte para usar DualSense (por Hydr8gon), así tambien integración con el Plugin reVita. Permite usar hasta dos controles al mismo tiempo"
 SPANISH["INSTALLP_DESC_DS5VITA"] =                      "Plugin para usar el DualSense de PS5 en PS Vita"
-SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita es un plugin para PS Vita/PSTV, que permite remapear botones y activar distintas acciones. Es la continuación de remaPSV de Rinnegatamante, reescrito como un Kernel Plugin. (Para abrir el menú de configs, presiona START + CUADRADO, personalizable en Settings -> Hotkeys.)"
-SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscópio al plugin reVita"
+SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita es un Plugin para PS Vita/PSTV, que permite remapear botones y activar distintas acciones. Es la continuación de remaPSV de Rinnegatamante, reescrito como un Kernel Plugin. (Para abrir el menú de configs, presiona START + CUADRADO, personalizable en Settings -> Hotkeys.)"
+SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscópio al Plugin reVita"
 SPANISH["INSTALLP_DESC_UDCDUVC"] =                      "Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora (Version Oficial)"
 SPANISH["INSTALLP_DESC_UDCDUVCO"] =                     "(Version para Vitas OLED FAT) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el plugin para LCD y OLED"
 SPANISH["INSTALLP_DESC_UDCDUVCL"] =                     "(Version para Vitas LED SLIM) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el plugin para LCD y OLED"
 SPANISH["INSTALLP_DESC_VIIMOTE"] =                      "Controla tu PS Vita con un WiiMote"
-SPANISH["INSTALLP_DESC_VITASTICK"] =                    "Permite usar la PS Vita como un mando de juego por USB  (Requiere vitastick.vpk)"
+SPANISH["INSTALLP_DESC_VITASTICK"] =                    "Permite usar la PS Vita como un mando de juego por USB (Requiere vitastick.vpk)"
 SPANISH["INSTALLP_DESC_KUIO"] =                         "Permite a los módulos de usuario acceder a ux0:data para operaciones de I/O básicas. Puede ser necesario para ciertos Plugins específicos"
 SPANISH["INSTALLP_DESC_ADRENALINE"] =                   "Permite ejecutar Adrenaline con un solo toque. Nota: Debe estar instalada la última version de Adrenaline"
 SPANISH["INSTALLP_DESC_DSMOTION"] =                     "Soporte al control de movimiento del DualShock para PlayStation TV"
@@ -454,7 +454,7 @@ SPANISH["INSTALLP_DESC_BOOTSPLASH_DONE"] =              "¡ boot_splash.bin CREA
 SPANISH["INSTALLP_DESC_BOOTSPLASH_FAIL"] =              "¡ boot_splash.bin FALLO !"
 
 --Main
-SPANISH["INSTALLP_DESC_NOTRPDRM"] =                     "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
+SPANISH["INSTALLP_DESC_NOTRPDRM"] =                     "NoTrpDrm es un Plugin que habilita el uso de packs de Trofeos Oficiales con sceNpTrophy para Homebrew en sistemas PS Vita. Básicamente, permite ganar trofeos en Homebrew. Un ejemplo práctico, es que al tener este Plugin instalado, podrás desbloquear trofeos en el port de SoulCalibur de Rinnegatamante, así como en otros que tengan trofeos ya implementados"
 SPANISH["INSTALLP_DESC_PASTEUNLOCK"] =                  "Plugin para PS Vita que desbloquea la función de copiar/pegar que se encuentra oculta en el software del sistema. Para activar el popup (ventana) de copiar y pegar, manten presionado con el dedo en el texto hasta que haga un zooms. Luego suelta y aparecerá la ventana de copiar y pegar"
 SPANISH["INSTALLP_DESC_USBDISABLE"] =                   "Desactiva el molesto mensaje de 'Conectando' cuando conectas la PS Vita al computador. ¡¡(Q)CMA sigue funcionando!!"
 SPANISH["INSTALLP_DESC_DENABLER"] =                     "Permite descargar archivos a través del navegador"
@@ -480,8 +480,8 @@ SPANISH["INSTALLP_DESC_TRIMPOSE"] =                     "Plugin para PS Vita que
 SPANISH["INSTALLP_DESC_QUIETSHOT"] =                    "Silencia el sonido de obsturador al momento de hacer un screenshot (captura de pantalla), foto, video, fotos panorámicas. Funciona en PS Vita y PSTV."
 SPANISH["INSTALLP_DESC_FTPEVERYWHERE"] =                "ftpeverywhere - Plugin que corre siempre en segundo plano un servidor FTP"
 SPANISH["INSTALLP_DESC_TROPHYSHOT"] =             	    "Tal como en PS4, toma un screenshot cada vez que desbloquees un trofeo"
-SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	    "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
-SPANISH["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
+SPANISH["INSTALLP_DESC_BOOTSOUND"] =             	      "Este Plugin puede reproducir archivos WAV como un jingle personalizado al arranque de PS Vita/PSTV"
+SPANISH["INSTALLP_DESC_QUICKMENU"] =             	      "Quick Menu Plus fusiona los Plugins Quick Power, Quick Volume, y Rapidmenu, así como tambien añade nuevas funciones. Botón de Apagar, Reiniciar y Suspender, asi como hace configurables el botón de Apagado, barra (slider) de Volumen, Reducir el tiempo de apertura del Menú Rápido, Estilos de Fondo del Menú Rápido personalizados"
 SPANISH["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recomendada) Esta versión solo funciona si tocas la parte superior de la pantalla. En SceShell (Pantalla de Inicio) esta zona seria la barra de estado (donde sale la hora y batería). Funciona de manera similar a la función de 'Doble toque para suspender' de Android, la cual es usada en la barra de estado"
 SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de fondo de la pantalla de bloqueo (la que queda una vez se 'pela' la imagen de bloqueo) (formato PNG con paleta de 8 bit no entrelazada. Resolución máxima de 896x448. Peso máximo de 512 Kb)"
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "Plugin para añadir botones que permiten abrir aplicaciones en Quick Menu (menú que sale al mantener presionado el botón PS). Hecho usandoQuickMenuReborn."
@@ -529,7 +529,7 @@ SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
 
 --*PCSC90032
-SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr  Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora."
+SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora."
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
@@ -551,7 +551,7 @@ SPANISH["REPAIR_CONFIG_TXT"] =                          "Plugins de Henkaku arre
 SPANISH["REPAIR_CONFIG_SHARPSCALE"] =                   "¡Arregla las configuraciones que hacen crashear a Sharpscale!"
 SPANISH["STRING_UNSAFE_MODE"] =                         "¡Se necesita el MODO INSEGURO para este Homebrew!"
 SPANISH["STRING_PSVITA_RESTART"] =                      "Tu PS Vita se reiniciará"
-SPANISH["STRINGS_CONFIG_SUCCESS"] =		                "taiHEN config.txt Recargado con éxito"
+SPANISH["STRINGS_CONFIG_SUCCESS"] =		                  "taiHEN config.txt Recargado con éxito"
 SPANISH["STRING_BACKUP_CONFIGS"] =                      "Creando Config_backups.txt"
 SPANISH["STRING_MISSING_CONFIG"] =                      "Falta config.txt"
 SPANISH["STRING_BACK"] =                                "Para volver al menú"
