@@ -40,7 +40,7 @@ Online_Plugins = {
 { name = "NoAVLS by Li", id = "NOAVLS.png", path = "noavls.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_NOAVLS"], KEY = "INSTALLP_DESC_NOAVLS",
   crc = 0xdcbae19b, v = "v0.01", version = "0001", link = "https://silica.codes/Li/noavls/raw/branch/master/README.md", },
 { name = "Repatch reLoaded by SonicMastr", id = "REPATCHEX.png", path = "repatch_ex.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCHEX"], KEY = "INSTALLP_DESC_REPATCHEX",
-  crc = 0x07aa6942, v = "v2.0", version = "0003", link = "https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md", },
+  crc = 0x98203458, v = "v2.1", version = "0004", link = "https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md", },
 { name = "Repatch by dots-tb",	id = "REPATCH.png", path = "repatch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCH"], KEY = "INSTALLP_DESC_REPATCH",
   crc = 0x56d22ee4, v = "v3.0", version = "0001", link = "https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md", },
 { name = "Repatch by dots-tb", id = "REPATCH.png", path = "repatch_4.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_REPATCH271"], KEY = "INSTALLP_DESC_REPATCH271",
