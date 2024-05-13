@@ -24,6 +24,7 @@ function plugins_installation(obj)
 	elseif obj.path == "reVita.skprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif obj.path == "pspemu-colour-crunch.skprx" and hw.model() != "Vita Slim" then os.message(LANGUAGE["INSTALLP_LCDCOLOURSPACECHANGE"])
 	elseif obj.path == "PSVshellPlus_Kernel.skprx" and ( version != "3.60" and version != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif obj.path == "AutoBoot.suprx" and tai.find("main","ux0:data/VITADB/vdb_daemon.suprx") then os.message(LANGUAGE["INSTALLP_WARNING_AUTOBOOT"])
 	elseif obj.hw and hw.model() != obj.hw then os.message(LANGUAGE["INSTALLP_WARNING_VITATV"])
 	else
 
@@ -103,7 +104,7 @@ function plugins_installation(obj)
 			tai.del("KERNEL", "vitacheat.skprx")
 
 		--udcd
-		elseif obj.path:find(string.lower("udcd_uvc"),1,true) then
+		elseif obj.path:find(string.lower("udcd_uvc"),1,true) or obj.path:find(string.lower("vitapad.skprx"),1,true) then
 			--os.message("delete udcds")
 			tai.del("KERNEL", "udcd_uvc.skprx")
 			tai.del("KERNEL", "udcd_uvc_oled_off.skprx")
@@ -111,6 +112,10 @@ function plugins_installation(obj)
 		end
 
 		--Aqui vamos a hacer que los vpks se descarguen y se instalen
+		if obj.down then
+			download_install(obj.down,obj.name_vpk)
+		end
+
 		if obj.vpk then
 			__file = files.nopath(obj.vpk)
 			os.message(__file.." "..LANGUAGE["INSTALLP_QUESTION_VPK"],0)
@@ -124,7 +129,12 @@ function plugins_installation(obj)
 			end
 		end
 
-		if obj.path == "vitastick.skprx" then
+
+		if obj.path == "alienhook.suprx" then
+			if game.exists("PCSE00445") then obj.section = "PCSE00445"
+			elseif game.exists("PCSB00561") then obj.section = "PCSB00561"
+			end
+		elseif obj.path == "vitastick.skprx" then
 			__file = "vitastick.vpk"
 			game.install("resources/plugins/vitastick.vpk",false)
 		elseif obj.path == "ModalVol.suprx" then
@@ -177,47 +187,18 @@ function plugins_installation(obj)
 			end
 
 		elseif obj.path == "VitaGrafix.suprx" then
-			files.delete("tmp")
 			if back2 then back2:blit(0,0) end
 				message_wait()
 			os.delay(250)
 
 			files.copy(path_plugins.."vitagrafix/patch/", "ux0:data/VitaGrafix/")
+
 			local onNetGetFileOld = onNetGetFile
 			onNetGetFile = nil
-			http.download("https://github.com/Kirezar/VitaGrafixConfigurator","tmp")
+				http.download("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
 			onNetGetFile = onNetGetFileOld
-			if files.exists("tmp") then
-				local objh = html.parsefile("tmp")
-				if objh then
-
-					local links = objh:findall(html.TAG_A)
-					if links then
-						--os.message("Links "..#links)
-						for i=1,#links do
-							if links[i].href then
-								if links[i].href:find("releases/tag/",1,true) then
-									--os.message(links[i].href)
-									--onNetGetFile = onNetGetFileOld
-									__file = "VitaGrafixConfigurator".." "..files.nopath(links[i].href)
-									http.download("https://github.com/Kirezar/VitaGrafixConfigurator/releases/download/"..files.nopath(links[i].href).."/VitaGrafixConfigurator.vpk","ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk")
-									http.download("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
-									if files.exists("ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk") then
-										game.install("ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk",false)
-										break
-									end
-								end
-							end
-						end
-					else
-						os.message(LANGUAGE["LANG_ONLINE_FAIL_CONEXION"])
-					end
-				else
-					os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
-				end
-			else
-				os.message(LANGUAGE["UPDATE_WIFI_IS_ON"])
-			end
+			
+			download_install("https://github.com/Kirezar/VitaGrafixConfigurator/","VitaGrafixConfigurator.vpk")
 
 		end
 

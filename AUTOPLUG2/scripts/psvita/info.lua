@@ -9,58 +9,6 @@
 	Collaborators: BaltazaR4 & Wzjk.
 ]]
 
-local autoboot_callback = function ()
-	autoboot()
-end
-
-local customQuickMenu_callback = function ()
-	config_quickmenu()
-end
-
-local convertimgsplash_callback = function ()
-	customimgsplash()
-end
-
-local customwarning_callback = function ()
-
-	local text = osk.init(LANGUAGE["INSTALLP_OSK_TITLE"], LANGUAGE["INSTALLP_OSK_TEXT"])
-	if not text then return end
-
-	local fp = io.open(path_tai.."custom_warning.txt", "wb")
-	if fp then
-		fp:write(string.char(0xFF)..string.char(0xFE))
-		fp:write(os.toucs2(text))
-		fp:close()
-		files.delete("ux0:tai/custom_warning.txt")
-		files.delete("uma0:tai/custom_warning.txt")
-		if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-			change = true
-			exit_bye_bye()
-		end
-	end
-end
-
-local customTransImpose_callback = function ()
-
-	local text = osk.init(LANGUAGE["TRANSIMPOSE_OSK_TITLE"], 125, 3, __OSK_TYPE_NUMBER, __OSK_MODE_TEXT)
-	if not text then return end
-
-	local fp = io.open("ur0:data/trimpose.txt", "wb")
-	if fp then
-		fp:write(tonumber(text))
-		fp:close()
-
-		if back then back:blit(0,0) end
-			message_wait(LANGUAGE["TRANSIMPOSE_LEVEL"])
-		os.delay(1500)
-
-		if os.message(LANGUAGE["RESTART_QUESTION"],1) == 1 then
-			change = true
-			exit_bye_bye()
-		end
-
-	end
-end
 
 function plugin_info(obj)
 
@@ -107,6 +55,7 @@ function plugin_info(obj)
 		crc2 = files.crc32(path_tai..obj.path2) or nil
 	end--files.exists(path_tai..obj.path2)
 
+--[[
 	--PLugins que se pueden modificar sus valores,texto o imagen
 	local customize,flag = nil,false
 	if obj.path_prx then
@@ -122,7 +71,7 @@ function plugin_info(obj)
 			flag = true
 		end
 	end
-
+]]
 	--checks addons
 	local addons = nil
 
@@ -302,10 +251,10 @@ function plugin_info(obj)
 			end
 		end
 
-		if flag then
-			if buttonskey then buttonskey:blitsprite(10,472,__TRIANGLE) end
-			screen.print(45,475,LANGUAGE["MENU_INFO_PERSONALIZE"],1,color.white,color.blue, __ALEFT)
-		end
+--		if flag then
+--			if buttonskey then buttonskey:blitsprite(10,472,__TRIANGLE) end
+--			screen.print(45,475,LANGUAGE["MENU_INFO_PERSONALIZE"],1,color.white,color.blue, __ALEFT)
+--		end
 
 		if buttonskey then buttonskey:blitsprite(10,515,saccept) end
 		if obj.path == "QuickMenuReborn.suprx" and obj.configpath then
@@ -371,8 +320,7 @@ function plugin_info(obj)
 			break
 		end
 
-		--if buttons.cancel then break end
-		if buttons.triangle and flag then customize() end
+		--if buttons.triangle and flag then customize() end
 
 		vol_mp3()
 

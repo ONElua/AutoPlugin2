@@ -122,10 +122,12 @@ function downloads()
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT"],	     desc = LANGUAGE["MENU_EXTRAS_INSTALL_YAMT_DESC"],		    funct = yamt_callback },
 		{ text = LANGUAGE["MENU_EXTRAS_INSTALL_WAVERELOAD"], desc = LANGUAGE["MENU_EXTRAS_INSTALL_WAVERELOAD_DESC"],    funct = psp2wpp_reload_callback },
 	}
+	table.sort(menu, function (a,b) return string.lower(a.text)<string.lower(b.text) end)
 
-	local scroll = newScroll(menu,#menu)
+	local limit = 9
+	local scroll = newScroll(menu,limit)
 
-	local xscroll = 10
+	local xscroll,xscrollm = 10,15
     while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
@@ -138,15 +140,32 @@ function downloads()
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_DOWNLOADS"],1.0,color.white,color.blue,__ACENTER)
 
-        local y = 115
+        local y = 95
         for i=scroll.ini, scroll.lim do
-			if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
-			--	tam = 1.4
-			--else tam = 1.2 end
+			--if i == scroll.sel then draw.offsetgradrect(5,y-15,950,45,color.shine:a(65),color.shine:a(40),0x0,color.shine:a(5),21) end
+			--	tam = 1.4 no
+			--else tam = 1.2 end no
 
-			screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)
+			if i == scroll.sel then draw.offsetgradrect(5,y-12,943,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
+			
+			if screen.textwidth(menu[i].text) > 925 then
+				xscrollm = screen.print(xscrollm, y, menu[i].text,1,color.white,color.blue,__SLEFT,935)
+			else
+				screen.print(15, y, menu[i].text,1,color.white,color.blue,__ALEFT)
+			end
+
+			--screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)
 			y += 45
         end
+
+		---- Draw Scroll Bar
+		if scroll.maxim >= limit then
+		local ybar,hbar = 80, (limit*46)
+		draw.fillrect(950,ybar-2,8,hbar,color.shine)
+			local pos_height = math.max(hbar/scroll.maxim, limit)
+			--Bar Scroll
+			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scroll.maxim-1))*(scroll.sel-1), 8, pos_height, color.new(0,255,0))
+		end
 
 		if screen.textwidth(menu[scroll.sel].desc) > 925 then
 			xscroll = screen.print(xscroll, 520, menu[scroll.sel].desc,1,color.white,color.blue,__SLEFT,935)
@@ -157,13 +176,13 @@ function downloads()
         screen.flip()
 
         --Controls
-		if buttons.left or buttons.right then xscroll = 10 end
+		if buttons.left or buttons.right then xscroll,xscrollm = 10,15 end
 
         if buttons.up or buttons.analogly < -60 then
-			if scroll:up() then xscroll = 10 end
+			if scroll:up() then xscroll,xscrollm = 10,15 end
 		end
         if buttons.down or buttons.analogly > 60 then
-			if scroll:down() then xscroll = 10 end
+			if scroll:down() then xscroll,xscrollm = 10,15 end
 		end
 
 		if buttons.cancel then break end

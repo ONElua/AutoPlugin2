@@ -18,10 +18,10 @@ dofile("scripts/psvita/sd2vita.lua")
 dofile("scripts/psvita/pmanager.lua")
 dofile("scripts/psvita/autoplugin.lua")
 dofile("scripts/psvita/plugins_online.lua")
-dofile("scripts/extras/downloads.lua")
 dofile("scripts/extras/nearest.lua")
 dofile("scripts/psvita/hdpatch.lua")
 dofile("scripts/psvita/info.lua")
+dofile("scripts/psvita/menu_personalize.lua")
 
 local sd2vita_callback = function ()
 	sd2vita()
@@ -41,16 +41,8 @@ local onlineplugins_callback = function ()
 	dofile("menu.lua")
 end
 
-local downloads_callback = function ()
-	downloads()
-end
-
 local hd_patch_callback = function ()
 	HD_Patch()
-end
-
-local VitaNearest_callback = function ()
-	VitaNearest()
 end
 
 function menu_ps()
@@ -64,9 +56,8 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
-		{ text = LANGUAGE["MENU_DOWNLOADS"],                desc = LANGUAGE["MENU_EXTRAS_DOWNLOADS_DESC"],          funct = downloads_callback },
 		{ text = LANGUAGE["MENU_PSVITA_HD_PATCH"],          desc = LANGUAGE["MENU_PSVITA_HD_PATCH_DESC"],	        funct = hd_patch_callback },
-		{ text = LANGUAGE["MENU_PSVITA_INSTALL_NEAREST"],	desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"],	        funct = VitaNearest_callback },
+		{ text = LANGUAGE["MENU_PSVITA_CUSTOMIZE"],         desc = LANGUAGE["MENU_PSVITA_CUSTOMIZE_DESC"],	        funct = menu_personalize },
 	}
 
 	if tonumber(cont_global:get()) > 0 and yes_update and tonumber(yes_update:get()) == 3 then

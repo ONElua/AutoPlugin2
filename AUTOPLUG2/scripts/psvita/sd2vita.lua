@@ -183,6 +183,9 @@ function configure()
 		if buttonskey then buttonskey:blitsprite(5, 498, __TRIANGLE) end
 		screen.print(30, 500, LANGUAGE["SD2VITA_CONFIG_SAVE"], 1, color.white, color.black, __ALEFT)
 
+		if buttonskey3 then buttonskey3:blitsprite(920,518,1) end
+		screen.print(915,522,LANGUAGE["STRING_CLOSE"],1.0,color.white,color.blue, __ARIGHT)
+
 		screen.flip()
 
 		--Controls
@@ -190,6 +193,11 @@ function configure()
 		if buttons.down or buttons.analogly > 60 then scrollm:down() end
 
 		if buttons.cancel then return end
+
+		--Exit
+		if buttons.start then
+			exit_bye_bye()
+		end
 
 		if buttons.triangle then check_storage_config(devices) end
 
