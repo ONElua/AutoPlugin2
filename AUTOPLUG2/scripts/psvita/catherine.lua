@@ -8,7 +8,7 @@ if game.exists("PCSG01179") then Catherine = true end
 
 function Catherine_HD()
 
-	if not P4Golden then os.message(LANGUAGE["NO_CHATERINE_GAMES"]) end
+	if not Catherine then os.message(LANGUAGE["NO_CHATERINE_GAMES"]) end
 
 	local CATHERINE_ID = "CATHERINEHD.png"
 
