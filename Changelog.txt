@@ -1,3 +1,6 @@
+#2.10
+++ Fixed error when you do not have the games installed: Persona 4 Golden, Catherine and Alien Shooter
+
 #v2.09
 ++ Fix Vitacheat plugins for 3.65/3.60
 ++ Added Iostaging, vitapad and alienhook plugins
