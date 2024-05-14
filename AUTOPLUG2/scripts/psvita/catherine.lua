@@ -113,10 +113,6 @@ function Catherine_HD()
 			end
 
 			if buttons.accept then
-				Patch_Catherine_install(CatherineTB[selector],patches[scroll.sel])
-			end
-
-			if buttons.triangle then
 
 				local vbuff = screen.buffertoimage()
 
@@ -137,10 +133,12 @@ function Catherine_HD()
 					img:center()
 					img:blit(480,272)
 					screen.flip()
-					buttons.waitforkey()
+					--buttons.waitforkey()
+					os.delay(1200)
 				end
 				img,vbuff = nil,nil
 
+				Patch_Catherine_install(CatherineTB[selector],patches[scroll.sel])
 			end
 
 		end

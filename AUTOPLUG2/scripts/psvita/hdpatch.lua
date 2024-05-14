@@ -11,6 +11,7 @@
 
 dofile("scripts/psvita/p4golden.lua")
 dofile("scripts/psvita/catherine.lua")
+dofile("scripts/psvita/aliendlc.lua")
 
 local p4_callback = function ()
 	P4Golden_HD()
@@ -20,11 +21,16 @@ local catherine_callback = function ()
 	Catherine_HD()
 end
 
+local AlienShooter_callback = function ()
+	AlienShooter_DLC_Unlocker()
+end
+
 function HD_Patch()
 
 	local menu = {
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	    desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		  funct = p4_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"], funct = catherine_callback },
+		{ text = LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"],	    desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"],                funct = AlienShooter_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)

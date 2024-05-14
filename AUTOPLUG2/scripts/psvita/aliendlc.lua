@@ -1,32 +1,27 @@
-P4Golden = false
+AlienShooter = false
 
---Ckecking game P4 Golden
-P4 = {
-	{ id = "PCSG00004", region = "Japan" },
-	{ id = "PCSG00563", region = "Japan (Reprint)" },
-	{ id = "PCSE00120", region = "North America" },
-	{ id = "PCSB00245", region = "Europe and Australia" },
-	{ id = "PCSH00021", region = "Asia" },
-
+--Ckecking game Alien Shooter
+Alien = {
+	{ id = "PCSE00445", region = "North America" },
+	{ id = "PCSB00561", region = "Europe" },
 }
 
-gamesP4 = {}
-for i=1,#P4 do
-	if game.exists(P4[i].id) then
-		P4Golden = true
-		table.insert(gamesP4,P4[i])
+gamesAlien = {}
+for i=1,#Alien do
+	if game.exists(Alien[i].id) then
+		AlienShooter = true
+		table.insert(gamesAlien,Alien[i])
 	end
 end
 
-function P4Golden_HD()
+function AlienShooter_DLC_Unlocker()
 
-	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) end
+	if not AlienShooter then os.message(LANGUAGE["NO_ALIENSHOOTER_GAMES"]) end
 
-	local P4GOLDEN_ID = "PERSONA4GOLDENHD.png"
+	local AlienShooter_ID = "ALIENDLC.png"
 
 	local patches = {
-		{ res = "1920x1080 HD", desc = LANGUAGE["P4G_1920x1080_DESC"], path = "p4goldenhd_1920x1080.suprx" },
-		{ res = "1280x720 HD",  desc = LANGUAGE["P4G_1280x720_DESC"], path = "p4goldenhd_1280x720.suprx" },
+		{ res = LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"],  desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"], path = "alienhook.suprx" },
 	}
 
 	for i=1,#patches do
@@ -48,20 +43,20 @@ function P4Golden_HD()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
-		screen.print(480,20,LANGUAGE["INSTALL_P4G_HD_TITLE"],1.0,color.white,color.blue,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"],1.0,color.white,color.blue,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
 
 		--Games
 		local xRoot = 200
-		local w = (955-xRoot)/#gamesP4
-		for i=1, #gamesP4 do
+		local w = (955-xRoot)/#gamesAlien
+		for i=1, #gamesAlien do
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, gamesP4[i].id, 1, color.white, color.blue, __ACENTER)
+			screen.print(xRoot+(w/2), 75, gamesAlien[i].id, 1, color.white, color.blue, __ACENTER)
 			draw.fillrect(750,435,200,42, color.shine:a(25))
-			screen.print(940,445,gamesP4[selector].region,1,color.white,color.blue, __ARIGHT)
+			screen.print(940,445,gamesAlien[selector].region,1,color.white,color.blue, __ARIGHT)
 			xRoot += w
 		end
 
@@ -70,9 +65,9 @@ function P4Golden_HD()
 
 			if i == scroll.sel then	draw.offsetgradrect(3,y-10,952,38,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			idx = tai.find(gamesP4[selector].id,patches[i].path)
+			idx = tai.find(gamesAlien[selector].id,patches[i].path)
 			if idx != nil then
-				if files.exists(tai.gameid[ gamesP4[selector].id ].prx[idx].path) then
+				if files.exists(tai.gameid[ gamesAlien[selector].id ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
 				else
 					if doty then doty:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.yellow:a(205)) end
@@ -83,9 +78,6 @@ function P4Golden_HD()
 			y+=45
 		end
 
-		--Instructions
-		screen.print(25, 265, LANGUAGE["INSTRUCTIONS_HD_PATCH"],1,color.white,color.blue,__ALEFT)
-
 		if patches[scroll.sel].desc then
 			if screen.textwidth(patches[scroll.sel].desc) > 925 then
 				xscroll = screen.print(xscroll, 400, patches[scroll.sel].desc,1,color.green,0x0,__SLEFT,935)
@@ -94,14 +86,14 @@ function P4Golden_HD()
 			end
 		end
 
-		if #gamesP4 > 1 then
+		if #gamesAlien > 1 then
 			if buttonskey2 then buttonskey2:blitsprite(5,448,2) end
 			if buttonskey2 then buttonskey2:blitsprite(35,448,3) end
 			screen.print(70,450, LANGUAGE["INSTALL_P4G_HD_CHANGE"],1,color.white,color.black,__ALEFT)
 		end
 
 		if buttonskey then buttonskey:blitsprite(10, 483, saccept) end
-        screen.print(40, 485, LANGUAGE["INSTALL_P4G_HD"], 1, color.white, color.black, __ALEFT)
+        screen.print(40, 485, LANGUAGE["MENU_INSTALL_INFO"], 1, color.white, color.black, __ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(10,518,scancel) end
 		screen.print(40,522,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
@@ -136,20 +128,21 @@ function P4Golden_HD()
 			--L/R
 			if buttons.released.l or buttons.released.r then
 				if buttons.released.l then selector -= 1 else selector += 1 end
-				if selector > #gamesP4 then selector = 1
-				elseif selector < 1 then selector = #gamesP4 end
+				if selector > #gamesAlien then selector = 1
+				elseif selector < 1 then selector = #gamesAlien end
 			end
 
 			if buttons.accept then
+
 				local vbuff = screen.buffertoimage()
 
 				local onNetGetFileOld = onNetGetFile
 				onNetGetFile = nil
 
-				local img = image.load(screenshots..P4GOLDEN_ID)
+				local img = image.load(screenshots..AlienShooter_ID)
 				if not img then
-					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, P4GOLDEN_ID), screenshots..P4GOLDEN_ID).success then
-						img = image.load(screenshots..P4GOLDEN_ID)
+					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, AlienShooter_ID), screenshots..AlienShooter_ID).success then
+						img = image.load(screenshots..AlienShooter_ID)
 					end
 				end
 
@@ -165,7 +158,7 @@ function P4Golden_HD()
 				end
 				img,vbuff = nil,nil
 
-				Patch_P4G_install(gamesP4[selector],patches[scroll.sel])
+				Patch_AlienShooter_install(gamesAlien[selector],patches[scroll.sel])
 			end
 
 		end
@@ -174,19 +167,15 @@ function P4Golden_HD()
 
 end
 
-function Patch_P4G_install(game,res)
+function Patch_AlienShooter_install(game,res)
 
 	--Copy plugin to tai folder
 	files.copy(path_plugins..res.path, path_tai)
-
-	tai.del(game.id, "p4goldenhd_1920x1080.suprx")
-	tai.del(game.id, "p4goldenhd_1280x720.suprx")
-
 	tai.put(game.id, path_tai..res.path)
-	ReloadConfig,change = true,true
+	ReloadConfig = true
 
 	if back2 then back2:blit(0,0) end
-		message_wait(LANGUAGE["INSTALLING_P4G_HD_PATCH"].."\n\n"..res.res)
+		message_wait(res.res.."\n\n"..LANGUAGE["STRING_INSTALLED"])
 	os.delay(850)
 
 end
