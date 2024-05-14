@@ -27,9 +27,13 @@ CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA"] =             "安装 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "配置 SD2VITA 插件"
 CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "检查插件更新"
-CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "高清补丁"
+CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
+CHINESE_S["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
+CHINESE_S["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
 
-CHINESE_S["MENU_PSVITA_HD_PATCH_DESC"] =               "适用于部分 PS Vita 游戏的高清补丁"
+CHINESE_S["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
+CHINESE_S["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+CHINESE_S["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
 CHINESE_S["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "安装为 PSVita 环境开发的实用插件"
 CHINESE_S["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "卸载插件"
 CHINESE_S["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "安装 SD2VITA 插件 (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ CHINESE_S["INSTALLP_NO_VPK"] =                         "下载或安装失败!"
 
 --customWarning
 CHINESE_S["CUSTOMWARNING_MESSAGE"] =                   "请记住启用 Custom Warning 插件"
-
+CHINESE_S["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
 CHINESE_S["INSTALLP_VITABRIGHT_360"] =                 "Vitabright 仅适用于 3.60/H-encore 3.68"
 CHINESE_S["INSTALLP_CWARNING_360_365"] =               "Custom Warning 无法用于 3.67/3.68"
 CHINESE_S["INSTALLP_REVITA_360_365"] =                 "reVita 仅适用于 3.60/3.65"
@@ -371,6 +375,8 @@ CHINESE_S["TURKISH"] =                                 "土耳其语"
 CHINESE_S["INSTALLP_DESC_SD2VITA"] =                   "自动将任何存储设备挂载/重定向到任何所需的挂载点的内核插件 (适用于 SD2VITA)"
 
 --KERNEL
+CHINESE_S["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+CHINESE_S["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 CHINESE_S["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 CHINESE_S["INSTALLP_DESC_NOPSPEMUDRM"] =               "一个用于绕过所有 PSPEmu DRM 检查的插件,您可以借助它玩数字版 PSP 或 PS1 游戏备份,或者您合法拥有但在另一个 PSN 帐户上的游戏."
 CHINESE_S["INSTALLP_DESC_TVIKEY"] =                    "PSTV 适用于 鼠标/键盘 的内核驱动"
@@ -527,6 +533,9 @@ CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.�
 CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
 CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程序隐藏 ux0:/app/AUTOPLUG2"
 CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard 是一款插件和应用程序, 可让您将 PS Vita 用作 USB 键盘. 主机会认为你的 vita 是一个真正的键盘"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+CHINESE_S["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 CHINESE_S["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita 插件,用于支持在任何日期或时间运行 `PCSC90032`."

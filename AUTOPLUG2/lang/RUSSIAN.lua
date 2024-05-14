@@ -27,9 +27,13 @@ RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Удалить плаги�
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA"] =             "Установить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Настроить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Проверить обновления плагинов"
-RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD патчи"
+RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
+RUSSIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
+RUSSIAN["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
 
-RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD патчи для нескольких PS Vita игр"
+RUSSIAN["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
+RUSSIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
 RUSSIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Установить наиболее полезные плагины, созданные сценой PS Vita"
 RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Легко и просто удалить установленные плагины"
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Установить плагин для SD2VITA (StorageMgr v3.4 от CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ RUSSIAN["INSTALLP_NO_VPK"] =                         "Ошибка при заг
 
 --customWarning
 RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте установить плагин Custom Warning"
-
+RUSSIAN["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
 RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только с 3.60 по 3.68"
 RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и новее"
 RUSSIAN["INSTALLP_REVITA_360_365"] =                 "reVita работает только на 3.60 и 3.65"
@@ -371,6 +375,8 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
+RUSSIAN["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+RUSSIAN["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 RUSSIAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "Плагин для обхода проверки лицензии встроенного PSP эмулятора, позволяющего в том числе запускать купленные на другом аккаунте игры"
 RUSSIAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV драйвер для поддержки клавиатуры и мыши"
@@ -527,6 +533,9 @@ RUSSIAN["INSTALLP_DESC_SCOREHAX"] =                  "Стань профи в �
 RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper разработан для извлечения содержимого книг в формате .MNH (Marlin-Hon), который используется в приложении PS Vita Sony Reader (PCSC80012)"
 RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает наличие установленного AutoPlugin II от других приложений"
 RUSSIAN["INSTALLP_DESC_VITAKEYBOARD"] =              "Тандем из плагина и приложения для использования PS Vita в качестве USB клавиатуры"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+RUSSIAN["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 RUSSIAN["INSTALLP_DESC_MIKUA"] =                     "Плагин, обходящий ограничения запуска Hatsune Miku AR Stage (PCSC90032)"

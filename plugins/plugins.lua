@@ -3,6 +3,8 @@ Online_Plugins = {
 --Kernel [SECTION]
 { name = "Adrenaline by TheOfficialFloW (Fix double touch)", id = "ADRENALINE.png", path = "adrenaline_kernel.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ADRENALINE"], KEY = "INSTALLP_DESC_ADRENALINE", link = "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md", },
 
+{ name = "IOStaging Vita by bythos14", id = "IOSTAGING.png", path = "iostaging.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_IOSTAGING"], KEY = "INSTALLP_DESC_IOSTAGING",
+  crc = 0x219fef7d, v = "v1.0",  version = "0001", link = "https://raw.githubusercontent.com/bythos14/IOStaging/main/README.md", },
 { name = "0syscall6 by SKGleba", id = "REFOOD_SYSCALL.png", path = "0syscall6.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSCALL6"], KEY = "INSTALLP_DESC_SYSCALL6",
   crc = 0xda05f49b, v = "v1.3",  version = "0002", link = "https://raw.githubusercontent.com/SKGleba/0syscall6/master/README.md", },
 { name = "8BitVita by Ibrahim778", id = "EBITVITA.png", path = "8BitVita.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_8BIVITA"], KEY = "INSTALLP_DESC_8BIVITA",
@@ -128,8 +130,10 @@ Online_Plugins = {
 --{ name = "CoreUnlocker80000H by GrapheneCt v1.0", id = "COREUNLOCKER.png", path = "CoreUnlocker80000H.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_COREUNLOCK"], KEY = "INSTALLP_DESC_COREUNLOCK", link = "https://raw.githubusercontent.com/GrapheneCt/CoreUnlocker80000H/master/README.md", },
 
 --with vpk
+{ name = "VitaPad by carlelieser", id = "VITAPAD.png", path = "vitapad.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITAPAD"], KEY = "INSTALLP_DESC_VITAPAD",
+  crc = 0x30448876, v = "v2.0.0", link = "https://raw.githubusercontent.com/carlelieser/vitapad/main/README.md", down = "https://github.com/carlelieser/vitapad/", name_vpk = "vitapad.vpk" },
 { name = "VitaKeyboard by MarkOfTheLand", id = "VITAKEYBOARD.png", path = "hidkeyboard.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITAKEYBOARD"], KEY = "INSTALLP_DESC_VITAKEYBOARD",
-  crc = 0x6e8eee25, v = "v1.1", link = "https://raw.githubusercontent.com/mswlandi/vitakeyboard/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "vitakeyboard.vpk"), },
+  crc = 0x6e8eee25, v = "v1.1", link = "https://raw.githubusercontent.com/mswlandi/vitakeyboard/master/README.md", down = "https://github.com/mswlandi/vitakeyboard/", name_vpk = "vitakeyboard.vpk", },
 { name = "Sharpscale by cuevavirus", id = "SHARPSCALE.png", path = "sharpscale.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SHARPSCALE"], KEY = "INSTALLP_DESC_SHARPSCALE",
   crc  = 0x7bec02d1, v = "v1.5.0", version = "0005", link = "https://raw.githubusercontent.com/cuevavirus/Sharpscale/master/README.md", vpk = string.format("https://github.com/%s/%s/raw/master/vpks/%s", APP_REPO, APP_PROJECT, "sharpscale_config.vpk"), },
 { name = "BetterTrackPlug by fmudanyali", id = "BETTERTRACKPLUG.png", path = "BetterTrackPlug.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_TRACKPLUGMOD"], KEY = "INSTALLP_DESC_TRACKPLUGMOD",
@@ -291,6 +295,9 @@ Online_Plugins = {
 
 --{ name = "forcelang by xdanieldzd v0.2U", id = "FORCELANG.png", path = "forcelang.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FORCELANG"], KEY = "INSTALLP_DESC_FORCELANG", link = "https://raw.githubusercontent.com/xdanieldzd/forcelang/master/README.md", },
 
+--*PCSE00445 USA or *PCSB00561 Europe
+{ name = "Alien Shooter DLC unlocker by isage", id = "ALIENDLC.png", path = "alienhook.suprx", section = "PCSE00445", desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"], KEY = "INSTALLP_DESC_ALIENDLC", REMOVE = true,
+  crc = 0x8f62f5b8, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/isage/alienhook/master/README.md", },
 --*PCSC80012
 { name = "HonRipper by GrapheneCt", id = "HONRIPPER.png", path = "HonRipper.suprx", section = "PCSC80012", desc = LANGUAGE["INSTALLP_DESC_HONRIPPER"], KEY = "INSTALLP_DESC_HONRIPPER",
   crc = 0xbef04e02, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/HonRipper/master/README.md", },

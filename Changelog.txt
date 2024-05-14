@@ -1,3 +1,9 @@
+#v2.09
+++ Fix Vitacheat plugins for 3.65/3.60
+++ Added Iostaging, vitapad and alienhook plugins
+++ Section HD patches and DLC Unlocker: Here you will find the HD plugins for persona 4 golden and catherine. Also the Alien Shooter DLC Unlocker plugin.
+++ Section Customize plugins: Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose
+
 #v2.08
 ++ Re-Added plugins updates for autoplugin II v2.00+.
 ++ Fix plugins updates with the Catherine: Full Body HD, Persona 4 Golden HD and Vita Nearest Neighbour.

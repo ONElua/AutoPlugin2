@@ -27,9 +27,13 @@ FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Désinstaller des plugins"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA"] =             "Installer le plugin pour SD2VITA"
 FRENCH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurer le plugin pour SD2VITA"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifier les mises à jour des plugins"
-FRENCH["MENU_PSVITA_HD_PATCH"] =                    "Patchs HD"
+FRENCH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
+FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
+FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
 
-FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "Patchs HD pour certains jeux de la PS Vita"
+FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
+FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés par la scène PS Vita"
 FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller des plugins"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin pour SD2VITA (StorageMgr v3.4 de CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ FRENCH["INSTALLP_NO_VPK"] =                         "Échec du téléchargement 
 
 --customWarning
 FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'installer le plugin Custom Warning"
-
+FRENCH["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
 FRENCH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright est valable uniquement pour les versions 3.60 ou h-encore en 3.68"
 FRENCH["INSTALLP_CWARNING_360_365"] =               "Custom Warning ne fonctionne pas sous les firmwares 3.67/3.68/3.73"
 FRENCH["INSTALLP_REVITA_360_365"] =                 "reVita fonctionne uniquement sous les firmwares 3.60 et 3.65"
@@ -371,6 +375,8 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
+FRENCH["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+FRENCH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 FRENCH["INSTALLP_DESC_VITACONTROL"] =               "Utilisez les contrôleurs Bluetooth sur votre Vita ! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 FRENCH["INSTALLP_DESC_NOPSPEMUDRM"] =               "Un plugin pour contourner toutes les vérifications DRM des jeux PSP officiel, afin que vous puissiez jouer aux jeux PSP ou PS1 en version numériques; ou bien sûr, a des jeux que vous possédez légitimement mais sur un autre compte PSN"
 FRENCH["INSTALLP_DESC_TVIKEY"] =                    "Pilote du noyau PSTV pour souris/clavier"
@@ -527,6 +533,9 @@ FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantan�
 FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
 FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 de toute application qui lance une vérification de l'application s'il est installé dans la console."
 FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard est un plugin et une application pour PS Vita qui vous permet de l'utiliser comme clavier USB. L'hôte pensera que votre vita est un vrai clavier."
+
+--*PCSE00445 USA or *PCSB00561 Europe
+FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 FRENCH["INSTALLP_DESC_MIKUA"] =                     "Plugin PlayStation Vita pour activer l'exécution de l'application `PCSC90032` à n'importe quelle date ou heure."

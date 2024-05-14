@@ -27,8 +27,12 @@ JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS"] =             "プラグインのア�
 JAPANESE["MENU_PSVITA_INSTALL_SD2VITA"] =               "SD2VITAプラグインのインストール"
 JAPANESE["MENU_PSVITA_CONFIGURE_SD2VITA"] =             "SD2VITAプラグインの構成"
 JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =          "プラグインの更新を確認"
-JAPANESE["MENU_PSVITA_HD_PATCH"] =                      "HD Patches"
+JAPANESE["MENU_PSVITA_HD_PATCH"] =                      "HD Patches and DLC Unlocker"
+JAPANESE["MENU_PSVITA_AL_DLC_UNLOCKER"] =               "Alien Shooter DLC Unlocker"
+JAPANESE["NO_ALIENSHOOTER_GAMES"] =                     "Alien Shooter not found"
 
+JAPANESE["MENU_PSVITA_CUSTOMIZE"] =                     "Customize plugins"
+JAPANESE["MENU_PSVITA_CUSTOMIZE_DESC"] =                "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
 JAPANESE["MENU_PSVITA_HD_PATCH_DESC"] =                 "HD patches some for psvita games"
 JAPANESE["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =          "SCENE-PSVITAによって作成された最も便利なプラグインをインストールします"
 JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =        "プラグインを簡単かつ容易にアンインストールします"
@@ -160,7 +164,7 @@ JAPANESE["INSTALLP_NO_VPK"] =                           "Fail to downloaded/inst
 
 --customWarning
 JAPANESE["CUSTOMWARNING_MESSAGE"] =                     "カスタム警告プラグインを必ず有効にしてください"
-
+JAPANESE["INSTALLP_WARNING_AUTOBOOT"] =                 "Autoboot plugin is not compatible with vdb daemon plugin"
 JAPANESE["INSTALLP_VITABRIGHT_360"] =                   "Vitabrightは3.60/H-encore3.68専用です"
 JAPANESE["INSTALLP_CWARNING_360_365"] =                 "3.67/3.68はカスタム警告が機能しません"
 JAPANESE["INSTALLP_REVITA_360_365"] =                   "reVita only work on 3.60/3.65"
@@ -371,6 +375,8 @@ JAPANESE["TURKISH"] =                                   "トルコ語"
 JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバイスを必要なマウントポイントに自動的にマウント/リダイレクトするカーネルプラグイン（SD2VITA）"
 
 --KERNEL
+JAPANESE["INSTALLP_DESC_VITAPAD"] =                     "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+JAPANESE["INSTALLP_DESC_IOSTAGING"] =                   "Plugin to improve PS Vita sequential I/O speeds"
 JAPANESE["INSTALLP_DESC_VITACONTROL"] =                 "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 JAPANESE["INSTALLP_DESC_NOPSPEMUDRM"] =                 "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
 JAPANESE["INSTALLP_DESC_TVIKEY"] =                      "PSTV kernel driver for mouse/keyboard"
@@ -527,6 +533,9 @@ JAPANESE["INSTALLP_DESC_SCOREHAX"] =                    "Instant pro at any game
 JAPANESE["INSTALLP_DESC_HONRIPPER"] =                   "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 JAPANESE["INSTALLP_DESC_HIDEAP"] =                      "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 JAPANESE["INSTALLP_DESC_VITAKEYBOARD"] =                "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+JAPANESE["INSTALLP_DESC_ALIENDLC"] =                    "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 JAPANESE["INSTALLP_DESC_MIKUA"] =                       "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."

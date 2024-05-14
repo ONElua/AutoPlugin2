@@ -27,9 +27,13 @@ SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS"] =              "Desinstalar Plugins"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA"] =                "Instalar Plugin SD2VITA"
 SPANISH["MENU_PSVITA_CONFIGURE_SD2VITA"] =              "Configura el Plugin para SD2VITA"
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Buscar Actualizaciones de Plugins"
-SPANISH["MENU_PSVITA_HD_PATCH"] =                       "Parches HD"
+SPANISH["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
+SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
+SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
 
-SPANISH["MENU_PSVITA_HD_PATCH_DESC"] =                  "Parches HD para algunos juegos de PS Vita"
+SPANISH["MENU_PSVITA_CUSTOMIZE"] =                      "Personalizar plugins"
+SPANISH["MENU_PSVITA_CUSTOMIZE_DESC"] =                 "Aqui puedes personalizar los siguientes plugins que tengas instalados: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+SPANISH["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games and DLC Unlocker"
 SPANISH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Instala los Plugins más útiles desarrollados por la Scene de PSVita"
 SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Desinstala Plugins de manera fácil y sencilla"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Instala el Plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ SPANISH["INSTALLP_NO_VPK"] =                            "¡Fallo al Descargar/In
 
 --customWarning
 SPANISH["CUSTOMWARNING_MESSAGE"] =                      "Recuerda activar el Plugin de Custom Warning"
-
+SPANISH["INSTALLP_WARNING_AUTOBOOT"] =                  "El plugin Autoboot no es compatible con el plugin vdb daemon"
 SPANISH["INSTALLP_VITABRIGHT_360"] =                    "Vitabright SOLO funciona en 3.60/3.68 H-Encore"
 SPANISH["INSTALLP_CWARNING_360_365"] =                  "Custom Warning no funciona en 3.67/3.68+"
 SPANISH["INSTALLP_REVITA_360_365"] =                    "reVita solo funciona en 3.60/3.65"
@@ -371,6 +375,8 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
+SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin to improve PS Vita sequential I/O speeds"
 SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 SPANISH["INSTALLP_DESC_NOPSPEMUDRM"] =                  "Un Plugin que permite evitar todos los chequeos de DRM de PSPEmu, lo que permite jugar tus respaldos digitales de juegos de PSP y PS1, o de juegos que poseas legalmente pero en otra cuenta PSN"
 SPANISH["INSTALLP_DESC_TVIKEY"] =                       "Driver de Kernel para PSTV para el uso de mouse/teclado"
@@ -527,6 +533,9 @@ SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al in
 SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
 SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/app/AUTOPLUG2 a cualquier app a la que se le cargue este Plugin"
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora."

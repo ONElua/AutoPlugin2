@@ -132,6 +132,7 @@ dofile("scripts/psvita/menu_psvita.lua")
 dofile("scripts/psp/menu_psp.lua")
 dofile("scripts/extras/menu_extras.lua")
 dofile("scripts/settings/menu_settings.lua")
+dofile("scripts/extras/downloads.lua")
 
 --Main Cycle
 dofile("menu.lua")

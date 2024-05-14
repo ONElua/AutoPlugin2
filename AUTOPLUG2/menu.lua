@@ -21,6 +21,10 @@ local psp_callback = function ()
 	menu_psp()
 end
 
+local downloads_callback = function ()
+	downloads()
+end
+
 local extras_callback = function ()
 	menu_extras()
 end
@@ -38,6 +42,7 @@ function menu_gral()
 	local menu = {
 		{ text = LANGUAGE["MENU_PSVITA"],	funct = psvita_callback },
 		{ text = LANGUAGE["MENU_PSP"],		funct = psp_callback },
+		{ text = LANGUAGE["MENU_DOWNLOADS"],desc = LANGUAGE["MENU_EXTRAS_DOWNLOADS_DESC"],          funct = downloads_callback },
 		{ text = LANGUAGE["MENU_EXTRAS"],   funct = extras_callback },
 		{ text = LANGUAGE["MENU_SETTINGS"],	funct = settings_callback },
 		{ text = LANGUAGE["MENU_EXIT"],		funct = exit_callback }
@@ -72,7 +77,12 @@ function menu_gral()
 			--else tam = 1.2 end
 
 			screen.print(480,y,menu[i].text,1.0,color.white,color.blue,__ACENTER)
-			y += 45
+			
+			if i == 3 then
+				y += 70
+			else
+				y += 45
+			end
 		end
 
 		screen.flip()

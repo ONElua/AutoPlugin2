@@ -27,9 +27,13 @@ POLISH["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Odinstaluj Pluginy"
 POLISH["MENU_PSVITA_INSTALL_SD2VITA"] =             "Zainstaluj plugin SD2VITA"
 POLISH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Skonfiguruj plugin SD2VITA"
 POLISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Sprawdz aktualizacje pluginow"
-POLISH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
+POLISH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
+POLISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
+POLISH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
 
-POLISH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
+POLISH["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
+POLISH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+POLISH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
 POLISH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Zainstaluj pluginy tworzone przez SCENE PSVITA"
 POLISH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Odinstaluj pluginy łatwo i szybko"
 POLISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Zainstaluj plugin dla SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ POLISH["INSTALLP_NO_VPK"] =                         "Błąd przy pobieraniu/inst
 
 --customWarning
 POLISH["CUSTOMWARNING_MESSAGE"] =                   "Pamiętaj aby włączyć plugin ostrzeżenia o epilepsji"
-
+POLISH["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
 POLISH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright jest tylko na 3.60/H-encore 3.68"
 POLISH["INSTALLP_CWARNING_360_365"] =               "Własne ostrzeżenie o epilepsji nie działa na 3.67/3.68"
 POLISH["INSTALLP_REVITA_360_365"] =                 "reVita działa tylko na 3.60/3.65"
@@ -371,6 +375,8 @@ POLISH["TURKISH"] =                                 "TURECKI"
 POLISH["INSTALLP_DESC_SD2VITA"] =                   "Plugin kernela, który automatycznie montuje / przekierowuje dowolne urządzenie pamięci do dowolnych punktów montowania (SD2VITA)"
 
 --KERNEL
+POLISH["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+POLISH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 POLISH["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 POLISH["INSTALLP_DESC_NOPSPEMUDRM"] =               "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
 POLISH["INSTALLP_DESC_TVIKEY"] =                    "PSTV kernel driver for mouse/keyboard"
@@ -527,6 +533,9 @@ POLISH["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro w każdej grze!
 POLISH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper to plugin do aplikacji PS Vita Sony Reader (PCSC80012), która służy do wyodrębniania zawartości formatu książki Sony .MNH (Marlin-Hon)."
 POLISH["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
 POLISH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+POLISH["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 POLISH["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."

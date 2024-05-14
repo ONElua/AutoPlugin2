@@ -27,9 +27,13 @@ ITALIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =              "Disinstalla Plugin"
 ITALIAN["MENU_PSVITA_INSTALL_SD2VITA"] =                "Installa il Plugin SD2VITA"
 ITALIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =              "Configura Plugin per SD2VITA"
 ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Controlla gli aggiornamenti dei plugin"
-ITALIAN["MENU_PSVITA_HD_PATCH"] =                       "HD Patches"
+ITALIAN["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
+ITALIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
+ITALIAN["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
 
-ITALIAN["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games"
+ITALIAN["MENU_PSVITA_CUSTOMIZE"] =                      "Customize plugins"
+ITALIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =                 "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
+ITALIAN["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games and DLC Unlocker"
 ITALIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Installa i plugin più utili della scena PSVITA"
 ITALIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Disinstalla i plugin facilmente e semplicemente"
 ITALIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Installa il Plugin per SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
@@ -160,7 +164,7 @@ ITALIAN["INSTALLP_NO_VPK"] =                            "Fail to downloaded/inst
 
 --customWarning
 ITALIAN["CUSTOMWARNING_MESSAGE"] =                      "Ricordati di abilitare il plugin Custom Warning"
-
+ITALIAN["INSTALLP_WARNING_AUTOBOOT"] =                  "Autoboot plugin is not compatible with vdb daemon plugin"
 ITALIAN["INSTALLP_VITABRIGHT_360"] =                    "Vitabright funziona solo per 3.60/H-encore 3.68"
 ITALIAN["INSTALLP_CWARNING_360_365"] =                  "Custom Warning non funziona su 3.67/3.68"
 ITALIAN["INSTALLP_REVITA_360_365"] =                    "reVita only work on 3.60/3.65"
@@ -371,6 +375,8 @@ ITALIAN["TURKISH"] =                                    "TURCO"
 ITALIAN["INSTALLP_DESC_SD2VITA"] =                      "Plugin del kernel che monta/reindirizza automaticamente qualsiasi dispositivo di archiviazione su qualsiasi partizione desiderata (SD2VITA)"
 
 --KERNEL
+ITALIAN["INSTALLP_DESC_VITAPAD"] =                      "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
+ITALIAN["INSTALLP_DESC_IOSTAGING"] =                    "Plugin to improve PS Vita sequential I/O speeds"
 ITALIAN["INSTALLP_DESC_VITACONTROL"] =                  "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 ITALIAN["INSTALLP_DESC_NOPSPEMUDRM"] =                  "A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
 ITALIAN["INSTALLP_DESC_TVIKEY"] =                       "PSTV kernel driver for mouse/keyboard"
@@ -527,6 +533,9 @@ ITALIAN["INSTALLP_DESC_SCOREHAX"] =                     "Instant pro at any game
 ITALIAN["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper è il plugin per l'applicazione PS Vita Sony Reader (PCSC80012) progettato per estrarre i contenuti del formato libro .MNH (Marlin-Hon) di Sony."
 ITALIAN["INSTALLP_DESC_HIDEAP"] =                       "Nasconde ux0:/app/AUTOPLUG2 da qualsiasi app in cui è caricato"
 ITALIAN["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard è un plugin e un'applicazione per PS Vita che ti consente di usarlo come una tastiera USB. L'host penserà che la tua psvita sia una vera tastiera"
+
+--*PCSE00445 USA or *PCSB00561 Europe
+ITALIAN["INSTALLP_DESC_ALIENDLC"] =                     "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
 
 --*PCSC90032
 ITALIAN["INSTALLP_DESC_MIKUA"] =                        "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
