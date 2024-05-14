@@ -1,22 +1,22 @@
 AlienShooter = false
 
 --Ckecking game Alien Shooter
-Alien = {
+AlienTB = {
 	{ id = "PCSE00445", region = "North America" },
 	{ id = "PCSB00561", region = "Europe" },
 }
 
 gamesAlien = {}
-for i=1,#Alien do
-	if game.exists(Alien[i].id) then
+for i=1,#AlienTB do
+	if game.exists(AlienTB[i].id) then
 		AlienShooter = true
-		table.insert(gamesAlien,Alien[i])
+		table.insert(gamesAlien,AlienTB[i])
 	end
 end
 
 function AlienShooter_DLC_Unlocker()
 
-	if not AlienShooter then os.message(LANGUAGE["NO_ALIENSHOOTER_GAMES"]) end
+	if not AlienShooter then os.dialog(LANGUAGE["NO_ALIENSHOOTER_GAMES"], LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"]) return end
 
 	local AlienShooter_ID = "ALIENDLC.png"
 
@@ -54,7 +54,7 @@ function AlienShooter_DLC_Unlocker()
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, gamesAlien[i].id, 1, color.white, color.blue, __ACENTER)
+			screen.print(xRoot+(w/2), 75, gamesAlien[selector].id, 1, color.white, color.blue, __ACENTER)
 			draw.fillrect(750,435,200,42, color.shine:a(25))
 			screen.print(940,445,gamesAlien[selector].region,1,color.white,color.blue, __ARIGHT)
 			xRoot += w
@@ -93,7 +93,7 @@ function AlienShooter_DLC_Unlocker()
 		end
 
 		if buttonskey then buttonskey:blitsprite(10, 483, saccept) end
-        screen.print(40, 485, LANGUAGE["MENU_INSTALL_INFO"], 1, color.white, color.black, __ALEFT)
+		screen.print(40, 485, LANGUAGE["MENU_INSTALL_INFO"], 1, color.white, color.black, __ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(10,518,scancel) end
 		screen.print(40,522,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)

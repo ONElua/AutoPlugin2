@@ -20,7 +20,7 @@ end
 
 function P4Golden_HD()
 
-	if not P4Golden then os.message(LANGUAGE["NO_P4GOLDEN_GAMES"]) end
+	if not P4Golden then os.dialog(LANGUAGE["NO_P4GOLDEN_GAMES"], LANGUAGE["INSTALL_P4G_HD_TITLE"]) return end
 
 	local P4GOLDEN_ID = "PERSONA4GOLDENHD.png"
 
@@ -59,7 +59,7 @@ function P4Golden_HD()
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, gamesP4[i].id, 1, color.white, color.blue, __ACENTER)
+			screen.print(xRoot+(w/2), 75, gamesP4[selector].id, 1, color.white, color.blue, __ACENTER)
 			draw.fillrect(750,435,200,42, color.shine:a(25))
 			screen.print(940,445,gamesP4[selector].region,1,color.white,color.blue, __ARIGHT)
 			xRoot += w
@@ -183,7 +183,7 @@ function Patch_P4G_install(game,res)
 	tai.del(game.id, "p4goldenhd_1280x720.suprx")
 
 	tai.put(game.id, path_tai..res.path)
-	ReloadConfig,change = true,true
+	ReloadConfig = true
 
 	if back2 then back2:blit(0,0) end
 		message_wait(LANGUAGE["INSTALLING_P4G_HD_PATCH"].."\n\n"..res.res)

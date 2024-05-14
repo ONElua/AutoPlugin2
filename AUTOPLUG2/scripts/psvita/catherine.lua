@@ -8,7 +8,7 @@ if game.exists("PCSG01179") then Catherine = true end
 
 function Catherine_HD()
 
-	if not Catherine then os.message(LANGUAGE["NO_CHATERINE_GAMES"]) end
+	if not Catherine then os.dialog(LANGUAGE["NO_CHATERINE_GAMES"], LANGUAGE["INSTALL_CATHERINE_HD_TITLE"]) return end
 
 	local CATHERINE_ID = "CATHERINEHD.png"
 
@@ -46,7 +46,9 @@ function Catherine_HD()
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, CatherineTB[i].id, 1, color.white, color.blue, __ACENTER)
+			screen.print(xRoot+(w/2), 75, CatherineTB[selector].id, 1, color.white, color.blue, __ACENTER)
+			draw.fillrect(750,435,200,42, color.shine:a(25))
+			screen.print(940,445, CatherineTB[selector].region, 1, color.white, color.blue, __ARIGHT)
 			xRoot += w
 		end
 
@@ -112,6 +114,13 @@ function Catherine_HD()
 				if scroll:down() then xscroll = 10 end
 			end
 
+			--L/R
+			if buttons.released.l or buttons.released.r then
+				if buttons.released.l then selector -= 1 else selector += 1 end
+				if selector > #CatherineTB then selector = 1
+				elseif selector < 1 then selector = #CatherineTB end
+			end
+
 			if buttons.accept then
 
 				local vbuff = screen.buffertoimage()
@@ -153,7 +162,7 @@ function Patch_Catherine_install(game,res)
 	files.copy(path_plugins..res.path, path_tai)
 
 	tai.put(game.id, path_tai..res.path)
-	ReloadConfig,change = true,true
+	ReloadConfig = true
 
 	if back2 then back2:blit(0,0) end
 		message_wait(LANGUAGE["INSTALLING_CATHERINE_HD_PATCH"].."\n\n"..res.res)
