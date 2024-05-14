@@ -72,10 +72,10 @@ Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/fon
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
 
 ### Changelog 2.09 ###
-++ Fix Vitacheat plugins for 3.65/3.60
-++ Added Iostaging, vitapad and alienhook plugins
-++ Section HD patches and DLC Unlocker: Here you will find the HD plugins for persona 4 golden and catherine. Also the Alien Shooter DLC Unlocker plugin.
-++ Section Customize plugins: Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose
+++ Fix Vitacheat plugins for 3.65/3.60<br>
+++ Added Iostaging, vitapad and alienhook plugins<br>
+++ Section HD patches and DLC Unlocker: Here you will find the HD plugins for persona 4 golden and catherine. Also the Alien Shooter DLC Unlocker plugin.<br>
+++ Section Customize plugins: Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose<br>
 
 ### Changelog 2.08 ###
 - Re-Added plugins updates for autoplugin II v2.00+
