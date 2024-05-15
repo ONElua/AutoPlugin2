@@ -27,13 +27,13 @@ FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Désinstaller des plugins"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA"] =             "Installer le plugin pour SD2VITA"
 FRENCH["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Configurer le plugin pour SD2VITA"
 FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifier les mises à jour des plugins"
-FRENCH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
-FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
-FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+FRENCH["MENU_PSVITA_HD_PATCH"] =                    "Patchs HD et déverrouillage DLC"
+FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "DLC Alien Shooter"
+FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter introuvable ou non installer"
 
-FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
-FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
-FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
+FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Personnaliser les plugins"
+FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Ici, vous pouvez personnaliser certains plugins que vous avez installés : Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpos."
+FRENCH["MENU_PSVITA_HD_PATCH_DESC"] =               "Des correctifs HD et DLC pour les jeux psvita"
 FRENCH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Installer les plugins les plus utiles réalisés par la scène PS Vita"
 FRENCH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Désinstaller des plugins"
 FRENCH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Installer le plugin pour SD2VITA (StorageMgr v3.4 de CelesteBlue & Yoti)"
@@ -164,7 +164,7 @@ FRENCH["INSTALLP_NO_VPK"] =                         "Échec du téléchargement 
 
 --customWarning
 FRENCH["CUSTOMWARNING_MESSAGE"] =                   "N'oubliez pas d'installer le plugin Custom Warning"
-FRENCH["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
+FRENCH["INSTALLP_WARNING_AUTOBOOT"] =               "Le plugin Autoboot n'est pas compatible avec le plugin démon vdb"
 FRENCH["INSTALLP_VITABRIGHT_360"] =                 "Vitabright est valable uniquement pour les versions 3.60 ou h-encore en 3.68"
 FRENCH["INSTALLP_CWARNING_360_365"] =               "Custom Warning ne fonctionne pas sous les firmwares 3.67/3.68/3.73"
 FRENCH["INSTALLP_REVITA_360_365"] =                 "reVita fonctionne uniquement sous les firmwares 3.60 et 3.65"
@@ -375,8 +375,8 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
-FRENCH["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
-FRENCH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
+FRENCH["INSTALLP_DESC_VITAPAD"] =                   "Utilisez votre PlayStation Vita comme manette de jeu USB avec commandes tactiles avant/arrière."
+FRENCH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin pour améliorer les vitesses d'E/S séquentielles de la PS Vita"
 FRENCH["INSTALLP_DESC_VITACONTROL"] =               "Utilisez les contrôleurs Bluetooth sur votre Vita ! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 FRENCH["INSTALLP_DESC_NOPSPEMUDRM"] =               "Un plugin pour contourner toutes les vérifications DRM des jeux PSP officiel, afin que vous puissiez jouer aux jeux PSP ou PS1 en version numériques; ou bien sûr, a des jeux que vous possédez légitimement mais sur un autre compte PSN"
 FRENCH["INSTALLP_DESC_TVIKEY"] =                    "Pilote du noyau PSTV pour souris/clavier"
@@ -496,7 +496,7 @@ FRENCH["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / d
 FRENCH["INSTALLP_DESC_WAVE"] =                      "Un plugin qui modifie la vague de l'arrière plan du menu de la PSVita."
 
 --ALL
-FRENCH["INSTALLP_DESC_ADRUSBENABLER"] =             "PSVita plugin to enable usb pairing between adrenaline and ps2/ps3"
+FRENCH["INSTALLP_DESC_ADRUSBENABLER"] =             "Plugin PSVita pour activer le couplage USB entre Adrenaline et PS2/PS3"
 FRENCH["INSTALLP_DESC_3GDISABLE"] =                 "C'est la bonne façon de désactiver la fonction 3G de la PSVita. Cela a essentiellement pour effet de faire croire au système qu'il s'agit d'un modèl Wi-Fi."
 FRENCH["INSTALLP_DESC_VITANEARESTN"] =              "Plugin taiHEN simple pour PlayStation Vita qui remplace l'échantillonnage des textures. Force le rendu avec la méthode de filtrage par points au lieu de linéaire."
 FRENCH["INSTALLP_DESC_DT2S"] =                      "Cette version fonctionne si vous tapez deux fois sur l'écran, n'importe où. La seule raison pour laquelle cette version n'est pas recommandée est que vous pouvez occasionnellement taper deux fois sur l'écran tactile lorsque vous ne voulez pas."
@@ -535,7 +535,7 @@ FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 d
 FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard est un plugin et une application pour PS Vita qui vous permet de l'utiliser comme clavier USB. L'hôte pensera que votre vita est un vrai clavier."
 
 --*PCSE00445 USA or *PCSB00561 Europe
-FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "DLC Alien Shooter. Vous devez exécuter le jeu au moins une fois avec le plugin pour déverrouiller les DLC."
 
 --*PCSC90032
 FRENCH["INSTALLP_DESC_MIKUA"] =                     "Plugin PlayStation Vita pour activer l'exécution de l'application `PCSC90032` à n'importe quelle date ou heure."
