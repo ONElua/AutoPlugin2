@@ -27,13 +27,13 @@ KOREAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "플러그인 설치 제거"
 KOREAN["MENU_PSVITA_INSTALL_SD2VITA"] =             "SD2비타용 플러그인 설치"
 KOREAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "SD2비타용 플러그인 구성"
 KOREAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "플러그인 업데이트 확인"
-KOREAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
-KOREAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
-KOREAN["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+KOREAN["MENU_PSVITA_HD_PATCH"] =                    "HD 패치 및 DLC 잠금 해제"
+KOREAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "에일리언 슈터 DLC 잠금 해제"
+KOREAN["NO_ALIENSHOOTER_GAMES"] =                   "에일리언 슈터를 찾을 수 없음"
 
-KOREAN["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
-KOREAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
-KOREAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
+KOREAN["MENU_PSVITA_CUSTOMIZE"] =                   "커스텀 플러그인"
+KOREAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "여기서는 설치한 일부 플러그인을 커스텀 할 수 있습니다: 자동 부팅, 커스텀 경고, 커스텀 부팅 시작, 퀵메뉴 플러스, 트림 포즈"
+KOREAN["MENU_PSVITA_HD_PATCH_DESC"] =               "psvita 게임 및 DLC 잠금 해제에 대한 HD 패치"
 KOREAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "SCENE-PSVITA에서 만든 가장 유용한 플러그인 설치"
 KOREAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "플러그인 설치 제거"
 KOREAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "SD2비타 플러그인 설치 (CelesteBlue & Yoti의 스토리지 관리자 v3.4)"
@@ -164,7 +164,7 @@ KOREAN["INSTALLP_NO_VPK"] =                         "다운로드/설치 실패�
 
 --customWarning
 KOREAN["CUSTOMWARNING_MESSAGE"] =                   "커스텀 경고 플러그인을 활성화하는 것을 기억"
-KOREAN["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
+KOREAN["INSTALLP_WARNING_AUTOBOOT"] =               "자동 부팅 플러그인은 vdb 데몬 플러그인과 호환되지 않음"
 KOREAN["INSTALLP_VITABRIGHT_360"] =                 "비타브라이트는 3.60/H-encore 3.68 전용"
 KOREAN["INSTALLP_CWARNING_360_365"] =               "커스텀 경고는 3.67/3.68에서 작동하지 않음"
 KOREAN["INSTALLP_REVITA_360_365"] =                 "reVita는 3.60/3.65에서만 작동"
@@ -375,9 +375,9 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
-KOREAN["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
-KOREAN["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
-KOREAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
+KOREAN["INSTALLP_DESC_VITAPAD"] =                   "전면/후면 터치패드 컨트롤이 포함된 USB 게임패드로 플레이스테이션 비타를 사용하세요."
+KOREAN["INSTALLP_DESC_IOSTAGING"] =                 "PS Vita 순차 I/O 속도를 향상시키는 플러그인"
+KOREAN["INSTALLP_DESC_VITACONTROL"] =               "Vita에서 블루투스 컨트롤러를 사용해보세요! (DS3, DS4, 소니 DualSense, 소니 DualSense Edge, 마이크로소프트 Xbox One, 닌텐도 Switch Pro)"
 KOREAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "모든 PSPEmu DRM 검사를 우회하는 플러그인으로, 디지털 PSP 또는 PS1 게임 백업을 재생할 수 있습니다; 또는 합법적으로 소유하고 있지만 다른 PSN 계정에 있는 게임도 물론 가능합니다."
 KOREAN["INSTALLP_DESC_TVIKEY"] =                    "마우스/키보드용 PSTV 커널 드라이버"
 KOREAN["INSTALLP_DESC_VIXEN"] =                     "비타 X 입력 인에이블러. xinput 게임 패드용 PS비타 커널 드라이버(xbox 360)"
@@ -535,7 +535,7 @@ KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 
 KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 응용 프로그램입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
 
 --*PCSE00445 USA or *PCSB00561 Europe
-KOREAN["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+KOREAN["INSTALLP_DESC_ALIENDLC"] =                  "에일리언 슈터 DLC 잠금 해제 프로그램입니다. DLC를 잠금 해제하려면 플러그인을 사용하여 게임을 한 번 이상 실행해야 합니다."
 
 --*PCSC90032
 KOREAN["INSTALLP_DESC_MIKUA"] =                     "언제든 `PCSC90032`를 실행할 수 있는 플레이스테이션 비타 플러그인입니다."
