@@ -47,7 +47,6 @@ function P4Golden_HD()
 		wave:blit(0.7,50)
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
-		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--
 		screen.print(480,20,LANGUAGE["INSTALL_P4G_HD_TITLE"],1.0,color.white,color.blue,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))
@@ -59,11 +58,11 @@ function P4Golden_HD()
 			if selector == i then
 				draw.fillrect(xRoot,63,w,42, color.green:a(90))
 			end
-			screen.print(xRoot+(w/2), 75, gamesP4[selector].id, 1, color.white, color.blue, __ACENTER)
-			draw.fillrect(750,435,200,42, color.shine:a(25))
-			screen.print(940,445,gamesP4[selector].region,1,color.white,color.blue, __ARIGHT)
+			screen.print(xRoot+(w/2), 75, gamesP4[i].id, 1, color.white, color.blue, __ACENTER)
 			xRoot += w
 		end
+		draw.fillrect(750,435,200,42, color.shine:a(25))
+		screen.print(940,445,gamesP4[selector].region,1,color.white,color.blue, __ARIGHT)
 
 		local y = 155
 		for i=scroll.ini, scroll.lim do
