@@ -535,7 +535,7 @@ ENGLISH_US["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG
 ENGLISH_US["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*PCSE00445 USA or *PCSB00561 Europe
-ENGLISH_US["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+ENGLISH_US["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game at least once with plugin for DLCs to unlock."
 
 --*PCSC90032
 ENGLISH_US["INSTALLP_DESC_MIKUA"] =                     "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
