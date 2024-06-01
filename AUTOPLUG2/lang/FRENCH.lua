@@ -30,8 +30,8 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifier les mises à jour
 FRENCH["MENU_PSVITA_HD_PATCH"] =                    "Patchs HD et déverrouillage DLC"
 FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "DLC Alien Shooter"
 FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter introuvable ou non installer"
-FRENCH["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
-FRENCH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
+FRENCH["MENU_PSVITA_MISCELLANEOUS"] =               "Divers plugins"
+FRENCH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Améliorateur Haute Définition, activateur DLC et plugins d'accès au serveur"
 
 FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Personnaliser les plugins"
 FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Ici, vous pouvez personnaliser certains plugins que vous avez installés : Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpos."
@@ -71,14 +71,14 @@ FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
 FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du Patchs HD en cours..."
 
 --LBP
-FRENCH["NO_LBP_GAMES"] =                            "Little Big Planet not found"
-FRENCH["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
-FRENCH["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-FRENCH["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
-FRENCH["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
-FRENCH["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-FRENCH["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
-FRENCH["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
+FRENCH["NO_LBP_GAMES"] =                            "Little Big Planet introuvable ou non installer"
+FRENCH["INSTALL_LBP_TITLE"] =                       "Serveur personnalisé Little Big Planet"
+FRENCH["LBP_ALLEFRESHER_DESC"] =                    "Un ensemble de plugins CFW pour patcher les jeux Little Big Planet afin de permettre la connexion à des serveurs personnalisés."
+FRENCH["LBP_ALLEFRESHER_ITLS"] =                    "Le plugin Little Big Planet nécessite l'installation d'iTLS"
+FRENCH["INSTALL_LBP_360_365"] =                     "Allefresher ne fonctionne pas sur 3.67/3.68"
+FRENCH["INSTALLING_LBP_PATCH"] =                    "Installation du correctif Allefresher"
+FRENCH["INSTALLING_LBP_VERSION"] =                  "Le patch de Little Big Planet nécessite la version 1.22"
+FRENCH["INSTALLING_LBP_VERSION_PBP"] =              "Le patch de Little Big Planet nécessite la version 2.05"
 
 --Catherine HD
 FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Patchs HD du jeu Catherine"
