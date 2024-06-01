@@ -12,6 +12,7 @@
 dofile("scripts/psvita/p4golden.lua")
 dofile("scripts/psvita/catherine.lua")
 dofile("scripts/psvita/aliendlc.lua")
+dofile("scripts/psvita/lbp.lua")
 
 local p4_callback = function ()
 	P4Golden_HD()
@@ -25,12 +26,17 @@ local AlienShooter_callback = function ()
 	AlienShooter_DLC_Unlocker()
 end
 
-function HD_Patch()
+local LBP_callback = function ()
+	LBP_server()
+end
+
+function Misc_Plugins()
 
 	local menu = {
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD"],	    desc = LANGUAGE["MENU_PSVITA_INSTALL_P4G_HD_DESC"],		  funct = p4_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"], funct = catherine_callback },
 		{ text = LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"],	    desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"],                funct = AlienShooter_callback },
+		{ text = LANGUAGE["INSTALL_LBP_TITLE"],	                desc = LANGUAGE["LBP_ALLEFRESHER_DESC"],                  funct = LBP_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)
@@ -47,7 +53,7 @@ function HD_Patch()
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
 		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
-		screen.print(480,20,LANGUAGE["MENU_PSVITA_HD_PATCH"],1.0,color.white,color.blue,__ACENTER)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_MISCELLANEOUS"],1.0,color.white,color.blue,__ACENTER)
 
 		local y = 115
 		for i=scroll.ini, scroll.lim do

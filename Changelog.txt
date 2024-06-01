@@ -1,4 +1,7 @@
-#2.10
+#v2.11
+++ Added Miscellaneous plugins section, available High-Def enhancer, DLC enabler & LBP server access plugins.
+
+#v2.10
 ++ Fixed error when you do not have the games installed: Persona 4 Golden, Catherine and Alien Shooter
 
 #v2.09

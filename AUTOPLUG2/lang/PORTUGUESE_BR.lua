@@ -30,6 +30,8 @@ PORTUGUESE_BR["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Checar por atualiza√
 PORTUGUESE_BR["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
 PORTUGUESE_BR["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
 PORTUGUESE_BR["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+PORTUGUESE_BR["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+PORTUGUESE_BR["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 PORTUGUESE_BR["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
 PORTUGUESE_BR["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ PORTUGUESE_BR["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden n√£
 PORTUGUESE_BR["INSTALL_P4G_HD"] =                          "Instalar Patch HD"
 PORTUGUESE_BR["INSTALL_P4G_HD_CHANGE"] =                   "Mude o GameID"
 PORTUGUESE_BR["INSTALLING_P4G_HD_PATCH"] =                 "Instalando P4 Golden Patch HD"
+
+--LBP
+PORTUGUESE_BR["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+PORTUGUESE_BR["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+PORTUGUESE_BR["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+PORTUGUESE_BR["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+PORTUGUESE_BR["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+PORTUGUESE_BR["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+PORTUGUESE_BR["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+PORTUGUESE_BR["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"

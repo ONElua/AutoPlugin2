@@ -30,6 +30,8 @@ CHINESE_S["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "检查插件更新"
 CHINESE_S["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
 CHINESE_S["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
 CHINESE_S["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+CHINESE_S["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+CHINESE_S["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 CHINESE_S["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
 CHINESE_S["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ CHINESE_S["NO_P4GOLDEN_GAMES"] =                       "找不到 女神异闻�
 CHINESE_S["INSTALL_P4G_HD"] =                          "安装高清补丁"
 CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
 CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
+
+--LBP
+CHINESE_S["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+CHINESE_S["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+CHINESE_S["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+CHINESE_S["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+CHINESE_S["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+CHINESE_S["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+CHINESE_S["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+CHINESE_S["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "凯瑟琳浓郁口感高清补丁"

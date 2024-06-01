@@ -30,6 +30,8 @@ RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Проверить обн�
 RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
 RUSSIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
 RUSSIAN["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+RUSSIAN["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+RUSSIAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 RUSSIAN["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
 RUSSIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden не на
 RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD патч"
 RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
 RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD патча"
+
+--LBP
+RUSSIAN["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+RUSSIAN["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+RUSSIAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+RUSSIAN["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+RUSSIAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+RUSSIAN["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD патч"

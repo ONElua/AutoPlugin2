@@ -20,10 +20,10 @@ files.mkdir(screenshots)
 function plugins_installation(obj)
 
 	if obj.path:find(string.lower("udcd_uvc"),1,true) and hw.model() == "PlayStation TV" then os.message(LANGUAGE["INSTALLP_WARNING_UDCD"])
-	elseif obj.path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
-	elseif obj.path == "reVita.skprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif obj.path == "custom_warning.suprx" and ( __VERSION == "3.67" or __VERSION == "3.68" or __VERSION == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif obj.path == "reVita.skprx" and ( __VERSION == "3.67" or __VERSION == "3.68" or __VERSION == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif obj.path == "pspemu-colour-crunch.skprx" and hw.model() != "Vita Slim" then os.message(LANGUAGE["INSTALLP_LCDCOLOURSPACECHANGE"])
-	elseif obj.path == "PSVshellPlus_Kernel.skprx" and ( version != "3.60" and version != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
+	elseif obj.path == "PSVshellPlus_Kernel.skprx" and ( __VERSION != "3.60" and __VERSION != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif obj.path == "AutoBoot.suprx" and tai.find("main","ux0:data/VITADB/vdb_daemon.suprx") then os.message(LANGUAGE["INSTALLP_WARNING_AUTOBOOT"])
 	elseif obj.hw and hw.model() != obj.hw then os.message(LANGUAGE["INSTALLP_WARNING_VITATV"])
 	else

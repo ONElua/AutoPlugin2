@@ -30,6 +30,8 @@ POLISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Sprawdz aktualizacje plugin
 POLISH["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
 POLISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
 POLISH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
+POLISH["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+POLISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 POLISH["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
 POLISH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ POLISH["NO_P4GOLDEN_GAMES"] =                       "Nie znaleziono Persona 4 Go
 POLISH["INSTALL_P4G_HD"] =                          "Instaluj Patch HD"
 POLISH["INSTALL_P4G_HD_CHANGE"] =                   "Wybierz GameID"
 POLISH["INSTALLING_P4G_HD_PATCH"] =                 "Instalacja P4 Golden Patch HD"
+
+--LBP
+POLISH["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+POLISH["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+POLISH["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+POLISH["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+POLISH["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+POLISH["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+POLISH["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+POLISH["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 POLISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"

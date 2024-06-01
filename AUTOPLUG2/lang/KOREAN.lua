@@ -30,6 +30,8 @@ KOREAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "플러그인 업데이트 �
 KOREAN["MENU_PSVITA_HD_PATCH"] =                    "HD 패치 및 DLC 잠금 해제"
 KOREAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "에일리언 슈터 DLC 잠금 해제"
 KOREAN["NO_ALIENSHOOTER_GAMES"] =                   "에일리언 슈터를 찾을 수 없음"
+KOREAN["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+KOREAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 KOREAN["MENU_PSVITA_CUSTOMIZE"] =                   "커스텀 플러그인"
 KOREAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "여기서는 설치한 일부 플러그인을 커스텀 할 수 있습니다: 자동 부팅, 커스텀 경고, 커스텀 부팅 시작, 퀵메뉴 플러스, 트림 포즈"
@@ -67,6 +69,16 @@ KOREAN["NO_P4GOLDEN_GAMES"] =                       "페르소나 4 골든을 �
 KOREAN["INSTALL_P4G_HD"] =                          "패치 HD 설치"
 KOREAN["INSTALL_P4G_HD_CHANGE"] =                   "게임ID 변경"
 KOREAN["INSTALLING_P4G_HD_PATCH"] =                 "P4 골든 패치 HD 설치"
+
+--LBP
+KOREAN["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+KOREAN["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+KOREAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+KOREAN["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+KOREAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+KOREAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+KOREAN["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+KOREAN["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 KOREAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "캐서린 HD 패치"

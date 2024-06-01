@@ -244,13 +244,22 @@ function pluginsPSP()
 
 				for i=1, scroll.maxim do
 					if tb_cop[i].inst then
-						
+
+						if tb_cop[i].name:lower() == "allefresher.prx" then
+							os.dialog(LANGUAGE["INSTALLING_LBP_VERSION_PBP"],LANGUAGE["INSTALL_LBP_TITLE"])
+						end
+
 						--install plugin
 						files.copy("resources/plugins_psp/"..tb_cop[i].name, PMounts[selector].."pspemu/"..tb_cop[i].path)
 
 						--install config
 						if tb_cop[i].config then
 							files.copy("resources/plugins_psp/"..tb_cop[i].config, PMounts[selector].."pspemu/"..tb_cop[i].path)
+						end
+
+						--install config2
+						if tb_cop[i].config2 then
+							files.copy("resources/plugins_psp/"..tb_cop[i].config2, PMounts[selector].."pspemu/"..tb_cop[i].path2)
 						end
 
 						if plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] == 0 or not plugins_status[ PMounts[selector]..tb_cop[i].name:lower() ] then

@@ -41,8 +41,8 @@ local onlineplugins_callback = function ()
 	dofile("menu.lua")
 end
 
-local hd_patch_callback = function ()
-	HD_Patch()
+local miscellaneous_callback = function ()
+	Misc_Plugins()
 end
 
 function menu_ps()
@@ -56,7 +56,7 @@ function menu_ps()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS_DESC"],	funct = installp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS"],	desc = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"],	funct = uinstallp_callback },
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"],	funct = sd2vita_callback },
-		{ text = LANGUAGE["MENU_PSVITA_HD_PATCH"],          desc = LANGUAGE["MENU_PSVITA_HD_PATCH_DESC"],	        funct = hd_patch_callback },
+		{ text = LANGUAGE["MENU_PSVITA_MISCELLANEOUS"],     desc = LANGUAGE["MENU_PSVITA_MISCELLANEOUS_DESC"],      funct = miscellaneous_callback },
 		{ text = LANGUAGE["MENU_PSVITA_CUSTOMIZE"],         desc = LANGUAGE["MENU_PSVITA_CUSTOMIZE_DESC"],	        funct = menu_personalize },
 	}
 

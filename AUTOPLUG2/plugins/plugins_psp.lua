@@ -10,6 +10,7 @@ pluginsP = {
 {	nameR = "Npdrm free by qwikrazor87, modified by lusid1 v7.3", name = "npdrm_free_mod.prx", version = "0001", REMOVE = true, desc = LANGUAGE["MENU_PSP_NPDRMFREE_MOD_DESC"], KEY = "MENU_PSP_NPDRMFREE_MOD_DESC", link = "https://raw.githubusercontent.com/lusid1/npdrm_free_mod/master/README.md", },
 {	nameR = "PSP gta trophies by Freakler v.02", name = "gta_trophies.prx", path = "seplugins/", txt = "game.txt", version = "0001", desc = LANGUAGE["MENU_PSP_GTA_TROPHIES_DESC"], KEY = "MENU_PSP_GTA_TROPHIES_DESC", link = "https://raw.githubusercontent.com/Freakler/psp-gta_trophies/main/README.md", },
 {	nameR = "pspdoc v1.0 by qwikrazor87", name = "pspdoc.prx", path = "seplugins/", txt = "vsh.txt", version = "0001", desc = LANGUAGE["MENU_PSP_PSPDOC_DESC"], KEY = "MENU_PSP_PSPDOC_DESC", link = "https://raw.githubusercontent.com/qwikrazor87/pspdoc/master/README.md", },
+{	nameR = "Allefresher v1.0.0 by Beyley", name = "Allefresher.prx", path = "seplugins/", txt = "game.txt", config = "Allefresher_domain.txt", config2 = "Allefresher_format.txt", path2 = "seplugins/", version = "0001", desc = LANGUAGE["LBP_ALLEFRESHER_DESC"], KEY = "LBP_ALLEFRESHER_DESC", link = "https://raw.githubusercontent.com/LittleBigRefresh/Allefresher/master/README.md", },
 
 }
 

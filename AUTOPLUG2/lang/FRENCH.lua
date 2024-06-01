@@ -30,6 +30,8 @@ FRENCH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Vérifier les mises à jour
 FRENCH["MENU_PSVITA_HD_PATCH"] =                    "Patchs HD et déverrouillage DLC"
 FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "DLC Alien Shooter"
 FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter introuvable ou non installer"
+FRENCH["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
+FRENCH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Personnaliser les plugins"
 FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Ici, vous pouvez personnaliser certains plugins que vous avez installés : Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpos."
@@ -67,6 +69,16 @@ FRENCH["NO_P4GOLDEN_GAMES"] =                       "\n\nJeu Persona 4 Golden no
 FRENCH["INSTALL_P4G_HD"] =                          "Installer le Patchs HD"
 FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
 FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du Patchs HD en cours..."
+
+--LBP
+FRENCH["NO_LBP_GAMES"] =                            "Little Big Planet not found"
+FRENCH["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+FRENCH["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+FRENCH["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+FRENCH["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
+FRENCH["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
+FRENCH["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
+FRENCH["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Patchs HD du jeu Catherine"

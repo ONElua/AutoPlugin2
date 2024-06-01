@@ -30,6 +30,8 @@ SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Buscar Actualizaciones 
 SPANISH["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
 SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
 SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
+SPANISH["MENU_PSVITA_MISCELLANEOUS"] =                  "Miscellaneous Plugins"
+SPANISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 SPANISH["MENU_PSVITA_CUSTOMIZE"] =                      "Personalizar plugins"
 SPANISH["MENU_PSVITA_CUSTOMIZE_DESC"] =                 "Aqui puedes personalizar los siguientes plugins que tengas instalados: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ SPANISH["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden no se 
 SPANISH["INSTALL_P4G_HD"] =                             "Instalar Parche HD"
 SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Cambiar GameID"
 SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de P4 Golden"
+
+--LBP
+SPANISH["NO_LBP_GAMES"] =                               "Little Big Planet not found"
+SPANISH["INSTALL_LBP_TITLE"] =                          "Little Big Planet Custom Server"
+SPANISH["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "Little Big Planet plugin requires iTLS to be installed"
+SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
+SPANISH["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
+SPANISH["INSTALLING_LBP_VERSION"] =                     "Little Big Planet Patch require 1.22 version"
+SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Parche para Catherine HD"

@@ -30,6 +30,8 @@ ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Controlla gli aggiornam
 ITALIAN["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
 ITALIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
 ITALIAN["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
+ITALIAN["MENU_PSVITA_MISCELLANEOUS"] =                  "Miscellaneous Plugins"
+ITALIAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Available High-Def enhancer, DLC enabler & Server access plugins"
 
 ITALIAN["MENU_PSVITA_CUSTOMIZE"] =                      "Customize plugins"
 ITALIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =                 "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
@@ -67,6 +69,16 @@ ITALIAN["NO_P4GOLDEN_GAMES"] =                          "Persona 4 Golden non tr
 ITALIAN["INSTALL_P4G_HD"] =                             "Installa Patch HD"
 ITALIAN["INSTALL_P4G_HD_CHANGE"] =                      "Cambia GameID"
 ITALIAN["INSTALLING_P4G_HD_PATCH"] =                    "Installing P4 Golden Patch HD"
+
+--LBP
+ITALIAN["NO_LBP_GAMES"] =                               "Little Big Planet not found"
+ITALIAN["INSTALL_LBP_TITLE"] =                          "Little Big Planet Custom Server"
+ITALIAN["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+ITALIAN["LBP_ALLEFRESHER_ITLS"] =                       "Little Big Planet plugin requires iTLS to be installed"
+ITALIAN["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
+ITALIAN["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
+ITALIAN["INSTALLING_LBP_VERSION"] =                     "Little Big Planet Patch require 1.22 version"
+ITALIAN["INSTALLING_LBP_VERSION_PBP"] =                 "Little Big Planet Patch require 2.05 version"
 
 --Catherine HD
 ITALIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Catherine HD PATCH"

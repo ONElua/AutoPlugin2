@@ -172,7 +172,7 @@ end
 --Variables Universales
 path_plugins = "resources/plugins/"
 path_tai = "ur0:tai/"
-version = tostring(os.swversion())
+__VERSION = tostring(os.swversion())
 
 --Buttons Assign
 __TRIANGLE,__SQUARE = 2,3
