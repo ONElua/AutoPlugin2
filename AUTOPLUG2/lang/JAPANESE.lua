@@ -71,14 +71,13 @@ JAPANESE["INSTALL_P4G_HD_CHANGE"] =                     "Change GameID"
 JAPANESE["INSTALLING_P4G_HD_PATCH"] =                   "Installing P4 Golden Patch HD"
 
 --LBP
-JAPANESE["NO_LBP_GAMES"] =                              "Little Big Planet not found"
-JAPANESE["INSTALL_LBP_TITLE"] =                         "Little Big Planet Custom Server"
+JAPANESE["NO_LBP_GAMES"] =                              "LittleBigPlanet not found"
+JAPANESE["INSTALL_LBP_TITLE"] =                         "LittleBigPlanet Custom Server"
 JAPANESE["LBP_ALLEFRESHER_DESC"] =                      "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-JAPANESE["LBP_ALLEFRESHER_ITLS"] =                      "Little Big Planet plugin requires iTLS to be installed"
 JAPANESE["INSTALL_LBP_360_365"] =                       "Allefresher doesn't work on 3.67/3.68"
 JAPANESE["INSTALLING_LBP_PATCH"] =                      "Installing Allefresher Patch"
-JAPANESE["INSTALLING_LBP_VERSION"] =                    "Little Big Planet Patch require 1.22 version"
-JAPANESE["INSTALLING_LBP_VERSION_PBP"] =                "Little Big Planet Patch require 2.05 version"
+JAPANESE["INSTALLING_LBP_VERSION"] =                    "LittleBigPlanet version 1.22 is required"
+JAPANESE["INSTALLING_LBP_VERSION_PBP"] =                "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 JAPANESE["MENU_PSVITA_INSTALL_CATHERINE_HD"] =          "Catherine HD PATCH"

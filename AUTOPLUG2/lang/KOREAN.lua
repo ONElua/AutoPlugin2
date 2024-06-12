@@ -71,14 +71,13 @@ KOREAN["INSTALL_P4G_HD_CHANGE"] =                   "게임ID 변경"
 KOREAN["INSTALLING_P4G_HD_PATCH"] =                 "P4 골든 패치 HD 설치"
 
 --LBP
-KOREAN["NO_LBP_GAMES"] =                            "Little Big Planet not found"
-KOREAN["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+KOREAN["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
+KOREAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
 KOREAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-KOREAN["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
 KOREAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
 KOREAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-KOREAN["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
-KOREAN["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
+KOREAN["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
+KOREAN["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 KOREAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "캐서린 HD 패치"

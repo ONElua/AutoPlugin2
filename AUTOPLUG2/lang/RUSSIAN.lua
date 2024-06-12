@@ -71,14 +71,13 @@ RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
 RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD патча"
 
 --LBP
-RUSSIAN["NO_LBP_GAMES"] =                            "Little Big Planet not found"
-RUSSIAN["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+RUSSIAN["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
+RUSSIAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
 RUSSIAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-RUSSIAN["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
 RUSSIAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
 RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-RUSSIAN["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
-RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
+RUSSIAN["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
+RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD патч"

@@ -71,14 +71,13 @@ SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Cambiar GameID"
 SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de P4 Golden"
 
 --LBP
-SPANISH["NO_LBP_GAMES"] =                               "Little Big Planet not found"
-SPANISH["INSTALL_LBP_TITLE"] =                          "Little Big Planet Custom Server"
+SPANISH["NO_LBP_GAMES"] =                               "LittleBigPlanet not found"
+SPANISH["INSTALL_LBP_TITLE"] =                          "LittleBigPlanet Custom Server"
 SPANISH["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "Little Big Planet plugin requires iTLS to be installed"
 SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
 SPANISH["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
-SPANISH["INSTALLING_LBP_VERSION"] =                     "Little Big Planet Patch require 1.22 version"
-SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "Little Big Planet Patch require 2.05 version"
+SPANISH["INSTALLING_LBP_VERSION"] =                     "LittleBigPlanet version 1.22 is required"
+SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Parche para Catherine HD"
