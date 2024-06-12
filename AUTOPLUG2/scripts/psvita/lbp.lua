@@ -1,6 +1,6 @@
 LBP = false
 
---Ckecking game LBP_IDs Golden
+--Ckecking game LBP_IDs 
 LBP_IDs = {
 	{ id = "PCSA22018", region = "US Cartridge" },
 	{ id = "PCSA00017", region = "US Digital" },
@@ -31,7 +31,6 @@ function LBP_server()
 	if not LBP then os.dialog(LANGUAGE["NO_LBP_GAMES"], LANGUAGE["INSTALL_LBP_TITLE"]) return end
 	
 	if ( __VERSION != "3.60" and __VERSION != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"]) return
-	elseif not os.lmodule("itlsKernel") then os.message(LANGUAGE["LBP_ALLEFRESHER_ITLS"]) return
 	end
 
 	local LBP_ID = "LBP.png"
