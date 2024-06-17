@@ -74,6 +74,7 @@ PORTUGUESE_BR["INSTALLING_P4G_HD_PATCH"] =                 "Instalando P4 Golden
 PORTUGUESE_BR["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
 PORTUGUESE_BR["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
 PORTUGUESE_BR["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+PORTUGUESE_BR["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
 PORTUGUESE_BR["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
 PORTUGUESE_BR["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
 PORTUGUESE_BR["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"

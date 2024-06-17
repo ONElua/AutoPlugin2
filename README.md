@@ -4,6 +4,7 @@ This tool allows you to install/uninstall the following plugins with one click
 
 | Plugin | Author |
 | ------ | ------ |
+| [Allefresher](https://github.com/LittleBigRefresh/Allefresher) | [Beyley](https://github.com/Beyley) |
 | [RemasteredControls](https://github.com/TheOfficialFloW/RemasteredControls) (Adrenaline) | [TheFlow](https://github.com/TheOfficialFloW) |
 | [DownloadEnabler](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
 | [NoNpDrm](https://github.com/TheOfficialFloW/NoNpDrm) | [TheFlow](https://github.com/TheOfficialFloW) |
@@ -70,6 +71,9 @@ You no longer need to add the line:
 # Small note for the translation of the languages using non-standard characters
 Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).* and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
 This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+
+### Changelog 2.12 ###
+- Update Allefresher to v1.0.1 (custom servers for lbp)
 
 ### Changelog 2.11 ###
 - Added Miscellaneous plugins section, available High-Def enhancer, DLC enabler & LBP server access plugins 

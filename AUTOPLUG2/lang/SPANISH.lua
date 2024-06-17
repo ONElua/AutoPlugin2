@@ -74,6 +74,7 @@ SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de
 SPANISH["NO_LBP_GAMES"] =                               "LittleBigPlanet not found"
 SPANISH["INSTALL_LBP_TITLE"] =                          "LittleBigPlanet Custom Server"
 SPANISH["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "Allefresher plugin requires iTLS to be installed"
 SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
 SPANISH["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
 SPANISH["INSTALLING_LBP_VERSION"] =                     "LittleBigPlanet version 1.22 is required"

@@ -74,6 +74,7 @@ ITALIAN["INSTALLING_P4G_HD_PATCH"] =                    "Installing P4 Golden Pa
 ITALIAN["NO_LBP_GAMES"] =                               "LittleBigPlanet not found"
 ITALIAN["INSTALL_LBP_TITLE"] =                          "LittleBigPlanet Custom Server"
 ITALIAN["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
+ITALIAN["LBP_ALLEFRESHER_ITLS"] =                       "Allefresher plugin requires iTLS to be installed"
 ITALIAN["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
 ITALIAN["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
 ITALIAN["INSTALLING_LBP_VERSION"] =                     "LittleBigPlanet version 1.22 is required"

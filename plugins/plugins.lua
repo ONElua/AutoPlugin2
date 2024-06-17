@@ -315,6 +315,9 @@ Online_Plugins = {
 --NPXS10010
 --{ name = "DePlayEnabler by alpakeno v1.0", id = "DEPLAYENABLER.png",  path = "deplayenabler.suprx", section = "NPXS10010", config = "deplayenabler.txt", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DEPLAYENABLER"], KEY = "INSTALLP_DESC_DEPLAYENABLER", link = "https://raw.githubusercontent.com/alpakeno/DePlayEnabler/master/README.md", },
 
+{ name = "Allefresher plugin by Beyley", id = "LBP.png", path = "Allefresher_vita.suprx", desc = LANGUAGE["LBP_ALLEFRESHER_DESC"], KEY = "LBP_ALLEFRESHER_DESC", REMOVE = true,
+  crc = 0xa53809f3, v = "v1.0.1", version = "0002", },
+
 --Special P4 Golden HD
 { name = "Persona 4 Golden HD 1920x1080", id = "PERSONA4GOLDENHD.png", path = "p4goldenhd_1920x1080.suprx", desc = LANGUAGE["P4G_1920x1080_DESC"], KEY = "P4G_1920x1080_DESC", REMOVE = true,
   crc = 0x16e6c65d, v = "v1.0.1", version = "0001", },
