@@ -1,6 +1,6 @@
 LBP = false
 
---Ckecking game LBP_IDs Golden
+--Ckecking game LBP_IDs
 LBP_IDs = {
 	{ id = "PCSA22018", region = "US Cartridge" },
 	{ id = "PCSA00017", region = "US Digital" },
@@ -31,10 +31,18 @@ function LBP_server()
 	if not LBP then os.dialog(LANGUAGE["NO_LBP_GAMES"], LANGUAGE["INSTALL_LBP_TITLE"]) return end
 	
 	if ( __VERSION != "3.60" and __VERSION != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"]) return
-	elseif not os.lmodule("itlsKernel") then os.message(LANGUAGE["LBP_ALLEFRESHER_ITLS"]) return
 	end
 
-	local LBP_ID = "LBP.png"
+	local LBP_table = {}
+	for i=1,#plugins do
+
+		if plugins[i].path == "Allefresher_vita.suprx" then
+			LBP_table.id = plugins[i].id
+			LBP_table.title = plugins[i].name.." "..plugins[i].v
+			LBP_table.path = plugins[i].path
+		end
+
+	end
 
 	local scroll,xscroll = newScroll(gamesLBP,7),10
 	while true do
@@ -46,7 +54,7 @@ function LBP_server()
 		wave:blit(0.7,50)
 
 		draw.fillrect(0,0,960,55,color.shine:a(15))
-		screen.print(480,20,"Allefresher plugin by Beyley",1.0,color.white,color.blue,__ACENTER)
+		screen.print(480,20,LBP_table.title,1.0,color.white,color.blue,__ACENTER)
 		draw.fillrect(0,64,960,322,color.shine:a(25))
 
 		local y = 90
@@ -54,7 +62,7 @@ function LBP_server()
 
 			if i == scroll.sel then draw.offsetgradrect(5,y-12,943,40,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
-			idx = tai.find(gamesLBP[i].id,"Allefresher_vita.suprx")
+			idx = tai.find(gamesLBP[i].id,LBP_table.path)
 			if idx != nil then
 				if files.exists(tai.gameid[ gamesLBP[i].id ].prx[idx].path) then
 					if dotg then dotg:blit(924,y-1) else draw.fillrect(924,y-2,21,21,color.green:a(205)) end
@@ -115,10 +123,10 @@ function LBP_server()
 				local onNetGetFileOld = onNetGetFile
 				onNetGetFile = nil
 
-				local img = image.load(screenshots..LBP_ID)
+				local img = image.load(screenshots..LBP_table.id)
 				if not img then
-					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, LBP_ID), screenshots..LBP_ID).success then
-						img = image.load(screenshots..LBP_ID)
+					if http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, LBP_table.id), screenshots..LBP_table.id).success then
+						img = image.load(screenshots..LBP_table.id)
 					end
 				end
 
@@ -134,7 +142,7 @@ function LBP_server()
 				end
 				img,vbuff = nil,nil
 				if gamesLBP[scroll.sel].version != "01.22" then os.message(LANGUAGE["INSTALLING_LBP_VERSION"]) else
-					Patch_LBP_install(gamesLBP[scroll.sel])
+					Patch_LBP_install(gamesLBP[scroll.sel],LBP_table)
 				end
 			end
 
@@ -144,12 +152,12 @@ function LBP_server()
 
 end
 
-function Patch_LBP_install(game)
+function Patch_LBP_install(game,t)
 
 	--Copy plugin to tai folder
-	files.copy(path_plugins.."Allefresher_vita.suprx", path_tai)
+	files.copy(path_plugins..t.path, path_tai)
 
-	tai.put(game.id, path_tai.."Allefresher_vita.suprx")
+	tai.put(game.id, path_tai..t.path)
 	ReloadConfig = true
 
 	if back2 then back2:blit(0,0) end

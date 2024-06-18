@@ -71,14 +71,14 @@ PORTUGUESE_BR["INSTALL_P4G_HD_CHANGE"] =                   "Mude o GameID"
 PORTUGUESE_BR["INSTALLING_P4G_HD_PATCH"] =                 "Instalando P4 Golden Patch HD"
 
 --LBP
-PORTUGUESE_BR["NO_LBP_GAMES"] =                            "Little Big Planet not found"
-PORTUGUESE_BR["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+PORTUGUESE_BR["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
+PORTUGUESE_BR["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
 PORTUGUESE_BR["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-PORTUGUESE_BR["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+PORTUGUESE_BR["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
 PORTUGUESE_BR["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
 PORTUGUESE_BR["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-PORTUGUESE_BR["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
-PORTUGUESE_BR["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
+PORTUGUESE_BR["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
+PORTUGUESE_BR["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 PORTUGUESE_BR["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine HD PATCH"

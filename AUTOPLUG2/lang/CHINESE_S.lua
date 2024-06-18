@@ -71,14 +71,14 @@ CHINESE_S["INSTALL_P4G_HD_CHANGE"] =                   "修改游戏编号"
 CHINESE_S["INSTALLING_P4G_HD_PATCH"] =                 "正在安装 女神异闻录4黄金版 高清补丁"
 
 --LBP
-CHINESE_S["NO_LBP_GAMES"] =                            "Little Big Planet not found"
-CHINESE_S["INSTALL_LBP_TITLE"] =                       "Little Big Planet Custom Server"
+CHINESE_S["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
+CHINESE_S["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
 CHINESE_S["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-CHINESE_S["LBP_ALLEFRESHER_ITLS"] =                    "Little Big Planet plugin requires iTLS to be installed"
+CHINESE_S["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
 CHINESE_S["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
 CHINESE_S["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-CHINESE_S["INSTALLING_LBP_VERSION"] =                  "Little Big Planet Patch require 1.22 version"
-CHINESE_S["INSTALLING_LBP_VERSION_PBP"] =              "Little Big Planet Patch require 2.05 version"
+CHINESE_S["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
+CHINESE_S["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
 
 --Catherine HD
 CHINESE_S["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "凯瑟琳浓郁口感高清补丁"
