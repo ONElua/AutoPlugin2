@@ -30,8 +30,8 @@ KOREAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "플러그인 업데이트 �
 KOREAN["MENU_PSVITA_HD_PATCH"] =                    "HD 패치 및 DLC 잠금 해제"
 KOREAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "에일리언 슈터 DLC 잠금 해제"
 KOREAN["NO_ALIENSHOOTER_GAMES"] =                   "에일리언 슈터를 찾을 수 없음"
-KOREAN["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
-KOREAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
+KOREAN["MENU_PSVITA_MISCELLANEOUS"] =               "기타 플러그인"
+KOREAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "고화질 증폭기, DLC 활성화 프로그램 및 서버 접속 플러그인 사용 가능"
 
 KOREAN["MENU_PSVITA_CUSTOMIZE"] =                   "커스텀 플러그인"
 KOREAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "여기서는 설치한 일부 플러그인을 커스텀 할 수 있습니다: 자동 부팅, 커스텀 경고, 커스텀 부팅 시작, 퀵메뉴 플러스, 트림 포즈"
@@ -71,14 +71,14 @@ KOREAN["INSTALL_P4G_HD_CHANGE"] =                   "게임ID 변경"
 KOREAN["INSTALLING_P4G_HD_PATCH"] =                 "P4 골든 패치 HD 설치"
 
 --LBP
-KOREAN["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
-KOREAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
-KOREAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-KOREAN["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
-KOREAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
-KOREAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-KOREAN["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
-KOREAN["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
+KOREAN["NO_LBP_GAMES"] =                            "LittleBigPlanet을 찾을 수 없음"
+KOREAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet 커스텀 서버"
+KOREAN["LBP_ALLEFRESHER_DESC"] =                    "LittleBigPlanet 게임을 패치하여 커스텀 서버에 연결할 수 있는 CFW 플러그인 세트입니다."
+KOREAN["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher 플러그인을 설치하려면 iTLS가 필요"
+KOREAN["INSTALL_LBP_360_365"] =                     "Allefresher는 3.67/3.68에서 작동하지 않음"
+KOREAN["INSTALLING_LBP_PATCH"] =                    "Allefresher 패치 설치"
+KOREAN["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet 버전 1.22가 필요"
+KOREAN["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet 버전 2.05가 필요"
 
 --Catherine HD
 KOREAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "캐서린 HD 패치"
@@ -468,8 +468,8 @@ KOREAN["INSTALLP_DESC_CUSTOMBOOTSPLASH"] =          "이 플러그인은 부팅 
 KOREAN["CUSTOMBOOTSPLASH_QUESTION"] =               "이 이미지를 커스텀 부팅 화면으로 설정하겠습니까 ?"
 KOREAN["INSTALLP_DESC_NOFINDSPLASH"] =              "원하는 이미지를 ux0:CustomBootsplash/\n(splash.png로 이름 변경 및 960x544로 크기 조정)에 배치"
 KOREAN["INSTALLP_DESC_SPLASHGH"] =                  "이미지의 크기는 다음과 같아야 합니다: 960 * 544"
-KOREAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin 완료하였습니다 !!!"
-KOREAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin 실패하였습니다 !!!"
+KOREAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin 완료하였습니다!!!"
+KOREAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin 실패하였습니다!!!"
 
 --Main
 KOREAN["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm은 플레이스테이션 비타 시스템에서 홈브류를 위한 공식 트로피 팩을 sceNpTrophy와 함께 사용할 수 있게 해주는 플러그인입니다."
