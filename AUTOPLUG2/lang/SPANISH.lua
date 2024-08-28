@@ -27,15 +27,15 @@ SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS"] =              "Desinstalar Plugins"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA"] =                "Instalar Plugin SD2VITA"
 SPANISH["MENU_PSVITA_CONFIGURE_SD2VITA"] =              "Configura el Plugin para SD2VITA"
 SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Buscar Actualizaciones de Plugins"
-SPANISH["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
-SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
-SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
-SPANISH["MENU_PSVITA_MISCELLANEOUS"] =                  "Miscellaneous Plugins"
-SPANISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Available High-Def enhancer, DLC enabler & Server access plugins"
+SPANISH["MENU_PSVITA_HD_PATCH"] =                       "Parches HD y desbloqueador de DLCs"
+SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Desbloqueador de los DLCs de Alien Shooter"
+SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter no ha sido encontrado"
+SPANISH["MENU_PSVITA_MISCELLANEOUS"] =                  "Plugins Misceláneos "
+SPANISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Plugins de Mejoradores a High-Def (alta resolución), activadores de DLCs y acceso a Servidores Privados disponibles para PS Vita"
 
 SPANISH["MENU_PSVITA_CUSTOMIZE"] =                      "Personalizar plugins"
 SPANISH["MENU_PSVITA_CUSTOMIZE_DESC"] =                 "Aqui puedes personalizar los siguientes plugins que tengas instalados: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
-SPANISH["MENU_PSVITA_HD_PATCH_DESC"] =                  "HD patches some for psvita games and DLC Unlocker"
+SPANISH["MENU_PSVITA_HD_PATCH_DESC"] =                  "Parches HD para algúnos juegos de PS Vita, y desbloqueador de DLC"
 SPANISH["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Instala los Plugins más útiles desarrollados por la Scene de PSVita"
 SPANISH["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Desinstala Plugins de manera fácil y sencilla"
 SPANISH["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Instala el Plugin SD2VITA (StorageMgr v3.4 por CelesteBlue & Yoti)"
@@ -71,14 +71,14 @@ SPANISH["INSTALL_P4G_HD_CHANGE"] =                      "Cambiar GameID"
 SPANISH["INSTALLING_P4G_HD_PATCH"] =                    "Instalando Parche HD de P4 Golden"
 
 --LBP
-SPANISH["NO_LBP_GAMES"] =                               "LittleBigPlanet not found"
-SPANISH["INSTALL_LBP_TITLE"] =                          "LittleBigPlanet Custom Server"
-SPANISH["LBP_ALLEFRESHER_DESC"] =                       "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "Allefresher plugin requires iTLS to be installed"
-SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher doesn't work on 3.67/3.68"
-SPANISH["INSTALLING_LBP_PATCH"] =                       "Installing Allefresher Patch"
-SPANISH["INSTALLING_LBP_VERSION"] =                     "LittleBigPlanet version 1.22 is required"
-SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "LittleBigPlanet version 2.05 is required"
+SPANISH["NO_LBP_GAMES"] =                               "LittleBigPlanet no se ha encontrado"
+SPANISH["INSTALL_LBP_TITLE"] =                          "Servidores Privados para LittleBigPlanet"
+SPANISH["LBP_ALLEFRESHER_DESC"] =                       "Un set de plugins de CFW para parchear el juego LittleBigPlanet, permitiendole conectarse a servidores privados"
+SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "El plugin Allefresher requiere que iTLS esté instalado"
+SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher no funciona para PS Vita en versiones 3.67/3.68"
+SPANISH["INSTALLING_LBP_PATCH"] =                       "Instalando el parche Allefresher"
+SPANISH["INSTALLING_LBP_VERSION"] =                     "Se necesita la versión 1.22 de LittleBigPlanet"
+SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "Se necesita la versión 2.05 de LittleBigPlanet"
 
 --Catherine HD
 SPANISH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =           "Parche para Catherine HD"
@@ -387,8 +387,8 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
-SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin to improve PS Vita sequential I/O speeds"
+SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Usa tu PS Vita como un control USB con soporte para el táctil frontal y trasero"
+SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin para mejorar la velocidad sequencial de I/O de la PS Vita"
 SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 SPANISH["INSTALLP_DESC_NOPSPEMUDRM"] =                  "Un Plugin que permite evitar todos los chequeos de DRM de PSPEmu, lo que permite jugar tus respaldos digitales de juegos de PSP y PS1, o de juegos que poseas legalmente pero en otra cuenta PSN"
 SPANISH["INSTALLP_DESC_TVIKEY"] =                       "Driver de Kernel para PSTV para el uso de mouse/teclado"
@@ -547,10 +547,10 @@ SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
 
 --*PCSE00445 USA or *PCSB00561 Europe
-SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Desbloqueador de DLCs de Alien Shooter. Necesitas correr el juego al menos una vez con el plugin activado para desbloquear los DLCs"
 
 --*PCSC90032
-SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora."
+SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"
