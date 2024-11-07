@@ -71,14 +71,14 @@ FRENCH["INSTALL_P4G_HD_CHANGE"] =                   "Changer le GameID"
 FRENCH["INSTALLING_P4G_HD_PATCH"] =                 "Installation du Patchs HD en cours..."
 
 --LBP
-FRENCH["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
-FRENCH["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
-FRENCH["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-FRENCH["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
-FRENCH["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
-FRENCH["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-FRENCH["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
-FRENCH["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
+FRENCH["NO_LBP_GAMES"] =                            "LittleBigPlanet non trouvé"
+FRENCH["INSTALL_LBP_TITLE"] =                       "Serveur personnalisé de LittleBigPlanet"
+FRENCH["LBP_ALLEFRESHER_DESC"] =                    "Un ensemble de plugins CFW pour la mise à jour des jeux LittleBigPlanet afin de permettre la connexion à des serveurs personnalisés."
+FRENCH["LBP_ALLEFRESHER_ITLS"] =                    "Le plugin Allefresher nécessite l'installation d'iTLS"
+FRENCH["INSTALL_LBP_360_365"] =                     "Allefresher ne fonctionne pas sous 3.67/3.68"
+FRENCH["INSTALLING_LBP_PATCH"] =                    "Installation du patch Allefresher"
+FRENCH["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 est requis"
+FRENCH["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 est requis"
 
 --Catherine HD
 FRENCH["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Patchs HD du jeu Catherine"
