@@ -426,6 +426,7 @@ ITALIAN["INSTALLP_DESC_KUIO"] =                         "Consente ai moduli uten
 ITALIAN["INSTALLP_DESC_ADRENALINE"] =                   "Ti permette di eseguire Adrenaline con un solo tocco. Note: Adrenaline´s latest version must be installed"
 ITALIAN["INSTALLP_DESC_DSMOTION"] =                     "Supporto DualShock motion control per PlayStation TV"
 ITALIAN["INSTALLP_DESC_USBMC"] =                        "Trasforma la memoria USB come scheda di memoria PSVita"
+ITALIAN["INSTALLP_DESC_USBMCMOD"] =                     "Trasforma la memoria USB come scheda di memoria PSVita, Consigliato per Psvsd v3.1 o successiva."
 ITALIAN["INSTALLP_DESC_ANALOGSENHANCER"] =              "Questo piccolo plugin del kernel consente agli utenti di migliorare la propria esperienza con gli analogici PSVITA"
 ITALIAN["INSTALLP_DESC_IOPLUS"] =                       "Un plugin per il kernel PSVita che consente più operazioni IO in userland"
 ITALIAN["INSTALLP_DESC_VITACHEAT"] =                    "Plugin per utilizzare Cheats nei giochi PSVita (L + TASTO DESTRO)"

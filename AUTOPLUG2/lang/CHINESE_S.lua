@@ -426,6 +426,7 @@ CHINESE_S["INSTALLP_DESC_KUIO"] =                      "允许用户模块访问
 CHINESE_S["INSTALLP_DESC_ADRENALINE"] =                "让您只需轻轻一按即可运行肾上腺素 注意: 必须安装 Adrenaline 的最新版本"
 CHINESE_S["INSTALLP_DESC_DSMOTION"] =                  "为 PlayStation TV 提供 DualShock 控制器支持"
 CHINESE_S["INSTALLP_DESC_USBMC"] =                     "将 USB 存储设备设置为 Vita 记忆卡"
+CHINESE_S["INSTALLP_DESC_USBMCMOD"] =                  "将 USB 存储设备设置为 Vita 记忆卡, 推荐用于 Psvsd v3.1 或更高版本。"
 CHINESE_S["INSTALLP_DESC_ANALOGSENHANCER"] =           "允许您配置摇杆死区或启用模拟输入的软件缩放"
 CHINESE_S["INSTALLP_DESC_IOPLUS"] =                    "此 PSVita 内核插件允许在用户空间中进行更多的IO操作"
 CHINESE_S["INSTALLP_DESC_VITACHEAT"] =                 "在 PSVita 游戏里使用金手指,适用于 3.65/3.68 (L + RIGHT)"

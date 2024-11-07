@@ -426,6 +426,7 @@ POLISH["INSTALLP_DESC_KUIO"] =                      "Zezwala modułom użytkowni
 POLISH["INSTALLP_DESC_ADRENALINE"] =                "Pozwala uruchomić Adrenaline jednym kliknięciem (Bez potrzeby ponownego uruchamiania. Note: Adrenaline´s latest version must be installed"
 POLISH["INSTALLP_DESC_DSMOTION"] =                  "Wsparcie DualShcok dla PlayStation TV"
 POLISH["INSTALLP_DESC_USBMC"] =                     "Pamięć USB jako Karta Pamięci Vity"
+POLISH["INSTALLP_DESC_USBMCMOD"] =                     "Pamięć USB jako Karta Pamięci Vity, Zalecane dla Psvsd v3.1 lub nowszego."
 POLISH["INSTALLP_DESC_ANALOGSENHANCER"] =           "Mały plugin kernela, który pozwala użytkownikowi na lepsze korzystanie z analogów Vity"
 POLISH["INSTALLP_DESC_IOPLUS"] =                    "Plugin kernela PSVita, który pozwala na więcej operacji IO w przestrzeni uzytkownika"
 POLISH["INSTALLP_DESC_VITACHEAT"] =                 "Używaj chetów w grach PSVita. Tylko na 3.65/3.68 (L + RIGHT)"

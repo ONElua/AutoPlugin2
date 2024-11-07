@@ -27,15 +27,15 @@ RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Удалить плаги�
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA"] =             "Установить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Настроить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Проверить обновления плагинов"
-RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches and DLC Unlocker"
-RUSSIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter DLC Unlocker"
-RUSSIAN["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter not found"
-RUSSIAN["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
-RUSSIAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
+RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD патчи и разблокировка DLC"
+RUSSIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Alien Shooter разблокировка DLC"
+RUSSIAN["NO_ALIENSHOOTER_GAMES"] =                   "Игра Alien Shooter не установлена"
+RUSSIAN["MENU_PSVITA_MISCELLANEOUS"] =               "Плагины для игр"
+RUSSIAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Улучшения разрешения экрана, разблокировка DLC, а также сетевая игра"
 
-RUSSIAN["MENU_PSVITA_CUSTOMIZE"] =                   "Customize plugins"
-RUSSIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose"
-RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games and DLC Unlocker"
+RUSSIAN["MENU_PSVITA_CUSTOMIZE"] =                   "Настройка плагинов"
+RUSSIAN["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Меню для настройки установленных плагинов (таких как Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus и Trimpose)"
+RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD патчи для некоторых PS Vita игр и разблокировка DLC"
 RUSSIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Установить наиболее полезные плагины, созданные сценой PS Vita"
 RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Легко и просто удалить установленные плагины"
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Установить плагин для SD2VITA (StorageMgr v3.4 от CelesteBlue & Yoti)"
@@ -65,26 +65,26 @@ RUSSIAN["MENU_PSVITA_INSTALL_P4G_HD_DESC"] =         "Этот патч изме
 RUSSIAN["P4G_1920x1080_DESC"] =                      "1920x1080 может быть как выведено по HDMI, так и на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 20-30 FPS, в большинстве случаев 25-30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["P4G_1280x720_DESC"] =                       "1280x720 может быть выведено по HDMI, USB (при помощи плагина udcd_uvc от xerpi), а также на экран PS Vita (в таком случае изображение будет сглажено). Средняя частота кадров составляет 30 FPS (для нормальной производительности требуется разгон)."
 RUSSIAN["INSTALL_P4G_HD_TITLE"] =                    "Persona 4 Golden HD от Cuevavirus"
-RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Persona 4 Golden не найдена"
+RUSSIAN["NO_P4GOLDEN_GAMES"] =                       "Игра Persona 4 Golden не установлена"
 RUSSIAN["INSTALL_P4G_HD"] =                          "Установить HD патч"
-RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GameID"
+RUSSIAN["INSTALL_P4G_HD_CHANGE"] =                   "Изменить GAMEID"
 RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Golden HD патча"
 
 --LBP
-RUSSIAN["NO_LBP_GAMES"] =                            "LittleBigPlanet not found"
-RUSSIAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet Custom Server"
-RUSSIAN["LBP_ALLEFRESHER_DESC"] =                    "A set of CFW plugins for patching LittleBigPlanet games to allow connecting to custom servers."
-RUSSIAN["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher plugin requires iTLS to be installed"
-RUSSIAN["INSTALL_LBP_360_365"] =                     "Allefresher doesn't work on 3.67/3.68"
-RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Installing Allefresher Patch"
-RUSSIAN["INSTALLING_LBP_VERSION"] =                  "LittleBigPlanet version 1.22 is required"
-RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "LittleBigPlanet version 2.05 is required"
+RUSSIAN["NO_LBP_GAMES"] =                            "Игра LittleBigPlanet не установлена"
+RUSSIAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet фанатский сервер"
+RUSSIAN["LBP_ALLEFRESHER_DESC"] =                    "Плагины для подключения к фанатским серверам LBP"
+RUSSIAN["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher требует установленного iTLS"
+RUSSIAN["INSTALL_LBP_360_365"] =                     "Allefresher не поддерживает 3.67/3.68"
+RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Установка Allefresher патча"
+RUSSIAN["INSTALLING_LBP_VERSION"] =                  "Требуется LittleBigPlanet версии 1.22"
+RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "Требуется LittleBigPlanet версии 2.05"
 
 --Catherine HD
 RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD"] =        "Catherine: Full Body HD патч"
 RUSSIAN["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"] =   "Этот патч изменяет разрешение 3D сцен и кадрового буфера Catherine: Full Body на PS Vita и PS Vita TV до 1280x720. (Необходим плагин Sharpscale)"
 RUSSIAN["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine: Full Body HD от Cuevavirus"
-RUSSIAN["NO_CHATERINE_GAMES"] =                      "Catherine: Full Body не найдена"
+RUSSIAN["NO_CHATERINE_GAMES"] =                      "Игра Catherine: Full Body не установлена"
 RUSSIAN["INSTALLING_CATHERINE_HD_PATCH"] =           "Установка Catherine: FB HD патча"
 
 RUSSIAN["INSTRUCTIONS_HD_PATCH"] =                   " 1. Установите самую новую версию Sharpscale \n\n 2. Включите 'Unlock framebuffer size' в приложении Sharpscale \n\n 3. Для лучшей производительности используйте плагин для разгона "
@@ -176,7 +176,7 @@ RUSSIAN["INSTALLP_NO_VPK"] =                         "Ошибка при заг
 
 --customWarning
 RUSSIAN["CUSTOMWARNING_MESSAGE"] =                   "Не забудьте установить плагин Custom Warning"
-RUSSIAN["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot plugin is not compatible with vdb daemon plugin"
+RUSSIAN["INSTALLP_WARNING_AUTOBOOT"] =               "Autoboot не совместим с плагином vdb daemon"
 RUSSIAN["INSTALLP_VITABRIGHT_360"] =                 "VitaBright работает только с 3.60 по 3.68"
 RUSSIAN["INSTALLP_CWARNING_360_365"] =               "Custom Warning не работает на 3.67 и новее"
 RUSSIAN["INSTALLP_REVITA_360_365"] =                 "reVita работает только на 3.60 и 3.65"
@@ -387,9 +387,9 @@ RUSSIAN["TURKISH"] =                                 "Турецкий"
 RUSSIAN["INSTALLP_DESC_SD2VITA"] =                   "Плагин, позволяющий изменить точки монтирования различных носителей памяти (нужен для SD2VITA)"
 
 --KERNEL
-RUSSIAN["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
-RUSSIAN["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
-RUSSIAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
+RUSSIAN["INSTALLP_DESC_VITAPAD"] =                   "Используйте PS Vita в качестве конроллера с поддержкой управления при помощи передней и задней сенсорной панели"
+RUSSIAN["INSTALLP_DESC_IOSTAGING"] =                 "Плагин для ускорения последовательных операций ввода-вывода"
+RUSSIAN["INSTALLP_DESC_VITACONTROL"] =               "Подключите ваш беспроводной контроллер к PS Vita! (DualShock 3, DualShock 4, DualSense/Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "Плагин для обхода проверки лицензии встроенного PSP эмулятора, позволяющего в том числе запускать купленные на другом аккаунте игры"
 RUSSIAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV драйвер для поддержки клавиатуры и мыши"
 RUSSIAN["INSTALLP_DESC_VIXEN"] =                     "Плагин для поддержки XInput совместимых проводных контроллеров (таких, как контроллер Xbox 360)"
@@ -426,6 +426,7 @@ RUSSIAN["INSTALLP_DESC_KUIO"] =                      "Позволяет пол�
 RUSSIAN["INSTALLP_DESC_ADRENALINE"] =                "Позволяет пропустить первый холостой запуск Adrenaline после включения системы. Примечание: предварительно установите последнюю версию Adrenaline"
 RUSSIAN["INSTALLP_DESC_DSMOTION"] =                  "Добавляет функции управления движением PS Vita на PS Vita TV (при использовании DualShock)"
 RUSSIAN["INSTALLP_DESC_USBMC"] =                     "Используйте USB накопитель вместо карты памяти"
+RUSSIAN["INSTALLP_DESC_USBMCMOD"] =                  "Используйте USB накопитель вместо карты памяти, Рекомендуется для Psvsd v3.1 или выше."
 RUSSIAN["INSTALLP_DESC_ANALOGSENHANCER"] =           "Тонкая настройка аналоговых стиков PS Vita"
 RUSSIAN["INSTALLP_DESC_IOPLUS"] =                    "Позволяет пользовательским плагинам выполнять операции чтения и записи в файлы и папки (плагин-компаньон для других плагинов)"
 RUSSIAN["INSTALLP_DESC_VITACHEAT"] =                 "Читерский плагин для PS Vita игр на прошивках 3.65/3.68 (запуск: L+RIGHT)"
@@ -472,7 +473,7 @@ RUSSIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =           "boot_splash.bin - ГОТО
 RUSSIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =           "boot_splash.bin - ОШИБКА!!!"
 
 --Main
-RUSSIAN["INSTALLP_DESC_NOTRPDRM"] =                  "NoTrpDrm is a plugin that enables official trophies pack usage with sceNpTrophy for homebrews on a PlayStation Vita system."
+RUSSIAN["INSTALLP_DESC_NOTRPDRM"] =                  "Добавление поддержки функции Призов к самописным играм и программам"
 RUSSIAN["INSTALLP_DESC_PASTEUNLOCK"] =               "Новый плагин для PS Vita, который разблокирует скрытые функции копирования/вставки текста. Для использования зажмите текст на экране до появления увеличения. После чего отпустите палец и появится меню выбора функции."
 RUSSIAN["INSTALLP_DESC_USBDISABLE"] =                "Плагин отключает надоедливое сообщение 'Подключение' при подключении к ПК -- (Q)CMA не прекратит работать!"
 RUSSIAN["INSTALLP_DESC_DENABLER"] =                  "Загружайте любые файлы при помощи браузера"
@@ -547,7 +548,7 @@ RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает нали�
 RUSSIAN["INSTALLP_DESC_VITAKEYBOARD"] =              "Тандем из плагина и приложения для использования PS Vita в качестве USB клавиатуры"
 
 --*PCSE00445 USA or *PCSB00561 Europe
-RUSSIAN["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+RUSSIAN["INSTALLP_DESC_ALIENDLC"] =                  "Разблокировка дополнений для Alien Shooter. Просто запустите игру с активным плагином хотя бы раз"
 
 --*PCSC90032
 RUSSIAN["INSTALLP_DESC_MIKUA"] =                     "Плагин, обходящий ограничения запуска Hatsune Miku AR Stage (PCSC90032)"

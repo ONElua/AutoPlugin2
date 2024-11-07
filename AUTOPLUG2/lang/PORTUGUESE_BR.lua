@@ -426,6 +426,7 @@ PORTUGUESE_BR["INSTALLP_DESC_KUIO"] =                      "Permite que os módu
 PORTUGUESE_BR["INSTALLP_DESC_ADRENALINE"] =                "Permitir executar o Adrenaline com um único toque. Note: Adrenaline´s latest version must be installed"
 PORTUGUESE_BR["INSTALLP_DESC_DSMOTION"] =                  "Suporte de controle de movimento DualShock para PlayStation TV"
 PORTUGUESE_BR["INSTALLP_DESC_USBMC"] =                     "Armazenamento USB como cartão de memória Vita"
+PORTUGUESE_BR["INSTALLP_DESC_USBMC"] =                     "Armazenamento USB como cartão de memória Vita, Recomendado para Psvsd v3.1 ou superior"
 PORTUGUESE_BR["INSTALLP_DESC_ANALOGSENHANCER"] =           "Permite configurar uma zona morta ou ativar o redimensionamento de software de entradas analógicas"
 PORTUGUESE_BR["INSTALLP_DESC_IOPLUS"] =                    "Um plugin do kernel do PSVita que permite mais operações de E/S no território do usuário"
 PORTUGUESE_BR["INSTALLP_DESC_VITACHEAT"] =                 "Use trapaças em jogos do PSVita apenas para 3.65/3.68 (L+RIGHT)"

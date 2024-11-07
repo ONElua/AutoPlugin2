@@ -53,8 +53,13 @@ plugins = {
   crc = 0x62c43e6, v = "v1.7", version = "0004", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },
 { name = "udcd_uvc LCD by xerpi", id = "UDCD.png", path = "udcd_uvc_lcd_off.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_UDCDUVCL"], KEY = "INSTALLP_DESC_UDCDUVCL",
   crc = 0x1a3f1c6a, v = "v1.7", version = "0004", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },
+
 { name = "usbmc by yifanlu", id = "USBMC.png", path = "usbmc.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_USBMC"], KEY = "INSTALLP_DESC_USBMC",
   crc = 0x89e44e51, v = "v6", version = "0001", link = "https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md", },
+
+{ name = "usbmc Mod by DevDavisNunez", id = "USBMC.png", path = "usbmcm.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_USBMCMOD"], KEY = "INSTALLP_DESC_USBMCMOD",
+  crc = 0x38581D52, v = "v2.0", version = "0002", link = "https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md", },
+
 { name = "vitastick by xerpi", id = "VITASTICK.png", path = "vitastick.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITASTICK"], KEY = "INSTALLP_DESC_VITASTICK",
   crc = 0x57cb395c, v = "0.4.1 alpha", version = "0001", link = "https://raw.githubusercontent.com/xerpi/vitastick/master/README.md", },
 { name = "viimote by xerpi", id = "WIIMOTE.png", path = "viimote.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIIMOTE"], KEY = "INSTALLP_DESC_VIIMOTE",

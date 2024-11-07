@@ -426,6 +426,7 @@ JAPANESE["INSTALLP_DESC_KUIO"] =                        "ユーザーモジュ�
 JAPANESE["INSTALLP_DESC_ADRENALINE"] =                  "ワンタッチでアドレナリンを実行できます. Note: Adrenaline´s latest version must be installed"
 JAPANESE["INSTALLP_DESC_DSMOTION"] =                    "PlayStation TVのDualShockモーションコントロールのサポート"
 JAPANESE["INSTALLP_DESC_USBMC"] =                       "PSVitaでUSBストレージをメモリカードとして使用する"
+JAPANESE["INSTALLP_DESC_USBMCMOD"] =                    "PSVitaでUSBストレージをメモリカードとして使用する, Psvsd v3.1 以降を推奨。"
 JAPANESE["INSTALLP_DESC_ANALOGSENHANCER"] =             "このカーネルプラグインにより、ユーザーはPSVitaのアナログコントロールのエクスペリエンスを向上させることができます"
 JAPANESE["INSTALLP_DESC_IOPLUS"] =                      "このPSVitaカーネルプラグインにより、ユーザーモードでより多くのI/O操作が可能になります。"
 JAPANESE["INSTALLP_DESC_VITACHEAT"] =                   "PSVitaゲームでチートを使用します。 3.65/3.68のみ (L+RIGHT)"

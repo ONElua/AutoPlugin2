@@ -426,6 +426,7 @@ GERMAN["INSTALLP_DESC_KUIO"] =                      "Ermöglicht Benutzermodulen
 GERMAN["INSTALLP_DESC_ADRENALINE"] =                "Ermöglicht es Adrenaline beim ersten öffnen zu starten. Note: Adrenaline´s latest version must be installed"
 GERMAN["INSTALLP_DESC_DSMOTION"] =                  "Unterstützung von DualShock Motion Control für PlayStation TV"
 GERMAN["INSTALLP_DESC_USBMC"] =                     "USB Speicher als PS Vita Speicherkarte nutzen"
+GERMAN["INSTALLP_DESC_USBMCMOD"] =                  "USB Speicher als PS Vita Speicherkarte nutzen, Empfohlen für Psvsd v3.1 oder höher."
 GERMAN["INSTALLP_DESC_ANALOGSENHANCER"] =           "Mit diesem kleinen Kernel-Plugin kann die Erfahrung mit den PSVita Analogsticks verbessert werden."
 GERMAN["INSTALLP_DESC_IOPLUS"] =                    "Ein PSVita Kernel-Plugin, das erweiterte I/O Vorgänge für Benutzermodule erlaubt"
 GERMAN["INSTALLP_DESC_VITACHEAT"] =                 "Benutze Cheats in PSVita Spiele (für 3.65/3.68) (L + RECHTS)"

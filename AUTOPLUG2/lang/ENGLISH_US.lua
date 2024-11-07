@@ -426,6 +426,7 @@ ENGLISH_US["INSTALLP_DESC_KUIO"] =                      "Allows user modules to 
 ENGLISH_US["INSTALLP_DESC_ADRENALINE"] =                "Allows you to run adrenaline with a single touch. Note: Adrenaline´s latest version must be installed"
 ENGLISH_US["INSTALLP_DESC_DSMOTION"] =                  "DualShock motion control support for PlayStation TV"
 ENGLISH_US["INSTALLP_DESC_USBMC"] =                     "USB storage as Vita memory card"
+ENGLISH_US["INSTALLP_DESC_USBMCMOD"] =                  "USB storage as Vita memory card, Recommended for Psvsd v3.1 or Higher."
 ENGLISH_US["INSTALLP_DESC_ANALOGSENHANCER"] =           "Allows you to configure a deadzone or enable software rescaling of analog inputs"
 ENGLISH_US["INSTALLP_DESC_IOPLUS"] =                    "A PSVita kernel plugin that allows more IO operations in userland"
 ENGLISH_US["INSTALLP_DESC_VITACHEAT"] =                 "Use Cheats On PSVita Games only for 3.65/3.68 (L + RIGHT)"
