@@ -566,6 +566,10 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 --*NPXS10010
 SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Habilita el modo debug de Reproducción de Videos, permitiendo cambiar la ruta entre sd0 y ux0 desde el archivo de configuraciones"
 
+--*PCSF00228
+SPANISH["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 SPANISH["PLUGINS_BOOT_WARNING"] =                       "Si tu PS Vita entra en un reinicio infinito (bootloop) o presenta cualquier conflicto entre Plugins, entonces manten presionado el botón L cuando PS Vita está iniciando (en Enso) o cuando h-encore se esta instalando/iniciando (en H-Encore). Esto deshabilitará todos los Plugins"
 SPANISH["MISSING_PLUGIN"] =                             "¡No se encuentra el Plugin!"

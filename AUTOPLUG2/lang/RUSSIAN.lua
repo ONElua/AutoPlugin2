@@ -566,6 +566,10 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 --*NPXS10010
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
+--*PCSF00228
+RUSSIAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Если вследствие конфликтов плагинов ваша PS Vita/TV перестанет загружаться, то зажмите клавишу L при загрузке или запуске h-encore"
 RUSSIAN["MISSING_PLUGIN"] =                          "Плагин не найден!"

@@ -566,6 +566,10 @@ FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la
 --*NPXS10010
 FRENCH["INSTALLP_DESC_DEPLAYENABLER"] =             "Activer le mode de lecture de débogage vidéo avec la possibilité de modifier le chemin d'accès aux dossiers sd0 et ux0 à partir du fichier de configuration."
 
+--*PCSF00228
+FRENCH["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 FRENCH["PLUGINS_BOOT_WARNING"] =                    "Si votre ps vita fait une boucle de démarrage ou présente des conflits entre les plugins, maintenez la touche L enfoncée pendant le démarrage ou pendant l'installation de h-encore, cela désactivera tous les plugins."
 FRENCH["MISSING_PLUGIN"] =                          "Le plugin est absent !"

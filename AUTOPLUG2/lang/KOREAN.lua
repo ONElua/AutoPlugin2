@@ -566,6 +566,10 @@ KOREAN["INSTALLP_DESC_RESCREENY"] =                 "비타 스크린샷은 게�
 --*NPXS10010
 KOREAN["INSTALLP_DESC_DEPLAYENABLER"] =             "구성 파일에서 sd0 및 ux0 폴더 경로를 변경하는 기능으로 비디오 디버그 재생 모드를 활성화합니다."
 
+--*PCSF00228
+KOREAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 KOREAN["PLUGINS_BOOT_WARNING"] =                    "ps 비타가 부트 루프에 도달하거나 플러그인 간에 충돌이 발생하면 부팅하는 동안 또는 h-encore가 설치될 때 L을 계속 누르고 있으면 모든 플러그인이 비활성화됩니다."
 KOREAN["MISSING_PLUGIN"] =                          "플러그인이 없습니다!"

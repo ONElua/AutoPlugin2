@@ -566,6 +566,10 @@ CHINESE_S["INSTALLP_DESC_RESCREENY"] =                 "Vita 截屏将保存在�
 --*NPXS10010
 CHINESE_S["INSTALLP_DESC_DEPLAYENABLER"] =             "启用视频调试播放模式,并且能够修改配置文件中 sd0 和 ux0 目录路径."
 
+--*PCSF00228
+CHINESE_S["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 CHINESE_S["PLUGINS_BOOT_WARNING"] =                    "如果您的 ps vita 进入启动循环或在插件之间出现任何冲突, 则在启动时或在安装 h-encore 时按住L键，将禁用所有插件"
 CHINESE_S["MISSING_PLUGIN"] =                          "找不到插件!"

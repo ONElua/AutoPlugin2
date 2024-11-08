@@ -566,6 +566,10 @@ GERMAN["INSTALLP_DESC_RESCREENY"] =                 "PS Vita Screenshots werden 
 --*NPXS10010
 GERMAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
+--*PCSF00228
+GERMAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 GERMAN["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 GERMAN["MISSING_PLUGIN"] =                          "The plugin is missing!"

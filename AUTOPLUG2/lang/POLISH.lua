@@ -566,6 +566,10 @@ POLISH["INSTALLP_DESC_RESCREENY"] =                 "Zrzuty ekranu Vita zostaną
 --*NPXS10010
 POLISH["INSTALLP_DESC_DEPLAYENABLER"] =             "Włącz tryb odtwarzania debugowania wideo z możliwością zmiany ścieżki folderów sd0 i ux0 z pliku konfiguracyjnego."
 
+--*PCSF00228
+POLISH["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 POLISH["PLUGINS_BOOT_WARNING"] =                    "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 POLISH["MISSING_PLUGIN"] =                          "Brak pluginu!"

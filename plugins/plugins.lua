@@ -338,6 +338,8 @@ Online_Plugins = {
 { name = "StorageMgr by CelesteBlue & Yoti (SD2VITA)", path = "storagemgr.skprx", section = "KERNEL", desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"], KEY = "MENU_PSVITA_INSTALL_SD2VITA_DESC", REMOVE = true,
   crc = 0x8e496388, v = "v3.4",version = "0001",link = "https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md", },
 
+{ name = "ReHomeArcade by technicaljicama", id = "REHOMEARCADE.png", path = "ReHomeArcade.suprx", section = "PCSF00228", desc = LANGUAGE["INSTALLP_DESC_REHOMEARCADE"], KEY = "INSTALLP_DESC_REHOMEARCADE",
+  crc = 0x7EB3109C, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/technicaljicama/ReHomeArcade/refs/heads/main/README.md", },
 
 
 }

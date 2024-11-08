@@ -566,6 +566,10 @@ ITALIAN["INSTALLP_DESC_RESCREENY"] =                    "Plugin che permette di 
 --*NPXS10010
 ITALIAN["INSTALLP_DESC_DEPLAYENABLER"] =                "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
+--*PCSF00228
+ITALIAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+
+
 --Comunes
 ITALIAN["PLUGINS_BOOT_WARNING"] =                       "Se la tua psvita dopo il riavvio entra in bootloop o presenta conflitti tra i plugin, tieni premuto L durante l'avvio o durante l'installazione di h-encore, ciò disabiliterà tutti i plugin"
 ITALIAN["MISSING_PLUGIN"] =                             "Manca il plugin!"
