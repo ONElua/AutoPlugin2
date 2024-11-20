@@ -51,6 +51,7 @@ This tool allows you to install/uninstall the following plugins with one click
 | [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
 | [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
 | [PasteUnlock](https://github.com/GrapheneCt/PasteUnlock/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
+| [PSVshellPlus](https://github.com/GrapheneCt/PSVshellPlus) | [GrapheneCt](https://github.com/GrapheneCt) |
 | [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [SonicMastr](https://github.com/SonicMastrb) |
 | [vita3g-disable](https://github.com/VictorGamer072YT/vita3g-disable) | [VictorGamer072YT](https://github.com/VictorGamer072YT) |
 | [VitaKeyboard](https://github.com/mswlandi/vitakeyboard) | [mswlandi](https://github.com/mswlandi) |
