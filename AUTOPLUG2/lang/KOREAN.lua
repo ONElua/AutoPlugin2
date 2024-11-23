@@ -567,7 +567,7 @@ KOREAN["INSTALLP_DESC_RESCREENY"] =                 "비타 스크린샷은 게�
 KOREAN["INSTALLP_DESC_DEPLAYENABLER"] =             "구성 파일에서 sd0 및 ux0 폴더 경로를 변경하는 기능으로 비디오 디버그 재생 모드를 활성화합니다."
 
 --*PCSF00228
-KOREAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+KOREAN["INSTALLP_DESC_REHOMEARCADE"] =                "PS 홈 아케이드의 모든 게임을 무료로 다운로드할 수 있는 psv용 플러그인입니다. 유럽 ​​버전에만 해당됩니다."
 
 
 --Comunes
