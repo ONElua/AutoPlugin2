@@ -53,13 +53,10 @@ Online_Plugins = {
   crc = 0x62c43e6, v = "v1.7", version = "0004", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },
 { name = "udcd_uvc LCD by xerpi", id = "UDCD.png", path = "udcd_uvc_lcd_off.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_UDCDUVCL"], KEY = "INSTALLP_DESC_UDCDUVCL",
   crc = 0x1a3f1c6a, v = "v1.7", version = "0004", link = "https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md", },
-
 { name = "usbmc by yifanlu", id = "USBMC.png", path = "usbmc.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_USBMC"], KEY = "INSTALLP_DESC_USBMC",
   crc = 0x89e44e51, v = "v6", version = "0001", link = "https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md", },
-
 { name = "usbmc Mod by DevDavisNunez", id = "USBMC.png", path = "usbmcm.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_USBMCMOD"], KEY = "INSTALLP_DESC_USBMCMOD",
   crc = 0x38581D52, v = "v2.0", version = "0002", link = "https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md", },
-
 { name = "vitastick by xerpi", id = "VITASTICK.png", path = "vitastick.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITASTICK"], KEY = "INSTALLP_DESC_VITASTICK",
   crc = 0x57cb395c, v = "0.4.1 alpha", version = "0001", link = "https://raw.githubusercontent.com/xerpi/vitastick/master/README.md", },
 { name = "viimote by xerpi", id = "WIIMOTE.png", path = "viimote.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIIMOTE"], KEY = "INSTALLP_DESC_VIIMOTE",
@@ -122,6 +119,8 @@ Online_Plugins = {
   crc = 0x7c8e3f54, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/isage/tvikey/master/README.md", },
 { name = "VitaControl by Hydr8gon", id = "VITACONTROL.png", path = "vitacontrol.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITACONTROL"], KEY = "INSTALLP_DESC_VITACONTROL",
   crc = 0xfba93db3, v = "Rolling Release 791a80b", version = "0001", link = "https://raw.githubusercontent.com/Hydr8gon/VitaControl/master/README.md", },
+{ name = "VitaPresence by Electry", id = "VITAPRESENCE.png", path = "VitaPresence.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITAPRESENCE"], KEY = "INSTALLP_DESC_VITAPRESENCE",
+  crc = 0x56283F81, v = "1.0.0", version = "0001", link = "https://raw.githubusercontent.com/Electry/VitaPresence/refs/heads/master/README.md", },
 
 --Boot_config.txt
 { name = "Custom Boot Splash by Princess of Sleeping", id = "CUSTOMBOOTSPLASH.png", path = "custom_boot_splash.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_CUSTOMBOOTSPLASH"], KEY = "INSTALLP_DESC_CUSTOMBOOTSPLASH",
@@ -284,7 +283,7 @@ Online_Plugins = {
 
 --2 prxs
 { name = "MakePsmGreatAgain by Li", id = "MAKEPSM.png", path = "MakePsmGreatAgain.suprx", section = "PCSI00007", path2 = "MakePsmGreatAgain.suprx", section2 = "PCSI00009", desc = LANGUAGE["INSTALLP_DESC_MAKEPSM"], KEY = "INSTALLP_DESC_MAKEPSM",
-  crc = 0xe6a1ad4b, v = "v1.5", version = "0003", link = "https://silica.codes/Li/makepsmgreatagain/raw/branch/master/README.md", },
+  crc = 0xF8E5D2F9, v = "v1.6", version = "0004", link = "https://silica.codes/Li/makepsmgreatagain/raw/branch/master/README.md", },
 { name = "PSV-VSH MENU by joel16", id = "VSHMENU.png", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU",
   crc = 0x20db832d, v = "v3.4", crc2 = 0xeb053532, version = "0001", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
 { name = "VitaGrafix by Electry", id = "VITAGRAFIX.png", path = "VitaGrafix.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITAGRAFIX"], KEY = "INSTALLP_DESC_VITAGRAFIX",

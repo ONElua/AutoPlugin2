@@ -387,6 +387,7 @@ FRENCH["TURKISH"] =                                 "TURC"
 FRENCH["INSTALLP_DESC_SD2VITA"] =                   "Plugin Kernel qui monte et ré-dirige automatiquement tout périphérique de stockage vers le répertoire que vous souhaitez (SD2VITA)"
 
 --KERNEL
+FRENCH["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
 FRENCH["INSTALLP_DESC_VITAPAD"] =                   "Utilisez votre PlayStation Vita comme manette de jeu USB avec commandes tactiles avant/arrière."
 FRENCH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin pour améliorer les vitesses d'E/S séquentielles de la PS Vita"
 FRENCH["INSTALLP_DESC_VITACONTROL"] =               "Utilisez les contrôleurs Bluetooth sur votre Vita ! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

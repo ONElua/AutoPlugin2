@@ -387,6 +387,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
+SPANISH["INSTALLP_DESC_VITAPRESENCE"] =                 "Change your Discord rich presence to your currently playing PS Vita game!"
 SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Usa tu PS Vita como un control USB con soporte para el táctil frontal y trasero"
 SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin para mejorar la velocidad sequencial de I/O de la PS Vita"
 SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

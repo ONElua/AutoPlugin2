@@ -387,6 +387,7 @@ ENGLISH_US["TURKISH"] =                                 "TURKISH"
 ENGLISH_US["INSTALLP_DESC_SD2VITA"] =                   "Kernel plugin that automatically mounts/redirects any storage device to any mount points you want (SD2VITA)"
 
 --KERNEL
+ENGLISH_US["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
 ENGLISH_US["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
 ENGLISH_US["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 ENGLISH_US["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

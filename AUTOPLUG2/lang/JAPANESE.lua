@@ -387,6 +387,7 @@ JAPANESE["TURKISH"] =                                   "トルコ語"
 JAPANESE["INSTALLP_DESC_SD2VITA"] =                     "ストレージデバイスを必要なマウントポイントに自動的にマウント/リダイレクトするカーネルプラグイン（SD2VITA）"
 
 --KERNEL
+JAPANESE["INSTALLP_DESC_VITAPRESENCE"] =                "Change your Discord rich presence to your currently playing PS Vita game!"
 JAPANESE["INSTALLP_DESC_VITAPAD"] =                     "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
 JAPANESE["INSTALLP_DESC_IOSTAGING"] =                   "Plugin to improve PS Vita sequential I/O speeds"
 JAPANESE["INSTALLP_DESC_VITACONTROL"] =                 "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

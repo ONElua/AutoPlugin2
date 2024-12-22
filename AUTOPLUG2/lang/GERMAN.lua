@@ -387,6 +387,7 @@ GERMAN["TURKISH"] =                                 "Türkisch"
 GERMAN["INSTALLP_DESC_SD2VITA"] =                   "Ein Kernel Plugin, das den Speicher automatisch an eine beliebige Partition anbringt (SD2VITA)"
 
 --KERNEL
+GERMAN["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
 GERMAN["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
 GERMAN["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 GERMAN["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

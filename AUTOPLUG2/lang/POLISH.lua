@@ -387,6 +387,7 @@ POLISH["TURKISH"] =                                 "TURECKI"
 POLISH["INSTALLP_DESC_SD2VITA"] =                   "Plugin kernela, który automatycznie montuje / przekierowuje dowolne urządzenie pamięci do dowolnych punktów montowania (SD2VITA)"
 
 --KERNEL
+POLISH["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
 POLISH["INSTALLP_DESC_VITAPAD"] =                   "Use your PlayStation Vita as USB gamepad with front/rear touchpad controls."
 POLISH["INSTALLP_DESC_IOSTAGING"] =                 "Plugin to improve PS Vita sequential I/O speeds"
 POLISH["INSTALLP_DESC_VITACONTROL"] =               "Use bluetooth controllers on your Vita! (DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"

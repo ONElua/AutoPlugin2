@@ -387,6 +387,7 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
+KOREAN["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
 KOREAN["INSTALLP_DESC_VITAPAD"] =                   "전면/후면 터치패드 컨트롤이 포함된 USB 게임패드로 플레이스테이션 비타를 사용하세요."
 KOREAN["INSTALLP_DESC_IOSTAGING"] =                 "PS Vita 순차 I/O 속도를 향상시키는 플러그인"
 KOREAN["INSTALLP_DESC_VITACONTROL"] =               "Vita에서 블루투스 컨트롤러를 사용해보세요! (DS3, DS4, 소니 DualSense, 소니 DualSense Edge, 마이크로소프트 Xbox One, 닌텐도 Switch Pro)"
