@@ -277,6 +277,7 @@ FRENCH["CATEGORYLITE_DESC"] =                       "Organisez tous vos jeux, é
 FRENCH["KHBBS_UNDUB_DESC"] =                        "Version UNDUB (Audio en Japonais) pour le jeu Kingdom Hearts: Birth By Sleep/Final Mix"
 FRENCH["GE_PATCH_DESC"] =                           "Il s'agit d'un plugin expérimental pour Adrenaline v7.0 qui vous permet de jouer à quelques jeux PSP en résolution native"
 FRENCH["MENU_PSP_PSPDOC_DESC"] =                    "Plugin PSP/ePSP pour convertir les manuels des jeux PSP 'DOCUMENT.DAT' en images PNG."
+FRENCH["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 FRENCH["PSP_PLUGINS_MANAGER"] =                     "Gestionnaire de plugins PSP"

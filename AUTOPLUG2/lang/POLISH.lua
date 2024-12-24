@@ -277,6 +277,7 @@ POLISH["CATEGORYLITE_DESC"] =                       "Uporzątkuj wszytskie swoje
 POLISH["KHBBS_UNDUB_DESC"] =                        "Wersja UNDUB (Dzwięk w Japoni) dla gry Kingdom Hearts: Birth By Sleep/Final Mix"
 POLISH["GE_PATCH_DESC"] =                           "To jest eksperymentalny plugin dla Adrenaline v7.0 pozwala grać w 5 gier w natywnej rodzielczości"
 POLISH["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
+POLISH["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 POLISH["PSP_PLUGINS_MANAGER"] =                     "PSP Plugins Manager"

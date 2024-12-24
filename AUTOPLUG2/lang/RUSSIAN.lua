@@ -277,6 +277,7 @@ RUSSIAN["CATEGORYLITE_DESC"] =                       "Распределите �
 RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (японскую озвучку) для игры Kingdom Hearts: Birth By Sleep/Final Mix"
 RUSSIAN["GE_PATCH_DESC"] =                           "Эксперементальный плагин, позволяющий повысить разрешение до 960x544 в некоторых PSP играх"
 RUSSIAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
+RUSSIAN["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "Управление плагинами PSP"

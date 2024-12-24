@@ -277,6 +277,7 @@ SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus jueg
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
 SPANISH["GE_PATCH_DESC"] =                              "Este es un Plugin experimental para Adrenaline v7.0 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
 SPANISH["MENU_PSP_PSPDOC_DESC"] =                       "Un Plugin para PSP/ePSP que permite dumpear los manuales de PSP en formato DOCUMENT.DAT a imagenes en formato PNG"
+SPANISH["LEDA_DESC"] =                                  "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 SPANISH["PSP_PLUGINS_MANAGER"] =                        "Administrador de Plugins para PSP"

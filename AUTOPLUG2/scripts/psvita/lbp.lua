@@ -21,7 +21,7 @@ for i=1,#LBP_IDs do
 	if game.exists(LBP_IDs[i].id) then
 		LBP = true
 		local tmp = game.details(LBP_IDs[i].id)
-		LBP_IDs[i].version = tmp.version or "0.00" 
+		LBP_IDs[i].version = "v "..(tmp.version or "Unk")
 		table.insert(gamesLBP,LBP_IDs[i])
 	end
 end
@@ -71,7 +71,7 @@ function LBP_server()
 				end
 			end
 
-			screen.print(25,y, gamesLBP[i].id)
+			screen.print(25,y, gamesLBP[i].id.." "..gamesLBP[i].version)
 			y+=45
 		end
 
@@ -141,9 +141,10 @@ function LBP_server()
 					os.delay(1200)
 				end
 				img,vbuff = nil,nil
-				if gamesLBP[scroll.sel].version != "01.22" then os.message(LANGUAGE["INSTALLING_LBP_VERSION"]) else
+				--if gamesLBP[scroll.sel].version != "01.22" then os.message(LANGUAGE["INSTALLING_LBP_VERSION"]) else
+					os.message(LANGUAGE["INSTALLING_LBP_VERSION"])
 					Patch_LBP_install(gamesLBP[scroll.sel],LBP_table)
-				end
+				--end
 			end
 
 		end

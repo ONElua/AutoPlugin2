@@ -277,6 +277,7 @@ CHINESE_S["CATEGORYLITE_DESC"] =                       "将所有游戏,模拟�
 CHINESE_S["KHBBS_UNDUB_DESC"] =                        "王国之心:梦中降生/最终Mix 游戏的 Undub (日语配音) 版本"
 CHINESE_S["GE_PATCH_DESC"] =                           "这是一个适用于 Adrenaline v7.0 的实验性插件, 允许您使用原始分辨率运行部分游戏"
 CHINESE_S["MENU_PSP_PSPDOC_DESC"] =                    "这是一个 PSP/ePSP 插件,用于将 PSP DOCUMENT.DAT 手册提取为 PNG 图片."
+CHINESE_S["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 CHINESE_S["PSP_PLUGINS_MANAGER"] =                     "PSP 插件管理器"

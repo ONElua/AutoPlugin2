@@ -277,6 +277,7 @@ KOREAN["CATEGORYLITE_DESC"] =                       "모든 게임, 에뮬레이
 KOREAN["KHBBS_UNDUB_DESC"] =                        "게임 킹덤 하츠의 언덥 버전 (일본어 오디오): 버스 바이 슬립/파이날 믹스"
 KOREAN["GE_PATCH_DESC"] =                           "이것은 기본 해상도로 몇 가지 게임을 플레이할 수 있게 해주는 아드레날린 v7.0용 실험 플러그인"
 KOREAN["MENU_PSP_PSPDOC_DESC"] =                    "PSP DOCUMENT.DAT 매뉴얼을 PNG 이미지로 덤프하는 PSP/ePSP 플러그인입니다."
+KOREAN["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
 
 --PSP Plugins Manager
 KOREAN["PSP_PLUGINS_MANAGER"] =                     "PSP 플러그인 관리자"
