@@ -1,3 +1,6 @@
+#v2.13
+- FIX LittleBigPlanet cartridge detection.
+
 #v2.12
 ++ Update Allefresher to v1.0.1 (custom servers for lbp)
 
