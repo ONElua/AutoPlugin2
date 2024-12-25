@@ -277,7 +277,7 @@ KOREAN["CATEGORYLITE_DESC"] =                       "모든 게임, 에뮬레이
 KOREAN["KHBBS_UNDUB_DESC"] =                        "게임 킹덤 하츠의 언덥 버전 (일본어 오디오): 버스 바이 슬립/파이날 믹스"
 KOREAN["GE_PATCH_DESC"] =                           "이것은 기본 해상도로 몇 가지 게임을 플레이할 수 있게 해주는 아드레날린 v7.0용 실험 플러그인"
 KOREAN["MENU_PSP_PSPDOC_DESC"] =                    "PSP DOCUMENT.DAT 매뉴얼을 PNG 이미지로 덤프하는 PSP/ePSP 플러그인입니다."
-KOREAN["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
+KOREAN["LEDA_DESC"] =                               "LEDA는 1.50 커널을 사용하는 레거시 소프트웨어/홈브류와의 호환성을 제공하도록 설계된 플러그인입니다."
 
 --PSP Plugins Manager
 KOREAN["PSP_PLUGINS_MANAGER"] =                     "PSP 플러그인 관리자"
@@ -388,7 +388,7 @@ KOREAN["TURKISH"] =                                 "투르키예어"
 KOREAN["INSTALLP_DESC_SD2VITA"] =                   "모든 저장 장치를 원하는 마운트 지점으로 자동 마운트/리디렉트하는 커널 플러그인 (SD2비타)"
 
 --KERNEL
-KOREAN["INSTALLP_DESC_VITAPRESENCE"] =              "Change your Discord rich presence to your currently playing PS Vita game!"
+KOREAN["INSTALLP_DESC_VITAPRESENCE"] =              "디스코드의 풍부한 존재감을 현재 플레이 중인 PS Vita 게임으로 바꿔보세요!"
 KOREAN["INSTALLP_DESC_VITAPAD"] =                   "전면/후면 터치패드 컨트롤이 포함된 USB 게임패드로 플레이스테이션 비타를 사용하세요."
 KOREAN["INSTALLP_DESC_IOSTAGING"] =                 "PS Vita 순차 I/O 속도를 향상시키는 플러그인"
 KOREAN["INSTALLP_DESC_VITACONTROL"] =               "Vita에서 블루투스 컨트롤러를 사용해보세요! (DS3, DS4, 소니 DualSense, 소니 DualSense Edge, 마이크로소프트 Xbox One, 닌텐도 Switch Pro)"
@@ -569,7 +569,7 @@ KOREAN["INSTALLP_DESC_RESCREENY"] =                 "비타 스크린샷은 게�
 KOREAN["INSTALLP_DESC_DEPLAYENABLER"] =             "구성 파일에서 sd0 및 ux0 폴더 경로를 변경하는 기능으로 비디오 디버그 재생 모드를 활성화합니다."
 
 --*PCSF00228
-KOREAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+KOREAN["INSTALLP_DESC_REHOMEARCADE"] =                "PS 홈 아케이드의 모든 게임을 무료로 다운로드할 수 있는 psv용 플러그인입니다. 유럽 버전에만 해당됩니다."
 
 
 --Comunes
