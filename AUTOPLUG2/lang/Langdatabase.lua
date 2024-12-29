@@ -9,5 +9,5 @@ Langs = {
 { id =  "RUSSIAN",		version = "01.89",		author =  "Yoti" },
 { id =  "POLISH",		version = "01.65",		author =  "KierownikStacji" },
 { id =  "PORTUGUESE_BR",version = "01.51",		author =  "allanaln2009" },
-{ id =  "KOREAN",       version = "01.28",		author =  "DDinghoya" },
+{ id =  "KOREAN",       version = "01.29",		author =  "DDinghoya" },
 }
