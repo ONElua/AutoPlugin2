@@ -140,7 +140,7 @@ SPANISH["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =         "VitaShell es una altern
 SPANISH["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =        "VitaShell es una alternativa al LiveArea de PS Vita. Ofrece un Administrador de Archivos, Instalador de paquetes (vpk), FTP incorporado y mucho más"
 SPANISH["MENU_EXTRAS_INSTALL_YAMT_DESC"] =              "Otro Plugin de Kernel de (re)montaje para PS Vita/PS TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65)"
 SPANISH["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =         "ShaRKF00D es un todo-en-uno para extraer, desencriptar, e instalar para el modulo de SceShaccCg (complemento para VitaShaRK, que compila Shaders en PS Vita)"
-SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Soluciona la mayoríoa de los problemas relacionados a la batería de la PS Vita"
+SPANISH["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Soluciona la mayoría de los problemas relacionados a la batería de la PS Vita"
 SPANISH["MENU_EXTRAS_INSTALL_ONEMENU_DESC"] =           "OneMenu para PS Vita es una Interfaz fácil de utilizar, que organiza los juegos y aplicaciones instaladas en categorias"
 SPANISH["MENU_EXTRAS_INSTALL_SHARKB33D_DESC"] =         "ShaRKBR33D es un extractor e instalador automatizado, todo-en-uno de libshacccg.suprx"
 SPANISH["MENU_EXTRAS_TRANSLATE_DESC"] =                 "¡Ayuda a mejorar AutoPlugin II traduciendo a tu idioma!"
@@ -187,7 +187,7 @@ SPANISH["INSTALLP_WARNING_REFOOD"] =                    "Para que el Plugin ReFo
 SPANISH["INSTALLP_OSK_TITLE"] =                         "Texto para Custom Warning"
 SPANISH["INSTALLP_OSK_TEXT"] =                          "Escribe tu TEXTO aquí"
 
-SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin udcd solo funciona en modelo Fat/Slim"
+SPANISH["INSTALLP_WARNING_UDCD"] =                      "Plugin UDCD solo funciona en modelo Fat/Slim"
 SPANISH["INSTALLP_WARNING_VITATV"] =                    "Plugin solo funciona en PS TV"
 
 --Uninstall Plugins
@@ -269,15 +269,15 @@ SPANISH["TONYHAWKS_REMASTERED_DESC"] =                  "Habilitador de dos aná
 
 --psp plugins
 SPANISH["PLUGINS_PSP_TITLE"] =                          "Plugins de PSP disponibles (Adrenaline)"
-SPANISH["GTA_PATCH_DESC"] =                             "Este Plugin aumenta la resolución interna del juego a una resolución nativa de 960x544. Titulos soportados: Vice City Stories [ULUS10160] (v3.00) y Liberty City Stories [ULUS10041] (v3.00). En Adrenaline v7.0 o superior -> Opción 'Force high memory layout' debe estar deshabilitada (la opción se encuentra en Menu Recovery -> Advanced -> Advanced configuration)."
+SPANISH["GTA_PATCH_DESC"] =                             "Este Plugin aumenta la resolución interna del juego a una resolución nativa de 960x544. Titulos soportados: Vice City Stories [ULUS10160] (v3.00) y Liberty City Stories [ULUS10041] (v3.00). En Adrenaline v7.0 o superior -> Opción 'Force high memory layout' debe estar deshabilitada (la opción se encuentra en Menu Recovery -> Advanced -> Advanced configuration)"
 SPANISH["CAMERA_PATCH_DESC"] =                          "Este Plugin añade soporte para el analógico derecho a los juegos de PSP en Adrenaline"
 SPANISH["CXMB_DESC"] =                                  "CXMB permite usar temas personalizados .CTF en la carpeta PSP/THEMES"
-SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu de los juegos y la herramienta de datos guardados para juegos con idioma distinto (de otra región) al establecido en tu PSP "
+SPANISH["LANGSWAPPER_DESC"] =                           "Establece el Home Menu de los juegos y la herramienta de datos guardados para juegos con idioma distinto (de otra región) al establecido en tu PSP"
 SPANISH["CATEGORYLITE_DESC"] =                          "Organiza todos tus juegos, emuladores, homebrews, en su propia carpeta bajo el Directorio de Juegos"
 SPANISH["KHBBS_UNDUB_DESC"] =                           "UNDUB version (Audio en Japonés) para el juego Kingdom Hearts: Birth By Sleep/Final Mix"
 SPANISH["GE_PATCH_DESC"] =                              "Este es un Plugin experimental para Adrenaline v7.0 que te permite jugar algunos juegos en Resolución Nativa de PS Vita"
 SPANISH["MENU_PSP_PSPDOC_DESC"] =                       "Un Plugin para PSP/ePSP que permite dumpear los manuales de PSP en formato DOCUMENT.DAT a imagenes en formato PNG"
-SPANISH["LEDA_DESC"] =                                  "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
+SPANISH["LEDA_DESC"] =                                  "LEDA es un Plugin que diseñado para dar compatibilidad con software y homebrew legacy (es decir, obsoleto) que usan el kernel 1.50 de PSP"
 
 --PSP Plugins Manager
 SPANISH["PSP_PLUGINS_MANAGER"] =                        "Administrador de Plugins para PSP"
@@ -388,7 +388,7 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_VITAPRESENCE"] =                 "Change your Discord rich presence to your currently playing PS Vita game!"
+SPANISH["INSTALLP_DESC_VITAPRESENCE"] =                 "¡Cambia tu Rich Presence (Actividad actual en español) de Discord por el juego de PS Vita que estes reproduciendo actualmente!"
 SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Usa tu PS Vita como un control USB con soporte para el táctil frontal y trasero"
 SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin para mejorar la velocidad sequencial de I/O de la PS Vita"
 SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
@@ -418,7 +418,7 @@ SPANISH["INSTALLP_DESC_DS4VITA"] =                      "Controla tu PS Vita con
 SPANISH["INSTALLP_DESC_DS34VITA"] =                     "Combina las funcionalidades de ds4vita y ds3vita de xerpi. Añade soporte para usar DualSense (por Hydr8gon), así tambien integración con el Plugin reVita. Permite usar hasta dos controles al mismo tiempo"
 SPANISH["INSTALLP_DESC_DS5VITA"] =                      "Plugin para usar el DualSense de PS5 en PS Vita"
 SPANISH["INSTALLP_DESC_REVITA"] =                       "reVita es un Plugin para PS Vita/PS TV, que permite remapear botones y activar distintas acciones. Es la continuación de remaPSV de Rinnegatamante, reescrito como un Kernel Plugin. (Para abrir el menú de configs, presiona START + CUADRADO, personalizable en Settings -> Hotkeys.)"
-SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscópio al Plugin reVita"
+SPANISH["INSTALLP_DESC_REVITA_GYRO"] =                  "Añade soporte para operaciones de giroscopio al Plugin reVita"
 SPANISH["INSTALLP_DESC_UDCDUVC"] =                      "Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora (Version Oficial)"
 SPANISH["INSTALLP_DESC_UDCDUVCO"] =                     "(Version para Vitas OLED FAT) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el Plugin para LCD y OLED"
 SPANISH["INSTALLP_DESC_UDCDUVCL"] =                     "(Version para Vitas LED SLIM) Permite que la PS Vita funcione como un dispositivo UVC para transmitir su pantalla a través de USB a su computadora con la pantalla apagada. No hagas esto con el Plugin oficial de xerpi, solo con el Plugin para LCD y OLED"
@@ -569,7 +569,7 @@ SPANISH["INSTALLP_DESC_RESCREENY"] =                    "Los screenshots serán 
 SPANISH["INSTALLP_DESC_DEPLAYENABLER"] =                "Habilita el modo debug de Reproducción de Videos, permitiendo cambiar la ruta entre sd0 y ux0 desde el archivo de configuraciones"
 
 --*PCSF00228
-SPANISH["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+SPANISH["INSTALLP_DESC_REHOMEARCADE"] =                 "Un Plugin para PS Vita que permite desbloquear los 10 juegos en la Aplicacion de PS Home Arcade. Solo compatible con la versión Europea"
 
 
 --Comunes
