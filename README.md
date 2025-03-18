@@ -1,114 +1,114 @@
 # Autoplugin 2
-Autoplugin for PSVITA
-This tool allows you to install/uninstall the following plugins with one click
-
-| Plugin | Author |
+Autoplugin para PSVITA
+Esta herramienta le permite instalar / desinstalar los siguientes complementos con un solo clic.
+⚡ Dato curioso: ...<!--- Javier111228/Javier111228 es un repositorio ✨ especial ✨ porque su README.md (este archivo) aparece en su perfil de GitHub. Puede hacer clic en el enlace Vista previa para echar un vistazo a sus cambios.--->
+| Plugin | Autor |
 | ------ | ------ |
-| [Allefresher](https://github.com/LittleBigRefresh/Allefresher) | [Beyley](https://github.com/Beyley) |
-| [RemasteredControls](https://github.com/TheOfficialFloW/RemasteredControls) (Adrenaline) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [DownloadEnabler](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoNpDrm](https://github.com/TheOfficialFloW/NoNpDrm) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [MiniVitaTV](https://github.com/TheOfficialFloW/MiniVitaTV) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoPsmDrm](https://github.com/frangarcj/NoPsmDrm) | [frangarcj](https://github.com/frangarcj) |
+| [Alefresher] (https://github.com/LittleBigRefresh/Allefresher) | [Beyley] (https://github.com/Beyley) |
+| [Controles remasterizados](https://github.com/TheOfficialFloW/RemasteredControls) (adrenalina) | [El flujo](https://github.com/TheOfficialFloW) |
+| [DescargarEnabler](https://github.com/TheOfficialFloW/VitaTweaks) | [El flujo](https://github.com/TheOfficialFloW) |
+| [Sin NpDrm](https://github.com/TheOfficialFloW/NoNpDrm) | [El flujo](https://github.com/TheOfficialFloW) |
+| [MiniVitaTV](https://github.com/TheOfficialFloW/MiniVitaTV) | [El flujo](https://github.com/TheOfficialFloW) |
+| [En PsmDrm](https://github.com/frangarcj/NoPsmDrm) | [frangarj](https://github.com/frangarcj) |
 | [PSVita-StorageMgr](https://github.com/CelesteBlue-dev/PSVita-StorageMgr) | [CelesteBlue](https://github.com/CelesteBlue-dev) |
-| [Shellbat](https://github.com/nowrep/vita-shellbat) | [nowrep](https://github.com/nowrep) |
-| [Shellsecbat](https://github.com/OperationNT414C/ShellSecBat) | [OperationNT414C](https://github.com/OperationNT414C) |
-| [Oclockvita](https://github.com/frangarcj/oclockvita) | [frangarcj](https://github.com/frangarcj) |
-| [NoTrophyMsg](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoLockScreen](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [Vitabright](https://github.com/devnoname120/vitabright) (only 3.60 and PSVITA) | [devnoname120](https://github.com/devnoname120) |
-| [pngshot](https://github.com/xyzz/pngshot) | [xyz](https://github.com/xyzz) |
-| [PSV-VSH MENU](https://github.com/joel16/PSV-VSH-Menu) | [joel16](https://github.com/joel16) |
+| [Shellbat](https://github.com/nowrep/vita-shellbat) | [ahora rep](https://github.com/nowrep) |
+| [Shellsecbat](https://github.com/OperationNT414C/ShellSecBat) | [Operación NT414C](https://github.com/OperationNT414C) |
+| [Oclockvita](https://github.com/frangarcj/oclockvita) | [frangarj](https://github.com/frangarcj) |
+| [Sin trofeos](https://github.com/TheOfficialFloW/VitaTweaks) | [El flujo](https://github.com/TheOfficialFloW) |
+| [NoLockScreen](https://github.com/TheOfficialFloW/VitaTweaks) | [El flujo](https://github.com/TheOfficialFloW) |
+| [Vitabright](https://github.com/devnoname120/vitabright) (solo 3.60 y PSVITA) | [devononame120](https://github.com/devnoname120) |
+| [Pngshot](https://github.com/xyzz/pngshot) | [xyz](https://github.com/xyzz) |
+| [MENÚ PSV-VSH](https://github.com/joel16/PSV-VSH-Menu) | [Joel16](https://github.com/joel16) |
 | [Vflux](https://github.com/Applelo/vFlux) | [Applelo](https://github.com/Applelo) |
-| [Repatch](https://github.com/dots-tb/rePatch-reDux0) | [dots-tb](https://github.com/dots-tb) |
-| [LOLIcon](https://github.com/dots-tb/LOLIcon) | [dots-tb](https://github.com/dots-tb) |
+| [Reparamiento](https://github.com/dots-tb/rePatch-reDux0) | [Puntos-TB](https://github.com/dots-tb) |
+| [El icono](https://github.com/dots-tb/LOLIcon) | [Puntos-TB](https://github.com/dots-tb) |
 | [NoAVLS](https://bitbucket.org/LiEnby/noavls) | [Li](https://bitbucket.org/LiEnby/) |
-| [ds3vita](https://github.com/xerpi/ds3vita) | [xerpi](https://github.com/xerpi) |
-| [ds4vita](https://github.com/xerpi/ds4vita) | [xerpi](https://github.com/xerpi) |
-| [PSVita USB streaming! (UVC USB Video Class)](https://github.com/xerpi/vita-udcd-uvc) | [xerpi](https://github.com/xerpi) |
-| [DSmotion](https://github.com/OperationNT414C/DSMotion) | [OperationNT414C](https://github.com/OperationNT414C) |
-| [VitaGrafix](https://github.com/Electry/VitaGrafix) | [Electry](https://github.com/Electry) |
-| [usbmc](https://github.com/yifanlu/usbmc) | [Yifan Lu](https://github.com/yifanlu) |
-| [Custom Splash Boot](https://github.com/Princess-of-Sleeping/PSP2-CustomBootSplash) | [Princess of Sleeping](https://github.com/Princess-of-Sleeping) |
+| [DS3Vita](https://github.com/xerpi/ds3vita) | [Xerpi](https://github.com/xerpi) |
+| [DS4Vita](https://github.com/xerpi/ds4vita) | [Xerpi](https://github.com/xerpi) |
+| [PSVita USB streaming! (CSUER de vídeo USB UVC)](https://github.com/xerpi/vita-udcd-uvc) | [Xerpi](https://github.com/xerpi) |
+| [La emoción](https://github.com/OperationNT414C/DSMotion) | [Operación NT414C](https://github.com/OperationNT414C) |
+| [VitaGrafix](https://github.com/Electry/VitaGrafix) | [Electrónica](https://github.com/Electry) |
+| [USBMC](https://github.com/yifanlu/usbmc) | [Yifan Lu.](https://github.com/yifanlu) |
+| [Bota de bienvenida personalizada.](https://github.com/Princess-of-Sleeping/PSP2-CustomBootSplash) | [Princesa de dormir](https://github.com/Princess-of-Sleeping) |
 | [FuckPSSE](https://bitbucket.org/LiEnby/fuckpsse) | [Li](https://bitbucket.org/LiEnby/) |
-| [PSMPatch](https://bitbucket.org/LiEnby/psmpatch) | [Li](https://bitbucket.org/LiEnby/) |
-| [ITLS-Enso](https://github.com/SKGleba/iTLS-Enso) | [SKGleba](https://github.com/SKGleba)|
+| [Psm](https://bitbucket.org/LiEnby/psmpatch) | [Li](https://bitbucket.org/LiEnby/) |
+| [ITLS-Enso](https://github.com/SKGleba/iTLS-Enso) | [El grupal](https://github.com/SKGleba)|
 | [TropHAX](https://bitbucket.org/LiEnby/trophax) | [Li](https://bitbucket.org/LiEnby/) |
-| [noPsmWhitelist](https://bitbucket.org/LiEnby/nopsmwhitelist) | [Li](https://bitbucket.org/LiEnby/) |
+| [Sin Sim Whitelist](https://bitbucket.org/LiEnby/nopsmwhitelist) | [Li](https://bitbucket.org/LiEnby/) |
 | [AnalogStickDisable](https://github.com/Hack-Usagi/AnalogStickDisable) | [Hack-Usagi](https://github.com/Hack-Usagi) |
-| [reF00D](https://github.com/dots-tb/reF00D) | FAPS Team |
-| [FreePSM](https://bitbucket.org/LiEnby/freepsm/src/master/)  | [Li](https://bitbucket.org/LiEnby/freepsm/src/master/) |
-| [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [teakhanirons](https://github.com/teakhanirons) |
-| [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
-| [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
-| [ds4touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
-| [ds34vita](https://github.com/MERLev/ds34vita)  | [MERLev](https://github.com/MERLev) |
+| [ReF00D](https://github.com/dots-tb/reF00D) | Equipo FAPS |
+| [Gratis PSM](https://bitbucket.org/LiEnby/freepsm/src/master/)  | [Li](https://bitbucket.org/LiEnby/freepsm/src/master/) |
+| [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [Maestros de hierros](https://github.com/teakhanirons) |
+| [Sin límites de potenciaVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electrónica](https://github.com/Electry) |
+| [VGi](https://github.com/Electry/VGi)  | [Electrónica](https://github.com/Electry) |
+| [DS4Touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
+| [DS34Vita](https://github.com/MERLev/ds34vita)  | [MERLev](https://github.com/MERLev) |
 | [reVita](https://github.com/MERLev/reVita)  | [MERLev](https://github.com/MERLev) |
-| [TrophyShot](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
-| [VolLightbarCtrlWithDS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [CallmeBK](https://github.com/CallmeBK/) |
-| [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
-| [dt2s-vita](https://github.com/joel16/dt2s-vita/)  | [joel16](https://github.com/joel16/) |
-| [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [PasteUnlock](https://github.com/GrapheneCt/PasteUnlock/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [SonicMastr](https://github.com/SonicMastrb) |
-| [vita3g-disable](https://github.com/VictorGamer072YT/vita3g-disable) | [VictorGamer072YT](https://github.com/VictorGamer072YT) |
-| [VitaKeyboard](https://github.com/mswlandi/vitakeyboard) | [mswlandi](https://github.com/mswlandi) |
+| [Trofeo](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
+| [VolLightbarCtrl con DS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [Llamar BK](https://github.com/CallmeBK/) |
+| [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [El flujo](https://github.com/TheOfficialFloW/) |
+| [DT2S-Vita](https://github.com/joel16/dt2s-vita/)  | [Joel16](https://github.com/joel16/) |
+| [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrafenoCt](https://github.com/GrapheneCt/) |
+| [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrafenoCt](https://github.com/GrapheneCt/) |
+| [Desbloqueo de pasta](https://github.com/GrapheneCt/PasteUnlock/)  | [GrafenoCt](https://github.com/GrapheneCt/) |
+| [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [Maestro Sonico](https://github.com/SonicMastrb) |
+| [VITA3G-Deshabilitar](https://github.com/VictorGamer072YT/vita3g-disable) | [VictorGamer072YT](https://github.com/VictorGamer072YT) |
+|| [VitaKeyboard] (https://github.com/mswlandi/vitakeyboard) | [La Srta.] (https://github.com/mswlandi) |[VitaKeyboard](https://github.com/mswlandi/vitakeyboard) | [La Srta.](https://github.com/mswlandi) |
 
-# Optional settings
-- Update plugins Online
-- Update Languages Online
-- Now you can check yhe readme file online for most of the included plugins
-- Download/Install ITLS-Enso and Battery fixer (vpk)
-- Set a Custom Image (Custom Boot Splash is required)
-- Set a Custom Warning Message (Custom Warning is required)
-- Set Level Transparent (Transparent Impose is required)
+#  Configuración opcional
+-- Plugins Actual en línea
+-- Actualizar idiomas en línea
+  Ahora puede consultar el archivo readme en línea para la mayoría de los complementos incluidos
+ Descargar/Instalar ITLS-Enso y Battery fixer (vpk)
+  Establecer una imagen personalizada (se requiere un corte de arranque personalizado)
+  Establezca un mensaje de advertencia personalizado (se requiere una advertencia personalizada)
+  Establecer nivel transparente (se requiere una imposición transparente)
 
-# Small note for Splash image
-To load a custom image at boot, the image must be in png format sized to 960X544 named splash.png and it must be placed in the path ux0:CustomBootsplash/splash.png
-You no longer need to add the line:
- "- load ur0: tai / custom_boot_splash.skprx"
-# Small note for the translation of the languages using non-standard characters
-Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).* and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
-This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+#  Pequeña nota para imagen Splash
+Para cargar una imagen personalizada en el arranque, la imagen debe estar en formato png de tamaño a 960X544 llamado splash.png y debe colocarse en la ruta ux0:CustomBootsplash/splash.png
+Ya no es necesario añadir la línea:
+ "- Cargar UR0: Tai / Custom_boot_splash.skprx"
+#  Pequeña nota para la traducción de los idiomas utilizando caracteres no estándar
+   Descargar el   [font.pgf]    (https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).* e insértelo en la ruta    **ux0:datos/Autoplug2/font**    (Recuerde si la carpeta de fuentes no existe, debe crearla)    *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).*   e insertarlo en el camino.   **ux0:datos/Autoplug2/font**   (Recuerde si la carpeta de fuentes no existe, debe crearla)   
+Esto corrige los caracteres no estándar que faltan, que no se encuentran en English Charset. Esos se mostrarán como "_" en lugar de la letra inusual.
 
 ### Changelog 2.12 ###
-- Update Allefresher to v1.0.1 (custom servers for lbp)
+  Actualizar Allefresher a v1.0.1 (servidores personalizados para lbp)
 
 ### Changelog 2.11 ###
-- Added Miscellaneous plugins section, available High-Def enhancer, DLC enabler & LBP server access plugins 
+  Se agregó la sección de complementos varios, el mejorador de alto defensa, el habilitador de DLC y los complementos de acceso al servidor LBP disponibles  
 
 ### Changelog 2.10 ###
-- Fixed error when you do not have the games installed: Persona 4 Golden, Catherine and Alien Shooter
+  Se ha corregido un error cuando no tienes los juegos instalados: Persona 4 Golden, Catherine y Alien Shooter
 
 ### Changelog 2.09 ###
-- Fix Vitacheat plugins for 3.65/3.60
-- Added Iostaging, vitapad and alienhook plugins
-- Section HD patches and DLC Unlocker: Here you will find the HD plugins for persona 4 golden and catherine. Also the Alien Shooter DLC Unlocker plugin.
-- Section Customize plugins: Here you can customize some plugins that you have installed: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose
+- Fija los plugins de Vitacheat para 3.65/3.60
+- Añadido Iostaging, vitapad y plugins de alienhook
+-  Sección HD parches y DLC Unlocker: Aquí encontrarás los plugins HD para persona 4 golden y catherine. También el plugin Alien Shooter DLC Unlocker.
+-  Sección Personalizar plugins: Aquí puedes personalizar algunos plugins que has instalado: Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpose
 
 ### Changelog 2.08 ###
-- Re-Added plugins updates for autoplugin II v2.00+
--  Fix plugins updates with the Catherine: Full Body HD, Persona 4 Golden HD and Vita Nearest Neighbour.
+- Actualizaciones de plugins reagregados para autoplugin II v2.00+
+- Soluciona las actualizaciones de plugins con Catherine: Full Body HD, Persona 4 Golden HD y Vita Nearest Neighbor. 
 
 ### Changelog 2.07 ###
-- Fixed error when installing the Quicklauncher plugin
+- Se ha corregido el error al instalar el plugin Quicklauncher
 
 ### Changelog 2.06 ###
-- Added pspdoc plugin by qwikrazor87
-- Removed MikuAR v1.0 plugin by Avellea
+- Añadido Pspdoc plugin por Qwikrazor87
+- Eliminado MikuAR v1.0 plugin por Avellea
 
 ### Changelog 2.05 ###
-- Fixed bug with online download of plugins for psp
-- Added tvikey by Isagi
-- Added adrenaline_usb_enabler by Isagi
-- Added NoPspEmuDrm by LiEnby
-- Added psp_gta_trophies by Freakler
+- Se corrigió el error con la descarga en línea de complementos para PSP.
+- Añadido tvikey por Isagi
+- Añadido adrenaline_usb_enabler por Isagi
+- Añadido NoPspEmuDrm por LiEnby
+- Añadido psp_gta_trophies por Freakler
 
 ### Changelog 2.04 ###
-- Re-Added Vita Nearest Neighbour plugin by MuxaJlbl4
-- Added MikuAR v1.0 plugin by Avellea
-- Updated Vixen v1.4 plugin by isage
+- VITA Re-añadida más cerca de vecino plugin por MuxaJlbl4
+- Añadido MikuAR v1.0 plugin por Avellea
+- Actualizado Vixen v1.4 plugin por mensaje
 
 ### Changelog 2.03 ###
 - Added support for QuickmenuReborn addons
