@@ -4,7 +4,7 @@ Online_Plugins = {
 { name = "Adrenaline by TheOfficialFloW (Fix double touch)", id = "ADRENALINE.png", path = "adrenaline_kernel.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ADRENALINE"], KEY = "INSTALLP_DESC_ADRENALINE", link = "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md", },
 
 { name = "IOStaging Vita by bythos14", id = "IOSTAGING.png", path = "iostaging.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_IOSTAGING"], KEY = "INSTALLP_DESC_IOSTAGING",
-  crc = 0x219fef7d, v = "v1.0",  version = "0001", link = "https://raw.githubusercontent.com/bythos14/IOStaging/main/README.md", },
+  crc = 0x219fef7d, v = "v1.0",  version = "0001", link = "https://raw.githubusercontent.com/psv-plugins-archive/IOStaging/main/README.md", },
 { name = "0syscall6 by SKGleba", id = "REFOOD_SYSCALL.png", path = "0syscall6.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSCALL6"], KEY = "INSTALLP_DESC_SYSCALL6",
   crc = 0xda05f49b, v = "v1.3",  version = "0002", link = "https://raw.githubusercontent.com/SKGleba/0syscall6/master/README.md", },
 { name = "8BitVita by Ibrahim778", id = "EBITVITA.png", path = "8BitVita.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_8BIVITA"], KEY = "INSTALLP_DESC_8BIVITA",
