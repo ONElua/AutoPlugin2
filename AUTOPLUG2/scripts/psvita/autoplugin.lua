@@ -97,6 +97,18 @@ function plugins_installation(obj)
 			tai.del("KERNEL", "0syscall6.skprx")
 		elseif obj.path == "0syscall6.skprx" then
 			tai.del("KERNEL", "reF00D.skprx")
+		--NopspemuDrm
+		elseif obj.path == "NoPspEmuDrm_kern.skprx" then
+			tai.del("KERNEL","NoPspEmuDrm_kern_mod.skprx")
+			tai.del("ALL","mod_NoPspEmuDrm_user_mod.suprx")
+		elseif obj.path == "NoPspEmuDrm_kern_mod.skprx" then
+			tai.del("KERNEL","NoPspEmuDrm_kern.skprx")
+			tai.del("ALL","NoPspEmuDrm_user.suprx")
+		--Psvshell
+		elseif obj.path == "PSVshell.skprx" then
+			tai.del("KERNEL", "PSVshell_mod.skprx")
+		elseif obj.path == "PSVshell_mod.skprx" then
+			tai.del("KERNEL", "PSVshell.skprx")
 
 		--Vitacheat
 		elseif obj.path:find(string.lower("vitacheat"),1,true) then
@@ -267,6 +279,7 @@ function plugins_installation(obj)
 
 		--Extra
 		if obj.path == "vsh.suprx" then files.delete("ur0:/data:/vsh/")
+
 		elseif obj.path == "custom_boot_splash.skprx" and not files.exists("ur0:tai/boot_splash.bin") then--Custom Boot Splash
 			local henkaku = image.load("imgs/boot_splash.png")
 			if henkaku then img2splashbin(henkaku,false) end

@@ -110,7 +110,9 @@ Online_Plugins = {
 { name = "System-Integrated DualSense Driver for PlayStation TV by cuevavirus", id = "DUALSENSE.png", path = "dualsense-driver.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_DUALSENSE"], KEY = "INSTALLP_DESC_DUALSENSE",
   crc = 0xd88897b1, v = "v1.0", version = "0001", },
 { name = "PSVshell by Electry", id = "PSVSHELL.png", path = "PSVshell.skprx", section = "KERNEL", tai_del1 = "PSVshellPlus_Kernel.skprx", section_del1 = "KERNEL", tai_del2 = "PSVshellPlus_Shell.suprx", section_del2 = "main", desc = LANGUAGE["INSTALLP_DESC_PSVSHELL"], KEY = "INSTALLP_DESC_PSVSHELL",
-  crc = 0xca688dc8, v = "v1.2 Beta",version = "0002", link = "https://raw.githubusercontent.com/Electry/PSVshell/master/README.md", },
+  crc = 0xca688dc8, v = "v1.2 Beta", version = "0002", link = "https://raw.githubusercontent.com/Electry/PSVshell/master/README.md", },
+{ name = "PSVshell by RaanGi", id = "PSVSHELL_MOD.png", path = "PSVshell_mod.skprx", section = "KERNEL", tai_del1 = "PSVshellPlus_Kernel.skprx", section_del1 = "KERNEL", tai_del2 = "PSVshellPlus_Shell.suprx", section_del2 = "main", desc = LANGUAGE["INSTALLP_DESC_PSVSHELL_MOD"], KEY = "INSTALLP_DESC_PSVSHELL_MOD",
+  crc = 0xbce057f9, v = "v1.4.8 beta", version = "0001", link = "https://raw.githubusercontent.com/RaanGi/PSVshell/refs/heads/master/README.md", },
 { name = "Magic Automatic Fake User Input by Rufis01", id = "MAFUINPUT.png", path = "MAFUinput.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_MAFUINPUT"], KEY = "INSTALLP_DESC_MAFUINPUT",
   crc = 0x6322adb1, v = "v2.0-Alpha.1", version = "0003", link = "https://raw.githubusercontent.com/Rufis01/MAFU-I/non-stop/README.MD", },
 { name = "ViXEn by isage", id = "VIXEN.png", path = "vixen.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VIXEN"], KEY = "INSTALLP_DESC_VIXEN",
@@ -156,6 +158,8 @@ Online_Plugins = {
   crc = 0xc42994b3, v = "v1.0", version = "0001",  dl = "reAuth.zip", },
 
 --2 prxs
+{ name = "NoPspEmuDrm by Kethen", id = "NOPSPEMUDRM_MOD.png", path = "NoPspEmuDrm_kern_mod.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user_mod.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM_MOD"], KEY = "INSTALLP_DESC_NOPSPEMUDRM_MOD",
+  crc = 0xa993a427, v = "v2025-07-02", crc2 = 0xC63381AB, version = "0001", link = "https://raw.githubusercontent.com/Kethen/NoPspEmuDrm/refs/heads/main/README.md", },
 { name = "NoPspEmuDrm by Li", id = "NOPSPEMUDRM.png", path = "NoPspEmuDrm_kern.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM"], KEY = "INSTALLP_DESC_NOPSPEMUDRM",
   crc = 0x27a9b037, v = "v1.05", crc2 = 0xa9242ab6, version = "0007", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
