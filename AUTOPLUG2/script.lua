@@ -69,6 +69,11 @@ if __FONT != "" then
 			type_fnt = font.type(fnt)
 		end
 	end
+else
+	if __LANG == "POLISH" then
+		font.setdefault(__FONT_TYPE_PVF)
+		type_fnt = __FONT_TYPE_PVF
+	end
 end
 
 if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
