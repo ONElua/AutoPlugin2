@@ -7,7 +7,7 @@ Langs = {
 { id =  "FRENCH",		version = "01.98",		author =  "Axce,chronoss09" },
 { id =  "GERMAN",		version = "01.65",		author =  "Schn1ek3" },
 { id =  "RUSSIAN",		version = "01.90",		author =  "Yoti" },
-{ id =  "POLISH",		version = "01.66",		author =  "KierownikStacji" },
+{ id =  "POLISH",		version = "01.67",		author =  "HackZy01" },
 { id =  "PORTUGUESE_BR",version = "01.52",		author =  "allanaln2009" },
 { id =  "KOREAN",       version = "01.30",		author =  "DDinghoya" },
 }
