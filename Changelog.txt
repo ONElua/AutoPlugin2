@@ -1,3 +1,7 @@
+#v2.16
+### Changelog 2.16 ###
+++ Fixed error Portuguese language
+
 #v2.15
 ++ Default pvf font for Polish.
 ++ Added PSVshell mod by RaanGi.
