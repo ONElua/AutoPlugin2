@@ -72,11 +72,11 @@ RUSSIAN["INSTALLING_P4G_HD_PATCH"] =                 "Установка P4 Gold
 
 --LBP
 RUSSIAN["NO_LBP_GAMES"] =                            "Игра LittleBigPlanet не установлена"
-RUSSIAN["INSTALL_LBP_TITLE"] =                       "LittleBigPlanet фанатский сервер"
+RUSSIAN["INSTALL_LBP_TITLE"] =                       "Фанатский сервер для LittleBigPlanet"
 RUSSIAN["LBP_ALLEFRESHER_DESC"] =                    "Плагины для подключения к фанатским серверам LBP"
 RUSSIAN["LBP_ALLEFRESHER_ITLS"] =                    "Allefresher требует установленного iTLS"
 RUSSIAN["INSTALL_LBP_360_365"] =                     "Allefresher не поддерживает 3.67/3.68"
-RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Установка Allefresher патча"
+RUSSIAN["INSTALLING_LBP_PATCH"] =                    "Установка патча Allefresher"
 RUSSIAN["INSTALLING_LBP_VERSION"] =                  "Требуется LittleBigPlanet версии 1.22"
 RUSSIAN["INSTALLING_LBP_VERSION_PBP"] =              "Требуется LittleBigPlanet версии 2.05"
 
@@ -276,8 +276,8 @@ RUSSIAN["LANGSWAPPER_DESC"] =                        "Изменяет язык 
 RUSSIAN["CATEGORYLITE_DESC"] =                       "Распределите ваши игры, эмуляторы и прочие программы по категориям в меню Игры"
 RUSSIAN["KHBBS_UNDUB_DESC"] =                        "Примените UNDUB (японскую озвучку) для игры Kingdom Hearts: Birth By Sleep/Final Mix"
 RUSSIAN["GE_PATCH_DESC"] =                           "Эксперементальный плагин, позволяющий повысить разрешение до 960x544 в некоторых PSP играх"
-RUSSIAN["MENU_PSP_PSPDOC_DESC"] =                    "A PSP/ePSP plugin to dump PSP DOCUMENT.DAT manuals to PNG images."
-RUSSIAN["LEDA_DESC"] =                               "LEDA is a plugin designed to provide compatibility with legacy software/homebrew that uses 1.50 kernel."
+RUSSIAN["MENU_PSP_PSPDOC_DESC"] =                    "Плагин для PSP/ePSP, позволяющий сохранить файл DOCUMENT.DAT во множество PNG файлов"
+RUSSIAN["LEDA_DESC"] =                               "LEDA это плагин, позволяющий запускать хоумбрю приложения, созданные для прошивок 1.50"
 
 --PSP Plugins Manager
 RUSSIAN["PSP_PLUGINS_MANAGER"] =                     "Управление плагинами PSP"
@@ -393,7 +393,7 @@ RUSSIAN["INSTALLP_DESC_VITAPAD"] =                   "Используйте PS 
 RUSSIAN["INSTALLP_DESC_IOSTAGING"] =                 "Плагин для ускорения последовательных операций ввода-вывода"
 RUSSIAN["INSTALLP_DESC_VITACONTROL"] =               "Подключите ваш беспроводной контроллер к PS Vita! (DualShock 3, DualShock 4, DualSense/Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM"] =               "Плагин для обхода проверки лицензии встроенного PSP эмулятора, позволяющего в том числе запускать купленные на другом аккаунте игры"
-RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM_MOD"] =           "(Special for ARK) A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+RUSSIAN["INSTALLP_DESC_NOPSPEMUDRM_MOD"] =           "(Версия для ARK) При помощи этого плагина вы сможете запускать свои купленные PS1/PSP игры, используя любой PSN аккаунт"
 RUSSIAN["INSTALLP_DESC_TVIKEY"] =                    "PSTV драйвер для поддержки клавиатуры и мыши"
 RUSSIAN["INSTALLP_DESC_VIXEN"] =                     "Плагин для поддержки XInput совместимых проводных контроллеров (таких, как контроллер Xbox 360)"
 RUSSIAN["INSTALLP_DESC_VSHPATCH"] =                  "Функции плагина аналогичны rePatch, но только для системных приложений. Создаётся ''виртуальный раздел'' vs0 в папке ux0:/vshPatch/, куда можно помещать свои изменённые файлы вместо настоящего раздела vs0"
@@ -451,7 +451,7 @@ RUSSIAN["INSTALLP_DESC_DERIN"] =                     "Показ таблицы 
 RUSSIAN["INSTALLP_DESC_LOLITA"] =                    "Постоянный разгон до 500 МГц и обход ограничений, связанных с экономией заряда аккумулятора"
 RUSSIAN["INSTALLP_DESC_LOLITA4"] =                   "Постоянный разгон до 444 МГц и обход ограничений, связанных с экономией заряда аккумулятора"
 RUSSIAN["INSTALLP_DESC_PSVSHELL"] =                  "Ещё один плагин для управления разгоном (SELECT+ВВЕРХ или SELECT+ВНИЗ для переключения режимов отображения)"
-RUSSIAN["INSTALLP_DESC_PSVSHELL_MOD"] =              "(RaanGi) Yet another overclocking plugin (SELECT + UP or SELECT + DOWN to toggle between 3 GUI modes)"
+RUSSIAN["INSTALLP_DESC_PSVSHELL_MOD"] =              "(RaanGi) Очередной плагин для разгона, что вызывается клавишами (SELECT + UP или SELECT + DOWN для переключения трёх разных режимов отображения)"
 RUSSIAN["INSTALLP_DESC_PSVSHELLPLUS"] =              "Функциональный плагин для вывода информации и управления разгоном, который встраивается в быстрое меню"
 RUSSIAN["INSTALLP_DESC_POCKETSTATION"] =             "Поддержка функции PocketStation для всех игр PS1 Classic"
 RUSSIAN["INSTALLP_DESC_SYSCALL6"] =                  "Плагин отключает проверку неподдерживаемых исполняемых файлов на лету"
@@ -571,8 +571,7 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
 --*PCSF00228
-RUSSIAN["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
-
+RUSSIAN["INSTALLP_DESC_REHOMEARCADE"] =                "Плагин для европейских PSV, позволяющий бесплатно играть в игры PS Home Arcade"
 
 --Comunes
 RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Если вследствие конфликтов плагинов ваша PS Vita/TV перестанет загружаться, то зажмите клавишу L при загрузке или запуске h-encore"
