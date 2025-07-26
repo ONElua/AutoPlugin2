@@ -308,8 +308,8 @@ FRENCH["TRANSIMPOSE_OSK_TITLE"] =                   "Configuration du plugin"
 FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de transparence en cours..."
 
 --QuickMenu Plus
-FRENCH["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
-FRENCH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
+FRENCH["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Effet de dégradé d'arrière-plan"
+FRENCH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Définit l'effet de dégradé d'arrière-plan. L'option est activée par défaut."
 FRENCH["QUICKMENU_MENU_TIME"] =                	  	"Temps de pression du menu rapide"
 FRENCH["QUICKMENU_MENU_STANDBYRESTART"] =           "Style de bouton"
 FRENCH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "Style de fond d'écran"
@@ -554,8 +554,8 @@ FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 d
 FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard est un plugin et une application pour PS Vita qui vous permet de l'utiliser comme clavier USB. L'hôte pensera que votre vita est un vrai clavier."
 
 --*NPUZ01234 *SCPS10084
-FRENCH["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
-FRENCH["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+FRENCH["INSTALLP_DESC_EF2UMA"] =                    "Activation de l'ef0 (mémoire interne) de la PSP Go et redirection vers uma0:pspemu/ de la PS Vita, tout en laissant intact le mappage d'origine de ms0 vers ux0:pspemu/, permettant ainsi l'accès simultané aux deux périphériques."
+FRENCH["INSTALLP_DESC_EF2XMC"] =                    "Activation de l'ef0 (mémoire interne) de la PSP Go et redirection vers xmc0:pspemu/ de la PS Vita, tout en laissant intact le mappage d'origine de ms0 vers ux0:pspemu/, permettant ainsi l'accès simultané aux deux périphériques."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "DLC Alien Shooter. Vous devez exécuter le jeu au moins une fois avec le plugin pour déverrouiller les DLC."
@@ -577,7 +577,7 @@ FRENCH["INSTALLP_DESC_RESCREENY"] =                 "Les captures d'écran de la
 FRENCH["INSTALLP_DESC_DEPLAYENABLER"] =             "Activer le mode de lecture de débogage vidéo avec la possibilité de modifier le chemin d'accès aux dossiers sd0 et ux0 à partir du fichier de configuration."
 
 --*PCSF00228
-FRENCH["INSTALLP_DESC_REHOMEARCADE"] =                "A plugin for the psv to get all games in ps home arcade for free. European version only."
+FRENCH["INSTALLP_DESC_REHOMEARCADE"] =               "Un plugin pour PSV permettant d'accéder gratuitement à tous les jeux de la PS Home Arcade. Version européenne uniquement."
 
 
 --Comunes
