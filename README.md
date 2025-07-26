@@ -350,6 +350,7 @@ Size must be less than 20MB
 - Chronoss09 for translation in French
 - Schn1ek3 for translation in German
 - allanaln2009 for translation in Portuguese (PT-BR)
+- DDinghoya for translation in Korean
 
 ## Donation ##
 In case you want to support the work of the team on the vita, you can always donate for some coffee. Any amount is highly appreciated:
