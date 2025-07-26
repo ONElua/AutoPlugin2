@@ -215,8 +215,8 @@ Online_Plugins = {
   crc = 0xc96daf46, v = "v1.1.1.1", version = "0003", link = "https://raw.githubusercontent.com/FMudanyali/TrophyShot/master/README.md", },
 { name = "BootSound by teakhanirons", id = "BOOTSOUND.png", path = "bootsound.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_BOOTSOUND"], KEY = "INSTALLP_DESC_BOOTSOUND",
   crc = 0x4dfd2466, v = "v1.0", version = "0002", },
-{ name = "Quick Menu Plus by cuevavirus", id = "QUICKMENU.png", path = "quickmenuplus.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_QUICKMENU"], KEY = "INSTALLP_DESC_QUICKMENU",
-  crc = 0xe9d642fe, v = "v2.0.0", version = "0001", link = "https://git.shotatoshounenwachigau.moe/vita/quickmenuplus/plain/CHANGELOG.md", },
+{ name = "Quick Menu Plus by GrayJack (Original by cuevavirus)", id = "QUICKMENU.png", path = "quickmenuplus.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_QUICKMENU"], KEY = "INSTALLP_DESC_QUICKMENU",
+  crc = 0x2F39AF64, v = "v3.0.0", version = "0001", link = "https://raw.githubusercontent.com/VitaArchive/QuickMenuPlus/refs/heads/main/README.md", },
 { name = "dt2s-vita by joel16", id = "DT2SBAR.png", path = "dt2s_statusbar.suprx", section = "main", tai_del1 = "dt2s.suprx", section_del1 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DT2S_STATUSBAR"], KEY = "INSTALLP_DESC_DT2S_STATUSBAR",
   crc = 0x51fadce9, v = "v1.1 DoubleTap2Sleep (StatusBar)", version = "0002", link = "https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md", },
 { name = "Fruitpeel by cuevavirus", id = "FRUITPEEL.png", path = "fruitpeel.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_FRUITPEEL"], KEY = "INSTALLP_DESC_FRUITPEEL",
@@ -302,6 +302,12 @@ Online_Plugins = {
   crc = 0xf4f5893b, v = "v2.0.2", crc2 = 0xe73bfd7b, version = "0002", link = "https://raw.githubusercontent.com/MERLev/remaPSV2/master/README.md", },
 
 --{ name = "forcelang by xdanieldzd v0.2U", id = "FORCELANG.png", path = "forcelang.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FORCELANG"], KEY = "INSTALLP_DESC_FORCELANG", link = "https://raw.githubusercontent.com/xdanieldzd/forcelang/master/README.md", },
+
+--*NPUZ01234 *SCPS10084
+{ name = "ARK-4's ef2uma plugin", id = "EF2UMA.png", path = "ef2uma.suprx", section = "NPUZ01234", path2 = "ef2uma.suprx", section2 = "SCPS10084", desc = LANGUAGE["INSTALLP_DESC_EF2UMA"], KEY = "INSTALLP_DESC_EF2UMAF",
+  crc = 0xA3497F13, v = "v1.0", version = "0001", },
+{ name = "ARK-4's ef2xmc plugin", id = "EF2XMC.png", path = "ef2xmc.suprx", section = "NPUZ01234", path2 = "ef2xmc.suprx", section2 = "SCPS10084", desc = LANGUAGE["INSTALLP_DESC_EF2XMC"], KEY = "INSTALLP_DESC_EF2XMC",
+  crc = 0x58616A19, v = "v1.0", version = "0001", },
 
 --*PCSE00445 USA or *PCSB00561 Europe
 { name = "Alien Shooter DLC unlocker by isage", id = "ALIENDLC.png", path = "alienhook.suprx", section = "PCSE00445", desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"], KEY = "INSTALLP_DESC_ALIENDLC", REMOVE = true,
