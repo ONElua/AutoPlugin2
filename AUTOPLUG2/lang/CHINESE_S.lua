@@ -308,6 +308,8 @@ CHINESE_S["TRANSIMPOSE_OSK_TITLE"] =                   "透明级别"
 CHINESE_S["TRANSIMPOSE_LEVEL"] =                       "设置级别"
 
 --QuickMenu Plus
+CHINESE_S["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
+CHINESE_S["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
 CHINESE_S["QUICKMENU_MENU_TIME"] =                	   "按键时间"
 CHINESE_S["QUICKMENU_MENU_STANDBYRESTART"] =           "待机按钮"
 CHINESE_S["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "背景样式"
@@ -550,6 +552,10 @@ CHINESE_S["INSTALLP_DESC_SCOREHAX"] =                  "游戏得分修改器.�
 CHINESE_S["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper 是一款适用于 PS Vita 索尼阅读器程序 (PCSC80012) 的插件, 它被设计用于提取索尼 .MNH (Marlin-Hon) 格式图书的内容."
 CHINESE_S["INSTALLP_DESC_HIDEAP"] =                    "针对任何加载的程序隐藏 ux0:/app/AUTOPLUG2"
 CHINESE_S["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard 是一款插件和应用程序, 可让您将 PS Vita 用作 USB 键盘. 主机会认为你的 vita 是一个真正的键盘"
+
+--*NPUZ01234 *SCPS10084
+CHINESE_S["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+CHINESE_S["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 CHINESE_S["INSTALLP_DESC_ALIENDLC"] =                  "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."

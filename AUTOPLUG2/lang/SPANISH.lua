@@ -308,7 +308,9 @@ SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --QuickMenu Plus
-SPANISH["QUICKMENU_MENU_TIME"] =                		    "Tiempo para mantener presionado el botón"
+SPANISH["QUICKMENU_MENU_BACKGROUND_GRAD"] =             "Background Gradient Effect"
+SPANISH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =         "Sets the background gradient effect. The default is enabled."
+SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para mantener presionado el botón"
 SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Botón de Modo Reposo"
 SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "Estilo del Background (fondo)"
 SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Ajusta el tiempo de presion del botón PS para abrir el Quick Menu. El tiempo esta en microsegundos. Por ejemplo, coloca 250000 para 250 milisegundos (0,25 segundos). Por defecto el tiempo es de 500 milisegundos"
@@ -550,6 +552,10 @@ SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al in
 SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un Plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
 SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/app/AUTOPLUG2 a cualquier app a la que se le cargue este Plugin"
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
+
+--*NPUZ01234 *SCPS10084
+SPANISH["INSTALLP_DESC_EF2UMA"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+SPANISH["INSTALLP_DESC_EF2XMC"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Desbloqueador de DLCs de Alien Shooter. Necesitas correr el juego al menos una vez con el Plugin activado para desbloquear los DLCs"

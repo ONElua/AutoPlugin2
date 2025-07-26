@@ -45,6 +45,7 @@ function load_translates()
 	if files.exists("lang/"..__LANG..".lua") then
 		t,s = loadfile("lang/"..__LANG..".lua")
 		if t then
+			if s then os.dialog("\n"..s.."\n\n\n"..LANGUAGE["SYSTEM_ERROR_REPO"].."\n\n"..LANGUAGE["SYSTEM_ERROR_FIX"], LANGUAGE["SYSTEM_ERROR"]) end
 			t()
 			load_language(__LANG, true)
 		else

@@ -308,6 +308,8 @@ POLISH["TRANSIMPOSE_OSK_TITLE"] =                   "Poziom przezroczystości Tr
 POLISH["TRANSIMPOSE_LEVEL"] =                       "Ustaw poziom"
 
 --QuickMenu Plus
+POLISH["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
+POLISH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
 POLISH["QUICKMENU_MENU_TIME"] =                	    "Czas przytrzymania przycisku"
 POLISH["QUICKMENU_MENU_STANDBYRESTART"] =           "Przyciski zasilania"
 POLISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "Styl tła"
@@ -550,6 +552,10 @@ POLISH["INSTALLP_DESC_SCOREHAX"] =                  "Natychmiastowy pro-gamer w 
 POLISH["INSTALLP_DESC_HONRIPPER"] =                 "Plugin do aplikacji Sony Reader (PCSC80012) na PS Vita, pozwalający wyodrębniać zawartość książek w formacie .MNH"
 POLISH["INSTALLP_DESC_HIDEAP"] =                    "Ukrywa ux0:/app/AUTOPLUG2 przed aplikacjami, w których jest załadowany"
 POLISH["INSTALLP_DESC_VITAKEYBOARD"] =              "Plugin i aplikacja pozwalająca używać PS Vita jako klawiatury USB. Host widzi ją jak prawdziwą klawiaturę"
+
+--*NPUZ01234 *SCPS10084
+POLISH["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+POLISH["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 POLISH["INSTALLP_DESC_ALIENDLC"] =                  "Plugin do odblokowania DLC w Alien Shooter. Musisz uruchomić grę przynajmniej raz z pluginem, aby DLC zostały odblokowane"

@@ -308,6 +308,8 @@ KOREAN["TRANSIMPOSE_OSK_TITLE"] =                   "TransparentImpose 레벨"
 KOREAN["TRANSIMPOSE_LEVEL"] =                       "레벨 설정"
 
 --QuickMenu Plus
+KOREAN["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
+KOREAN["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
 KOREAN["QUICKMENU_MENU_TIME"] =                		"버튼 누름 시간"
 KOREAN["QUICKMENU_MENU_STANDBYRESTART"] =           "대기 버튼"
 KOREAN["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "배경 스타일"
@@ -550,6 +552,10 @@ KOREAN["INSTALLP_DESC_SCOREHAX"] =                  "모든 게임에서 인스�
 KOREAN["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper는 소니의 .MNH(Marlin-Hon) 책 형식의 콘텐츠를 추출하도록 설계된 PS 비타 소니 리더 응용 프로그램 (PCSC80012)용 플러그인"
 KOREAN["INSTALLP_DESC_HIDEAP"] =                    "불러온 모든 앱에서 ux0:/app/AUTOPLUG2 숨김"
 KOREAN["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard는 USB 키보드로 사용할 수 있게 해주는 PS 비타용 플러그인 및 응용 프로그램입니다. 호스트는 여러분의 비타가 실제 키보드라고 생각할 것입니다."
+
+--*NPUZ01234 *SCPS10084
+KOREAN["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+KOREAN["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 KOREAN["INSTALLP_DESC_ALIENDLC"] =                  "에일리언 슈터 DLC 잠금 해제 프로그램입니다. DLC를 잠금 해제하려면 플러그인을 사용하여 게임을 한 번 이상 실행해야 합니다."

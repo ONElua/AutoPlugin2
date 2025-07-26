@@ -308,6 +308,8 @@ RUSSIAN["TRANSIMPOSE_OSK_TITLE"] =                   "Уровень прозр�
 RUSSIAN["TRANSIMPOSE_LEVEL"] =                       "Применить уровень"
 
 --QuickMenu Plus
+RUSSIAN["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
+RUSSIAN["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
 RUSSIAN["QUICKMENU_MENU_TIME"] =                     "Время удержания"
 RUSSIAN["QUICKMENU_MENU_STANDBYRESTART"] =           "Клавиша Ожидание"
 RUSSIAN["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "Стиль фона"
@@ -551,6 +553,10 @@ RUSSIAN["INSTALLP_DESC_HONRIPPER"] =                 "Плагин HonRipper р�
 RUSSIAN["INSTALLP_DESC_HIDEAP"] =                    "Скрывает наличие установленного AutoPlugin II от других приложений"
 RUSSIAN["INSTALLP_DESC_VITAKEYBOARD"] =              "Тандем из плагина и приложения для использования PS Vita в качестве USB клавиатуры"
 
+--*NPUZ01234 *SCPS10084
+RUSSIAN["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+RUSSIAN["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+
 --*PCSE00445 USA or *PCSB00561 Europe
 RUSSIAN["INSTALLP_DESC_ALIENDLC"] =                  "Разблокировка дополнений для Alien Shooter. Просто запустите игру с активным плагином хотя бы раз"
 
@@ -571,7 +577,8 @@ RUSSIAN["INSTALLP_DESC_RESCREENY"] =                 "Снимки экрана 
 RUSSIAN["INSTALLP_DESC_DEPLAYENABLER"] =             "Получение доступа к отладочным функциям видеоплеера вкупе с возможностью смены устройств при помощи файла настроек"
 
 --*PCSF00228
-RUSSIAN["INSTALLP_DESC_REHOMEARCADE"] =                "Плагин для европейских PSV, позволяющий бесплатно играть в игры PS Home Arcade"
+RUSSIAN["INSTALLP_DESC_REHOMEARCADE"] =              "Плагин для европейских PSV, позволяющий бесплатно играть в игры PS Home Arcade"
+
 
 --Comunes
 RUSSIAN["PLUGINS_BOOT_WARNING"] =                    "Если вследствие конфликтов плагинов ваша PS Vita/TV перестанет загружаться, то зажмите клавишу L при загрузке или запуске h-encore"

@@ -308,6 +308,8 @@ ITALIAN["TRANSIMPOSE_OSK_TITLE"] =                      "Livello per Transparent
 ITALIAN["TRANSIMPOSE_LEVEL"] =                          "Modifica livello"
 
 --QuickMenu Plus
+ITALIAN["QUICKMENU_MENU_BACKGROUND_GRAD"] =             "Background Gradient Effect"
+ITALIAN["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =         "Sets the background gradient effect. The default is enabled."
 ITALIAN["QUICKMENU_MENU_TIME"] =                		"Button Push time"
 ITALIAN["QUICKMENU_MENU_STANDBYRESTART"] =              "Standby Button"
 ITALIAN["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "BackGround Style"
@@ -550,6 +552,10 @@ ITALIAN["INSTALLP_DESC_SCOREHAX"] =                     "Instant pro at any game
 ITALIAN["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper è il plugin per l'applicazione PS Vita Sony Reader (PCSC80012) progettato per estrarre i contenuti del formato libro .MNH (Marlin-Hon) di Sony."
 ITALIAN["INSTALLP_DESC_HIDEAP"] =                       "Nasconde ux0:/app/AUTOPLUG2 da qualsiasi app in cui è caricato"
 ITALIAN["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard è un plugin e un'applicazione per PS Vita che ti consente di usarlo come una tastiera USB. L'host penserà che la tua psvita sia una vera tastiera"
+
+--*NPUZ01234 *SCPS10084
+ITALIAN["INSTALLP_DESC_EF2UMA"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+ITALIAN["INSTALLP_DESC_EF2XMC"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 ITALIAN["INSTALLP_DESC_ALIENDLC"] =                     "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."

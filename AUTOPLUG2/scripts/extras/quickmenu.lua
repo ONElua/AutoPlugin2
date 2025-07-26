@@ -59,6 +59,14 @@ local background_style_callback = function (obj)
 	end
 end
 
+local background_gradient_callback = function (obj)
+	if obj.status == 0 then
+		obj.status = 1
+	else
+		obj.status = 0
+	end
+end
+
 function config_quickmenu()
 
 	--Path
@@ -70,13 +78,14 @@ function config_quickmenu()
 		if hw.model() == "PlayStation TV" then standby = 0 else standby = 1 end
 	end
 	local bgstyle = read_config_quickmenu(path_config_quickmenu.."bgstyle.txt") or 1
-
+	local bggrad = read_config_quickmenu(path_config_quickmenu.."bggradient.txt") or 1
 
 	local menuext = {
 		{ text = LANGUAGE["QUICKMENU_MENU_TIME"],				desc = LANGUAGE["QUICKMENU_MENU_TIME_DESC"],			status = tonumber(pushtime),	path = path_config_quickmenu.."pushtime.txt", funct = push_time_callback },
 		{ text = LANGUAGE["QUICKMENU_MENU_STANDBYRESTART"],		desc = LANGUAGE["QUICKMENU_MENU_STANDBYRESTART_DESC"],	status = tonumber(standby),		path = path_config_quickmenu.."standbyisrestart.txt", funct = standby_restart_callback },
 		{ text = LANGUAGE["QUICKMENU_MENU_BACKGROUNDSTYLE"],	desc = LANGUAGE["QUICKMENU_MENU_BACKGROUNDSTYLE_DESC"],	status = tonumber(bgstyle),		path = path_config_quickmenu.."bgstyle.txt", funct = background_style_callback },
-	}
+		{ text = LANGUAGE["QUICKMENU_MENU_BACKGROUND_GRAD"],	desc = LANGUAGE["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"],	status = tonumber(bggrad),		path = path_config_quickmenu.."bggradient.txt", funct = background_gradient_callback },
+		}
 
 
 	local scroll,xscroll = newScroll(menuext,#menuext),5

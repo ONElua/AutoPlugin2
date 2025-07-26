@@ -308,6 +308,8 @@ FRENCH["TRANSIMPOSE_OSK_TITLE"] =                   "Configuration du plugin"
 FRENCH["TRANSIMPOSE_LEVEL"] =                       "Définition du niveau de transparence en cours..."
 
 --QuickMenu Plus
+FRENCH["QUICKMENU_MENU_BACKGROUND_GRAD"] =          "Background Gradient Effect"
+FRENCH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =      "Sets the background gradient effect. The default is enabled."
 FRENCH["QUICKMENU_MENU_TIME"] =                	  	"Temps de pression du menu rapide"
 FRENCH["QUICKMENU_MENU_STANDBYRESTART"] =           "Style de bouton"
 FRENCH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =          "Style de fond d'écran"
@@ -550,6 +552,10 @@ FRENCH["INSTALLP_DESC_SCOREHAX"] =                  "Modifie le score instantan�
 FRENCH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper est le plugin pour l'application PS Vita Sony Reader (PCSC80012) qui est conçu pour extraire le contenu du format de livre .MNH (Marlin-Hon) de Sony."
 FRENCH["INSTALLP_DESC_HIDEAP"] =                    "Masque ux0:/app/AUTOPLUG2 de toute application qui lance une vérification de l'application s'il est installé dans la console."
 FRENCH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard est un plugin et une application pour PS Vita qui vous permet de l'utiliser comme clavier USB. L'hôte pensera que votre vita est un vrai clavier."
+
+--*NPUZ01234 *SCPS10084
+FRENCH["INSTALLP_DESC_EF2UMA"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+FRENCH["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
 
 --*PCSE00445 USA or *PCSB00561 Europe
 FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "DLC Alien Shooter. Vous devez exécuter le jeu au moins une fois avec le plugin pour déverrouiller les DLC."
