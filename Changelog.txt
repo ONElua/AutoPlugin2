@@ -1,5 +1,8 @@
+#v2.17
+++ Added ARK-4's ef2uma and ef2xmc plugins.
+++ Updated Quick Menu Plus v3.0.0 plugin by GrayJack (Original by Cuevavirus)
+
 #v2.16
-### Changelog 2.16 ###
 ++ Fixed error Portuguese language
 
 #v2.15
