@@ -336,22 +336,45 @@ end
 
 function autoplugin()
 
-	local tb_cop = {}
-	update_translations(plugins, tb_cop)
+	local tb_cop_all = {}
+	update_translations(plugins, tb_cop_all)
 
-	for k = #tb_cop,1,-1 do
-		if tb_cop[k].path == "adrenaline_kernel.skprx" and not files.exists("ux0:app/PSPEMUCFW") then
-			table.remove(tb_cop,k)
+	for k = #tb_cop_all,1,-1 do
+		if tb_cop_all[k].path == "adrenaline_kernel.skprx" and not files.exists("ux0:app/PSPEMUCFW") then
+			table.remove(tb_cop_all,k)
 		end
-		if tb_cop[k].REMOVE then
-			table.remove(tb_cop,k)
+		if tb_cop_all[k].REMOVE then
+			table.remove(tb_cop_all,k)
 		end
 	end
 
+	-- Search query
+	local __SEARCH_QUERY = ""
+	local __SHOWING_FILTERED = false
+	local __REBUILD_LIST = function()
+		local filtered = {}
+		if __SEARCH_QUERY == "" then
+			-- Just copy all
+			for k=1,#tb_cop_all do filtered[#filtered+1] = tb_cop_all[k] end
+			__SHOWING_FILTERED = false
+		else
+			local q = string.lower(__SEARCH_QUERY)
+			for k=1,#tb_cop_all do
+				if string.lower(tb_cop_all[k].name):find(q,1,true) then
+					filtered[#filtered+1] = tb_cop_all[k]
+				end
+			end
+			__SHOWING_FILTERED = true
+		end
+		return filtered
+	end
+
+	local tb_cop = __REBUILD_LIST()
 	local limit = 9
 	local scr = newScroll(tb_cop,limit)
 	local xscr1 = 10
-	scr.ini,scr.lim,scr.sel = 1,limit,1
+	scr.ini,scr.sel = 1,1
+	if #tb_cop < limit then scr.lim = #tb_cop end
 
 	while true do
 		buttons.read()
@@ -361,7 +384,11 @@ function autoplugin()
 		if snow then stars.render() end
 		wave:blit(0.7,50)
 
-		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)
+		if __SHOWING_FILTERED and __SEARCH_QUERY ~= "" then
+			screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop.."  [ "..__SEARCH_QUERY.." ]",1,color.white)
+		else
+			screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)
+		end
 
 		--Partition
 		draw.fillrect(860,0,100,47, color.green:a(90))
@@ -418,38 +445,45 @@ function autoplugin()
 		---- Draw Scroll Bar
 		local ybar,hbar = 60, (limit*36)
 		draw.fillrect(950,ybar-2,8,hbar,color.shine)
-		--if scr.maxim >= limit then
+		if scr.maxim > 1 then
 			local pos_height = math.max(hbar/scr.maxim, limit)
 			--Bar Scroll
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scr.maxim-1))*(scr.sel-1), 8, pos_height, color.new(0,255,0))
-		--end
+		end
 
-		if tb_cop[scr.sel].desc then
-			if screen.textwidth(tb_cop[scr.sel].desc) > 925 then
-				xscr1 = screen.print(xscr1, 405, tb_cop[scr.sel].desc,1,color.green, 0x0,__SLEFT,935)
-			else
-				screen.print(480, 405, tb_cop[scr.sel].desc,1,color.green, 0x0,__ACENTER)
+		if scr.maxim > 0 and tb_cop[scr.sel] then
+
+			if tb_cop[scr.sel].desc then
+				if screen.textwidth(tb_cop[scr.sel].desc) > 925 then
+					xscr1 = screen.print(xscr1, 405, tb_cop[scr.sel].desc,1,color.green, 0x0,__SLEFT,935)
+				else
+					screen.print(480, 405, tb_cop[scr.sel].desc,1,color.green, 0x0,__ACENTER)
+				end
 			end
+
+			if tb_cop[scr.sel].section then
+				screen.print(950, 435, tb_cop[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
+			end
+			if tb_cop[scr.sel].path then
+				screen.print(950, 457, tb_cop[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
+			end
+			if tb_cop[scr.sel].section2 then
+				screen.print(950, 482, tb_cop[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
+			end
+			if tb_cop[scr.sel].path2 then
+				screen.print(950, 502, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
+			end
+
 		end
 
-		if tb_cop[scr.sel].section then
-		screen.print(950, 435, tb_cop[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
-		end
-		if tb_cop[scr.sel].path then
-		screen.print(950, 457, tb_cop[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
-		end
-		if tb_cop[scr.sel].section2 then
-			screen.print(950, 482, tb_cop[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
-		end
-		if tb_cop[scr.sel].path2 then
-			screen.print(950, 502, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
-		end
+		screen.print(480, 460, "SEARCH PLUGIN", 1.0, color.white, color.blue, __ACENTER)
+		screen.print(480, 484, "L SEARCH     R CLEAR", 1.0, color.yellow, color.blue, __ACENTER)
 
-		if buttonskey then buttonskey:blitsprite(10,472,scancel) end
-		screen.print(45,475,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
+		if buttonskey then buttonskey:blitsprite(10,495,scancel) end
+		screen.print(45,498, "Back", 1, color.white, color.black, __ALEFT)
 
-		if buttonskey3 then buttonskey3:blitsprite(5,515,1) end
-		screen.print(45,520,LANGUAGE["STRING_CLOSE"],1,color.white,color.blue, __ALEFT)
+		if buttonskey3 then buttonskey3:blitsprite(10,520,1) end
+		screen.print(45,525, LANGUAGE["STRING_CLOSE"], 1, color.white, color.blue, __ALEFT)
 
 		screen.flip()
 
@@ -463,6 +497,29 @@ function autoplugin()
 		--Exit
 		if buttons.start then
 			exit_bye_bye()
+		end
+
+		-- Search: L (left shoulder) opens OSK to filter plugins
+		if buttons.released.l then
+			local query = osk.init("Search plugin by name", __SEARCH_QUERY)
+			if query then
+				__SEARCH_QUERY = query
+				tb_cop = __REBUILD_LIST()
+				scr = newScroll(tb_cop,limit)
+				scr.ini,scr.sel = 1,1
+				if #tb_cop < limit then scr.lim = #tb_cop end
+			end
+		end
+
+		-- Cancel filter: R (right shoulder) clears search
+		if buttons.released.r then
+			if __SHOWING_FILTERED then
+				__SEARCH_QUERY = ""
+				tb_cop = __REBUILD_LIST()
+				scr = newScroll(tb_cop,limit)
+				scr.ini,scr.sel = 1,1
+				if #tb_cop < limit then scr.lim = #tb_cop end
+			end
 		end
 
 		vol_mp3()
