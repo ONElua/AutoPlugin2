@@ -1,4 +1,4 @@
-plugins = {
+Online_Plugins = {
 
 --Kernel [SECTION]
 { name = "Adrenaline by TheOfficialFloW (Fix double touch)", id = "ADRENALINE.png", path = "adrenaline_kernel.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ADRENALINE"], KEY = "INSTALLP_DESC_ADRENALINE", link = "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md", },
@@ -158,8 +158,8 @@ plugins = {
   crc = 0xc42994b3, v = "v1.0", version = "0001",  dl = "reAuth.zip", },
 
 --2 prxs
-{ name = "NoPspEmuDrm Mod ARK-V", id = "NOPSPEMUDRM_MOD.png", path = "NoPspEmuDrm_kern_mod.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user_mod.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM_MOD"], KEY = "INSTALLP_DESC_NOPSPEMUDRM_MOD",
-  crc = 0xc55cfbe6, v = "v2026-06-09", crc2 = 0x2fbb66b2, version = "0002", link = "https://raw.githubusercontent.com/PSP-Arkfive/NoPspEmuDrmArkMod/refs/heads/main/README.md", },
+{ name = "NoPspEmuDrm by Kethen", id = "NOPSPEMUDRM_MOD.png", path = "NoPspEmuDrm_kern_mod.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user_mod.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM_MOD"], KEY = "INSTALLP_DESC_NOPSPEMUDRM_MOD",
+  crc = 0xa993a427, v = "v2025-07-02", crc2 = 0xC63381AB, version = "0001", link = "https://raw.githubusercontent.com/Kethen/NoPspEmuDrm/refs/heads/main/README.md", },
 { name = "NoPspEmuDrm by Li", id = "NOPSPEMUDRM.png", path = "NoPspEmuDrm_kern.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM"], KEY = "INSTALLP_DESC_NOPSPEMUDRM",
   crc = 0x7EF89819, v = "v1.06", crc2 = 0x6500B991, version = "0008", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
@@ -309,8 +309,6 @@ plugins = {
 { name = "ARK-4's ef2xmc plugin", id = "EF2XMC.png", path = "ef2xmc.suprx", section = "NPUZ01234", path2 = "ef2xmc.suprx", section2 = "SCPS10084", desc = LANGUAGE["INSTALLP_DESC_EF2XMC"], KEY = "INSTALLP_DESC_EF2XMC",
   crc = 0x58616A19, v = "v1.0", version = "0001", },
 
-{ name = "Gravity Rush 544p by junminlee2004", id = "GR544P.png", path = "GR544P.suprx", section = "PCSA00011", desc = LANGUAGE["INSTALLP_DESC_GR544P"], KEY = "INSTALLP_DESC_GR544P", REMOVE = true,
-  crc = 0x3124150A, v = "v4.0", version = "0001", link = "https://raw.githubusercontent.com/junminlee2004/GR544P/refs/heads/main/README.md", },
 --*PCSE00445 USA or *PCSB00561 Europe
 { name = "Alien Shooter DLC unlocker by isage", id = "ALIENDLC.png", path = "alienhook.suprx", section = "PCSE00445", desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"], KEY = "INSTALLP_DESC_ALIENDLC", REMOVE = true,
   crc = 0x8f62f5b8, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/isage/alienhook/master/README.md", },
