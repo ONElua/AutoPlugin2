@@ -1,3 +1,8 @@
+#v2.18
+++ Search plugin option for TheHeroGAC
+++ Updated NoPspEmuDrm mod for ARK-V (Acid_Snake)
+++ Added GR544P plugin by junminlee2004 (Miscellaneous plugins section)
+
 #v2.17
 ++ Added ARK-4's ef2uma and ef2xmc plugins.
 ++ Updated Quick Menu Plus v3.0.0 plugin by GrayJack (Original by Cuevavirus)
