@@ -1,0 +1,15 @@
+# This file is used as an alternative if ux0:tai/config.txt is not found.
+# For users plugins, you must refresh taiHEN from HENkaku Settings for
+# changes to take place.
+# For kernel plugins, you must reboot for changes to take place.
+*KERNEL
+# henkaku.skprx is hard-coded to load and is not listed here
+*main
+# main is a special titleid for SceShell
+ur0:tai/henkaku.suprx
+*NPXS10015
+# this is for modifying the version string
+ur0:tai/henkaku.suprx
+*NPXS10016
+# this is for modifying the version string in settings widget
+ur0:tai/henkaku.suprx

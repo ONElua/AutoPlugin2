@@ -1,0 +1,6 @@
+url_comppack http://proxy.nopaystation.com/https://gitlab.com/nopaystation_repos/nps_compati_packs/raw/master/
+install_psp_psx_location ux0:
+psm_disclaimer_yes_i_read_the_readme NoPsmDrm
+sort name
+order asc
+filter ASA,EUR,JPN,USA

@@ -1,0 +1,69 @@
+# This file is used as an alternative if ux0:tai/config.txt is not found.
+# For users plugins, you must refresh taiHEN from HENkaku Settings for
+# changes to take place.
+# For kernel plugins, you must reboot for changes to take place.
+*KERNEL
+ur0:tai/storagemgr.skprx
+# henkaku.skprx is hard-coded to load and is not listed here
+ur0:tai/EmergencyMount.skprx
+ur0:tai/nonpdrm.skprx
+ur0:tai/0syscall6.skprx
+ur0:tai/custom_boot_splash.skprx
+ur0:tai/itls.skprx
+ur0:tai/yamt_helper.skprx
+ur0:tai/nopsmdrm.skprx
+ux0:app/pspemucfw/sce_module/adrenaline_kernel.skprx
+ur0:tai/cpuaffinitychanger.skprx
+ur0:tai/sysident.skprx
+ur0:tai/kubridge.skprx
+ur0:tai/capunlocker.skprx
+ur0:tai/noavls.skprx
+#ur0:tai/fd_fix.skprx
+ur0:tai/sharpscale.skprx
+ur0:tai/psonescrot.skprx
+ur0:tai/PSVshellPlus_Kernel.skprx
+ur0:tai/NoPspEmuDrm_kern.skprx
+ur0:tai/repatch_4.skprx
+ur0:tai/ioplus.skprx
+
+*main
+# main is a special titleid for SceShell
+ur0:tai/henkaku.suprx
+ur0:tai/custom_warning.suprx
+ur0:tai/pngshot.suprx
+ur0:tai/jav.suprx
+ur0:tai/quickmenuplus.suprx
+ur0:tai/fruitpeel.suprx
+ur0:tai/LowMemMode.suprx
+ur0:tai/download_enabler.suprx
+ur0:tai/USBDisable.suprx
+ur0:tai/PasteUnlock.suprx
+ur0:tai/QuickMenuReborn.suprx
+ur0:tai/PSVshellPlus_Shell.suprx
+ur0:tai/psp2wpp.suprx
+ux0:data/VitaDB/vdb_daemon.suprx
+ur0:tai/NoTrpDrm.suprx
+ur0:tai/QAscreenshot.suprx
+
+*NPXS10015
+# this is for modifying the version string
+ur0:tai/henkaku.suprx
+ur0:tai/yamt.suprx
+ur0:tai/sysident.suprx
+ur0:tai/macspoofer.suprx
+
+*NPXS10016
+# this is for modifying the version string in settings widget
+ur0:tai/henkaku.suprx
+ur0:tai/sysident.suprx
+ur0:tai/macspoofer.suprx
+
+*NPXS10036
+ur0:tai/reScreeny.suprx
+
+*!AKRK00005
+
+*ALL
+ur0:tai/vita3g-disable.suprx
+ur0:tai/NoPspEmuDrm_user.suprx
+ur0:tai/VitaGrafix.suprx
