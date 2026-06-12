@@ -30,6 +30,8 @@ POLISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Sprawdź dostępność aktu
 POLISH["MENU_PSVITA_HD_PATCH"] =                    "Łatki HD i odbokowywacze DLC"
 POLISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "Odbokowywacz DLC Alien Shooter"
 POLISH["NO_ALIENSHOOTER_GAMES"] =                   "\n\nNie znaleziono gry Alien Shooter. Upewnij się, że jest zainstalowana"
+POLISH["MENU_PSVITA_GR"] =                          "Gravity Rush 544P"
+POLISH["NO_GRAVITYRUSH_GAMES"] =                    "Gravity Rush not found"
 POLISH["MENU_PSVITA_MISCELLANEOUS"] =               "Różne pluginy"
 POLISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Dostęp do niestandardowych serwerów, łatki HD do gier i odblokowywacze DLC"
 
@@ -100,6 +102,10 @@ POLISH["MENU_PSP_NPDRMFREE_DESC"] =                 "Plugin PSP/ePSP pozwalając
 POLISH["MENU_PSP_PSPCTRLS_DESC"] =                  "Pluginy dodające wsparcie dla dwóch analogów w grach dla PSP w Adrenaline"
 POLISH["MENU_PSP_PLUGINS_DESC"] =                   "Zainstaluj pluginy PSP przeznaczone dla Adrenaline"
 POLISH["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trofea dla gier Liberty & Vice City Stories!"
+
+POLISH["SEARCH_PLUGIN_OSK_TITLE"] =                 "Search plugin by name"
+POLISH["SEARCH_PLUGIN_LABEL"]     =                 "Search plugin"
+POLISH["SEARCH_PLUGIN_HINT"]      =                 "L: Search   R: Clear"
 
 --Options Extras
 POLISH["MENU_EXTRAS_PKGJ_TITLE"] =                  "Konfiguracja PKGj"
@@ -458,6 +464,7 @@ POLISH["INSTALLP_DESC_PSVSHELLPLUS"] =              "Zaawansowany plugin overclo
 POLISH["INSTALLP_DESC_POCKETSTATION"] =             "Wymusza wsparcie PocketStation na wszystkich oficjalnych grach PS1 Classic"
 POLISH["INSTALLP_DESC_SYSCALL6"] =                  "Narzędzie do łatania syscall 6 w secure_kernel lv0 PS Vity (sprawdzenia SELF/RVK)"
 POLISH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio i balans kanałów dla PS Vita (wymaga MonauralConfig.vpk)"
+POLISH["INSTALLP_DESC_MOONSHINE"] =                 "Moonshine is a plugin that blocks PSN presence and status posts."
 POLISH["INSTALLP_DESC_MUPREMIUM"] =                 "Włącza odtwarzanie muzyki w tle w każdej grze lub aplikacji"
 POLISH["INSTALLP_DESC_ACIDDUMPER"] =                "Aplikacja pomocna w lokalizowaniu fałszywych DLC"
 POLISH["INSTALLP_DESC_DEJAVU"] =                    "Pozwala zrobić migawkę pamięci RAM w dowolnym momencie i później ją przywrócić. Umożliwia zapisywanie w grach, gdzie oficjalnie jest to niemożliwe. Potencjalne zastosowanie dla programistów: tymczasowe obniżenie lub aktualizacja firmware w pamięci RAM (nieprzetestowane)"
@@ -559,6 +566,8 @@ POLISH["INSTALLP_DESC_EF2XMC"] =                    "Enabling PSP Go's ef0 (Inte
 
 --*PCSE00445 USA or *PCSB00561 Europe
 POLISH["INSTALLP_DESC_ALIENDLC"] =                  "Plugin do odblokowania DLC w Alien Shooter. Musisz uruchomić grę przynajmniej raz z pluginem, aby DLC zostały odblokowane"
+
+POLISH["INSTALLP_DESC_GR544P"] =                    "A TAIHEN plugin for enabling a feature complete 544p resolution upgrade for Gravity Rush on the PS VITA."
 
 --*PCSC90032
 POLISH["INSTALLP_DESC_MIKUA"] =                     "Plugin na PlayStation Vita, który pozwala uruchomić `PCSC90032` o dowolnej dacie i godzinie"

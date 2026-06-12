@@ -30,6 +30,8 @@ SPANISH["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Buscar Actualizaciones 
 SPANISH["MENU_PSVITA_HD_PATCH"] =                       "Parches HD y desbloqueador de DLCs"
 SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Desbloqueador de los DLCs de Alien Shooter"
 SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter no ha sido encontrado"
+SPANISH["MENU_PSVITA_GR"] =                             "Gravity Rush 544P"
+SPANISH["NO_GRAVITYRUSH_GAMES"] =                       "Gravity Rush not found"
 SPANISH["MENU_PSVITA_MISCELLANEOUS"] =                  "Plugins Misceláneos "
 SPANISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Plugins de Mejoradores a High-Def (alta resolución), activadores de DLCs y acceso a Servidores Privados disponibles para PS Vita"
 
@@ -100,6 +102,10 @@ SPANISH["MENU_PSP_NPDRMFREE_DESC"] =                    "Un Plugin para PSP/ePSP
 SPANISH["MENU_PSP_PSPCTRLS_DESC"] =                     "Colección de parches para Adrenaline que permite usar los dos analógicos en determinados juegos de PSP"
 SPANISH["MENU_PSP_PLUGINS_DESC"] =                      "Instala Plugins de PSP para Adrenaline"
 SPANISH["MENU_PSP_GTA_TROPHIES_DESC"] =                 "Trofeos para GTA Liberty & Vice City Stories!"
+
+SPANISH["SEARCH_PLUGIN_OSK_TITLE"] =                   "Search plugin by name"
+SPANISH["SEARCH_PLUGIN_LABEL"]     =                   "Search plugin"
+SPANISH["SEARCH_PLUGIN_HINT"]      =                   "L: Search   R: Clear"
 
 --Options Extras
 SPANISH["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opciones para Config de PKGj"
@@ -458,6 +464,7 @@ SPANISH["INSTALLP_DESC_PSVSHELLPLUS"] =                 "Plugin Avanzado para re
 SPANISH["INSTALLP_DESC_POCKETSTATION"] =                "Fuerza el soporte de pocketstation (periferico de PS1 que servía de Memory Card, junto a otros extras) en todos los juegos de PS1 Classics"
 SPANISH["INSTALLP_DESC_SYSCALL6"] =                     "Una herramienta que parcha los checkeos y llamadas (SELF/RVK checks) de las syscall 6 del secure_kernel del lv0 de la PS Vita (Básicamente desactiva limitaciones impuestas en las aplicaciones, como software mínimo, reemplazando ReFood, y usar la app de PSM Dev)"
 SPANISH["INSTALLP_DESC_MONAURAL"] =                     "Permite Canal de audio Mono (un parlante o el mismo audio por ambos parlantes) y balance de canales de audio para la PS Vita (requiere tener instalado MonauralConfig.vpk)"
+SPANISH["INSTALLP_DESC_MOONSHINE"] =                    "Moonshine is a plugin that blocks PSN presence and status posts."
 SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar música de fondo (a través de la app oficial) en cualquier juego o aplicación"
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
 SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captura de la memoria RAM en cualquier punto y poder restaurarla posteriormente. Te permite hacer un guardado en los juegos, donde no es posible de forma oficial (Basicamente un Guardado Rápido). Una posible aplicación para desarrolladores es para downgradear/actualizar el firmware (en RAM) para probar cosas (No ha sido testeado aún)"
@@ -559,6 +566,8 @@ SPANISH["INSTALLP_DESC_EF2XMC"] =                       "Enabling PSP Go's ef0 (
 
 --*PCSE00445 USA or *PCSB00561 Europe
 SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Desbloqueador de DLCs de Alien Shooter. Necesitas correr el juego al menos una vez con el Plugin activado para desbloquear los DLCs"
+
+SPANISH["INSTALLP_DESC_GR544P"] =                       "A TAIHEN plugin for enabling a feature complete 544p resolution upgrade for Gravity Rush on the PS VITA."
 
 --*PCSC90032
 SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora"

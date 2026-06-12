@@ -13,6 +13,7 @@ dofile("scripts/psvita/p4golden.lua")
 dofile("scripts/psvita/catherine.lua")
 dofile("scripts/psvita/aliendlc.lua")
 dofile("scripts/psvita/lbp.lua")
+dofile("scripts/psvita/gr544p.lua")
 
 local p4_callback = function ()
 	P4Golden_HD()
@@ -30,6 +31,10 @@ local LBP_callback = function ()
 	LBP_server()
 end
 
+local GravityRush_callback = function ()
+	GR544P()
+end
+
 function Misc_Plugins()
 
 	local menu = {
@@ -37,6 +42,7 @@ function Misc_Plugins()
 		{ text = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD"],	desc = LANGUAGE["MENU_PSVITA_INSTALL_CATHERINE_HD_DESC"], funct = catherine_callback },
 		{ text = LANGUAGE["MENU_PSVITA_AL_DLC_UNLOCKER"],	    desc = LANGUAGE["INSTALLP_DESC_ALIENDLC"],                funct = AlienShooter_callback },
 		{ text = LANGUAGE["INSTALL_LBP_TITLE"],	                desc = LANGUAGE["LBP_ALLEFRESHER_DESC"],                  funct = LBP_callback },
+		{ text = LANGUAGE["MENU_PSVITA_GR"],	                desc = LANGUAGE["INSTALLP_DESC_GR544P"],                  funct = GravityRush_callback },
 	}
 
 	local scroll = newScroll(menu,#menu)

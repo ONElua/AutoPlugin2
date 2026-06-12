@@ -348,19 +348,18 @@ function autoplugin()
 		end
 	end
 
-	-- Search query
-	local __SEARCH_QUERY = ""
+	-- Search state
+	local __SEARCH_QUERY   = ""
 	local __SHOWING_FILTERED = false
 	local __REBUILD_LIST = function()
 		local filtered = {}
 		if __SEARCH_QUERY == "" then
-			-- Just copy all
-			for k=1,#tb_cop_all do filtered[#filtered+1] = tb_cop_all[k] end
+			for k = 1, #tb_cop_all do filtered[#filtered+1] = tb_cop_all[k] end
 			__SHOWING_FILTERED = false
 		else
 			local q = string.lower(__SEARCH_QUERY)
-			for k=1,#tb_cop_all do
-				if string.lower(tb_cop_all[k].name):find(q,1,true) then
+			for k = 1, #tb_cop_all do
+				if string.lower(tb_cop_all[k].name):find(q, 1, true) then
 					filtered[#filtered+1] = tb_cop_all[k]
 				end
 			end
@@ -385,7 +384,7 @@ function autoplugin()
 		wave:blit(0.7,50)
 
 		if __SHOWING_FILTERED and __SEARCH_QUERY ~= "" then
-			screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop.."  [ "..__SEARCH_QUERY.." ]",1,color.white)
+			screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop.." [ "..__SEARCH_QUERY.." ]",1,color.white)
 		else
 			screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)
 		end
@@ -447,7 +446,6 @@ function autoplugin()
 		draw.fillrect(950,ybar-2,8,hbar,color.shine)
 		if scr.maxim > 1 then
 			local pos_height = math.max(hbar/scr.maxim, limit)
-			--Bar Scroll
 			draw.fillrect(950, ybar-2 + ((hbar-pos_height)/(scr.maxim-1))*(scr.sel-1), 8, pos_height, color.new(0,255,0))
 		end
 
@@ -476,14 +474,15 @@ function autoplugin()
 
 		end
 
-		screen.print(480, 460, "SEARCH PLUGIN", 1.0, color.white, color.blue, __ACENTER)
-		screen.print(480, 484, "L SEARCH     R CLEAR", 1.0, color.yellow, color.blue, __ACENTER)
+		-- Search hint
+		screen.print(480, 460, LANGUAGE["SEARCH_PLUGIN_LABEL"], 1.0, color.white, color.blue, __ACENTER)
+		screen.print(480, 484, LANGUAGE["SEARCH_PLUGIN_HINT"], 1.0, color.yellow, color.blue, __ACENTER)
 
 		if buttonskey then buttonskey:blitsprite(10,495,scancel) end
-		screen.print(45,498, "Back", 1, color.white, color.black, __ALEFT)
+		screen.print(45,498,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)
 
 		if buttonskey3 then buttonskey3:blitsprite(10,520,1) end
-		screen.print(45,525, LANGUAGE["STRING_CLOSE"], 1, color.white, color.blue, __ALEFT)
+		screen.print(45,525,LANGUAGE["STRING_CLOSE"],1,color.white,color.blue, __ALEFT)
 
 		screen.flip()
 
@@ -499,30 +498,30 @@ function autoplugin()
 			exit_bye_bye()
 		end
 
-		-- Search: L (left shoulder) opens OSK to filter plugins
+		vol_mp3()
+
+		-- Search: L opens OSK
 		if buttons.released.l then
-			local query = osk.init("Search plugin by name", __SEARCH_QUERY)
+			local query = osk.init(LANGUAGE["SEARCH_PLUGIN_OSK_TITLE"], __SEARCH_QUERY)
 			if query then
 				__SEARCH_QUERY = query
 				tb_cop = __REBUILD_LIST()
-				scr = newScroll(tb_cop,limit)
-				scr.ini,scr.sel = 1,1
+				scr = newScroll(tb_cop, limit)
+				scr.ini, scr.sel = 1, 1
 				if #tb_cop < limit then scr.lim = #tb_cop end
+				xscr1 = 10
 			end
 		end
 
-		-- Cancel filter: R (right shoulder) clears search
-		if buttons.released.r then
-			if __SHOWING_FILTERED then
-				__SEARCH_QUERY = ""
-				tb_cop = __REBUILD_LIST()
-				scr = newScroll(tb_cop,limit)
-				scr.ini,scr.sel = 1,1
-				if #tb_cop < limit then scr.lim = #tb_cop end
-			end
+		-- Clear search: R
+		if buttons.released.r and __SHOWING_FILTERED then
+			__SEARCH_QUERY = ""
+			tb_cop = __REBUILD_LIST()
+			scr = newScroll(tb_cop, limit)
+			scr.ini, scr.sel = 1, 1
+			if #tb_cop < limit then scr.lim = #tb_cop end
+			xscr1 = 10
 		end
-
-		vol_mp3()
 
 		if scr.maxim > 0 then
 

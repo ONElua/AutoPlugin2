@@ -147,7 +147,14 @@ function tai.parse(data, blend)
 				if not nr[id_sect][line:lower()] then
 					nr[id_sect][line:lower()] = true;
 					--print(string.format("[%s]: %s", id_sect, line:lower()))
-					table.insert(game_id[id_sect].prx, { path=line:lower(), line=i, is_sys = line:find("henkaku.suprx",1,true)}) -- skip in your app if the subtable have is_sys, example if list[i].is_sys
+
+					local lower_line = line:lower()
+					table.insert(game_id[id_sect].prx, {
+						path = lower_line,
+						line = i,
+						is_sys = lower_line:find("henkaku") and lower_line:find("%.suprx$") or false -- skip in your app if the subtable have is_sys, example if list[i].is_sys
+					})
+					--table.insert(game_id[id_sect].prx, { path=line:lower(), line=i, is_sys = line:find("henkaku.suprx",1,true)}) 
 					if blend then tai.put(id_sect, line:lower()) end
 				else
 					--print(string.format("Repeated [%s]: %s", id_sect, line:lower()))
@@ -381,50 +388,60 @@ end
 	Can send a path to sync or use the default.
 	Synchronize all the changes made so far with the library.
 ]]
+-- =============================================
+-- tai.sync() - Versión SafeGuards
+-- =============================================
 function tai.sync(path)
-	if tai.raw then
-		--TO-DO: hacer un backup y posteriormente escribir el nuevo?.
-		-- SAFE PUT CHECK SYS PRX
-		tai.put("main", "ur0:tai/henkaku.suprx", 1)
-		tai.put("NPXS10015", "ur0:tai/henkaku.suprx", 1)
-		tai.put("NPXS10016", "ur0:tai/henkaku.suprx", 1)
-		tai.del("KERNEL", "ur0:tai/henkaku.skprx")
+    if not tai.raw or type(tai.raw) != "table" then
+        return false  -- Safeguard
+    end
 
-if __AUTO == 1 then
-		local force_path = {
-		--  { path = "ur0:tai/custom_warning.suprx", section = "main" },
-		  { path = "ur0:tai/ds34vita.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/ds4touch.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/reVita.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/udcd_uvc_lcd_off.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/udcd_uvc_oled_off.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/repatch_ex.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/repatch.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/NoPspEmuDrm_kern.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/nonpdrm_un.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/gamesd.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/storagemgr.skprx", section = "KERNEL" },
-		  { path = "ur0:tai/EmergencyMount.skprx", section = "KERNEL" },
-		}
-		local force_state = {}
-		for i=1, #force_path do
-			force_state[i] = tai.del(force_path[i].section, force_path[i].path)
-		end
-		for i=1, #force_path do
-			if force_state[i] then
-				tai.put(force_path[i].section, force_path[i].path, 1)
-			end
-		end
-end
-
-		files.write(path or tai.path, table.concat(tai.raw, '\n'))
+	if not tai.hasHenkakuVariant() then
+		tai.put("main",       "ur0:tai/henkaku.suprx", 1)
+		tai.put("NPXS10015",  "ur0:tai/henkaku.suprx", 1)
+		tai.put("NPXS10016",  "ur0:tai/henkaku.suprx", 1)
+		tai.del("KERNEL",     "ur0:tai/henkaku.skprx")
+		os.message(LANGUAGE["REPAIR_CONFIG_TXT"])
 	end
+		
+    if __AUTO == 1 then
+
+		local force_path = {
+			--  { path = "ur0:tai/custom_warning.suprx", section = "main" },
+			{ path = "ur0:tai/ds34vita.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/ds4touch.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/reVita.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/udcd_uvc_lcd_off.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/udcd_uvc_oled_off.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/udcd_uvc.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/custom_boot_splash.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/repatch_ex.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/repatch_4.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/repatch.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/reF00D.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/NoPspEmuDrm_kern.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/nonpdrm_un.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/nonpdrm.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/0syscall6.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/gamesd.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/storagemgr.skprx", section = "KERNEL" },
+			{ path = "ur0:tai/EmergencyMount.skprx", section = "KERNEL" },
+		}
+        
+        local force_state = {}
+        for i = 1, #force_path do
+            force_state[i] = tai.del(force_path[i].section, force_path[i].path)
+        end
+        for i = 1, #force_path do
+            if force_state[i] then
+                tai.put(force_path[i].section, force_path[i].path, 1)
+            end
+        end
+    end
+
+    local write_path = path or tai.path
+    files.write(write_path, table.concat(tai.raw, '\n'))
+    return true
 end
 
 function tai.debug()
@@ -436,6 +453,45 @@ function tai.debug()
 		end
 	end
 	print("##################\n")]]
+end
+
+-- =============================================
+-- Función mejorada: detecta si existe alguna variante de henkaku
+-- SOLO en secciones críticas (main, NPXS10015, NPXS10016, KERNEL)
+-- Retorna true si hay al menos una, false si no hay ninguna
+-- =============================================
+function tai.hasHenkakuVariant()
+--    os.message("DEBUG: Entrando a hasHenkakuVariant")
+
+    if not tai.gameid or type(tai.gameid) != "table" then
+  --      os.message("DEBUG: tai.gameid no válido")
+        return false
+    end
+
+    local critical_sections = {"main", "NPXS10015", "NPXS10016"}
+
+
+--for i=1, #tai.gameid[id].prx do
+--		local x1,x2 = string.find(tai.gameid[id].prx[i].path:lower(), fname, 1, true)
+
+    for _, sect in ipairs(critical_sections) do
+        local plugins = tai.gameid[sect] and tai.gameid[sect].prx or {}
+    --    os.message("DEBUG: Sección " .. sect .. ": " .. #plugins .. " plugins")
+
+        for j, plugin in ipairs(plugins) do
+            local path = plugin.path or "NIL"
+            local lower = string.lower(files.nopath(path))
+      --      os.message("DEBUG: Plugin #" .. j .. ": " .. lower)
+
+            if lower:find("henkaku") and lower:find("%.suprx$") then
+        --        os.message("DEBUG: DETECTADO HENKAKU en " .. lower .. " → TRUE")
+                return true
+            end
+        end
+    end
+
+    --os.message("DEBUG: NO detectado → FALSE")
+    return false
 end
 
 -- ## Simple test ##

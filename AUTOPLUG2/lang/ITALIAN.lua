@@ -30,6 +30,8 @@ ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Controlla gli aggiornam
 ITALIAN["MENU_PSVITA_HD_PATCH"] =                       "HD Patches and DLC Unlocker"
 ITALIAN["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Alien Shooter DLC Unlocker"
 ITALIAN["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter not found"
+ITALIAN["MENU_PSVITA_GR"] =                             "Gravity Rush 544P"
+ITALIAN["NO_GRAVITYRUSH_GAMES"] =                       "Gravity Rush not found"
 ITALIAN["MENU_PSVITA_MISCELLANEOUS"] =                  "Miscellaneous Plugins"
 ITALIAN["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Available High-Def enhancer, DLC enabler & Server access plugins"
 
@@ -100,6 +102,10 @@ ITALIAN["MENU_PSP_NPDRMFREE_DESC"] =                    "Un plugin PSP/ePSP per 
 ITALIAN["MENU_PSP_PSPCTRLS_DESC"] =                     "Una raccolta di patch per far funzionare gli analogici per i giochi PSP su Adrenaline"
 ITALIAN["MENU_PSP_PLUGINS_DESC"] =                      "Installa un plugin PSP per Adrenaline"
 ITALIAN["MENU_PSP_GTA_TROPHIES_DESC"] =                 "Trophies for Liberty & Vice City Stories!"
+
+ITALIAN["SEARCH_PLUGIN_OSK_TITLE"] =                   "Search plugin by name"
+ITALIAN["SEARCH_PLUGIN_LABEL"]     =                   "Search plugin"
+ITALIAN["SEARCH_PLUGIN_HINT"]      =                   "L: Search   R: Clear"
 
 --Options Extras
 ITALIAN["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opzioni per il file Config di PKGJ"
@@ -458,6 +464,7 @@ ITALIAN["INSTALLP_DESC_PSVSHELLPLUS"] =                 "Advanced Overclock&Info
 ITALIAN["INSTALLP_DESC_POCKETSTATION"] =                "Forces pocketstation support on all PS1 Classics"
 ITALIAN["INSTALLP_DESC_SYSCALL6"] =                     "Un plugin che patcha il lv0 della Playstation Vita nel secure_kernel syscall 6 (Controlla SELF/RVK)"
 ITALIAN["INSTALLP_DESC_MONAURAL"] =                     "Audio mono e bilanciamento dei canali per Playstation Vita(richiede MonauralConfig.vpk)"
+ITALIAN["INSTALLP_DESC_MOONSHINE"] =                    "Moonshine is a plugin that blocks PSN presence and status posts."
 ITALIAN["INSTALLP_DESC_MUPREMIUM"] =                    "Abilita la riproduzione di musica in sottofondo per qualsiasi gioco o applicazione."
 ITALIAN["INSTALLP_DESC_ACIDDUMPER"] =                   "Applicazione che può essere utile per individuare DLC falsi"
 ITALIAN["INSTALLP_DESC_DEJAVU"] =                       "Consente di creare un'istantanea della RAM in qualsiasi momento e ripristinarla in seguito. Ti consente di salvare nei giochi in cui non è ufficialmente possibile. Un potenziale caso d'uso per gli sviluppatori è il downgrade/aggiornamento temporaneo del firmware (nella RAM) per testare le cose (questo non è stato ancora testato)"
@@ -559,6 +566,8 @@ ITALIAN["INSTALLP_DESC_EF2XMC"] =                       "Enabling PSP Go's ef0 (
 
 --*PCSE00445 USA or *PCSB00561 Europe
 ITALIAN["INSTALLP_DESC_ALIENDLC"] =                     "Alien Shooter DLC unlocker. You need to run the game atleast once with plugin for DLCs to unlock."
+
+ITALIAN["INSTALLP_DESC_GR544P"] =                       "A TAIHEN plugin for enabling a feature complete 544p resolution upgrade for Gravity Rush on the PS VITA."
 
 --*PCSC90032
 ITALIAN["INSTALLP_DESC_MIKUA"] =                        "PlayStation Vita plugin to enable running `PCSC90032` at any date or time."
