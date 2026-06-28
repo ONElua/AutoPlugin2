@@ -1,10 +1,10 @@
 Online_Langs = {
 { id =  "ENGLISH_US",   version = "02.01",		author =  "Yoti" },
 { id =  "ITALIAN",		version = "02.01",		author =  "TheHeroGAC" },
-{ id =  "JAPANESE",		version = "02.01",		author =  "Kouchan" },
+{ id =  "JAPANESE",		version = "02.02",		author =  "Kouchan" },
 { id =  "SPANISH",		version = "02.01",		author =  "gvaldebenit" },
 { id =  "CHINESE_S",	version = "02.01",		author =  "yexun1995" },
-{ id =  "FRENCH",		version = "02.02",		author =  "Axce,chronoss09" },
+{ id =  "FRENCH",		version = "02.03",		author =  "Axce,chronoss09" },
 { id =  "GERMAN",		version = "02.01",		author =  "Schn1ek3" },
 { id =  "RUSSIAN",		version = "02.01",		author =  "Yoti" },
 { id =  "POLISH",		version = "02.01",		author =  "HackZy01" },

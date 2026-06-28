@@ -159,7 +159,7 @@ plugins = {
 
 --2 prxs
 { name = "NoPspEmuDrm Mod ARK-V", id = "NOPSPEMUDRM_MOD.png", path = "NoPspEmuDrm_kern_mod.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user_mod.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM_MOD"], KEY = "INSTALLP_DESC_NOPSPEMUDRM_MOD",
-  crc = 0xc55cfbe6, v = "v2026-06-09", crc2 = 0x2fbb66b2, version = "0002", link = "https://raw.githubusercontent.com/PSP-Arkfive/NoPspEmuDrmArkMod/refs/heads/main/README.md", },
+  crc = 0xc55cfbe6, v = "v2026-06-23", crc2 = 0x4c89412f, version = "0003", link = "https://raw.githubusercontent.com/PSP-Arkfive/NoPspEmuDrmArkMod/refs/heads/main/README.md", },
 { name = "NoPspEmuDrm by Li", id = "NOPSPEMUDRM.png", path = "NoPspEmuDrm_kern.skprx", section = "KERNEL", path2 = "NoPspEmuDrm_user.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_NOPSPEMUDRM"], KEY = "INSTALLP_DESC_NOPSPEMUDRM",
   crc = 0x7EF89819, v = "v1.06", crc2 = 0x6500B991, version = "0008", link = "https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md", },
 { name = "DSMotion by OperationNT414C", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION",
