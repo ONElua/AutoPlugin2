@@ -31,9 +31,9 @@ FRENCH["MENU_PSVITA_HD_PATCH"] =                    "Patchs HD et déverrouillag
 FRENCH["MENU_PSVITA_AL_DLC_UNLOCKER"] =             "DLC Alien Shooter"
 FRENCH["NO_ALIENSHOOTER_GAMES"] =                   "Alien Shooter introuvable ou non installer"
 FRENCH["MENU_PSVITA_GR"] =                          "Gravity Rush 544P"
-FRENCH["NO_GRAVITYRUSH_GAMES"] =                    "Gravity Rush not found"
+FRENCH["NO_GRAVITYRUSH_GAMES"] =                    "Gravity Rush introuvable"
 FRENCH["MENU_PSVITA_MISCELLANEOUS"] =               "Miscellaneous Plugins"
-FRENCH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Available High-Def enhancer, DLC enabler & Server access plugins"
+FRENCH["MENU_PSVITA_MISCELLANEOUS_DESC"] =          "Plugins disponibles pour améliorer la haute définition, activer le contenu téléchargeable et accéder au serveur"
 
 FRENCH["MENU_PSVITA_CUSTOMIZE"] =                   "Personnaliser les plugins"
 FRENCH["MENU_PSVITA_CUSTOMIZE_DESC"] =              "Ici, vous pouvez personnaliser certains plugins que vous avez installés : Autoboot, Custom Warning, Custom Boot Splash, Quickmenu Plus, Trimpos."
@@ -103,9 +103,9 @@ FRENCH["MENU_PSP_PSPCTRLS_DESC"] =                  "Une collection des patchs p
 FRENCH["MENU_PSP_PLUGINS_DESC"] =                   "Installer des plugins PSP pour Adrenaline"
 FRENCH["MENU_PSP_GTA_TROPHIES_DESC"] =              "Trophées pour Liberty City & Vice City Stories !"
 
-FRENCH["SEARCH_PLUGIN_OSK_TITLE"] =                 "Search plugin by name"
-FRENCH["SEARCH_PLUGIN_LABEL"]     =                 "Search plugin"
-FRENCH["SEARCH_PLUGIN_HINT"]      =                 "L: Search   R: Clear"
+FRENCH["SEARCH_PLUGIN_OSK_TITLE"] =                 "Rechercher un plugin par nom"
+FRENCH["SEARCH_PLUGIN_LABEL"]     =                 "Rechercher un plugin"
+FRENCH["SEARCH_PLUGIN_HINT"]      =                 "L: Recherche   R: Nettoyer"
 
 --Options Extras
 FRENCH["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configuration de PKGj"
@@ -463,7 +463,7 @@ FRENCH["INSTALLP_DESC_PSVSHELL_MOD"] =              "(RaanGi) Encore un autre pl
 FRENCH["INSTALLP_DESC_PSVSHELLPLUS"] =              "Plugin avancé d'Overclock pour PS Vita. Fournit un HUD entièrement complète du GPU, une mémoire précise et un suivi FPS avec une intégration complète du menu rapide."
 FRENCH["INSTALLP_DESC_POCKETSTATION"] =             "Force la prise en charge de Pocketstation sur tous les jeux PS1 Classics"
 FRENCH["INSTALLP_DESC_SYSCALL6"] =                  "Un outil qui corrige le syscall 6 du secure_kernel lv0 de la Playstation Vita (vérifications SELF/RVK)"
-FRENCH["INSTALLP_DESC_MOONSHINE"] =                 "Moonshine is a plugin that blocks PSN presence and status posts."
+FRENCH["INSTALLP_DESC_MOONSHINE"] =                 "Moonshine est un plugin qui bloque les messages de présence et de statut sur le PSN.."
 FRENCH["INSTALLP_DESC_MONAURAL"] =                  "Mono audio et balance des canaux pour la Playstation Vita (nécessite MonauralConfig.vpk)"
 FRENCH["INSTALLP_DESC_MUPREMIUM"] =                 "Activer la musique de fond sur n'importe quel jeu ou application."
 FRENCH["INSTALLP_DESC_ACIDDUMPER"] =                "Application qui peut être utile pour localiser les faux DLC"
@@ -567,7 +567,7 @@ FRENCH["INSTALLP_DESC_EF2XMC"] =                    "Activation de l'ef0 (mémoi
 --*PCSE00445 USA or *PCSB00561 Europe
 FRENCH["INSTALLP_DESC_ALIENDLC"] =                  "DLC Alien Shooter. Vous devez exécuter le jeu au moins une fois avec le plugin pour déverrouiller les DLC."
 
-FRENCH["INSTALLP_DESC_GR544P"] =                    "A TAIHEN plugin for enabling a feature complete 544p resolution upgrade for Gravity Rush on the PS VITA."
+FRENCH["INSTALLP_DESC_GR544P"] =                    "Un plugin TAIHEN permettant une mise à niveau complète en résolution 544p pour Gravity Rush sur PS Vita."
 
 --*PCSC90032
 FRENCH["INSTALLP_DESC_MIKUA"] =                     "Plugin PlayStation Vita pour activer l'exécution de l'application `PCSC90032` à n'importe quelle date ou heure."
