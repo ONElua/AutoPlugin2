@@ -267,6 +267,7 @@ SPANISH["GTAV2_REMASTERED_DESC"] =                      "Habilitador de dos aná
 SPANISH["KHBBS_REMASTERED_DESC"] =                      "Habilitador de dos análogos para Kingdom Hearts: Birth by Sleep y Kingdom Hearts: Birth by Sleep Final Mix"
 SPANISH["METALGEARSOLID_REMASTERED_DESC"] =             "Habilitador de dos análogos para Metal Gear Solid: Peace Walker y Metal Gear Solid: Portable Ops"
 SPANISH["PRINCEOFPERSIA_REMASTERED_DESC"] =             "Habilitador de dos análogos para Prince of Persia: Revelations y Prince of Persia: Rival Swords"
+SPANISH["RATCHET_REMASTERED_DESC"] =                    "Habilitador de dos analógicos para Ratchet & Clank: Size Matters (UCUS-98633 / USA)"
 SPANISH["RESISTANCE_REMASTERED_DESC"] =                 "Habilitador de dos análogos para Resistance Retribution"
 SPANISH["SPLINTER_REMASTERED_DESC"] =                   "Habilitador de dos análogos para Splinter Cell: Essentials"
 SPANISH["TOMBRAIDER_REMASTERED_DESC"] =                 "Habilitador de dos análogos para Tomb Raider: Anniversary y Tomb Raider: Legend"

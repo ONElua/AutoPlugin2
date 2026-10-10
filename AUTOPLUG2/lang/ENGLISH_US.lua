@@ -267,6 +267,7 @@ ENGLISH_US["GTAV2_REMASTERED_DESC"] =                   "Dual Analogs Enabler fo
 ENGLISH_US["KHBBS_REMASTERED_DESC"] =                   "Dual Analogs Enabler for Kingdom Hearts: Birth by Sleep and Kingdom Hearts: Birth by Sleep Final Mix"
 ENGLISH_US["METALGEARSOLID_REMASTERED_DESC"] =          "Dual Analogs Enabler for Metal Gear Solid: Peace Walker and Metal Gear Solid: Portable Ops"
 ENGLISH_US["PRINCEOFPERSIA_REMASTERED_DESC"] =          "Dual Analogs Enabler for Prince of Persia: Revelations and Prince of Persia: Rival Swords"
+ENGLISH_US["RATCHET_REMASTERED_DESC"] =                 "Dual Analogs Enabler for Ratchet & Clank: Size Matters (UCUS-98633 / USA)"
 ENGLISH_US["RESISTANCE_REMASTERED_DESC"] =              "Dual Analogs Enabler for Resistance Retribution"
 ENGLISH_US["SPLINTER_REMASTERED_DESC"] =                "Dual Analogs Enabler for Splinter Cell: Essentials"
 ENGLISH_US["TOMBRAIDER_REMASTERED_DESC"] =              "Dual Analogs Enabler for Tomb Raider: Anniversary and Tomb Raider: Legend"
