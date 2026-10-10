@@ -31,7 +31,7 @@ SPANISH["MENU_PSVITA_HD_PATCH"] =                       "Parches HD y desbloquea
 SPANISH["MENU_PSVITA_AL_DLC_UNLOCKER"] =                "Desbloqueador de los DLCs de Alien Shooter"
 SPANISH["NO_ALIENSHOOTER_GAMES"] =                      "Alien Shooter no ha sido encontrado"
 SPANISH["MENU_PSVITA_GR"] =                             "Gravity Rush 544P"
-SPANISH["NO_GRAVITYRUSH_GAMES"] =                       "Gravity Rush not found"
+SPANISH["NO_GRAVITYRUSH_GAMES"] =                       "Gravity Rush no se ha encontrado"
 SPANISH["MENU_PSVITA_MISCELLANEOUS"] =                  "Plugins Misceláneos "
 SPANISH["MENU_PSVITA_MISCELLANEOUS_DESC"] =             "Plugins de Mejoradores a High-Def (alta resolución), activadores de DLCs y acceso a Servidores Privados disponibles para PS Vita"
 
@@ -77,7 +77,7 @@ SPANISH["NO_LBP_GAMES"] =                               "LittleBigPlanet no se h
 SPANISH["INSTALL_LBP_TITLE"] =                          "Servidores Privados para LittleBigPlanet"
 SPANISH["LBP_ALLEFRESHER_DESC"] =                       "Un set de Plugins de CFW para parchear el juego LittleBigPlanet, permitiendole conectarse a servidores privados"
 SPANISH["LBP_ALLEFRESHER_ITLS"] =                       "El Plugin Allefresher requiere que iTLS esté instalado"
-SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher no funciona para PS Vita en versiones 3.67/3.68"
+SPANISH["INSTALL_LBP_360_365"] =                        "Allefresher no funciona para PS Vita en versiones 3.67/3.68+"
 SPANISH["INSTALLING_LBP_PATCH"] =                       "Instalando el parche Allefresher"
 SPANISH["INSTALLING_LBP_VERSION"] =                     "Se necesita la versión 1.22 de LittleBigPlanet"
 SPANISH["INSTALLING_LBP_VERSION_PBP"] =                 "Se necesita la versión 2.05 de LittleBigPlanet"
@@ -103,15 +103,15 @@ SPANISH["MENU_PSP_PSPCTRLS_DESC"] =                     "Colección de parches p
 SPANISH["MENU_PSP_PLUGINS_DESC"] =                      "Instala Plugins de PSP para Adrenaline"
 SPANISH["MENU_PSP_GTA_TROPHIES_DESC"] =                 "Trofeos para GTA Liberty & Vice City Stories!"
 
-SPANISH["SEARCH_PLUGIN_OSK_TITLE"] =                   "Search plugin by name"
-SPANISH["SEARCH_PLUGIN_LABEL"]     =                   "Search plugin"
-SPANISH["SEARCH_PLUGIN_HINT"]      =                   "L: Search   R: Clear"
+SPANISH["SEARCH_PLUGIN_OSK_TITLE"] =                    "Busca un Plugin por su nombre "
+SPANISH["SEARCH_PLUGIN_LABEL"]     =                    "Buscar Plugin"
+SPANISH["SEARCH_PLUGIN_HINT"]      =                    "L: Buscar   R: Limpiar"
 
 --Options Extras
 SPANISH["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opciones para Config de PKGj"
 SPANISH["MENU_EXTRAS_INSTALL_ITLSENSO"] =               "iTLS-Enso"
 SPANISH["MENU_EXTRAS_INSTALL_VITASHELL"] =              "Vitashell"
-SPANISH["MENU_EXTRAS_INSTALL_VITASHELL2"] =             "Vitashell (from Yoti)"
+SPANISH["MENU_EXTRAS_INSTALL_VITASHELL2"] =             "Vitashell (Fork de Yoti)"
 SPANISH["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "ShaRKF00D"
 SPANISH["MENU_EXTRAS_INSTALL_BATTFIX"] =                "BatteryFixer"
 SPANISH["MENU_EXTRAS_INSTALL_YAMT"] =                   "Yamt"
@@ -177,7 +177,7 @@ SPANISH["LR_SWAP"] =                                    "Para cambiar entre ux0/
 SPANISH["PLUGINS_CUSTOM_PATH"] =                        "Instalar en ruta personalizada"
 SPANISH["PLUGINS_README_ONLINE"] =                      "Ver Readme En Linea" 
 SPANISH["PLUGINS_NO_README_ONLINE"] =                   "¡¡¡Readme no disponible!!!"
-SPANISH["INSTALLP_QUESTION_VPK"] =                      "debe descargarse para este Plugin!\n\nConexión Wifi requerida."
+SPANISH["INSTALLP_QUESTION_VPK"] =                      "debe descargarse para este Plugin!\n\nConexión WiFi requerida."
 SPANISH["INSTALLP_NO_VPK"] =                            "¡Fallo al Descargar/Instalar!"
 
 --customWarning
@@ -218,7 +218,7 @@ SPANISH["SD2VITA_CONFIG_DEVICE"] =                      "Dispositivo"
 SPANISH["SD2VITA_CONFIG_MOUNT"] =                       "Punto de Montaje"
 SPANISH["SD2VITA_CONFIG_CHANGE"] =                      "Cambiar Punto de Montaje"
 SPANISH["SD2VITA_CONFIG_CANCEL"] =                      "Cancelar"
-SPANISH["SD2VITA_CONFIG_SAVE"] =                        "Guardar la actual configuración"
+SPANISH["SD2VITA_CONFIG_SAVE"] =                        "Guardar la configuración actual"
 SPANISH["SD2VITA_1_WARNING"] =                          "Para instalar el Plugin de Storage Manager, su SD2VITA DEBE estar lista"
 SPANISH["SD2VITA_2_WARNING"] =                          "¡Si tienes un Juego Oficial insertado, DEBES retirarlo antes de reiniciar la PS Vita!"
 SPANISH["SD2VITA_3_WARNING"] =                          "MUY IMPORTANTE: Debes copiar el contenido de tu memoria original"
@@ -315,9 +315,9 @@ SPANISH["TRANSIMPOSE_OSK_TITLE"] =                      "Nivel de Transparencia"
 SPANISH["TRANSIMPOSE_LEVEL"] =                          "Nivel establecido"
 
 --QuickMenu Plus
-SPANISH["QUICKMENU_MENU_BACKGROUND_GRAD"] =             "Background Gradient Effect"
-SPANISH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =         "Sets the background gradient effect. The default is enabled."
-SPANISH["QUICKMENU_MENU_TIME"] =                		"Tiempo para mantener presionado el botón"
+SPANISH["QUICKMENU_MENU_BACKGROUND_GRAD"] =             "Efecto de Gradiente(degradado) del Fondo del Menu"
+SPANISH["QUICKMENU_MENU_BACKGROUNDGRAD_DESC"] =         "Ajusta el efecto de Gradiente del Fondo del Menu. Por defecto está habilitado"
+SPANISH["QUICKMENU_MENU_TIME"] =                		    "Tiempo para mantener presionado el botón"
 SPANISH["QUICKMENU_MENU_STANDBYRESTART"] =              "Botón de Modo Reposo"
 SPANISH["QUICKMENU_MENU_BACKGROUNDSTYLE"] =             "Estilo del Background (fondo)"
 SPANISH["QUICKMENU_MENU_TIME_DESC"] =                   "Ajusta el tiempo de presion del botón PS para abrir el Quick Menu. El tiempo esta en microsegundos. Por ejemplo, coloca 250000 para 250 milisegundos (0,25 segundos). Por defecto el tiempo es de 500 milisegundos"
@@ -397,13 +397,13 @@ SPANISH["TURKISH"] =                                    "TURCO"
 SPANISH["INSTALLP_DESC_SD2VITA"] =                      "Plugin de Kernel que monta/redirige automáticamente cualquier dispositivo de almacenamiento a cualquier punto de montaje (partición) que quieras (Requerido para usar una SD2VITA)"
 
 --KERNEL
-SPANISH["INSTALLP_DESC_VITABTFIX"] =                    "Allows newer AirPods (and other modern bluetooth headphones) to play audio on a jailbroken PS Vita."
+SPANISH["INSTALLP_DESC_VITABTFIX"] =                    "Permite que los AirPods más nuevos (y otros audifonos Bluetooth modernos) puedan reproducir audio en una PS Vita liberada"
 SPANISH["INSTALLP_DESC_VITAPRESENCE"] =                 "¡Cambia tu Rich Presence (Actividad actual en español) de Discord por el juego de PS Vita que estes reproduciendo actualmente!"
 SPANISH["INSTALLP_DESC_VITAPAD"] =                      "Usa tu PS Vita como un control USB con soporte para el táctil frontal y trasero"
 SPANISH["INSTALLP_DESC_IOSTAGING"] =                    "Plugin para mejorar la velocidad sequencial de I/O de la PS Vita"
 SPANISH["INSTALLP_DESC_VITACONTROL"] =                  "¡Usa controles Bluetooth en tu PS Vita! (Controles como DS3, DS4, Sony DualSense, Sony DualSense Edge, Microsoft Xbox One, Nintendo Switch Pro)"
 SPANISH["INSTALLP_DESC_NOPSPEMUDRM"] =                  "Un Plugin que permite evitar todos los chequeos de DRM de PSPEmu, lo que permite jugar tus respaldos digitales de juegos de PSP y PS1, o de juegos que poseas legalmente pero en otra cuenta PSN"
-SPANISH["INSTALLP_DESC_NOPSPEMUDRM_MOD"] =              "(Special for ARK) A plugin to bypass all PSPEmu DRM Checks, so you can play digital PSP or PS1 game backups; or of course- games you legitimately own but on another PSN Account"
+SPANISH["INSTALLP_DESC_NOPSPEMUDRM_MOD"] =              "(Especial para ARK V) Un Plugin que permite evitar todos los chequeos de DRM de PSPEmu, lo que permite jugar tus respaldos digitales de juegos de PSP y PS1, o de juegos que poseas legalmente pero en otra cuenta PSN"
 SPANISH["INSTALLP_DESC_TVIKEY"] =                       "Driver de Kernel para PS TV para el uso de mouse/teclado"
 SPANISH["INSTALLP_DESC_VIXEN"] =                        "Vita X-input Enabler. Driver de Kernel para PS Vita para los controles X-Input (Xbox 360)"
 SPANISH["INSTALLP_DESC_VSHPATCH"] =                     "Plugin similar a rePatch, pero para aplicaciones del Sistema. Es una partición VS0 emulada, simplemente pon los cambios que quieres realizar dentro de la carpeta ux0:/vshPatch/ y los cambios se verán reflejados en la partición vs0: , a traves del poder de fios2"
@@ -461,12 +461,12 @@ SPANISH["INSTALLP_DESC_DERIN"] =                        "Visualización en panta
 SPANISH["INSTALLP_DESC_LOLITA"] =                       "Ajusta el reloj de la PS Vita (procesador) al máximo todo el tiempo, y desactiva las limitaciones como brillo bajo y no Wi-Fi en juegos con más requerimientos"
 SPANISH["INSTALLP_DESC_LOLITA4"] =                      "Ajusta el reloj de la PS Vita (procesador) a 444mHz todo el tiempo, y desactiva las limitaciones como brillo bajo y no Wi-Fi en juegos con más requerimientos"
 SPANISH["INSTALLP_DESC_PSVSHELL"] =                     "Otro Plugin más de overclocking (SELECT + ARRIBA o SELECT + ABAJO para cambiar entre los 3 modos de interfaces)"
-SPANISH["INSTALLP_DESC_PSVSHELL_MOD"] =                 "(RaanGi) Yet another overclocking plugin (SELECT + UP or SELECT + DOWN to toggle between 3 GUI modes)"
+SPANISH["INSTALLP_DESC_PSVSHELL_MOD"] =                 "(Fork de RaanGi) Otro Plugin más de overclocking (SELECT + ARRIBA o SELECT + ABAJO para cambiar entre los 3 modos de interfaces)"
 SPANISH["INSTALLP_DESC_PSVSHELLPLUS"] =                 "Plugin Avanzado para realizar Overclocking e Info para PS Vita. Posee una barra de aceleración de GPU, trackeo preciso de la Memoria y los FPS, e integrado totalmente con Quick Menu (menú que sale al mantener presionado el botón PS)"
-SPANISH["INSTALLP_DESC_POCKETSTATION"] =                "Fuerza el soporte de pocketstation (periferico de PS1 que servía de Memory Card, junto a otros extras) en todos los juegos de PS1 Classics"
+SPANISH["INSTALLP_DESC_POCKETSTATION"] =                "Fuerza el soporte de PocketStation (periferico de PS1 que servía de Memory Card, junto a otros extras) en todos los juegos de PS1 Classics"
 SPANISH["INSTALLP_DESC_SYSCALL6"] =                     "Una herramienta que parcha los checkeos y llamadas (SELF/RVK checks) de las syscall 6 del secure_kernel del lv0 de la PS Vita (Básicamente desactiva limitaciones impuestas en las aplicaciones, como software mínimo, reemplazando ReFood, y usar la app de PSM Dev)"
 SPANISH["INSTALLP_DESC_MONAURAL"] =                     "Permite Canal de audio Mono (un parlante o el mismo audio por ambos parlantes) y balance de canales de audio para la PS Vita (requiere tener instalado MonauralConfig.vpk)"
-SPANISH["INSTALLP_DESC_MOONSHINE"] =                    "Moonshine is a plugin that blocks PSN presence and status posts."
+SPANISH["INSTALLP_DESC_MOONSHINE"] =                    "Moonshine es un Plugin que bloquea la Presencia en PSN y los Post de Status (Actividad)"
 SPANISH["INSTALLP_DESC_MUPREMIUM"] =                    "Permite escuchar música de fondo (a través de la app oficial) en cualquier juego o aplicación"
 SPANISH["INSTALLP_DESC_ACIDDUMPER"] =                   "Plugin que puede ser de utilidad para crear mods para DLCs"
 SPANISH["INSTALLP_DESC_DEJAVU"] =                       "Permite hacer una captura de la memoria RAM en cualquier punto y poder restaurarla posteriormente. Te permite hacer un guardado en los juegos, donde no es posible de forma oficial (Basicamente un Guardado Rápido). Una posible aplicación para desarrolladores es para downgradear/actualizar el firmware (en RAM) para probar cosas (No ha sido testeado aún)"
@@ -521,7 +521,7 @@ SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de 
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "Plugin para añadir botones que permiten abrir aplicaciones en Quick Menu (menú que sale al mantener presionado el botón PS). Hecho usandoQuickMenuReborn."
 SPANISH["INSTALLP_DESC_QUICKMENUREBORN"] =              "Libreria para desarrolladores que permite añadir tus propios widgets (funciones) al Quick Menu (menú que sale al mantener presionado el botón PS) de PS Vita"
 SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin que añade un switch para habilitar/deshabilitar la conexión WiFi en el Quick Menu en los sistemas PS TV (dolce). Hecho usando QuickMenuReborn"
-SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(olas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
+SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(ondas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
 
 --ALL
 SPANISH["INSTALLP_DESC_ADRUSBENABLER"] =                "Plugin de PS Vita que activa la conexión por USB entre Adrenaline y sistemas PS2/PS3"
@@ -563,13 +563,13 @@ SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Oculta la carpeta ux0:/
 SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard es un Plugin y aplicación para PS Vita que te permite usarla como un teclado USB. El computador (al que está conectado) pensará que la PS Vita es en realidad un teclado"
 
 --*NPUZ01234 *SCPS10084
-SPANISH["INSTALLP_DESC_EF2UMA"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's uma0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
-SPANISH["INSTALLP_DESC_EF2XMC"] =                       "Enabling PSP Go's ef0 (Internal Memory) and redirecting it to PS Vita's xmc0:pspemu/, while leaving the original mapping of ms0 to ux0:pspemu/ intact, allowing both devices to be accessed at the same time."
+SPANISH["INSTALLP_DESC_EF2UMA"] =                       "Habilita la partición ef0 (Memoria Interna) de la PSP Go y la redirecciona a la carpeta uma0:pspemu/ de PS Vita, mientras mantiene intacto el mapeado de la partición ms0 hacia ux0:pspemu/ , lo que permite que ambas particiones puedan ser accesadas al mismo tiempo"
+SPANISH["INSTALLP_DESC_EF2XMC"] =                       "Habilita la partición ef0 (Memoria Interna) de la PSP Go y la redirecciona a la carpeta xmc0:pspemu/ de PS Vita, mientras mantiene intacto el mapeado de la partición ms0 hacia ux0:pspemu/ , lo que permite que ambas particiones puedan ser accesadas al mismo tiempo"
 
 --*PCSE00445 USA or *PCSB00561 Europe
 SPANISH["INSTALLP_DESC_ALIENDLC"] =                     "Desbloqueador de DLCs de Alien Shooter. Necesitas correr el juego al menos una vez con el Plugin activado para desbloquear los DLCs"
 
-SPANISH["INSTALLP_DESC_GR544P"] =                       "A TAIHEN plugin for enabling a feature complete 544p resolution upgrade for Gravity Rush on the PS VITA."
+SPANISH["INSTALLP_DESC_GR544P"] =                       "Un Plugin de taiHEN que habilita la opción de mejora de resolución a 544p para Gravity Rush en PS Vita"
 
 --*PCSC90032
 SPANISH["INSTALLP_DESC_MIKUA"] =                        "Plugin de PS Vita que habilita el poder correr Hatsune Miku AR STAGE (PCSC90032) en cualquier fecha y hora"
