@@ -1,60 +1,212 @@
 # Autoplugin 2
-Autoplugin for PSVITA
-This tool allows you to install/uninstall the following plugins with one click
+Autoplugin for PS Vita and PlayStation TV.
 
-| Plugin | Author |
-| ------ | ------ |
-| [Allefresher](https://github.com/LittleBigRefresh/Allefresher) | [Beyley](https://github.com/Beyley) |
-| [RemasteredControls](https://github.com/TheOfficialFloW/RemasteredControls) (Adrenaline) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [DownloadEnabler](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoNpDrm](https://github.com/TheOfficialFloW/NoNpDrm) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [MiniVitaTV](https://github.com/TheOfficialFloW/MiniVitaTV) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoPsmDrm](https://github.com/frangarcj/NoPsmDrm) | [frangarcj](https://github.com/frangarcj) |
-| [PSVita-StorageMgr](https://github.com/CelesteBlue-dev/PSVita-StorageMgr) | [CelesteBlue](https://github.com/CelesteBlue-dev) |
-| [Shellbat](https://github.com/nowrep/vita-shellbat) | [nowrep](https://github.com/nowrep) |
-| [Shellsecbat](https://github.com/OperationNT414C/ShellSecBat) | [OperationNT414C](https://github.com/OperationNT414C) |
-| [Oclockvita](https://github.com/frangarcj/oclockvita) | [frangarcj](https://github.com/frangarcj) |
-| [NoTrophyMsg](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [NoLockScreen](https://github.com/TheOfficialFloW/VitaTweaks) | [TheFlow](https://github.com/TheOfficialFloW) |
-| [Vitabright](https://github.com/devnoname120/vitabright) (only 3.60 and PSVITA) | [devnoname120](https://github.com/devnoname120) |
-| [pngshot](https://github.com/xyzz/pngshot) | [xyz](https://github.com/xyzz) |
-| [PSV-VSH MENU](https://github.com/joel16/PSV-VSH-Menu) | [joel16](https://github.com/joel16) |
-| [Vflux](https://github.com/Applelo/vFlux) | [Applelo](https://github.com/Applelo) |
-| [Repatch](https://github.com/dots-tb/rePatch-reDux0) | [dots-tb](https://github.com/dots-tb) |
-| [LOLIcon](https://github.com/dots-tb/LOLIcon) | [dots-tb](https://github.com/dots-tb) |
-| [NoAVLS](https://bitbucket.org/LiEnby/noavls) | [Li](https://bitbucket.org/LiEnby/) |
-| [ds3vita](https://github.com/xerpi/ds3vita) | [xerpi](https://github.com/xerpi) |
-| [ds4vita](https://github.com/xerpi/ds4vita) | [xerpi](https://github.com/xerpi) |
-| [PSVita USB streaming! (UVC USB Video Class)](https://github.com/xerpi/vita-udcd-uvc) | [xerpi](https://github.com/xerpi) |
-| [DSmotion](https://github.com/OperationNT414C/DSMotion) | [OperationNT414C](https://github.com/OperationNT414C) |
-| [VitaGrafix](https://github.com/Electry/VitaGrafix) | [Electry](https://github.com/Electry) |
-| [usbmc](https://github.com/yifanlu/usbmc) | [Yifan Lu](https://github.com/yifanlu) |
-| [Custom Splash Boot](https://github.com/Princess-of-Sleeping/PSP2-CustomBootSplash) | [Princess of Sleeping](https://github.com/Princess-of-Sleeping) |
-| [FuckPSSE](https://bitbucket.org/LiEnby/fuckpsse) | [Li](https://bitbucket.org/LiEnby/) |
-| [PSMPatch](https://bitbucket.org/LiEnby/psmpatch) | [Li](https://bitbucket.org/LiEnby/) |
-| [ITLS-Enso](https://github.com/SKGleba/iTLS-Enso) | [SKGleba](https://github.com/SKGleba)|
-| [TropHAX](https://bitbucket.org/LiEnby/trophax) | [Li](https://bitbucket.org/LiEnby/) |
-| [noPsmWhitelist](https://bitbucket.org/LiEnby/nopsmwhitelist) | [Li](https://bitbucket.org/LiEnby/) |
-| [AnalogStickDisable](https://github.com/Hack-Usagi/AnalogStickDisable) | [Hack-Usagi](https://github.com/Hack-Usagi) |
-| [reF00D](https://github.com/dots-tb/reF00D) | FAPS Team |
-| [FreePSM](https://bitbucket.org/LiEnby/freepsm/src/master/)  | [Li](https://bitbucket.org/LiEnby/freepsm/src/master/) |
-| [LOLITA 500/444](https://github.com/teakhanirons/lolita500)  | [teakhanirons](https://github.com/teakhanirons) |
-| [NoPowerLimitsVita](https://github.com/Electry/NoPowerLimitsVita)  | [Electry](https://github.com/Electry) |
-| [VGi](https://github.com/Electry/VGi)  | [Electry](https://github.com/Electry) |
-| [ds4touch](https://github.com/MERLev/ds4touch)  | [MERLev](https://github.com/MERLev) |
-| [ds34vita](https://github.com/MERLev/ds34vita)  | [MERLev](https://github.com/MERLev) |
-| [reVita](https://github.com/MERLev/reVita)  | [MERLev](https://github.com/MERLev) |
-| [TrophyShot](https://github.com/FMudanyali/TrophyShot)  | [FMudanyali](https://github.com/FMudanyali/) |
-| [VolLightbarCtrlWithDS4](https://github.com/CallmeBK/VolLightbarCtrlWithDS4)  | [CallmeBK](https://github.com/CallmeBK/) |
-| [FdFix](https://github.com/TheOfficialFloW/FdFix)  | [TheFlow](https://github.com/TheOfficialFloW/) |
-| [dt2s-vita](https://github.com/joel16/dt2s-vita/)  | [joel16](https://github.com/joel16/) |
-| [HonRipper](https://github.com/GrapheneCt/HonRipper/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [CapUnlocker](https://github.com/GrapheneCt/CapUnlocker/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [PasteUnlock](https://github.com/GrapheneCt/PasteUnlock/)  | [GrapheneCt](https://github.com/GrapheneCt/) |
-| [PSVshellPlus](https://github.com/GrapheneCt/PSVshellPlus) | [GrapheneCt](https://github.com/GrapheneCt) |
-| [Repatch reLoaded](https://github.com/SonicMastr/rePatch-reLoaded) | [SonicMastr](https://github.com/SonicMastrb) |
-| [vita3g-disable](https://github.com/VictorGamer072YT/vita3g-disable) | [VictorGamer072YT](https://github.com/VictorGamer072YT) |
-| [VitaKeyboard](https://github.com/mswlandi/vitakeyboard) | [mswlandi](https://github.com/mswlandi) |
+## Supported plugins
+
+These lists reflect active entries in the [bundled Vita catalog](AUTOPLUG2/plugins/plugins.lua) and [PSP/Adrenaline catalog](AUTOPLUG2/plugins/plugins_psp.lua). Names and author credits follow the catalogs; separate rows retain selectable variants. Names link to plugin documentation where the catalog provides a link.
+
+The online-update catalogs are [Vita](plugins/plugins.lua) and [PSP/Adrenaline](plugins/plugins_psp.lua). Availability can differ with the installed app version and plugin updates. Being listed does not mean that a plugin works on every firmware or device, or that all plugins can be installed together. Check each plugin's requirements and the app's warnings before installing.
+
+Dependencies such as ioPlus and kuio may be installed alongside a plugin; they are not separate entries in these lists. Files bundled in the resources directory but commented out or absent from the active catalogs are not advertised as supported plugins here. iTLS-Enso and Battery Fixer are separate VPK downloads (see Optional settings), not plugin entries.
+
+### Vita kernel plugins
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| [0syscall6 by SKGleba](https://raw.githubusercontent.com/SKGleba/0syscall6/master/README.md) | `0syscall6.skprx` |
+| [8BitVita by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/8BitVita/master/README.md) | `8BitVita.skprx` |
+| [Adrenaline by TheOfficialFloW (Fix double touch)](https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md) | `adrenaline_kernel.skprx` |
+| [AnalogsEnhancer by Rinnegatamante/Yoti](https://raw.githubusercontent.com/Yoti/AnalogsEnhancer/master/README.md) | `AnalogsEnhancer.skprx` |
+| [AnalogStickDisable by Hack-Usagi](https://raw.githubusercontent.com/Hack-Usagi/AnalogStickDisable/master/README.md) | `AnalogStickDisable.skprx` |
+| [AnalogStickDisable Left Only by Hack-Usagi](https://raw.githubusercontent.com/Hack-Usagi/AnalogStickDisable/master/README.md) | `AnalogStickDisable_LeftOnly.skprx` |
+| [AnalogStickDisable Left To Right by Yoti](https://raw.githubusercontent.com/Yoti/AnalogStickDisable/master/README.md) | `AnalogStickDisable_LeftToRight.skprx` |
+| [AnalogStickDisable Right Only by Hack-Usagi](https://raw.githubusercontent.com/Hack-Usagi/AnalogStickDisable/master/README.md) | `AnalogStickDisable_RightOnly.skprx` |
+| [AnalogStickDisable Right To Left by Yoti](https://raw.githubusercontent.com/Yoti/AnalogStickDisable/master/README.md) | `AnalogStickDisable_RightToLeft.skprx` |
+| [AnalogStickDisable Swap Left To Right by Yoti](https://raw.githubusercontent.com/Yoti/AnalogStickDisable/master/README.md) | `AnalogStickDisable_SwapLeftAndRight.skprx` |
+| [BetterTrackPlug by fmudanyali](https://raw.githubusercontent.com/fmudanyali/BetterTrackPlug/master/README.md) | `BetterTrackPlug.skprx` |
+| [CapUnlocker by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/CapUnlocker/master/README.md) | `CapUnlocker.skprx` |
+| [cidSpoofer by Li](https://silica.codes/Li/cidspoofer/raw/branch/master/README.md) | `cidSpoof.skprx` |
+| [Cpu Affinity Changer by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/Affinity-Changer/master/README.md) | `CpuAffinityChanger.skprx` |
+| [Custom Boot Splash by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/PSP2-CustomBootSplash/master/README.md) | `custom_boot_splash.skprx` |
+| [ds34vita by MERLev](https://raw.githubusercontent.com/MERLev/ds34vita/master/README.md) | `ds34vita.skprx` |
+| [ds3vita by xerpi](https://raw.githubusercontent.com/xerpi/ds3vita/hooks/README.md) | `ds3vita.skprx` |
+| [ds4touch by MERLev](https://raw.githubusercontent.com/MERLev/ds4touch/master/README.md) | `ds4touch.skprx` |
+| [ds4vita by xerpi](https://raw.githubusercontent.com/xerpi/ds4vita/master/README.md) | `ds4vita.skprx` |
+| [DSMotion by OperationNT414C](https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md) | `dsmotion.skprx`, `dsmotion.suprx` |
+| [Dumping addcont IDs by cuevavirus](https://raw.githubusercontent.com/cuevavirus/AddcontIDDumper/master/README.md) | `aciddumper.skprx` |
+| [déjàvu: Vita SaveState Plugin by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/dejavu/master/README.md) | `dejavu.skprx` |
+| EmergencyMount by teakhanirons | `EmergencyMount.skprx` |
+| [FdFix by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/FdFix/master/README.md) | `fd_fix.skprx` |
+| Kubridge by TheOfficialFloW/bythos14 | `kubridge.skprx` |
+| LCD Colour Space Changer by cuevavirus | `pspemu-colour-crunch.skprx` |
+| [lolita444 by teakhanirons](https://raw.githubusercontent.com/teakhanirons/lolita500/master/README.md) | `lolita444.skprx` |
+| [lolita500 by teakhanirons](https://raw.githubusercontent.com/teakhanirons/lolita500/master/README.md) | `lolita500.skprx` |
+| [Magic Automatic Fake User Input by Rufis01](https://raw.githubusercontent.com/Rufis01/MAFU-I/refs/heads/master/README.MD) | `MAFUinput.skprx` |
+| [MiniVitaTV by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md) | `minivitatv.skprx`, `ds3.skprx` |
+| [Music Premium by cuevavirus](https://raw.githubusercontent.com/cuevavirus/MusicPremium/master/README.md) | `music_premium.skprx` |
+| [NoAVLS by Li](https://silica.codes/Li/noavls/raw/branch/master/README.md) | `noavls.skprx` |
+| [noled by reprep/falkenhawk](https://raw.githubusercontent.com/falkenhawk/noled/refs/heads/master/README.md) | `noled.skprx` |
+| [NoNpDrm by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/NoNpDrm/master/readme.md) | `nonpdrm.skprx` |
+| [NoNpDrm Unofficial by LMAN/SuleMareVientu](https://raw.githubusercontent.com/SuleMareVientu/NoNpDrm-LMAN/refs/heads/main/readme.md) | `nonpdrm_un.skprx` |
+| [NoPowerLimits by Electry](https://raw.githubusercontent.com/Electry/NoPowerLimitsVita/master/README.md) | `NoPowerLimits.skprx` |
+| [NoPsmDrm by frangarcj](https://raw.githubusercontent.com/frangarcj/NoPsmDrm/master/README.md) | `nopsmdrm.skprx` |
+| [NoPspEmuDrm by Li](https://raw.githubusercontent.com/LiEnby/NoPspEmuDrm/main/README.md) | `NoPspEmuDrm_kern.skprx`, `NoPspEmuDrm_user.suprx` |
+| [NoPspEmuDrm Mod ARK-V](https://raw.githubusercontent.com/PSP-Arkfive/NoPspEmuDrmArkMod/refs/heads/main/README.md) | `NoPspEmuDrm_kern_mod.skprx`, `NoPspEmuDrm_user_mod.suprx` |
+| [nosleep by NamelessGhoul0](https://raw.githubusercontent.com/NamelessGhoul0/nosleep/master/README.md) | `nosleep.skprx` |
+| [PocketStationUnlocker by Li](https://raw.githubusercontent.com/psv-plugins-archive/PocketstationUnlocker/refs/heads/master/README.md) | `pocketstationunlocker.skprx` |
+| [PSOneScrot by cuevavirus](https://raw.githubusercontent.com/psv-plugins-archive/psonescrot/refs/heads/master/README.md) | `psonescrot.skprx` |
+| [PSVshell by Electry](https://raw.githubusercontent.com/Electry/PSVshell/master/README.md) | `PSVshell.skprx` |
+| [PSVshell by RaanGi](https://raw.githubusercontent.com/RaanGi/PSVshell/refs/heads/master/README.md) | `PSVshell_mod.skprx` |
+| [PSVshellPlus by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md) | `PSVshellPlus_Kernel.skprx`, `PSVshellPlus_Shell.suprx` |
+| reAuth - Use PlayStation Store and sign-in by cuevavirus | `reAuth.skprx` |
+| [reF00D by FAPS Team](https://raw.githubusercontent.com/dots-tb/reF00D/master/README.md) | `reF00D.skprx` |
+| [Repatch by dots-tb](https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md) | `repatch.skprx` |
+| [Repatch by dots-tb](https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md) | `repatch_4.skprx` |
+| [Repatch reLoaded by SonicMastr](https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md) | `repatch_ex.skprx` |
+| reSavedata by Princess of Sleeping | `resavedata.skprx` |
+| [reVita by MERLev](https://raw.githubusercontent.com/MERLev/reVita/master/README.md) | `reVita.skprx`, `ioplus.skprx` |
+| [Sharpscale by cuevavirus](https://raw.githubusercontent.com/psv-plugins-archive/sharpscale/refs/heads/master/README.md) | `sharpscale.skprx` |
+| [Staybrightby cuevavirus](https://raw.githubusercontent.com/psv-plugins-archive/staybright/refs/heads/master/README.md) | `staybright.skprx` |
+| System-Integrated DualSense Driver for PlayStation TV by cuevavirus | `dualsense-driver.skprx` |
+| [tvikey by isage](https://raw.githubusercontent.com/isage/tvikey/master/README.md) | `tvikey.skprx` |
+| [udcd_uvc by xerpi](https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md) | `udcd_uvc.skprx` |
+| [udcd_uvc LCD by xerpi](https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md) | `udcd_uvc_lcd_off.skprx` |
+| [udcd_uvc OLED by xerpi](https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md) | `udcd_uvc_oled_off.skprx` |
+| [usbmc by yifanlu](https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md) | `usbmc.skprx` |
+| [usbmc Mod by DevDavisNunez](https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md) | `usbmcm.skprx` |
+| [VideoDebug by Li](https://silica.codes/Li/videodebug/raw/branch/master/README.md) | `videoDebug.skprx` |
+| [viimote by xerpi](https://raw.githubusercontent.com/xerpi/viimote/master/README.md) | `viimote.skprx` |
+| [Vitabright by devnoname120](https://raw.githubusercontent.com/devnoname120/vitabright/master/README.md) | `vitabright.skprx` |
+| [VitaBtFix by gabew100](https://raw.githubusercontent.com/gabew100/VitaBtFix/refs/heads/main/README.md) | `vitabtfix.skprx` |
+| [Vitacheat by FinalCheat](https://raw.githubusercontent.com/r0ah/vitacheat/master/README.md) | `vitacheat.skprx` |
+| [Vitacheat by FinalCheat](https://raw.githubusercontent.com/r0ah/vitacheat/master/README.md) | `vitacheat360.skprx` |
+| [VitaControl by Hydr8gon](https://raw.githubusercontent.com/Hydr8gon/VitaControl/master/README.md) | `vitacontrol.skprx` |
+| [VitaKeyboard by MarkOfTheLand](https://raw.githubusercontent.com/mswlandi/vitakeyboard/master/README.md) | `hidkeyboard.skprx` |
+| [VitaPad by carlelieser](https://raw.githubusercontent.com/carlelieser/vitapad/main/README.md) | `vitapad.skprx` |
+| [VitaPresence by Electry](https://raw.githubusercontent.com/Electry/VitaPresence/refs/heads/master/README.md) | `VitaPresence.skprx` |
+| [vitastick by xerpi](https://raw.githubusercontent.com/xerpi/vitastick/master/README.md) | `vitastick.skprx` |
+| [ViXEn by isage](https://raw.githubusercontent.com/isage/vixen/master/README.md) | `vixen.skprx` |
+| [VolLightbarCtrlWithDS4 by CallmeBK](https://raw.githubusercontent.com/CallmeBK/VolLightbarCtrlWithDS4/master/README.md) | `VolLightbarCtrlWithDS4.skprx` |
+| [vshPatch by KuromeSan](https://raw.githubusercontent.com/KuromeSan/vshPatch/master/README.md) | `vshPatch.skprx` |
+| [X1Vita by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/X1Vita/master/README.md) | `X1Vita.skprx` |
+
+### Vita shell plugins
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| [(QuickMenuReborn) by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/QuickMenuReborn/vdsuite/README.md) | `QuickMenuReborn.suprx` |
+| [(QuickMenuReborn) DolceWiFi by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md) | `QuickMenuReborn.suprx`, `DolceWiFi.suprx` |
+| [(QuickMenuReborn) QuickLauncher by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md) | `QuickMenuReborn.suprx`, `QuickLauncher.suprx` |
+| Autoboot by Rinnegatamante (only for 3.60/3.65) | `AutoBoot.suprx` |
+| BootSound by teakhanirons | `bootsound.suprx` |
+| [Custom Warning by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `custom_warning.suprx` |
+| [DolcePolce by Li](https://silica.codes/Li/dolcepolce/raw/branch/master/README.md) | `DolcePolce.suprx` |
+| [Download Enabler by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `download_enabler.suprx` |
+| [dt2s-vita by joel16](https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md) | `dt2s_statusbar.suprx` |
+| Fruitpeel by cuevavirus | `fruitpeel.suprx` |
+| [ftpeverywhere by teakhanirons](https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md) | `ftpeverywhere.suprx` |
+| [LowMemMode by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/LowMemMode/master/README.md) | `LowMemMode.suprx` |
+| [NoLockScreen by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `nolockscreen.suprx` |
+| [NoSharedFb by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/NoSharedFb/master/README.md) | `NoSharedFb.suprx` |
+| [NoTrophyMsg by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `notrophymsg.suprx` |
+| [NoTrpDrm by Rinnegatamante](https://raw.githubusercontent.com/Rinnegatamante/NoTrpDrm/master/README.md) | `NoTrpDrm.suprx` |
+| [PasteUnlock by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/PasteUnlock/main/README.md) | `PasteUnlock.suprx` |
+| [pngshot by xyzz](https://raw.githubusercontent.com/xyzz/pngshot/master/README.md) | `pngshot.suprx` |
+| [psp2wpp by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md) | `psp2wpp.suprx` |
+| [QAscreenshot by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/QAscreenshot/master/README.md) | `QAscreenshot.suprx` |
+| [Quick Menu Plus by GrayJack (Original by cuevavirus)](https://raw.githubusercontent.com/VitaArchive/QuickMenuPlus/refs/heads/main/README.md) | `quickmenuplus.suprx` |
+| [Quietshot by cuevavirus](https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md) | `quietshot.suprx` |
+| [reSkype by Li](https://silica.codes/Li/reskype/raw/branch/master/README.md) | `reSkype.suprx` |
+| [Shellbat by nowrep](https://raw.githubusercontent.com/nowrep/vita-shellbat/master/README.md) | `shellbat.suprx` |
+| [Shellbat Mod by devnoname120](https://raw.githubusercontent.com/nowrep/vita-shellbat/master/README.md) | `shellbat_mod.suprx` |
+| [Shellsecbat by OperationNT414C](https://raw.githubusercontent.com/OperationNT414C/ShellSecBat/master/README.md) | `shellsecbat.suprx` |
+| [TransparentImpose by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md) | `TrImpose.suprx` |
+| [TrophyShot by FMudanyali](https://raw.githubusercontent.com/FMudanyali/TrophyShot/master/README.md) | `TrophyShot.suprx` |
+| [USBDisable by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/USBDisable/master/README.md) | `USBDisable.suprx` |
+| [Vflux by Applelo](https://raw.githubusercontent.com/Applelo/vFlux/master/README.md) | `vflux.suprx` |
+| [Vitacompanion by devnoname120](https://raw.githubusercontent.com/devnoname120/vitacompanion/master/README.md) | `vitacompanion.suprx`, `vitacompanion_kernel.skprx` |
+| [volume_profile by cuevavirus](https://raw.githubusercontent.com/cuevavirus/jav/master/README.md) | `jav.suprx` |
+
+### Vita application and title-specific plugins
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| [Adrenaline usb enabler by isage](https://raw.githubusercontent.com/isage/adrenaline_usb_enabler/master/README.md) | `adrenaline_usb_enabler.suprx` |
+| ARK-4's ef2uma plugin | `ef2uma.suprx` |
+| ARK-4's ef2xmc plugin | `ef2xmc.suprx` |
+| [FreePSM by Li](https://silica.codes/Li/freepsm/raw/branch/master/README.md) | `FreePSM.suprx` |
+| [HonRipper by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/HonRipper/master/README.md) | `HonRipper.suprx` |
+| InfiniteNet by Rinnegatamante | `InfiniteNet.suprx` |
+| [MakePsmGreatAgain by Li](https://silica.codes/Li/makepsmgreatagain/raw/branch/master/README.md) | `MakePsmGreatAgain.suprx` |
+| [PSV-VSH MENU by joel16](https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md) | `vsh.suprx`, `kuio.skprx` |
+| [ReHomeArcade by technicaljicama](https://raw.githubusercontent.com/technicaljicama/ReHomeArcade/refs/heads/main/README.md) | `ReHomeArcade.suprx` |
+| [remaPSV by MERLev](https://raw.githubusercontent.com/MERLev/remaPSV2/master/README.md) | `remaPSV2.suprx`, `ioplus.skprx` |
+| remaPSV by Rinnegatamante | `remaPSV.suprx`, `ioplus.skprx` |
+| reRescaler by Rinnegatamante | `reRescaler.suprx`, `ioplus.skprx` |
+| [reScreeny by dots_tb](https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md) | `reScreeny.suprx` |
+| [ScoreHax by Li](https://raw.githubusercontent.com/KuromeSan/ScoreHax/master/README.md) | `ScoreHax.suprx` |
+| ShowInfo Full by Yoti | `ShowInfo.suprx` |
+| ShowInfo Lite by Yoti | `ShowInfoLite.suprx` |
+| [Sysident by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/sysident/refs/heads/master/README.md) | `sysident.suprx`, `sysident.skprx` |
+| [TropHAX by Li](https://silica.codes/Li/trophax/raw/branch/master/README.md) | `trophax2.0.suprx` |
+| TurboPad Mod by Yoti | `TurboPad.suprx`, `ioplus.skprx` |
+| [VGi by Electry](https://raw.githubusercontent.com/Electry/VGi/master/README.md) | `VGi.suprx` |
+| [vita-macspoofer by Freakler](https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md) | `macspoofer.suprx` |
+| [vita-ps4linkcontrols by nowrep](https://raw.githubusercontent.com/nowrep/vita-ps4linkcontrols/master/README.md) | `ps4linkcontrols.suprx` |
+| [Vita3g-disable by VictorGamer072YT](https://raw.githubusercontent.com/VictorGamer072YT/vita3g-disable/main/README.md) | `vita3g-disable.suprx` |
+| [VitaGrafix by Electry](https://raw.githubusercontent.com/Electry/VitaGrafix/master/README.md) | `VitaGrafix.suprx`, `ioplus.skprx` |
+| [Volume Control Pack by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md) | `ModalVol.suprx` |
+| WDNF by EchoDev & Rinnegatamante | `WDNF.suprx` |
+| WDNR by Rinnegatamante | `WDNR.suprx` |
+
+### Vita plugins installed through dedicated menus
+
+StorageMgr is available through the SD2VITA option; Vita-Nearest-Neighbour through Customize plugins; the game-specific patches and Allefresher through Miscellaneous plugins. These entries are not in the standard Vita plugin-installation list.
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| [Alien Shooter DLC unlocker by isage](https://raw.githubusercontent.com/isage/alienhook/master/README.md) | `alienhook.suprx` |
+| Allefresher plugin by Beyley | `Allefresher_vita.suprx` |
+| Catherine Full Body HD 1280x720 | `catherinefbhd.suprx` |
+| [Gravity Rush 544p by junminlee2004](https://raw.githubusercontent.com/junminlee2004/GR544P/refs/heads/main/README.md) | `GR544P.suprx` |
+| Persona 4 Golden HD 1280x720 | `p4goldenhd_1280x720.suprx` |
+| Persona 4 Golden HD 1920x1080 | `p4goldenhd_1920x1080.suprx` |
+| [StorageMgr by CelesteBlue & Yoti (SD2VITA)](https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md) | `storagemgr.skprx` |
+| [Vita-Nearest-Neighbour by MuxaJlbl4](https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md) | `VitaNearestNeighbour.suprx` |
+
+### PSP / Adrenaline plugins
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| [Allefresher v1.0.0 by Beyley](https://raw.githubusercontent.com/LittleBigRefresh/Allefresher/master/README.md) | `Allefresher.prx` |
+| Camera Patch Lite | `camera_patch_lite.prx` |
+| Category lite | `category_lite.prx` |
+| CXMB | `cxmb.prx` |
+| [GE Patch Plugin v0.2](https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md) | `ge_patch.prx` |
+| GTA Native Resolution Patch v0.3 | `gta_native.prx` |
+| Kingdom Hearts: Birth By Sleep/Final Mix UNDUB | `bbsfmUndub.prx` |
+| Lang Swapper | `LangSwapper.prx` |
+| Leda v1.0.0 by Dark Alex (Update Neur0n) | `leda.prx` |
+| [Npdrm free by qwikrazor87, modified by lusid1 v7.3](https://raw.githubusercontent.com/lusid1/npdrm_free_mod/master/README.md) | `npdrm_free_mod.prx` |
+| [PSP gta trophies by Freakler v.02](https://raw.githubusercontent.com/Freakler/psp-gta_trophies/main/README.md) | `gta_trophies.prx` |
+| [pspdoc v1.0 by qwikrazor87](https://raw.githubusercontent.com/qwikrazor87/pspdoc/master/README.md) | `pspdoc.prx` |
+
+### PSP / Adrenaline Remastered Controls
+
+[RemasteredControls](https://github.com/TheOfficialFloW/RemasteredControls) by TheOfficialFloW.
+
+| Plugin (including catalog credits) | Plugin file(s) |
+| --- | --- |
+| Grand Theft Auto Remastered | `gta_remastered.prx` |
+| Grand Theft Auto Remastered V2 | `gta_remastered_v2.prx` |
+| Kingdom Hearts Remastered | `khbbs_remastered.prx` |
+| Metal Gear Solid Remastered | `mgs_remastered.prx` |
+| Prince Of Persia Remastered | `pop_remastered.prx` |
+| Resistance Remastered | `resistance_remastered.prx` |
+| SplinterCell Remastered | `splintercell_remastered.prx` |
+| Tomb Raider Remastered | `tombraider_remastered.prx` |
+| Tony Hawk Remastered | `tonyhawk_remastered.prx` |
+| Warriors Remastered | `warriors_remastered.prx` |
 
 # Optional settings
 - Update plugins Online
