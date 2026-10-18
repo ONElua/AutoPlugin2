@@ -521,6 +521,7 @@ ENGLISH_US["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen backg
 ENGLISH_US["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
 ENGLISH_US["INSTALLP_DESC_QUICKMENUREBORN"] =           "Library for developers to easily add their own widgets, to the vita's Quick Menu."
 ENGLISH_US["INSTALLP_DESC_DOLCEWIFI"] =                 "Plugin to add an enable / disable toggle for WiFi in the quick menu on PSTV (dolce) systems. Made using QuickMenuReborn."
+ENGLISH_US["INSTALLP_DESC_VITAQMBLUETOOTH"] =           "Reconnect Bluetooth devices from the Quick Menu without opening Settings. Requires QuickMenuReborn (kernel + widget)."
 ENGLISH_US["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
@@ -543,7 +544,8 @@ ENGLISH_US["INSTALLP_DESC_TURBOPAD"] =                  "This plugin allows you 
 ENGLISH_US["INSTALLP_DESC_RESCALER"] =                  "This plugin replaces the original rescaler for PSVITA with a new one allowing games running at non-native resolution to get graphics improvements thanks to filtering with shaders. (Hold START 2secs Locks/Unlocks mode/bilinear mode changing, Hold L 4secs Changes current rescaling mode, Hold R 4secs Enables/Disables bilinear filtering)"
 ENGLISH_US["INSTALLP_DESC_INFINITENET"] =               "taiHEN plugin that prevents games from disabling net features"
 ENGLISH_US["INSTALLP_DESC_FREEPSM"] =                   "Enables Debug PSM InAppPurchases in retail PSM Runtime"
-ENGLISH_US["INSTALLP_DESC_MAKEPSM"] =                   "Modifications to the PSM Developer applications"
+ENGLISH_US["INSTALLP_DESC_MAKEPSM"] =                   "Modifications to the PSM Developer applications (restorepsmdev by Li)"
+ENGLISH_US["INSTALLP_DESC_LIVESKY"] =                   "Redirects LiveTweet api.twitter.com requests to a BlueSky bridge (tested with LiveTweet USA PCSA00045). Note: uses plaintext HTTP."
 ENGLISH_US["INSTALLP_DESC_WDNR"] =                      "Rear touchpad disabler for PSVITA."
 ENGLISH_US["INSTALLP_DESC_WDNF"] =                      "Disable front touchscreen."
 ENGLISH_US["INSTALLP_DESC_REMAPSV"] =                   "remaPSV is a remap plugin allowing you to remap every single button of your PSVita and to map touch and reartouch zones to extra buttons (START + SQUARE)"

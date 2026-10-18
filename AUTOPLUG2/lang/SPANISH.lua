@@ -521,6 +521,7 @@ SPANISH["INSTALLP_DESC_FRUITPEEL"] =                    "Cambia el wallpaper de 
 SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "Plugin para añadir botones que permiten abrir aplicaciones en Quick Menu (menú que sale al mantener presionado el botón PS). Hecho usandoQuickMenuReborn."
 SPANISH["INSTALLP_DESC_QUICKMENUREBORN"] =              "Libreria para desarrolladores que permite añadir tus propios widgets (funciones) al Quick Menu (menú que sale al mantener presionado el botón PS) de PS Vita"
 SPANISH["INSTALLP_DESC_DOLCEWIFI"] =                    "Plugin que añade un switch para habilitar/deshabilitar la conexión WiFi en el Quick Menu en los sistemas PS TV (dolce). Hecho usando QuickMenuReborn"
+SPANISH["INSTALLP_DESC_VITAQMBLUETOOTH"] =              "Reconecta dispositivos Bluetooth desde el Quick Menu sin abrir Ajustes. Requiere QuickMenuReborn (kernel + widget)."
 SPANISH["INSTALLP_DESC_WAVE"] =                         "Un Plugin para añadir waves(olas) al fondo de pantalla de PS Vita. Necesita ser instalado permanentemente si no se posee Enso"
 
 --ALL
@@ -543,7 +544,8 @@ SPANISH["INSTALLP_DESC_TURBOPAD"] =                     "Este Plugin te permite 
 SPANISH["INSTALLP_DESC_RESCALER"] =                     "Este Plugin remplaza el rescaler original de PS Vita con uno nuevo, permitiendo a los juegos correr a resoluciones no-nativas para tener mejoras gráficas gracias al filtrado con shaders (Mantener START 2 segundos Bloquea/Desbloquea cambiar de Modo/Modo Bilinear , Manterner L 4 segundos Cambia el actual modo de reescalado, Mantener R 4 segundos Habilita/Desactiva filtrado bilinear)"
 SPANISH["INSTALLP_DESC_INFINITENET"] =                  "Plugin de taiHEN que evita que los juegos deshabiliten las funciones de red"
 SPANISH["INSTALLP_DESC_FREEPSM"] =                      "Habilita InAppPurchases (compras en la app) de Debug PSM en la ejecución de PSM comercial. Basicamente permite desbloquear de manera offline y gratis las compras en app de PSM"
-SPANISH["INSTALLP_DESC_MAKEPSM"] =                      "Modificaciones a las aplicaciones de desarrollo de PSM"
+SPANISH["INSTALLP_DESC_MAKEPSM"] =                      "Modificaciones a las aplicaciones de desarrollo de PSM (restorepsmdev by Li)"
+SPANISH["INSTALLP_DESC_LIVESKY"] =                      "Redirige las peticiones api.twitter.com de LiveTweet a un puente de BlueSky (probado con LiveTweet USA PCSA00045). Nota: usa HTTP sin cifrado."
 SPANISH["INSTALLP_DESC_WDNR"] =                         "Desactivador del táctil trasero para PS Vita"
 SPANISH["INSTALLP_DESC_WDNF"] =                         "Desactivador de la pantalla táctil (pantalla delantera)"
 SPANISH["INSTALLP_DESC_REMAPSV"] =                      "remaPSV es un Plugin de remapeo que te permite reasignar cada botón de la PS Vita, además de las zonas de la  pantalla y el táctil trasero  para botones extras (START + CUADRADO)"

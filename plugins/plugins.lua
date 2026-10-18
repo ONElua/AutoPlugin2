@@ -89,8 +89,8 @@ Online_Plugins = {
   crc = 0x0730024b, v = "v.2.0", version = "0001",  link = "https://raw.githubusercontent.com/GrapheneCt/Affinity-Changer/master/README.md", },
 { name = "X1Vita by Ibrahim778", id = "X1VITA.png", path = "X1Vita.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_X1VITA"], KEY = "INSTALLP_DESC_X1VITA",
   crc = 0x39c66c44, v = "v3.3", version = "0002", link = "https://raw.githubusercontent.com/Ibrahim778/X1Vita/master/README.md" },
-{ name = "vshPatch by KuromeSan", id = "VSHPATCH.png", path = "vshPatch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VSHPATCH"], KEY = "INSTALLP_DESC_VSHPATCH",
-  crc = 0x9f618618, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/KuromeSan/vshPatch/master/README.md", },
+{ name = "vshPatch by Li", id = "VSHPATCH.png", path = "vshPatch.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VSHPATCH"], KEY = "INSTALLP_DESC_VSHPATCH",
+  crc = 0x9f618618, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/LiEnby/vshPatch/master/README.md", },
 { name = "PocketStationUnlocker by Li", id = "POCKETSTATION.png", path = "pocketstationunlocker.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_POCKETSTATION"], KEY = "INSTALLP_DESC_POCKETSTATION",
   crc  = 0xbd24efcd, v = "v1.1", version = "0003", link = "https://raw.githubusercontent.com/psv-plugins-archive/PocketstationUnlocker/refs/heads/master/README.md", },
 { name = "EmergencyMount by teakhanirons", id = "EMERGENCYMOUNT.png", path = "EmergencyMount.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_EMERGENCYMOUNT"], KEY = "INSTALLP_DESC_EMERGENCYMOUNT",
@@ -241,7 +241,9 @@ Online_Plugins = {
 { name = "(QuickMenuReborn) QuickLauncher by Ibrahim778", id = "QUICKLAUNCHER.png", path = "QuickMenuReborn.suprx", section = "main", config = "QuickLauncher.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_QUICKLAUNCHER"], KEY = "INSTALLP_DESC_QUICKLAUNCHER",
   crc = 0xfa9d8919, v = "v1.3", crc2 = 0x2dfd5aa3, version = "0002", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
 { name = "(QuickMenuReborn) DolceWiFi by Ibrahim778", hw = "PlayStation TV", id = "DOLCEWIFI.png", path = "QuickMenuReborn.suprx", section = "main", config = "DolceWiFi.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_DOLCEWIFI"], KEY = "INSTALLP_DESC_DOLCEWIFI",
-  crc = 0xfa9d8919, v = "v1.3", crc2 = 0x19c6d124, version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md", },  
+  crc = 0xfa9d8919, v = "v1.3", crc2 = 0x19c6d124, version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md", },
+{ name = "(QuickMenuReborn) vitaQmBluetooth by Robpol86", id = "VITAQMBLUETOOTH.png", path = "QuickMenuReborn.suprx", section = "main", path2 = "vitaQmBluetooth.skprx", section2 = "KERNEL", config = "vitaQmBluetooth.suprx", configpath = "ur0:QuickMenuReborn/", desc = LANGUAGE["INSTALLP_DESC_VITAQMBLUETOOTH"], KEY = "INSTALLP_DESC_VITAQMBLUETOOTH",
+  crc = 0xfa9d8919, v = "v1.0.0", crc2 = 0x576721c5, version = "0001", dl = "qmr_plugin.rco", link = "https://raw.githubusercontent.com/Robpol86/vitaQmBluetooth/master/README.md", },
 { name = "psp2wpp by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", config2 = "0.txt", configpath = "ux0:data/", configpath2 = "ux0:data/waveparams/", desc = LANGUAGE["INSTALLP_DESC_WAVE"], KEY = "INSTALLP_DESC_WAVE",
   crc = 0x42685a0c, v = "v1.1.4", version = "0003", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
 
@@ -288,8 +290,8 @@ Online_Plugins = {
 --2 prxs
 { name = "Vitacompanion by devnoname120", id = "VITACOMPANION.png", path = "vitacompanion.suprx", section = "main", path2 = "vitacompanion_kernel.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITACOMPA"], KEY = "INSTALLP_DESC_VITACOMPA",
   crc = 0x6cdc96b1, v = "v1.06", crc2 = 0x58d0e4ca, version = "0002", link = "https://raw.githubusercontent.com/devnoname120/vitacompanion/master/README.md", },
-{ name = "MakePsmGreatAgain by Li", id = "MAKEPSM.png", path = "MakePsmGreatAgain.suprx", section = "PCSI00007", path2 = "MakePsmGreatAgain.suprx", section2 = "PCSI00009", desc = LANGUAGE["INSTALLP_DESC_MAKEPSM"], KEY = "INSTALLP_DESC_MAKEPSM",
-  crc = 0xe6a1ad4b, v = "v1.6", version = "0005", link = "https://silica.codes/Li/makepsmgreatagain/raw/branch/master/README.md", },
+{ name = "restorepsmdev by Li", id = "MAKEPSM.png", path = "restorepsmdev.suprx", section = "PCSI00007", path2 = "restorepsmdev.suprx", section2 = "PCSI00009", desc = LANGUAGE["INSTALLP_DESC_MAKEPSM"], KEY = "INSTALLP_DESC_MAKEPSM",
+  crc = 0xf8e5d2f9, v = "v1.06", version = "0006", link = "https://silica.codes/Li/restorepsmdev/raw/branch/main/README.md", },
 { name = "PSV-VSH MENU by joel16", id = "VSHMENU.png", path = "vsh.suprx", section = "ALL", path2 = "kuio.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VSHMENU"], KEY = "INSTALLP_DESC_VSHMENU",
   crc = 0x20db832d, v = "v3.4", crc2 = 0xd26b25f8, version = "0002", link = "https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md", },-- Need kuio.skprx
 { name = "VitaGrafix by Electry", id = "VITAGRAFIX.png", path = "VitaGrafix.suprx", section = "ALL", path2 = "ioplus.skprx", section2 = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_VITAGRAFIX"], KEY = "INSTALLP_DESC_VITAGRAFIX",
@@ -332,6 +334,9 @@ Online_Plugins = {
   crc = 0x2cb0f15f, v = "v1.2", version = "0001", link = "https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md", },
 --NPXS10010
 --{ name = "DePlayEnabler by alpakeno v1.0", id = "DEPLAYENABLER.png",  path = "deplayenabler.suprx", section = "NPXS10010", config = "deplayenabler.txt", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DEPLAYENABLER"], KEY = "INSTALLP_DESC_DEPLAYENABLER", link = "https://raw.githubusercontent.com/alpakeno/DePlayEnabler/master/README.md", },
+--PCSA00045
+{ name = "LiveSky by Li", id = "LIVESKY.png", path = "LiveSky.suprx", section = "PCSA00045", desc = LANGUAGE["INSTALLP_DESC_LIVESKY"], KEY = "INSTALLP_DESC_LIVESKY",
+  crc = 0xAD60494D, v = "v0.2", version = "0001", link = "https://silica.codes/Li/LiveSky/raw/branch/main/README.md", },
 
 { name = "Allefresher plugin by Beyley", id = "LBP.png", path = "Allefresher_vita.suprx", desc = LANGUAGE["LBP_ALLEFRESHER_DESC"], KEY = "LBP_ALLEFRESHER_DESC", REMOVE = true,
   crc = 0xa53809f3, v = "v1.0.1", version = "0002", },
@@ -353,6 +358,5 @@ Online_Plugins = {
 
 { name = "ReHomeArcade by technicaljicama", id = "REHOMEARCADE.png", path = "ReHomeArcade.suprx", section = "PCSF00228", desc = LANGUAGE["INSTALLP_DESC_REHOMEARCADE"], KEY = "INSTALLP_DESC_REHOMEARCADE",
   crc = 0x7EB3109C, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/technicaljicama/ReHomeArcade/refs/heads/main/README.md", },
-
 
 }
