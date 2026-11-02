@@ -503,7 +503,6 @@ CHINESE_S["INSTALLP_DESC_RESKYPE"] =                   "只需一个简单的插
 CHINESE_S["INSTALLP_DESC_AUTOBOOT"] =                  "此插件令 ENSO 设备开机后自动运行应用程序.就像 AutoStart 在 PSP 上做的那样"
 CHINESE_S["INSTALLP_DESC_VITACOMPA"] =                 "此插件使 PSVita 自制软件和插件开发过程更轻松"
 CHINESE_S["INSTALLP_DESC_WIFITURBO"] =                  "更快、响应更灵敏且能自动重连的 Wi-Fi：40 MHz、电源配置、保持 Wi-Fi 开启、Mesh 漫游和实时 HUD。设置 > 网络 > Wi-Fi Turbo。"
-CHINESE_S["INSTALLP_DESC_TURBOSTORAGE"] =               "使用系统自带驱动加速 SD2Vita、Vita 记忆卡和内置存储。设置 > 系统 > Turbo Storage。"
 CHINESE_S["INSTALLP_DESC_VOLUPROF"] =                  "在您首选的扬声器和耳机音量之间自动切换."
 CHINESE_S["INSTALLP_DESC_DOLCEPOLCE"] =                "移除 PSTV 黑名单验证 (VITA/PSP/PS1/PSM)"
 CHINESE_S["INSTALLP_DESC_LOWMEMMODE"] =                "启动系统程序的同时保持后台运行大内存占用游戏"

@@ -503,7 +503,6 @@ GERMAN["INSTALLP_DESC_RESKYPE"] =                   "Ein simples Plugin, dass Sk
 GERMAN["INSTALLP_DESC_AUTOBOOT"] =                  "Dieses Plugin startet eine Anwendung nach dem start von Enso, wie bei AutoStart für PSP"
 GERMAN["INSTALLP_DESC_VITACOMPA"] =                 "Ein Plugin, dass die Entwicklung von Homebrews und Plugins auf der PS Vita erleichtert."
 GERMAN["INSTALLP_DESC_WIFITURBO"] =                     "Schnelleres, reaktionsfreudigeres WLAN, das sich selbst neu verbindet: 40 MHz, Energieprofile, WLAN dauerhaft an, Mesh-Roaming und Live-HUD. Einstellungen > Netzwerk > Wi-Fi Turbo."
-GERMAN["INSTALLP_DESC_TURBOSTORAGE"] =                  "Schnellere SD2Vita, Vita-Speicherkarte und interner Speicher, mit den systemeigenen Treibern. Einstellungen > System > Turbo Storage."
 GERMAN["INSTALLP_DESC_VOLUPROF"] =                  "Automatisch zwischen Lautsprecher und Kopfhörer Lautstärke wechseln"
 GERMAN["INSTALLP_DESC_DOLCEPOLCE"] =                "Entfernt PSTV Blacklist Prüfungen (VITA/PSP/PS1/PSM)"
 GERMAN["INSTALLP_DESC_LOWMEMMODE"] =                "Startet System Anwendungen, während ein Spiel mit großem Speicher im Hintergrund läuft."

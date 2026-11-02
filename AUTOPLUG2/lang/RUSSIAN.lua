@@ -503,7 +503,6 @@ RUSSIAN["INSTALLP_DESC_RESKYPE"] =                   "Даёт возможно�
 RUSSIAN["INSTALLP_DESC_AUTOBOOT"] =                  "Плагин автоматически запускает выбранное приложение после загрузки системы (необходим enso)"
 RUSSIAN["INSTALLP_DESC_VITACOMPA"] =                 "Плагин упрощает разработку приложений и плагинов для PS Vita"
 RUSSIAN["INSTALLP_DESC_WIFITURBO"] =                    "Более быстрый и отзывчивый Wi-Fi с автоподключением: 40 МГц, профили питания, постоянный Wi-Fi, mesh-роуминг и HUD. Настройки > Сеть > Wi-Fi Turbo."
-RUSSIAN["INSTALLP_DESC_TURBOSTORAGE"] =                 "Ускоряет SD2Vita, карту памяти Vita и встроенную память с помощью штатных драйверов системы. Настройки > Система > Turbo Storage."
 RUSSIAN["INSTALLP_DESC_VOLUPROF"] =                  "Автоматическая смена громкости при подключении или отключении наушников"
 RUSSIAN["INSTALLP_DESC_DOLCEPOLCE"] =                "Убирает ограничения на запуск VITA/PSP/PS1/PSM игр на PSTV"
 RUSSIAN["INSTALLP_DESC_LOWMEMMODE"] =                "Позволяет запускать системные приложения одновременно с играми"

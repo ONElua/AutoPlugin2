@@ -503,7 +503,6 @@ JAPANESE["INSTALLP_DESC_RESKYPE"] =                     "3.65以降でSkypeア�
 JAPANESE["INSTALLP_DESC_AUTOBOOT"] =                    "このプラグインを使用すると、PSPでAutoStartを使用していたのと同様に、Ensoの起動後にアプリケーションを自動的に起動できます"
 JAPANESE["INSTALLP_DESC_VITACOMPA"] =                   "Vitaでの自作ソフトとプラグイン開発を容易にするプラグイン"
 JAPANESE["INSTALLP_DESC_WIFITURBO"] =                   "より速く応答の良いWi-Fi、自動再接続、40MHz、電力プロファイル、Wi-Fi常時オン、メッシュローミング、ライブHUD。設定 > ネットワーク > Wi-Fi Turbo。"
-JAPANESE["INSTALLP_DESC_TURBOSTORAGE"] =                "システム標準のドライバーでSD2Vita、Vitaメモリーカード、本体ストレージを高速化。設定 > システム > Turbo Storage。"
 JAPANESE["INSTALLP_DESC_VOLUPROF"] =                    "お好みのスピーカーとヘッドフォンの音量を自動的に切り替えます"
 JAPANESE["INSTALLP_DESC_DOLCEPOLCE"] =                  "VitaTVブラックリストチェック（VITA/PSP/PS1/PSM）を削除します"
 JAPANESE["INSTALLP_DESC_LOWMEMMODE"] =                  "バックグラウンドでメモリを拡張してシステムアプリケーションを起動します。"

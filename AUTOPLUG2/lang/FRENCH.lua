@@ -503,7 +503,6 @@ FRENCH["INSTALLP_DESC_RESKYPE"] =                   "Un simple plugin pour réac
 FRENCH["INSTALLP_DESC_AUTOBOOT"] =                  "Ce plugin permet simplement de lancer automatiquement une application juste après le démarrage de Enso comme AutoStart le faisait sur PSP"
 FRENCH["INSTALLP_DESC_VITACOMPA"] =                 "Plugin qui facilite le développement de homebrews et de plugins sur la PS Vita"
 FRENCH["INSTALLP_DESC_WIFITURBO"] =                     "Un Wi-Fi plus rapide et plus réactif qui se reconnecte tout seul : 40 MHz, profils d'alimentation, Wi-Fi toujours actif, itinérance mesh et HUD en direct. Paramètres > Réseau > Wi-Fi Turbo."
-FRENCH["INSTALLP_DESC_TURBOSTORAGE"] =                  "SD2Vita, carte mémoire Vita et stockage interne plus rapides, avec les pilotes du système. Paramètres > Système > Turbo Storage."
 FRENCH["INSTALLP_DESC_VOLUPROF"] =                  "Basculez automatiquement entre le volume de votre haut-parleur préféré et celui des écouteurs."
 FRENCH["INSTALLP_DESC_DOLCEPOLCE"] =                "Supprime la vérification de la liste noire des jeux sur une PSTV (VITA/PSP/PS1/PSM)"
 FRENCH["INSTALLP_DESC_LOWMEMMODE"] =                "Lancer des applications système en arrière-plan avec un jeu en cours (élargi la mémoire)"

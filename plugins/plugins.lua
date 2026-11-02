@@ -177,8 +177,6 @@ Online_Plugins = {
 
 
 --2 prxs + Settings page (path2 also loaded in section3)
-{ name = "vita-turbo-storage by juanjsebgarcia", id = "TURBOSTORAGE.png", path = "storageturbo_kernel.skprx", section = "KERNEL", path2 = "storageturbo.suprx", section2 = "main", section3 = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_TURBOSTORAGE"], KEY = "INSTALLP_DESC_TURBOSTORAGE",
-  crc = 0x669b6f9d, v = "v0.3.0", crc2 = 0x31b23a9b, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-storage/main/README.md", },
 { name = "vita-turbo-wifi by juanjsebgarcia", id = "WIFITURBO.png", path = "wifiturbo_kernel.skprx", section = "KERNEL", path2 = "wifiturbo.suprx", section2 = "main", section3 = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_WIFITURBO"], KEY = "INSTALLP_DESC_WIFITURBO",
   crc = 0xf4ce89bd, v = "v0.6.1", crc2 = 0xb7e81eeb, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md", },
 

@@ -503,7 +503,6 @@ POLISH["INSTALLP_DESC_RESKYPE"] =                   "Odblokowuje aplikację Skyp
 POLISH["INSTALLP_DESC_AUTOBOOT"] =                  "Automatycznie uruchamia wybraną aplikację zaraz po starcie z Enso, jak AutoStart na PSP"
 POLISH["INSTALLP_DESC_VITACOMPA"] =                 "Ułatwia tworzenie homebrew i pluginów na PS Vita"
 POLISH["INSTALLP_DESC_WIFITURBO"] =                     "Szybsze, bardziej responsywne Wi-Fi, które samo się łączy: 40 MHz, profile zasilania, stałe Wi-Fi, roaming mesh i HUD na żywo. Ustawienia > Sieć > Wi-Fi Turbo."
-POLISH["INSTALLP_DESC_TURBOSTORAGE"] =                  "Szybsze SD2Vita, karta pamięci Vita i pamięć wewnętrzna, przy użyciu sterowników systemu. Ustawienia > System > Turbo Storage."
 POLISH["INSTALLP_DESC_VOLUPROF"] =                  "Automatycznie przełącza głośność między głośnikami a słuchawkami"
 POLISH["INSTALLP_DESC_DOLCEPOLCE"] =                "Usuwa czarną listę na PSTV (VITA/PSP/PS1/PSM)"
 POLISH["INSTALLP_DESC_LOWMEMMODE"] =                "Uruchamia systemowe aplikacje z większą pamięcią w tle"

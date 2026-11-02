@@ -503,7 +503,6 @@ KOREAN["INSTALLP_DESC_RESKYPE"] =                   "3.65 이상에서 스카이
 KOREAN["INSTALLP_DESC_AUTOBOOT"] =                  "이 플러그인은 자동시작이 PSP에서 하던 것과 같이 enso 시작 직후에 응용 프로그램을 자동 실행하기만 하면 됨"
 KOREAN["INSTALLP_DESC_VITACOMPA"] =                 "PS Vita에서 홈브류 및 플러그인 개발을 용이하게 하는 플러그인"
 KOREAN["INSTALLP_DESC_WIFITURBO"] =                     "더 빠르고 반응이 좋은 Wi-Fi, 자동 재연결, 40MHz, 전원 프로필, Wi-Fi 항상 켜기, 메시 로밍, 실시간 HUD. 설정 > 네트워크 > Wi-Fi Turbo."
-KOREAN["INSTALLP_DESC_TURBOSTORAGE"] =                  "시스템 기본 드라이버로 SD2Vita, Vita 메모리 카드, 내장 저장소를 빠르게 합니다. 설정 > 시스템 > Turbo Storage."
 KOREAN["INSTALLP_DESC_VOLUPROF"] =                  "선호하는 스피커와 헤드폰 볼륨 사이를 자동으로 전환합니다."
 KOREAN["INSTALLP_DESC_DOLCEPOLCE"] =                "PSTV 블랙리스트 검사 제거(Vita/PSP/PS1/PSM))"
 KOREAN["INSTALLP_DESC_LOWMEMMODE"] =                "백그라운드에서 확장된 메모리 게임으로 시스템 응용 프로그램 실행"

@@ -76,7 +76,6 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [usbmc Mod by DevDavisNunez](https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md) | `usbmcm.skprx` |
 | [VideoDebug by Li](https://silica.codes/Li/videodebug/raw/branch/master/README.md) | `videoDebug.skprx` |
 | [viimote by xerpi](https://raw.githubusercontent.com/xerpi/viimote/master/README.md) | `viimote.skprx` |
-| [vita-turbo-storage by juanjsebgarcia](https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-storage/main/README.md) | `storageturbo_kernel.skprx`, `storageturbo.suprx` |
 | [vita-turbo-wifi by juanjsebgarcia](https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md) | `wifiturbo_kernel.skprx`, `wifiturbo.suprx` |
 | [Vitabright by devnoname120](https://raw.githubusercontent.com/devnoname120/vitabright/master/README.md) | `vitabright.skprx` |
 | [VitaBtFix by gabew100](https://raw.githubusercontent.com/gabew100/VitaBtFix/refs/heads/main/README.md) | `vitabtfix.skprx` |
