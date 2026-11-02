@@ -177,8 +177,8 @@ Online_Plugins = {
 
 
 --2 prxs + Settings page (path2 also loaded in section3)
-{ name = "vita-turbo-wifi by juanjsebgarcia", id = "WIFITURBO.png", path = "wifiturbo_kernel.skprx", section = "KERNEL", path2 = "wifiturbo.suprx", section2 = "main", section3 = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_WIFITURBO"], KEY = "INSTALLP_DESC_WIFITURBO",
-  crc = 0xc5bc5b59, v = "v0.6.2", crc2 = 0x15b46466, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md", },
+{ name = "vita-turbo-wifi by juanjsebgarcia", id = "WIFITURBO.png", path = "wifiturbo_kernel.skprx", section = "KERNEL", path2 = "wifiturbo.suprx", section2 = "main", section3 = "NPXS10015", config = "wifiturbo_settings.suprx", desc = LANGUAGE["INSTALLP_DESC_WIFITURBO"], KEY = "INSTALLP_DESC_WIFITURBO",
+  crc = 0xebdbe1b1, v = "v0.7.0", crc2 = 0xffdab0b4, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md", },
 
 --Main [SECTION]
 { name = "NoTrpDrm by Rinnegatamante", id = "NOTRPDRM.png", path = "NoTrpDrm.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_NOTRPDRM"], KEY = "INSTALLP_DESC_NOTRPDRM",
