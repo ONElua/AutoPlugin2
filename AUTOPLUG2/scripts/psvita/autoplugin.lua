@@ -100,10 +100,14 @@ function plugins_installation(obj)
 		--NopspemuDrm
 		elseif obj.path == "NoPspEmuDrm_kern.skprx" then
 			tai.del("KERNEL","NoPspEmuDrm_kern_mod.skprx")
-			tai.del("ALL","mod_NoPspEmuDrm_user_mod.suprx")
+			tai.del("ALL","NoPspEmuDrm_user_mod.suprx")
 		elseif obj.path == "NoPspEmuDrm_kern_mod.skprx" then
 			tai.del("KERNEL","NoPspEmuDrm_kern.skprx")
 			tai.del("ALL","NoPspEmuDrm_user.suprx")
+		--restorepsmdev (replaces MakePsmGreatAgain)
+		elseif obj.path == "restorepsmdev.suprx" then
+			tai.del("PCSI00007","MakePsmGreatAgain.suprx")
+			tai.del("PCSI00009","MakePsmGreatAgain.suprx")
 		--Psvshell
 		elseif obj.path == "PSVshell.skprx" then
 			tai.del("KERNEL", "PSVshell_mod.skprx")
@@ -276,6 +280,16 @@ function plugins_installation(obj)
 		--Copy Extra Plugin (section2 & Path2)
 		if obj.path2 then files.copy(path_plugins..obj.path2, path_tai) end
 		if obj.section2 then tai.put(obj.section2, path_tai..obj.path2)	end
+		--path3 also loaded in a third section (section3), e.g. a plugin's Settings page in NPXS10015
+		if obj.path3 then files.copy(path_plugins..obj.path3, path_tai) end
+		if obj.section3 then
+			if obj.path3 then
+				tai.put(obj.section3, path_tai..obj.path3)
+			elseif obj.path2 then
+				-- section3 reuses path2 (e.g. turbo storage)
+				tai.put(obj.section3, path_tai..obj.path2)
+			end
+		end
 
 		--Extra
 		if obj.path == "vsh.suprx" then files.delete("ur0:/data:/vsh/")
@@ -466,12 +480,18 @@ function autoplugin()
 				screen.print(950, 457, tb_cop[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
 			end
 			if tb_cop[scr.sel].section2 then
-				screen.print(950, 482, tb_cop[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
+				local sections2 = tb_cop[scr.sel].section2
+				if tb_cop[scr.sel].section3 then
+					screen.print(950, 482, sections2.." + "..tb_cop[scr.sel].section3,1,color.yellow, 0x0,__ARIGHT)
+				else
+					screen.print(950, 482, sections2,1,color.yellow, 0x0,__ARIGHT)
+				end
 			end
-			if tb_cop[scr.sel].path2 then
+			if tb_cop[scr.sel].path3 then
+				screen.print(950, 502, tb_cop[scr.sel].path2.. " + "..tb_cop[scr.sel].path3,1,color.yellow, 0x0,__ARIGHT)
+			elseif tb_cop[scr.sel].path2 then
 				screen.print(950, 502, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
 			end
-
 		end
 
 		-- Search hint

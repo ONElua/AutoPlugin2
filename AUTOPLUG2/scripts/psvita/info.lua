@@ -10,6 +10,33 @@
 ]]
 
 
+-- Clean GitHub Markdown before displaying README in ONElua os.dialog.
+-- Display-only transformation: obj.readme retains the original text.
+local function clean_markdown(text)
+    if type(text) ~= "string" then return "" end
+    text = text:gsub("\r\n", "\n"):gsub("\r", "\n")
+    local lines = {}
+    local in_fence = false
+    for line in (text .. "\n"):gmatch("(.-)\n") do
+        if line:match("^%s*```") or line:match("^%s*~~~") then
+            in_fence = not in_fence
+        elseif not in_fence then
+            line = line:gsub("!%[([^%]]*)%]%([^)]*%)", "[%1]")
+            line = line:gsub("%[([^%]]+)%]%([^)]*%)", "%1")
+            line = line:gsub("^%s*#+%s*", "")
+            line = line:gsub("^%s*>%s?", "")
+            line = line:gsub("^%s*[%*%-%+]%s+", "- ")
+            line = line:gsub("%*%*(.-)%*%*", "%1")
+            line = line:gsub("__(.-)__", "%1")
+            line = line:gsub("%*(.-)%*", "%1")
+            line = line:gsub("`([^`]+)`", "%1")
+            line = line:gsub("<[^>]+>", "")
+            lines[#lines + 1] = line
+        end
+    end
+    return table.concat(lines, "\n")
+end
+
 function plugin_info(obj)
 
 	local onNetGetFileOld = onNetGetFile
@@ -45,8 +72,7 @@ function plugin_info(obj)
 		if not obj.readme then obj.status = false else obj.status = true end
 	end
 
-	os.dialog(obj.readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], obj.name.."\n")
-
+	-- README now shown on Triangle press (not automatic)
 	onNetGetFile = onNetGetFileOld
 
 	local crc1,crc2,crc3,installed_prx = nil,nil,nil,false
@@ -54,6 +80,9 @@ function plugin_info(obj)
 	if obj.crc2 and obj.path2 and obj.path != "sysident.suprx" then
 		crc2 = files.crc32(path_tai..obj.path2) or nil
 	end--files.exists(path_tai..obj.path2)
+	if obj.crc3 and obj.path3 then
+		crc3= files.crc32(path_tai..obj.path3) or nil
+	end
 
 --[[
 	--PLugins que se pueden modificar sus valores,texto o imagen
@@ -114,6 +143,7 @@ function plugin_info(obj)
 
 	--tai config
 	if obj.section2 then obj.idx = tai.find(obj.section2,obj.path2) end
+	if obj.section3 and obj.path3 then obj.idx3 = tai.find(obj.section3,obj.path3) end
 	if obj.idx != nil then
 		--if files.exists(tai.gameid[ obj.section2 ].prx[obj.idx].path) then	end
 	end
@@ -223,15 +253,24 @@ function plugin_info(obj)
 				screen.print(15, y, obj.path2,1,color.yellow,0x0,__ALEFT)
 			end
 		end
+		if obj.path3 and obj.section3 then
+			y+=20
+			screen.print(15, y, "[ "..obj.section3.." ]",1,color.white,0x0,__ALEFT)
+			y+=20
+			if obj.idx3 then
+				screen.print(15, y, obj.path3,1,color.green,0x0,__ALEFT)
+			else
+				screen.print(15, y, obj.path3,1,color.yellow,0x0,__ALEFT)
+			end
+		end
 
 		--CRC
-		if obj.path != "adrenaline_kernel.skprx" then
-			if obj.path2 then
-				if crc3 then print_crc(y,obj.crc2,crc3,obj.path3)
-					elseif crc2 then print_crc(y,obj.crc2,crc2,obj.path2)
-						else print_crc(y,obj.crc2,crc2,obj.path2) end
-			elseif obj.path3 then
-				if crc3 then print_crc(y,obj.crc2,crc3,obj.path3) end
+		-- Skip Checking CRC for plugins with 3 paths/sections/CRCs (e.g. vita-turbo-wifi)
+		if not (obj.path3 and obj.section3 and obj.crc3) then
+			if obj.path != "adrenaline_kernel.skprx" then
+				if obj.path2 and crc2 then
+					print_crc(y,obj.crc2,crc2,obj.path2)
+				end
 			end
 		end
 	end
@@ -283,6 +322,10 @@ function plugin_info(obj)
 		if buttonskey3 then buttonskey3:blitsprite(920,518,1) end
 		screen.print(915,518,LANGUAGE["STRING_CLOSE"],1,color.white,color.blue, __ARIGHT)
 
+		-- Triangle: show README
+		screen.print(915,493,LANGUAGE["MENU_INFO_README"] or "Show README",1,color.white,color.blue,__ARIGHT)
+		if buttonskey then buttonskey:blitsprite(930,490,__TRIANGLE) end
+
 		screen.flip()
 
 		--Controls
@@ -320,7 +363,10 @@ function plugin_info(obj)
 			break
 		end
 
-		--if buttons.triangle and flag then customize() end
+		-- Triangle: show README
+		if buttons.triangle then
+			os.dialog(clean_markdown(obj.readme or LANGUAGE["PLUGINS_NO_README_ONLINE"]), obj.name.."\n")
+		end
 
 		vol_mp3()
 

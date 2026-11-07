@@ -70,7 +70,7 @@ function autoboot()
 		--end
 
 		--Current
-		screen.print(13,475,"Current: "..current,1,color.green, 0x0, __ALEFT)
+		screen.print(13,475,LANGUAGE["AUTOBOOT_CURRENT"].." "..current,1,color.green, 0x0, __ALEFT)
 
 		if buttonskey then buttonskey:blitsprite(10,523,scancel) end
 		screen.print(45,525,LANGUAGE["STRING_BACK"],1,color.white,color.black, __ALEFT)

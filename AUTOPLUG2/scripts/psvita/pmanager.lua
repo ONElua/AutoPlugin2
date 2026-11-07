@@ -72,10 +72,14 @@ function pluginsmanager()
 			--print(string.format("A [%s]: %s|%d", plugs[sections[y]][x].file, sections[y], x))
 			for k=1, #tb_cop do
 				--os.message("File: "..plugs[sections[y]][x].file.."\n"..tb_cop[k].path:lower())
-				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
-					plugs[sections[y]][x].bridge = tb_cop[k]
-					plugs[sections[y]][x].desc = tb_cop[k].desc
-					plugs[sections[y]][x].crc = tb_cop[k].crc
+				local f = plugs[sections[y]][x].file
+				local p = tb_cop[k]
+				if f == p.path:lower()
+					or (p.path2 and f == p.path2:lower())
+					or (p.path3 and f == p.path3:lower()) then
+					plugs[sections[y]][x].bridge = p
+					plugs[sections[y]][x].desc = p.desc
+					plugs[sections[y]][x].crc = p.crc
 					--os.message("Bridge: "..plugs[sections[y]][x].bridge.name)
 					break;
 				end
@@ -189,7 +193,25 @@ function pluginsmanager()
 			end
 			
 			if buttons.accept and not plugs[sections[over]][scroll.sel].is_sys then
-				if os.dialog(plugs[sections[over]][scroll.sel].file, LANGUAGE["UNINSTALLP_QUESTION"], __DIALOG_MODE_OK_CANCEL) == true then
+				local confirm_msg = plugs[sections[over]][scroll.sel].file
+				local confirm_title = LANGUAGE["UNINSTALLP_QUESTION"]
+				-- If uninstalling ioplus, show dependents right away
+				if plugs[sections[over]][scroll.sel].file:lower() == "ioplus.skprx" then
+					local deps = {}
+					for i=1, #tb_cop do
+						local p = tb_cop[i]
+						if (p.path2 and p.path2:lower() == "ioplus.skprx") or (p.path3 and p.path3:lower() == "ioplus.skprx") then
+							if bridge_n[p.path:lower()] and bridge_n[p.path:lower()][p.section] then
+								table.insert(deps, p.path)
+							end
+						end
+					end
+					if #deps > 0 then
+						confirm_msg = LANGUAGE["UNINSTALLP_QUESTION_NEED"].."\n"..table.concat(deps, "\n").."\n"..LANGUAGE["UNINSTALLP_PLUGINS_NEED"]
+						confirm_title = LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"]
+					end
+				end
+				if os.dialog(confirm_msg, confirm_title, __DIALOG_MODE_OK_CANCEL) == true then
 
 					-- Special for Yamt
 					if plugs[sections[over]][scroll.sel].file == "yamt.suprx" then --Yamt
@@ -244,6 +266,8 @@ function pluginsmanager()
 
 					local section2 = ""
 					local path2 = ""
+					local section3 = ""
+					local path3 = ""
 
 					if plugs[sections[over]][scroll.sel].file:lower() == "vitanearestneighbour.suprx" then
 						local idx3 = searchPlugByPath(plugs, sections[over], "vitanearestneighbour.suprx")
@@ -264,6 +288,15 @@ function pluginsmanager()
 								section2 = plugs[sections[over]][scroll.sel].bridge.section2
 								path2 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
 								--os.message("bridge2: "..path2.."\n"..section2)
+								if plugs[sections[over]][scroll.sel].bridge.section3 then
+									section3 = plugs[sections[over]][scroll.sel].bridge.section3
+								end
+								if plugs[sections[over]][scroll.sel].bridge.path3 then
+									path3 = plugs[sections[over]][scroll.sel].bridge.path3:lower()
+								elseif plugs[sections[over]][scroll.sel].bridge.path2 then
+									-- section3 reuses path2 (e.g. turbo storage)
+									path3 = plugs[sections[over]][scroll.sel].bridge.path2:lower()
+								end
 							end
 						end
 
@@ -280,6 +313,20 @@ function pluginsmanager()
 							--print(string.format("E [%s]: %s|%d", path1, section1, (idx or 300)))
 							--print(plugs[section1][idx].path)
 							tai.del(section1, plugs[section1][idx].path)
+
+						-- Mutual exclusion for NoPspEmuDrm
+						if path1 == "nopspemudrm_kern.skprx" then
+							tai.del("KERNEL", "NoPspEmuDrm_kern_mod.skprx")
+							tai.del("ALL", "NoPspEmuDrm_user_mod.suprx")
+						elseif path1 == "nopspemudrm_kern_mod.skprx" then
+							tai.del("KERNEL", "NoPspEmuDrm_kern.skprx")
+							tai.del("ALL", "NoPspEmuDrm_user.suprx")
+						end
+						-- restorepsmdev (replaces MakePsmGreatAgain)
+						if path1 == "restorepsmdev.suprx" then
+							tai.del("PCSI00007", "MakePsmGreatAgain.suprx")
+							tai.del("PCSI00009", "MakePsmGreatAgain.suprx")
+						end
 							table.remove(plugs[section1], idx)
 							bridge_n[path1][section1] = nil
 						end
@@ -288,54 +335,63 @@ function pluginsmanager()
 					ReloadConfig = true
 					change = change or section1:lower() == "main" or section1:lower() == "kernel" or section2:lower() == "main" or section2:lower() == "kernel"
 
-					local need_second = {}
-					local msg_need = {}
-					for i=1, #tb_cop do
-						if tb_cop[i].path2 and tb_cop[i].path2:lower() == path2 and bridge_n[tb_cop[i].path2:lower()] and bridge_n[tb_cop[i].path2:lower()][tb_cop[i].section2] and bridge_n[tb_cop[i].path:lower()] and bridge_n[tb_cop[i].path:lower()][tb_cop[i].section] then
-							--os.message("need_second "..tb_cop[i].path,1)
-							table.insert(need_second, tb_cop[i])
-							table.insert(msg_need, tb_cop[i].path)
-						end
-					end
-
-					if #need_second > 0 then
-						if os.dialog(path2.." "..ENGLISH_US["UNINSTALLP_QUESTION_NEED"].."\n"..(table.concat(msg_need, '\n'))..LANGUAGE["UNINSTALLP_PLUGINS_NEED"],
-								LANGUAGE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"], __DIALOG_MODE_OK_CANCEL) == true then
-							for i=1, #need_second do
-								local _path = need_second[i].path or ""
-								local _section = need_second[i].section or ""
-								local _path2 = need_second[i].path2 or ""
-								local _section2 = need_second[i].path or ""
-								_path = _path:lower()
-								_path2 = _path2:lower()
-								if bridge_n[_path] and bridge_n[_path][_section] then
-									--os.message("_path: ".._path.."\n".._section)
-									local idx1 = searchPlugByPath(plugs, _section, _path)
-									if idx1 then
-										tai.del(_section, plugs[_section][idx1].path)
-										table.remove(plugs[_section], idx1)
-										bridge_n[_path][_section] = nil
-									end
-								end
-								if bridge_n[_path2] and bridge_n[_path2][_section2] then
-									--os.message("_path2: ".._path2.."\n".._section2)
-									local idx2 = searchPlugByPath(plugs, _section2, _path2)
-									if idx2 then
-										tai.del(_section2, plugs[_section2][idx2].path)
-										table.remove(plugs[_section2], idx2)
-										bridge_n[_path2][_section2] = nil
+					-- If uninstalling ioplus, also remove dependents (dialog already confirmed)
+					if path1 == "ioplus.skprx" then
+						for i=1, #tb_cop do
+							local p = tb_cop[i]
+							if (p.path2 and p.path2:lower() == "ioplus.skprx") or (p.path3 and p.path3:lower() == "ioplus.skprx") then
+								if bridge_n[p.path:lower()] and bridge_n[p.path:lower()][p.section] then
+									local idx_d = searchPlugByPath(plugs, p.section, p.path:lower())
+									if idx_d then
+										tai.del(p.section, plugs[p.section][idx_d].path)
+										table.remove(plugs[p.section], idx_d)
+										bridge_n[p.path:lower()][p.section] = nil
 									end
 								end
 							end
 						end
 					else
-						if bridge_n[path2] and bridge_n[path2][section2] then
-							--os.message("idx3: "..path2.."\n"..section2)
+						-- Normal plugin: remove path2 only if it's not ioplus
+						if path2 != "" and path2 != "ioplus.skprx" and bridge_n[path2] and bridge_n[path2][section2] then
 							local idx3 = searchPlugByPath(plugs, section2, path2)
 							if idx3 then
 								tai.del(section2, plugs[section2][idx3].path)
 								table.remove(plugs[section2], idx3)
 								bridge_n[path2][section2] = nil
+							end
+						end
+					end
+
+					--path3 in section3 (e.g. a plugin's Settings page in NPXS10015)
+					if section3 != "" and bridge_n[path3] and bridge_n[path3][section3] then
+						local idx4 = searchPlugByPath(plugs, section3, path3)
+						if idx4 then
+							tai.del(section3, plugs[section3][idx4].path)
+							table.remove(plugs[section3], idx4)
+							bridge_n[path3][section3] = nil
+						end
+					end
+
+					-- Special: if this plugin used ioplus and no other installed plugin still needs it, remove ioplus
+					local used_ioplus = (path2 == "ioplus.skprx") or (path3 == "ioplus.skprx")
+					if used_ioplus then
+						local others_need = false
+						for i=1, #tb_cop do
+							local p = tb_cop[i]
+							if (p.path2 and p.path2:lower() == "ioplus.skprx") or (p.path3 and p.path3:lower() == "ioplus.skprx") then
+								-- still present in config?
+								if bridge_n[p.path:lower()] and bridge_n[p.path:lower()][p.section] then
+									others_need = true
+									break
+								end
+							end
+						end
+						if not others_need then
+							local idx_io = searchPlugByPath(plugs, "KERNEL", "ioplus.skprx")
+							if idx_io then
+								tai.del("KERNEL", plugs["KERNEL"][idx_io].path)
+								table.remove(plugs["KERNEL"], idx_io)
+								if bridge_n["ioplus.skprx"] then bridge_n["ioplus.skprx"]["KERNEL"] = nil end
 							end
 						end
 					end

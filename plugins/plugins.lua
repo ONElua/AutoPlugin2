@@ -176,7 +176,15 @@ Online_Plugins = {
   crc = 0xfd3be8e7, v = "v1.4", crc2 = 0x7E5B79BC, version = "0003", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
 
 
+--2 prxs + Settings page (path2 also loaded in section3)
+--{ name = "vita-turbo-storage by juanjsebgarcia", id = "TURBOSTORAGE.png", path = "storageturbo_kernel.skprx", section = "KERNEL", path2 = "storageturbo.suprx", section2 = "main", section3 = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_TURBOSTORAGE"], KEY = "INSTALLP_DESC_TURBOSTORAGE",
+--  crc = 0x669b6f9d, v = "v0.3.0", crc2 = 0x31b23a9b, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-storage/main/README.md", },
+{ name = "vita-turbo-wifi by juanjsebgarcia", id = "WIFITURBO.png", path = "wifiturbo_kernel.skprx", section = "KERNEL", path2 = "wifiturbo.suprx", section2 = "main", path3 = "wifiturbo_settings.suprx", section3 = "NPXS10015", desc = LANGUAGE["INSTALLP_DESC_WIFITURBO"], KEY = "INSTALLP_DESC_WIFITURBO",
+  crc = 0xebdbe1b1, v = "v0.7.0", crc2 = 0xffdab0b4, crc3 = 0xe131f018, version = "0001", link = "https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md", },
+
 --Main [SECTION]
+{ name = "LiveArea NoLimits by devnoname120", id = "LIVEAREANOLIMITS.png", path = "livearea_nolimits.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_LIVEAREANOLIMITS"], KEY = "INSTALLP_DESC_LIVEAREANOLIMITS",
+  crc = 0xf197781d, v = "v2.1.0", version = "0001", link = "https://raw.githubusercontent.com/devnoname120/livearea_nolimits/master/README.md", },
 { name = "NoTrpDrm by Rinnegatamante", id = "NOTRPDRM.png", path = "NoTrpDrm.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_NOTRPDRM"], KEY = "INSTALLP_DESC_NOTRPDRM",
   crc = 0xd11de996, v = "v1.1", version = "0001", link = "https://raw.githubusercontent.com/Rinnegatamante/NoTrpDrm/master/README.md", },
 { name = "PasteUnlock by GrapheneCt", id = "PASTEUNLOCK.png", path = "PasteUnlock.suprx", section = "main", desc = LANGUAGE["INSTALLP_DESC_PASTEUNLOCK"], KEY = "INSTALLP_DESC_PASTEUNLOCK",

@@ -11,7 +11,7 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 
 ### Vita kernel plugins
 
-| Plugin (including catalog credits) | Plugin file(s) |
+| Plugin | File(s) |
 | --- | --- |
 | [0syscall6 by SKGleba](https://raw.githubusercontent.com/SKGleba/0syscall6/master/README.md) | `0syscall6.skprx` |
 | [8BitVita by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/8BitVita/master/README.md) | `8BitVita.skprx` |
@@ -35,10 +35,7 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [DSMotion by OperationNT414C](https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md) | `dsmotion.skprx`, `dsmotion.suprx` |
 | [Dumping addcont IDs by cuevavirus](https://raw.githubusercontent.com/cuevavirus/AddcontIDDumper/master/README.md) | `aciddumper.skprx` |
 | [déjàvu: Vita SaveState Plugin by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/dejavu/master/README.md) | `dejavu.skprx` |
-| EmergencyMount by teakhanirons | `EmergencyMount.skprx` |
 | [FdFix by TheOfficialFloW](https://raw.githubusercontent.com/TheOfficialFloW/FdFix/master/README.md) | `fd_fix.skprx` |
-| Kubridge by TheOfficialFloW/bythos14 | `kubridge.skprx` |
-| LCD Colour Space Changer by cuevavirus | `pspemu-colour-crunch.skprx` |
 | [lolita444 by teakhanirons](https://raw.githubusercontent.com/teakhanirons/lolita500/master/README.md) | `lolita444.skprx` |
 | [lolita500 by teakhanirons](https://raw.githubusercontent.com/teakhanirons/lolita500/master/README.md) | `lolita500.skprx` |
 | [Magic Automatic Fake User Input by Rufis01](https://raw.githubusercontent.com/Rufis01/MAFU-I/refs/heads/master/README.MD) | `MAFUinput.skprx` |
@@ -58,16 +55,14 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [PSVshell by Electry](https://raw.githubusercontent.com/Electry/PSVshell/master/README.md) | `PSVshell.skprx` |
 | [PSVshell by RaanGi](https://raw.githubusercontent.com/RaanGi/PSVshell/refs/heads/master/README.md) | `PSVshell_mod.skprx` |
 | [PSVshellPlus by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md) | `PSVshellPlus_Kernel.skprx`, `PSVshellPlus_Shell.suprx` |
-| reAuth - Use PlayStation Store and sign-in by cuevavirus | `reAuth.skprx` |
 | [reF00D by FAPS Team](https://raw.githubusercontent.com/dots-tb/reF00D/master/README.md) | `reF00D.skprx` |
 | [Repatch by dots-tb](https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md) | `repatch.skprx` |
 | [Repatch by dots-tb](https://raw.githubusercontent.com/dots-tb/rePatch-reDux0/master/README.md) | `repatch_4.skprx` |
 | [Repatch reLoaded by SonicMastr](https://raw.githubusercontent.com/SonicMastr/rePatch-reLoaded/master/README.md) | `repatch_ex.skprx` |
-| reSavedata by Princess of Sleeping | `resavedata.skprx` |
 | [reVita by MERLev](https://raw.githubusercontent.com/MERLev/reVita/master/README.md) | `reVita.skprx`, `ioplus.skprx` |
 | [Sharpscale by cuevavirus](https://raw.githubusercontent.com/psv-plugins-archive/sharpscale/refs/heads/master/README.md) | `sharpscale.skprx` |
 | [Staybrightby cuevavirus](https://raw.githubusercontent.com/psv-plugins-archive/staybright/refs/heads/master/README.md) | `staybright.skprx` |
-| System-Integrated DualSense Driver for PlayStation TV by cuevavirus | `dualsense-driver.skprx` |
+| [StorageMgr by CelesteBlue & Yoti (SD2VITA)](https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md) | `storagemgr.skprx` |
 | [tvikey by isage](https://raw.githubusercontent.com/isage/tvikey/master/README.md) | `tvikey.skprx` |
 | [udcd_uvc by xerpi](https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md) | `udcd_uvc.skprx` |
 | [udcd_uvc LCD by xerpi](https://raw.githubusercontent.com/xerpi/vita-udcd-uvc/master/README.md) | `udcd_uvc_lcd_off.skprx` |
@@ -76,6 +71,7 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [usbmc Mod by DevDavisNunez](https://raw.githubusercontent.com/yifanlu/usbmc/master/README.md) | `usbmcm.skprx` |
 | [VideoDebug by Li](https://silica.codes/Li/videodebug/raw/branch/master/README.md) | `videoDebug.skprx` |
 | [viimote by xerpi](https://raw.githubusercontent.com/xerpi/viimote/master/README.md) | `viimote.skprx` |
+| [vita-turbo-wifi by juanjsebgarcia](https://raw.githubusercontent.com/juanjsebgarcia/vita-turbo-wifi/main/README.md) | `wifiturbo_kernel.skprx`, `wifiturbo.suprx`, `wifiturbo_settings.suprx` |
 | [Vitabright by devnoname120](https://raw.githubusercontent.com/devnoname120/vitabright/master/README.md) | `vitabright.skprx` |
 | [VitaBtFix by gabew100](https://raw.githubusercontent.com/gabew100/VitaBtFix/refs/heads/main/README.md) | `vitabtfix.skprx` |
 | [Vitacheat by FinalCheat](https://raw.githubusercontent.com/r0ah/vitacheat/master/README.md) | `vitacheat.skprx` |
@@ -87,24 +83,23 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [vitastick by xerpi](https://raw.githubusercontent.com/xerpi/vitastick/master/README.md) | `vitastick.skprx` |
 | [ViXEn by isage](https://raw.githubusercontent.com/isage/vixen/master/README.md) | `vixen.skprx` |
 | [VolLightbarCtrlWithDS4 by CallmeBK](https://raw.githubusercontent.com/CallmeBK/VolLightbarCtrlWithDS4/master/README.md) | `VolLightbarCtrlWithDS4.skprx` |
-| [vshPatch by KuromeSan](https://raw.githubusercontent.com/KuromeSan/vshPatch/master/README.md) | `vshPatch.skprx` |
+| [vshPatch by Li](https://raw.githubusercontent.com/LiEnby/vshPatch/master/README.md) | `vshPatch.skprx` |
 | [X1Vita by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/X1Vita/master/README.md) | `X1Vita.skprx` |
 
 ### Vita shell plugins
 
-| Plugin (including catalog credits) | Plugin file(s) |
+| Plugin | File(s) |
 | --- | --- |
 | [(QuickMenuReborn) by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/QuickMenuReborn/vdsuite/README.md) | `QuickMenuReborn.suprx` |
-| [(QuickMenuReborn) DolceWiFi by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md) | `QuickMenuReborn.suprx`, `DolceWiFi.suprx` |
-| [(QuickMenuReborn) QuickLauncher by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md) | `QuickMenuReborn.suprx`, `QuickLauncher.suprx` |
-| Autoboot by Rinnegatamante (only for 3.60/3.65) | `AutoBoot.suprx` |
-| BootSound by teakhanirons | `bootsound.suprx` |
+| [(QuickMenuReborn) DolceWiFi by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/DolceWiFi/master/README.md) | `QuickMenuReborn.suprx` |
+| [(QuickMenuReborn) QuickLauncher by Ibrahim778](https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md) | `QuickMenuReborn.suprx` |
+| [(QuickMenuReborn) vitaQmBluetooth by Robpol86](https://raw.githubusercontent.com/Robpol86/vitaQmBluetooth/master/README.md) | `QuickMenuReborn.suprx`, `vitaQmBluetooth.skprx` |
 | [Custom Warning by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `custom_warning.suprx` |
 | [DolcePolce by Li](https://silica.codes/Li/dolcepolce/raw/branch/master/README.md) | `DolcePolce.suprx` |
 | [Download Enabler by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `download_enabler.suprx` |
 | [dt2s-vita by joel16](https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md) | `dt2s_statusbar.suprx` |
-| Fruitpeel by cuevavirus | `fruitpeel.suprx` |
 | [ftpeverywhere by teakhanirons](https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md) | `ftpeverywhere.suprx` |
+| [LiveArea NoLimits by devnoname120](https://raw.githubusercontent.com/devnoname120/livearea_nolimits/master/README.md) | `livearea_nolimits.suprx` |
 | [LowMemMode by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/LowMemMode/master/README.md) | `LowMemMode.suprx` |
 | [NoLockScreen by TheOfficialFloW (VitaTweaks)](https://raw.githubusercontent.com/TheOfficialFloW/VitaTweaks/master/README.md) | `nolockscreen.suprx` |
 | [NoSharedFb by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/NoSharedFb/master/README.md) | `NoSharedFb.suprx` |
@@ -112,10 +107,10 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 | [NoTrpDrm by Rinnegatamante](https://raw.githubusercontent.com/Rinnegatamante/NoTrpDrm/master/README.md) | `NoTrpDrm.suprx` |
 | [PasteUnlock by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/PasteUnlock/main/README.md) | `PasteUnlock.suprx` |
 | [pngshot by xyzz](https://raw.githubusercontent.com/xyzz/pngshot/master/README.md) | `pngshot.suprx` |
-| [psp2wpp by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md) | `psp2wpp.suprx` |
+| [psp2wpp by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md) | `psp2wpp.suprx`, `ux0:data/waveparams/` |
 | [QAscreenshot by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/QAscreenshot/master/README.md) | `QAscreenshot.suprx` |
 | [Quick Menu Plus by GrayJack (Original by cuevavirus)](https://raw.githubusercontent.com/VitaArchive/QuickMenuPlus/refs/heads/main/README.md) | `quickmenuplus.suprx` |
-| [Quietshot by cuevavirus](https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md) | `quietshot.suprx` |
+| [Quietshot by cuevavirus](https://raw.githubusercontent.com/cuevavirus/Quietshot/master/README.md) | `quietshot.suprx`, `quietshot.suprx` |
 | [reSkype by Li](https://silica.codes/Li/reskype/raw/branch/master/README.md) | `reSkype.suprx` |
 | [Shellbat by nowrep](https://raw.githubusercontent.com/nowrep/vita-shellbat/master/README.md) | `shellbat.suprx` |
 | [Shellbat Mod by devnoname120](https://raw.githubusercontent.com/nowrep/vita-shellbat/master/README.md) | `shellbat_mod.suprx` |
@@ -129,101 +124,46 @@ Dependencies such as ioPlus and kuio may be installed alongside a plugin; they a
 
 ### Vita application and title-specific plugins
 
-| Plugin (including catalog credits) | Plugin file(s) |
+| Plugin | File(s) |
 | --- | --- |
 | [Adrenaline usb enabler by isage](https://raw.githubusercontent.com/isage/adrenaline_usb_enabler/master/README.md) | `adrenaline_usb_enabler.suprx` |
-| ARK-4's ef2uma plugin | `ef2uma.suprx` |
-| ARK-4's ef2xmc plugin | `ef2xmc.suprx` |
+| [Alien Shooter DLC unlocker by isage](https://raw.githubusercontent.com/isage/alienhook/master/README.md) | `alienhook.suprx` |
 | [FreePSM by Li](https://silica.codes/Li/freepsm/raw/branch/master/README.md) | `FreePSM.suprx` |
+| [Gravity Rush 544p by junminlee2004](https://raw.githubusercontent.com/junminlee2004/GR544P/refs/heads/main/README.md) | `GR544P.suprx` |
 | [HonRipper by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/HonRipper/master/README.md) | `HonRipper.suprx` |
-| InfiniteNet by Rinnegatamante | `InfiniteNet.suprx` |
-| [MakePsmGreatAgain by Li](https://silica.codes/Li/makepsmgreatagain/raw/branch/master/README.md) | `MakePsmGreatAgain.suprx` |
+| [LiveSky by Li](https://silica.codes/Li/LiveSky/raw/branch/main/README.md) | `LiveSky.suprx` |
 | [PSV-VSH MENU by joel16](https://raw.githubusercontent.com/joel16/PSV-VSH-Menu/master/README.md) | `vsh.suprx`, `kuio.skprx` |
 | [ReHomeArcade by technicaljicama](https://raw.githubusercontent.com/technicaljicama/ReHomeArcade/refs/heads/main/README.md) | `ReHomeArcade.suprx` |
 | [remaPSV by MERLev](https://raw.githubusercontent.com/MERLev/remaPSV2/master/README.md) | `remaPSV2.suprx`, `ioplus.skprx` |
-| remaPSV by Rinnegatamante | `remaPSV.suprx`, `ioplus.skprx` |
-| reRescaler by Rinnegatamante | `reRescaler.suprx`, `ioplus.skprx` |
 | [reScreeny by dots_tb](https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md) | `reScreeny.suprx` |
+| [restorepsmdev by Li](https://silica.codes/Li/restorepsmdev/raw/branch/main/README.md) | `restorepsmdev.suprx`, `restorepsmdev.suprx` |
 | [ScoreHax by Li](https://raw.githubusercontent.com/KuromeSan/ScoreHax/master/README.md) | `ScoreHax.suprx` |
-| ShowInfo Full by Yoti | `ShowInfo.suprx` |
-| ShowInfo Lite by Yoti | `ShowInfoLite.suprx` |
-| [Sysident by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/sysident/refs/heads/master/README.md) | `sysident.suprx`, `sysident.skprx` |
+| [Sysident by Princess of Sleeping](https://raw.githubusercontent.com/Princess-of-Sleeping/sysident/refs/heads/master/README.md) | `sysident.suprx`, `sysident.suprx` |
 | [TropHAX by Li](https://silica.codes/Li/trophax/raw/branch/master/README.md) | `trophax2.0.suprx` |
-| TurboPad Mod by Yoti | `TurboPad.suprx`, `ioplus.skprx` |
 | [VGi by Electry](https://raw.githubusercontent.com/Electry/VGi/master/README.md) | `VGi.suprx` |
-| [vita-macspoofer by Freakler](https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md) | `macspoofer.suprx` |
+| [vita-macspoofer by Freakler](https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md) | `macspoofer.suprx`, `macspoofer.suprx` |
+| [Vita-Nearest-Neighbour by MuxaJlbl4](https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md) | `VitaNearestNeighbour.suprx` |
 | [vita-ps4linkcontrols by nowrep](https://raw.githubusercontent.com/nowrep/vita-ps4linkcontrols/master/README.md) | `ps4linkcontrols.suprx` |
 | [Vita3g-disable by VictorGamer072YT](https://raw.githubusercontent.com/VictorGamer072YT/vita3g-disable/main/README.md) | `vita3g-disable.suprx` |
 | [VitaGrafix by Electry](https://raw.githubusercontent.com/Electry/VitaGrafix/master/README.md) | `VitaGrafix.suprx`, `ioplus.skprx` |
 | [Volume Control Pack by GrapheneCt](https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md) | `ModalVol.suprx` |
-| WDNF by EchoDev & Rinnegatamante | `WDNF.suprx` |
-| WDNR by Rinnegatamante | `WDNR.suprx` |
 
-### Vita plugins installed through dedicated menus
+### Changelog 2.20 ###
+## New Plugins
+- **vita-turbo-wifi** by juanjsebgarcia (v0.7.0) — kernel + main + NPXS10015 settings
+- **LiveArea NoLimits** by devnoname120 (v2.1.0) — raises LiveArea limits (50 pages, 500 top-level icons, 4000 apps)
 
-StorageMgr is available through the SD2VITA option; Vita-Nearest-Neighbour through Customize plugins; the game-specific patches and Allefresher through Miscellaneous plugins. These entries are not in the standard Vita plugin-installation list.
+## Fixes
+- **Multi-section plugins**: install/uninstall support for plugins with 3 paths (path/path2/path3) and for plugins that reuse path2 in a third section
+- **ioplus dependency**: uninstalling ioplus shows dependents and asks to remove them; uninstalling a dependent keeps ioplus if another plugin still needs it
+- **NoPspEmuDrm mutual exclusion**: fixed incorrect path (`mod_NoPspEmuDrm_user_mod.suprx` → `NoPspEmuDrm_user_mod.suprx`); uninstalling one version removes the other
+- **README**: no longer loads automatically on plugin info; press Triangle to show it
+- **Atomic config write**: `tai.sync()` writes to a temp file, verifies, then replaces (prevents corrupted config.txt on power loss)
+- **tai.repair**: converted from recursive to loop (same result, safer on large configs)
 
-| Plugin (including catalog credits) | Plugin file(s) |
-| --- | --- |
-| [Alien Shooter DLC unlocker by isage](https://raw.githubusercontent.com/isage/alienhook/master/README.md) | `alienhook.suprx` |
-| Allefresher plugin by Beyley | `Allefresher_vita.suprx` |
-| Catherine Full Body HD 1280x720 | `catherinefbhd.suprx` |
-| [Gravity Rush 544p by junminlee2004](https://raw.githubusercontent.com/junminlee2004/GR544P/refs/heads/main/README.md) | `GR544P.suprx` |
-| Persona 4 Golden HD 1280x720 | `p4goldenhd_1280x720.suprx` |
-| Persona 4 Golden HD 1920x1080 | `p4goldenhd_1920x1080.suprx` |
-| [StorageMgr by CelesteBlue & Yoti (SD2VITA)](https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md) | `storagemgr.skprx` |
-| [Vita-Nearest-Neighbour by MuxaJlbl4](https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md) | `VitaNearestNeighbour.suprx` |
-
-### PSP / Adrenaline plugins
-
-| Plugin (including catalog credits) | Plugin file(s) |
-| --- | --- |
-| [Allefresher v1.0.0 by Beyley](https://raw.githubusercontent.com/LittleBigRefresh/Allefresher/master/README.md) | `Allefresher.prx` |
-| Camera Patch Lite | `camera_patch_lite.prx` |
-| Category lite | `category_lite.prx` |
-| CXMB | `cxmb.prx` |
-| [GE Patch Plugin v0.2](https://raw.githubusercontent.com/TheOfficialFloW/GePatch/master/README.md) | `ge_patch.prx` |
-| GTA Native Resolution Patch v0.3 | `gta_native.prx` |
-| Kingdom Hearts: Birth By Sleep/Final Mix UNDUB | `bbsfmUndub.prx` |
-| Lang Swapper | `LangSwapper.prx` |
-| Leda v1.0.0 by Dark Alex (Update Neur0n) | `leda.prx` |
-| [Npdrm free by qwikrazor87, modified by lusid1 v7.3](https://raw.githubusercontent.com/lusid1/npdrm_free_mod/master/README.md) | `npdrm_free_mod.prx` |
-| [PSP gta trophies by Freakler v.02](https://raw.githubusercontent.com/Freakler/psp-gta_trophies/main/README.md) | `gta_trophies.prx` |
-| [pspdoc v1.0 by qwikrazor87](https://raw.githubusercontent.com/qwikrazor87/pspdoc/master/README.md) | `pspdoc.prx` |
-
-### PSP / Adrenaline Remastered Controls
-
-[RemasteredControls](https://github.com/TheOfficialFloW/RemasteredControls) by TheOfficialFloW.
-
-| Plugin (including catalog credits) | Plugin file(s) |
-| --- | --- |
-| Grand Theft Auto Remastered | `gta_remastered.prx` |
-| Grand Theft Auto Remastered V2 | `gta_remastered_v2.prx` |
-| Kingdom Hearts Remastered | `khbbs_remastered.prx` |
-| Metal Gear Solid Remastered | `mgs_remastered.prx` |
-| Prince Of Persia Remastered | `pop_remastered.prx` |
-| Resistance Remastered | `resistance_remastered.prx` |
-| SplinterCell Remastered | `splintercell_remastered.prx` |
-| Tomb Raider Remastered | `tombraider_remastered.prx` |
-| Tony Hawk Remastered | `tonyhawk_remastered.prx` |
-| Warriors Remastered | `warriors_remastered.prx` |
-
-# Optional settings
-- Update plugins Online
-- Update Languages Online
-- Now you can check yhe readme file online for most of the included plugins
-- Download/Install ITLS-Enso and Battery fixer (vpk)
-- Set a Custom Image (Custom Boot Splash is required)
-- Set a Custom Warning Message (Custom Warning is required)
-- Set Level Transparent (Transparent Impose is required)
-
-# Small note for Splash image
-To load a custom image at boot, the image must be in png format sized to 960X544 named splash.png and it must be placed in the path ux0:CustomBootsplash/splash.png
-You no longer need to add the line:
- "- load ur0: tai / custom_boot_splash.skprx"
-# Small note for the translation of the languages using non-standard characters
-Download the  *([font.pgf](https://github.com/ONElua/Autoplugin2/blob/master/font/font.pgf)).* and insert it in the path **ux0:data/Autoplugin2/font** (Remember if the font folder does not exist you have to create it) 
-This fixes missing non-standard characters, not found at english charset. Those will show as "_" instead of the unusual letter.
+## Improvements
+- **Autoboot**: "Current:" label now uses language string (`AUTOBOOT_CURRENT`)
+- **README indicator**: triangle button shows "Show README" (translated in all langs)
 
 ### Changelog 2.19 ###
 ## Version Updates

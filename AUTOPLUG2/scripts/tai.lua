@@ -176,44 +176,39 @@ end
 	Useful to repair previous errors in the use of the same.
 ]]
 function tai.repair()
+	if not tai.raw or not tai.gameid then return end
 
-	if tai.raw and tai.gameid then
+	local changed = true
+	while changed do
+		changed = false
 		for k,v in pairs(tai.gameid) do
-
 			local len = #v.line
 			if len > 1 then
-
-				tai.delete_sect(v) -- Remove all sections of id...
+				tai.delete_sect(v)
 				local h = {}
-				-- Reinsert in first pos! :D
-				table.insert(tai.raw,v.line[1], "*"..k)
-				local s = 1;
+				table.insert(tai.raw, v.line[1], "*"..k)
+				local s = 1
 				for a=1, #v.prx do
 					if not h[v.prx[a].path] then
 						h[v.prx[a].path] = true
 						table.insert(tai.raw, v.line[1]+s, v.prx[a].path)
-						s += 1
-					--else
-						--table.remove(tai.raw, v.prx[a].line)
+						s = s + 1
 					end
 				end
 				tai.parse()
-
-				return tai.repair() -- recursive! :D
-
-			elseif #v.prx < 1 then -- No have any plug?, remove!!!!
+				changed = true
+				break
+			elseif #v.prx < 1 then
 				local id = tai.gameid[k].section
-				--print(string.format("Delete no plug: %s | hold: %s\n", tostring(section), tostring(id == "KERNEL" and id == "main" and id == "ALL" and id == "NPXS10015" and id == "NPXS10016")))
 				if id[1] != "!" and id != "KERNEL" and id != "main" and id != "ALL" and id != "NPXS10015" and id != "NPXS10016" then
-					tai.delete_sect(v) -- Remove all sections of id...
+					tai.delete_sect(v)
 					tai.parse()
-					return tai.repair() -- recursive! :D
+					changed = true
+					break
 				end
 			end
-
-		end--for
+		end
 	end
-
 end
 
 function tai.delete_sect(v) -- Internal use...
@@ -440,7 +435,29 @@ function tai.sync(path)
     end
 
     local write_path = path or tai.path
-    files.write(write_path, table.concat(tai.raw, '\n'))
+    local content = table.concat(tai.raw, '\n')
+    local bak = write_path .. ".bak"
+    local tmp = write_path .. ".tmp"
+
+    -- Backup once per session
+    if not files.exists(bak) then
+        local orig = files.read(write_path)
+        if orig then files.write(bak, orig) end
+    end
+
+    -- Write to temp first
+    files.write(tmp, content)
+
+    -- Verify temp
+    local check = files.read(tmp)
+    if not check or check != content then
+        files.delete(tmp)
+        return false
+    end
+
+    -- Write directly (files.copy does not overwrite existing)
+    files.write(write_path, content)
+    files.delete(tmp)
     return true
 end
 
